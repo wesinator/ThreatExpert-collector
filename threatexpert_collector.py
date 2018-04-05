@@ -15,7 +15,7 @@ img_re = "getimage\.aspx\?uid=[0-9a-fA-F-]{36}&image=screen&sub=[01]"
 req_headers = {
 	"Accept": "text/html, application/xhtml+xml, */*",
 	"Accept-Language": "en-US",
-	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
+	"User-Agent": "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; .NET4.0E; .NET4.0C; rv:11.0) like Gecko",
 	"Accept-Encoding": "gzip, deflate",
 	"DNT": "1",
 	"Connection": "keep-alive"
