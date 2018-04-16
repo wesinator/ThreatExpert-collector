@@ -54,26 +54,26 @@ def get_te_reports(reports_html, reports_dir):
 
 		# If the report file for an md5 does not already exist, download the report
 		if not os.path.isfile("%s%s.html" % (reports_dir, md5)):
-				# Create reports dir if it doesn't already exist
-				if not os.path.exists(reports_dir):
-					os.mkdir(reports_dir)
+			# Create reports dir if it doesn't already exist
+			if not os.path.exists(reports_dir):
+				os.mkdir(reports_dir)
 
-				# Append the public URL to the url file list:
-				with open("urls.txt", "a") as url_list:
-					url_list.write("http://www.threatexpert.com/%s\n" % report_path)
+			# Append the public URL to the url file list:
+			with open("urls.txt", "a") as url_list:
+				url_list.write("http://www.threatexpert.com/%s\n" % report_path)
 
-				new_report_count += 1 # Increment new report count
-				print("Retrieving report for MD5: %s" % md5)
-				report = download(conn, report_path, "%s%s.html" % (reports_dir, md5))
+			new_report_count += 1 # Increment new report count
+			print("Retrieving report for MD5: %s" % md5)
+			report = download(conn, report_path, "%s%s.html" % (reports_dir, md5))
 
-				# If report has image, get the image
-				if "The new window was created, as shown below:" in report:
-					parse_img = BeautifulSoup(report)
-					for img in parse_img.find_all("img", attrs = {"src": re.compile(img_re)}):
-						img_path = img.get("src")
+			# If report has image, get the image
+			if "The new window was created, as shown below:" in report:
+				parse_img = BeautifulSoup(report)
+				for img in parse_img.find_all("img", attrs = {"src": re.compile(img_re)}):
+					img_path = img.get("src")
 
-						print("Downloading image for report " + md5)
-						img_data = download(conn, img_path, "%s%s.gif" % (reports_dir, md5))
+					print("Downloading image for report " + md5)
+					img_data = download(conn, img_path, "%s%s.gif" % (reports_dir, md5))
 
 	print("%d new reports processed." % new_report_count)
 	return new_report_count
