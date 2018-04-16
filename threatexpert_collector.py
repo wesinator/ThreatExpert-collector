@@ -99,7 +99,7 @@ def get_te_latest_reports():
 			print("Could not get reports page %d\nStatus code: %d" % (i, res.status))
 
 def get_te_search_results(search_term):
-	query = search_term.replace(' ', '+')
+	query = search_term.replace(' ', '+').replace('/', '%2F')
 
 	for i in range(1, 11):
 		search_path = "/reports.aspx?page=%d&find=%s" % (i, query)
