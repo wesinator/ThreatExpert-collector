@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python2
 # Download latest TE report pages and screenshots if available. Ignores already downloaded reports.
 from BeautifulSoup import BeautifulSoup
 import httplib
