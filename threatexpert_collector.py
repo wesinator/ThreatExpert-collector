@@ -59,7 +59,7 @@ def get_te_reports(reports_html, reports_dir):
 				os.mkdir(reports_dir)
 
 			# Append the public URL to the url file list:
-			with open("urls.txt", "a") as url_list:
+			with open("report_urls.txt", "a") as url_list:
 				url_list.write("http://www.threatexpert.com/%s\n" % report_path)
 
 			new_report_count += 1 # Increment new report count
