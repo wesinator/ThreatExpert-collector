@@ -55,8 +55,8 @@ def get_te_reports(reports_html, reports_dir):
 		# If the report file for an md5 does not already exist, download the report
 		if not os.path.isfile("%s%s.html" % (reports_dir, md5)):
 				# Create reports dir if it doesn't already exist
-				#if not os.path.exists(reports_dir):
-					#os.mkdir(reports_dir)
+				if not os.path.exists(reports_dir):
+					os.mkdir(reports_dir)
 
 				# Append the public URL to the url file list:
 				#with open("urls.txt", "a") as url_list:
