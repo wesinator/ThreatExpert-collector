@@ -46,7 +46,7 @@ def download(conn_obj, path, out_file):
 # Parse a TE reports page using soup, download each report
 def get_te_reports(reports_html, reports_dir):
 	new_report_count = 0 # Counter for showing how many new reports are found
-	parse = BeautifulSoup(reports_html)
+	parse = BeautifulSoup(reports_html, "lxml")
 
 	for report in parse.find_all('a', attrs = {"href": re.compile(md5_re)}):
 		report_path = report.get('href')
@@ -68,7 +68,7 @@ def get_te_reports(reports_html, reports_dir):
 
 			# If report has image, get the image
 			if "The new window was created, as shown below:" in report:
-				parse_img = BeautifulSoup(report)
+				parse_img = BeautifulSoup(report, "lxml")
 				for img in parse_img.find_all("img", attrs = {"src": re.compile(img_re)}):
 					img_path = img.get("src")
 
