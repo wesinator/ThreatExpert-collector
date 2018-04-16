@@ -128,7 +128,7 @@ def main():
 
 	# If user provided more than one arg , print usage message
 	else:
-		print("Error: This program can only take none or one user provided argument.\nIf you want to search for a multiword phrase, please surround it in quotes.")
+		print("Error: This program only takes up to one user provided argument.\nIf you want to search for a multiword phrase, please surround it in quotes.")
 
 main()
 conn.close() # Close the TCP connection to TE when all pages are processed
