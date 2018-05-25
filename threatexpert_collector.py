@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # Download latest TE report pages and screenshots if available. Ignores already downloaded reports.
 from bs4 import BeautifulSoup
 import httplib
@@ -20,6 +20,8 @@ req_headers = {
 	"DNT": "1",
 	"Connection": "keep-alive"
 }
+
+reports_dir = "reports/"
 
 # Download a file over http given existing conn obj, header, url path, and output file path
 def download(conn_obj, path, out_file):
@@ -89,7 +91,7 @@ def get_te_latest_reports():
 		# Call reports parser , show number of new reports processed.
 		if res.status == 200:
 			reports = res.read()
-			count = get_te_reports(reports, "reports/")
+			count = get_te_reports(reports, reports_dir)
 
 			# End the loop if no new reports are found
 			if count == 0:
@@ -109,7 +111,7 @@ def get_te_search_results(search_term):
 
 		if res.status == 200:
 			results = res.read()
-			get_te_reports(results, "reports/")
+			get_te_reports(results, reports_dir)
 
 			# Stop if the search doesn't have any more result pages
 			if "reports.aspx?page=%d&find=%s" % (i + 1, query.replace('~', "%7E")) not in results:
