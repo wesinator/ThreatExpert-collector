@@ -47,6 +47,10 @@ def download(conn_obj, path, out_file):
 
 # Parse a TE reports page using soup, download each report
 def get_te_reports(reports_html, reports_dir):
+    # Create reports dir if it doesn't already exist
+    if not os.path.exists(reports_dir):
+        os.mkdir(reports_dir)
+    
     new_report_count = 0 # Counter for showing how many new reports are found
     parse = BeautifulSoup(reports_html, "lxml")
 
@@ -56,10 +60,6 @@ def get_te_reports(reports_html, reports_dir):
 
         # If the report file for an md5 does not already exist, download the report
         if not os.path.isfile("%s%s.html" % (reports_dir, md5)):
-            # Create reports dir if it doesn't already exist
-            if not os.path.exists(reports_dir):
-                os.mkdir(reports_dir)
-
             # Append the public URL to the url file list:
             with open("report_urls.txt", "a") as url_list:
                 url_list.write("http://www.threatexpert.com/%s\n" % report_path)
