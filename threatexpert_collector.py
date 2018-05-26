@@ -74,14 +74,14 @@ def get_te_screenshot(report_html):
     
 # Get MD5s and download reports for pages 1-10
 def main():
-    md5s = []
-    
     # Create reports dir if it doesn't already exist
     if not os.path.exists(reports_dir):
         os.mkdir(reports_dir)
     
+    md5s = []
+    
     md5_list = open(te_md5s_list, 'a+')
-    existing_md5s = md5_list.readlines()
+    existing_md5s = md5_list.readlines().sort()
     
     # For pages 1-10 of reports, get MD5s
     for i in range(1, 11):
