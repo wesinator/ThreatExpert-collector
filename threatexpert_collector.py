@@ -3,8 +3,10 @@
 from bs4 import BeautifulSoup
 import httplib
 import os
+from random import randint
 import re
 import sys
+from time import sleep
 from urllib import quote_plus
 
 md5_re = "report\.aspx\?md5=[0-9a-fA-F]{32}"
@@ -58,6 +60,11 @@ def get_te_reports(reports_html, reports_dir):
 
         # If the report file for an md5 does not already exist, download the report
         if not os.path.isfile("%s/%s.html" % (reports_dir, md5)):
+            # Sleep random seconds
+            secs = randint(1, 4) # Could take up to 20*y*10 = 600 seconds for y = 3
+            #print("Sleeping %d seconds" % secs)
+            sleep(0.875*secs)
+            
             # Append the public URL to the url file list:
             with open("report_urls.txt", "a") as url_list:
                 url_list.write("http://www.threatexpert.com/%s\n" % report_path)
