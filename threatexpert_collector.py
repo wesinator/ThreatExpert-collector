@@ -72,10 +72,10 @@ def get_te_reports(reports_html, reports_dir):
             if "The new window was created, as shown below:" in report:
                 parse_img = BeautifulSoup(report, "lxml")
                 for img in parse_img.find_all("img", attrs = {"src": re.compile(img_re)}):
-                    img_path = img.get("src")
+                    img_path = img["src"]
 
                     print("Downloading image for report " + md5)
-                    img_data = download(conn, img_path, "%s%s.gif" % (reports_dir, md5))
+                    img_data = download(conn, img_path, img_path)
 
     print("%d new reports processed." % new_report_count)
     return new_report_count
