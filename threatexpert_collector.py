@@ -5,6 +5,7 @@ import httplib
 import os
 import re
 import sys
+from urllib import quote_plus
 
 md5_re = "report\.aspx\?md5=[0-9a-fA-F]{32}"
 img_re = "getimage\.aspx\?uid=[0-9a-fA-F-]{36}&image=screen&sub=[01]"
@@ -98,7 +99,7 @@ def get_te_latest_reports():
             print("Could not get reports page %d\nStatus code: %d" % (i, res.status))
 
 def get_te_search_results(search_term):
-    query = search_term.replace(' ', '+').replace('/', '%2F')
+    query = quote_plus(search_term)
 
     for i in range(1, 11):
         search_path = "/reports.aspx?page=%d&find=%s" % (i, query)
@@ -111,7 +112,7 @@ def get_te_search_results(search_term):
             get_te_reports(results, reports_dir)
 
             # Stop if the search doesn't have any more result pages
-            if "reports.aspx?page=%d&find=%s" % (i + 1, query.replace('~', "%7E")) not in results:
+            if "reports.aspx?page=%d&find=%s" % (i + 1, query) not in results:
                 print("\nNo more results pages are available.")
                 break
 
