@@ -49,7 +49,7 @@ def get_te_report(md5):
     te_report_url = "http://www.threatexpert.com/report.aspx?md5=" + md5
     
     # Download the report URL
-    report = requests.get(te_report_url).text
+    report = requests.get(te_report_url, headers=ie11_req_headers).text
     
     # Save report page to html file
     print("Saving report for " + md5)
@@ -68,7 +68,7 @@ def get_te_screenshot(report_html):
         img_path = img["src"]
         
         print("Getting image " + img_path)
-        r = requests.get("http://www.threatexpert.com/" + img_path, stream=True)
+        r = requests.get("http://www.threatexpert.com/" + img_path, headers=ie11_req_headers, stream=True)
         with open("%s/%s" % (reports_dir, img_path), 'wb') as img_file:
             img_file.write(r.raw.read())
     
