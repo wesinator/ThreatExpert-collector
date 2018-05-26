@@ -19,7 +19,7 @@ req_headers = {
     "Connection": "keep-alive"
 }
 
-reports_dir = "reports/"
+reports_dir = "ThreatExpert reports/"
 
 # Download a file over http given existing conn obj, header, url path, and output file path
 def download(conn_obj, path, out_file):
