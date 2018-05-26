@@ -6,9 +6,6 @@ import os
 import re
 import sys
 
-# Init connection obj (doesn't actually connect yet)
-conn = httplib.HTTPConnection("www.threatexpert.com")
-
 md5_re = "report\.aspx\?md5=[0-9a-fA-F]{32}"
 img_re = "getimage\.aspx\?uid=[0-9a-fA-F-]{36}&image=screen&sub=[01]"
 
@@ -119,18 +116,19 @@ def get_te_search_results(search_term):
                 break
 
 def main():
+    # Init connection obj (doesn't actually connect yet)
+    conn = httplib.HTTPConnection("www.threatexpert.com")
+
     # If no search query , go through the latest 10 report pages.
     if len(sys.argv) == 1:
         get_te_latest_reports()
 
     # If the user provided a search query , return the matching reports for the query and download them if they don't already exist.
-    elif len(sys.argv) == 2:
-        search = sys.argv[1].strip('"')
-        get_te_search_results(search)
-
-    # If user provided more than one arg , print usage message
     else:
-        print("Error: This program only takes up to one user provided argument.\nIf you want to search for a multiword phrase, please surround it in quotes.")
+        for term in sys.argv[1:]:
+            search = term.strip('"')
+            get_te_search_results(search)
+    
+    conn.close() # Close the TCP connection to TE when all pages are processed
 
 main()
-conn.close() # Close the TCP connection to TE when all pages are processed
