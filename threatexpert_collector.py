@@ -54,7 +54,7 @@ def get_te_reports(reports_html, reports_dir):
 
     for report in parse.find_all('a', attrs = {"href": re.compile(md5_re)}):
         report_path = report.get('href')
-        md5 = report_path[16:] # Get MD5 from report path, starts at index 16
+        md5 = report_path.replace("report.aspx?md5=", '')
 
         # If the report file for an md5 does not already exist, download the report
         if not os.path.isfile("%s%s.html" % (reports_dir, md5)):
