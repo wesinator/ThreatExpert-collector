@@ -28,11 +28,12 @@ def get_report_md5s(reports_html):
     for report in soup.find_all('a', href=True, target="_blank"):
         md5 = report["href"].replace("report.aspx?md5=", '')
         #print(md5)
-        md5s.append(md5)
 
         # Save report file if not already saved
         report_filename = "%s/%s.html" % (reports_dir, md5)
         if not os.path.isfile(report_filename):
+            md5s.append(md5)
+            
             # Sleep random seconds
             secs = randint(1, 4) # Could take up to 20*y*10 = 600 seconds for y = 3
             #print("Sleeping %d seconds" % secs)
@@ -93,9 +94,6 @@ def main():
 
     md5s = []
 
-    md5_list = open(te_md5s_list, 'a+')
-    existing_md5s = sorted(md5_list.readlines())
-
     # If no search terms, get all latest reports
     if len(sys.argv) == 1:
         # For pages 1-10 of reports, get MD5s
@@ -111,8 +109,8 @@ def main():
             get_te_search_results(search)
 
     # Append new MD5s to MD5s list
-    for md5 in md5s:
-        if md5 not in existing_md5s:
+    with open(te_md5s_list, 'a') as md5_list:
+        for md5 in md5s:
             md5_list.write(md5 + '\n')
 
 main()
