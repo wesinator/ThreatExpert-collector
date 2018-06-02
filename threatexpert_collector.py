@@ -101,6 +101,8 @@ def main():
             te_reports_url = "http://www.threatexpert.com/reports.aspx?page=%d" % i
             req = requests.get(te_reports_url, headers=ie11_req_headers)
             md5s += get_report_md5s(req.text)
+        
+        print("%d new reports processed." % len(md5s))
 
     # If search terms provided, retrieve results from search
     else:
