@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 February 2016, 20:26:29</li>
+<li>Processing time: 5 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x689C2746553B522F77EABCC3F09426B1</li>
+<li>File SHA-1: 0xC945BE32A8EBDBA41601F5786777A3D95E655244</li>
+<li>Filesize: 1,138,688 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,204,224 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>[filename of the sample #1] = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Play_Background_Sounds = "no"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>DirectSound DllMain mutex (0x0000009C)</li>
+<li>DirectSound DllMain mutex (0x00000778)</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">944413269.3322.org</td><td class="cell_1">2222</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2222:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 2F20 4854 5450 2F31 2E31 0D0A | GET / HTTP/1.1..
+00000010 | 5265 6665 7265 723A 2039 3434 3431 3332 | Referer: 9444132
+00000020 | 3639 2E33 3332 322E 6F72 673A 3232 3232 | 69.3322.org:2222
+00000030 | 0D0A 4163 6365 7074 3A20 2A2F 2A0D 0A41 | ..Accept: */*..A
+00000040 | 6363 6570 742D 4C61 6E67 7561 6765 3A20 | ccept-Language:
+00000050 | 7A68 2D63 6E0D 0A43 6F6E 7465 6E74 2D54 | zh-cn..Content-T
+00000060 | 7970 653A 2061 7070 6C69 6361 7469 6F6E | ype: application
+00000070 | 2F78 2D77 7777 2D66 6F72 6D2D 7572 6C65 | /x-www-form-urle
+00000080 | 6E63 6F64 6564 0D0A 5573 6572 2D41 6765 | ncoded..User-Age
+00000090 | 6E74 3A20 4D6F 7A69 6C6C 612F 342E 3020 | nt: Mozilla/4.0
+000000A0 | 2863 6F6D 7061 7469 626C 653B 204D 5349 | (compatible; MSI
+000000B0 | 4520 392E 303B 2057 696E 646F 7773 204E | E 9.0; Windows N
+000000C0 | 5420 362E 313B 2031 3235 4C41 3B20 2E4E | T 6.1; 125LA; .N
+000000D0 | 4554 2043 4C52 2032 2E30 2E35 3037 3237 | ET CLR 2.0.50727
+000000E0 | 3B20 2E4E 4554 2043 4C52 2033 2E30 2E30 | ; .NET CLR 3.0.0
+000000F0 | 3435 3036 2E36 3438 3B20 2E4E 4554 2043 | 4506.648; .NET C
+00000100 | 4C52 2033 2E35 2E32 3130 3232 290D 0A48 | LR 3.5.21022)..H
+00000110 | 6F73 743A 206C 6F63 616C 686F 7374 3A32 | ost: localhost:2
+00000120 | 3232 320D 0A43 6163 6865 2D43 6F6E 7472 | 222..Cache-Contr
+00000130 | 6F6C 3A20 6E6F 2D63 6163 6865 0D0A 0D0A | ol: no-cache....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

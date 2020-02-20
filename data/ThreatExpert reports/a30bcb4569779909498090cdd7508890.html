@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.SuspectCRC">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.SuspectCRC</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 6 November 2014, 04:32:28</li>
+<li>Processing time: 6 min 54 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA30BCB4569779909498090CDD7508890</li>
+<li>File SHA-1: 0x7E6612CE42FD8FFDDF938F0FDDB7ECB0E76F5853</li>
+<li>Filesize: 365,267 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-suspectcrc.html" target="_blank">Trojan.SuspectCRC<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">348,160 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/x.exe.html" target="_blank">x.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/x.exe.html" target="_blank">x.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">36,864 bytes</td></tr>
+<tr><td class="cell_1">driver3.exe</td><td class="cell_1">%System%\nvidia3\driver3.exe</td><td class="cell_2">36,864 bytes</td></tr>
+<tr><td class="cell_1">Crypter Obfuscator .exe</td><td class="cell_1">%Temp%\crypter obfuscator .exe</td><td class="cell_2">N/A</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{72C3EDD3-3C6A-39AC-8D55-6C40069CC75C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\nvidia3</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\Software\nvidia3</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{72C3EDD3-3C6A-39AC-8D55-6C40069CC75C}]</li><ul>
+<li>stubpath = "%System%\nvidia3\driver3.exe s"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\nvidia3]</li><ul>
+<li>nck = 7B B6 47 A7 05 64 65 D3 90 09 CD 74 FA 93 5B 67</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\nvidia3]</li><ul>
+<li>klg = 00</li>
+<li>delay = B0 EF D0 BF BD F9 CF 01</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>sidebar.sytes.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">sidebar.sytes.net<td class="cell_2">1994</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1994:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | EA00 0000 994F B271 E274 8C02 5AF2 B1A6 | .....O.q.t..Z...
+00000010 | 3254 BAAE 2AA1 0AC8 A51B 3CBC EAF5 2838 | 2T..*.....<...(8
+00000020 | 316D 989C F244 649A CEEC A79D 21B1 54F8 | 1m...Dd.....!.T.
+00000030 | 0AF9 79D9 BD74 5423 C0C7 4000 933F 066A | ..y..tT#..@..?.j
+00000040 | 5146 624D D89B 9ABB 1409 5A66 C025 51E7 | QFbM......Zf.%Q.
+00000050 | CD82 7CC2 5C75 6258 9FC8 1FF0 599B 4DAB | ..|.\ubX....Y.M.
+00000060 | 83AC FC97 2320 9F51 77F4 33BC 9384 6293 | ....# .Qw.3...b.
+00000070 | 5759 5A99 92BA 9339 619A 6830 F3C6 0D2C | WYZ....9a.h0...,
+00000080 | 4AA1 39CB 68BE 75FE 27CB 0D4D C149 08A1 | J.9.h.u.'..M.I..
+00000090 | 7BCA BD31 62FF 2CD0 124D ADE3 7DE7 9FF6 | {..1b.,..M..}...
+000000A0 | 4B60 18FE 8692 18ED 829E 61AA DF36 F3AB | K`........a..6..
+000000B0 | A088 EA3B C93A 9B18 8990 34F8 3599 25FA | ...;.:....4.5.%.
+000000C0 | 5C0A D537 2D68 61CB 9AFD 6EF1 B5F4 8896 | \..7-ha...n.....
+000000D0 | 1F96 A4C1 221E 29B6 B64B 5FD7 5F55 357E | ....".)..K_._U5~
+000000E0 | 0066 E515 135E E76C A0A9 34BB BFCE      | .f...^.l..4...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

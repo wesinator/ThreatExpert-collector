@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Virus.Win32.Injector">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Virus.Win32.Injector</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 28 July 2014, 02:56:24</li>
+<li>Processing time: 6 min 59 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6915993093DB1D2E90438049A5992C89</li>
+<li>File SHA-1: 0x9D162532907D6C39262F0E4035F82E1CB41FB672</li>
+<li>Filesize: 453,120 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/virus-win32-injector.html" target="_blank">Virus.Win32.Injector<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>PE_Patch [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1">Trojan-Spy.Banker.PPAW</td>
+<td class="cell_1">Trojan-Spy.Banker.PPAW steals online banking information on brazilian banks users. It is also capable of sending stolen information to its attacker.</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">331,776 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\i8e6\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,425,408 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{HNIK1MH5-HO6S-35TT-0651-71124UH8K706}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</li>
+<li>HKEY_CURRENT_USER\Software\ReVoLuTiOn</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{HNIK1MH5-HO6S-35TT-0651-71124UH8K706}]</li><ul>
+<li>StubPath = "%System%\i8e6\system.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run]</li><ul>
+<li>army = "%System%\i8e6\system.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>revdev = "%System%\i8e6\system.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft]</li><ul>
+<li>PIDprocess = "672"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run]</li><ul>
+<li>army = "%System%\i8e6\system.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>forrev = "%System%\i8e6\system.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\ReVoLuTiOn]</li><ul>
+<li>FirstExecution = "28/07/2014 -- 02:57"</li>
+<li>NewIdentification = "ReVoLuTiOn"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>_x_X_UPDATE_X_x_</li>
+<li>_x_X_PASSWORDLIST_X_x_</li>
+<li>_x_X_BLOCKMOUSE_X_x_</li>
+<li>random</li>
+<li>random_PERSIST</li>
+<li>SPY_NET_RATMUTEX</li>
+</ul></ul>
+<ul><li>The following Internet downloads were started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\133031.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\139531.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\140640.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\141734.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\142937.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\144062.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\145187.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\146312.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\147484.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\148593.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\149718.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\150828.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\152015.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\153250.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\154421.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\155640.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\156781.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\157906.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\159031.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\160156.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\161281.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\162406.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\163546.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\164671.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\165812.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\166968.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\168109.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\169234.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\170359.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\171484.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\172609.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\173578.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\174593.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\175609.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\176625.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\177640.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\178843.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\180062.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\181187.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\182312.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\183531.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\184750.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\185875.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\187109.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\188265.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\189500.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\190640.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\191875.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\193000.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\194187.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\195312.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\196562.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\198203.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\199968.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\201140.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\202437.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\203656.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\205562.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\206656.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\248578.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\249750.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\250984.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\252140.tmp</td></tr>
+<tr><td class="cell_1">http://www.freewebtown.com/elpazzo21/sqlite3.dll</td><td class="cell_2">%Temp%\253359.tmp</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

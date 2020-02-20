@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 April 2015, 09:00:23</li>
+<li>Processing time: 7 min 26 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x770510C56AFD66AD9D8A41CE68C1C151</li>
+<li>File SHA-1: 0xE9388B0EB05833F75BFE6B622CF7ED8020DE477E</li>
+<li>Filesize: 604,956 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Compromises SafeBoot registry key(s) in an attempt to disable the Safe Mode.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Modifies some system settings that may have negative impact on overall system security state.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">761,856 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Associations</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Restrictions</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Multimedia\DrawDib</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+<li>HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer</li>
+<li>HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AFD</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Browser</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Dhcp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DnsCache</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ip6fw.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ipnat.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanServer</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanWorkstation</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LmHosts</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Messenger</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SharedAccess</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Associations]</li><ul>
+<li>DefaultFileTypeRisk = 0x0000070F</li>
+<li>LowRiskFileTypes = ".exe"</li>
+<li>ModRiskFileTypes = ".doc;.pdf;.xls;.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]</li><ul>
+<li>NoViewContextMenu = 0x00000001</li>
+<li>NoDesktop = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Restrictions]</li><ul>
+<li>NoBrowserContextMenu = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>NoProtectedModeBanner = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Multimedia\DrawDib]</li><ul>
+<li>vga.drv 640x480x32(BGR 0) = "31,31,31,31"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]</li><ul>
+<li>NoViewContextMenu = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]</li><ul>
+<li>DefaultFileTypeRisk = 0x0000070F</li>
+<li>LowRiskFileTypes = 0x00000000</li>
+<li>ModRiskFileTypes = ".doc;.pdf;.xls;.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]</li><ul>
+<li>DisableTaskMgr = 0x00000001</li>
+<li>DisableRegistryTools = 0x00000001</li>
+</ul>
+<br/>
+<em>to prevent users from starting Task Manager (Taskmgr.exe)</em><br/>
+<em>to disable the Windows registry editors (Regedt32.exe and Regedit.exe)</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]</li><ul>
+<li>NoBrowserContextMenu = 0x00000001</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E975-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetTrans"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E973-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetClient"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Net"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WZCSVC]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\termservice]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdtcp.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdpipe.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Tcpip]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[[pathname with a string SHARE]\SharedAccess]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Messenger]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]</li><ul>
+<li>1609 = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1039</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">crazyloading.cc</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>reboot/index.html</li>
+<li>reboot/index.jpg</li>
+<li>test/landing/gate.php?hwid=1F8E91EA7F2 1D894D8854670875FE0525DEF6D565869A7C783C3F01256DA2 E4EED577AE1D094629B74101851E5D16D565163A7AC8D9951D 7320835CCB016D6948296FD05FA9CA012377F9E32EEF976F4D 747FA03D4E5BCEF2DC5C3D3743752DD2BDAEAF603CD0A5AB00..</li>
+<li>test/landing/index.jpg</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

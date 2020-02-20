@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Exploit.Win32.MS">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Exploit.Win32.MS</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 18 January 2016, 17:12:11</li>
+<li>Processing time: 6 min 15 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA9FA809E76502FD51A3341EE13D2B1BC</li>
+<li>File SHA-1: 0x9955C30EAB289FFA069CB47413141BE1F3C453CA</li>
+<li>Filesize: 317,952 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Exploit.Win32.MS [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">864,256 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Shadow = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">damawang.wicp.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>gengxin/update.txt</li>
+<li>gengxin/liuliang.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 18 January 2016 17:18:27</li>
+<li>Processing time: 6 min 7 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0xA2365C37641B4C4F72DF91AA0B390712</li>
+<li>File SHA-1: 0x57DD34C7CA535A22E9E1E71BD7E753333707118C</li>
+<li>Filesize: 990,208 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,007,616 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog</li>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog\International</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>GuaZhuan = ""[file and pathname of the sample #1]" -autorun "</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\CHtmlDialog\International]</li><ul>
+<li>AutoDetect = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1062</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1063</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">ap4.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap4.liuliangbao.cn</td><td class="cell_2">ap4.liuliangbao.cn</td></tr>
+<tr><td class="cell_1">ap2.sap1000.com</td><td class="cell_1">8011</td><td class="cell_1">ap2.sap1000.com</td><td class="cell_2">ap2.sap1000.com</td></tr>
+<tr><td class="cell_1">ap3.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap3.liuliangbao.cn</td><td class="cell_2">ap3.liuliangbao.cn</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=58FDD19970DD4371BE376349522CA8AA&amp;rd=20101</li>
+<li>clt/jobid/44d4b2984efeee456bfe0f53c5a9be764f9b44a218ba06f8ffc99757613c4327c994e9a50372aea47b09c172bec7106c60af1a90c2f2e417f0d670c1a7ff949aaaceb415c6ccc0be808bfb9b3cd3739d7f941afc993a4f4c852e3435d4d65e</li>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=B84405AD74A448E391FAB6DCE86BD455&amp;rd=9776</li>
+<li>clt/jobid/44d4b2984efeee456bfe0f53c5a9be761b032aa2a10ce12cfd208ab55b80eaac26e67d7b548ba1274d3c9b651fa247891ae7253ceb6fe294ea4dc9454bdfa712500ea2e90eaa3f096637cc6c9a4b035e939763efc0aa35cc22015616dab69c</li>
+<li>clt/jobid/44d4b2984efeee456bfe0f53c5a9be76883eb0273ae3c65638e958d8a890e0daa7fd021662c2e0cb541c79957050b4d5a9ecd376fc1868e876d5f7caf86db1212921a44552a9a5db81a33932590124fe8a93c86d192d21c0bf4408091205c9</li>
+<li>clt/jobid/44d4b2984efeee456bfe0f53c5a9be76061c293c95f65da6f102cae0a1b77bf1d8dc3860ab1a160cafc31b1e1c6885768102c29c4a3e3cb73c2c65114af0300659e35e41295a75da0cc734aba29f0375ea09aaed547bc1257cd6c005d05e3b</li>
+<li>clt/jobid/44d4b2984efeee456bfe0f53c5a9be7650a16963d38d30d982207994bc96e143728fc4562fc11777bfe6f24b47bf98d2e204116e0d4c053f3f566923919118a840ddda90be7da3525c775935ccaf5c37321ccff90270b76e2d2b704b96abed</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8011:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6173 2F32 2F68 332F 2048 | POST /as/2/h3/ H
+00000010 | 5454 502F 312E 310D 0A41 6363 6570 742D | TTP/1.1..Accept-
+00000020 | 456E 636F 6469 6E67 3A20 677A 6970 2C20 | Encoding: gzip,
+00000030 | 6465 666C 6174 650D 0A43 6F6E 7465 6E74 | deflate..Content
+00000040 | 2D54 7970 653A 2061 7070 6C69 6361 7469 | -Type: applicati
+00000050 | 6F6E 2F78 2D77 7777 2D66 6F72 6D2D 7572 | on/x-www-form-ur
+00000060 | 6C65 6E63 6F64 6564 0D0A 5573 6572 2D41 | lencoded..User-A
+00000070 | 6765 6E74 3A20 6C6C 622F 312E 312E 3630 | gent: llb/1.1.60
+00000080 | 2E37 3831 0D0A 486F 7374 3A20 6C6F 6361 | .781..Host: loca
+00000090 | 6C68 6F73 743A 3830 3131 0D0A 436F 6E74 | lhost:8011..Cont
+000000A0 | 656E 742D 4C65 6E67 7468 3A20 3135 330D | ent-Length: 153.
+000000B0 | 0A43 6F6E 6E65 6374 696F 6E3A 204B 6565 | .Connection: Kee
+000000C0 | 702D 416C 6976 650D 0A43 6163 6865 2D43 | p-Alive..Cache-C
+000000D0 | 6F6E 7472 6F6C 3A20 6E6F 2D63 6163 6865 | ontrol: no-cache
+000000E0 | 0D0A 0D0A 643D 6135 6666 6331 3732 3838 | ....d=a5ffc17288
+000000F0 | 3132 6436 6362 6132 3665 6536 3563 3663 | 12d6cba26ee65c6c
+00000100 | 3430 6165 3832 6662 3362 3032 3035 6439 | 40ae82fb3b0205d9
+00000110 | 3537 3431 3835 3962 6636 6134 3535 3264 | 5741859bf6a4552d
+00000120 | 6634 3038 6438 6631 6332 6236 3536 3164 | f408d8f1c2b6561d
+00000130 | 6363 6632 3930 6430 6333 3335 3865 3166 | ccf290d0c3358e1f
+00000140 | 6536 3431 3930 6133 3434 6130 3364 3563 | e64190a344a03d5c
+00000150 | 3332 6238 3537 3164 6364 3331 3130 6163 | 32b8571dcd3110ac
+00000160 | 3539 3536 6336 6661 3139 6138 3063 6537 | 5956c6fa19a80ce7
+00000170 | 3566 3632 3537 6666 3431 3934 000D 0A   | 5f6257ff4194...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

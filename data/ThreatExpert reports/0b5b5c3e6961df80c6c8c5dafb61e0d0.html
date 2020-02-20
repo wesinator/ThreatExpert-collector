@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-Spy.Win32.Agent.cbot, BackDoor-FGQ, Troj/Agent-WIB, Backdoor:Win32/Morix.B, Backdoor.Win32.Morix">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-Spy.Win32.Agent.cbot, BackDoor-FGQ, Troj/Agent-WIB..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 March 2016, 21:22:42</li>
+<li>Processing time: 5 min 36 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0B5B5C3E6961DF80C6C8C5DAFB61E0D0</li>
+<li>File SHA-1: 0x3079F049A9D5D65DE34D53618FF936EC7D42C018</li>
+<li>Filesize: 81,920 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan-Spy.Win32.Agent.cbot [Kaspersky Lab]</li>
+<li>BackDoor-FGQ [McAfee]</li>
+<li>Troj/Agent-WIB [Sophos]</li>
+<li>Backdoor:Win32/Morix.B [Microsoft]</li>
+<li>Backdoor.Win32.Morix [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\37CEE422\<a href="http://www.threatexpert.com/files/svchsot.exe.html" target="_blank">svchsot.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">81,920 bytes</td>
+<td class="cell_1">MD5: 0x0B5B5C3E6961DF80C6C8C5DAFB61E0D0<br/>SHA-1: 0x3079F049A9D5D65DE34D53618FF936EC7D42C018</td>
+<td class="cell_2">Trojan-Spy.Win32.Agent.cbot [Kaspersky Lab]<br/>BackDoor-FGQ [McAfee]<br/>Troj/Agent-WIB [Sophos]<br/>Backdoor:Win32/Morix.B [Microsoft]<br/>Backdoor.Win32.Morix [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Windir%\Tasks\At1.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x336A734818A5EB7522397FFE43FC20E3<br/>SHA-1: 0x72DFACA4CD6B0665C8DA925E5AE035B456AB0898</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Windir%\Tasks\At10.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x5BC85E150ACCE86C9F83CDE52E61B9E3<br/>SHA-1: 0x32C454DD850221B3954E38EC7D691B4E11986753</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Windir%\Tasks\At11.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x95C46FBC74AA265C8F0EBF129E503431<br/>SHA-1: 0x99A6F2D7FC7E4918F3A0208574995EB533843F19</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Windir%\Tasks\At12.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xFAE213127B0B88211FA4C1C02D48109A<br/>SHA-1: 0xDD7CFED059867474A58DAD6D3C9C629437190C42</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Windir%\Tasks\At13.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xF341198D4D6E78AA772F0423775E8C8E<br/>SHA-1: 0x5CED32438E917A03BE394D42806287B7C080B191</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%Windir%\Tasks\At14.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xA4AB73B7F0EA6034D03E16BB7A471890<br/>SHA-1: 0x91CB6C669AC322611E85BAA9F8ED5690D7F7E27D</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%Windir%\Tasks\At15.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x52A967F48864A4055602D7B3D838CC44<br/>SHA-1: 0x4C52D5440607773146F9601034A5AB77C2C972C5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%Windir%\Tasks\At16.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x2C8B6E2C0C7270EA04EB980FC5BC7F5D<br/>SHA-1: 0x629F64961B2F57601C75C993297F0CA264F9BA88</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%Windir%\Tasks\At17.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x8B4BC39F7243AABC82F146DE396B4EBF<br/>SHA-1: 0x8F9003E5169E4747730B09854EEAD61E6BB244B4</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%Windir%\Tasks\At18.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x4B34441888EDE40506208307FA41F5EA<br/>SHA-1: 0xC73F72523A389FBB9DC4F432B4D48842946D6CC2</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%Windir%\Tasks\At19.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xC9F72E7EE7192425BB1541C1198DED75<br/>SHA-1: 0x258837439C6DF215341F856178A3ADA31668BD1D</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%Windir%\Tasks\At2.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xDE7B4BBA3EF334DC2738F923B452287C<br/>SHA-1: 0xECCD863B6985293C6839A2DD48DAC8E64FA316C2</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%Windir%\Tasks\At20.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xB4B2E5295C2BDDC0424A9837DA18055C<br/>SHA-1: 0x6964CE38FDA3AB58E463B7C3C0729D35177E0448</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%Windir%\Tasks\At21.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x9CAD6DFF6669E0277A940E2E48F3E45E<br/>SHA-1: 0xFC108961FDCB47E38400D591FC23374E7BD50C7C</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%Windir%\Tasks\At22.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x6B91C9CAF296521EBC0DCD806D4FD24A<br/>SHA-1: 0x4DB93F81A9A0AABE78485056AD85B6F95E69123B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%Windir%\Tasks\At23.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x796388282E0C3B7923379D6B0D17C159<br/>SHA-1: 0x5DFDA03F5762AE7F0CED366F3FC52AF28BEDD79E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%Windir%\Tasks\At24.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x2A04642E6454464F49CA21FD8ECA7398<br/>SHA-1: 0x9F213005A3D443FF567302A69E1E72B3EA96722F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%Windir%\Tasks\At3.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xAA5CCC950BEE6FFA8B0273BA633F898B<br/>SHA-1: 0x5AC5EE67EADE9DE3933137CAB619BFAD12BF8FEF</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%Windir%\Tasks\At4.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xD4E2FBE22D7C96C78335F5B32F6EC7E6<br/>SHA-1: 0x4620AF79149D7B53DAB50174B35FF4FEFA0498FF</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+%Windir%\Tasks\At5.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xE841566A04A587FF32A869BA5FD1439C<br/>SHA-1: 0x4D39A7C52D740A14433BA9A2B1810BB542BE8CB0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+%Windir%\Tasks\At6.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x39AD585C17C05943BC0907FD8E2826B2<br/>SHA-1: 0x0399BFCA1B3D83DBDD021ED789E4A37C1FF0C6D0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+%Windir%\Tasks\At7.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x116391AE33C4EEFC419020B84E391743<br/>SHA-1: 0x295C5CD0D0FD92867D0E3554B1D05B9FECEAFDA5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">24</td>
+<td class="cell_1">
+%Windir%\Tasks\At8.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0xC0B97864B5E71DDAA0861128C9D92B53<br/>SHA-1: 0x8850B83C7810CB538B903CF380FA68B38B285C11</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">25</td>
+<td class="cell_1">
+%Windir%\Tasks\At9.job
+</td>
+<td class="cell_1">348 bytes</td>
+<td class="cell_1">MD5: 0x70ADB9F2BB43B5B832FE4B0193F2EBA2<br/>SHA-1: 0x003669EFD00BC8A2D4BCD9CC1C995392DB0CB0FF</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Windir%\37CEE422</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">98,304 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>37CEE422 = "%Windir%\37CEE422\svchsot.exe"</li>
+</ul>
+<br/>
+<em>so that svchsot.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>103.39.76.61:2012127.0.0.1:2012127.0.0.1:2012</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>103.39.76.61</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">103.39.76.61<td class="cell_2">2012</td><tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

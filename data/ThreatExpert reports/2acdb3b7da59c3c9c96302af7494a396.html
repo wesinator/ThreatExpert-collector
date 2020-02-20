@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-031, Backdoor.Win32.Torr">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-031, Backdoor.Win32.Torr</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 8 May 2016, 17:47:47</li>
+<li>Processing time: 5 min 35 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x2ACDB3B7DA59C3C9C96302AF7494A396</li>
+<li>File SHA-1: 0xC22E5BEE38F7F80823E7647B64B0BA42BFEC5AB0</li>
+<li>Filesize: 18,944 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-031.html" target="_blank">Mal/Behav-031<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-torr.html" target="_blank">Backdoor.Win32.Torr<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">svchobst.exe</td><td class="cell_1">%Windir%\svchobst.exe</td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = "%Windir%\svchobst.exe"</li>
+</ul>
+<br/>
+<em>so that %Windir%\svchobst.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>58.221.72.145:8080</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">svchobst.exe (%Windir%\svchobst.exe)</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">svchobst.exe (%Windir%\svchobst.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>58.221.72.145</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">58.221.72.145<td class="cell_2">8080</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6D90 8A99 92CE 64CD D673 8F84 99CE 6A71 | m.....d..s....jq
+00000010 | CDC4 D67A 898F D673 6669 D6D6 D6D6 D679 | ...z...sfi.....y
+00000020 | BECA C6C6 D6D6 76D6 C3D0 C6C6 776E 7CB6 | ......v.....wn|.
+00000030 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000040 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000050 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000060 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000070 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000080 | C4C9 C8D6 7174 B6B6 B6B6 B6B6 B6B6 B6B6 | ....qt..........
+00000090 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000A0 | 678D 90D6 5E66 D663 66C4 B6B6 B6B6 B6B6 | g...^f.cf.......
+000000B0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000C0 | 7268 C4D0 C6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | rh..............
+000000D0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000E0 | ADBA B6B6 FFFF FFFF                     | ........
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Win32.Xtreme.azc, Mal/Behav-328">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Win32.Xtreme.azc, Mal/Behav-328</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 29 November 2015, 05:11:37</li>
+<li>Processing time: 6 min 39 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCE5A763567A17D528128560BFBC5C96C</li>
+<li>File SHA-1: 0x9C0858CF4C2B5D53E3C51E6A3BC601A09BA4CB91</li>
+<li>Filesize: 4,362,812 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Backdoor.Win32.Xtreme.azc [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-328.html" target="_blank">Mal/Behav-328<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=3cf01af5-2133-4d82-938c-0eb117eac121&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\MingSoft</li>
+<li>%CommonPrograms%\MING Network Spy</li>
+<li>%Temp%\is-ALURO.tmp</li>
+<li>%Temp%\is-KTFEC.tmp</li>
+<li>%Temp%\nsjB.tmp</li>
+<li>[pathname with a string SHARE]\Borland Shared</li>
+<li>%ProgramFiles%\MING Network Spy</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Setup.exe.html" target="_blank">Setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">setup.tmp</td><td class="cell_1">%Temp%\is-aluro.tmp\setup.tmp</td><td class="cell_2">741,376 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/WinPcap_4_0_2.exe.html" target="_blank">WinPcap_4_0_2.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\is-ktfec.tmp\<a href="http://www.threatexpert.com/files/winpcap_4_0_2.exe.html" target="_blank">winpcap_4_0_2.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">729,088 bytes</td></tr>
+<tr><td class="cell_1">Setup.tmp</td><td class="cell_1">%Temp%\is-LP1K1.tmp\Setup.tmp</td><td class="cell_2">741,376 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Internet Explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Programs%\startup\<a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\installdir\<a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{5460C4DF-B266-909E-CB58-E32B79832EB2}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MING Network Spy_is1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS\PARADOX</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS\PARADOX\INIT</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS\PARADOX\TABLE CREATE</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\DATE</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\NUMBER</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\TIME</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\INIT</li>
+<li>HKEY_CURRENT_USER\Software\((Mutex))</li>
+<li>HKEY_CURRENT_USER\Software\FakeMessage</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{5460C4DF-B266-909E-CB58-E32B79832EB2}]</li><ul>
+<li>StubPath = "%Windir%\InstallDir\Server.exe restart"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>HKLM = "%Windir%\InstallDir\Server.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MING Network Spy_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.2.2"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\MING Network Spy"</li>
+<li>InstallLocation = "%ProgramFiles%\MING Network Spy\"</li>
+<li>Inno Setup: Icon Group = "MING Network Spy"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = "winpcap,desktopicon"</li>
+<li>Inno Setup: Deselected Tasks = ""</li>
+<li>DisplayName = "MING Network Spy 3.5"</li>
+<li>UninstallString = ""%ProgramFiles%\MING Network Spy\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\MING Network Spy\unins000.exe" /SILENT"</li>
+<li>Publisher = "MING Software, Inc."</li>
+<li>URLInfoAbout = "http://www.mingsoft.com/"</li>
+<li>HelpLink = "http://www.mingsoft.com/"</li>
+<li>URLUpdateInfo = "http://www.mingsoft.com/"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20151129"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS\PARADOX\TABLE CREATE]</li><ul>
+<li>LEVEL = "7"</li>
+<li>BLOCK SIZE = "2048"</li>
+<li>FILL FACTOR = "95"</li>
+<li>STRICTINTEGRTY = "TRUE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\DRIVERS\PARADOX\INIT]</li><ul>
+<li>VERSION = "4.0"</li>
+<li>TYPE = "FILE"</li>
+<li>LANGDRIVER = "china"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\TIME]</li><ul>
+<li>TWELVEHOUR = "TRUE"</li>
+<li>AMSTRING = "AM"</li>
+<li>PMSTRING = "PM"</li>
+<li>SECONDS = "TRUE"</li>
+<li>MILSECONDS = "FALSE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\NUMBER]</li><ul>
+<li>DECIMALSEPARATOR = "."</li>
+<li>THOUSANDSEPARATOR = ","</li>
+<li>DECIMALDIGITS = "2"</li>
+<li>LEADINGZERON = "TRUE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\FORMATS\DATE]</li><ul>
+<li>SEPARATOR = "/"</li>
+<li>MODE = "0"</li>
+<li>FOURDIGITYEAR = "FALSE"</li>
+<li>YEARBIASED = "TRUE"</li>
+<li>LEADINGZEROM = "FALSE"</li>
+<li>LEADINGZEROD = "FALSE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\SYSTEM\INIT]</li><ul>
+<li>VERSION = "4.0"</li>
+<li>LOCAL SHARE = "FALSE"</li>
+<li>MINBUFSIZE = "128"</li>
+<li>MAXBUFSIZE = "2048"</li>
+<li>LANGDRIVER = "china"</li>
+<li>MAXFILEHANDLES = "48"</li>
+<li>SYSFLAGS = "0"</li>
+<li>LOW MEMORY USAGE LIMIT = "32"</li>
+<li>AUTO ODBC = "FALSE"</li>
+<li>DEFAULT DRIVER = "PARADOX"</li>
+<li>MEMSIZE = "16"</li>
+<li>SHAREDMEMSIZE = "2048"</li>
+<li>SHAREDMEMLOCATION = ""</li>
+<li>DATA REPOSITORY = ""</li>
+<li>SQLQRYMODE = ""</li>
+<li>MTS POOLING = "FALSE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine]</li><ul>
+<li>DLLPATH = [pathname with a string SHARE]\BDE"</li>
+<li>USECOUNT = "10"</li>
+<li>CONFIGFILE01 = [pathname with a string SHARE]\IDAPI32.CFG"</li>
+<li>RESOURCE = "0009"</li>
+<li>SAVECONFIG = "WIN32"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>HKCU = "%Windir%\InstallDir\Server.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\((Mutex))]</li><ul>
+<li>ServerStarted = "11/29/2015 5:11:40 AM"</li>
+<li>InstalledServer = "%Windir%\InstallDir\Server.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\FakeMessage]</li><ul>
+<li>FakeMessage = "OK"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>XTREMEUPDATE</li>
+<li>((Mutex))</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://alikemo.no-ip.org:82/1234567890.functions</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\Internet Explorer\iexplore.exe</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Troj/Zegost-AC, Backdoor:Win32/Farfli.K, Trojan-Dropper.Win32.Zegost">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Troj/Zegost-AC, Backdoor:Win32/Farfli.K, Trojan-Dropper.Win32.Zegost</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 May 2016, 01:56:16</li>
+<li>Processing time: 5 min 22 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA801758AB4CDB81EEE24D574AE146A60</li>
+<li>File SHA-1: 0x126EB4023811A071FBC8787802395E1691D7ABEA</li>
+<li>Filesize: 131,584 bytes</li>
+<li>Alias:</li>
+<ul><li>Troj/Zegost-AC [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-farfli-k.html" target="_blank">Backdoor:Win32/Farfli.K<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Trojan-Dropper.Win32.Zegost [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">139,264 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">catwant.dll</td><td class="cell_1">%System%\catwant.dll</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x810000 - 0x832000</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">lminhosts</td><td class="cell_1">UDP/IP NetBIOS Helper</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "lminhosts"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS\0000]</li><ul>
+<li>Service = "lminhosts"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "UDP/IP NetBIOS Helper"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_LMINHOSTS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Enum]</li><ul>
+<li>0 = "Root\LEGACY_LMINHOSTS\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts\Parameters]</li><ul>
+<li>ServiceDll = "%System%\catwant.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lminhosts]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "UDP/IP NetBIOS Helper"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?? UDP/IP (NetBT) ??????? NetBIOS ????????????? NetBIOS ??????????????????Ã»???????????????????Â¼????????????????Ã£???????????????Ã¡????????????Ã£????????????????????%System%\catwant.dll"</li>
+<li>ConnectGroup = "??????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "lminhosts"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS\0000]</li><ul>
+<li>Service = "lminhosts"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "UDP/IP NetBIOS Helper"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_LMINHOSTS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Enum]</li><ul>
+<li>0 = "Root\LEGACY_LMINHOSTS\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts\Parameters]</li><ul>
+<li>ServiceDll = "%System%\catwant.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lminhosts]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "UDP/IP NetBIOS Helper"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?? UDP/IP (NetBT) ??????? NetBIOS ????????????? NetBIOS ??????????????????Ã»???????????????????Â¼????????????????Ã£???????????????Ã¡????????????Ã£????????????????????%System%\catwant.dll"</li>
+<li>ConnectGroup = "??????"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost]</li><ul>
+<li>netsvcs = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>222.217.3.73</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">222.217.3.73<td class="cell_2">8899</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8899:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74E5 0100 00AC 0200 0078 9C8D | Gh0st........x..
+00000010 | 524F 4814 7114 FE46 D275 C70E 5121 DB6D | ROH.q..F.u..Q!.m
+00000020 | 3A04 9D62 5D58 086F E125 D16A 25F2 EF2A | :..b]X.o.%.j%..*
+00000030 | 2BB6 62B8 8BFE 36CD 0E3F D8DD D3EC A1C3 | +.b...6..?......
+00000040 | EE21 F010 41EA 504B 8144 C21C 15ED B0C4 | .!..A.PK.D......
+00000050 | 9282 B179 F018 9128 4AE0 2DC1 BE37 A320 | ...y...(J.-..7.
+00000060 | 42D0 8337 EFFD DE7C EF9B F7BE DF8C 1AC0 | B..7...|........
+00000070 | 2B00 F574 A6B8 6902 758C 0F93 9967 4F46 | +..t..i.u....gOF
+00000080 | 9256 6C78 64DC 8AE0 8CAD 012B AB8C CB28 | .Vlxd......+...(
+00000090 | 3C88 A273 C846 85A7 6D12 1CD3 4E51 5B86 | <..s.F..m...NQ[.
+000000A0 | 1F03 644D D797 74EB B5B2 0282 5E2D 7160 | ..dM..t.....^-q`
+000000B0 | 6281 7DB1 4D13 1DAC A7FA C961 F8DF 95B6 | b.}.M......a....
+000000C0 | 06F8 390C 036E 1390 65D6 3691 9E9C 9E4A | ..9..n..e.6....J
+000000D0 | 66EE 0FA7 93F8 3F53 97F8 F8FC A1B2 EED6 | f.....?S........
+000000E0 | BEEF FC0B D4DD 1EB3 5A6E 8561 719E DD31 | ........Zn.aq..1
+000000F0 | 47DD 995F 9B69 917A 635E 8704 1006 8E8E | G.._.i.zc^......
+00000100 | 5721 8BFD 0900 5F97 DCB9 F59A E5F5 5E19 | W!...._.......^.
+00000110 | 7254 35EE A8D0 BE89 BBB6 89B1 BE28 56B8 | rT5..........(V.
+00000120 | 9358 6AC0 C6CB 2E47 C98E 207C 838B C98E | .Xj....G.. |....
+00000130 | A250 1D07 DB63 FD82 D057 F7C2 1B6F BE7C | .P...c...W...o.|
+00000140 | 8CB8 B5DA 261C 75DA 2F71 891C 4014 9140 | ....&.u./q..@..@
+00000150 | 495F 66F6 2B18 F5CE A2FB 0BEF 1D79 076D | I_f.+........y.m
+00000160 | 84F6 8BFA 3631 A2BF 60DF 3794 F42E 1D47 | ....61..`.7....G
+00000170 | 7914 4EF6 FC6D 647D 71CF 58AA CFC6 E153 | y.N..md}q.X....S
+00000180 | 785C 9A3E 1BE7 3DA8 B72A D7E3 28E1 7ACE | x\.>..=..*..(.z.
+00000190 | B8F8 C89F A997 FA88 9E55 9E7F D0A5 FFD3 | .........U......
+000001A0 | EB9C 9638 DD94 D7EE 395D 3BE3 FE7C 15DE | ...8....9];..|..
+000001B0 | 7DE2 C645 8438 6717 F377 81A0 F73F CC37 | }..E.8g..w...?.7
+000001C0 | 97D5 63D6 66BF 99DE AE09 E225 5EE5 777E | ..c.f......%^.w~
+000001D0 | 5E2F AB83 ADA2 EEBD E7A8 2267 2E9C CCFD | ^/........"g....
+000001E0 | 1712 EEAC 5D                            | ....]
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Wapomi!gen1, PE_FUJACKS.EG-O, Mal/Mdrop-Y, Trojan-Dropper.Win32.Small">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Wapomi!gen1, PE_FUJACKS.EG-O, Mal/Mdrop-Y, Trojan-Dropper.Win32.Small</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 October 2015, 18:56:25</li>
+<li>Processing time: 6 min 42 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x765B87668B56FCA8AD4A739EF8364FA3</li>
+<li>File SHA-1: 0x8B5238A8D2D438006CEA2515FB2972D85AA5EE4E</li>
+<li>Filesize: 253,952 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>W32.Wapomi!gen1 [Symantec]</li>
+<li>PE_FUJACKS.EG-O [Trend Micro]</li>
+<li>Mal/Mdrop-Y [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-dropper-win32-small.html" target="_blank">Trojan-Dropper.Win32.Small<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>ASPack [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/trojan-dropper-agent.html" target="_blank">Trojan-Dropper.Agent<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Trojan-Dropper.Agent attempts to drop a malicious file and run it on the compromised computer.</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>c:\contacts.html</li>
+<li>c:\Inetpub\wwwroot\index.html</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\msnsusii.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\WinPcap\Uninstall.exe</li>
+<li>%System%\CatRoot2\dberr.txt</li>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">315,392 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">dmutilio.dll</td><td class="cell_1">%System%\dmutilio.dll</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x2760000 - 0x27BA000</td></tr>
+</table></p>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">AppMgmt</td><td class="cell_1">Application Management</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">helpsvc</td><td class="cell_1">Help and Support</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">Schedule</td><td class="cell_1">Task Scheduler</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">xmlprov</td><td class="cell_1">Network Provisioning Service</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UPnP Device Host\HTTP Server\VROOTS\/upnphost</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UPnP Device Host\Devices</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UPnP Device Host\Providers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360hotfix.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360rp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360rpt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360safe.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360safebox.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360sd.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360se.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360SoftMgrSvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360speedld.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360tray.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\afwServ.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ast.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AvastUI.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avcenter.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avfwsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avguard.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avmailc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avshadow.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwebgrd.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bdagent.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CCenter.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccSvcHst.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dwengine.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\egui.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ekrn.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FilMsg.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kavstart.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kissvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kmailmon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpfw32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpfwsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpopserver.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\krnl360svc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ksmgui.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ksmsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kswebshield.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVMonXP.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVMonXP.kxp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVSrvXP.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kwatch.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kwstray.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxedefend.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxesapp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxescore.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxeserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxetray.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\livesrv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcagent.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcmscsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McNASvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcods.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McProxy.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McSACore.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcshield.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcsysmon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcvsshld.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MpfSrv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPMon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC1.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC2.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msksrver.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\qutmserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RavMonD.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RavTask.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RsAgent.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\rsnetsvr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RsTray.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\safeboxTray.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ScanFrm.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sched.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\seccenter.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SfCtlCom.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spideragent.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SpIDerMl.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spidernt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spiderui.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TMBMSRV.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TmProxy.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Twister.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\UfSeAgnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vsserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\zhudongfangyu.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\???????.exe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_APPMGMT</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_APPMGMT\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_APPMGMT\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_UPNPHOST</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_UPNPHOST\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_UPNPHOST\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WMDMPMSN</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WMDMPMSN\0000</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UPnP Device Host\HTTP Server\VROOTS\/upnphost]</li><ul>
+<li>(Default) = "%Profiles%\LocalService\Application Data\Microsoft\UPnP Device Host\upnphost\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360hotfix.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360rp.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360rpt.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360safe.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360safebox.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360sd.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360se.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360SoftMgrSvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360speedld.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360tray.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\afwServ.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ast.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AvastUI.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avcenter.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avfwsvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgnt.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avguard.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avmailc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avshadow.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwebgrd.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bdagent.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CCenter.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccSvcHst.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dwengine.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\egui.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ekrn.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FilMsg.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kavstart.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kissvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kmailmon.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpfw32.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpfwsvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kpopserver.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\krnl360svc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ksmgui.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ksmsvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kswebshield.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVMonXP.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVMonXP.kxp]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\KVSrvXP.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kwatch.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kwstray.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxedefend.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxesapp.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxescore.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxeserv.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\kxetray.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\livesrv.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcagent.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcmscsvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McNASvc.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcods.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McProxy.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\McSACore.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Mcshield.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcsysmon.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mcvsshld.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MpfSrv.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPMon.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC1.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MPSVC2.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msksrver.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\qutmserv.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RavMonD.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RavTask.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RsAgent.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\rsnetsvr.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\RsTray.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\safeboxTray.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ScanFrm.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sched.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\seccenter.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SfCtlCom.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spideragent.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SpIDerMl.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spidernt.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spiderui.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TMBMSRV.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TmProxy.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Twister.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\UfSeAgnt.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vsserv.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\zhudongfangyu.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\???????.exe]</li><ul>
+<li>Debugger = "ntsd -d"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "6to4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000]</li><ul>
+<li>Service = "6to4"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "6to4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_APPMGMT\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "AppMgmt"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_APPMGMT\0000]</li><ul>
+<li>Service = "AppMgmt"</li>
+<li>Legacy = 0x00000001</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\0048F8D37B153F6EA2798C323EF4F318A5624A9E]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\00EA522C8A9C06AA3ECCE0B4FA6CDC21D92E8099]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\0483ED3399AC3608058722EDBC5E4600E3BEF9D7]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\049811056AFE9FD0F5BE01685AACE6A5D1C4454C]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\0B77BEBBCB7AA24705DECC0FBD6A02FC7ABD9B52]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\1331F48A5DA8E01DAACA1BB0C17044ACFEF755BB]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\1F55E8839BAC30728BE7108EDE7B0BB0D3298224]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\209900B63D955728140CD13622D8C687A4EB0085]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\216B2A29E62A00CE820146D8244141B92511B279]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\23E594945195F2414803B4D564D2A3A3F5D88B8C]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\24A40A1F573643A67F0A4B0749F6A22BF28ABB6B]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\24BA6D6C8A5B5837A48DB5FAE919EA675C94D217]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\273EE12457FDC4F90C55E82B56167F62F532E547]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\284F55C41A1A7A3F8328D4C262FB376ED6096F24]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\2F173F7DE99667AFA57AF80AA2D1B12FAC830338]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\317A2AD07F2B335EF5A1C34E4B57E8B7D8F1FCA6]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\36863563FD5128C7BEA6F005CFE9B43668086CCE]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\394FF6850B06BE52E51856CC10E180E882B385CC]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\3F85F2BB4A62B0B58BE1614ABB0D4631B4BEF8BA]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4072BA31FEC351438480F62E6CB95508461EAB2F]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\40E78C1D523D1CD9954FAC1A1AB3BD3CBAA15BFC]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\43DDB1FFF3B49B73831407F6BC8B975023D07C50]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\43F9B110D5BAFD48225231B0D0082B372FEF9A54]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4463C531D7CCC1006794612BB656D3BF8257846F]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\47AFB915CDA26D82467B97FA42914468726138DD]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4B421F7515F6AE8A6ECEF97F6982A400A4D9224E]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4BA7B9DDD68788E12FF852E1A024204BF286A8F6]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4C95A9902ABE0777CED18D6ACCC3372D2748381E]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4EF2E6670AC9B5091FE06BE0E5483EAAD6BA32D9]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\4EFCED9C6BDD0C985CA3C7D253063C5BE6FC620C]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\CA\Certificates\FEE449EE0E3965A5246F000E87FDE2A065FD89D4]</li><ul>
+<li>Blob = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cache = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mapping:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+127.0.0.1       localhost
+</textarea></tr></td></table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.baidu.com</li>
+<li>80.ns098.com</li>
+<li>80.ns768.com</li>
+<li>80.nsb927.com</li>
+<li>80.ns792.com</li>
+<li>80.ns529.com</li>
+<li>80.nsvjn987.com</li>
+<li>1.nsb927.com</li>
+<li>80.nsvhn987.com</li>
+<li>80.ns2275ab.com</li>
+<li>router.bitcomet.net</li>
+<li>65.6.163.4</li>
+<li>89.123.188.11</li>
+<li>router.bitcomet.com</li>
+<li>90.52.108.231</li>
+<li>85.11.66.73</li>
+<li>router.utorrent.com</li>
+<li>72.192.20.73</li>
+<li>router.bittorrent.com</li>
+<li>219.77.13.11</li>
+<li>90.201.190.208</li>
+<li>58.63.39.204</li>
+<li>77.66.224.30</li>
+<li>62.65.208.112</li>
+<li>vbnet.mvps.org</li>
+<li>127.0.0.2</li>
+<li>127.0.0.3</li>
+<li>127.0.0.4</li>
+<li>127.0.0.5</li>
+<li>127.0.0.6</li>
+<li>127.0.0.7</li>
+<li>127.0.0.8</li>
+<li>127.0.0.9</li>
+<li>127.0.0.10</li>
+<li>127.0.0.11</li>
+<li>127.0.0.12</li>
+<li>127.0.0.13</li>
+<li>127.0.0.14</li>
+<li>127.0.0.15</li>
+<li>127.0.0.16</li>
+<li>127.0.0.17</li>
+<li>127.0.0.18</li>
+<li>127.0.0.19</li>
+<li>127.0.0.20</li>
+<li>127.0.0.21</li>
+<li>127.0.0.22</li>
+<li>127.0.0.23</li>
+<li>127.0.0.24</li>
+<li>127.0.0.25</li>
+<li>127.0.0.26</li>
+<li>127.0.0.27</li>
+<li>127.0.0.28</li>
+<li>127.0.0.29</li>
+<li>127.0.0.30</li>
+<li>127.0.0.31</li>
+<li>127.0.0.32</li>
+<li>127.0.0.33</li>
+<li>127.0.0.34</li>
+<li>127.0.0.35</li>
+<li>127.0.0.36</li>
+<li>127.0.0.37</li>
+<li>127.0.0.38</li>
+<li>127.0.0.39</li>
+<li>127.0.0.40</li>
+<li>127.0.0.41</li>
+<li>127.0.0.42</li>
+<li>127.0.0.43</li>
+<li>127.0.0.44</li>
+<li>127.0.0.45</li>
+<li>127.0.0.46</li>
+<li>127.0.0.47</li>
+<li>127.0.0.48</li>
+<li>127.0.0.49</li>
+<li>127.0.0.50</li>
+<li>127.0.0.51</li>
+<li>127.0.0.52</li>
+<li>127.0.0.53</li>
+<li>127.0.0.54</li>
+<li>127.0.0.55</li>
+<li>127.0.0.56</li>
+<li>127.0.0.57</li>
+<li>127.0.0.58</li>
+<li>127.0.0.59</li>
+<li>127.0.0.60</li>
+<li>127.0.0.61</li>
+<li>127.0.0.62</li>
+<li>127.0.0.63</li>
+<li>127.0.0.64</li>
+<li>127.0.0.65</li>
+<li>127.0.0.66</li>
+<li>127.0.0.67</li>
+<li>127.0.0.68</li>
+<li>127.0.0.69</li>
+<li>127.0.0.70</li>
+<li>127.0.0.71</li>
+<li>127.0.0.72</li>
+<li>127.0.0.73</li>
+<li>127.0.0.74</li>
+<li>127.0.0.75</li>
+<li>127.0.0.76</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">80.nsb927.com<td class="cell_2">1033</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">127.0.0.4</td><td class="cell_1">80</td><td class="cell_1">127.0.0.4</td><td class="cell_2">127.0.0.4</td></tr>
+<tr><td class="cell_1">127.0.0.6</td><td class="cell_1">80</td><td class="cell_1">127.0.0.6</td><td class="cell_2">127.0.0.6</td></tr>
+<tr><td class="cell_1">127.0.0.3</td><td class="cell_1">80</td><td class="cell_1">127.0.0.3</td><td class="cell_2">127.0.0.3</td></tr>
+<tr><td class="cell_1">127.0.0.5</td><td class="cell_1">80</td><td class="cell_1">127.0.0.5</td><td class="cell_2">127.0.0.5</td></tr>
+<tr><td class="cell_1">127.0.0.2</td><td class="cell_1">80</td><td class="cell_1">127.0.0.2</td><td class="cell_2">127.0.0.2</td></tr>
+<tr><td class="cell_1">127.0.0.7</td><td class="cell_1">80</td><td class="cell_1">127.0.0.7</td><td class="cell_2">127.0.0.7</td></tr>
+<tr><td class="cell_1">127.0.0.8</td><td class="cell_1">80</td><td class="cell_1">127.0.0.8</td><td class="cell_2">127.0.0.8</td></tr>
+<tr><td class="cell_1">127.0.0.9</td><td class="cell_1">80</td><td class="cell_1">127.0.0.9</td><td class="cell_2">127.0.0.9</td></tr>
+<tr><td class="cell_1">127.0.0.11</td><td class="cell_1">80</td><td class="cell_1">127.0.0.11</td><td class="cell_2">127.0.0.11</td></tr>
+<tr><td class="cell_1">127.0.0.10</td><td class="cell_1">80</td><td class="cell_1">127.0.0.10</td><td class="cell_2">127.0.0.10</td></tr>
+<tr><td class="cell_1">127.0.0.12</td><td class="cell_1">80</td><td class="cell_1">127.0.0.12</td><td class="cell_2">127.0.0.12</td></tr>
+<tr><td class="cell_1">127.0.0.13</td><td class="cell_1">80</td><td class="cell_1">127.0.0.13</td><td class="cell_2">127.0.0.13</td></tr>
+<tr><td class="cell_1">127.0.0.14</td><td class="cell_1">80</td><td class="cell_1">127.0.0.14</td><td class="cell_2">127.0.0.14</td></tr>
+<tr><td class="cell_1">127.0.0.15</td><td class="cell_1">80</td><td class="cell_1">127.0.0.15</td><td class="cell_2">127.0.0.15</td></tr>
+<tr><td class="cell_1">127.0.0.16</td><td class="cell_1">80</td><td class="cell_1">127.0.0.16</td><td class="cell_2">127.0.0.16</td></tr>
+<tr><td class="cell_1">127.0.0.17</td><td class="cell_1">80</td><td class="cell_1">127.0.0.17</td><td class="cell_2">127.0.0.17</td></tr>
+<tr><td class="cell_1">127.0.0.18</td><td class="cell_1">80</td><td class="cell_1">127.0.0.18</td><td class="cell_2">127.0.0.18</td></tr>
+<tr><td class="cell_1">127.0.0.19</td><td class="cell_1">80</td><td class="cell_1">127.0.0.19</td><td class="cell_2">127.0.0.19</td></tr>
+<tr><td class="cell_1">127.0.0.20</td><td class="cell_1">80</td><td class="cell_1">127.0.0.20</td><td class="cell_2">127.0.0.20</td></tr>
+<tr><td class="cell_1">127.0.0.22</td><td class="cell_1">80</td><td class="cell_1">127.0.0.22</td><td class="cell_2">127.0.0.22</td></tr>
+<tr><td class="cell_1">127.0.0.21</td><td class="cell_1">80</td><td class="cell_1">127.0.0.21</td><td class="cell_2">127.0.0.21</td></tr>
+<tr><td class="cell_1">127.0.0.23</td><td class="cell_1">80</td><td class="cell_1">127.0.0.23</td><td class="cell_2">127.0.0.23</td></tr>
+<tr><td class="cell_1">127.0.0.24</td><td class="cell_1">80</td><td class="cell_1">127.0.0.24</td><td class="cell_2">127.0.0.24</td></tr>
+<tr><td class="cell_1">127.0.0.25</td><td class="cell_1">80</td><td class="cell_1">127.0.0.25</td><td class="cell_2">127.0.0.25</td></tr>
+<tr><td class="cell_1">127.0.0.26</td><td class="cell_1">80</td><td class="cell_1">127.0.0.26</td><td class="cell_2">127.0.0.26</td></tr>
+<tr><td class="cell_1">127.0.0.27</td><td class="cell_1">80</td><td class="cell_1">127.0.0.27</td><td class="cell_2">127.0.0.27</td></tr>
+<tr><td class="cell_1">127.0.0.28</td><td class="cell_1">80</td><td class="cell_1">127.0.0.28</td><td class="cell_2">127.0.0.28</td></tr>
+<tr><td class="cell_1">127.0.0.29</td><td class="cell_1">80</td><td class="cell_1">127.0.0.29</td><td class="cell_2">127.0.0.29</td></tr>
+<tr><td class="cell_1">127.0.0.30</td><td class="cell_1">80</td><td class="cell_1">127.0.0.30</td><td class="cell_2">127.0.0.30</td></tr>
+<tr><td class="cell_1">127.0.0.32</td><td class="cell_1">80</td><td class="cell_1">127.0.0.32</td><td class="cell_2">127.0.0.32</td></tr>
+<tr><td class="cell_1">127.0.0.31</td><td class="cell_1">80</td><td class="cell_1">127.0.0.31</td><td class="cell_2">127.0.0.31</td></tr>
+<tr><td class="cell_1">127.0.0.33</td><td class="cell_1">80</td><td class="cell_1">127.0.0.33</td><td class="cell_2">127.0.0.33</td></tr>
+<tr><td class="cell_1">127.0.0.34</td><td class="cell_1">80</td><td class="cell_1">127.0.0.34</td><td class="cell_2">127.0.0.34</td></tr>
+<tr><td class="cell_1">127.0.0.35</td><td class="cell_1">80</td><td class="cell_1">127.0.0.35</td><td class="cell_2">127.0.0.35</td></tr>
+<tr><td class="cell_1">127.0.0.39</td><td class="cell_1">80</td><td class="cell_1">127.0.0.39</td><td class="cell_2">127.0.0.39</td></tr>
+<tr><td class="cell_1">127.0.0.36</td><td class="cell_1">80</td><td class="cell_1">127.0.0.36</td><td class="cell_2">127.0.0.36</td></tr>
+<tr><td class="cell_1">127.0.0.38</td><td class="cell_1">80</td><td class="cell_1">127.0.0.38</td><td class="cell_2">127.0.0.38</td></tr>
+<tr><td class="cell_1">127.0.0.37</td><td class="cell_1">80</td><td class="cell_1">127.0.0.37</td><td class="cell_2">127.0.0.37</td></tr>
+<tr><td class="cell_1">127.0.0.40</td><td class="cell_1">80</td><td class="cell_1">127.0.0.40</td><td class="cell_2">127.0.0.40</td></tr>
+<tr><td class="cell_1">127.0.0.41</td><td class="cell_1">80</td><td class="cell_1">127.0.0.41</td><td class="cell_2">127.0.0.41</td></tr>
+<tr><td class="cell_1">127.0.0.42</td><td class="cell_1">80</td><td class="cell_1">127.0.0.42</td><td class="cell_2">127.0.0.42</td></tr>
+<tr><td class="cell_1">127.0.0.44</td><td class="cell_1">80</td><td class="cell_1">127.0.0.44</td><td class="cell_2">127.0.0.44</td></tr>
+<tr><td class="cell_1">127.0.0.43</td><td class="cell_1">80</td><td class="cell_1">127.0.0.43</td><td class="cell_2">127.0.0.43</td></tr>
+<tr><td class="cell_1">127.0.0.45</td><td class="cell_1">80</td><td class="cell_1">127.0.0.45</td><td class="cell_2">127.0.0.45</td></tr>
+<tr><td class="cell_1">127.0.0.47</td><td class="cell_1">80</td><td class="cell_1">127.0.0.47</td><td class="cell_2">127.0.0.47</td></tr>
+<tr><td class="cell_1">127.0.0.46</td><td class="cell_1">80</td><td class="cell_1">127.0.0.46</td><td class="cell_2">127.0.0.46</td></tr>
+<tr><td class="cell_1">127.0.0.51</td><td class="cell_1">80</td><td class="cell_1">127.0.0.51</td><td class="cell_2">127.0.0.51</td></tr>
+<tr><td class="cell_1">127.0.0.52</td><td class="cell_1">80</td><td class="cell_1">127.0.0.52</td><td class="cell_2">127.0.0.52</td></tr>
+<tr><td class="cell_1">127.0.0.54</td><td class="cell_1">80</td><td class="cell_1">127.0.0.54</td><td class="cell_2">127.0.0.54</td></tr>
+<tr><td class="cell_1">127.0.0.55</td><td class="cell_1">80</td><td class="cell_1">127.0.0.55</td><td class="cell_2">127.0.0.55</td></tr>
+<tr><td class="cell_1">127.0.0.56</td><td class="cell_1">80</td><td class="cell_1">127.0.0.56</td><td class="cell_2">127.0.0.56</td></tr>
+<tr><td class="cell_1">127.0.0.57</td><td class="cell_1">80</td><td class="cell_1">127.0.0.57</td><td class="cell_2">127.0.0.57</td></tr>
+<tr><td class="cell_1">127.0.0.48</td><td class="cell_1">80</td><td class="cell_1">127.0.0.48</td><td class="cell_2">127.0.0.48</td></tr>
+<tr><td class="cell_1">127.0.0.62</td><td class="cell_1">80</td><td class="cell_1">127.0.0.62</td><td class="cell_2">127.0.0.62</td></tr>
+<tr><td class="cell_1">127.0.0.60</td><td class="cell_1">80</td><td class="cell_1">127.0.0.60</td><td class="cell_2">127.0.0.60</td></tr>
+<tr><td class="cell_1">127.0.0.61</td><td class="cell_1">80</td><td class="cell_1">127.0.0.61</td><td class="cell_2">127.0.0.61</td></tr>
+<tr><td class="cell_1">127.0.0.53</td><td class="cell_1">80</td><td class="cell_1">127.0.0.53</td><td class="cell_2">127.0.0.53</td></tr>
+<tr><td class="cell_1">127.0.0.63</td><td class="cell_1">80</td><td class="cell_1">127.0.0.63</td><td class="cell_2">127.0.0.63</td></tr>
+<tr><td class="cell_1">127.0.0.64</td><td class="cell_1">80</td><td class="cell_1">127.0.0.64</td><td class="cell_2">127.0.0.64</td></tr>
+<tr><td class="cell_1">127.0.0.65</td><td class="cell_1">80</td><td class="cell_1">127.0.0.65</td><td class="cell_2">127.0.0.65</td></tr>
+<tr><td class="cell_1">127.0.0.66</td><td class="cell_1">80</td><td class="cell_1">127.0.0.66</td><td class="cell_2">127.0.0.66</td></tr>
+<tr><td class="cell_1">127.0.0.69</td><td class="cell_1">80</td><td class="cell_1">127.0.0.69</td><td class="cell_2">127.0.0.69</td></tr>
+<tr><td class="cell_1">127.0.0.72</td><td class="cell_1">80</td><td class="cell_1">127.0.0.72</td><td class="cell_2">127.0.0.72</td></tr>
+<tr><td class="cell_1">127.0.0.70</td><td class="cell_1">80</td><td class="cell_1">127.0.0.70</td><td class="cell_2">127.0.0.70</td></tr>
+<tr><td class="cell_1">127.0.0.71</td><td class="cell_1">80</td><td class="cell_1">127.0.0.71</td><td class="cell_2">127.0.0.71</td></tr>
+<tr><td class="cell_1">127.0.0.49</td><td class="cell_1">80</td><td class="cell_1">127.0.0.49</td><td class="cell_2">127.0.0.49</td></tr>
+<tr><td class="cell_1">127.0.0.73</td><td class="cell_1">80</td><td class="cell_1">127.0.0.73</td><td class="cell_2">127.0.0.73</td></tr>
+<tr><td class="cell_1">127.0.0.74</td><td class="cell_1">80</td><td class="cell_1">127.0.0.74</td><td class="cell_2">127.0.0.74</td></tr>
+<tr><td class="cell_1">127.0.0.75</td><td class="cell_1">80</td><td class="cell_1">127.0.0.75</td><td class="cell_2">127.0.0.75</td></tr>
+<tr><td class="cell_1">127.0.0.58</td><td class="cell_1">80</td><td class="cell_1">127.0.0.58</td><td class="cell_2">127.0.0.58</td></tr>
+<tr><td class="cell_1">127.0.0.77</td><td class="cell_1">80</td><td class="cell_1">127.0.0.77</td><td class="cell_2">127.0.0.77</td></tr>
+<tr><td class="cell_1">127.0.0.68</td><td class="cell_1">80</td><td class="cell_1">127.0.0.68</td><td class="cell_2">127.0.0.68</td></tr>
+<tr><td class="cell_1">127.0.0.78</td><td class="cell_1">80</td><td class="cell_1">127.0.0.78</td><td class="cell_2">127.0.0.78</td></tr>
+<tr><td class="cell_1">127.0.0.79</td><td class="cell_1">80</td><td class="cell_1">127.0.0.79</td><td class="cell_2">127.0.0.79</td></tr>
+<tr><td class="cell_1">127.0.0.80</td><td class="cell_1">80</td><td class="cell_1">127.0.0.80</td><td class="cell_2">127.0.0.80</td></tr>
+<tr><td class="cell_1">127.0.0.81</td><td class="cell_1">80</td><td class="cell_1">127.0.0.81</td><td class="cell_2">127.0.0.81</td></tr>
+<tr><td class="cell_1">127.0.0.82</td><td class="cell_1">80</td><td class="cell_1">127.0.0.82</td><td class="cell_2">127.0.0.82</td></tr>
+<tr><td class="cell_1">127.0.0.83</td><td class="cell_1">80</td><td class="cell_1">127.0.0.83</td><td class="cell_2">127.0.0.83</td></tr>
+<tr><td class="cell_1">127.0.0.84</td><td class="cell_1">80</td><td class="cell_1">127.0.0.84</td><td class="cell_2">127.0.0.84</td></tr>
+<tr><td class="cell_1">127.0.0.85</td><td class="cell_1">80</td><td class="cell_1">127.0.0.85</td><td class="cell_2">127.0.0.85</td></tr>
+<tr><td class="cell_1">127.0.0.86</td><td class="cell_1">80</td><td class="cell_1">127.0.0.86</td><td class="cell_2">127.0.0.86</td></tr>
+<tr><td class="cell_1">127.0.0.88</td><td class="cell_1">80</td><td class="cell_1">127.0.0.88</td><td class="cell_2">127.0.0.88</td></tr>
+<tr><td class="cell_1">127.0.0.87</td><td class="cell_1">80</td><td class="cell_1">127.0.0.87</td><td class="cell_2">127.0.0.87</td></tr>
+<tr><td class="cell_1">127.0.0.89</td><td class="cell_1">80</td><td class="cell_1">127.0.0.89</td><td class="cell_2">127.0.0.89</td></tr>
+<tr><td class="cell_1">127.0.0.93</td><td class="cell_1">80</td><td class="cell_1">127.0.0.93</td><td class="cell_2">127.0.0.93</td></tr>
+<tr><td class="cell_1">127.0.0.92</td><td class="cell_1">80</td><td class="cell_1">127.0.0.92</td><td class="cell_2">127.0.0.92</td></tr>
+<tr><td class="cell_1">127.0.0.59</td><td class="cell_1">80</td><td class="cell_1">127.0.0.59</td><td class="cell_2">127.0.0.59</td></tr>
+<tr><td class="cell_1">127.0.0.94</td><td class="cell_1">80</td><td class="cell_1">127.0.0.94</td><td class="cell_2">127.0.0.94</td></tr>
+<tr><td class="cell_1">127.0.0.97</td><td class="cell_1">80</td><td class="cell_1">127.0.0.97</td><td class="cell_2">127.0.0.97</td></tr>
+<tr><td class="cell_1">127.0.0.96</td><td class="cell_1">80</td><td class="cell_1">127.0.0.96</td><td class="cell_2">127.0.0.96</td></tr>
+<tr><td class="cell_1">127.0.0.95</td><td class="cell_1">80</td><td class="cell_1">127.0.0.95</td><td class="cell_2">127.0.0.95</td></tr>
+<tr><td class="cell_1">127.0.0.76</td><td class="cell_1">80</td><td class="cell_1">127.0.0.76</td><td class="cell_2">127.0.0.76</td></tr>
+<tr><td class="cell_1">127.0.0.98</td><td class="cell_1">80</td><td class="cell_1">127.0.0.98</td><td class="cell_2">127.0.0.98</td></tr>
+<tr><td class="cell_1">127.0.0.99</td><td class="cell_1">80</td><td class="cell_1">127.0.0.99</td><td class="cell_2">127.0.0.99</td></tr>
+<tr><td class="cell_1">127.0.0.101</td><td class="cell_1">80</td><td class="cell_1">127.0.0.101</td><td class="cell_2">127.0.0.101</td></tr>
+<tr><td class="cell_1">127.0.0.100</td><td class="cell_1">80</td><td class="cell_1">127.0.0.100</td><td class="cell_2">127.0.0.100</td></tr>
+<tr><td class="cell_1">127.0.0.102</td><td class="cell_1">80</td><td class="cell_1">127.0.0.102</td><td class="cell_2">127.0.0.102</td></tr>
+<tr><td class="cell_1">127.0.0.103</td><td class="cell_1">80</td><td class="cell_1">127.0.0.103</td><td class="cell_2">127.0.0.103</td></tr>
+<tr><td class="cell_1">127.0.0.105</td><td class="cell_1">80</td><td class="cell_1">127.0.0.105</td><td class="cell_2">127.0.0.105</td></tr>
+<tr><td class="cell_1">127.0.0.107</td><td class="cell_1">80</td><td class="cell_1">127.0.0.107</td><td class="cell_2">127.0.0.107</td></tr>
+<tr><td class="cell_1">127.0.0.104</td><td class="cell_1">80</td><td class="cell_1">127.0.0.104</td><td class="cell_2">127.0.0.104</td></tr>
+</table></p>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://vbnet.mvps.org/resources/tools/getpublicip.shtml</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://vip.ere5453.com:6969/announce?info_hash=%FAz%22%3C%AA%9F%BE%19%0A%19%A5nl%5E%9A%5F%0E%C7a%B5&amp;peer_id=%2DDL1000%2D%5Fyl5Wz%28PNiC7&amp;port=9371&amp;uploaded=16384&amp;downloaded=0&amp;left=16384&amp;compact=1&amp;numwant=100&amp;no_peer_id=1</li>
+<li>http://www.ere5453.com:6969/announce?info_hash=%FAz%22%3C%AA%9F%BE%19%0A%19%A5nl%5E%9A%5F%0E%C7a%B5&amp;peer_id=%2DDL1000%2D%5Fyl5Wz%28PNiC7&amp;port=9371&amp;uploaded=16384&amp;downloaded=0&amp;left=16384&amp;event=started&amp;compact=1&amp;numwant=100&amp;no_peer_id=1</li>
+<li>http://www.ere5453.com:6969/announce?info_hash=%FAz%22%3C%AA%9F%BE%19%0A%19%A5nl%5E%9A%5F%0E%C7a%B5&amp;peer_id=%2DDL1000%2D%5Fyl5Wz%28PNiC7&amp;port=9371&amp;uploaded=16384&amp;downloaded=0&amp;left=16384&amp;compact=1&amp;numwant=100&amp;no_peer_id=1</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

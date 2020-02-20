@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Infostealer, Mal_Xed-8, Mal/Packer">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Infostealer, Mal_Xed-8, Mal/Packer</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 7 November 2015, 04:51:52</li>
+<li>Processing time: 5 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x56403B8CECF75BB3A8CD9792F4AAE9B8</li>
+<li>File SHA-1: 0x127BAF1204A8D67DB7D8AFDBC2A14B937AD4B778</li>
+<li>Filesize: 2,955,264 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/infostealer.html" target="_blank">Infostealer<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-xed-8.html" target="_blank">Mal_Xed-8<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-packer.html" target="_blank">Mal/Packer<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><em>packed with: </em>PE-Armor [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">4,096 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.aif</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.aifc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.mov</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.qt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.ra</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.ram</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.rm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\.rmm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\MIME</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\MIME\audio/aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\MIME\audio/x-aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\MIME\audio/x-pn-realaudio</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\EnablePlugin\MIME\video/quicktime</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2179C5D3-EBFF-11CF-B6FD-00AA00B4E220}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2179C5D3-EBFF-11CF-B6FD-00AA00B4E220}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.aif</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.aifc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.mov</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.qt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.ra</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.ram</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.rm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\.rmm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\MIME</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\MIME\audio/aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\MIME\audio/x-aiff</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\MIME\audio/x-pn-realaudio</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\EnablePlugin\MIME\video/quicktime</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C84-95DC-11D0-B7FC-B61140119C4A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C84-95DC-11D0-B7FC-B61140119C4A}\InprocServer32</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\msdxm.ocx, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2179C5D3-EBFF-11CF-B6FD-00AA00B4E220}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\msdxm.ocx, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\LocalServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Windows Media Player\mplayer2.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\msdxm.ocx, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\InProcServer32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx, 135"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C84-95DC-11D0-B7FC-B61140119C4A}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C84-95DC-11D0-B7FC-B61140119C4A}]</li><ul>
+<li>(Default) = "DiskManagement.PropertyPage"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{AEB84C80-95DC-11D0-B7FC-B61140119C4A}\1.0\0\win32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8A8-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8D8-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD897-BB45-11CF-9ABC-0080C7E7B78D}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>`NTP6lYuf(laaqF-Q9q."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{373FF7F4-EB8B-11CD-8820-08002B2F4F5A}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE3-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE5-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE7-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D93-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D96-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB955-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB956-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB957-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB958-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6027C2D4-FB28-11CD-8820-08002B2F4F5A}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{612A8628-0FB3-11CE-8747-524153480004}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{62823C20-41A3-11CE-9E8B-0020AF039CA3}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E6393-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E63A3-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA2-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA4-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ED94444-E5E8-101B-B9B5-444553540000}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\InProcServer32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AEB84C83-95DC-11D0-B7FC-B61140119C4A}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B66834C6-2E60-11CE-8748-524153480004}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>xuPisIgof(2r9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{AEB84C80-95DC-11D0-B7FC-B61140119C4A}\1.0\0\win32]</li><ul>
+<li>(Default) = "%System%\dmview.ocx"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05589FA1-C356-11CE-BF01-00AA0055595A}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2179C5D3-EBFF-11CF-B6FD-00AA00B4E220}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22D6F312-B0F6-11D0-94AB-0080C74C7E95}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD896-BB45-11CF-9ABC-0080C7E7B78D}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0AB5A3D0-E5B6-11D0-ABF5-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B1-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B3-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2A0B9D10-4B87-11D3-A97A-00104B365C9F}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{53BAD8C1-E718-11CF-893D-00A0C9054228}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AEB84C81-95DC-11D0-B7FC-B61140119C4A}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AEB84C82-95DC-11D0-B7FC-B61140119C4A}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A0-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A1-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A2-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A3-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A4-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7C3F5A5-88A3-11D0-ABCB-00A0C90FFFC0}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComDlg.CommonDialog]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComDlg.CommonDialog.1]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSWinsock.Winsock]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSWinsock.Winsock.1]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{00028C01-0000-0000-0000-000000000046}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}\6.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{20C62CAE-15DA-101B-B9A8-444553540000}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{248DD890-BB45-11CF-9ABC-0080C7E7B78D}\1.0]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{248DD890-BB45-11CF-9ABC-0080C7E7B78D}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{27395F88-0C0C-101B-A3C9-08002B2F49FB}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3B7C8863-D78F-101B-B9B5-04021C009402}\1.2\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{48E59290-9880-11CF-9754-00AA00C00908}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{5C8CED40-8909-11D0-9483-00A0C91110ED}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{5E9E78A0-531B-11CF-91F6-C2863C385E30}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{648A5603-2C6E-101B-82B6-000000000014}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{65E121D4-0C60-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{67397AA1-7FB1-11D0-B148-00A0C922E820}\6.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{6FBA474E-43AC-11CE-9A0E-00AA0062BB4C}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BDC217C8-ED16-11CD-956C-0000C04E4C0A}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{C1A8AF28-1257-101B-8FB0-0020AF039CA3}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{C932BA88-4374-101B-A56C-00AA003668DC}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{F0D2F211-CCB0-11D0-A316-00AA00688B10}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{F9043C88-F6F2-101A-A3C9-08002B2F49FB}\1.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{F9043C88-F6F2-101A-A3C9-08002B2F49FB}\1.2\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{FAEEE763-117E-101B-8933-08002B2F4F5A}\1.1\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>AMResourceMutex2</li>
+<li>VideoRenderer</li>
+<li>__PDH_PLA_MUTEX__</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

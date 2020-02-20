@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-031, Trojan.Win32.KillAV">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-031, Trojan.Win32.KillAV</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 May 2016, 21:58:54</li>
+<li>Processing time: 5 min 26 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0361316567DB39A6C5860297E70EABB9</li>
+<li>File SHA-1: 0xF2FC7586E182E5A502796A8434F21F7097622F45</li>
+<li>Filesize: 87,040 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-031.html" target="_blank">Mal/Behav-031<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-killav.html" target="_blank">Trojan.Win32.KillAV<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Al1veService.exe</td><td class="cell_1">%System%\al1veservice.exe</td><td class="cell_2">110,592 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">110,592 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Windows Te1t My Test 1.0</td><td class="cell_1">Windows Te1t My Test Server 1.0</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\Al1veService.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Windows Te1t My Test 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000]</li><ul>
+<li>Service = "Windows Te1t My Test 1.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Windows Te1t My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Te1t My Test 1.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Al1veService.exe"</li>
+<li>DisplayName = "Windows Te1t My Test Server 1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "This is Windows Te1t My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Windows Te1t My Test 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000]</li><ul>
+<li>Service = "Windows Te1t My Test 1.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Windows Te1t My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WINDOWS_TE1T_MY_TEST_1.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Te1t My Test 1.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Al1veService.exe"</li>
+<li>DisplayName = "Windows Te1t My Test Server 1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "This is Windows Te1t My Test Server 1.0"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Windows Te1t My Test 1.0</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.domain08.com</li>
+<li>muma.766lx.com</li>
+<li>vip1.52-shopping.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">vip1.52-shopping.com<td class="cell_2">9000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 426C 6163 6BD2 0000 0018 0100 0078 9CE3 | Black........x..
+00000010 | 0FCF CC4B C92F 2F56 8808 6058 E111 C3F0 | ...K.//V..`X....
+00000020 | 8301 0118 41C4 3B11 865E DFA5 857F 6227 | ....A.;..^....b'
+00000030 | 3270 00B9 33A5 5616 82D4 CCF0 1361 A860 | 2p..3.V......a.`
+00000040 | 8C61 A889 6564 D8CE 0D51 5C0F 248D F40C | .a..ed...Q\.$...
+00000050 | 1804 805C 901C 086C F080 D00C 0A10 0C12 | ...\...l........
+00000060 | 0799 FB92 9981 218D 8189 4186 C102 4832 | ......!...A...H2
+00000070 | 309C 00E2 2B40 AC2B 8A6C 3FD8 050C AF81 | 0...+@.+.l?.....
+00000080 | 3885 11A2 E603 2B03 83B9 B67E BA69 AA79 | 8.....+....~.i.y
+00000090 | B959 804F B845 A94B B9B9 7F91 1FC8 9D20 | .Y.O.E.K.......
+000000A0 | 0C72 D717 A87E E7F8 8960 3B15 3C20 760A | .r...~...`;.< v.
+000000B0 | 01B1 0BC4 4886 2286 7C86 1C86 6086 5486 | ....H.".|...`.T.
+000000C0 | 12A0 458C 0C12 4035 1950 3783 0000 1163 | ..E...@5.P7....c
+000000D0 | 2C87                                    | ,.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 426C 6163 6BC8 0000 0018 0100 0078 9CE3 | Black........x..
+00000010 | 0FCF CC4B C92F 2F56 8808 60B0 F08C 61F8 | ...K.//V..`...a.
+00000020 | C180 008C 405C 705B 84A1 D777 69E1 97D8 | ....@\p[...wi...
+00000030 | 830C 1C40 FE4C A995 8520 351C 5745 182A | ...@.L... 5.WE.*
+00000040 | 1863 184A 6219 19B6 7343 14D7 0349 233D | .c.Jb...sC...I#=
+00000050 | 0306 0120 1724 0702 0E9E 109A 4101 8241 | ... .$......A..A
+00000060 | E220 735F 3233 30A4 3130 31C8 3058 0049 | . s_230.101.0X.I
+00000070 | 0686 1340 1C03 94D0 1345 B69F 114C DF04 | ...@.....E...L..
+00000080 | B983 11A2 E605 2B03 83B9 B67E BA69 AA79 | ......+....~.i.y
+00000090 | B959 804F B845 A94B B9B9 7F91 1FC3 1D11 | .Y.O.E.K........
+000000A0 | B05B 41EE 7A00 D56F 1D7F 106C E706 0F88 | .[A.z..o...l....
+000000B0 | 9D42 409C C3C8 8009 1819 1956 00D5 6440 | .B@........V..d@
+000000C0 | DD0C 0200 7717 2ABE                     | ....w.*.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8001:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 426C 6163 6BC8 0000 0018 0100 0078 9CE3 | Black........x..
+00000010 | 0FCF CC4B C92F 2F56 8808 6038 E119 C3F0 | ...K.//V..`8....
+00000020 | 8301 0118 8138 E1B3 0843 AFEF D2C2 0FB1 | .....8...C......
+00000030 | 1B19 3880 FC99 522B 0B41 6A0C 80E2 158C | ..8...R+.Aj.....
+00000040 | 310C 05B1 8C0C DBB9 218A EB81 A491 9E01 | 1.......!.......
+00000050 | 8300 900B 9203 810B 9E10 9A41 0182 41E2 | ...........A..A.
+00000060 | 2073 5F32 3330 A431 3031 C830 5800 4906 |  s_230.101.0X.I.
+00000070 | 8613 40FC 0488 0D45 91ED 6704 D3C7 C1E6 | ..@....E..g.....
+00000080 | 41D5 B032 3098 6BEB A79B A69A 979B 05F8 | A..20.k.........
+00000090 | 845B 94BA 949B FB17 F931 00DD 0372 2BC8 | .[.......1...r+.
+000000A0 | 5D1C 106D 0CE6 F11B C176 3A78 42EC 1402 | ]..m.....v:xB...
+000000B0 | E212 A8DC 840F 2248 1631 3258 00D5 6440 | ......"H.12X..d@
+000000C0 | DD0C 0200 DDC5 2CC8                     | ......,.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

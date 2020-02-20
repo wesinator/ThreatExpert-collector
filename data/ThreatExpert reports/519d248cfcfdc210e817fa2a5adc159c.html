@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 March 2015, 18:26:24</li>
+<li>Processing time: 8 min 40 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x519D248CFCFDC210E817FA2A5ADC159C</li>
+<li>File SHA-1: 0x8CE2716A5CA2831B13F28298F62FCA30A8A3EB0E</li>
+<li>Filesize: 669,120 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\Adobe\AIR\logs\Install.log
+</td>
+<td class="cell_1">1,131 bytes</td>
+<td class="cell_2">MD5: 0x54CF29A968E81A010D1E7D9646E70ADE<br/>SHA-1: 0x5BBAC297FB37D5C252ED20152656AAD41C32F8DD</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\MSI311f3.LOG
+</td>
+<td class="cell_1">426 bytes</td>
+<td class="cell_2">MD5: 0xCC8C9C2D4F946B902C459C47F59DC462<br/>SHA-1: 0xEA03C8310D2BD078DE7924678A16638DFA2BA2D4</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">669,120 bytes</td>
+<td class="cell_2">MD5: 0x519D248CFCFDC210E817FA2A5ADC159C<br/>SHA-1: 0x8CE2716A5CA2831B13F28298F62FCA30A8A3EB0E</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\Adobe\AIR</li>
+<li>%AppData%\Adobe\AIR\logs</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">word scramble.exe</td><td class="cell_1">%Temp%\air1.tmp\word scramble\word scramble.exe</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">143,360 bytes</td></tr>
+<tr><td class="cell_1">Install Word Scramble.exe</td><td class="cell_1">%Temp%\AIR1.tmp\Install Word Scramble.exe</td><td class="cell_2">147,456 bytes</td></tr>
+</table></p>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">airdownload.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>air/3/nai/windows5.1/x86/installer</li>
+<li>air/3/nai/windows5.1/x86/installer.p7</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://crl.adobe.com/prodSvce.crl0</li>
+<li>http://crl.adobe.com/cds.crl0</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 13 March 2015 18:35:04</li>
+<li>Processing time: 9 min 33 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x0D5FA353B229B3C0DC6DFAC152C38437</li>
+<li>File SHA-1: 0x9C8DC61F04587554C3D9F346B9861DA9EC01F1B4</li>
+<li>Filesize: 17,721,040 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=e808d8a1-e3a8-4861-9f8c-59233fe19ce3&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%CommonAppData%\Adobe\AIR\Updater\initialPingback
+<br/>
+%CommonAppData%\Adobe\AIR\Updater\updatePingback
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Profiles%\Default User\Application Data\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe
+<br/>
+%AppData%\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe
+<br/>
+%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\airappinstaller.exe
+<br/>
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\airappinstaller.exe
+</td>
+<td class="cell_1">54,432 bytes</td>
+<td class="cell_1">MD5: 0xE41C4B2066CF1B2B07D90D13BB7B193A<br/>SHA-1: 0x5D74C8E1475C4168C41ABEF721F7276B2BF56BB2</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Profiles%\Default User\Application Data\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller\digest.s
+<br/>
+%AppData%\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller\digest.s
+<br/>
+%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\digest.s
+<br/>
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\digest.s
+</td>
+<td class="cell_1">2,879 bytes</td>
+<td class="cell_1">MD5: 0xD5DE4829A970436BADAC2AC94A8A0097<br/>SHA-1: 0x34485BE47F386DF44387EA1207FCDD433A326D65</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%AppData%\Adobe\AIR\eulaAccepted
+</td>
+<td class="cell_1">1 bytes</td>
+<td class="cell_1">MD5: 0xECCBC87E4B5CE2FE28308FD9F2A7BAF3<br/>SHA-1: 0x77DE68DAECD823BABBB58EDB1C8E14D7106E83BB</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%AppData%\Macromedia\Flash Player\#Security\FlashPlayerTrust\air.1.0.trust.cfg
+</td>
+<td class="cell_1">5 bytes</td>
+<td class="cell_1">MD5: 0x7DDF5ED9F3DF13943ACA2577C832266E<br/>SHA-1: 0xEB3B03A44CBA9BB3F0771F81042DECC96DDA8392</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%AppData%\Macromedia\Flash Player\macromedia.com\support\flashplayer\sys\settings.sol
+</td>
+<td class="cell_1">379 bytes</td>
+<td class="cell_1">MD5: 0x9A86AAAF3235A7FE0B85E4B3BF4CBDB9<br/>SHA-1: 0x5DD34CE2103EA948981CFA784CDD537246F7EF77</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%AppData%\Adobe\AIR\logs\Install.log
+</td>
+<td class="cell_1">3,370 bytes</td>
+<td class="cell_1">MD5: 0x7234318DC95629FA221E1D53B8F208E0<br/>SHA-1: 0x26AFFB7D2B53CE5EF6EB75358F9F2D373EAFB319</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\LGPL License.txt
+<br/>
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit\LGPL License.txt
+</td>
+<td class="cell_1">24,985 bytes</td>
+<td class="cell_1">MD5: 0x8C2A8D5DB686D0E41323611A1DCABB67<br/>SHA-1: 0xB65BDB2A777E87BE7C7DC22EE5FAC51A09DF3D1F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\Notice WebKit.txt
+<br/>
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit\Notice WebKit.txt
+</td>
+<td class="cell_1">771 bytes</td>
+<td class="cell_1">MD5: 0xBFD261E4E18766FDD1E5906875B019C4<br/>SHA-1: 0xB659ADFB7AAC91199FFE2A8CA4B13C5D890CB513</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\sentinel
+</td>
+<td class="cell_1">11 bytes</td>
+<td class="cell_1">MD5: 0xA5C11CA014FE30B8085EA2E95F7196C4<br/>SHA-1: 0x594E00FA5EAEAA9F99F7E45D92BAB7DD7CA8575A</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Adobe AIR Application Installer.exe
+</td>
+<td class="cell_1">130,208 bytes</td>
+<td class="cell_1">MD5: 0x49F3DF5F4DED35ED40DCC8B97018155C<br/>SHA-1: 0x8E47C46F1FBEAB0681CA073BB4B86F27509EDC02</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Adobe AIR Application Installer.swf
+</td>
+<td class="cell_1">737,506 bytes</td>
+<td class="cell_1">MD5: 0xBF35CC7A6FE03755BC103EFEF5C689CC<br/>SHA-1: 0x752A96348F795F28C000967A95807F50D16B9CD7</td>
+<td class="cell_2"><em>packed with </em>Swf2Swc [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Adobe AIR.dll
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR Updater.exe
+</td>
+<td class="cell_1">96,768 bytes</td>
+<td class="cell_1">MD5: 0x0F8485C6CF126C41FD8AF1D75FC2DC08<br/>SHA-1: 0x1CCA7CE80BC4DDC1DC605E04B3E81069F27A9BD5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR.vch
+</td>
+<td class="cell_1">425,846 bytes</td>
+<td class="cell_1">MD5: 0x50C06A65C0C645CCAC870D493585D43A<br/>SHA-1: 0xBD3959919594A0F43AFFB300E7916A04783FA891</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe Root Certificate.cer
+</td>
+<td class="cell_1">1,189 bytes</td>
+<td class="cell_1">MD5: 0xBF70913FF8D6D60A47FE825330815DB4<br/>SHA-1: 0x6BE8460639F5651848B2F83AB1463F5602BE06C3</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\AdobeCP15.dll
+</td>
+<td class="cell_1">3,507,512 bytes</td>
+<td class="cell_1">MD5: 0x7C2813BC3663C9E4795002B25D0A9395<br/>SHA-1: 0xD9E6D28DCE1F31775358A1CFBC417C44AD2E5114</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\NPSWF32.dll
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\setup.swf
+</td>
+<td class="cell_1">758,381 bytes</td>
+<td class="cell_1">MD5: 0xFA36BE330ED989EA186D184EA61345D0<br/>SHA-1: 0xE7946A04B3FCEB27DA27A60221871357D4AC50B3</td>
+<td class="cell_2"><em>packed with </em>Swf2Swc [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\stylesNative.swf
+</td>
+<td class="cell_1">235,028 bytes</td>
+<td class="cell_1">MD5: 0x9414298449E82CEB1E85B928D4921290<br/>SHA-1: 0xCAD2ABE38847E231BA4EBAB704ED00E6AFB57BA6</td>
+<td class="cell_2"><em>packed with </em>Swf2Swc [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\template.exe
+</td>
+<td class="cell_1">59,392 bytes</td>
+<td class="cell_1">MD5: 0x67F3E1CF291FD03D8F7B4E87015A8AB8<br/>SHA-1: 0x94CFCD45EE3E4B3C42419586A18B31B800B7FBD0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\template.msi
+</td>
+<td class="cell_1">36,864 bytes</td>
+<td class="cell_1">MD5: 0x4AE71DE50F50A74BD17658042AC42851<br/>SHA-1: 0x794D11B49ECD7F67B4CE1CA70AB5E6D7C63827C7</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Thawte Root Certificate.cer
+</td>
+<td class="cell_1">677 bytes</td>
+<td class="cell_1">MD5: 0x7F667A71D3EB6978209A51149D83DA20<br/>SHA-1: 0xBE36A4562FB2EE05DBB3D32323ADF445084ED656</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">24</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit.dll
+</td>
+<td class="cell_1">4,885,152 bytes</td>
+<td class="cell_1">MD5: 0x862BDD6ACC35602F7A0BC9D2F1D20670<br/>SHA-1: 0x522CF34C69AAA634CEA0BA4C3F5ADAD54DB6720B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">25</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\setup.msi
+</td>
+<td class="cell_1">49,152 bytes</td>
+<td class="cell_1">MD5: 0x0A280C70CF4C81AF5CD90486AE0A4CB0<br/>SHA-1: 0xFA4BD91BD13DDC9B47425C4F08A316BE27F65A9F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">26</td>
+<td class="cell_1">
+%Windir%\Installer\1abdf.msi
+</td>
+<td class="cell_1">29,696 bytes</td>
+<td class="cell_1">MD5: 0xCFF98B3155612EA4374E5E3CE94E7E4A<br/>SHA-1: 0x8A557478D58728BFA144B2CDCC08D16DB06F7BBA</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\Adobe\AIR</li>
+<li>%CommonAppData%\Adobe\AIR\Updater</li>
+<li>%Profiles%\Default User\Application Data\Macromedia</li>
+<li>%Profiles%\Default User\Application Data\Macromedia\Flash Player</li>
+<li>%Profiles%\Default User\Application Data\Macromedia\Flash Player\www.macromedia.com</li>
+<li>%Profiles%\Default User\Application Data\Macromedia\Flash Player\www.macromedia.com\bin</li>
+<li>%Profiles%\Default User\Application Data\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller</li>
+<li>%AppData%\Adobe\AIR</li>
+<li>%AppData%\Adobe\AIR\Updater</li>
+<li>%AppData%\Adobe\AIR\Updater\Background</li>
+<li>%AppData%\Adobe\Flash Player</li>
+<li>%AppData%\Adobe\Flash Player\AssetCache</li>
+<li>%AppData%\Adobe\Flash Player\AssetCache\DUVMYNGJ</li>
+<li>%AppData%\Macromedia</li>
+<li>%AppData%\Macromedia\Flash Player</li>
+<li>%AppData%\Macromedia\Flash Player\#Security</li>
+<li>%AppData%\Macromedia\Flash Player\#Security\FlashPlayerTrust</li>
+<li>[pathname with a string SHARE]\#SharedObjects</li>
+<li>[pathname with a string SHARE]\NF6ZK6E2</li>
+<li>%AppData%\Macromedia\Flash Player\macromedia.com</li>
+<li>%AppData%\Macromedia\Flash Player\macromedia.com\support</li>
+<li>%AppData%\Macromedia\Flash Player\macromedia.com\support\flashplayer</li>
+<li>%AppData%\Macromedia\Flash Player\macromedia.com\support\flashplayer\sys</li>
+<li>%AppData%\Macromedia\Flash Player\www.macromedia.com</li>
+<li>%AppData%\Macromedia\Flash Player\www.macromedia.com\bin</li>
+<li>%AppData%\Macromedia\Flash Player\www.macromedia.com\bin\airappinstaller</li>
+<li>%AppData%\Adobe\AIR\logs</li>
+<li>%ProgramFiles%\Adobe\Flash Player</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%AppData%\macromedia\flash player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%ProgramFiles%\adobe\flash player\addins\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1">Adobe AIR Updater.exe</td><td class="cell_1">%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR Updater.exe</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">Adobe AIR Installer.exe</td><td class="cell_1">%Temp%\AIR1.tmp\Adobe AIR Installer.exe</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">159,744 bytes</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%Profiles%\default user\application data\macromedia\flash player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR\FileTypeRegistration</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\CBE729434D8935D489EB15D05F99F905</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air\OpenWithProgids</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Adobe AIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{34927EBC-98D4-4D53-98BE-510DF5999F50}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR\FileTypeRegistration]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\CBE729434D8935D489EB15D05F99F905]</li><ul>
+<li>Runtime = ""</li>
+<li>Management = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList\Net]</li><ul>
+<li>1 = "%Temp%\air1.tmp\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList\Media]</li><ul>
+<li>1 = ";"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905\SourceList]</li><ul>
+<li>PackageName = "setup.msi"</li>
+<li>LastUsedSource = "n;1;%Temp%\air1.tmp\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\CBE729434D8935D489EB15D05F99F905]</li><ul>
+<li>ProductName = "Adobe AIR"</li>
+<li>PackageCode = "2A9D1DA9FD2B33248B96B18D4F191C2A"</li>
+<li>Language = 0x00000409</li>
+<li>Version = 0x11000000</li>
+<li>Assignment = 0x00000001</li>
+<li>AdvertiseFlags = 0x00000184</li>
+<li>InstanceType = 0x00000000</li>
+<li>AuthorizedLUAApp = 0x00000000</li>
+<li>Clients = ":"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E]</li><ul>
+<li>CBE729434D8935D489EB15D05F99F905 = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air\OpenWithProgids]</li><ul>
+<li>AIR.InstallerPackage = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air]</li><ul>
+<li>(Default) = "AIR.InstallerPackage"</li>
+<li>Content Type = "application/vnd.adobe.air-application-installer-package+zip"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open\command]</li><ul>
+<li>(Default) = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\ADOBEA~1.EXE "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open]</li><ul>
+<li>(Default) = "Install"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\DefaultIcon]</li><ul>
+<li>(Default) = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\ADOBEA~1.EXE,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage]</li><ul>
+<li>(Default) = "Installer Package"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]</li><ul>
+<li>%ProgramFiles%\Common Files\Adobe AIR\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\ = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E]</li><ul>
+<li>CBE729434D8935D489EB15D05F99F905 = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Adobe AIR]</li><ul>
+<li>DisplayIcon = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\RESOUR~1\ADOBEA~1.EXE"</li>
+<li>DisplayName = "Adobe AIR"</li>
+<li>DisplayVersion = "17.0.0.124"</li>
+<li>InstallLocation = "%ProgramFiles%\Common Files\Adobe AIR\"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>UninstallString = "%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR Updater.exe -arp:uninstall"</li>
+<li>VersionMajor = 0x00000011</li>
+<li>VersionMinor = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{34927EBC-98D4-4D53-98BE-510DF5999F50}]</li><ul>
+<li>AuthorizedCDFPrefix = ""</li>
+<li>Comments = ""</li>
+<li>Contact = ""</li>
+<li>DisplayVersion = "17.0.0.124"</li>
+<li>HelpLink = ""</li>
+<li>HelpTelephone = ""</li>
+<li>InstallDate = "20150313"</li>
+<li>InstallLocation = "%ProgramFiles%\Common Files\Adobe AIR\"</li>
+<li>InstallSource = "%Temp%\air1.tmp\"</li>
+<li>ModifyPath = "MsiExec.exe /I{34927EBC-98D4-4D53-98BE-510DF5999F50}"</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>Readme = ""</li>
+<li>Size = ""</li>
+<li>EstimatedSize = 0x0000B467</li>
+<li>SystemComponent = 0x00000001</li>
+<li>UninstallString = "MsiExec.exe /I{34927EBC-98D4-4D53-98BE-510DF5999F50}"</li>
+<li>URLInfoAbout = ""</li>
+<li>URLUpdateInfo = ""</li>
+<li>VersionMajor = 0x00000011</li>
+<li>VersionMinor = 0x00000000</li>
+<li>WindowsInstaller = 0x00000001</li>
+<li>Version = 0x11000000</li>
+<li>Language = 0x00000409</li>
+<li>DisplayName = "Adobe AIR"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>AppData = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>oleacc-msaa-loaded</li>
+<li>DirectSound DllMain mutex (0x0000041C)</li>
+<li>DirectSound DllMain mutex (0x00000434)</li>
+<li>DirectSound DllMain mutex (0x00000540)</li>
+<li>DirectSound DllMain mutex (0x000005E4)</li>
+<li>DirectSound DllMain mutex (0x00000388)</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">airinstall.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">airdownload.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>air.updates.req?t=sa&amp;r=17.0.0.124&amp;l=en&amp;o=w</li>
+<li>air/3/background/windows5.1/x86/patch/17.0.0.124/update</li>
+<li>air.updates.req?t=u&amp;r=17.0.0.124&amp;l=en&amp;o=w</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%System%\DINPUT8.dll</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

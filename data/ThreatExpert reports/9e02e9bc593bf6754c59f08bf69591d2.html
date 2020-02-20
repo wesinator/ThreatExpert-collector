@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Worm.Win32.Antinny">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Worm.Win32.Antinny</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 March 2016, 07:55:09</li>
+<li>Processing time: 8 min 18 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x9E02E9BC593BF6754C59F08BF69591D2</li>
+<li>File SHA-1: 0x00207DAC5DEC3CB7C3DFEB4716A207CB52E41E7D</li>
+<li>Filesize: 2,035,144 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%CommonPrograms%\PC Cleaner\Check updates.lnk
+</td>
+<td class="cell_1">741 bytes</td>
+<td class="cell_1">MD5: 0xAD5D4B00032BC7CE601F882D0F594FB0<br/>SHA-1: 0x9D1B69E41E91D4EC89641B16315662C8561678A7</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%CommonPrograms%\PC Cleaner\Help.lnk
+</td>
+<td class="cell_1">713 bytes</td>
+<td class="cell_1">MD5: 0x82539496997414FAFA602A43C587D795<br/>SHA-1: 0x33A4DC15C7204FF0D61A126EDAA0D8C20C5E774B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%CommonPrograms%\PC Cleaner\PC Cleaner on the Web.lnk
+</td>
+<td class="cell_1">708 bytes</td>
+<td class="cell_1">MD5: 0x731C04B784EEA168EB68CC1BB88EFE31<br/>SHA-1: 0x6CCEF038FE04D3C13CE74AF18E98689C3B068E02</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%CommonPrograms%\PC Cleaner\PC Cleaner.lnk
+</td>
+<td class="cell_1">713 bytes</td>
+<td class="cell_1">MD5: 0xCB7FA909D231BC88F5C16E367C6A5389<br/>SHA-1: 0x01EF6A614CDBA81886A2766803E1F881D0434C6E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%CommonPrograms%\PC Cleaner\Uninstall PC Cleaner.lnk
+</td>
+<td class="cell_1">708 bytes</td>
+<td class="cell_1">MD5: 0x068EE266E67A1B159A1034AEDB8CECA0<br/>SHA-1: 0xF1172E9FF86FBE4AF63D742E7E452BFC31BE4ECC</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%DesktopDir%\PC Cleaner.lnk
+</td>
+<td class="cell_1">701 bytes</td>
+<td class="cell_1">MD5: 0x8068F388E8D55D5F419089E184ADE2E4<br/>SHA-1: 0xBDEB95D2C249964F51CAF0CE16F4BD4D4CDC621B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\Animation.gif
+</td>
+<td class="cell_1">16,555 bytes</td>
+<td class="cell_1">MD5: 0x5318090C04B824B1712494A2A69030FF<br/>SHA-1: 0x9952069B25B2A9B4C45D018DB4A78EC4E9FCF0C0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\CookiesException.txt
+</td>
+<td class="cell_1">712 bytes</td>
+<td class="cell_1">MD5: 0xADF1E0B95E3F048A59B91541C0528D03<br/>SHA-1: 0x1E740571514584DC69BD60D14D419419D070A5FE</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\English.ini
+</td>
+<td class="cell_1">30,183 bytes</td>
+<td class="cell_1">MD5: 0x51126ABD45170E80950FBC2DF893A42F<br/>SHA-1: 0xD86C649FD33FAE98DE845F0E93211FF344902329</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\file_id.diz
+</td>
+<td class="cell_1">890 bytes</td>
+<td class="cell_1">MD5: 0x81EA40CD7521BDA4848C8014D8638A49<br/>SHA-1: 0x5154413BEF2D29CF3D0E3F4738440D82768C4DAD</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\French.ini
+</td>
+<td class="cell_1">36,257 bytes</td>
+<td class="cell_1">MD5: 0x49749A3A498AE831E72B9C7E3BD898FE<br/>SHA-1: 0x21B9A1F773C974347926CA19214B720236525F1D</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\German.ini
+</td>
+<td class="cell_1">35,629 bytes</td>
+<td class="cell_1">MD5: 0xABBA4C7C708E354F5AAAFE5ED38A816E<br/>SHA-1: 0x889D4284ADE54FF4E0379D94F6B5F33AD9E13E21</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\HomePage.url
+</td>
+<td class="cell_1">51 bytes</td>
+<td class="cell_1">MD5: 0x37BD10AD97861B52EE123C10508BFAA7<br/>SHA-1: 0xA212EF6E1C334DB7CCA1D17DA020C0BF0B8B09C4</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\PCCleaner.chm
+</td>
+<td class="cell_1">35,960 bytes</td>
+<td class="cell_1">MD5: 0xEC66EAE61939CE51FB9830996150DB0A<br/>SHA-1: 0xCF672C8B447A33B4633A63B5FB5332ACF934676C</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\<a href="http://www.threatexpert.com/files/PCCleaner.exe.html" target="_blank">PCCleaner.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\PCCSchedule.exe
+</td>
+<td class="cell_1">1,668,360 bytes</td>
+<td class="cell_1">MD5: 0xDF1AE67BF8CFF8B3FD09462C68FB51D5<br/>SHA-1: 0xB582FDCCDE95147B791A283666974A9E0FC76501</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\PCCUninstaller.exe
+</td>
+<td class="cell_1">246,024 bytes</td>
+<td class="cell_1">MD5: 0xC87156C22180B6C4E89DDDFDEEE240F9<br/>SHA-1: 0xD8B647AB32CDB665C3207D4234AE2D2046E4B5F4</td>
+<td class="cell_2">Worm.Win32.Antinny [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\Spanish.ini
+</td>
+<td class="cell_1">35,845 bytes</td>
+<td class="cell_1">MD5: 0x05EE11DECA3A18C9BB363D46909B9A38<br/>SHA-1: 0x5C4CD7304FBA988F0CECE1534833CC7BC3EBE8DB</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\<a href="http://www.threatexpert.com/files/sqlite3.dll.html" target="_blank">sqlite3.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">520,234 bytes</td>
+<td class="cell_1">MD5: 0x0F66E8E2340569FB17E774DAC2010E31<br/>SHA-1: 0x406BB6854E7384FF77C0B847BF2F24F3315874A3</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\StartupList.txt
+</td>
+<td class="cell_1">83,501 bytes</td>
+<td class="cell_1">MD5: 0x90912E30318806838ACD72812A782EE9<br/>SHA-1: 0x7D166DDD2821C6B7E7EB16729D1ED6596390A863</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\unins000.dat
+</td>
+<td class="cell_1">9,232 bytes</td>
+<td class="cell_1">MD5: 0x7771777A630AFFCF27E5D84EAFAE35B2<br/>SHA-1: 0x4D85C1268375706AF1A7D44147B237BD94F26F3E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+%ProgramFiles%\PC Cleaner\<a href="http://www.threatexpert.com/files/unins000.exe.html" target="_blank">unins000.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">717,985 bytes</td>
+<td class="cell_1">MD5: 0x951760F9B54C03BEDDC7D312083FBE89<br/>SHA-1: 0x9494B58504393DF1F2FED47AE7E053D2ECBA3342</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">2,035,144 bytes</td>
+<td class="cell_1">MD5: 0x9E02E9BC593BF6754C59F08BF69591D2<br/>SHA-1: 0x00207DAC5DEC3CB7C3DFEB4716A207CB52E41E7D</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%DesktopDir% is a variable that refers to the file system directory used to physically store file objects on the desktop. A typical path is C:\Documents and Settings\[UserName]\Desktop.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonPrograms%\PC Cleaner</li>
+<li>%AppData%\PC Cleaner</li>
+<li>%AppData%\PC Cleaner\Backup</li>
+<li>%AppData%\PC Cleaner\Log</li>
+<li>%AppData%\PC Cleaner\Undo</li>
+<li>%ProgramFiles%\PC Cleaner</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">pccuninstaller.exe</td><td class="cell_1">%ProgramFiles%\pc cleaner\pccuninstaller.exe</td><td class="cell_2">266,240 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-CSBBH.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">770,048 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/PCCleaner.exe.html" target="_blank">PCCleaner.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\PC Cleaner\<a href="http://www.threatexpert.com/files/PCCleaner.exe.html" target="_blank">PCCleaner.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">20,058,112 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PC Cleaner_is1</li>
+<li>HKEY_CURRENT_USER\Software\PC Cleaner</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PC Cleaner_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.5.3 (a)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\PC Cleaner"</li>
+<li>InstallLocation = "%ProgramFiles%\PC Cleaner\"</li>
+<li>Inno Setup: Icon Group = "PC Cleaner"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = "desktopicon"</li>
+<li>Inno Setup: Deselected Tasks = ""</li>
+<li>Inno Setup: Language = "en"</li>
+<li>DisplayName = "PC Cleaner v4.0"</li>
+<li>UninstallString = ""%ProgramFiles%\PC Cleaner\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\PC Cleaner\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "4.0"</li>
+<li>Publisher = "PCHelpSoft"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20160304"</li>
+<li>MajorVersion = 0x00000004</li>
+<li>MinorVersion = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>PC Cleaner = "%ProgramFiles%\pc cleaner\PCCSchedule.exe"</li>
+</ul>
+<br/>
+<em>so that PCCSchedule.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\PC Cleaner]</li><ul>
+<li>LastScanDate = 21 D4 E3 9A 2A B8 E4 40</li>
+<li>LastScanFound = 0x000001B8</li>
+<li>ItemsToFix = 0x00000119</li>
+<li>ItemsToClean = 0x0000009F</li>
+<li>JunkFiles = 0x00000075</li>
+<li>ItemsFixed = 0x00000000</li>
+<li>ItemsCleaned = 0x00000000</li>
+<li>ResidualFilesCleaned = 0x00000000</li>
+<li>LastScanChecked = "1110011"</li>
+<li>DisplayName = "PC Cleaner"</li>
+<li>Version = "4.0"</li>
+<li>InstallationDate = 1E 03 64 93 2A B8 E4 40</li>
+<li>AppStart = 0x00000003</li>
+<li>LastUpdateChecking = 1E 03 64 93 2A B8 E4 40</li>
+<li>UpdateReminderDisabled = 0x00000000</li>
+<li>LogDir = "%AppData%\PC Cleaner\Log"</li>
+<li>UndoDir = "%AppData%\PC Cleaner\Undo"</li>
+<li>ItemsToRegistryScan = "1111111111"</li>
+<li>ItemsToPrivacyScan = "1111"</li>
+<li>ItemsToRecoveryScan = "1111"</li>
+<li>UseExclusions = 0x00000001</li>
+<li>ShowRebootMessage = 0x00000001</li>
+<li>ShowRecycleBin = 0x00000001</li>
+<li>StartWithWindows = 0x00000001</li>
+<li>Reminder = 0x00000001</li>
+<li>StartupNotifier = 0x00000001</li>
+<li>CacheNotifier = 0x00000000</li>
+<li>s_SmartMode = 0x00000000</li>
+<li>s_SmartScan = 0x00000001</li>
+<li>s_SmartDate = 2B 27 65 93 0A B8 E4 40</li>
+<li>s_Enable = 0x00000000</li>
+<li>s_Time = 2B 27 65 93 2A B8 E4 40</li>
+<li>BuildID = "PCHS_PCC40"</li>
+<li>UpgradeID = "PCHS_PCC40"</li>
+<li>UpgradeIDPro = "PCHS_PCC40_PLAT"</li>
+<li>InstallStat = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/russian_federation.gif"></td>
+<td class="cell_2">Russian Federation</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/netherlands.gif"></td>
+<td class="cell_2">Netherlands</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>PCCSchedule</li>
+<li>madExceptSettingsMtx$41c</li>
+<li>PCCleaner</li>
+<li>madExceptSettingsMtx$5d0</li>
+<li>HookTThread$5d0</li>
+<li>_!SHMSFTHISTORY!_</li>
+<li>madExceptSettingsMtx$778</li>
+<li>PCCUninstaller</li>
+<li>madExceptSettingsMtx$e4</li>
+<li>HookTThread$e4</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>service.smartpcupdate.com</li>
+<li>localhost</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.pchelpsoft.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>pc-cleaner/uninstall-offer/?ver=410</li>
+<li>pc-cleaner/uninstall-offer/index.jpg</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://service.smartpcupdate.com/rpc/sendspminstall?partner=PCHS_PCC4_EN_ID410&amp;build=4.0&amp;compiler=June2014</li>
+<li>http://service.smartpcupdate.com/rpc/sendspmuninstall?partner=PCHS_PCC4_EN_ID410&amp;build=4.0&amp;compiler=June2014</li>
+<li>http://service.smartpcupdate.com/rpc/sendspminstall?partner=PCHS_PCC40&amp;build=4.0&amp;compiler=</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

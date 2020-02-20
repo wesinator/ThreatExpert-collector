@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 31 August 2015, 22:59:10</li>
+<li>Processing time: 5 min 32 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF358FE84E9975902FBABC89786F20651</li>
+<li>File SHA-1: 0xC81C53EC9A6177F108FF98CC62C3AEBB510B4367</li>
+<li>Filesize: 114,688 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">114,688 bytes</td>
+<td class="cell_2">MD5: 0xF358FE84E9975902FBABC89786F20651<br/>SHA-1: 0xC81C53EC9A6177F108FF98CC62C3AEBB510B4367</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x11000000 - 0x1101F000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x11000000 - 0x1101F000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Required Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Required Categories\{D40C2700-FFA1-11CF-8234-00AA00C1AB85}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Required Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Required Categories\{D40C2700-FFA1-11CF-8234-00AA00C1AB85}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\Forward</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\Forward</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxFrame</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxFrame\Clsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxScrollBar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxScrollBar\Clsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxTab</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxTab\Clsid</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\MiscStatus\1]</li><ul>
+<li>(Default) = "197009"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\VERSION]</li><ul>
+<li>(Default) = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1], 30001"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\ProgID]</li><ul>
+<li>(Default) = "suComCtl.ocxTab"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5DE18549-CE35-4D40-9504-4C3A08D376B3}]</li><ul>
+<li>(Default) = "suComCtl.ocxTab"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\MiscStatus\1]</li><ul>
+<li>(Default) = "147857"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\VERSION]</li><ul>
+<li>(Default) = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1], 30000"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\ProgID]</li><ul>
+<li>(Default) = "suComCtl.ocxScrollBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}]</li><ul>
+<li>(Default) = "suComCtl.ocxScrollBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\MiscStatus\1]</li><ul>
+<li>(Default) = "221585"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\VERSION]</li><ul>
+<li>(Default) = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1], 30002"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\ProgID]</li><ul>
+<li>(Default) = "suComCtl.ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A284BF02-2C72-449A-9A05-F46FF8FECFE9}]</li><ul>
+<li>(Default) = "suComCtl.ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01302ABF-F3C8-4791-8630-30FF143DA0F4}]</li><ul>
+<li>(Default) = "ocxTab"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{126686FE-8325-47EA-A0AD-C0A2D4023767}]</li><ul>
+<li>(Default) = "ocxScrollBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}]</li><ul>
+<li>(Default) = "ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}\Forward]</li><ul>
+<li>(Default) = "{28EF8D0E-0F95-453A-B3BD-ED3920C76A5D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{69DFE0ED-ABBE-48BC-92A9-BA8EE7B23672}]</li><ul>
+<li>(Default) = "ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8CA83891-8B4F-4486-BBB6-57E9D88D2862}]</li><ul>
+<li>(Default) = "ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}\Forward]</li><ul>
+<li>(Default) = "{8CA83891-8B4F-4486-BBB6-57E9D88D2862}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A3179429-2733-4593-8882-E1E09295C00C}]</li><ul>
+<li>(Default) = "ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EEC2EFA8-87ED-4339-B67F-D5BD1C3633C1}]</li><ul>
+<li>(Default) = "ocxScrollBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\TypeLib]</li><ul>
+<li>(Default) = "{7C23811C-3978-4D19-AEED-A8687BC6FCC9}"</li>
+<li>Version = "1.3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F1F13E3D-6E50-4E72-99BC-E9776BF86216}]</li><ul>
+<li>(Default) = "ocxTab"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\0\win32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\HELPDIR]</li><ul>
+<li>(Default) = "%Windir%\system32"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3\FLAGS]</li><ul>
+<li>(Default) = "2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{7C23811C-3978-4D19-AEED-A8687BC6FCC9}\1.3]</li><ul>
+<li>(Default) = "Cetil.ActiveX.CommonControls - 01.01.04 - Controles Comum do Suporte"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxFrame\Clsid]</li><ul>
+<li>(Default) = "{A284BF02-2C72-449A-9A05-F46FF8FECFE9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxFrame]</li><ul>
+<li>(Default) = "suComCtl.ocxFrame"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxScrollBar\Clsid]</li><ul>
+<li>(Default) = "{91C4C3FB-52EE-415F-B502-A0CD01B9FBAA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxScrollBar]</li><ul>
+<li>(Default) = "suComCtl.ocxScrollBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxTab\Clsid]</li><ul>
+<li>(Default) = "{5DE18549-CE35-4D40-9504-4C3A08D376B3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\suComCtl.ocxTab]</li><ul>
+<li>(Default) = "suComCtl.ocxTab"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I, Virus:Win32/Ramnit.A, Virus.Win32.Ramnit, Win32/Ramnit.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 May 2016, 00:48:48</li>
+<li>Processing time: 13 min 8 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA1BA137608F84879774C0DF428B38F89</li>
+<li>File SHA-1: 0x48BE3206527BD856A6C018A36741E5C0A1D55EEF</li>
+<li>Filesize: 819,206 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Patched-I [Sophos]</li>
+<li>Virus:Win32/Ramnit.A [Microsoft]</li>
+<li>Virus.Win32.Ramnit [Ikarus]</li>
+<li>Win32/Ramnit.B [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=c0ab5b3b-eea9-45c0-a92d-35e47b3d5037&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">823,296 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>LiuLiangZB = ""[file and pathname of the sample #1]" /autorun"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.4345.cc</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.2466.cc</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.huanips.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.wangbaoma.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.qqshuoyu.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.9935.org</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">x1.tojingjia.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>rj/flowtips.html</li>
+<li>rj/index.jpg</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://down.9935.org/gj/ver.txt?rand=3066009573</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3852161340</li>
+<li>http://down.9935.org/gj/ver.txt?rand=363608799</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1963957303</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1543784206</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3939220054</li>
+<li>http://down.9935.org/gj/ver.txt?rand=161788864</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1758413413</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2156682912</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2434501369</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2730263096</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2242868886</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3526682125</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3901458379</li>
+<li>http://down.9935.org/gj/ver.txt?rand=4042544833</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3685694805</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1627153971</li>
+<li>http://down.9935.org/gj/ver.txt?rand=18593341</li>
+<li>http://down.9935.org/gj/ver.txt?rand=72119197</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2060426742</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1021639606</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3939197059</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3972280530</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1930405523</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1978456835</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3046840735</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3126624308</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3564072975</li>
+<li>http://down.9935.org/gj/ver.txt?rand=471127120</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1904984407</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2098491739</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2934907414</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1063049113</li>
+<li>http://down.9935.org/gj/ver.txt?rand=781944890</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1156363688</li>
+<li>http://down.9935.org/gj/ver.txt?rand=311424795</li>
+<li>http://down.9935.org/gj/ver.txt?rand=4022630563</li>
+<li>http://down.9935.org/gj/ver.txt?rand=4241224606</li>
+<li>http://down.9935.org/gj/ver.txt?rand=568599620</li>
+<li>http://down.9935.org/gj/ver.txt?rand=256852056</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1028420349</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3961250212</li>
+<li>http://down.9935.org/gj/ver.txt?rand=603733536</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3039783376</li>
+<li>http://down.9935.org/gj/ver.txt?rand=938749434</li>
+<li>http://down.9935.org/gj/ver.txt?rand=210472243</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1530180085</li>
+<li>http://down.9935.org/gj/ver.txt?rand=338689616</li>
+<li>http://down.9935.org/gj/ver.txt?rand=4022091959</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1847300600</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3616333892</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1011854185</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1956967963</li>
+<li>http://down.9935.org/gj/ver.txt?rand=550236268</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2835636055</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1032799607</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3601649873</li>
+<li>http://down.9935.org/gj/ver.txt?rand=882577869</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3751575358</li>
+<li>http://down.9935.org/gj/ver.txt?rand=670026653</li>
+<li>http://www.ip138.com</li>
+<li>http://down.9935.org/gj/ver.txt?rand=768549754</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1709628208</li>
+<li>http://down.9935.org/gj/ver.txt?rand=135202633</li>
+<li>http://down.9935.org/gj/ver.txt?rand=76156417</li>
+<li>http://down.9935.org/gj/ver.txt?rand=328686011</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3044437744</li>
+<li>http://down.9935.org/gj/ver.txt?rand=845655875</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2594852268</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3330242512</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1445345390</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2329479701</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3357851088</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1644253179</li>
+<li>http://down.9935.org/gj/ver.txt?rand=414222382</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1953621969</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3313797966</li>
+<li>http://down.9935.org/gj/ver.txt?rand=606724193</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1889580422</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1395238544</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1006922325</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1251965057</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2828986523</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1169123306</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2987548783</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1174929256</li>
+<li>http://down.9935.org/gj/ver.txt?rand=567187899</li>
+<li>http://down.9935.org/gj/ver.txt?rand=765922699</li>
+<li>http://down.9935.org/gj/ver.txt?rand=433235176</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1586462111</li>
+<li>http://down.9935.org/gj/ver.txt?rand=1008663085</li>
+<li>http://down.9935.org/gj/ver.txt?rand=731994023</li>
+<li>http://down.9935.org/gj/ver.txt?rand=366277412</li>
+<li>http://down.9935.org/gj/ver.txt?rand=295302956</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2133906041</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2262432810</li>
+<li>http://down.9935.org/gj/ver.txt?rand=416584562</li>
+<li>http://down.9935.org/gj/ver.txt?rand=3982566504</li>
+<li>http://down.9935.org/gj/ver.txt?rand=2227181054</li>
+<li>http://down.9935.org/gj/ver.txt?rand=657573130</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%Temp%\wma1.tmp</li>
+<ul><li>the hook is handled by its export "AttachHook()"</li></ul>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

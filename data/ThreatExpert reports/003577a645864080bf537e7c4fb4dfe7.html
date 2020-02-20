@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 October 2015, 21:02:22</li>
+<li>Processing time: 6 min 11 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x003577A645864080BF537E7C4FB4DFE7</li>
+<li>File SHA-1: 0xCA86621C51266129BC99277BDDAF2553596C7ABE</li>
+<li>Filesize: 443,392 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%ProgramFiles%\CHB\WAtmOcx\ChbWebATM.ocx
+</td>
+<td class="cell_1">728,536 bytes</td>
+<td class="cell_2">MD5: 0x80BC34DF51DF5FB3063281BA8C1E0482<br/>SHA-1: 0xDD0F948DF9C2152DD17E0616B78AF020B5389D8C</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Windir%\Installer\16e68.msi
+</td>
+<td class="cell_1">89,600 bytes</td>
+<td class="cell_2">MD5: 0x3E04C5D696ED20F834B220E82219DA27<br/>SHA-1: 0xF13A30F1114492DF9A93DC6EDDEE0E12C6C73A61</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">443,392 bytes</td>
+<td class="cell_2">MD5: 0x003577A645864080BF537E7C4FB4DFE7<br/>SHA-1: 0xCA86621C51266129BC99277BDDAF2553596C7ABE</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%ProgramFiles%\CHB</li>
+<li>%ProgramFiles%\CHB\WAtmOcx</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C3EDF20F-6F72-4FAA-9C0E-E1557A3B697C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C3EDF20F-6F72-4FAA-9C0E-E1557A3B697C}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\FE61F8F35FAA2FB4783F0BC3AB933ACD</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\E5122E0455528B545BFA67E2B86AEFB0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CHBWEBATM.ChbWebATMCtrl.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CHBWEBATM.ChbWebATMCtrl.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\E5122E0455528B545BFA67E2B86AEFB0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{3F8F16EF-AAF5-4BF2-87F3-B03CBA39A3DC}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\TypeLib]</li><ul>
+<li>(Default) = "{409288C9-4CAB-4E63-AD76-0A090FAC24AC}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "c:\PROGRA~1\CHB\WAtmOcx\CHBWEB~1.OCX, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\ProgID]</li><ul>
+<li>(Default) = "CHBWEBATM.ChbWebATMCtrl.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\InprocServer32]</li><ul>
+<li>(Default) = "c:\PROGRA~1\CHB\WAtmOcx\CHBWEB~1.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B2E8D72C-D2FA-4583-81B0-5884059D14E7}]</li><ul>
+<li>(Default) = "ChbWebATM Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C3EDF20F-6F72-4FAA-9C0E-E1557A3B697C}\InprocServer32]</li><ul>
+<li>(Default) = "c:\PROGRA~1\CHB\WAtmOcx\CHBWEB~1.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C3EDF20F-6F72-4FAA-9C0E-E1557A3B697C}]</li><ul>
+<li>(Default) = "ChbWebATM Property Page"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\FE61F8F35FAA2FB4783F0BC3AB933ACD]</li><ul>
+<li>DefaultFeature = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList\Net]</li><ul>
+<li>1 = "%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList\Media]</li><ul>
+<li>1 = ";"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD\SourceList]</li><ul>
+<li>PackageName = "[filename of the sample #1]"</li>
+<li>LastUsedSource = "n;1;%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\FE61F8F35FAA2FB4783F0BC3AB933ACD]</li><ul>
+<li>ProductName = "ChbOcxSetup"</li>
+<li>PackageCode = "7EC5544175BDFF14CB053EB38F19E9AF"</li>
+<li>Language = 0x00000404</li>
+<li>Version = 0x01000000</li>
+<li>Assignment = 0x00000001</li>
+<li>AdvertiseFlags = 0x00000184</li>
+<li>InstanceType = 0x00000000</li>
+<li>AuthorizedLUAApp = 0x00000000</li>
+<li>Clients = ":"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\E5122E0455528B545BFA67E2B86AEFB0]</li><ul>
+<li>FE61F8F35FAA2FB4783F0BC3AB933ACD = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\TypeLib]</li><ul>
+<li>(Default) = "{409288C9-4CAB-4E63-AD76-0A090FAC24AC}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{01FC8040-37DA-440D-B61E-AEF3DE8DC5D9}]</li><ul>
+<li>(Default) = "_DChbWebATMEvents"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\TypeLib]</li><ul>
+<li>(Default) = "{409288C9-4CAB-4E63-AD76-0A090FAC24AC}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{9DFCF269-7C5E-453D-84EE-6A669CB963FC}]</li><ul>
+<li>(Default) = "_DChbWebATM"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\CHB\WAtmOcx\ChbWebATM.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\HELPDIR]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0\FLAGS]</li><ul>
+<li>(Default) = "2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{409288C9-4CAB-4E63-AD76-0A090FAC24AC}\1.0]</li><ul>
+<li>(Default) = "ChbWebATM ActiveX ???????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CHBWEBATM.ChbWebATMCtrl.1\CLSID]</li><ul>
+<li>(Default) = "{B2E8D72C-D2FA-4583-81B0-5884059D14E7}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CHBWEBATM.ChbWebATMCtrl.1]</li><ul>
+<li>(Default) = "ChbWebATM Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]</li><ul>
+<li>%ProgramFiles%\CHB\WAtmOcx\ = ""</li>
+<li>%ProgramFiles%\CHB\ = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\E5122E0455528B545BFA67E2B86AEFB0]</li><ul>
+<li>FE61F8F35FAA2FB4783F0BC3AB933ACD = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{3F8F16EF-AAF5-4BF2-87F3-B03CBA39A3DC}]</li><ul>
+<li>AuthorizedCDFPrefix = ""</li>
+<li>Comments = ""</li>
+<li>Contact = "CHANG HWA BANK"</li>
+<li>DisplayVersion = "1.0.0"</li>
+<li>HelpLink = ""</li>
+<li>HelpTelephone = ""</li>
+<li>InstallDate = "20151020"</li>
+<li>InstallLocation = ""</li>
+<li>InstallSource = "%System%\"</li>
+<li>ModifyPath = "MsiExec.exe /I{3F8F16EF-AAF5-4BF2-87F3-B03CBA39A3DC}"</li>
+<li>Publisher = "CHB"</li>
+<li>Readme = ""</li>
+<li>Size = ""</li>
+<li>EstimatedSize = 0x000002B4</li>
+<li>UninstallString = "MsiExec.exe /I{3F8F16EF-AAF5-4BF2-87F3-B03CBA39A3DC}"</li>
+<li>URLInfoAbout = "http://www.chb.com.tw"</li>
+<li>URLUpdateInfo = ""</li>
+<li>VersionMajor = 0x00000001</li>
+<li>VersionMinor = 0x00000000</li>
+<li>WindowsInstaller = 0x00000001</li>
+<li>Version = 0x01000000</li>
+<li>Language = 0x00000404</li>
+<li>DisplayName = "ChbOcxSetup"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/taiwan.gif"></td>
+<td class="cell_2">Taiwan</td><tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: PWS:Win32/Zbot.gen!Y">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: PWS:Win32/Zbot.gen!Y</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 February 2016, 13:09:03</li>
+<li>Processing time: 5 min 36 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC4155810A0D31C3915D0B4A89604AC75</li>
+<li>File SHA-1: 0x216C3C388144F1BCBC7444BF615F682C9000FBC8</li>
+<li>Filesize: 392,704 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\Ogbi\gimii.nyr
+</td>
+<td class="cell_1">391 bytes</td>
+<td class="cell_1">MD5: 0xCD6C524D1554247A151E59876348EE6D<br/>SHA-1: 0x8287AEC49EB0031C3E229753A6B811422EA8636C</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\Yvcyq\istua.exe
+</td>
+<td class="cell_1">168,448 bytes</td>
+<td class="cell_1">MD5: 0xE1C326CA64E93E5206F769DBEE66EF82<br/>SHA-1: 0x8F5BD254152983B5D5D1CCC64D8AAC6FA33B3372</td>
+<td class="cell_2">PWS:Win32/Zbot.gen!Y [Microsoft]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\skypee\<a href="http://www.threatexpert.com/files/winlogin.exe.html" target="_blank">winlogin.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">392,704 bytes</td>
+<td class="cell_1">MD5: 0xC4155810A0D31C3915D0B4A89604AC75<br/>SHA-1: 0x216C3C388144F1BCBC7444BF615F682C9000FBC8</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Temp%\<a href="http://www.threatexpert.com/files/svhost.exe.html" target="_blank">svhost.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">31,936 bytes</td>
+<td class="cell_1">MD5: 0xD312A154A5F5E54BBBCF12A22B1B2058<br/>SHA-1: 0xF8FA4C00C53D6800C81CFB8FF910514F6324AB68</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\Ogbi</li>
+<li>%AppData%\Yvcyq</li>
+<li>%Temp%\skypee</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">istua.exe</td><td class="cell_1">%AppData%\yvcyq\istua.exe</td><td class="cell_2">188,416 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svhost.exe.html" target="_blank">svhost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/svhost.exe.html" target="_blank">svhost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">36,864 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/tmp.exe.html" target="_blank">tmp.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/tmp.exe.html" target="_blank">tmp.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">188,416 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">188,416 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/winlogin.exe.html" target="_blank">winlogin.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\skypee\<a href="http://www.threatexpert.com/files/winlogin.exe.html" target="_blank">winlogin.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">188,416 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Qaarc</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER]</li><ul>
+<li>(Default) = 81 81 A4 4B 64 72 24 03 3C 0B 17 B5 C9 48 44 D6 EF A0 86 80 CD AB 9B 43</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Identities]</li><ul>
+<li>Identity Login = 0x00098053</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]</li><ul>
+<li>WarnonBadCertRecving = 0x00000000</li>
+<li>EnableSPDY3_0 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Shell = "%Temp%\skypee\winlogin.exe"</li>
+</ul>
+<br/>
+<em>so that winlogin.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Qaarc]</li><ul>
+<li>Kyeqiturh = 3B 89 DF F3 EC 8C 4C 1C 0C D6 1E 8F 05 C3 51 5A 41 F6 3F E8 00 FB 8A 43</li>
+<li>Oqmywe = B8 60 70 7F 78 18 D8 88 98 42 8A 1B 91 57 C5 CE D5 62 AB 7C C9 C4 55 7E 3B CB 71 F4 D0 23 E7 D0 1B A9 3F CF E4 90 D6 EA DF 82 EF 0E 1C C2 B5 F8 75 9A 3B F5 4F 99 3B 24 26 92 EF 74 E4 CD B2 7A C0 90 AA E7 4D 4E 3F F6 A4 51 84 E4 17 E4 3E B8 FB CD 63 E</li>
+<li>Kyeqiturh = 56 5F 3B 13 0C 6C AC FC EC 36 FE 6F E5 23 B1 BA A1 16 DF 08 E0 1B 6A A3</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>1406 = </li>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>1609 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>1406 = </li>
+<li>1609 = </li>
+<li>1A05 = </li>
+<li>1A10 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]</li><ul>
+<li>1406 = </li>
+<li>1609 = </li>
+<li>1A02 = </li>
+<li>1A03 = </li>
+<li>1A05 = </li>
+<li>1A06 = </li>
+<li>1A10 = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Local\{2894B1D9-D4E7-9585-287E-6B28549768B7}</li>
+<li>Local\{45114194-24AA-F800-287E-6B28549768B7}</li>
+<li>Local\{53134776-2248-EE02-287E-6B28549768B7}</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">oclsi4szqlnpsxh2.onion.to</td><td class="cell_1">443</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 98E7 | .............c..
+00000040 | 34CA F164 0BC6 8814 235D C55F 59E5      | 4..d....#]._Y.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

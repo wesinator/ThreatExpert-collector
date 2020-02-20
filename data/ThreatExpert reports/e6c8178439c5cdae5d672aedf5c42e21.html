@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 21 September 2014, 21:49:15</li>
+<li>Processing time: 8 min 47 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE6C8178439C5CDAE5D672AEDF5C42E21</li>
+<li>File SHA-1: 0xE2D430F8CF0D0E886372D88F9C3FE2026F28C06C</li>
+<li>Filesize: 2,027,344 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=6a1bef4c-c87f-40a1-9d8a-c8a57c64f084&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">baidup2pservice.exe</td><td class="cell_1">%ProgramFiles%\tools\baidup2pservice.exe</td><td class="cell_2">561,152 bytes</td></tr>
+<tr><td class="cell_1">bdupdate.exe</td><td class="cell_1">%ProgramFiles%\tools\bdupdate.exe</td><td class="cell_2">5,279,744 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/sr.exe.html" target="_blank">sr.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\tools\<a href="http://www.threatexpert.com/files/sr.exe.html" target="_blank">sr.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">176,128 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/tools.exe.html" target="_blank">tools.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\tools\<a href="http://www.threatexpert.com/files/tools.exe.html" target="_blank">tools.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">98,304 bytes</td></tr>
+<tr><td class="cell_1">qvodupdate.exe</td><td class="cell_1">%ProgramFiles%\tools\qvodupdate.exe</td><td class="cell_2">1,613,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">5,279,744 bytes</td></tr>
+<tr><td class="cell_1">qvod_online.exe</td><td class="cell_1">%ProgramFiles%\tools\qvod_online.exe</td><td class="cell_2">761,856 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{2175ADB5-255E-4f1b-A091-EA0BE135D9E0}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}</li>
+<li>HKEY_CURRENT_USER\Software\Browser</li>
+</ul></ul>
+<ul><li>The following Registry Key was deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{06849E9F-C8D7-4D59-B87D-784B7D6BE0B3}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}\InprocServer32]</li><ul>
+<li>(Default) = "%CommonAppData%\tools\bdmanager.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}]</li><ul>
+<li>(Default) = "AccountProtect Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{2175ADB5-255E-4f1b-A091-EA0BE135D9E0}]</li><ul>
+<li>AppPath = "%ProgramFiles%\tools"</li>
+<li>AppName = "BaiduP2PService.exe"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{CDD7718A-D29A-4E86-A62D-7A44848A46C1}]</li><ul>
+<li>NoExplorer = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Browser]</li><ul>
+<li>IEVersion = "6"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>3</li>
+<li>f182cd1a-751e-4a90-9153-cbf3eb0e2040-zxcBDNetMutexV3</li>
+<li>_!SHMSFTHISTORY!_</li>
+<li>4</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>stat.p2sp.baidu.com</li>
+<li>cmp2s.p2sp.baidu.com</li>
+<li>acc.p2sp.baidu.com</li>
+<li>media.p2sp.baidu.com</li>
+<li>acctrack.kuaibo.com</li>
+<li>www.baidu.com</li>
+<li>s.p2sp.baidu.com</li>
+<li>qd.kuaibo.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">s.p2sp.baidu.com<td class="cell_2">8000</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">url.cn</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">123.shipinbus.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>u.php?id=89</li>
+<li>index.jpg</li>
+<li>RVz5FY</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://dl1sw.baidu.com/client/20140808/sdins/F0808_s_30825.exe</li>
+<li>http://dl1sw.baidu.com/zipws/mppyek_70914.exe</li>
+<li>http://dl.wandoujia.com/files/third/WanDouJiaSetup_zhimeng14_kb.exe</li>
+<li>http://t.qq.com&quot;;</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://log.changhaobo.com/?start=qvod&amp;sd=null&amp;ant=null&amp;bind=4&amp;ret=finish</li>
+<li>http://conf.aq8.cc/tool/tasks.ini</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 056C 0000 9A96 5BBC AE5D 22B3 BC56 DAE0 | .l....[..]"..V..
+00000010 | 9304 4CB7 7036 C16D 33B5 CC76 A2C2 EF4B | ..L.p6.m3..v...K
+00000020 | 82FD A32C 7C88 E329 D8EB 6F9D 88A5 EE78 | ...,|..)..o....x
+00000030 | 2CD7 0258 CA12 67EF 38E2 DF57 AE55 D740 | ,..X..g.8..W.U.@
+00000040 | DC3A 96ED 8383 D322 D3F1 45AD DFBB 5432 | .:....."..E...T2
+00000050 | E4E8 73D1 F6BB DD0E F664 457D DE77 1848 | ..s......dE}.w.H
+00000060 | 8EF6 0A0C FF2A 50E9 919A 3E1B 3476 B3E0 | .....*P...>.4v..
+00000070 | AE74 EBB6 9C00 7B72 2D50 18D4 6934 6581 | .t....{r-P..i4e.
+00000080 | 07E6 8CF0 37BF E9FC D8D3 B3             | ....7......
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1112:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 056C 0000 9A96 5BBC AE5D 22B3 BC56 DAE0 | .l....[..]"..V..
+00000010 | 9304 4CB7 7036 C16D 33B5 CC76 A2C2 EF4B | ..L.p6.m3..v...K
+00000020 | 82FD A32C 7C88 E329 D8EB 6F9D 88A5 EE78 | ...,|..)..o....x
+00000030 | 2CD7 0258 CA12 67EF 38E2 DF57 AE55 D740 | ,..X..g.8..W.U.@
+00000040 | DC3A 96ED 8383 D322 D3F1 45AD DFBB 5432 | .:....."..E...T2
+00000050 | E4E8 73D1 F6BB DD0E F664 457D DE77 1848 | ..s......dE}.w.H
+00000060 | 8EF6 0A0C FF2A 50E9 919A 3E1B 3476 B3E0 | .....*P...>.4v..
+00000070 | AE74 EBB6 9C00 7B72 2D50 18D4 6934 6581 | .t....{r-P..i4e.
+00000080 | 07E6 8CF0 37BF E9FC D8D3 B3             | ....7......
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1034:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 056C 0000 9A96 5BBC AE5D 22B3 BC56 DAE0 | .l....[..]"..V..
+00000010 | 9304 4CB7 7036 C16D 33B5 CC76 A2C2 EF4B | ..L.p6.m3..v...K
+00000020 | 82FD A32C 7C88 E329 D8EB 6F9D 88A5 EE78 | ...,|..)..o....x
+00000030 | 2CD7 0258 CA12 67EF 38E2 DF57 AE55 D740 | ,..X..g.8..W.U.@
+00000040 | DC3A 96ED 8383 D322 D3F1 45AD DFBB 5432 | .:....."..E...T2
+00000050 | E4E8 73D1 F6BB DD0E F664 457D DE77 1848 | ..s......dE}.w.H
+00000060 | 8EF6 0A0C FF2A 50E9 919A 3E1B 3476 B3E0 | .....*P...>.4v..
+00000070 | AE74 EBB6 9C00 7B72 2D50 18D4 6934 6581 | .t....{r-P..i4e.
+00000080 | 07E6 8CF0 37BF E9FC D8D3 B3             | ....7......
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 21 September 2014 21:58:03</li>
+<li>Processing time: 8 min 46 sec</li>
+<li>Downloaded sample #1:</li>
+<ul>
+<li>File MD5: 0xDC9B1FF298A69D5118681A1BB84E2A4D</li>
+<li>File SHA-1: 0x0B824C6D3FF7E42DA05051399F22CCFE47144033</li>
+<li>Filesize: 12,272,944 bytes</li>
+</ul>
+<li>Downloaded sample #2:</li>
+<ul>
+<li>File MD5: 0x6536FFF9AB18875DC365239214F2BE63</li>
+<li>File SHA-1: 0x0160FB38887D0CA33E82411D9D74C244DDFB958D</li>
+<li>Filesize: 1,765,984 bytes</li>
+</ul>
+<li>Downloaded sample #3:</li>
+<ul>
+<li>File MD5: 0xFA4EDE050F0FABACC0A258A2C0591D14</li>
+<li>File SHA-1: 0xF5EF271DA627F509EF47AC0C175FAB34A73F7A82</li>
+<li>Filesize: 35,933,032 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=6a1bef4c-c87f-40a1-9d8a-c8a57c64f084&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">2,490,368 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">BaiduSdSvc.exe</td><td class="cell_1">%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BaiduSdSvc.exe</td><td class="cell_2">438,272 bytes</td></tr>
+<tr><td class="cell_1">BDDownloader.exe</td><td class="cell_1">%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDDownloader.exe</td><td class="cell_2">1,417,216 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #2]</td><td class="cell_1">[file and pathname of the sample #2]</td><td class="cell_2">1,110,016 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #3]</td><td class="cell_1">[file and pathname of the sample #3]</td><td class="cell_2">1,675,264 bytes</td></tr>
+<tr><td class="cell_1">BDKVWsc.exe</td><td class="cell_1">%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDKVWsc.exe</td><td class="cell_2">380,928 bytes</td></tr>
+<tr><td class="cell_1">bddownloader.exe</td><td class="cell_1">%Temp%\bddownloader_installer\1.0.106.1[2014-9-21-21-58-22]\bddownloader.exe</td><td class="cell_2">1,519,616 bytes</td></tr>
+<tr><td class="cell_1">baidusdbugrpt.exe</td><td class="cell_1">%ProgramFiles%\baidu\baidusd\1.8.0.1255\baidusdbugrpt.exe</td><td class="cell_2">557,056 bytes</td></tr>
+<tr><td class="cell_1">baidusdrepair.exe</td><td class="cell_1">%ProgramFiles%\baidu\baidusd\1.8.0.1255\baidusdrepair.exe</td><td class="cell_2">389,120 bytes</td></tr>
+<tr><td class="cell_1">bddownloader.exe</td><td class="cell_1">%ProgramFiles%\common files\baidu\bddownload\106\bddownloader.exe</td><td class="cell_2">1,519,616 bytes</td></tr>
+<tr><td class="cell_1">BaiduSd.exe</td><td class="cell_1">%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BaiduSd.exe</td><td class="cell_2">368,640 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">BDKVRTP</td><td class="cell_1">BDKVRTP Service</td><td class="cell_1">"Running"</td><td class="cell_2">"%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BaiduSdSvc.exe" -r</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AllFilesystemObjects\shellex\ContextMenuHandlers\BDShellExt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\BDShellExt.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\DownloadProxy.EXE</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\ieCommonPlugin.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{51BEE30D-EEC8-4BA3-930B-298B8E759EB1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{6B4447CA-C33E-4E65-914D-C7B346D73F80}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{FBE0E29B-01DB-4876-B147-46F5AABA6823}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}\Implemented Categories\{00021492-0000-0000-C000-000000000046}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers\BDShellExt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\NumMethods</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}\NumMethods</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\NumMethods</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\ContextMenuHandlers\BDShellExt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\????</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Baidu</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Baidu\BaiduSd</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@baidu.com/BaidusdDetectNPPlugin</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@baidu.com/BaidusdDetectNPPlugin\MimeTypes</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@baidu.com/BaidusdDetectNPPlugin\MimeTypes\application/np-BaiduSDDetect</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BD0001</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BD0001\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BD0001\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BD0002</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AllFilesystemObjects\shellex\ContextMenuHandlers\BDShellExt]</li><ul>
+<li>(Default) = "{00890530-6A9F-4be2-B1BB-73F01E2BB986}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\BDShellExt.DLL]</li><ul>
+<li>AppID = "{FBE0E29B-01DB-4876-B147-46F5AABA6823}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\DownloadProxy.EXE]</li><ul>
+<li>AppID = "{51BEE30D-EEC8-4BA3-930B-298B8E759EB1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\ieCommonPlugin.DLL]</li><ul>
+<li>AppID = "{6B4447CA-C33E-4E65-914D-C7B346D73F80}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{51BEE30D-EEC8-4BA3-930B-298B8E759EB1}]</li><ul>
+<li>(Default) = "DownloadProxy"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{6B4447CA-C33E-4E65-914D-C7B346D73F80}]</li><ul>
+<li>(Default) = "ieCommonPlugin"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{FBE0E29B-01DB-4876-B147-46F5AABA6823}]</li><ul>
+<li>(Default) = "BDShellExt"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "BDShellExt.BDShellExtMenu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\TypeLib]</li><ul>
+<li>(Default) = "{45D1EEF3-7713-48fa-B7A5-B77229C7D330}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\ProgID]</li><ul>
+<li>(Default) = "BDShellExt.BDShellExtMenu.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDShellExt.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00890530-6A9F-4be2-B1BB-73F01E2BB986}]</li><ul>
+<li>(Default) = "BDShellExtMenu Class"</li>
+<li>AppID = "{FBE0E29B-01DB-4876-B147-46F5AABA6823}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\InProcServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDShellExt.dll"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}]</li><ul>
+<li>(Default) = "PSFactoryBuffer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "ieCommonPlugin.Implement"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\TypeLib]</li><ul>
+<li>(Default) = "{9A93865B-4314-47AE-8C4A-850748CCC6BF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\ProgID]</li><ul>
+<li>(Default) = "ieCommonPlugin.Implement.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\explugin\ieBaiduSDDetectPlug.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}]</li><ul>
+<li>(Default) = "Implement Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\InProcServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\common files\baidu\bddownload\106\bdcomproxy.dll"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}]</li><ul>
+<li>(Default) = "PSFactoryBuffer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDKVDeskBand.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85E0B1AA-04FA-11D1-B7DA-00A0C90348D6}]</li><ul>
+<li>(Default) = "U???"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "BDDownloadProxy.Downloader"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\TypeLib]</li><ul>
+<li>(Default) = "{DA624F8F-98BF-4B03-AD11-A12D07119E81}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\ProgID]</li><ul>
+<li>(Default) = "BDDownloadProxy.Downloader.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}\LocalServer32]</li><ul>
+<li>(Default) = ""%ProgramFiles%\common files\baidu\bddownload\106\bddownloader.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}]</li><ul>
+<li>(Default) = "Downloader Class"</li>
+<li>AppID = "{51BEE30D-EEC8-4BA3-930B-298B8E759EB1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers\BDShellExt]</li><ul>
+<li>(Default) = "{00890530-6A9F-4be2-B1BB-73F01E2BB986}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\TypeLib]</li><ul>
+<li>(Default) = "{45D1EEF3-7713-48FA-B7A5-B77229C7D330}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}\NumMethods]</li><ul>
+<li>(Default) = "3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0C5C9741-79A4-4A5F-A9B3-9E686CFF879B}]</li><ul>
+<li>(Default) = "IBDShellExtMenu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}\NumMethods]</li><ul>
+<li>(Default) = "6"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6B3732AA-F6D4-4F16-9E22-49EDC52C9514}]</li><ul>
+<li>(Default) = "IDownloader_2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\TypeLib]</li><ul>
+<li>(Default) = "{DA624F8F-98BF-4B03-AD11-A12D07119E81}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}\NumMethods]</li><ul>
+<li>(Default) = "15"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7044CE4B-FE34-4DD1-A0FA-157E1E179ECA}]</li><ul>
+<li>(Default) = "IDownloader"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\TypeLib]</li><ul>
+<li>(Default) = "{9A93865B-4314-47AE-8C4A-850748CCC6BF}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C7777CD6-0F43-49E4-B988-F62E3BA5130A}]</li><ul>
+<li>(Default) = "IImplement"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\TypeLib]</li><ul>
+<li>(Default) = "{DA624F8F-98BF-4B03-AD11-A12D07119E81}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E7270EC6-0113-4A78-B610-E501D0A9E48E}]</li><ul>
+<li>(Default) = "_IDownloaderEvents"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\shellex\ContextMenuHandlers\BDShellExt]</li><ul>
+<li>(Default) = "{00890530-6A9F-4be2-B1BB-73F01E2BB986}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BDShellExt.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\HELPDIR]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{45D1EEF3-7713-48FA-B7A5-B77229C7D330}\1.0]</li><ul>
+<li>(Default) = "BDShellExt 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\explugin\ieBaiduSDDetectPlug.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\HELPDIR]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9A93865B-4314-47AE-8C4A-850748CCC6BF}\1.0]</li><ul>
+<li>(Default) = "ieCommonPlugin 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\common files\baidu\bddownload\106\bddownloader.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\HELPDIR]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{DA624F8F-98BF-4B03-AD11-A12D07119E81}\1.0]</li><ul>
+<li>(Default) = "DownloadProxy 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader\CurVer]</li><ul>
+<li>(Default) = "BDDownloadProxy.Downloader.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader\CLSID]</li><ul>
+<li>(Default) = "{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader]</li><ul>
+<li>(Default) = "Downloader Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader.1\CLSID]</li><ul>
+<li>(Default) = "{91B5E4DE-4C97-41CD-9F94-84BFAABB7371}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDDownloadProxy.Downloader.1]</li><ul>
+<li>(Default) = "Downloader Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu\CurVer]</li><ul>
+<li>(Default) = "BDShellExt.BDShellExtMenu.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu\CLSID]</li><ul>
+<li>(Default) = "{00890530-6A9F-4be2-B1BB-73F01E2BB986}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu]</li><ul>
+<li>(Default) = "BDShellExtMenu Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu.1\CLSID]</li><ul>
+<li>(Default) = "{00890530-6A9F-4be2-B1BB-73F01E2BB986}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\BDShellExt.BDShellExtMenu.1]</li><ul>
+<li>(Default) = "BDShellExtMenu Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement\CurVer]</li><ul>
+<li>(Default) = "ieCommonPlugin.Implement.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement\CLSID]</li><ul>
+<li>(Default) = "{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement]</li><ul>
+<li>(Default) = "Implement Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement.1\CLSID]</li><ul>
+<li>(Default) = "{36E6A19A-6C8C-4250-B42A-24B8D3514ABA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ieCommonPlugin.Implement.1]</li><ul>
+<li>(Default) = "Implement Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>BaiduSdTray = ""%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\BaiduSdTray.exe"  -stmd=3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]</li><ul>
+<li>{00890530-6A9F-4be2-B1BB-73F01E2BB986} = "BDShellExtMenu Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Baidu\BaiduSd]</li><ul>
+<li>InstallDate = "2014-9-21"</li>
+<li>VirusTime = "2013.11.28 0110"</li>
+<li>Version = "1.8.0.1255"</li>
+<li>InstallDir = "%ProgramFiles%\Baidu\BaiduSd"</li>
+<li>INSTLANG = "2052"</li>
+<li>SupplyID = "30825"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@baidu.com/BaidusdDetectNPPlugin\MimeTypes\application/np-BaiduSDDetect]</li><ul>
+<li>Description = "BaidusdDetectNPPlugin"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@baidu.com/BaidusdDetectNPPlugin]</li><ul>
+<li>Description = "Baidusd detect NPAPI plugin"</li>
+<li>Path = "%ProgramFiles%\Baidu\BaiduSd\1.8.0.1255\explugin\npBaiduSDDetectPlug.dll"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl]</li><ul>
+<li>CrashDumpEnabled = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceGroupOrder]</li><ul>
+<li>List = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]</li><ul>
+<li>CrashDumpEnabled = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceGroupOrder]</li><ul>
+<li>List = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>MyMutex_Install_{8F8594CD-13C7-452f-A2A8-0C1CF7D7F590}</li>
+<li>MyMutex_UnInstall_{8F8594CD-13C7-452f-A2A8-0C1CF7D7F590}</li>
+<li>0463BCCF-DCEB-4f49-AF52-5664774F7A9E</li>
+<li>W</li>
+<li>BaiduSd{D8A4131D-3A7A-48a1-B080-28E1DC04F7C2}</li>
+<li>bdkv_download_mutex_</li>
+<li>BaiduSd{2CCBE79B-797E-43a1-9C32-13987A2E683C}</li>
+<li>{63900534-10AB-4c30-B0D4-95D6B65A0B74}</li>
+<li>BaiduSd{2CCBE79B-797E-43a1-9C32-13987A2E683C}1411361905</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>wpad.mrc.pctools.com.</li>
+<li>p.x.baidu.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">wpad.mrc.pctools.com.<td class="cell_2">1041</td><tr>
+<tr><td class="cell_1">p.x.baidu.com<td class="cell_2">1045</td><tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>wpad.dat</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://weishi.baidu.com/api/openapi/json_get_weishi_down_url_v1/55555</li>
+<li>localhost</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

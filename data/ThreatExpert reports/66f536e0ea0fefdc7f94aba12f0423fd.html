@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: not-a-virus:Client-SMTP.Win32.Blat.a, Trojan-PSW.Win32.LdPinch.ayhn, not-a-virus:Monitor.Win32.Hooker.bx, not-a-virus:PSWTool.Win32.MPR.df, Backdoor.BAT.Agent.k">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: not-a-virus:Client-SMTP.Win32.Blat.a, Trojan-PSW.Win32.LdPinch.ayhn..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2016, 23:23:02</li>
+<li>Processing time: 5 min 56 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x66F536E0EA0FEFDC7F94ABA12F0423FD</li>
+<li>File SHA-1: 0x70CCE87ED14C703CE78E644E9E4A53F1DC51F642</li>
+<li>Filesize: 4,745,625 bytes</li>
+<li>Alias: not-a-virus:Client-SMTP.Win32.Blat.a, Trojan-PSW.Win32.LdPinch.ayhn, not-a-virus:Monitor.Win32.Hooker.bx, not-a-virus:PSWTool.Win32.MPR.df, Backdoor.BAT.Agent.k [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Contains characteristics a trojan that can steals passwords from multiple popular email, ICQ and FTP client applications, such as Mirabilis ICQ, Miranda, Trillian, Microsoft Outlook, CuteFTP, Thunderbird, FileZilla, FlashFXP, The Bat!, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote SMTP server and sending out email.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\D.tmp</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/install.exe.html" target="_blank">install.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/install.exe.html" target="_blank">install.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">274,432 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">rutserv.exe</td><td class="cell_1">%System%\catroot3\rutserv.exe</td><td class="cell_2">6,959,104 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/mpr.exe.html" target="_blank">mpr.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/mpr.exe.html" target="_blank">mpr.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">3,411,968 bytes</td></tr>
+<tr><td class="cell_1">realip.exe</td><td class="cell_1">%Temp%\realip.exe</td><td class="cell_2">98,304 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/blat.exe.html" target="_blank">blat.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/blat.exe.html" target="_blank">blat.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">159,744 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/de.exe.html" target="_blank">de.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/de.exe.html" target="_blank">de.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Internet Explorer\<a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">RManService</td><td class="cell_1">TektonIT - RMS Host</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\catroot3\rutserv.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpr.DocHostUIHandler</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpr.DocHostUIHandler\Clsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\RWLN</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Public Domain</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Public Domain\Blat</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RManService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\RManService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}\ProgID]</li><ul>
+<li>(Default) = "mpr.DocHostUIHandler"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}\LocalServer32]</li><ul>
+<li>(Default) = "%Temp%\mpr.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F2BBC05-40DF-11D2-9455-00104BC936FF}]</li><ul>
+<li>(Default) = "Implements DocHostUIHandler"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpf]</li><ul>
+<li>(Default) = "mprf"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpr.DocHostUIHandler\Clsid]</li><ul>
+<li>(Default) = "{3F2BBC05-40DF-11D2-9455-00104BC936FF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpr.DocHostUIHandler]</li><ul>
+<li>(Default) = "Implements DocHostUIHandler"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\shell\open\command]</li><ul>
+<li>(Default) = "%Temp%\mpr.exe "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf\DefaultIcon]</li><ul>
+<li>(Default) = "%Temp%\mpr.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mprf]</li><ul>
+<li>BrowserFlags = 0x00000008</li>
+<li>EditFlags = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\RWLN]</li><ul>
+<li>Asynchronous = 0x00000000</li>
+<li>Impersonate = 0x00000000</li>
+<li>DllName = "RWLN.dll"</li>
+<li>Logoff = "WLEventLogoff"</li>
+<li>Logon = "WLEventLogon"</li>
+<li>Startup = "WLEventStartup"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Public Domain\Blat]</li><ul>
+<li>SMTP server = "smtp.yandex.ru"</li>
+<li>SMTP Port = "25"</li>
+<li>Try = "1"</li>
+<li>Login = "dnpsb20uZGViaWxvdg=="</li>
+<li>Pwd = "MjI0NDY2ODgwMA=="</li>
+<li>Sender = "vzlom.debilov@yandex.ru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "block_reader"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER\0000]</li><ul>
+<li>Service = "block_reader"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "MPR DRV"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BLOCK_READER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "RManService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE\0000]</li><ul>
+<li>Service = "RManService"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "TektonIT - RMS Host"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RMANSERVICE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader\Enum]</li><ul>
+<li>0 = "Root\LEGACY_BLOCK_READER\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\block_reader]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "\??\%Temp%\block_reader.sys"</li>
+<li>DisplayName = "MPR DRV"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService\Enum]</li><ul>
+<li>0 = "Root\LEGACY_RMANSERVICE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RManService]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\catroot3\rutserv.exe"</li>
+<li>DisplayName = "TektonIT - RMS Host"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Allows Remote Manipulator System users to connect to this machine."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "block_reader"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER\0000]</li><ul>
+<li>Service = "block_reader"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "MPR DRV"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BLOCK_READER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "RManService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE\0000]</li><ul>
+<li>Service = "RManService"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "TektonIT - RMS Host"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RMANSERVICE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader\Enum]</li><ul>
+<li>0 = "Root\LEGACY_BLOCK_READER\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\block_reader]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "\??\%Temp%\block_reader.sys"</li>
+<li>DisplayName = "MPR DRV"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService\Enum]</li><ul>
+<li>0 = "Root\LEGACY_RMANSERVICE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RManService]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\catroot3\rutserv.exe"</li>
+<li>DisplayName = "TektonIT - RMS Host"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Allows Remote Manipulator System users to connect to this machine."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList]</li><ul>
+<li>HelpAssistant = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>MutexNPA_UnitVersioning_2336</li>
+<li>MutexNPA_UnitVersioning_2344</li>
+<li>MutexNPA_UnitVersioning_2360</li>
+<li>MutexNPA_UnitVersioning_2368</li>
+<li>MutexNPA_UnitVersioning_2416</li>
+<li>Local\RManFUSTray</li>
+<li>MutexNPA_UnitVersioning_2832</li>
+<li>MutexNPA_UnitVersioning_2840</li>
+<li>MutexNPA_UnitVersioning_2956</li>
+<li>_SHuassist.mtx</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.lavresearch.com</li>
+<li>smtp.yandex.ru</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/smtp_mod.gif"/></td><td width="100%" class="h3">Generated SMTP traffic</td></tr></table>
+<ul><li>Email Sender:</li>
+<ul>
+<li>vzlom.debilov@yandex.ru</li>
+</ul></ul>
+<ul><li>Email Recipient:</li>
+<ul>
+<li>vzlom.debilov@yandex.ru</li>
+</ul></ul>
+<ul><li>Email Subject:</li>
+<ul>
+<li>PERFECTLY! RMS Service (c) by Alex Hitch</li>
+</ul></ul>
+<ul><li>Email Attachment:</li>
+<ul>
+<li>SAV_%ComputerName%_6.22.2016_11-23-15_PM.mpf (21,226 bytes)</li>
+</ul></ul>
+<ul><li>Email Body:</li></ul>
+<p><table width=50% class="tbl" cellpadding="25" cellspacing="0">
+<tr><td class="cell">Real Ip [pass]</td></tr>
+</table></p>
+<ul><li>For example, the generated email message may look similar to the one shown below:</li></ul><p><img src="getimage.aspx?uid=6fd6c9b1-0fef-4e1a-ac4b-53a02a59c0bb&image=email&sub=1"></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

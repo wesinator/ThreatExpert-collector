@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.IRCBot, Backdoor.Win32.Rbot.achw, Mal/Generic-L, Backdoor:Win32/Rbot.JB, Win-Trojan/Krunchy.80896.D">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.IRCBot, Backdoor.Win32.Rbot.achw, Mal/Generic-L, Backdoor:Win32/Rbot.JB..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 26 October 2015, 22:25:40</li>
+<li>Processing time: 6 min 41 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x41ADF78D8C78828BDA1429094B72CE63</li>
+<li>File SHA-1: 0xACC42BEDFC26F7B308A3F3005AA2F1C7BD83E328</li>
+<li>Filesize: 80,896 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-ircbot.html" target="_blank">W32.IRCBot<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Backdoor.Win32.Rbot.achw [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-generic-l.html" target="_blank">Mal/Generic-L<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Backdoor:Win32/Rbot.JB [Microsoft]</li>
+<li>Win-Trojan/Krunchy.80896.D [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-012: DCOM RPC Overflow exploit - replication across TCP 135/139/445/593 (common for Blaster, Welchia, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-011: LSASS Overflow exploit - replication across TCP 445 (common for Sasser, Bobax, Kibuv, Korgo, Gaobot, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to terminate Antivirus, Firewall and other security related processes.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">syken.exe</td><td class="cell_1">%System%\syken.exe</td><td class="cell_2">13,213,696 bytes</td></tr>
+<tr><td class="cell_1">rkika.exe</td><td class="cell_1">%System%\rkika.exe</td><td class="cell_2">13,213,696 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">13,213,696 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\OptimalLayout</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]</li><ul>
+<li>EnableRemoteConnect = "N"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OptimalLayout]</li><ul>
+<li>AV Service Plugin = "syken.exe"</li>
+<li>EnableDCOM = "N"</li>
+<li>restrictanonymous = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]</li><ul>
+<li>MaxConnectionsPer1_0Server = 0x00000050</li>
+<li>MaxConnectionsPerServer = 0x00000050</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\OptimalLayout]</li><ul>
+<li>AV Service Plugin = "syken.exe"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]</li><ul>
+<li>EnableDCOM = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]</li><ul>
+<li>restrictanonymous = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]</li><ul>
+<li>restrictanonymous = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>walkAway</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1085</td><td class="cell_1">TCP</td><td class="cell_2">rkika.exe (%System%\rkika.exe)</td></tr>
+<tr><td class="cell_1">1086</td><td class="cell_1">TCP</td><td class="cell_2">syken.exe (%System%\syken.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>hj.sipikisipi.info</li>
+<li>192.5.5.241</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+NICK BDUntmpJc
+USER CUUV 0 0 :BDUntmpJc
+USERHOST BDUntmpJc
+MODE BDUntmpJc -x+i
+JOIN #ok
+NOTICE BDUntmpJc :.VERSION iroffer v1.3b10 [D&P 23874155], http://iroffer.org/.
+NOTICE #ok :BDUntmpJc has just versioned me.
+PRIVMSG  :.n.z.m. (patcher.p.l.g) ....   fixed, version 1.
+NICK [`fm]jh`i
+USER QAGJ 0 0 :[`fm]jh`i
+USERHOST [`fm]jh`i
+MODE [`fm]jh`i -x+i
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>Heuristically identified capability to terminate the following security related processes:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+_avp32.exe
+_avpcc.exe
+_avpm.exe
+cmd.exe
+tds2-98.exe
+tds2-nt.exe
+tds-3.exe
+teekids.exe
+tfak.exe
+tfak5.exe
+tgbob.exe
+titanin.exe
+titaninxp.exe
+tracert.exe
+trickler.exe
+trjscan.exe
+trjsetup.exe
+trojantrap3.exe
+tsadbot.exe
+tvmd.exe
+tvtmd.exe
+undoboot.exe
+updat.exe
+update.exe
+upgrad.exe
+utpost.exe
+vbcmserv.exe
+vbcons.exe
+vbust.exe
+vbwin9x.exe
+vbwinntw.exe
+vcsetup.exe
+vet32.exe
+vet95.exe
+vettray.exe
+vfsetup.exe
+vir-help.exe
+virusmdpersonalfirewall.exe
+vnlan300.exe
+vnpc3000.exe
+vpc32.exe
+vpc42.exe
+vpfw30s.exe
+vptray.exe
+vscan40.exe
+vsched.exe
+vsecomr.exe
+vshwin32.exe
+vsisetup.exe
+vsmain.exe
+vsmon.exe
+vsstat.exe
+vswin9xe.exe
+vswinntse.exe
+vswinperse.exe
+w32dsm89.exe
+w9x.exe
+watchdog.exe
+webdav.exe
+webscanx.exe
+webtrap.exe
+wfindv32.exe
+wgfe95.exe
+whoswatchingme.exe
+wimmun32.exe
+win32.exe
+win32us.exe
+winactive.exe
+win-bugsfix.exe
+window.exe
+windows.exe
+wininetd.exe
+wininit.exe
+wininitx.exe
+winlogin.exe
+winmain.exe
+winnet.exe
+winppr32.exe
+winrecon.exe
+winservn.exe
+winssk32.exe
+winstart.exe
+winstart001.exe
+wintsk32.exe
+winupdate.exe
+wkufind.exe
+wnad.exe
+wnt.exe
+wradmin.exe
+wrctrl.exe
+wsbgate.exe
+wupdater.exe
+wupdt.exe
+wyvernworksfirewall.exe
+xpf202en.exe
+zapro.exe
+zapsetup3001.exe
+zatutor.exe
+zonalm2601.exe
+zonealarm.exe
+</textarea></tr></td></table></p>
+<ul><li>Heuristically identified capability of spreading across the following weakly restricted network shares:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="5">
+ADMIN$
+C$
+D$
+E$
+IPC$
+</textarea></tr></td></table></p>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+00000000
+administrator
+albatross
+alexander
+amorphous
+andromache
+anthropogenic
+atmosphere
+beethoven
+bicameral
+billy
+campanile
+catherine
+chemistry
+christina
+christine
+commrades
+cornelius
+desperate
+discovery
+donaldduck
+dudette
+edinburgh
+eiderdown
+elizabeth
+establish
+foolproof
+foresight
+guest
+h4x0r1ng
+h4x0ring
+h4x1ng
+happening
+haxing
+imbroglio
+innocuous
+lamination
+macintosh
+network
+nutrition
+oceanography
+percolate
+persimmon
+pondering
+princeton
+rachmaninoff
+rochester
+rosco
+roscop
+roscopcoltrane
+sheffield
+stephanie
+stratford
+stuttgart
+superstage
+superuser
+tangerine
+telephone
+temptation
+topography
+wh0r3
+wh0re
+wileecoyote
+williamsburg
+wilma
+windose
+windowz
+windoze
+windoze2k
+windoze95
+windoze98
+windozeme
+windozexp
+winston
+wisconsi
+wisconsin
+wiseass
+within
+wolverin
+woman
+wombat
+woodwind
+wordperf
+wormwood
+wyoming
+xmodem
+xyzzy
+yankee
+yellowst
+yellowstone
+yolanda
+yosemite
+young
+zebra
+zeitgeis
+ziggy
+zimmerma
+zimmerman
+zmodem
+zombie
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Gosys, Trojan.Win32.Swisyn.bner, W32/Swisyn.ag, W32/Mofksys-B, PWS:Win32/VB.CU, Trojan.Win32.VB, W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B, Virus:Win32/Virut.BN, Trojan.Win32.VkHost">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Gosys, Trojan.Win32.Swisyn.bner, W32/Swisyn.ag, W32/Mofksys-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 November 2015, 22:29:24</li>
+<li>Processing time: 6 min 28 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7FB4B4F7C9F315D33C5522D591B2375A</li>
+<li>File SHA-1: 0xEBE4D35D0079DF4F75E0D163B450C3C4336FE647</li>
+<li>Filesize: 1,420,743 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.Swisyn.bner [Kaspersky Lab]</li>
+<li>W32/Swisyn.ag [McAfee]</li>
+<li>W32/Mofksys-B [Sophos]</li>
+<li>PWS:Win32/VB.CU [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risks were identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/trojan-pws-hazif.html" target="_blank">Trojan-PWS.Hazif<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Trojan.PSW.Hazif steals yahoo messenger username and password and also drops malicious files to the system.</td>
+</tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/adware-component-unrelated.html" target="_blank">Adware.Component.Unrelated<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">These common components have files and keys that are in different threats but the threats are not related to one another in that the author of the signature is not the same. It is recommended that all these entries be removed.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\<a href="http://www.threatexpert.com/files/mrsys.exe.html" target="_blank">mrsys.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">211,868 bytes</td>
+<td class="cell_1">MD5: 0x157CAB730D4CA96738C57B7387787991<br/>SHA-1: 0x87DCF935DA2207624D10C2F5CAEF2BA60998BC3F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\<a href="http://www.threatexpert.com/files/icsys.icn.exe.html" target="_blank">icsys.icn.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">211,886 bytes</td>
+<td class="cell_1">MD5: 0x4E4AFB0E02A1FDA524F5511CD28534B0<br/>SHA-1: 0x496604F65B02535B977C36D80958CE30C98C0FB3</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Windir%\system\cmsys.cmn
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Windir%\system\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">211,787 bytes</td>
+<td class="cell_1">MD5: 0x7C795D8B9A28DCB2323B4B4DD198F08D<br/>SHA-1: 0x16C7177D63F56C195965169D290D71A2EA09F8EC</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Windir%\system\<a href="http://www.threatexpert.com/files/spoolsv.exe.html" target="_blank">spoolsv.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">211,866 bytes</td>
+<td class="cell_1">MD5: 0x262F06CD7BD6570A34690080EE4FDF44<br/>SHA-1: 0x6AE1C110933BACF9E1C14E89A7F5A2D997A399F9</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Windir%\system\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">211,898 bytes</td>
+<td class="cell_1">MD5: 0x94C91196E2C4CB38A4D937D189DFA648<br/>SHA-1: 0x02461CB390DA1B8030D76AF5A134F47DA4D65B16</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">1,420,743 bytes</td>
+<td class="cell_1">MD5: 0x7FB4B4F7C9F315D33C5522D591B2375A<br/>SHA-1: 0xEBE4D35D0079DF4F75E0D163B450C3C4336FE647</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-gosys.html" target="_blank">W32.Gosys<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.Swisyn.bner [Kaspersky Lab]<br/>W32/Swisyn.ag [McAfee]<br/>W32/Mofksys-B [Sophos]<br/>PWS:Win32/VB.CU [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+[file and pathname of the sample #1]?
+</td>
+<td class="cell_1">1,208,832 bytes</td>
+<td class="cell_1">MD5: 0x814223D28361B9385EB8BF3C8C109B1D<br/>SHA-1: 0x1D8AB676368E9E8FC621C025FEE0E084849B6053</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/virus-win32-virut-bn.html" target="_blank">Virus:Win32/Virut.BN<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-vkhost.html" target="_blank">Trojan.Win32.VkHost<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%Windir%\Tasks\At1.job
+</td>
+<td class="cell_1">344 bytes</td>
+<td class="cell_1">MD5: 0xCA9D2CA678C7D6C894D36153DB5E8D78<br/>SHA-1: 0x23CA026D2CE18E252E5BEFE75C6746A5816BE91C</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]?</td><td class="cell_1">[file and pathname of the sample #1]?</td><td class="cell_2">1,241,088 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\system\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\system\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/mrsys.exe.html" target="_blank">mrsys.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\<a href="http://www.threatexpert.com/files/mrsys.exe.html" target="_blank">mrsys.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/spoolsv.exe.html" target="_blank">spoolsv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\system\<a href="http://www.threatexpert.com/files/spoolsv.exe.html" target="_blank">spoolsv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/icsys.icn.exe.html" target="_blank">icsys.icn.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\<a href="http://www.threatexpert.com/files/icsys.icn.exe.html" target="_blank">icsys.icn.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">192,512 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{F146C9B1-VMVQ-A9RC-NUFL-D0BA00B4E999}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{F146C9B1-VMVQ-A9RC-NUFL-D0BA00B4E999}]</li><ul>
+<li>StubPath = "%AppData%\mrsys.exe MR"</li>
+</ul>
+<br/>
+<em>so that mrsys.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]</li><ul>
+<li>Explorer = "%Windir%\system\explorer.exe RO"</li>
+<li>Svchost = "%Windir%\system\svchost.exe RO"</li>
+</ul>
+<br/>
+<em>so that explorer.exe runs every time Windows starts</em><br/>
+<em>so that svchost.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Shell = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/indonesia.gif"></td>
+<td class="cell_2">Indonesia</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/russian_federation.gif"></td>
+<td class="cell_2">Russian Federation</td><tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>ilo.brenz.pl</li>
+<li>oqqsom.com</li>
+<li>twcomz.com</li>
+<li>aqzmzl.com</li>
+<li>mreetw.com</li>
+<li>pykqvx.com</li>
+<li>kiehmp.com</li>
+<li>vxvmxi.com</li>
+<li>rpmimg.com</li>
+<li>jrndtp.com</li>
+<li>eyaohh.com</li>
+<li>ant.trenz.pl</li>
+<li>scuamy.com</li>
+<li>wqfoso.com</li>
+<li>uupcuk.com</li>
+<li>rudcba.com</li>
+<li>uuhjqs.com</li>
+<li>gaeque.com</li>
+<li>gxjhqh.com</li>
+<li>ormuhu.com</li>
+<li>cqahgh.com</li>
+<li>heouee.com</li>
+<li>rsiuwy.com</li>
+<li>poapyn.com</li>
+<li>fsuues.com</li>
+<li>ebwxor.com</li>
+<li>hznejy.com</li>
+<li>mwyqul.com</li>
+<li>lnuesd.com</li>
+<li>eyaqfu.com</li>
+<li>daizba.com</li>
+<li>mhhcrv.com</li>
+<li>ynaazy.com</li>
+<li>krieon.com</li>
+<li>zwnqeg.com</li>
+<li>eyegjy.com</li>
+<li>berpkp.com</li>
+<li>rscouc.com</li>
+<li>pregmc.com</li>
+<li>yyzpya.com</li>
+<li>ydnogf.com</li>
+<li>ygvtui.com</li>
+<li>yaaatu.com</li>
+<li>mvueld.com</li>
+<li>ucgbau.com</li>
+<li>elincj.com</li>
+<li>gtvbbh.com</li>
+<li>hmerbs.com</li>
+<li>vjsoor.com</li>
+<li>alxwuk.com</li>
+<li>zobcvm.com</li>
+<li>yxddvu.com</li>
+<li>eszehc.com</li>
+<li>ikymaj.com</li>
+<li>xubpaz.com</li>
+<li>kyhnho.com</li>
+<li>lmonbq.com</li>
+<li>udzaaa.com</li>
+<li>oeuxec.com</li>
+<li>ypbgzh.com</li>
+<li>uezida.com</li>
+<li>wtuush.com</li>
+<li>fohoie.com</li>
+<li>ivuyaj.com</li>
+<li>fuxlgp.com</li>
+<li>runucc.com</li>
+<li>gytujy.com</li>
+<li>yhamui.com</li>
+<li>eomzvh.com</li>
+<li>xjarml.com</li>
+<li>fxvytt.com</li>
+<li>mlaawi.com</li>
+<li>onrsva.com</li>
+<li>iiwnai.com</li>
+<li>yyjvov.com</li>
+<li>wpyyke.com</li>
+<li>ruvnay.com</li>
+<li>aepjex.com</li>
+<li>qflaay.com</li>
+<li>rjklio.com</li>
+<li>choxri.com</li>
+<li>fqyvip.com</li>
+<li>jpooet.com</li>
+<li>ncutsi.com</li>
+<li>cqczyw.com</li>
+<li>bwoean.com</li>
+<li>elpzwu.com</li>
+<li>pyjwfw.com</li>
+<li>qeoaua.com</li>
+<li>cupage.com</li>
+<li>oidkac.com</li>
+<li>dztuke.com</li>
+<li>rsmoah.com</li>
+<li>macakr.com</li>
+<li>jpygyr.com</li>
+<li>jmwouw.com</li>
+<li>vsffca.com</li>
+<li>hcmaqo.com</li>
+<li>ouokyf.com</li>
+<li>ggouyu.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">oqqsom.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">5.63.155.203<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>There were application-defined hook procedures installed into the hook chain (e.g. to monitor keystrokes). The installed hooks are handled by the following modules:</li><ul>
+<li>%System%\MSVBVM60.DLL</li>
+<li>%Windir%\system\explorer.exe</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

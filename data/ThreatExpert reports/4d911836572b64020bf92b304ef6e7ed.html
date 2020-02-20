@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2015, 12:52:46</li>
+<li>Processing time: 5 min 57 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x4D911836572B64020BF92B304EF6E7ED</li>
+<li>File SHA-1: 0x498B1EFAA141558414219191C71571A6AA9B7E7B</li>
+<li>Filesize: 2,745,476 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was deleted:</li>
+<ul>
+<li>%System%\TABCTL32.OCX</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\dao360.dll</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator</li>
+<li>%Windir%\Installer\{549CF99F-4548-4FCE-B50D-B83264D280A1}</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">225,280 bytes</td></tr>
+</table></p>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\F99FC9458454ECF45BD08B23462D081A</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\20AB41411B0A51A4B87B64CF904AD0E8</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\20AB41411B0A51A4B87B64CF904AD0E8</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{549CF99F-4548-4FCE-B50D-B83264D280A1}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000100-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000101-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000103-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000104-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000105-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000106-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000107-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000108-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000109-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>0]^R77owy=Jz})P'*~mB"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7DA06D40-54A0-11CF-A521-0080C77A7786}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>)S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDC217C5-ED16-11CD-956C-0000C04E4C0A}\InprocServer32]</li><ul>
+<li>InprocServer32 = "^kU4C$J5`A&mYA4'Y*v[>)S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\F99FC9458454ECF45BD08B23462D081A]</li><ul>
+<li>AlwaysInstall = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList\Net]</li><ul>
+<li>1 = "%Temp%\_is2\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList\Media]</li><ul>
+<li>DiskPrompt = "[1]"</li>
+<li>1 = "DISK1;1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A\SourceList]</li><ul>
+<li>PackageName = "Sim-Emu 6.02 Configurator - Version 2.2.msi"</li>
+<li>LastUsedSource = "n;1;%Temp%\_is2\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F99FC9458454ECF45BD08B23462D081A]</li><ul>
+<li>ProductName = "Sim-Emu 6.02 Configurator - Version 2.2"</li>
+<li>PackageCode = "41223196370840F43A83FB77F7994E41"</li>
+<li>Language = 0x00000409</li>
+<li>Version = 0x01000000</li>
+<li>Assignment = 0x00000001</li>
+<li>AdvertiseFlags = 0x00000184</li>
+<li>ProductIcon = "%Windir%\Installer\{549CF99F-4548-4FCE-B50D-B83264D280A1}\ARPPRODUCTICON.exe"</li>
+<li>InstanceType = 0x00000000</li>
+<li>AuthorizedLUAApp = 0x00000000</li>
+<li>Clients = ":"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\20AB41411B0A51A4B87B64CF904AD0E8]</li><ul>
+<li>F99FC9458454ECF45BD08B23462D081A = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]</li><ul>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator\ = "1"</li>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator\PlugIns\ = ""</li>
+<li>%Windir%\Installer\{549CF99F-4548-4FCE-B50D-B83264D280A1}\ = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\20AB41411B0A51A4B87B64CF904AD0E8]</li><ul>
+<li>F99FC9458454ECF45BD08B23462D081A = ""</li>
+</ul>
+<li>[[pathname with a string SHARE]\SharedDlls]</li><ul>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator\PlugIns\BasicIO.dll = 0x00000001</li>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator\PlugIns\PCSC.dll = 0x00000001</li>
+<li>%System%\VB40032.DLL = 0x00000001</li>
+<li>[pathname with a string SHARE]\dao360.dll = 0x00000002</li>
+<li>%ProgramFiles%\Sim-Emu 6.02 Configurator\SIM_EMU_6.02_CFG.exe = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{549CF99F-4548-4FCE-B50D-B83264D280A1}]</li><ul>
+<li>AuthorizedCDFPrefix = "c:\"</li>
+<li>Comments = "Your Comments"</li>
+<li>Contact = "info@simemu.cjb.net"</li>
+<li>DisplayVersion = "1.00.0000"</li>
+<li>HelpLink = "http://www.simemu.cjb.net"</li>
+<li>HelpTelephone = "***IS_STRING_NOT_DEFINED***"</li>
+<li>InstallDate = "20150622"</li>
+<li>InstallLocation = ""</li>
+<li>InstallSource = "%Temp%\_is2\"</li>
+<li>ModifyPath = "MsiExec.exe /I{549CF99F-4548-4FCE-B50D-B83264D280A1}"</li>
+<li>Publisher = "Sim_Emu"</li>
+<li>Readme = ""</li>
+<li>Size = ""</li>
+<li>EstimatedSize = 0x000009D8</li>
+<li>UninstallString = "MsiExec.exe /I{549CF99F-4548-4FCE-B50D-B83264D280A1}"</li>
+<li>URLInfoAbout = "http://www.simemu.cjb.net"</li>
+<li>URLUpdateInfo = "***IS_STRING_NOT_DEFINED***"</li>
+<li>VersionMajor = 0x00000001</li>
+<li>VersionMinor = 0x00000000</li>
+<li>WindowsInstaller = 0x00000001</li>
+<li>Version = 0x01000000</li>
+<li>Language = 0x00000409</li>
+<li>DisplayName = "Sim-Emu 6.02 Configurator - Version 2.2"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0000002F-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000100-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000101-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000103-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000104-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000105-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000106-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000107-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000108-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000109-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020420-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020421-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020422-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020423-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020424-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00020425-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0002E005-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8A2-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8A2-850A-101B-AFC0-4210102A8DA7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8A8-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8D2-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8D2-850A-101B-AFC0-4210102A8DA7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0713E8D8-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0BE35203-8F91-11CE-9DE3-00AA004BB851}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0BE35204-8F91-11CE-9DE3-00AA004BB851}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{373FF7F0-EB8B-11CD-8820-08002B2F4F5A}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{373FF7F0-EB8B-11CD-8820-08002B2F4F5A}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{373FF7F4-EB8B-11CD-8820-08002B2F4F5A}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE3-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE5-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE7-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{46763EE0-CAB2-11CE-8C20-00AA0051E5D4}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D8A-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D8A-9D6A-101B-AFC0-4210102A8DA7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D8F-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D8F-9D6A-101B-AFC0-4210102A8DA7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D93-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{58DA8D96-9D6A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB955-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB956-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB957-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5ACBB958-5C57-11CF-8993-00AA00688B10}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6027C2D4-FB28-11CD-8820-08002B2F4F5A}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{612A8624-0FB3-11CE-8747-524153480004}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{612A8624-0FB3-11CE-8747-524153480004}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{612A8628-0FB3-11CE-8747-524153480004}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{62823C20-41A3-11CE-9E8B-0020AF039CA3}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E638F-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E638F-850A-101B-AFC0-4210102A8DA7}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E6393-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6B7E63A3-850A-101B-AFC0-4210102A8DA7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA2-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA4-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7DA06D40-54A0-11CF-A521-0080C77A7786}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ED94440-E5E8-101B-B9B5-444553540000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ED94440-E5E8-101B-B9B5-444553540000}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ED94444-E5E8-101B-B9B5-444553540000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B196B286-BAB4-101A-B69C-00AA00341D07}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B66834C6-2E60-11CE-8748-524153480004}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDC217C5-ED16-11CD-956C-0000C04E4C0A}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDC217C5-ED16-11CD-956C-0000C04E4C0A}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDC217C5-ED16-11CD-956C-0000C04E4C0A}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000000A-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000021-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000023-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000025-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000027-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000029-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000031-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

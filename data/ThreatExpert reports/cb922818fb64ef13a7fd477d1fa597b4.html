@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 26 April 2014, 21:02:01</li>
+<li>Processing time: 7 min 34 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCB922818FB64EF13A7FD477D1FA597B4</li>
+<li>File SHA-1: 0xFEA6DFFCCEA8C46A93678850B4D5C93EFD89C590</li>
+<li>Filesize: 629,280 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">icreinstall_[filename of the sample #1]</td><td class="cell_1">%Temp%\icreinstall_[filename of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Baixaki</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Baixaki]</li><ul>
+<li>drvscn.exe = "1398571336554,http://esd.baixaki.com.br/programas/45889/drvscn.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>DDrawWindowListMutex</li>
+<li>DDrawDriverObjectListMutex</li>
+<li>__DDrawExclMode__</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1039</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">rp.baixakialtcdn2.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">partner.googleadservices.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">www.googletagservices.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">os.baixakialtcdn2.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">esd.baixaki.com.br</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">os2.baixakialtcdn2.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>gampad/google_service.js</li>
+<li>tag/js/gpt.js</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://esd.baixaki.com.br/programas/45889/drvscn.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 26 April 2014 21:09:36</li>
+<li>Processing time: 7 min 0 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x821964BDEAEBA07BD639520683434F6C</li>
+<li>File SHA-1: 0xD38B84C883E4E76FEB69AC86AD3D7C9ADE566F9B</li>
+<li>Filesize: 3,601,680 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\MSCOMCTL.OCX</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\DGTWebTmp</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">3,858,432 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/driverscan.exe.html" target="_blank">driverscan.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\driverguide driverscan\<a href="http://www.threatexpert.com/files/driverscan.exe.html" target="_blank">driverscan.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">847,872 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1C17236C-FC61-46A2-913E-33A95B2F0D57}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1C17236C-FC61-46A2-913E-33A95B2F0D57}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Insertable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\ToolboxBitmap32</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}\ProgID]</li><ul>
+<li>(Default) = "Codejock.PropExchange.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}\InProcServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13790E6F-92B6-4671-9613-6B2A0FBF80A8}]</li><ul>
+<li>(Default) = "Codejock.PropExchange.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1C17236C-FC61-46A2-913E-33A95B2F0D57}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1C17236C-FC61-46A2-913E-33A95B2F0D57}]</li><ul>
+<li>(Default) = "ImageManager Property Page"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\TypeLib]</li><ul>
+<li>(Default) = "{5B44EC52-B95B-45CF-98FF-A49DFEED5A92}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~3.OCX, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\ProgID]</li><ul>
+<li>(Default) = "Codejock.PropertyGrid.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Insertable]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~3.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{24F7B997-1A6A-421F-9B4B-F542F268358B}]</li><ul>
+<li>(Default) = "Xtreme PropertyGrid Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}\ProgID]</li><ul>
+<li>(Default) = "Codejock.PropertyGridGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}\InProcServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~3.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25A9A6BD-09EE-4CD5-9F41-4CF37BE44221}]</li><ul>
+<li>(Default) = "Codejock.PropertyGridGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}\ProgID]</li><ul>
+<li>(Default) = "Codejock.CommandBarsGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}\InProcServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3443A09F-69E6-487B-9F21-ACD91CB0DB96}]</li><ul>
+<li>(Default) = "Codejock.CommandBarsGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\MiscStatus\1]</li><ul>
+<li>(Default) = "132241"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\TypeLib]</li><ul>
+<li>(Default) = "{555E8FCC-830E-45CC-AF00-A012D5AE7451}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX, 3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\ProgID]</li><ul>
+<li>(Default) = "Codejock.ImageManager.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{40EC9D88-47A1-490A-8C1F-5DACD770066F}]</li><ul>
+<li>(Default) = "Xtreme ImageManager Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\MiscStatus\1]</li><ul>
+<li>(Default) = "164241"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\TypeLib]</li><ul>
+<li>(Default) = "{555E8FCC-830E-45CC-AF00-A012D5AE7451}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX, 5"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\ProgID]</li><ul>
+<li>(Default) = "Codejock.CommandBarsFrame.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB1A519-61E7-4EDF-B492-AAFFFF2A31EA}]</li><ul>
+<li>(Default) = "Xtreme CommandBars Frame Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\MiscStatus\1]</li><ul>
+<li>(Default) = "1169"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\TypeLib]</li><ul>
+<li>(Default) = "{945E8FCC-830E-45CC-AF00-A012D5AE7451}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~2.OCX, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\ProgID]</li><ul>
+<li>(Default) = "Codejock.DockingPane.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~2.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB4E8F5-431E-4205-8436-144ACEEB0689}]</li><ul>
+<li>(Default) = "Xtreme Docking Pane Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}\ProgID]</li><ul>
+<li>(Default) = "Codejock.ReportControlGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}\InProcServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~4.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E5A7D3C-469E-466B-9BAB-7125A0153EC1}]</li><ul>
+<li>(Default) = "Codejock.ReportControlGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\MiscStatus\1]</li><ul>
+<li>(Default) = "1169"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\TypeLib]</li><ul>
+<li>(Default) = "{555E8FCC-830E-45CC-AF00-A012D5AE7451}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\ProgID]</li><ul>
+<li>(Default) = "Codejock.CommandBars.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{766D57B8-F13D-483A-9BC8-356EB27078D2}]</li><ul>
+<li>(Default) = "Xtreme CommandBars Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}\ProgID]</li><ul>
+<li>(Default) = "Codejock.DockingPaneGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}\InProcServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~2.OCX"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{844F2F9C-32FE-4CB3-AC1A-61C73E69D69C}]</li><ul>
+<li>(Default) = "Codejock.DockingPaneGlobalSettings.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\TypeLib]</li><ul>
+<li>(Default) = "{7CAC59E5-B703-4CCF-B326-8B956D962F27}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~4.OCX, 2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\ProgID]</li><ul>
+<li>(Default) = "Codejock.FieldChooser.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~4.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8AE06900-0154-4A7F-BE36-82F6453CAE51}]</li><ul>
+<li>(Default) = "Xtreme Report FieldChooser"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Version]</li><ul>
+<li>(Default) = "10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\TypeLib]</li><ul>
+<li>(Default) = "{7CAC59E5-B703-4CCF-B326-8B956D962F27}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~4.OCX, 1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\ProgID]</li><ul>
+<li>(Default) = "Codejock.ReportControl.10.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\DRIVER~1\bin\CODEJO~4.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F28380C4-46D0-40BE-9B82-7CC54A5AD524}]</li><ul>
+<li>(Default) = "Xtreme Report Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03D428C1-7108-4358-8B1B-E6EC99E37732}\TypeLib]</li><ul>
+<li>(Default) = "{5B44EC52-B95B-45CF-98FF-A49DFEED5A92}"</li>
+<li>Version = "a.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03D428C1-7108-4358-8B1B-E6EC99E37732}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03D428C1-7108-4358-8B1B-E6EC99E37732}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03D428C1-7108-4358-8B1B-E6EC99E37732}]</li><ul>
+<li>(Default) = "IPropertyGridGlobalSettings"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04DD39EA-6750-4257-A80A-A33F44022395}\TypeLib]</li><ul>
+<li>(Default) = "{5B44EC52-B95B-45CF-98FF-A49DFEED5A92}"</li>
+<li>Version = "a.4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04DD39EA-6750-4257-A80A-A33F44022395}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04DD39EA-6750-4257-A80A-A33F44022395}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04DD39EA-6750-4257-A80A-A33F44022395}]</li><ul>
+<li>(Default) = "IPropertyGridItemDate"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0905FC17-F631-4608-A4E7-EF00A9648B53}\TypeLib]</li><ul>
+<li>(Default) = "{7CAC59E5-B703-4CCF-B326-8B956D962F27}"</li>
+<li>Version = "a.4"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03C5E982-7A03-46D9-B095-9FB1F825530D}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{09028A35-789A-40D9-B564-7577DA549319}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{151FF694-1D1A-4AFA-8DFF-8798A2181226}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1616DC35-B997-432B-AB4F-439341A769E5}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1FC5479A-9E07-4079-924A-4CB1C11FC700}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B1-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B3-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{324B467B-1E0F-446D-B92B-BEDBEF77302F}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4BE5CC96-7369-4EAB-9B25-1D5C52916D86}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{A5CE0F75-CB1F-40FD-B073-4BC151A5205F}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{D87BCC77-27BF-4CB1-9ABF-1788D9835223}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F09F389C-1A6F-478C-8C8D-38C067A2BC1F}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F10C6EB2-2F2F-4C05-92CF-6AEB0BFA0E6D}\TypeLib]</li><ul>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageComboCtl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageComboCtl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageListCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageListCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ListViewCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ListViewCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ProgCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ProgCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.SBarCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.SBarCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Slider]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Slider.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TabStrip]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TabStrip.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Toolbar]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Toolbar.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TreeCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TreeCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">toolkit.driverguide.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>stats.php</li>
+</ul></ul>
+<ul><li>There were application-defined hook procedures installed into the hook chain (e.g. to monitor keystrokes). The installed hooks are handled by the following modules:</li><ul>
+<li>C:\PROGRA~1\DRIVER~1\bin\CODEJO~1.OCX</li>
+<li>C:\PROGRA~1\DRIVER~1\bin\CODEJO~2.OCX</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

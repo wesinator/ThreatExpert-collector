@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 October 2014, 10:17:24</li>
+<li>Processing time: 9 min 48 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBFC2AC4EAB402B2F3A1CC4CB56DDFC32</li>
+<li>File SHA-1: 0xCD75A175B698603FDD6FBE17C636AC469454F7EC</li>
+<li>Filesize: 722,432 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\Microsoft\Windows\Acctres.exe
+<br/>
+%AppData%\Windows Update.exe
+<br/>
+%AppData%\<a href="http://www.threatexpert.com/files/WindowsUpdate.exe.html" target="_blank">WindowsUpdate.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Templates%\takshost.exe
+</td>
+<td class="cell_1">722,432 bytes</td>
+<td class="cell_2">MD5: 0xBFC2AC4EAB402B2F3A1CC4CB56DDFC32<br/>SHA-1: 0xCD75A175B698603FDD6FBE17C636AC469454F7EC</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\Microsoft\Windows\IpOverUsbSvrc.exe
+</td>
+<td class="cell_1">17,920 bytes</td>
+<td class="cell_2">MD5: 0xD38438B149F0BE1D52D06FB1442C6975<br/>SHA-1: 0xC8D2013661C84C362C840203B0FF82DE67311EAF</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%AppData%\pid.txt
+</td>
+<td class="cell_1">4 bytes</td>
+<td class="cell_2">MD5: 0x8A146F1A3DA4700CBF03CDC55E2DAAE6<br/>SHA-1: 0x62F6479A5ECA39725798B1EE300BD8D5DE3A4AE3</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%AppData%\pidloc.txt
+<br/>
+%Temp%\SysInfo.txt
+</td>
+<td class="cell_1">32 bytes</td>
+<td class="cell_2">MD5: 0x46525D5665EB34AD79F2B75FF27A8659<br/>SHA-1: 0x83C7AA2AF8CCD12F45D116ADDF7295EB3217FB0A</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Temp%\dw.log
+</td>
+<td class="cell_1">152 bytes</td>
+<td class="cell_2">MD5: 0x19FD550608DA6FEC40EDD853AA08E1C2<br/>SHA-1: 0x01BE960DF59718BB4F9F4779782A41715A00EA11</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Templates% is a variable that refers to the file system directory that serves as a common repository for document templates. A typical path is C:\Documents and Settings\[UserName]\Templates.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">takshost.exe</td><td class="cell_1">%Templates%\takshost.exe</td><td class="cell_2">540,672 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">540,672 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/windowsupdate.exe.html" target="_blank">windowsupdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\<a href="http://www.threatexpert.com/files/windowsupdate.exe.html" target="_blank">windowsupdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">540,672 bytes</td></tr>
+<tr><td class="cell_1">IpOverUsbSvrc.exe</td><td class="cell_1">%AppData%\microsoft\windows\ipoverusbsvrc.exe</td><td class="cell_2">N/A</td></tr>
+<tr><td class="cell_1">Acctres.exe</td><td class="cell_1">%AppData%\microsoft\windows\acctres.exe</td><td class="cell_2">N/A</td></tr>
+<tr><td class="cell_1">Windows Update.exe</td><td class="cell_1">%AppData%\windows update.exe</td><td class="cell_2">N/A</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\[filename of the sample #1 without extension]</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\[filename of the sample #1 without extension]\DEBUG</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\[filename of the sample #1 without extension]\DEBUG]</li><ul>
+<li>Trace Level = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Windows Update = "%AppData%\WindowsUpdate.exe"</li>
+<li>Multimedia Class Scheduler = "%AppData%\Microsoft\Windows\IpOverUsbSvrc.exe"</li>
+</ul>
+<br/>
+<em>so that WindowsUpdate.exe runs every time Windows starts</em><br/>
+<em>so that IpOverUsbSvrc.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1435</td><td class="cell_1">TCP</td><td class="cell_2">takshost.exe (%Templates%\takshost.exe)</td></tr>
+<tr><td class="cell_1">1495</td><td class="cell_1">TCP</td><td class="cell_2">windowsupdate.exe (%AppData%\windowsupdate.exe)</td></tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>[file and pathname of the sample #1]</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

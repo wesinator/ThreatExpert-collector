@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32/Virut.n.gen, W32/Scribble-B, Trojan-Spy.Win32.VB">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32/Virut.n.gen, W32/Scribble-B, Trojan-Spy.Win32.VB</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 3 February 2014, 03:30:39</li>
+<li>Processing time: 7 min 55 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x5B4E815A525CB78FF278821792E92E5D</li>
+<li>File SHA-1: 0x8E1B2CF99775A081DD9F52E7D553BC59B4FB89A0</li>
+<li>Filesize: 252,416 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-spy-win32-vb.html" target="_blank">Trojan-Spy.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Installs a default debugger that is injected into the execution sequence of a target application. If a threat is installed as a default debugger, it will be run every time a target application is attempted to be launched - either to mimic it and hide its own presence (e.g. an open port or a running process), or simply to be activated as often as possible.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%UserProfile%\%UserName%1\<a href="http://www.threatexpert.com/files/winlogon.exe.html" target="_blank">winlogon.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">252,416 bytes</td>
+<td class="cell_1">MD5: 0x5B4E815A525CB78FF278821792E92E5D<br/>SHA-1: 0x8E1B2CF99775A081DD9F52E7D553BC59B4FB89A0</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/trojan-spy-win32-vb.html" target="_blank">Trojan-Spy.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%UserProfile% is a variable that specifies the current user's profile folder. By default, this is C:\Documents and Settings\[UserName] (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%UserProfile%\%UserName%1</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">307,200 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/winlogon.exe.html" target="_blank">winlogon.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%UserProfile%\%UserName%1\<a href="http://www.threatexpert.com/files/winlogon.exe.html" target="_blank">winlogon.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">307,200 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\a2servic.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ackwin32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\acs.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\advxdwin.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\agentsvr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\agentw.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ahnsd.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alerter.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alertsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alogserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\amon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\amon9x.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\anti-trojan.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\antigen.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\antivirus.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ants.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\apimonitor.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\aplica32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\apvxdwin.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ashWebSv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atcon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atguard.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atro55en.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atupdater.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atwatch.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\aupdate.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autodown.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autotrace.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autoupdate.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avcenter.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avconfig.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avconsol.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ave32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgcc32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgctrl.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgemc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgserv9.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avguard.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgw.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkpop.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkserv.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkservice.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkwcl9.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkwctl9.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avnotify.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpcc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpdos32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpexec.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpinst.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpm.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpmon.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avptc32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpupd.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avrescue.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avscanavshadow.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avsched32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avsynmgr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avupgsvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwebloader.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwin95.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwinnt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwsc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwupd32.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxmonitor9x.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxmonitornt.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxquar.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxw.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\azonealarm.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bd_professional.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bidef.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bidserver.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bipcp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bipcpevalsetup.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bisp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\blackd.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\blackice.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\boot.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bootwarn.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\borg2.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bs120.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BullGuard.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\callmsi.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccapp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccevtmgr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cclaw.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccpxysvc.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccsetmgr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccshtdwn.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cdp.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cfgwiz.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cfiadmin.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cfiaudit.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cfind.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cfinet.exe</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Local Page = "http://9-0-1-6-v-6-6-i-1-3-m-z-.u-l-c-6-e-p-a-a-0-z-m-s-m-00-v-2-i-7-5-f-l-7-7-l-t-j-h-h-9.info"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>UacDisableNotify = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>ConsentPromptBehaviorAdmin = 0x00000000</li>
+<li>EnableLUA = 0x00000000</li>
+<li>PromptOnSecureDesktop = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>NVIDIA Media Center Library? = "%UserProfile%\%UserName%1\winlogon.exe"</li>
+</ul>
+<br/>
+<em>so that winlogon.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\a2servic.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of a2servic.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ackwin32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ackwin32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\acs.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of acs.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\advxdwin.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of advxdwin.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\agentsvr.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of agentsvr.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\agentw.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of agentw.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ahnsd.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ahnsd.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alerter.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of alerter.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alertsvc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of alertsvc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\alogserv.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of alogserv.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\amon.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of amon.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\amon9x.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of amon9x.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\anti-trojan.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of anti-trojan.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\antigen.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of antigen.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\antivirus.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of antivirus.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ants.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ants.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\apimonitor.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of apimonitor.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\aplica32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of aplica32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\apvxdwin.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of apvxdwin.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ashWebSv.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ashWebSv.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atcon.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of atcon.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atguard.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of atguard.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atro55en.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of atro55en.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atupdater.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of atupdater.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\atwatch.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of atwatch.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\aupdate.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of aupdate.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autodown.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of autodown.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autotrace.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of autotrace.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\autoupdate.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of autoupdate.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avcenter.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avcenter.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avconfig.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avconfig.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avconsol.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avconsol.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ave32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ave32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgcc32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgcc32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgctrl.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgctrl.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgemc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgemc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgnt.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgnt.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgserv.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgserv.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgserv9.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgserv9.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avguard.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avguard.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avgw.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avgw.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkpop.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avkpop.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkserv.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avkserv.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkservice.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avkservice.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkwcl9.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avkwcl9.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avkwctl9.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avkwctl9.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avnotify.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avnotify.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avnt.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avnt.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avp.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avp32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avp32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpcc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpcc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpdos32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpdos32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpexec.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpexec.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpinst.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpinst.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpm.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpm.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpmon.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpmon.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpnt.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpnt.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avptc32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avptc32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avpupd.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avpupd.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avrescue.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avrescue.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avscanavshadow.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avscanavshadow.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avsched32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avsched32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avsynmgr.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avsynmgr.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avupgsvc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avupgsvc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwebloader.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avwebloader.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwin95.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avwin95.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwinnt.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avwinnt.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwsc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avwsc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avwupd32.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avwupd32.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxmonitor9x.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avxmonitor9x.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxmonitornt.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avxmonitornt.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxquar.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avxquar.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\avxw.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of avxw.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\azonealarm.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of azonealarm.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bd_professional.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bd_professional.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bidef.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bidef.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bidserver.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bidserver.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bipcp.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bipcp.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bipcpevalsetup.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bipcpevalsetup.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bisp.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bisp.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\blackd.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of blackd.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\blackice.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of blackice.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\boot.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of boot.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bootwarn.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bootwarn.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\borg2.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of borg2.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bs120.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of bs120.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BullGuard.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of BullGuard.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\callmsi.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of callmsi.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccapp.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ccapp.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccevtmgr.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ccevtmgr.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cclaw.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of cclaw.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccpxysvc.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ccpxysvc.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccsetmgr.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ccsetmgr.exe by being installed as its default debugger</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ccshtdwn.exe]</li><ul>
+<li>Debugger = ""%UserProfile%\%UserName%1\winlogon.exe""</li>
+</ul>
+<br/>
+<em>so that winlogon.exe is injected into the execution sequence of ccshtdwn.exe by being installed as its default debugger</em><br/>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile]</li><ul>
+<li>IsShortcut = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\piffile]</li><ul>
+<li>IsShortcut = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Local Page = "%System%\blank.htm"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Default_Page_URL = </li>
+<li>Default_Search_URL = </li>
+<li>Search Page = </li>
+<li>Start Page = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Control Panel\Sound]</li><ul>
+<li>Beep = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Local Page = </li>
+<li>Start Page = </li>
+<li>Search Page = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>@0MPfV5@mqt?sL+EVQ@XPbGP9@</li>
+</ul></ul>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mappings:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+208.109.220.95 viabcp.com
+208.109.220.95 www.viabcp.com
+208.109.220.95 bcpzonasegura.viabcp.com
+173.236.97.27 www.produbanco.com
+173.236.97.27 produbanco.com
+173.236.97.27 www.pichincha.com
+173.236.97.27 pichincha.com
+173.236.97.27 wwwp1.pichincha.com
+173.236.97.27 wwwp2.pichincha.com
+173.236.97.27 wwwp3.pichincha.com
+173.236.97.27 wwwp4.pichincha.com
+173.236.97.27 wwww01.pichincha.com
+173.236.97.27 wwww02.pichincha.com
+173.236.97.27 wwww03.pichincha.com
+173.236.97.27 wwww04.pichincha.com
+173.201.254.6 bn.com.pe
+173.201.254.6 www.bn.com.pe
+173.201.254.6 zonasegura1.bn.com.pe
+173.201.254.6 www.zonasegura1.bn.com.pe
+173.201.254.6 peliculasid.com
+173.201.254.6 www.peliculasid.com
+64.117.35.255 iniciorapido.info
+64.117.35.255 www.iniciorapido.info
+64.117.35.255 buscalo.in
+64.117.35.255 www.buscalo.in
+64.117.35.255 buscafacil.com
+64.117.35.255 www.buscafacil.com
+64.117.35.255 emsisoft.com
+64.117.35.255 ahnlab.com
+64.117.35.255 antivir.es
+64.117.35.255 antiy.net
+64.117.35.255 authentium.com
+64.117.35.255 avast.com
+64.117.35.255 avg.com
+64.117.35.255 bitdefender.com
+64.117.35.255 quickheal.com
+64.117.35.255 clamav.net
+64.117.35.255 comodo.com
+64.117.35.255 drweb.com
+64.117.35.255 aladdin.com
+64.117.35.255 ca.com
+64.117.35.255 f-prot.com
+64.117.35.255 f-secure.com
+64.117.35.255 fortinet.com
+64.117.35.255 gdata.es
+64.117.35.255 ikarus.at
+64.117.35.255 jiangmin.com
+64.117.35.255 kaspersky.com
+64.117.35.255 mcafee.com
+64.117.35.255 microsoft.com
+64.117.35.255 eset.es
+64.117.35.255 norman.com
+64.117.35.255 nprotect.com
+64.117.35.255 pandasecurity.com
+64.117.35.255 pctools.com
+64.117.35.255 prevx.com
+64.117.35.255 rising-global.com
+64.117.35.255 sophos.com
+64.117.35.255 sunbeltsoftware.com
+64.117.35.255 symantec.com
+64.117.35.255 hacksoft.com.pe
+64.117.35.255 trendmicro.com
+64.117.35.255 anti-virus.by
+64.117.35.255 hauri.net
+64.117.35.255 virusbuster.hu
+64.117.35.255 www.emsisoft.com
+64.117.35.255 www.ahnlab.com
+64.117.35.255 www.antivir.es
+64.117.35.255 www.antiy.net
+64.117.35.255 www.authentium.com
+64.117.35.255 www.avast.com
+64.117.35.255 www.avg.com
+64.117.35.255 www.bitdefender.com
+64.117.35.255 www.quickheal.com
+64.117.35.255 www.clamav.net
+64.117.35.255 www.comodo.com
+64.117.35.255 www.drweb.com
+64.117.35.255 www.aladdin.com
+64.117.35.255 www.ca.com
+64.117.35.255 www.f-prot.com
+64.117.35.255 www.f-secure.com
+64.117.35.255 www.fortinet.com
+64.117.35.255 www.gdata.es
+64.117.35.255 www.ikarus.at
+64.117.35.255 www.jiangmin.com
+64.117.35.255 www.kaspersky.com
+64.117.35.255 www.mcafee.com
+64.117.35.255 www.microsoft.com
+64.117.35.255 www.eset.es
+64.117.35.255 www.norman.com
+64.117.35.255 www.nprotect.com
+64.117.35.255 www.pandasecurity.com
+64.117.35.255 www.pctools.com
+64.117.35.255 www.prevx.com
+64.117.35.255 www.rising-global.com
+64.117.35.255 www.sophos.com
+64.117.35.255 www.sunbeltsoftware.com
+64.117.35.255 www.symantec.com
+64.117.35.255 www.hacksoft.com.pe
+64.117.35.255 www.trendmicro.com
+</textarea></tr></td></table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>irc.zief.pl</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://whos.amung.us/swidget/hs2k61jne5aj</li>
+<li>http://www.whatismyip.org</li>
+<li>http://2-j-6-4-9-c-9-w-n-x-7-a-2-p-t-7-9-3-b-v-y-y-o-q-4-0-2-0-m-y-f-.1-tr-18su-ka-8dow-56-oo9-13swx-r-k-ife-0nj-rnq-ihb-dd-p-1-0-z-a.info/5-x-2-1-5-k-e-d-b-3-g-i-s-3-8-v-u-w-3-c-d-n-7-t-9-0-z-h-1-0-q-</li>
+<li>localhost</li>
+<li>http://0-4-1-a-v-o-5-0-8-c-2-v-8-1-p-v-v-k-5-7-u-z-9-a-6-7-0-u-b-6-6-.1-tr-18su-ka-8dow-56-oo9-13swx-r-k-ife-0nj-rnq-ihb-dd-p-1-0-z-a.info/h-7-a-f-2-h-6-v-2-4-t-7-z-7-5-1-m-2-5-v-6-7-u-0-7-6-l-6-y-5-k-</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

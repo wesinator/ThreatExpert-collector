@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Spybot.Worm, Virus.Win32.Sality.gen, W32/Sality.gen.z, PE_SALITY.EN, W32/Sality-AM, Virus:Win32/Sality.AM, Trojan.Win32.Rbot, Win-Trojan/Black.554496.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Spybot.Worm, Virus.Win32.Sality.gen, W32/Sality.gen.z, PE_SALITY.EN..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 November 2015, 23:45:09</li>
+<li>Processing time: 5 min 36 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x16DC22D5701764B6F68D75BCB6DC8697</li>
+<li>File SHA-1: 0x80C8389A6A8D8650A63C21BD05499187635593DE</li>
+<li>Filesize: 1,353,140 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-spybot-worm.html" target="_blank">W32.Spybot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-sality-gen.html" target="_blank">Virus.Win32.Sality.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li>W32/Sality.gen.z [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/pe-sality-en.html" target="_blank">PE_SALITY.EN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-sality-am.html" target="_blank">W32/Sality-AM<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-sality-am.html" target="_blank">Virus:Win32/Sality.AM<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Trojan.Win32.Rbot [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win-trojan-black-554496-b.html" target="_blank">Win-Trojan/Black.554496.B<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Is protected with Themida in order to prevent the sample from being reverse-engineered. Themida protection can potentially be used by a threat to complicate the manual threat analysis (e.g. the sample would not run under the Virtual Machine).</td><td class="cell_2"><img src="./resources/level6.gif"></td></tr>
+<tr><td class="cell_1">Compromises SafeBoot registry key(s) in an attempt to disable the Safe Mode.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\system\<a href="http://www.threatexpert.com/files/VMwareService.exe.html" target="_blank">VMwareService.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">1,353,140 bytes</td>
+<td class="cell_1">MD5: 0x16DC22D5701764B6F68D75BCB6DC8697<br/>SHA-1: 0x80C8389A6A8D8650A63C21BD05499187635593DE</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-spybot-worm.html" target="_blank">W32.Spybot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/virus-win32-sality-gen.html" target="_blank">Virus.Win32.Sality.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/>W32/Sality.gen.z [McAfee]<br/><a href="http://www.threatexpert.com/threats/pe-sality-en.html" target="_blank">PE_SALITY.EN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-sality-am.html" target="_blank">W32/Sality-AM<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/virus-win32-sality-am.html" target="_blank">Virus:Win32/Sality.AM<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/>Trojan.Win32.Rbot [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win-trojan-black-554496-b.html" target="_blank">Win-Trojan/Black.554496.B<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%Windir%\system.ini</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\mmc.exe</li>
+<li>%System%\taskmgr.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/VMwareService.exe.html" target="_blank">VMwareService.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\system\<a href="http://www.threatexpert.com/files/vmwareservice.exe.html" target="_blank">vmwareservice.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,835,008 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">VMwareService</td><td class="cell_1">VMwareService</td><td class="cell_1">"Running"</td><td class="cell_2">"%Windir%\system\VMwareService.exe"</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService\Enum</li>
+<li>HKEY_CURRENT_USER\Software\%UserName%914</li>
+<li>HKEY_CURRENT_USER\Software\%UserName%914\-72398023</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%UserName% is a variable that refers to the current user name.</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AFD</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Browser</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Dhcp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DnsCache</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ip6fw.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ipnat.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanServer</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanWorkstation</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LmHosts</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Messenger</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SharedAccess</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\System Bus Extender</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>EnableLUA = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "asc3360pr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR\0000]</li><ul>
+<li>Service = "asc3360pr"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "asc3360pr"</li>
+<li>Capabilities = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASC3360PR]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "IpFilterDriver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER\0000]</li><ul>
+<li>Service = "IpFilterDriver"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "IP Traffic Filter Driver"</li>
+<li>Capabilities = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IPFILTERDRIVER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "VMwareService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE\0000]</li><ul>
+<li>Service = "VMwareService"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "VMwareService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VMWARESERVICE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ASC3360PR\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\asc3360pr]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\pmgln.sys"</li>
+<li>DisplayName = "asc3360pr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService\Enum]</li><ul>
+<li>0 = "Root\LEGACY_VMWARESERVICE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VMwareService]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = ""%Windir%\system\VMwareService.exe""</li>
+<li>DisplayName = "VMwareService"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>FailureActions = 0A 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 B8 0B 00 00</li>
+<li>Description = "VMwareService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "asc3360pr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR\0000]</li><ul>
+<li>Service = "asc3360pr"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "asc3360pr"</li>
+<li>Capabilities = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASC3360PR]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "IpFilterDriver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER\0000]</li><ul>
+<li>Service = "IpFilterDriver"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "IP Traffic Filter Driver"</li>
+<li>Capabilities = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IPFILTERDRIVER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "VMwareService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE\0000]</li><ul>
+<li>Service = "VMwareService"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "VMwareService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VMWARESERVICE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ASC3360PR\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3360pr]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\pmgln.sys"</li>
+<li>DisplayName = "asc3360pr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService\Enum]</li><ul>
+<li>0 = "Root\LEGACY_VMWARESERVICE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VMwareService]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = ""%Windir%\system\VMwareService.exe""</li>
+<li>DisplayName = "VMwareService"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>FailureActions = 0A 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 B8 0B 00 00</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\%UserName%914\-72398023]</li><ul>
+<li>1919251285 = 0x00000049</li>
+<li>-456464726 = 0x00000000</li>
+<li>1462786559 = 0x00000000</li>
+<li>-912929452 = 0x00000023</li>
+<li>1006321833 = 0x0000017B</li>
+<li>-1369394178 = "0900687474703A2F2F66617368696F6E656E69676D612E636F6D2F696D616765732F6C6F676F732E67696600687474703A2F2F3231362E33322E37352E37342F68322F6D61696E682E67696600687474703A2F2F7777772E617973616E636F2E636F6D2F696D616765732F6C6F676F732E67696600687474703A2F2F7</li>
+<li>549857107 = "78C3AA8EF3156860486479ABC542995C72AB9905B9252BA8A2FAFA90A79E3D948CF9DD0AB06645E3C85E4859B6934F919EFD701775331FFCCAB64B811007E02F086E64CBDEA53C9099BEF14EBB7B64B9AE17639306F355B071BECA8062244B095528209ECB9B34B792110120272CC4F3EAF0C1DEC00AF8A7D4B9043A3</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\%UserName%914]</li><ul>
+<li>U1_0 = 0xCC96283A</li>
+<li>U2_0 = 0x0000158D</li>
+<li>U3_0 = 0x01036641</li>
+<li>U4_0 = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot]</li><ul>
+<li>AlternateShell = "cmd.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E975-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetTrans"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E973-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetClient"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Net"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WZCSVC]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\termservice]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdtcp.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdpipe.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Tcpip]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[[pathname with a string SHARE]\SharedAccess]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control]</li><ul>
+<li>WaitToKillServiceTimeout = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]</li><ul>
+<li>WaitToKillServiceTimeout = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cookies = </li>
+<li>History = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Op1mutx9</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">69</td><td class="cell_1">UDP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2397</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2398</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2399</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2400</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2401</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2402</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2403</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2404</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2405</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2406</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2407</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2408</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2409</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2410</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2411</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2412</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2413</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2414</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2415</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2416</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2417</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2418</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2419</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2420</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2421</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2422</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2423</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2424</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2425</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2426</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2427</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2428</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2429</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2430</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2431</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2432</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2433</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2434</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2435</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2436</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2437</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2438</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2439</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2440</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2441</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2442</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2443</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2444</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2445</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2446</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2447</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2448</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2449</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2450</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2451</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2452</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2453</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2454</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2455</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2456</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2457</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2458</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2459</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2460</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2461</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2462</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2463</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2464</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2465</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2466</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2467</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2468</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2469</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2470</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2471</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2472</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2473</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2474</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2475</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">2476</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+<tr><td class="cell_1">15543</td><td class="cell_1">TCP</td><td class="cell_2">VMwareService.exe (%Windir%\system\VMwareService.exe)</td></tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

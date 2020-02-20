@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 June 2016, 08:33:22</li>
+<li>Processing time: 5 min 28 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x11EB7946F39D3B7761BF4F71BBF57806</li>
+<li>File SHA-1: 0x198A4FE39335D6CC60256CC53F3411CB56BEFC06</li>
+<li>Filesize: 221,277 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>www.q3w4.com</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>www.q3w4.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">www.q3w4.com<td class="cell_2">64121</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 64121:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1100 0000 789C 4B05 0000 6600 6601 0000 | ....x.K...f.f...
+00000010 | 0015 0100 0078 9C4B 636F AC99 C3C0 C0C0 | .....x.Kco......
+00000020 | 0AC4 8C40 ACC1 C5C0 C004 A483 538B CA32 | ...@........S..2
+00000030 | 9353 1502 1293 B315 8C18 1898 4192 07FE | .S..........A...
+00000040 | D683 D45E 80AA E560 8000 8F14 5186 8AC3 | ...^...`....Q...
+00000050 | 6260 3104 B8C9 C0F0 E106 903E C9A0 1063 | b`1........>...c
+00000060 | C450 122E C400 D3FB 1F08 60AA 12A0 9AD8 | .P........`.....
+00000070 | 81BA 7359 27D6 5849 AE2C 6460 1001 BB81 | ..sY'.XI.,d`....
+00000080 | 8191 9161 3B37 0383 2183 2883 3750 7C4A | ...a;7..!.(.7P|J
+00000090 | B010 4308 2303 548E 81A1 1E48 3AE7 E716 | ..C.#.T....H:...
+000000A0 | 9496 A416 F925 E6A6 3210 0980 5E04 9A39 | .....%..2...^..9
+000000B0 | A1E6 7FC3 C41A 905B 6442 8418 BE6A 026D | .......[dB...j.m
+000000C0 | 05D2 FFA5 27D6 3030 1831 8419 EA19 80E8 | ....'.00.1......
+000000D0 | 0886 3B40 FB8C C0FE F90A 74A4 0750 4D6C | ..;@......t..PMl
+000000E0 | D3C4 9A73 5BB6 2F3A 7F4D 016C 1EA3 02CC | ...s[./:.M.l....
+000000F0 | 6423 0626 281B 641E 488F C199 3706 A736 | d#.&(.d.H...7..6
+00000100 | 1A6E BFC6 30B1 669A E8C4 9AD7 6C13 6B52 | .n..0.f.....l.kR
+00000110 | 8061 01F2 0028 FCB0 B1C9 0346 0C00 D9ED | .a...(.....F....
+00000120 | 4AB9 CC01 0000                          | J.....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

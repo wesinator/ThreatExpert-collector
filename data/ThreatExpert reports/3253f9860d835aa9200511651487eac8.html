@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Packed.Win32.PePatch">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Packed.Win32.PePatch</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 March 2016, 21:38:10</li>
+<li>Processing time: 5 min 36 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3253F9860D835AA9200511651487EAC8</li>
+<li>File SHA-1: 0x47EA1C93E9E8FEB5E43B103151DBFE2FFC71E9A2</li>
+<li>Filesize: 183,808 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/packed-win32-pepatch.html" target="_blank">Packed.Win32.PePatch<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">183,808 bytes</td>
+<td class="cell_1">MD5: 0x3253F9860D835AA9200511651487EAC8<br/>SHA-1: 0x47EA1C93E9E8FEB5E43B103151DBFE2FFC71E9A2</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/packed-win32-pepatch.html" target="_blank">Packed.Win32.PePatch<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">196,608 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>svchost = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>xiaoaolong.f3322.org:2013</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>xiaoaolong.f3322.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">xiaoaolong.f3322.org<td class="cell_2">2013</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2013:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4E01 0000 9C01 0000 4C4F 5645 5454 917C | N.......LOVETT.|
+00000010 | 789C 4B8B 3CC2 3087 8181 8115 8819 8158 | x.K.<.0........X
+00000020 | 838B 8181 0948 07A7 1695 6526 A72A 0424 | .....H....e&.*.$
+00000030 | 2667 2B18 3130 7C78 2DC2 C02A 30A1 A626 | &g+.10|x-..*0..&
+00000040 | F608 C392 9823 0CAF 3396 1636 00C5 9E00 | .....#..3..6....
+00000050 | D52A 0035 CA00 310B 03C3 0C90 3C0F 0302 | .*.5..1.....<...
+00000060 | A803 F920 201C B7B4 F04C CCD2 4285 BF47 | ...  ....L..B..G
+00000070 | 1802 268A 30DC 6587 9809 021F 806E F811 | ..&.0.e......n..
+00000080 | 0952 D7CA 60C4 3EB1 4688 01E2 0606 4646 | .R..`.>.F.....FF
+00000090 | 86ED DC0C 0C86 0C47 4066 3388 00ED 9578 | .......G@f3....x
+000000A0 | 37A1 C602 A8A6 1E28 EB9C 9F5B 505A 925A | 7......(...[PZ.Z
+000000B0 | E497 989B CAC0 0EB1 DF39 27BF 38D5 2331 | .........9'.8.#1
+000000C0 | 2F25 2795 C1B9 2835 B124 D5B5 2C35 AFC4 | /%'...(5.$..,5..
+000000D0 | 9101 68A7 811D 83C1 9937 06A7 361A 6EBF | ..h......7..6.n.
+000000E0 | C610 0571 1783 9F08 8307 940D F23F 1FD0 | ...q.........?..
+000000F0 | E68F 8CF5 100E 12F8 107E 8481 F502 0383 | .........~......
+00000100 | 0048 2D10 CB44 1F61 3851 B8BC B021 7C69 | .H-..D.a8Q...!|i
+00000110 | E17F 20A8 00D2 EB43 9716 C2FC B4E9 D1A9 | .. ....C........
+00000120 | 2B0C 40FE 1320 06F1 37CF 6BA8 01D1 A5DC | +.@.. ..7.k.....
+00000130 | 8D35 DB51 8D66 B800 B6DF 40CF 8861 624D | .5.Q.f....@..abM
+00000140 | 849D 18C3 1CA0 D981 AC13 6B00 8AB5 6CCC | ..........k...l.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

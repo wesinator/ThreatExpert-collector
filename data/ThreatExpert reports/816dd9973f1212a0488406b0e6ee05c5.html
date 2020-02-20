@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 September 2015, 00:39:02</li>
+<li>Processing time: 5 min 40 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x816DD9973F1212A0488406B0E6EE05C5</li>
+<li>File SHA-1: 0x15D29F75F928D29F18C24FE10EA136296486B2A7</li>
+<li>Filesize: 180,224 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\subfolder\.Identifier
+</td>
+<td class="cell_1">68 bytes</td>
+<td class="cell_2">MD5: 0x651CDEC469066563B483174D9FAD9E40<br/>SHA-1: 0x94F42F8520FAD95A669698813741B2177A7ADB3D</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\subfolder\fhfhf.exe
+</td>
+<td class="cell_1">180,224 bytes</td>
+<td class="cell_2">MD5: 0xD43259904302CA3CFEF1AB737B968196<br/>SHA-1: 0x78BC507526C11A7F7FEC085385986CA61B8BD2D5</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">180,224 bytes</td>
+<td class="cell_2">MD5: 0x816DD9973F1212A0488406B0E6EE05C5<br/>SHA-1: 0x15D29F75F928D29F18C24FE10EA136296486B2A7</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\subfolder</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">fhfhf.exe</td><td class="cell_1">%AppData%\subfolder\fhfhf.exe</td><td class="cell_2">184,320 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">184,320 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>ifufhhf = "%AppData%\subfolder\fhfhf.exe"</li>
+</ul>
+<br/>
+<em>so that fhfhf.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/macau.gif"></td>
+<td class="cell_2">Macau</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>-</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>173.254.223.117</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">173.254.223.117<td class="cell_2">3363</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 3363:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4100 0000 03C0 44D1 5028 CBD4 B4FF 7224 | A.....D.P(....r$
+00000010 | 9AEA D0AB A6A8 C0A5 C8B9 FEA9 D4E9 F952 | ...............R
+00000020 | A4E5 84CE 3C37 B4FC E084 CDAF E885 CDA8 | ....<7..........
+00000030 | 71A7 FCB8 DEAB 8B55 09D4 22B9 D21E C5CA | q......U..".....
+00000040 | 44A4 0627 D201 0000 0002                | D..'......
+00000000 | 4100 0000 03E2 5820 ABAC F094 AE2C 80A4 | A.....X .....,..
+00000010 | 65BF 41B7 8270 C02A C18A F7A0 AA05 B494 | e.A..p.*........
+00000020 | A633 6C2A E6F0 541C 8850 60B0 FEB0 C856 | .3l*..T..P`....V
+00000030 | EBE0 A0A0 E6C4 8923 6214 1841 F823 4843 | .......#b..A.#HC
+00000040 | 3D90 E361 7D                            | =..a}
+00000000 | 4100 0000 03E0 86BB E8BF C280 6F48 8482 | A...........oH..
+00000010 | FE70 98D8 6C9E 90F2 B4E8 B09B C2CC CBDD | .p..l...........
+00000020 | 7B54 E730 68B5 8D8F D82C 61DC 728C F5C1 | {T.0h....,a.r...
+00000030 | 4EED CC9B B996 7175 0810 CC06 445B E8D4 | N.....qu....D[..
+00000040 | F9D4 E390 A6                            | .....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

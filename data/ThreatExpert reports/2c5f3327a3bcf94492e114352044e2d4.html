@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 1 April 2015, 09:03:31</li>
+<li>Processing time: 9 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x2C5F3327A3BCF94492E114352044E2D4</li>
+<li>File SHA-1: 0xECEA1139DE1CF0ABB5B43074FA334336ACC44A08</li>
+<li>Filesize: 3,912,452 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=9349d451-9cf5-4a0d-8b17-8c34d0331042&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\Conduit</li>
+<li>%AppData%\Smart_PC_Utilities</li>
+<li>%ProgramFiles%\Conduit</li>
+<li>%ProgramFiles%\Smart_PC_Utilities</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">405,504 bytes</td></tr>
+<tr><td class="cell_1">GLB3.tmp</td><td class="cell_1">%Temp%\GLB3.tmp</td><td class="cell_2">28,672 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/contig.exe.html" target="_blank">contig.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\smart pc utilities\game fire\install\042f777\contig.exe</td><td class="cell_2">409,600 bytes</td></tr>
+<tr><td class="cell_1">smart_pc_utilities.exe</td><td class="cell_1">%AppData%\smart pc utilities\game fire\install\042f777\tempfolder\smart_pc_utilities.exe</td><td class="cell_2">1,839,104 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/tbSmar.dll.html" target="_blank">tbSmar.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Smart_PC_Utilities\<a href="http://www.threatexpert.com/files/tbSmar.dll.html" target="_blank">tbSmar.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0xF80000 - 0x1222000</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Alert.dll.html" target="_blank">Alert.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Conduit\Community Alerts\<a href="http://www.threatexpert.com/files/Alert.dll.html" target="_blank">Alert.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x1D20000 - 0x1DA7000</td></tr>
+</table></p>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}\Implemented Categories\{00021494-0000-0000-C000-000000000046}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD3D3852-DCDA-468C-8995-8CED7333918A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD3D3852-DCDA-468C-8995-8CED7333918A}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Toolbar.CT2187673</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Toolbar.CT2187673\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\5998cf13-f67e-4e1f-9c2a-c6dce06905d1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{fd3d3852-dcda-468c-8995-8ced7333918a}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Smart_PC_Utilities Toolbar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext\PreApproved</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext\PreApproved\{4bb11fd5-3068-44fb-9bca-b3f3f708f820}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Community Alerts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Toolbars</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Smart_PC_Utilities</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Smart_PC_Utilities\Communicator</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Smart_PC_Utilities\toolbar</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{afdbddaa-5d3f-42ee-b79c-185a7020515b}</li>
+<li>HKEY_CURRENT_USER\Software\Sysinternals\C</li>
+<li>HKEY_CURRENT_USER\Software\Conduit</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Communicator</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Communicator\RegisteredSources</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\RegisteredSources</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Settings</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Repository</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Repository\RegisteredSources</li>
+<li>HKEY_CURRENT_USER\Software\Monitored</li>
+<li>HKEY_CURRENT_USER\Software\settings</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\IE5</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Monitored</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\conduit_CT2187673</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\conduit_CT2187673\Coordinator</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\IndexTable</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\IndexTable\CT2187673_CT2187673</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\1415327958</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\200449171</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\2320706847</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\LanguagePack</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\MyStuff</li>
+<li>HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\Update</li>
+<li>HKEY_CURRENT_USER\Toolbar</li>
+<li>HKEY_CURRENT_USER\Toolbar\RegisteredSources</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Conduit\Community Alerts\Alert.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}]</li><ul>
+<li>(Default) = "Conduit Community Alerts"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "Toolbar.CT2187673"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\ProgID]</li><ul>
+<li>(Default) = "Toolbar.CT2187673"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Smart_PC_Utilities\tbSmar.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4BB11FD5-3068-44FB-9BCA-B3F3F708F820}]</li><ul>
+<li>(Default) = "Conduit API Server"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Smart_PC_Utilities\tbSmar.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E1E7E84C-826C-43A6-9B15-8F4413CBE4BB}]</li><ul>
+<li>(Default) = "Smart PC Utilities Findbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD3D3852-DCDA-468C-8995-8CED7333918A}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Smart_PC_Utilities\tbSmar.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD3D3852-DCDA-468C-8995-8CED7333918A}]</li><ul>
+<li>(Default) = "Smart PC Utilities Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Toolbar.CT2187673\CLSID]</li><ul>
+<li>(Default) = "{4bb11fd5-3068-44fb-9bca-b3f3f708f820}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Toolbar]</li><ul>
+<li>{fd3d3852-dcda-468c-8995-8ced7333918a} = "Smart PC Utilities Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\5998cf13-f67e-4e1f-9c2a-c6dce06905d1]</li><ul>
+<li>AppPath = "%ProgramFiles%\Smart_PC_Utilities"</li>
+<li>AppName = "Smart_PC_UtilitiesToolbarHelper.exe"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{fd3d3852-dcda-468c-8995-8ced7333918a}]</li><ul>
+<li>(Default) = ""</li>
+<li>NoExplorer = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Smart_PC_Utilities Toolbar]</li><ul>
+<li>DisplayName = "Smart PC Utilities Toolbar"</li>
+<li>UninstallString = "C:\PROGRA~1\SMART_~1\UNWISE.EXE   /U C:\PROGRA~1\SMART_~1\INSTALL.LOG  "</li>
+<li>Comments = ""</li>
+<li>Contact = ""</li>
+<li>HelpLink = "http://SmartPCUtilities.OurToolbar.com/help"</li>
+<li>Publisher = "Smart PC Utilities"</li>
+<li>DisplayVersion = "5.7.2.2"</li>
+<li>URLInfoAbout = "http://SmartPCUtilities.OurToolbar.com/"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Toolbars]</li><ul>
+<li>Smart PC Utilities Toolbar = "{FD3D3852-DCDA-468C-8995-8CED7333918A}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Community Alerts]</li><ul>
+<li>Path = "%ProgramFiles%\Conduit\Community Alerts\Alert.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Smart_PC_Utilities\toolbar]</li><ul>
+<li>ComId = "{fd3d3852-dcda-468c-8995-8ced7333918a}"</li>
+<li>DisplayName = "Smart PC Utilities"</li>
+<li>DisplayTitle = "Smart_PC_Utilities Toolbar"</li>
+<li>GroupingEnabled = "FALSE"</li>
+<li>InstallationId = ""</li>
+<li>InstallationType = "Unknown"</li>
+<li>MultiCommunityEnabled = "FALSE"</li>
+<li>Path = "%ProgramFiles%\Smart_PC_Utilities"</li>
+<li>Server = "users.conduit.com"</li>
+<li>ShouldPerformGroupByOS = "FALSE"</li>
+<li>ShouldShowPersonalComponentDlg = "TRUE"</li>
+<li>SponsorId = "CT2187673"</li>
+<li>ToolbarHelperFileName = "%ProgramFiles%\Smart_PC_Utilities\Smart_PC_UtilitiesToolbarHelper.exe"</li>
+<li>ShouldSendToolbarAge = "TRUE"</li>
+<li>version = "5.7.2.2"</li>
+<li>ToolbarAPIComId = "{4bb11fd5-3068-44fb-9bca-b3f3f708f820}"</li>
+<li>UserID = "UN19470227341575512"</li>
+<li>FindBarComId = "{e1e7e84c-826c-43a6-9b15-8f4413cbe4bb}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Smart_PC_Utilities\Communicator]</li><ul>
+<li>Url = "http://servicemap.conduit-services.com/Toolbar/"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Use Search Asst = "no"</li>
+<li>Enable Browser Extensions = "yes"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{FD3D3852-DCDA-468C-8995-8CED7333918A} = 52 38 3D FD DA DC 8C 46 89 95 8C ED 73 33 91 8A</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]</li><ul>
+<li>{fd3d3852-dcda-468c-8995-8ced7333918a} = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{afdbddaa-5d3f-42ee-b79c-185a7020515b}]</li><ul>
+<li>DisplayName = "Smart PC Utilities Customized Web Search"</li>
+<li>URL = "http://search.conduit.com/ResultsExt.aspx?q={searchTerms}&SearchSource=4&ctid=CT2187673"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]</li><ul>
+<li>DefaultScope = "{afdbddaa-5d3f-42ee-b79c-185a7020515b}"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Sysinternals\C]</li><ul>
+<li>EulaAccepted = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Communicator\RegisteredSources]</li><ul>
+<li>CT2187673 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Settings]</li><ul>
+<li>AutoUpdateEnabled = "TRUE"</li>
+<li>ShowAlerts = "TRUE"</li>
+<li>ALPClientsServerName = "http://alert.client.conduit.com"</li>
+<li>ALPServicesServerName = "http://alert.services.conduit.com"</li>
+<li>UserID = "7F30E9FE-F583-4121-95D3-95EA99669A85"</li>
+<li>FirstTimeStamp = 0x551C255A</li>
+<li>LoginMessageLastCheckTime = 0x551C2565</li>
+<li>AutoUpdateLastTime = 0x551C256E</li>
+<li>FakeAutoUpdateInterval = "TRUE"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Community Alerts\RegisteredSources]</li><ul>
+<li>IE_TB_CT2187673 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Repository\RegisteredSources]</li><ul>
+<li>CT2187673 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Monitored]</li><ul>
+<li>SHRINK_TOOLBAR = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\settings]</li><ul>
+<li>MaxThreadPoolSize = 0x00000014</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\conduit_CT2187673\Coordinator]</li><ul>
+<li>LastRequestTime = 0x551C2553</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\IndexTable\CT2187673_CT2187673]</li><ul>
+<li>ToolbarSettings = 0x8A532D1F</li>
+<li>ToolbarSettingsForPublisher = 0x0BF29C93</li>
+<li>ToolbarLogin = 0x545C30D6</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\2320706847]</li><ul>
+<li>dbname = "conduit_CT2187673_CT2187673"</li>
+<li>docdname = "ToolbarSettings"</li>
+<li>fieldname = "data"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\200449171]</li><ul>
+<li>dbname = "conduit_CT2187673_CT2187673"</li>
+<li>docdname = "ToolbarSettingsForPublisher"</li>
+<li>fieldname = "data"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Repository\MetaData\1415327958]</li><ul>
+<li>dbname = "conduit_CT2187673_CT2187673"</li>
+<li>docdname = "ToolbarLogin"</li>
+<li>fieldname = "data"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\Update]</li><ul>
+<li>Type = "Auto"</li>
+<li>LastUpdate = 0x551C256C</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\MyStuff]</li><ul>
+<li>StagingEnable = "TRUE"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings\LanguagePack]</li><ul>
+<li>LanguagePackServerUrl = "http://translation.users.conduit.com/Translation.ashx"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\settings]</li><ul>
+<li>AUTOUPDATE = "1"</li>
+<li>FixPageNotFoundError = 0x00000002</li>
+<li>EnableSearchFromAddress = "TRUE"</li>
+<li>SearchFromAddressUrl = "http://search.conduit.com/ResultsExt.aspx?ctid=CT2187673&amp;q=MYSEARCHTERM"</li>
+<li>MaxThreadPoolSize = 0x00000014</li>
+<li>CopyDefaultData = "FALSE"</li>
+<li>3rdPartyLastCheck = 0x551C2557</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Smart_PC_Utilities\toolbar\Monitored]</li><ul>
+<li>MultiCommunityEnabled = "FALSE"</li>
+<li>GroupingEnabled = "FALSE"</li>
+<li>SponsorId = "CT2187673"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{0E5CBF21-D15F-11D0-8301-00AA005B4383} = </li>
+<li>ITBarLayout = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>CONDUIT_SHARED_MUTEX</li>
+<li>Advinst_AAFB812596A6403BAFC59614908DDC23</li>
+<li>EI_InitFromDefaultDataIfNeeded</li>
+<li>CCommunicatorLogicMutex_CT2187673</li>
+<li>Radio Player Core CT2187673</li>
+<li>ShowTBSmart_PC_Utilities</li>
+<li>_!SHMSFTHISTORY!_</li>
+<li>EI_3rdParty_MutexCT2187673</li>
+<li>Community Alerts</li>
+<li>EI_Toolbar_Update_Mutex_CT2187673_Update</li>
+<li>Conduit_Alert_Autoupdate_Mutex</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">servicemap.conduit-services.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">smartpcutilities.ourtoolbar.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">users.conduit.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">services.conduit.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>Toolbar/</li>
+<li>SetupFinish</li>
+<li>index.jpg</li>
+<li>CommunityRequest.ctp?type=GetCommunity&amp;ct=CT2187673&amp;CommunityPage=CT2187673.ourtoolbar.com</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\Smart_PC_Utilities\tbSmar.dll</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

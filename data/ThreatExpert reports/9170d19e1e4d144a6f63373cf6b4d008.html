@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Win32.Torr">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Win32.Torr</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 March 2016, 06:44:33</li>
+<li>Processing time: 5 min 42 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x9170D19E1E4D144A6F63373CF6B4D008</li>
+<li>File SHA-1: 0x5975611BC795BA473091115A69571D693E9CFC2A</li>
+<li>Filesize: 57,344 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/backdoor-win32-torr.html" target="_blank">Backdoor.Win32.Torr<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">57,344 bytes</td>
+<td class="cell_1">MD5: 0x9170D19E1E4D144A6F63373CF6B4D008<br/>SHA-1: 0x5975611BC795BA473091115A69571D693E9CFC2A</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/backdoor-win32-torr.html" target="_blank">Backdoor.Win32.Torr<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">61,440 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>180.97.215.35</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>180.97.215.35</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">180.97.215.35<td class="cell_2">2015</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 415A 5641 5ACD 0200 00BC 0200 0066 EE90 | AZVAZ........f..
+00000010 | 7C9C 0000 0005 0000 0001 0000 0028 0A00 | |............(..
+00000020 | 0002 0000 0053 6572 7669 6365 2050 6163 | .....Service Pac
+00000030 | 6B20 3200 00F1 067F 0000 01C4 FA12 0094 | k 2.............
+00000040 | 5CC3 7700 0000 0000 00D0 5612 0025 D000 | \.w.......V..%..
+00000050 | 00F0 5812 00E0 5812 00FC 5912 00C8 71A7 | ..X...X...Y...q.
+00000060 | 7180 57A5 71FF FFFF FF78 57A5 71AF 55A5 | q.W.q....xW.q.U.
+00000070 | 71B8 4915 00BC 5B12 0010 0000 00CC 55A5 | q.I...[.......U.
+00000080 | 7110 0583 0000 0000 00B3 9E80 7C00 0000 | q...........|...
+00000090 | 0075 0B81 7CB7 0000 0000 0000 0000 0000 | .u..|...........
+000000A0 | 00AC 5912 0002 0000 0000 0101 00B7 0B00 | ..Y.............
+000000B0 | 0001 0000 007F 0000 0143 6F6D 7075 7465 | .........Compute
+000000C0 | 724E 616D 6500 0000 0000 0000 0000 0000 | rName...........
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 0000 0000 0000 0000 000A 0000 | ................
+000000F0 | 00FF 0000 0010 0000 000E 0000 0020 5A12 | ............. Z.
+00000100 | 0068 4C83 0038 5A12 00F8 0000 0000 0000 | .hL..8Z.........
+00000110 | 0000 0000 0001 0000 00B8 4915 008D 4DA5 | ..........I...M.
+00000120 | 7108 0000 0000 0000 0099 1AA9 71F8 0000 | q...........q...
+00000130 | 0078 0183 0068 0000 00E0 4B83 0003 0000 | .x...h....K.....
+00000140 | 0002 0000 0001 0000 0030 CCEC 30D0 A1CA | .........0..0...
+00000150 | B131 B7D6 D6D3 0000 0000 0000 0000 0000 | .1..............
+00000160 | 0000 2000 0000 2000 0010 0583 0001 0000 | .. ... .........
+00000170 | 00E9 0300 001C 0038 0002 0000 009C 0000 | .......8........
+00000180 | 00C4 0000 0008 1500 0000 0000 0000 0000 | ................
+00000190 | 0001 0001 0000 0000 0073 0000 0048 0100 | .........s...H..
+000001A0 | 009C 0000 00C8 0000 0001 0000 0002 0004 | ................
+000001B0 | 0900 0000 0000 0000 00C4 5B12 0002 00F1 | ..........[.....
+000001C0 | 0650 4A15 00B8 4915 00A0 C814 0038 0100 | .PJ...I......8..
+000001D0 | 0000 0000 0027 5C12 00E0 4B83 0000 0000 | .....'\...K.....
+000001E0 | 0012 0000 0044 0100 0000 0000 0000 0000 | .....D..........
+000001F0 | 0000 0000 0000 0000 0000 0000 00D8 4B83 | ..............K.
+00000200 | 0068 0183 0000 0000 0000 0000 00D8 4B83 | .h............K.
+00000210 | 0090 0000 00E0 4B83 0000 0000 0078 0183 | ......K......x..
+00000220 | 0090 0000 0000 0000 0000 0083 0020 5912 | ............. Y.
+00000230 | 0000 0000 0000 0000 0000 D0FD 7F98 5B12 | ..............[.
+00000240 | 002A 2680 7C54 5B12 0000 2680 7C01 0000 | .*&.|T[...&.|...
+00000250 | 0048 0100 0000 0000 0014 0000 0001 0000 | .H..............
+00000260 | 0000 0000 0000 0000 0010 0000 0000 0000 | ................
+00000270 | 00AC 5B12 0044 6566 6175 6C74 0000 0000 | ..[..Default....
+00000280 | 0000 0000 0048 5B12 00E0 4B83 00C4 FA12 | .....H[...K.....
+00000290 | 00F3 9983 7C08 2680 7CFF FFFF FF00 2680 | ....|.&.|.....&.
+000002A0 | 7C42 2580 7C44 0132 3031 3800 7CBB 9B80 | |B%.|D.2018.|...
+000002B0 | 7C44 0100 00D0 5B12 0073 4F40 0044 0100 | |D....[..sO@.D..
+000002C0 | 0000 FA12 00EB 1640 0003 1C00 00        | .......@.....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

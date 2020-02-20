@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: IRC Trojan, not-a-virus:RiskTool.Win32.PsExec.131, not-a-virus:Client-IRC.Win32.mIRC.603, not-a-virus:RiskTool.Win32.HideWindows, HackTool.Win32.IpcScan.ae, Backdoor.Win32.Iroffer.13b11, not-a-virus:Server-FTP.Win32.Serv-U.sp..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: IRC Trojan, not-a-virus:RiskTool.Win32.PsExec.131..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 31 October 2015, 01:41:13</li>
+<li>Processing time: 5 min 42 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD01EC5C2E2E99602B1E5ABB60BE7CA4F</li>
+<li>File SHA-1: 0x4C0A54E00F6D37D4865CD657DD92C6094B797CD8</li>
+<li>Filesize: 1,829,055 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/irc-trojan.html" target="_blank">IRC Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>not-a-virus:RiskTool.Win32.PsExec.131, not-a-virus:Client-IRC.Win32.mIRC.603, not-a-virus:RiskTool.Win32.HideWindows, HackTool.Win32.IpcScan.ae, Backdoor.Win32.Iroffer.13b11, not-a-virus:Server-FTP.Win32.Serv-U.sp, not-a-virus:RemoteAdmin.Win32.RA.3826, Backdoor.IRC.Zapchast [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/not-a-virus-risktool-win32-psexec.html" target="_blank">not-a-virus:RiskTool.Win32.PsExec<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=965ca625-fc77-4685-b588-3fee871b8a8f&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/firedaemon.exe.html" target="_blank">firedaemon.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\winnt\system32\microsoft\user\<a href="http://www.threatexpert.com/files/firedaemon.exe.html" target="_blank">firedaemon.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">86,016 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">147,456 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/service.exe.html" target="_blank">service.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">C:\WINNT\%System%\Drivers\etc\config\<a href="http://www.threatexpert.com/files/service.exe.html" target="_blank">service.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,925,120 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/dll32.exe.html" target="_blank">dll32.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\winnt\system32\microsoft\user\<a href="http://www.threatexpert.com/files/dll32.exe.html" target="_blank">dll32.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">237,568 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/cdcreator.exe.html" target="_blank">cdcreator.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\winnt\%System%\Drivers\etc\config\<a href="http://www.threatexpert.com/files/cdcreator.exe.html" target="_blank">cdcreator.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">147,456 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/kill.exe.html" target="_blank">kill.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\winnt\%System%\Drivers\etc\config\<a href="http://www.threatexpert.com/files/kill.exe.html" target="_blank">kill.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">86,016 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/psexec.exe.html" target="_blank">psexec.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\winnt\%System%\Drivers\etc\config\<a href="http://www.threatexpert.com/files/psexec.exe.html" target="_blank">psexec.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">212,992 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There were new services created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSVC9</td><td class="cell_1">FireDaemon Service: MSVC9</td><td class="cell_1">"Stopped"</td><td class="cell_2">c:\winnt\system32\microsoft\user\<a href="http://www.threatexpert.com/files/FireDaemon.EXE.html" target="_blank">FireDaemon.EXE<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+<tr><td class="cell_1">QOS</td><td class="cell_1">FireDaemon Service: QOS</td><td class="cell_1">"Stopped"</td><td class="cell_2">c:\winnt\system32\microsoft\user\<a href="http://www.threatexpert.com/files/FireDaemon.EXE.html" target="_blank">FireDaemon.EXE<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cha</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.chat</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Application</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\ifexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Topic</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Application</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\ifexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Topic</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\mIRC</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Cygnus Solutions</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Cygnus Solutions\Cygwin</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Cygnus Solutions\Cygwin\mounts v2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Cygnus Solutions\Cygwin\Program Options</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QOS\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QOS\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QOS\Enum</li>
+<li>HKEY_USERS\.DEFAULT\Software\Cygnus Solutions</li>
+<li>HKEY_USERS\.DEFAULT\Software\Cygnus Solutions\Cygwin</li>
+<li>HKEY_USERS\.DEFAULT\Software\Cygnus Solutions\Cygwin\mounts v2</li>
+<li>HKEY_USERS\.DEFAULT\Software\Cygnus Solutions\Cygwin\Program Options</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Microsoft Agent</li>
+<li>HKEY_CURRENT_USER\Software\mIRC</li>
+<li>HKEY_CURRENT_USER\Software\mIRC\DateUsed</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cha]</li><ul>
+<li>(Default) = "ChatFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.chat]</li><ul>
+<li>(Default) = "ChatFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Topic]</li><ul>
+<li>(Default) = "Connect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\ifexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Application]</li><ul>
+<li>(Default) = "rmtmirc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\command]</li><ul>
+<li>(Default) = ""C:\WINNT\%System%\Drivers\etc\config\service.exe" -noconnect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\DefaultIcon]</li><ul>
+<li>(Default) = ""C:\WINNT\%System%\Drivers\etc\config\service.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile]</li><ul>
+<li>(Default) = "Chat File"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Topic]</li><ul>
+<li>(Default) = "Connect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\ifexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Application]</li><ul>
+<li>(Default) = "rmtmirc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\command]</li><ul>
+<li>(Default) = ""C:\WINNT\%System%\Drivers\etc\config\service.exe" -noconnect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\DefaultIcon]</li><ul>
+<li>(Default) = ""C:\WINNT\%System%\Drivers\etc\config\service.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc]</li><ul>
+<li>(Default) = "URL:IRC Protocol"</li>
+<li>EditFlags = 02 00 00 00</li>
+<li>URL Protocol = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>system332 = "C:\WINNT\%System%\Drivers\ETC\CONFIG\hidden32.exe C:\WINNT\%System%\Drivers\ETC\CONFIG\service.exe"</li>
+<li>UserFaultCheck = "%System%\dumprep 0 -u"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\mIRC]</li><ul>
+<li>DisplayName = "mIRC"</li>
+<li>UninstallString = ""C:\WINNT\%System%\Drivers\etc\config\service.exe" -uninstall"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "MSVC9"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9\0000]</li><ul>
+<li>Service = "MSVC9"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "FireDaemon Service: MSVC9"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSVC9]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "QOS"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS\0000]</li><ul>
+<li>Service = "QOS"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "FireDaemon Service: QOS"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QOS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MSVC9\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9\Parameters]</li><ul>
+<li>FireStarter = "c:\winnt\system32\microsoft\user\dll32.exe c:\winnt\system32\microsoft\user\xdcc.config"</li>
+<li>WorkingDir = "c:\winnt\system32\microsoft\user"</li>
+<li>ProcessMonitorEnabled = 0x00000001</li>
+<li>ProcessMonitorFrequency = 0x00001388</li>
+<li>ProcessAutoRestart = 0x00000001</li>
+<li>ProcessAffinityMask = 0x00000000</li>
+<li>ProcessPriority = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSVC9]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "c:\winnt\system32\microsoft\user\FireDaemon.EXE"</li>
+<li>DisplayName = "FireDaemon Service: MSVC9"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Enum]</li><ul>
+<li>0 = "Root\LEGACY_QOS\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS\Parameters]</li><ul>
+<li>FireStarter = "c:\winnt\system32\microsoft\user\dll39.exe /h SERV-U.ini"</li>
+<li>WorkingDir = "c:\winnt\system32\microsoft\user"</li>
+<li>ProcessMonitorEnabled = 0x00000001</li>
+<li>ProcessMonitorFrequency = 0x00001388</li>
+<li>ProcessAutoRestart = 0x00000001</li>
+<li>ProcessAffinityMask = 0x00000000</li>
+<li>ProcessPriority = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QOS]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "c:\winnt\system32\microsoft\user\FireDaemon.EXE"</li>
+<li>DisplayName = "FireDaemon Service: QOS"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "MSVC9"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9\0000]</li><ul>
+<li>Service = "MSVC9"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "FireDaemon Service: MSVC9"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSVC9]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "QOS"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS\0000]</li><ul>
+<li>Service = "QOS"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "FireDaemon Service: QOS"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QOS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MSVC9\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSVC9\Parameters]</li><ul>
+<li>FireStarter = "c:\winnt\system32\microsoft\user\dll32.exe c:\winnt\system32\microsoft\user\xdcc.config"</li>
+<li>WorkingDir = "c:\winnt\system32\microsoft\user"</li>
+<li>ProcessMonitorEnabled = 0x00000001</li>
+<li>ProcessMonitorFrequency = 0x00001388</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>219.165.1.1</li>
+<li>219.165.255.255</li>
+<li>irc.hq-pornland.com</li>
+<li>irc.hqirc.co.uk</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">219.165.255.255<td class="cell_2">139</td><tr>
+<tr><td class="cell_1">irc.hqirc.co.uk<td class="cell_2">1036</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>C:\WINNT\%System%\Drivers\etc\config\service.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+NICK SE7ENBOT-Z8276
+USER ovfwxc "" "irc.hqirc.co.uk" :SE7EN
+USERHOST SE7ENBOT-Z8276
+JOIN #[X]SE7EN[X]
+PRIVMSG SE7EN :#[X]SE7EN[X] ..04S.09canning.12 219.165.1.1 219.165.255.255
+MODE SE7ENBOT-Z8276 +i
+MODE #[X]SE7EN[X]
+NOTICE SE7ENBOT-Z8276 :.VERSION mIRC v6.03 Khaled Mardam-Bey.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

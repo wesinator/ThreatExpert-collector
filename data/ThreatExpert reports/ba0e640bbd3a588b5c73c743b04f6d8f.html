@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-GameThief.Win32.Magania">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-GameThief.Win32.Magania</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 19 November 2015, 14:42:50</li>
+<li>Processing time: 6 min 23 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBA0E640BBD3A588B5C73C743B04F6D8F</li>
+<li>File SHA-1: 0x20CD798568A7737591D2CEBB2BCF14F146C61C4F</li>
+<li>Filesize: 425,984 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-gamethief-win32-magania.html" target="_blank">Trojan-GameThief.Win32.Magania<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">430,080 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>40557.3m.net579.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">40557.3m.net579.com<td class="cell_2">2015</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F100 0000 5001 0000 7E95 4364 9B5D 3282 | ....P...~.Cd.]2.
+00000010 | 8788 8911 891F 825E 818A 8485 0F4B 05AF | .......^.....K..
+00000020 | 1191 6427 A42C 0325 236E 2810 3037 D142 | ..d'.,.%#n(.07.B
+00000030 | 0E33 1104 D630 400A 394F BA99 586A 076D | .3...0@.9O..Xj.m
+00000040 | F700 0695 D931 D780 3DAB D820 D54A 5273 | .....1..=.. .JRs
+00000050 | 61EC 6683 0274 35AB D920 6A02 CC16 32DC | a.f..t5.. j...2.
+00000060 | D8CE 2470 0188 43CC 99C1 F489 C2E5 850D | ..$p..C.........
+00000070 | E14B 0B41 6A2B 80F4 FAD0 A585 2037 3030 | .K.Aj+...... 700
+00000080 | 3232 6CE7 6660 3064 585A C8C1 D209 3677 | 22l.f`0dXZ....6w
+00000090 | F3BC 861A 105D 0F94 75CE CF2D 282D 492D | .....]..u..-(-I-
+000000A0 | F24B CC4D 6520 0E14 CA03 890A 5B51 86DF | .K.Me ......[Q..
+000000B0 | EC0C 0CFF 81EC 735B B62F 3A7F 4D81 E199 | ......s[./:.M...
+000000C0 | E2CA C2F7 3726 80CD 6661 8406 0610 0083 | ....7&..fa......
+000000D0 | 83A1 204A 88A1 C0B7 93A1 0348 FF40 320C | .. J.......H.@2.
+000000E0 | A464 818D 2843 AF2F D07D 5031 00A3 7155 | .d..(C./.}P1..qU
+000000F0 | 21                                      | !
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

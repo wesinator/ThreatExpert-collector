@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 March 2015, 12:31:19</li>
+<li>Processing time: 7 min 57 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD586F9FEBBCC97F4671BC43C0EE0B7BD</li>
+<li>File SHA-1: 0xB0B73ECEC702C6C7668BF9B4935F653C034E4EA6</li>
+<li>Filesize: 270,413 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\1400c2c4\1400c2c4.exe
+<br/>
+%AppData%\1400c2c4.exe
+<br/>
+%Programs%\Startup\1400c2c4.exe
+</td>
+<td class="cell_1">270,413 bytes</td>
+<td class="cell_2">MD5: 0xD586F9FEBBCC97F4671BC43C0EE0B7BD<br/>SHA-1: 0xB0B73ECEC702C6C7668BF9B4935F653C034E4EA6</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>c:\pagefile.sys</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>c:\1400c2c4</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">1400c2c4.exe</td><td class="cell_1">%Programs%\startup\1400c2c4.exe</td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1">1400c2c4.exe</td><td class="cell_1">C:\1400c2c4\1400c2c4.exe</td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1">1400c2c4.exe</td><td class="cell_1">%AppData%\1400c2c4.exe</td><td class="cell_2">270,336 bytes</td></tr>
+</table></p>
+<ul><li>There were new memory pages created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">8,192,000 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ERSvc</td><td class="cell_1">Error Reporting Service</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wscsvc</td><td class="cell_1">Security Center</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wuauserv</td><td class="cell_1">Automatic Updates</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications</li>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications\PatternHW4</li>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications\PatternHW4\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>1400c2c = "C:\1400c2c4\1400c2c4.exe"</li>
+<li>1400c2c4 = "%AppData%\1400c2c4.exe"</li>
+</ul>
+<br/>
+<em>so that 1400c2c4.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/republic_of_korea.gif"></td>
+<td class="cell_2">Republic of Korea</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/spain.gif"></td>
+<td class="cell_2">Spain</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>qazwsxedc</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>m.googlex.me</li>
+<li>w.googlex.me</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">w.googlex.me<td class="cell_2">443</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">drdigitalmd.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">ferienwohnungen-diana.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">azquasoft.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">youngprofreshional.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">shark09.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">bikeviet.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">baankhon.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">filemade.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">sooimchae.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">highendtile.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">aseanian.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">futong8.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">bijouxbjx.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">warmchurch.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">90.surfband.info</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">ehcc.us</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">caliskan-guvenlik.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">bn369.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">sam73cyber.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">fcserbiaunited.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">steveloosphoto.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">bigtreeasset.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">busanamuslim-online.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">ineshworld.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">ouarzazateonline.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">tryea.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">sehpam.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">judora-ng.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">iuliasalaria.org</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://ip-addr.es</li>
+<li>http://myexternalip.com/raw</li>
+<li>http://curlmyip.com</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 236B A01E F984 E52D 974F 3B53 E850 7CFE | #k.....-.O;S.P|.
+00000010 | 9544 DF18 2269 E883 A2B7 703F 7260 13C8 | .D.."i....p?r`..
+00000020 | 2B93 D0C7 4F9F 97C1 C6DC 9682 3613 8C3D | +...O.......6..=
+00000030 | 9AD0 4A82 CBA3 C9D8 1176 5B09 6986 5349 | ..J......v[.i.SI
+00000040 | 2D8A A288 CA94 8D63 548C 61B2 8A5A 696B | -......cT.a..Zik
+00000050 | A2E4 93D1 689F C99B 1464 60B0 B7CD 34C6 | ....h....d`...4.
+00000060 | 620D 248D 340D 4D14 26EF 24E0 85C5 8E78 | b.$.4.M.&.$....x
+00000070 | 5514 759E 1C96 75FA 3C03 1005 5A51 4365 | U.u...u.<...ZQCe
+00000080 | 3407 CE12 4FC4 947D F82D 82CE 2271 D844 | 4...O..}.-.."q.D
+00000090 | 8561 44F2 2FE6 AA2D 721F B450 AF56 9B50 | .aD./..-r..P.V.P
+000000A0 | E74A 5807 2BA1 B270 5A19 C2C0 16CE 3E70 | .JX.+..pZ.....>p
+000000B0 | BACA 080B E9D8 4146 1D50 DF54 8792 9831 | ......AF.P.T...1
+000000C0 | DA22 129C 2B75 302C 8D5E 74AF 585A 9F74 | ."..+u0,.^t.XZ.t
+000000D0 | E4AC F7B8 2105 5125 4549 D277 D8DF C0EF | ....!.Q%EI.w....
+000000E0 | 92E6 9721 471A 5DEB 1405 4991 1226 3DA3 | ...!G.]...I..&=.
+000000F0 | D63C B809 EB76 1EA5 D831 9077 5D6A 630E | .<...v...1.w]jc.
+00000100 | CA44 28AD 2570 16EF 323B 7BB0 AE89 818E | .D(.%p..2;{.....
+00000110 | BD51 1C11 46CD 83F8 390B FF4D E0E5 B694 | .Q..F...9..M....
+00000120 | A305 7996 A4EC 2DC8 E465 ABF7 AD33 414F | ..y...-..e...3AO
+00000130 | B312 5B69 3208 6E73 9672 E741 FC14 7881 | ..[i2.ns.r.A..x.
+00000140 | E108 7CE1 9EC6 490B CF1B 9CE5 C733 A75E | ..|...I......3.^
+00000150 | B786 5AEF D8F4 5B3A 5292 B186 EB39 086E | ..Z...[:R....9.n
+00000160 | 2951 1262 59EB 4E58 C16D 2A49 C83D 1987 | )Q.bY.NX.m*I.=..
+00000170 | 81F7 23E4 4967 4F95 79E8 CEA3 4C33 0FC8 | ..#.IgO.y...L3..
+00000180 | 19D8 74CD C561 01CE E31E 64A5 F8C4 4187 | ..t..a....d...A.
+00000190 | ACDE 98E0 B438 7E5F D926 9B79 6453 0960 | .....8~_.&.ydS.`
+000001A0 | 3200 6032 D8B2 8847 A2AC 4533 238D 8F5B | 2.`2...G..E3#..[
+000001B0 | 4D5F 32E2 72D9 C90E 1930 EF89 09A5 B7D7 | M_2.r....0......
+000001C0 | 63B2 CC88 656C 3332 20EE 1300 0000 0000 | c...el32 .......
+000001D0 | 0E00 1000 0022 2801 B4EC 0000 0000 0000 | ....."(.........
+000001E0 | 0757 917C 0000 0200 ECED 1300 ECED 1300 | .W.|............
+000001F0 | ECED 1300 0200 0000 0200 0000 0000 0000 | ................
+00000200 | 4006 2701 0000 0000 B4EC 0000 5CEF 1300 | @.'.........\...
+00000210 | 94EE 1300 5CEF 1300 005A 917C 48EE 1300 | ....\....Z.|H...
+00000220 | 0000 0000 38F0 1300 655A 917C 3207 917C | ....8...eZ.|2..|
+00000230 | 74C1 977C 1807 2701 0000 0000 88F0 1300 | t..|..'.........
+00000240 | 9CEF 1300 0000 0000 FCEF 1300 0000 0000 | ................
+00000250 | A4EF 1300 0000 8000 B8EE 1300 0000 0000 | ................
+00000260 | 0000 0000 0000 0000 0E00 1000 0022 2801 | ............."(.
+00000270 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000280 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000290 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002A0 | 0000 0000 0000 0000 0000 0000 0000 2000 | .............. .
+000002B0 | 38EF 1300 38EF 1300 38EF 1300 2000 0000 | 8...8...8... ...
+000002C0 | 2000 0000 1E00 0000 C0EE 1300 0000 0000 |  ...............
+000002D0 | C805 917C 0839 2701 8CEF 1300 4509 917C | ...|.9'.....E..|
+000002E0 | 4E09 917C 0000 0000 0000 0000 0070 FD7F | N..|.........p..
+000002F0 | 0100 0000 0100 0000 0070 FD7F 0510 907C | .........p.....|
+00000300 | 0000 0000 0000 0100 0070 FD7F 7800 0000 | .........p..x...
+00000310 | 0E44 917C 7009 917C C0E4 977C 8144 917C | .D.|p..|...|.D.|
+00000320 | F835 887C A143 917C 0000 0000 0700 0000 | .5.|.C.|........
+00000330 | C4F1 1300 0000 2500 58F2 1300 0000 0000 | ......%.X.......
+00000340 | C84B 2500 3CEF 1300 0000 0000 C805 917C | .K%.<..........|
+00000350 | C04B 2500 08F0 1300 5105 917C 780D 2500 | .K%.....Q..|x.%.
+00000360 | 6D05 917C 3501 00C0 0000 0000 C84B 2500 | m..|5........K%.
+00000370 | B4EC 0000 4CEF 1300 18EE 907C D8EF 1300 | ....L......|....
+00000380 | 18EE 907C 9032 917C FFFF FFFF 8832 917C | ...|.2.|.....2.|
+00000390 | F166 917C 0100 0000 8800 D400 7E65 917C | .f.|........~e.|
+000003A0 | 0000 0000 0000 0000 C84B 2500 0E00 1602 | .........K%.....
+000003B0 | 28CE 977C 0000 0000 0000 0000 0000 0802 | (..|............
+000003C0 | 2801 0000 28CE 977C 0E22 2801 0E22 2801 | (...(..|."(.."(.
+000003D0 | 8800 D400 00F0 1300 0822 2801 C84B 2500 | ........."(..K%.
+000003E0 | 0000 0000 3501 00C0 00F0 1300 6CFB 907C | ....5.......l..|
+000003F0 | 71FB 907C 3501 00C0 0000 0000 C84B 2500 | q..|5........K%.
+00000400 | DCEF 1300                               | ....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

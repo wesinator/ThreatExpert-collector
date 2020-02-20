@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan Horse, Trojan-Spy.Win32.Delf.dsc, Generic.ach, WORM_DELF.DHM, W32/Delf-EXO, TrojanSpy:Win32/Delf, Backdoor.Win32.Agent, Win32/Autorun.worm.197632, W32/USBAgent!inf, TextImage/Autorun">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan Horse, Trojan-Spy.Win32.Delf.dsc, Generic.ach, WORM_DELF.DHM..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 November 2015, 05:23:35</li>
+<li>Processing time: 5 min 35 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x074926BB5145549A9A34BA04C172C735</li>
+<li>File SHA-1: 0x71969E2A3922DB93FA859EA3DE2B77C89763D75D</li>
+<li>Filesize: 197,632 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-horse.html" target="_blank">Trojan Horse<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-spy-win32-delf-dsc.html" target="_blank">Trojan-Spy.Win32.Delf.dsc<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/generic-ach.html" target="_blank">Generic.ach<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-delf-dhm.html" target="_blank">WORM_DELF.DHM<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-delf-exo.html" target="_blank">W32/Delf-EXO<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojanspy-win32-delf.html" target="_blank">TrojanSpy:Win32/Delf<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-agent.html" target="_blank">Backdoor.Win32.Agent<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-autorun-worm-197632.html" target="_blank">Win32/Autorun.worm.197632<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Sets the drive to autoplay by creating autorun.inf file in its root directory. If the drive is shared across the network then other remote computers can be infected any time they try to access this share.</td><td class="cell_2"><img src="./resources/level7.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/worm-autorun-gen.html" target="_blank">Worm.AutoRun.GEN<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Worm.AutoRun.GEN is a threat that spreads through available drives and is able to automatically execute itself. It also attempts to disable security-related applications based on their filenames</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\autorun.inf
+</td>
+<td class="cell_1">168 bytes</td>
+<td class="cell_1">MD5: 0xA92525090EB716E3465AC314F5072193<br/>SHA-1: 0x5F61175146625A4E621B63D754E24FE2BABB0980</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-usbagent-inf.html" target="_blank">W32/USBAgent!inf<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/textimage-autorun.html" target="_blank">TextImage/Autorun<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+c:\<a href="http://www.threatexpert.com/files/SysInfo2.Dll.html" target="_blank">SysInfo2.Dll<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/SysInfo.dll.html" target="_blank">SysInfo.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">197,632 bytes</td>
+<td class="cell_1">MD5: 0x074926BB5145549A9A34BA04C172C735<br/>SHA-1: 0x71969E2A3922DB93FA859EA3DE2B77C89763D75D</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-horse.html" target="_blank">Trojan Horse<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/trojan-spy-win32-delf-dsc.html" target="_blank">Trojan-Spy.Win32.Delf.dsc<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/generic-ach.html" target="_blank">Generic.ach<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-delf-dhm.html" target="_blank">WORM_DELF.DHM<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-delf-exo.html" target="_blank">W32/Delf-EXO<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/trojanspy-win32-delf.html" target="_blank">TrojanSpy:Win32/Delf<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-agent.html" target="_blank">Backdoor.Win32.Agent<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-autorun-worm-197632.html" target="_blank">Win32/Autorun.worm.197632<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/SysInfo.dll.html" target="_blank">SysInfo.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/SysInfo.dll.html" target="_blank">SysInfo.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %Windir%\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x1E10000 - 0x1E85000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0xB10000 - 0xB85000</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/SysInfo.dll.html" target="_blank">SysInfo.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/SysInfo.dll.html" target="_blank">SysInfo.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0xF80000 - 0xFF5000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{989D2FEB-5411-4565-8988-1DD2C5263377}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{989D2FEB-5411-4565-8988-1DD2C5263377}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{989D2FEB-5411-4565-8988-1DD2C5263377}</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden\Policy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden\Policy\DontShowSuperHidden</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{989D2FEB-5411-4565-8988-1DD2C5263377}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\SysInfo.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{989D2FEB-5411-4565-8988-1DD2C5263377}]</li><ul>
+<li>(Default) = "MyBHO_0.1"</li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]</li><ul>
+<li>ShowSuperHidden = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden\Policy\DontShowSuperHidden]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden]</li><ul>
+<li>Type = "checkbox"</li>
+<li>Text = "@shell32.dll,-30508"</li>
+<li>WarningIfNotDefault = "@shell32.dll,-28964"</li>
+<li>HKeyRoot = 0x80000001</li>
+<li>RegPath = "Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"</li>
+<li>ValueName = "ShowSuperHidden"</li>
+<li>CheckedValue = 0x00000000</li>
+<li>UncheckedValue = 0x00000001</li>
+<li>DefaultValue = 0x00000000</li>
+<li>HelpID = "shell.hlp#51103"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

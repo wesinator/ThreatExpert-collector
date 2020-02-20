@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Infostealer.Gampass, Trojan-Spy.Win32.Iespy.bj, TSPY_LEGMIR.BVW, Mal/Dropper-Y, Trojan-Spy.Win32.Iespy.au, Packed/Upack">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Infostealer.Gampass, Trojan-Spy.Win32.Iespy.bj, TSPY_LEGMIR.BVW, Mal/Dropper-Y..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 September 2014, 05:07:37</li>
+<li>Processing time: 6 min 52 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x37AF72E0730772CEE76873BE9EA6B882</li>
+<li>File SHA-1: 0x37FAE2101AAE88892D8390EC0B15730554A6A758</li>
+<li>Filesize: 7,864 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/infostealer-gampass.html" target="_blank">Infostealer.Gampass<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Spy.Win32.Iespy.bj [Kaspersky Lab]</li>
+<li>TSPY_LEGMIR.BVW [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-dropper-y.html" target="_blank">Mal/Dropper-Y<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-spy-win32-iespy-au.html" target="_blank">Trojan-Spy.Win32.Iespy.au<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/packed-upack.html" target="_blank">Packed/Upack<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+<li><em>packed with: </em>PE_Patch [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/mh104.dll.html" target="_blank">mh104.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/mh104.dll.html" target="_blank">mh104.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %Windir%\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x1570000 - 0x1577000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>NVPCHMHh = "%System%\mh104.exe"</li>
+</ul>
+<br/>
+<em>so that %System%\mh104.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>mh104</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

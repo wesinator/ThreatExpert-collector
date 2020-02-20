@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Spybot.Worm, Backdoor.Win32.Rbot.gen, W32/Sdbot.worm.gen.g, WORM_SPYBOT.GEN, W32/Rbot-Fam, Backdoor:Win32/IRCbot.gen!Z, Backdoor.Rbot, Win32/IRCBot.worm.Gen">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Spybot.Worm, Backdoor.Win32.Rbot.gen, W32/Sdbot.worm.gen.g..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 October 2015, 09:12:41</li>
+<li>Processing time: 5 min 41 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7926FB86FB1E835A1B0BDD3874D4DF12</li>
+<li>File SHA-1: 0x3658F72F627D6DF047033AD39CAEE08A6BFFA52C</li>
+<li>Filesize: 294,912 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-spybot-worm.html" target="_blank">W32.Spybot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-rbot-gen.html" target="_blank">Backdoor.Win32.Rbot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-sdbot-worm-gen-g.html" target="_blank">W32/Sdbot.worm.gen.g<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-spybot-gen.html" target="_blank">WORM_SPYBOT.GEN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-rbot-fam.html" target="_blank">W32/Rbot-Fam<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Backdoor:Win32/IRCbot.gen!Z [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-rbot.html" target="_blank">Backdoor.Rbot<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-ircbot-worm-gen.html" target="_blank">Win32/IRCBot.worm.Gen<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-012: DCOM RPC Overflow exploit - replication across TCP 135/139/445/593 (common for Blaster, Welchia, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-011: LSASS Overflow exploit - replication across TCP 445 (common for Sasser, Bobax, Kibuv, Korgo, Gaobot, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to perform DoS attacks against other computers.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to terminate Antivirus, Firewall and other security related processes.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">winsN2S.exe</td><td class="cell_1">%System%\winsn2s.exe</td><td class="cell_2">851,968 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">851,968 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\OLE</li>
+<li>HKEY_CURRENT_USER\SYSTEM</li>
+<li>HKEY_CURRENT_USER\SYSTEM\CurrentControlSet</li>
+<li>HKEY_CURRENT_USER\SYSTEM\CurrentControlSet\Control</li>
+<li>HKEY_CURRENT_USER\SYSTEM\CurrentControlSet\Control\Lsa</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\OLE]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\SYSTEM\CurrentControlSet\Control\Lsa]</li><ul>
+<li>Service = "winsN2S.exe"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]</li><ul>
+<li>EnableDCOM = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]</li><ul>
+<li>restrictanonymous = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]</li><ul>
+<li>restrictanonymous = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>SKY2K4</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">113</td><td class="cell_1">TCP</td><td class="cell_2">winsN2S.exe (%System%\winsN2S.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>ircd.jessiejames.us</li>
+<li>127.0.0.2</li>
+<li>127.0.x.x</li>
+<li>127.0.215.54</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">127.0.215.54<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.64.196<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.113.142<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.165.84<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.217.27<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.10.230<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.62.172<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.111.119<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.164.61<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.216.4<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.0.2<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.3<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.4<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.5<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.6<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.7<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.8<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.9<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.10<td class="cell_2">1234</td><tr>
+<tr><td class="cell_1">127.0.0.11<td class="cell_2">1234</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+PASS mynewjessie
+NICK [ReViX]-871229026
+USER luubsvjqag 0 0 :[ReViX]-871229026
+USERHOST [ReViX]-871229026
+MODE [ReViX]-871229026 +i
+JOIN ##revex## girly
+NICK [ReViX]-590721276
+USER dsuhyzfqkal 0 0 :[ReViX]-590721276
+USERHOST [ReViX]-590721276
+MODE [ReViX]-590721276 +i
+PRIVMSG ##revex## :[DDoS]: Done with flood (0KB/sec).
+PRIVMSG ##revex## :[DDoS]: Flooding: (127.0.0.2:1234) for 50 seconds.
+PRIVMSG ##revex## :[SYNX]: Done with flood (0KB/sec).
+PRIVMSG ##revex## :[SYN]: Flooding: (127.0.0.2:1234) for 50 seconds.
+PRIVMSG ##revex## :[SCAN]: Random Port Scan started on 127.0.x.x:445 with a delay of 5 seconds for 0 minutes using 10 threads.
+PRIVMSG ##revex## :[SCAN]: Failed to start scan, port is invalid.
+PRIVMSG ##revex## :[SCAN]: IP: 127.0.0.1 Port: 1234 is open.
+PRIVMSG ##revex## :[SCAN]: Port scan started: 127.0.0.1:1234 with delay: 50(ms).
+PRIVMSG ##revex## :[UDP]: Sending 40 packets to: 127.0.0.2. Packet size: 50, Delay: 60(ms).
+PRIVMSG ##revex## :[PING]: Finished sending pings to 127.0.0.2.
+PRIVMSG ##revex## :[PING]: Sending 40 pings to 127.0.0.2. packet size: 50, timeout: 60(ms).
+PRIVMSG ##revex## :[UDP]: Finished sending packets to 127.0.0.2.
+NICK [ReViX]-002536390
+USER ugxnslxihud 0 0 :[ReViX]-002536390
+USERHOST [ReViX]-002536390
+MODE [ReViX]-002536390 +i
+NICK [ReViX]-355268482
+USER rdkkomcwut 0 0 :[ReViX]-355268482
+USERHOST [ReViX]-355268482
+MODE [ReViX]-355268482 +i
+NICK [ReViX]-143342200
+USER ugxnslxihud 0 0 :[ReViX]-143342200
+USERHOST [ReViX]-143342200
+MODE [ReViX]-143342200 +i
+NICK [ReViX]-096168399
+USER xgvwifdpfgr 0 0 :[ReViX]-096168399
+USERHOST [ReViX]-096168399
+MODE [ReViX]-096168399 +i
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>Heuristically identified capability of spreading across the following weakly restricted network shares:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="5">
+ADMIN$
+C$
+D$
+E$
+IPC$
+</textarea></tr></td></table></p>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+00000
+000000
+00000000
+admin
+admin$
+administrator
+admins
+america
+anchor
+april
+arrow
+artist
+basic
+compaq
+cookie
+country
+dirty
+drive
+email
+england
+english
+france
+french
+ghost
+green
+india
+input
+japan
+julie
+logout
+master
+modem
+monday
+mouse
+network
+phone
+phrase
+printer
+private
+record
+right
+saturday
+script
+silver
+simple
+slave
+success
+target
+thailand
+user1
+video
+xxxxx
+xxxxxx
+xxxxxxxx
+xxxxxxxxx
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

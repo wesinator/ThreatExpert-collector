@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Klovbot, Backdoor.Win32.DarkKomet.eku, Generic BackDoor.xa, Mal/Behav-058, Trojan:Win32/Delfsnif.DU, Trojan.Win32.CDur">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Klovbot, Backdoor.Win32.DarkKomet.eku, Generic BackDoor.xa..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 November 2015, 11:45:08</li>
+<li>Processing time: 5 min 49 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x296971D1C60F86D601B730B93AFED068</li>
+<li>File SHA-1: 0x7C7560E30C41AEAF5022300EBCC85BC2D702A3FD</li>
+<li>Filesize: 3,823,616 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan.Klovbot [Symantec]</li>
+<li>Backdoor.Win32.DarkKomet.eku [Kaspersky Lab]</li>
+<li>Generic BackDoor.xa [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-058.html" target="_blank">Mal/Behav-058<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Trojan:Win32/Delfsnif.DU [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-cdur.html" target="_blank">Trojan.Win32.CDur<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Modifies some system settings that may have negative impact on overall system security state.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=4f0a59a2-d109-409f-9996-c77b3a5d8872&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%AppData%\Microsoft\Windows Media\9.0\WMSDKNS.XML</li>
+<li>%Windir%\wmsetup.log</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">3,878,912 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/wmplayer.exe.html" target="_blank">wmplayer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\windows media player\<a href="http://www.threatexpert.com/files/wmplayer.exe.html" target="_blank">wmplayer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">16,384 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\Implemented Categories\{00021492-0000-0000-C000-000000000046}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\CurrentVersion</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\CurrentVersion\Explorern</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{4EFE2452-168A-11D1-BC76-00C04FB9453B}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{4EFE2452-168A-11D1-BC76-00C04FB9453B}\Default MidiOut Device</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{E0F158E1-CB04-11D0-BD4E-00A0C911CE86}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{E0F158E1-CB04-11D0-BD4E-00A0C911CE86}\Default DirectSound Device</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\RecentFileList</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Tasks</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Tasks\NowPlaying</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\EqualizerSettings</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\HTTP</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\MMS</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\RTSP</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Setup\UserOptions</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\DropDown</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Health</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Health\{C6EAB66C-4169-41B9-8987-CCE86AAF4610}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Multimedia\ActiveMovie</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Multimedia\ActiveMovie\Filter Cache</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+<li>HKEY_CURRENT_USER\Software\DC3_FEXEC</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "WMP.DeskBand"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\ProgID]</li><ul>
+<li>(Default) = "WMP.DeskBand.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\WINDOW~2\wmpband.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A4286EA-E355-44FB-8086-AF3DF7645BD9}]</li><ul>
+<li>(Default) = "Windows Media Player"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\TypeLib]</li><ul>
+<li>(Default) = "{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0A55922C-3B1F-469B-8D0D-B15060499A52}]</li><ul>
+<li>(Default) = "IWMPDeskBand"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\0\win32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\WINDOW~2\wmpband.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "C:\PROGRA~1\WINDOW~2\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B6DD1ED6-573F-40FD-99A1-F28D8BF23916}\1.0]</li><ul>
+<li>(Default) = "WMPDeskBand 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand\CLSID]</li><ul>
+<li>(Default) = "{0A4286EA-E355-44FB-8086-AF3DF7645BD9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand]</li><ul>
+<li>(Default) = "Windows Media Player"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand.1\CLSID]</li><ul>
+<li>(Default) = "{0A4286EA-E355-44FB-8086-AF3DF7645BD9}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMP.DeskBand.1]</li><ul>
+<li>(Default) = "Windows Media Player"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Devices\AudioCD]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.aif]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.aifc]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.aiff]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.asf]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.asx]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.au]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.avi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.cda]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.dvr-ms]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.m1v]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.m3u]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mid]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.midi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mp2]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mp2v]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mp3]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mpa]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mpe]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mpeg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mpg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mpv2]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.rmi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.snd]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wav]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wax]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wm]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wma]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wmd]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wmv]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wmx]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wmz]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wpl]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.wvx]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\application/vnd.ms-wpl]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\application/x-mplayer2]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\application/x-ms-wmd]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\application/x-ms-wmz]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/aiff]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/basic]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/mid]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/midi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/mp3]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/mpeg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/mpegurl]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/mpg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/wav]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-aiff]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-mid]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-midi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-mp3]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-mpeg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-mpegurl]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-mpg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-ms-wax]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-ms-wma]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\audio/x-wav]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\midi/mid]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/avi]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/mpeg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/mpg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/msvideo]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-mpeg]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-mpeg2a]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-asf]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-asf-plugin]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-wm]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-wmv]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-wmx]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-ms-wvx]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\MIME Types\video/x-msvideo]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Protocols\mms]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Protocols\mmst]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Protocols\mmsu]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Protocols\msbd]</li><ul>
+<li>UserApprovedOwning = "yes"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>AntiVirusDisableNotify = "1"</li>
+</ul>
+<br/>
+<em>to disable notification of firewall, antivirus and/or update status through the Windows Security Center</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\CurrentVersion\Explorern]</li><ul>
+<li>NoControlPanel = "1"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{4EFE2452-168A-11D1-BC76-00C04FB9453B}\Default MidiOut Device]</li><ul>
+<li>FriendlyName = "Default MidiOut Device"</li>
+<li>CLSID = "{07B65360-C445-11CE-AFDE-00AA006C14F4}"</li>
+<li>FilterData = 02 00 00 00 00 00 80 00 01 00 00 00 00 00 00 00 30 70 69 33 02 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 30 74 79 33 00 00 00 00 38 00 00 00 48 00 00 00 6D 69 64 73 00 00 10 00 80 00 00 AA 00 38 9B 71 00 00 00 00 00 00 00 00 00 00 00 0</li>
+<li>MidiOutId = 0xFFFFFFFF</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\ActiveMovie\devenum\{E0F158E1-CB04-11D0-BD4E-00A0C911CE86}\Default DirectSound Device]</li><ul>
+<li>FriendlyName = "Default DirectSound Device"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>AntiVirusDisableNotify = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Settings]</li><ul>
+<li>Client ID = "{8B2FC17F-5905-448A-88D5-C64086555F44}"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Netscape\Netscape Navigator\User Trusted External Applications]</li><ul>
+<li>"C:\PROGRA~1\WINDOW~2\wmplayer.exe" = "Yes"</li>
+<li>C:\PROGRA~1\WINDOW~2\wmplayer.exe = "Yes"</li>
+<li>"%ProgramFiles%\Windows Media Player\wmplayer.exe" = "Yes"</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe = "Yes"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Userinit = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]</li><ul>
+<li>AcceptedPrivacyStatement = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows Media\WMSDK\Namespace]</li><ul>
+<li>LocalBase = </li>
+<li>DTDFile = </li>
+<li>LocalDelta = </li>
+<li>RemoteDelta = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>DC_MUTEX-RQGCRM3</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>gustavoovermeto.no-ip.biz</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">gustavoovermeto.no-ip.biz<td class="cell_2">81</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%System%\Windows\Winlog.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

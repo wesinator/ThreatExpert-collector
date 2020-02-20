@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 8 April 2015, 22:35:33</li>
+<li>Processing time: 7 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x04EACD2031DE21C56CCEC496E1B5ED68</li>
+<li>File SHA-1: 0x11FB52C96853E12F011B7B7894E9884E56EB5522</li>
+<li>Filesize: 507,904 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Modifies some system settings that may have negative impact on overall system security state.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%Profiles%\Default User\Templates\excel.xls</li>
+<li>%Profiles%\Default User\Templates\excel4.xls</li>
+<li>%Profiles%\Default User\Templates\winword.doc</li>
+<li>%Profiles%\Default User\Templates\winword2.doc</li>
+<li>%Templates%\excel.xls</li>
+<li>%Templates%\excel4.xls</li>
+<li>%Templates%\winword.doc</li>
+<li>%Templates%\winword2.doc</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%Templates% is a variable that refers to the file system directory that serves as a common repository for document templates. A typical path is C:\Documents and Settings\[UserName]\Templates.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">wnnjANph.exe</td><td class="cell_1">%Temp%\wnnjanph.exe</td><td class="cell_2">335,872 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">507,904 bytes</td></tr>
+<tr><td class="cell_1">jQgXWRMZ.exe</td><td class="cell_1">%AppData%\Microsoft\jQgXWRMZ.exe</td><td class="cell_2">507,904 bytes</td></tr>
+<tr><td class="cell_1">dirtydecrypt.exe</td><td class="cell_1">%AppData%\dirty\dirtydecrypt.exe</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">afwizeyh.exe</td><td class="cell_1">%Programs%\startup\afwizeyh.exe</td><td class="cell_2">507,904 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\{77B9A01F-E844-59EE-CB89-3C234119392B}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\system</li>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications</li>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications\N</li>
+<li>HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications\N\Settings</li>
+<li>HKEY_CURRENT_USER\Software\{77B9A01F-E844-59EE-CB89-3C234119392B}</li>
+<li>HKEY_CURRENT_USER\Software\{77B9A01F-E844-59EE-CB89-3C234119392B}\Keys</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>UacDisableNotify = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>EnableLUA = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\{77B9A01F-E844-59EE-CB89-3C234119392B}]</li><ul>
+<li>ID = 43 44 31 41 34 30 31 37 42 31 36</li>
+<li>PeriodDisabed = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\system]</li><ul>
+<li>DisableTaskMgr = 0x00000001</li>
+</ul>
+<br/>
+<em>to prevent users from starting Task Manager (Taskmgr.exe)</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>iMUsZwZd = "%AppData%\Microsoft\jQgXWRMZ.exe"</li>
+<li>DirtyDecrypt = ""\\?\%AppData%\Dirty\DirtyDecrypt.exe" /hide"</li>
+</ul>
+<br/>
+<em>so that %AppData%\Microsoft\jQgXWRMZ.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\{77B9A01F-E844-59EE-CB89-3C234119392B}]</li><ul>
+<li>ID = 43 44 31 41 34 30 31 37 42 31 36</li>
+<li>PeriodDisabed = 0x00000001</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>AntiVirusOverride = </li>
+<li>FirewallOverride = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Userinit = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>viweabkkfe.com</li>
+<li>sjytgtnkdl.com</li>
+<li>linbzxpkmdtngnbdg.com</li>
+<li>wowsfhnnvlwhlotryvh.com</li>
+<li>ltcfpuctidqqqxxzpikz.com</li>
+<li>lscyqrjofqmtn.com</li>
+<li>vjuxtixi.com</li>
+<li>lxpcmncky.com</li>
+<li>pjgnhujlmwtgf.com</li>
+<li>zkkfpkbbfnmihohix.com</li>
+<li>ntrshvquunyzxevkucs.com</li>
+<li>pvqwziehrqscosb.com</li>
+<li>qxcrbliabignczlmuc.com</li>
+<li>okenhqzgxngnkbwouvfm.com</li>
+<li>oismeark.com</li>
+<li>bfgtwvhgsibiufmcerl.com</li>
+<li>wxluitpliymeoirc.com</li>
+<li>mzwfwjayhom.com</li>
+<li>rtlwqvhwuisfnery.com</li>
+<li>kvmihtamuopvagdlrwzg.com</li>
+<li>xtvklujmo.com</li>
+<li>dxkirxfzwhnnah.com</li>
+<li>vyeaukkyszhdeug.com</li>
+<li>xzfqmrfmyuaxs.com</li>
+<li>kcubcfuhwwn.com</li>
+<li>cpejcogzznpudbsmaxxm.com</li>
+<li>kwsrmhroj.com</li>
+<li>pnqclaedmavju.com</li>
+<li>zvwbjvhfrkqciz.com</li>
+<li>qwtzjokvjfvecysgypbd.com</li>
+<li>avcctrnrxx.com</li>
+<li>vgcdinjoj.com</li>
+<li>towhyechciopdte.com</li>
+<li>tmgskmvaxftffa.com</li>
+<li>eiiveuuptweirgz.com</li>
+<li>fryqhsblmvzsal.com</li>
+<li>ohrpszrfydauhfuzyzbk.com</li>
+<li>zbzxolintzi.com</li>
+<li>fidkjesxq.com</li>
+<li>owsxylebhmuzver.com</li>
+<li>yievjaklo.com</li>
+<li>izaubgigwfl.com</li>
+<li>hqihrutpabwndvldae.com</li>
+<li>nuepdkau.com</li>
+<li>rjpkxiywinyhjoqltq.com</li>
+<li>worazowxtkdznvvz.com</li>
+<li>fzzxkhmkfunhotpjmdoy.com</li>
+<li>kuyfpapjundhcit.com</li>
+<li>nxcyhbauwgvdryyz.com</li>
+<li>ajfdmjbywzibf.com</li>
+</ul></ul>
+<ul><li>The following Internet download was started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://networksecurityx.hopto.org</td><td class="cell_2">%Temp%\\m_editerror.tmp</td></tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

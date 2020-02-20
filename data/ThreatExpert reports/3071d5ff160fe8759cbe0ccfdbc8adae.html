@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Klovbot, Backdoor.Win32.DarkKomet.eku, Generic.gj, Mal/Behav-058, Trojan.Win32.CDur">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Klovbot, Backdoor.Win32.DarkKomet.eku, Generic.gj, Mal/Behav-058..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 November 2015, 02:58:21</li>
+<li>Processing time: 5 min 37 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3071D5FF160FE8759CBE0CCFDBC8ADAE</li>
+<li>File SHA-1: 0x1C2D13BCA027CC4A1D2C768FEC1009B0840070CC</li>
+<li>Filesize: 357,888 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Trojan.Klovbot [Symantec]</li>
+<li>Backdoor.Win32.DarkKomet.eku [Kaspersky Lab]</li>
+<li>Generic.gj [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-058.html" target="_blank">Mal/Behav-058<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-cdur.html" target="_blank">Trojan.Win32.CDur<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">950,272 bytes</td></tr>
+<tr><td class="cell_1">msdcsc.exe</td><td class="cell_1">%MyDocuments%\MSDCSC\msdcsc.exe</td><td class="cell_2">950,272 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%MyDocuments% is a variable that refers to the file system directory used to physically store a user's common repository of documents. A typical path is C:\Documents and Settings\[UserName]\My Documents.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\DC3_FEXEC</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>MicroUpdate = "%MyDocuments%\MSDCSC\msdcsc.exe"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Userinit = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>DC_MUTEX-NEMS9PZ</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>94.137.18.228</li>
+<li>dima.uhi@mail.ru</li>
+<li>spartanec2015.ddns.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">94.137.18.228<td class="cell_2">1604</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%MyDocuments%\msdcsc\msdcsc.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1604:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4435 3733 4241 3541 3445 4646 4333 4642 | D573BA5A4EFFC3FB
+00000010 | 3632 3933 3038 4435 3733 4241 3541 3445 | 629308D573BA5A4E
+00000020 | 4646 4333 4642 3632 3933 3038 4435 3733 | FFC3FB629308D573
+00000030 | 4241 3541 3445 4646 4333 4642 3632 3933 | BA5A4EFFC3FB6293
+00000040 | 3038 4435 3733 4241 3541 3445 4646 4333 | 08D573BA5A4EFFC3
+00000050 | 4642 3632 3933 3038 4435 3733 4241 3541 | FB629308D573BA5A
+00000060 | 3445 4646 4333 4642 3632 3933 3038 4435 | 4EFFC3FB629308D5
+00000070 | 3733 4241 3541 3445 4646 4333 4642 3632 | 73BA5A4EFFC3FB62
+00000080 | 3933 3038 4435 3733 4241 3541 3445 4646 | 9308D573BA5A4EFF
+00000090 | 4333 4642 3632 3933 3038 4435 3733 4241 | C3FB629308D573BA
+000000A0 | 3541 3445 4646 4333 4642 3632 3933 3038 | 5A4EFFC3FB629308
+000000B0 | 4435 3733 4241 3541 3445 4646 4333 4642 | D573BA5A4EFFC3FB
+000000C0 | 3632 3933 3038 4435 3733 4241 3541 3445 | 629308D573BA5A4E
+000000D0 | 4646 4333 4642 3632 3933 3038           | FFC3FB629308
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

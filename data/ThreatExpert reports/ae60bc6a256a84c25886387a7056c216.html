@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-Dropper.Win32.VB">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-Dropper.Win32.VB</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 April 2015, 11:39:25</li>
+<li>Processing time: 7 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xAE60BC6A256A84C25886387A7056C216</li>
+<li>File SHA-1: 0x5614C5DBECC0FE46033ECFE3485EC40F4D905A0E</li>
+<li>Filesize: 203,776 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-dropper-win32-vb.html" target="_blank">Trojan-Dropper.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>PE_Patch.PECompact [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%Programs%\Internet Explorer.lnk</li>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,908,736 bytes</td></tr>
+<tr><td class="cell_1">miniads2.exe</td><td class="cell_1">%System%\miniads2.exe</td><td class="cell_2">32,768 bytes</td></tr>
+<tr><td class="cell_1">miniads.exe</td><td class="cell_1">%System%\miniads.exe</td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/a.exe.html" target="_blank">a.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/a.exe.html" target="_blank">a.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">266,240 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Start Page = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1048</td><td class="cell_1">UDP</td><td class="cell_2">miniads2.exe (%System%\miniads2.exe)</td></tr>
+<tr><td class="cell_1">1049</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1051</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.vinacf.cf</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">cfpro0009.googlecode.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">lh4.googleusercontent.com</td><td class="cell_1">443</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>svn/trunk/VINACF.HTML</li>
+<li>index.html</li>
+<li>index.jpg</li>
+<li>svn/trunk/index.jpg</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://google.com-722,31;http://google.com-722,31;http://bit.ly/1l4Kjin;5;</li>
+<li>http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://adf.ly/sbgh0-722,31;http://sh.st/fWu0o;http://sh.st/fWu0o;http://google.com-722,31;http://google.com-722,31;http://bit.ly/1l4Kjin;5;</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://asdsadsadsad.googlecode.com/svn/trunk/newrent.txt</li>
+<li>https://asdsadsadsad.googlecode.com/svn/trunk/sh.txt</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1055:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 A692 | .............c..
+00000040 | 5D8A 3360 F2B9 801D 6790 8C56 ABE4      | ].3`....g..V..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1039:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 A692 | .............c..
+00000040 | 5D8A 3360 F2B9 801D 6790 8C56 ABE4      | ].3`....g..V..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 A692 | .............c..
+00000040 | 5D8A 3360 F2B9 801D 6790 8C56 ABE4      | ].3`....g..V..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1043:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 A692 | .............c..
+00000040 | 5D8A 3360 F2B9 801D 6790 8C56 ABE4      | ].3`....g..V..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

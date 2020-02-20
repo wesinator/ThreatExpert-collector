@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Trojan-PSW.Win32.Bjlog.gbs, Mal/Zegost-C, Backdoor:Win32/Zegost.B, Backdoor.Win32.Zegost">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Trojan-PSW.Win32.Bjlog.gbs, Mal/Zegost-C..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 October 2015, 12:22:57</li>
+<li>Processing time: 5 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x69A858DA3F1FB1D4B6BFC7CC4DFD87E5</li>
+<li>File SHA-1: 0x2E74606FA21A3F1AD8BD9FF912F3671D6E107912</li>
+<li>Filesize: 192,512 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-PSW.Win32.Bjlog.gbs [Kaspersky Lab]</li>
+<li>Mal/Zegost-C [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-zegost-b.html" target="_blank">Backdoor:Win32/Zegost.B<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Backdoor.Win32.Zegost [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">196,608 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">2,666,496 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ias</td><td class="cell_1">obeeyujc</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70\parameters</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70\parameters]</li><ul>
+<li>servicedll = "C:\PROGRA~1\StormII\otlkx.obj"</li>
+<li>servicemain = "?CRColorHsl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Comias70]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "obeeyujc"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "??????????????????????????????????Ã£????????????????????"</li>
+<li>module = "[file and pathname of the sample #1]"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 74 00 6D 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "ias"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS\0000]</li><ul>
+<li>Service = "ias"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "obeeyujc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IAS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\Enum]</li><ul>
+<li>0 = "Root\LEGACY_IAS\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias\parameters]</li><ul>
+<li>servicedll = "C:\PROGRA~1\StormII\otlkx.obj"</li>
+<li>servicemain = "?CRColorHsl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ias]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "obeeyujc"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "??????????????????????????????????Ã£????????????????????"</li>
+<li>module = "[file and pathname of the sample #1]"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 74 00 6D 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "ias"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS\0000]</li><ul>
+<li>Service = "ias"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "obeeyujc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IAS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\Enum]</li><ul>
+<li>0 = "Root\LEGACY_IAS\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias\parameters]</li><ul>
+<li>servicedll = "C:\PROGRA~1\StormII\otlkx.obj"</li>
+<li>servicemain = "?CRColorHsl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ias]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "obeeyujc"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "??????????????????????????????????Ã£????????????????????"</li>
+<li>module = "[file and pathname of the sample #1]"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 74 00 6D 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>lanzuf.gicp.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">lanzuf.gicp.net<td class="cell_2">998</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 998:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6362 3173 7436 0200 001F 0500 0078 9C4B | cb1st6.......x.K
+00000010 | 6360 6098 03C4 AC40 CC08 C41A 5C0C 0C4C | c``....@....\..L
+00000020 | 403A 38B5 A82C 3339 5521 2031 395B C188 | @:8..,39U! 19[..
+00000030 | 81EE 00E4 0606 4646 86ED DC0C 0CF5 4096 | ......FF......@.
+00000040 | 737E 6E41 6949 6A91 5F62 6E2A 9146 AC02 | s~nAiIj._bn*.F..
+00000050 | 1B01 C4FF 8138 1C88 7FB3 3330 CC06 0A18 | .....8....30....
+00000060 | 1A18 181A 19D8 BD9C E4BD F3D7 9E53 B471 | .............S.q
+00000070 | FF48 0306 9880 C16D E19E 0DD7 2FFD 58B8 | .H.....m..../.X.
+00000080 | 37CC 3340 61C7 FD3D DB76 7C3B C1C0 712E | 7.3@a..=.v|;..q.
+00000090 | 2CE4 D1F7 538C E806 14FC ADBF 61C5 C7F0 | ,...S.......a...
+000000A0 | 264A 9B09 C466 1598 5003 9160 04CB 5500 | &J...f..P..`..U.
+000000B0 | 597C 2E13 6B0A 3827 D61C 7832 BDA6 11C8 | Y|..k.8'..x2....
+000000C0 | FE61 DA51 B3D0 7962 0DAA 419C 0C20 7340 | .a.Q..yb..A.. s@
+000000D0 | 60C5 7D01 8688 686D 7052 3AC1 3AB1 6601 | `.}...hmpR:.:.f.
+000000E0 | 90AF 12A3 CD14 0864 EFE0 E164 C865 85E8 | .......d...d.e..
+000000F0 | E558 72B4 DC0E 28FE A1F3 68F9 2120 FF0C | .Xr...(...h.! ..
+00000100 | 50CF E5D9 136B 4062 76CC 2015 07CB 05A6 | P....k@bv. .....
+00000110 | 1F2D 07A9 03F1 6418 2CC0 E953 0728 F700 | .-....d.,..S.(..
+00000120 | 48C7 8822 6C67 6480 F86C 2AC7 C41A 1E51 | H.."lgd..l*....Q
+00000130 | 889A 27C0 CC35 6716 C8AE 8360 7B2C 62B4 | ..'..5g....`{,b.
+00000140 | 192C 4066 03B1 3DD0 9E1B 07A6 D7BC 06CA | .,@f..=.........
+00000150 | CBA8 A432 3C89 D566 FA0F 4AB0 093F EA0B | ...2<..f..J..?..
+00000160 | EA25 1984 40EE 039A 33B5 717B 4C03 90FF | .%..@...3.q{L...
+00000170 | 2206 E49F 83E5 FF81 C006 C8B6 8981 F84F | "..............O
+00000180 | CD19 184C AA92 60BB 2B66 BD67 4C4D CFCC | ...L..`.+f.gLM..
+00000190 | 2BC9 284A 9D00 7799 2983 4F14 442D 1800 | +.(J..w.).O.D-..
+000001A0 | CD3F 02D4 ABA5 D650 D300 3203 4883 5CCE | .?.....P..2.H.\.
+000001B0 | 03F5 8B08 24E4 E140 0016 CFB1 90F8 01E9 | ....$..@........
+000001C0 | 87C9 9500 F583 ECDC 022C 3B3E CF6C AEE1 | .........,;>.l..
+000001D0 | 009A 0572 1FC8 4C27 D586 1A90 FB27 5D9D | ...r..L'.....'].
+000001E0 | 50B3 7B36 840D CACF 7FBD 53C0 FE02 F977 | P.{6......S....w
+000001F0 | C1AE 6430 CD08 C420 312F C514 84C5 407B | ..d0... 1/....@{
+00000200 | 7262 21EE D488 85B8 1324 0C52 8FCF 9DB0 | rb!......$.R....
+00000210 | 3405 D26F 0354 CB04 5424 03A4 0DCD CCCD | 4..o.T..T$......
+00000220 | D7FC D766 C2E6 4E90 FB11 F1C8 C0F0 D138 | ...f..N........8
+00000230 | 0500 6BC9 CB13                          | ..k...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

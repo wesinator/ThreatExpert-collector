@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.L, Backdoor.Win32.Zegost">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.L, Backdoor.Win32.Zegost</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 May 2016, 08:17:49</li>
+<li>Processing time: 5 min 41 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6234DE11245E5F7194D7E9E18475AFB0</li>
+<li>File SHA-1: 0x587CD4004C3130688C57EBA37D1CD2CB40B7A494</li>
+<li>Filesize: 229,382 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor:Win32/Zegost.L [Microsoft]</li>
+<li>Backdoor.Win32.Zegost [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\<a href="http://www.threatexpert.com/files/updata.exe.html" target="_blank">updata.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">229,382 bytes</td>
+<td class="cell_1">MD5: 0x6234DE11245E5F7194D7E9E18475AFB0<br/>SHA-1: 0x587CD4004C3130688C57EBA37D1CD2CB40B7A494</td>
+<td class="cell_2">Backdoor:Win32/Zegost.L [Microsoft]<br/>Backdoor.Win32.Zegost [Ikarus]</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/updata.exe.html" target="_blank">updata.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\<a href="http://www.threatexpert.com/files/updata.exe.html" target="_blank">updata.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">245,760 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">245,760 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">245,760 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>updata = "C:\updata.exe"</li>
+</ul>
+<br/>
+<em>so that updata.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>104.223.17.29</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">104.223.17.29<td class="cell_2">7777</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7777:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F100 0000 4801 0000 7E95 4364 B0B5 9DC6 | ....H...~.Cd....
+00000010 | C6C9 C80E C58A 43AA C3C4 C5C4 02A7 815B | ......C........[
+00000020 | 8CCE 3392 5013 0513 96BA 1684 190D 12C4 | ..3.P...........
+00000030 | 9314 F702 810C 24BC 3673 6F63 4AB8 2ECA | ......$.6socJ...
+00000040 | 916F 2503 00A5 DC3A 48FA 1226 0534 1B37 | .o%....:H..&.4.7
+00000050 | CA6F AE02 D3A5 DC8D 35DB 1950 C181 4821 | .o......5..P..H!
+00000060 | 307D 8275 2258 4D4F 9410 4320 90ED C0D6 | 0}.u"XMO..C ....
+00000070 | CD90 0BA4 178B AD2C BC01 14B3 2811 05BB | .......,....(...
+00000080 | 8181 9191 613B 3703 8321 8310 C333 C595 | ....a;7..!...3..
+00000090 | 85EF 6F4C 00EB 1300 3AB4 1E28 EB9C 9F5B | ..oL....:..(...[
+000000A0 | 505A 925A E497 989B CA40 24E0 07E2 1F40 | PZ.Z.....@$....@
+000000B0 | 6C64 6068 A66B 60AA 6B68 A660 60C1 00F1 | ld`h.k`.kh.``...
+000000C0 | 33C8 FF6C 405C C1D8 0DF6 D70B F36E 8446 | 3..l@\.......n.F
+000000D0 | 0506 86DF EC0C 0CFF 81CC 7DD7 2E7F 3A0B | ..........}...:.
+000000E0 | 3424 0DA8 8B03 C897 61B0 6000 00B4 1D41 | 4$......a.`....A
+000000F0 | 30                                      | 0
+00000000 | F000 0000 4801 0000 7E95 4364 B0B5 9DC6 | ....H...~.Cd....
+00000030 | 9314 F702 810C 24BC 3673 6FE3 856B 578F | ......$.6so..kW.
+00000040 | 3BD6 4609 0345 B36E 88F8 2646 0F62 306D | ;.F..E.n..&F.b0m
+00000050 | 9BD3 5600 A04B B91B 6BB6 33A0 8203 9142 | ..V..K..k.3....B
+00000060 | 60FA 04EB 44B0 9A9E 2821 8640 20DB 81AD | `...D...(!.@ ...
+00000070 | 9B21 1748 2F16 5B59 7803 28B6 A144 14EC | .!.H/.[Yx.(..D..
+00000080 | 0606 4646 86ED DC0C 0C86 0C42 0CCF 1457 | ..FF.......B...W
+00000090 | 16BE BF31 01AC 4F00 E8D0 7AA0 AC73 7E6E | ...1..O...z..s~n
+000000A0 | 4169 496A 915F 626E 2A03 9100 E4DE 1F40 | AiIj._bn*......@
+000000C0 | 33C8 FF6C 405C C1D8 0D56 2761 D18D D0A8 | 3..l@\...V'a....
+000000D0 | C0C0 F09B 9D81 E13F 90B9 EFDA E54F 6781 | .......?.....Og.
+000000E0 | 86A4 0175 7100 F932 0C16 0C00 64CF 4152 | ...uq..2....d.AR
+000000A0 | 505A 925A E497 989B CA40 2400 B9F7 0710 | PZ.Z.....@$.....
+000000B0 | 1B19 189A E91A 98EA 1A9A 2918 5830 40FC | ..........).X0@.
+000000C0 | 0CF2 3F1B 1057 3076 83D5 BD30 EF46 6854 | ..?..W0v...0.FhT
+000000D0 | 6060 F8CD CEC0 F01F C8DC 77ED F2A7 B340 | ``........w....@
+000000E0 | 43D2 80BA 3880 7C19 060B 0600 B475 4131 | C...8.|......uA1
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

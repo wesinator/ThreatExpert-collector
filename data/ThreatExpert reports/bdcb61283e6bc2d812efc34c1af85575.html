@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Kwbot.Worm, Trojan-Dropper.Win32.Loring, WORM_SDBOT.DMA, TrojanDropper:Win32/Loring, Dropper/Loring.404356, Backdoor.Win32.IRCBot.gen, W32/Sdbot.worm.gen, WORM_SDBOT.GEN-1, W32/Sdbot-Gen, W32/Sdbot-Gen, Backdoor:Win32/IRCbot..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Kwbot.Worm, Trojan-Dropper.Win32.Loring, WORM_SDBOT.DMA..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 November 2015, 21:11:52</li>
+<li>Processing time: 5 min 43 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBDCB61283E6BC2D812EFC34C1AF85575</li>
+<li>File SHA-1: 0x0C30B44E0F6A164D38DF1B0888690694D718E86B</li>
+<li>Filesize: 504,396 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-kwbot-worm.html" target="_blank">W32.Kwbot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Dropper.Win32.Loring [Kaspersky Lab]</li>
+<li>WORM_SDBOT.DMA [Trend Micro]</li>
+<li>TrojanDropper:Win32/Loring [Microsoft]</li>
+<li>Dropper/Loring.404356 [AhnLab]</li>
+<li><em>packed with: </em>ASPack [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/adware-component-unrelated.html" target="_blank">Adware.Component.Unrelated<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">These common components have files and keys that are in different threats but the threats are not related to one another in that the author of the signature is not the same. It is recommended that all these entries be removed.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\drivers32\ACDSee 2.4.x Crack.exe
+<br/>
+%System%\drivers32\ACDSee 2.4.x Serial Generator.exe
+<br/>
+%System%\drivers32\Ad-aware 6.0 Crack.exe
+<br/>
+%System%\drivers32\Ad-aware 6.0 Serial Generator.exe
+<br/>
+%System%\drivers32\Adobe Acrobat 5.x Crack.exe
+<br/>
+%System%\drivers32\Adobe Acrobat 5.x Serial Generator.exe
+<br/>
+%System%\drivers32\Adobe Photoshop 7.x Crack.exe
+<br/>
+%System%\drivers32\Adobe Photoshop 7.x Serial Generator.exe
+<br/>
+%System%\drivers32\Adobe Photoshop 8.x Crack.exe
+<br/>
+%System%\drivers32\Adobe Photoshop 8.x Serial Generator.exe
+<br/>
+%System%\drivers32\Age of Mythology - The Titans No-Cd Crack.exe
+<br/>
+%System%\drivers32\Age of Mythology - The Titans Serial Generator.exe
+<br/>
+%System%\drivers32\Age of Wonders II - Shadow Magic No-Cd Crack.exe
+<br/>
+%System%\drivers32\Age of Wonders II - Shadow Magic Serial Generator.exe
+<br/>
+%System%\drivers32\Alpha Communicator 5.0 Crack.exe
+<br/>
+%System%\drivers32\Alpha Communicator 5.0 Serial Generator.exe
+<br/>
+%System%\drivers32\Armor2net Personal Firewall 3.1 Crack.exe
+<br/>
+%System%\drivers32\Armor2net Personal Firewall 3.1 Serial Generator.exe
+<br/>
+%System%\drivers32\Battlefield 1942 - Secret Weapons of World War II No-Cd Crack.exe
+<br/>
+%System%\drivers32\Battlefield 1942 - Secret Weapons of World War II Serial Generator.exe
+<br/>
+%System%\drivers32\Battlefield 1942 - The Road to Rome No-Cd Crack.exe
+<br/>
+%System%\drivers32\Battlefield 1942 - The Road to Rome Serial Generator.exe
+<br/>
+%System%\drivers32\Black & White 2 No-Cd Crack.exe
+<br/>
+%System%\drivers32\Black & White 2 Serial Generator.exe
+<br/>
+%System%\drivers32\Chrome No-Cd Crack.exe
+<br/>
+%System%\drivers32\Chrome Serial Generator.exe
+<br/>
+%System%\drivers32\Civilization III - Conquest No-Cd Crack.exe
+<br/>
+%System%\drivers32\Civilization III - Conquest Serial Generator.exe
+<br/>
+%System%\drivers32\CloneCD 4.x Crack.exe
+<br/>
+%System%\drivers32\CloneCD 4.x Serial Generator.exe
+<br/>
+%System%\drivers32\CloneCD 5.0 Crack.exe
+<br/>
+%System%\drivers32\CloneCD 5.0 Serial Generator.exe
+<br/>
+%System%\drivers32\Command & Conquer Generals No-Cd Crack.exe
+<br/>
+%System%\drivers32\Command & Conquer Generals Serial Generator.exe
+<br/>
+%System%\drivers32\Commandos 3 - Destination Berlin No-Cd Crack.exe
+<br/>
+%System%\drivers32\Commandos 3 - Destination Berlin Serial Generator.exe
+<br/>
+%System%\drivers32\Conflict - Desert Storm II - Back to Baghdad No-Cd Crack.exe
+<br/>
+%System%\drivers32\Conflict - Desert Storm II - Back to Baghdad Serial Generator.exe
+<br/>
+%System%\drivers32\Counter-Strike - Condition Zero No-Cd Crack.exe
+<br/>
+%System%\drivers32\Counter-Strike - Condition Zero Serial Generator.exe
+<br/>
+%System%\drivers32\DAP Plus 5.3 Crack.exe
+<br/>
+%System%\drivers32\DAP Plus 5.3 Serial Generator.exe
+<br/>
+%System%\drivers32\Dark Age of Camelot - Trials of Atlantis No-Cd Crack.exe
+<br/>
+%System%\drivers32\Dark Age of Camelot - Trials of Atlantis Serial Generator.exe
+<br/>
+%System%\drivers32\Delta Force - Black Hawk Down No-Cd Crack.exe
+<br/>
+%System%\drivers32\Delta Force - Black Hawk Down Serial Generator.exe
+<br/>
+%System%\drivers32\Direct Connect 1.x Crack.exe
+<br/>
+%System%\drivers32\Direct Connect 1.x Serial Generator.exe
+<br/>
+%System%\drivers32\Divx 5.x Crack.exe
+<br/>
+%System%\drivers32\Divx 5.x Serial Generator.exe
+<br/>
+%System%\drivers32\DOOM 3 No-Cd Crack.exe
+<br/>
+%System%\drivers32\DOOM 3 Serial Generator.exe
+<br/>
+%System%\drivers32\DOOM III No-Cd Crack.exe
+<br/>
+%System%\drivers32\DOOM III Serial Generator.exe
+<br/>
+%System%\drivers32\Download Accelerator Plus 5.3 Crack.exe
+<br/>
+%System%\drivers32\Download Accelerator Plus 5.3 Serial Generator.exe
+<br/>
+%System%\drivers32\Easy CD-DA Extractor 5.1 Crack.exe
+<br/>
+%System%\drivers32\Easy CD-DA Extractor 5.1 Serial Generator.exe
+<br/>
+%System%\drivers32\Easy CD-DA Extractor 5.x Crack.exe
+<br/>
+%System%\drivers32\Easy CD-DA Extractor 5.x Serial Generator.exe
+<br/>
+%System%\drivers32\Elder Scrolls III - Tribunal No-Cd Crack.exe
+<br/>
+%System%\drivers32\Elder Scrolls III - Tribunal Serial Generator.exe
+<br/>
+%System%\drivers32\Etherlords II No-Cd Crack.exe
+<br/>
+%System%\drivers32\Etherlords II Serial Generator.exe
+<br/>
+%System%\drivers32\EverQuest 2 No-Cd Crack.exe
+<br/>
+%System%\drivers32\EverQuest 2 Serial Generator.exe
+<br/>
+%System%\drivers32\F1 2002 No-Cd Crack.exe
+<br/>
+%System%\drivers32\F1 2002 Serial Generator.exe
+<br/>
+%System%\drivers32\FIFA Soccer 2003 No-Cd Crack.exe
+<br/>
+%System%\drivers32\FIFA Soccer 2003 Serial Generator.exe
+<br/>
+%System%\drivers32\FIFA Soccer 2004 No-Cd Crack.exe
+<br/>
+%System%\drivers32\FIFA Soccer 2004 Serial Generator.exe
+<br/>
+%System%\drivers32\FireStarter No-Cd Crack.exe
+<br/>
+%System%\drivers32\FireStarter Serial Generator.exe
+<br/>
+%System%\drivers32\FlashFXP 1.4 Crack.exe
+<br/>
+%System%\drivers32\FlashFXP 1.4 Serial Generator.exe
+<br/>
+%System%\drivers32\FlashFXP 1.x Crack.exe
+<br/>
+%System%\drivers32\FlashFXP 1.x Serial Generator.exe
+<br/>
+%System%\drivers32\FlashGet 1.3 Crack.exe
+<br/>
+%System%\drivers32\FlashGet 1.3 Serial Generator.exe
+<br/>
+%System%\drivers32\FlashGet 1.x Crack.exe
+<br/>
+%System%\drivers32\FlashGet 1.x Serial Generator.exe
+<br/>
+%System%\drivers32\Flight Simulator - Century of Flight No-Cd Crack.exe
+<br/>
+%System%\drivers32\Flight Simulator - Century of Flight Serial Generator.exe
+<br/>
+%System%\drivers32\Freedom - Soldiers of Liberty No-Cd Crack.exe
+<br/>
+%System%\drivers32\Freedom - Soldiers of Liberty Serial Generator.exe
+<br/>
+%System%\drivers32\GeoWhere 2.11 Crack.exe
+<br/>
+%System%\drivers32\GeoWhere 2.11 Serial Generator.exe
+<br/>
+%System%\drivers32\GeoWhere 2.x Crack.exe
+<br/>
+%System%\drivers32\GeoWhere 2.x Serial Generator.exe
+<br/>
+%System%\drivers32\GetRight 5.0 Crack.exe
+<br/>
+%System%\drivers32\GetRight 5.0 Serial Generator.exe
+<br/>
+%System%\drivers32\GetRight 5.x Crack.exe
+<br/>
+%System%\drivers32\GetRight 5.x Serial Generator.exe
+<br/>
+%System%\drivers32\GetRight 6.x Crack.exe
+<br/>
+%System%\drivers32\GetRight 6.x Serial Generator.exe
+<br/>
+%System%\drivers32\Grand Theft Auto - Vice City No-Cd Crack.exe
+<br/>
+%System%\drivers32\Grand Theft Auto - Vice City Serial Generator.exe
+<br/>
+%System%\drivers32\Half-Life 2 No-Cd Crack.exe
+<br/>
+%System%\drivers32\Half-Life 2 Serial Generator.exe
+</td>
+<td class="cell_1">504,396 bytes</td>
+<td class="cell_1">MD5: 0xBDCB61283E6BC2D812EFC34C1AF85575<br/>SHA-1: 0x0C30B44E0F6A164D38DF1B0888690694D718E86B</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-kwbot-worm.html" target="_blank">W32.Kwbot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan-Dropper.Win32.Loring [Kaspersky Lab]<br/>WORM_SDBOT.DMA [Trend Micro]<br/>TrojanDropper:Win32/Loring [Microsoft]<br/>Dropper/Loring.404356 [AhnLab]<br/><em>packed with </em>ASPack [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/svchosts.exe.html" target="_blank">svchosts.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">31,579 bytes</td>
+<td class="cell_1">MD5: 0xC68822BEE0A9091ABB64A1E20FBA238A<br/>SHA-1: 0xAA7B77B8973FBB62637DE7DDEC0617434A4534AF</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-kwbot-worm.html" target="_blank">W32.Kwbot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-ircbot-gen.html" target="_blank">Backdoor.Win32.IRCBot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-sdbot-worm-gen.html" target="_blank">W32/Sdbot.worm.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-sdbot-gen-1.html" target="_blank">WORM_SDBOT.GEN-1<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/>W32/Sdbot-Gen,  W32/Sdbot-Gen [Sophos]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-ircbot.html" target="_blank">Backdoor:Win32/IRCbot<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/win32-ircbot-worm-gen.html" target="_blank">Win32/IRCBot.worm.Gen<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]<br/><em>packed with </em>ExeStealth [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%System%\drivers32</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchosts.exe.html" target="_blank">svchosts.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/svchosts.exe.html" target="_blank">svchosts.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">4,096 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</li>
+<li>HKEY_CURRENT_USER\Software\iMesh</li>
+<li>HKEY_CURRENT_USER\Software\iMesh\Client</li>
+<li>HKEY_CURRENT_USER\Software\iMesh\Client\LocalContent</li>
+<li>HKEY_CURRENT_USER\Software\KAZAA</li>
+<li>HKEY_CURRENT_USER\Software\KAZAA\LocalContent</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>SvcHosts32 = "%System%\svchosts.exe"</li>
+</ul>
+<br/>
+<em>so that svchosts.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]</li><ul>
+<li>SvcHosts32 = "svchosts.exe"</li>
+</ul>
+<br/>
+<em>so that svchosts.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices]</li><ul>
+<li>SvcHosts32 = "svchosts.exe"</li>
+</ul>
+<br/>
+<em>so that svchosts.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>SvcHosts32 = "svchosts.exe"</li>
+</ul>
+<br/>
+<em>so that svchosts.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce]</li><ul>
+<li>SvcHosts32 = "svchosts.exe"</li>
+</ul>
+<br/>
+<em>so that svchosts.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\iMesh\Client\LocalContent]</li><ul>
+<li>Dir0 = "012345:%System%\drivers32\"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\KAZAA\LocalContent]</li><ul>
+<li>Dir0 = "012345:%System%\drivers32\"</li>
+<li>DisableSharing = 0x00000000</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>svchostsx</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>theeserver13.mine.nu</li>
+<li>theeserver13.myftp.org</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

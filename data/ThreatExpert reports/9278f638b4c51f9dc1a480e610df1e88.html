@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 April 2016, 06:13:54</li>
+<li>Processing time: 6 min 13 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x9278F638B4C51F9DC1A480E610DF1E88</li>
+<li>File SHA-1: 0x33A9D92E3F82F19E11767A6387B72B7380CD7953</li>
+<li>Filesize: 4,365,864 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/cleanschedule.exe.html" target="_blank">cleanschedule.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\regclean pro\<a href="http://www.threatexpert.com/files/cleanschedule.exe.html" target="_blank">cleanschedule.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">110,592 bytes</td></tr>
+<tr><td class="cell_1">cloud_backup_setup.exe</td><td class="cell_1">%ProgramFiles%\regclean pro\cloud_backup_setup.exe</td><td class="cell_2">258,048 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">176,128 bytes</td></tr>
+<tr><td class="cell_1">rcpuninstall.exe</td><td class="cell_1">%ProgramFiles%\regclean pro\rcpuninstall.exe</td><td class="cell_2">1,286,144 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-PFPFU.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">1,236,992 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">cloud_backup_setup_intl.exe</td><td class="cell_1">%ProgramFiles%\regclean pro\cloud_backup_setup_intl.exe</td><td class="cell_2">258,048 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RegClean Pro_is1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Systweak</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\Params</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\RegClean Pro</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\RegClean Pro\Version 6.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\RegClean Pro\Version 6.1\LANG</li>
+<li>HKEY_CURRENT_USER\Software\Licenses</li>
+<li>HKEY_CURRENT_USER\Software\Systweak</li>
+<li>HKEY_CURRENT_USER\Software\Systweak\RegClean Pro</li>
+<li>HKEY_CURRENT_USER\Software\Systweak\RegClean Pro\Version 6.1</li>
+<li>HKEY_CURRENT_USER\Software\Systweak\RegClean Pro\Version 6.1\LANG</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\MiscStatus\1]</li><ul>
+<li>(Default) = "132499"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "MSScriptControl.ScriptControl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\TypeLib]</li><ul>
+<li>(Default) = "{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\msscript.ocx, 102"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\ProgID]</li><ul>
+<li>(Default) = "MSScriptControl.ScriptControl.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\msscript.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{459DD0F7-0D55-D3DC-67BC-E6BE37E9D762}]</li><ul>
+<li>(Default) = "ScriptControl Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RegClean Pro_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.5.2 (u)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\RegClean Pro"</li>
+<li>InstallLocation = "%ProgramFiles%\RegClean Pro\"</li>
+<li>Inno Setup: Icon Group = "RegClean Pro"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Language = "en"</li>
+<li>DisplayName = "RegClean Pro"</li>
+<li>DisplayIcon = "%ProgramFiles%\RegClean Pro\Regcleanpro.exe"</li>
+<li>UninstallString = ""%ProgramFiles%\RegClean Pro\unins000.exe" /silent"</li>
+<li>QuietUninstallString = ""%ProgramFiles%\RegClean Pro\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "6.21"</li>
+<li>Publisher = "Systweak Inc"</li>
+<li>URLInfoAbout = "http://www.systweak.com/RegCleanPro/"</li>
+<li>HelpLink = "http://www.systweak.com/RegCleanPro/"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20160413"</li>
+<li>MajorVersion = 0x00000006</li>
+<li>MinorVersion = 0x00000015</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\RegClean Pro\Version 6.1\LANG]</li><ul>
+<li>LangID = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\RegClean Pro\Version 6.1]</li><ul>
+<li>TELNO = "(800) 871-7918"</li>
+<li>utm_source = "matomy"</li>
+<li>utm_campaign = "[filename of the sample #1 without extension]"</li>
+<li>utm_medium = "newbuild"</li>
+<li>RCPURL = "http://www.systweak.com/registryCleaner/price/en?utm_source=matomy&utm_campaign=[filename of the sample #1 without extension]&utm_medium=newbuild"</li>
+<li>RENEWALURL = "http://www.systweak.com/registrycleaner/renewal.asp?utm_source=matomy&utm_campaign=[filename of the sample #1 without extension]&utm_medium=newbuild"</li>
+<li>MaxFixLimit = 0x0000000F</li>
+<li>Expired = 0x00000000</li>
+<li>FirstTimeASPFired = 0x00000001</li>
+<li>LaunchASP = 0x00000001</li>
+<li>DoUninstall = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Systweak\Params]</li><ul>
+<li>utm_source = "matomy"</li>
+<li>utm_campaign = "[filename of the sample #1 without extension]"</li>
+<li>utm_medium = "newbuild"</li>
+<li>affiliateid = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Systweak]</li><ul>
+<li>MachineID = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>RDReminder = "%ProgramFiles%\RegClean Pro\RegCleanPro.exe -rem"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Licenses]</li><ul>
+<li>{R7C0DB872A3F777C0} = 4A 8D 7D 4C</li>
+<li>{K7C0DB872A3F777C0} = 6A 59 77 05 A8 18 1F 1E FC 6C 86 07 1E 46 2E 03 07 99 01 65 14 0F C8 1F F3 29 FB 4A 8D 7D 4C FF FF FF FF 87 30 0C C3 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF F</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Systweak\RegClean Pro\Version 6.1\LANG]</li><ul>
+<li>LangCode = "en"</li>
+<li>LangID = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Systweak\RegClean Pro\Version 6.1]</li><ul>
+<li>StartAutoScanPMUI = 0x00000001</li>
+<li>StartAutoScanOnLaunch = 0x00000000</li>
+<li>StartAutoTutorial = 0x00000001</li>
+<li>TrialType = 0x00000000</li>
+<li>SetChkDontShowRedTrayPopup = 0x00000000</li>
+<li>SetChkREmovableMedia = 0x00000001</li>
+<li>SetChkSkipEmptyKeys = 0x00000001</li>
+<li>ImprovementProgram = 0x00000001</li>
+<li>StartWhenWinBoots = 0x00000001</li>
+<li>GoToSystemTrayOnClose = 0x00000000</li>
+<li>SetEnableSound = 0x00000001</li>
+<li>ConfirmBkUps = 0x00000001</li>
+<li>StartScan = 0x00000000</li>
+<li>StartMinimized = 0x00000000</li>
+<li>AutoRepair = 0x00000000</li>
+<li>StrLastScan = ""</li>
+<li>StrLastScanResults = "0"</li>
+<li>StrLastOptimizeTime = ""</li>
+<li>StrLatestRegDefrag = ""</li>
+<li>StrLatestRestorePoint = ""</li>
+<li>StrLastStartupOpt = ""</li>
+<li>RegErrFoundTillDate = 0x00000000</li>
+<li>RegErrsFixedTillDate = 0x00000000</li>
+<li>RegErrsFixedLast = 0x00000000</li>
+<li>ScheduledTime = ""</li>
+<li>NumTimesRCPRunned = 0x00000001</li>
+<li>FirstRun = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Systweak\RegClean Pro]</li><ul>
+<li>ErrorCount = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Systweak]</li><ul>
+<li>MachineID = (zero-length binary value)</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+<li>_SHuassist.mtx</li>
+<li>RAL2A65618B</li>
+<li>2A65618B::WK</li>
+<li>Local\RCP_4E7965C1-F27A-44e1-90D1-46EBDFE07955</li>
+<li>DDrawWindowListMutex</li>
+<li>DDrawDriverObjectListMutex</li>
+<li>__DDrawExclMode__</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>track.mypcbackup.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">track.mypcbackup.com<td class="cell_2">1033</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.systweak.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>registryCleaner/afterinstall.asp?newrcp=1&amp;utm_content=AfterInstall&amp;utm_term=Setup&amp;page=install&amp;utm_source=matomy&amp;utm_campaign=sample_1&amp;utm_medium=newbuild&amp;LangID=en</li>
+<li>registryCleaner/index.jpg</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://track.mypcbackup.com/8695a4a3/systweakinstall/MyPCBackup_Setup.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 13 April 2016 06:20:08</li>
+<li>Processing time: 6 min 21 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x677815CDB70D67BBAB695FDE32609C70</li>
+<li>File SHA-1: 0x677AA21CBDFAE2146DB6F2AE1A1680F2B8084078</li>
+<li>Filesize: 2,150,193 bytes</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=095dc3e3-6e07-4428-8142-79c6690fa25b&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%DesktopDir%\MyPC Backup.lnk
+</td>
+<td class="cell_1">1,526 bytes</td>
+<td class="cell_2">MD5: 0xCA55BCABFD7AA937D89FCA8F4106E560<br/>SHA-1: 0x70BDB2385AA19C783105DE3563D889161412D66E</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\nst3.tmp\<a href="http://www.threatexpert.com/files/nsSCM.dll.html" target="_blank">nsSCM.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">5,632 bytes</td>
+<td class="cell_2">MD5: 0x62EFA7B730EB0523A026EA4325403B77<br/>SHA-1: 0x806ED3BD677CCF5D9817C9B464015E347F2C8F3C</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Programs%\Startup\MyPC Backup.lnk
+</td>
+<td class="cell_1">680 bytes</td>
+<td class="cell_2">MD5: 0xE3E0C8BE6FC75424A46DACF67C0178FE<br/>SHA-1: 0xD81294AED5BD41D4534980F534C07022AB560CD0</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\brand.jdat
+</td>
+<td class="cell_1">520,181 bytes</td>
+<td class="cell_2">MD5: 0x526199D0C4A83A02CCA8C931A99F6A65<br/>SHA-1: 0xA758A6C386D3F233E960D605858CDE4F050D0E82</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\de_DE.mo
+</td>
+<td class="cell_1">66,304 bytes</td>
+<td class="cell_2">MD5: 0xAEB635853EA542DBD3C462FF1D14595D<br/>SHA-1: 0x8B369FC88F21F299B342BACD028F0B970B6BE5E9</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\es_ES.mo
+</td>
+<td class="cell_1">66,926 bytes</td>
+<td class="cell_2">MD5: 0xC624711362DDF71DB7F571F90489E657<br/>SHA-1: 0xBA8E089D22FF33EBE2FEC925E5E16CA63EDB2713</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\fr_FR.mo
+</td>
+<td class="cell_1">67,831 bytes</td>
+<td class="cell_2">MD5: 0x1367437EB754875E89AD253C421CE991<br/>SHA-1: 0x75D2B5B1C542333FC2B91EF824A8C36A1F851313</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\it_IT.mo
+</td>
+<td class="cell_1">61,983 bytes</td>
+<td class="cell_2">MD5: 0xCE55829E078A399F80D57F1EE700265D<br/>SHA-1: 0x5AC25B54EE4B226F54A5EC142C532EF24A9BA2FD</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\LinqBridge.dll
+</td>
+<td class="cell_1">60,928 bytes</td>
+<td class="cell_2">MD5: 0xE5CC3997457CD365E43C19F0F9110148<br/>SHA-1: 0xC2BB699FFC6F2DA5828605B857ADBA92A403E697</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\OLBPre.exe
+</td>
+<td class="cell_1">2,473,984 bytes</td>
+<td class="cell_2">MD5: 0xC926E1978CD2360BF73F978B8804622E<br/>SHA-1: 0x39E332AC1E95909F5944C7A8EA7CDC516E214149</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\OLBPre.exe.config
+</td>
+<td class="cell_1">203 bytes</td>
+<td class="cell_2">MD5: 0x099AD51472095EE0914C661BC21F18D8<br/>SHA-1: 0x52243C5DB306B6BA032D6DD08C5CEEADE4A12C43</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\pt_PT.mo
+</td>
+<td class="cell_1">65,761 bytes</td>
+<td class="cell_2">MD5: 0xF3DAF8D88CBF7AD7DE2FB9E3731F89A6<br/>SHA-1: 0xE01DE3C87F92F0F2415A4B7085390567B8537E3B</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\state.jdat
+</td>
+<td class="cell_1">374 bytes</td>
+<td class="cell_2">MD5: 0x1A73211DE2A192AB07CEF05F3FF0602C<br/>SHA-1: 0xA6F2ACDE406ABF8D9CE2209711AEAD3C9D6B9A14</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%ProgramFiles%\OLBPre\<a href="http://www.threatexpert.com/files/uninst.exe.html" target="_blank">uninst.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">426,822 bytes</td>
+<td class="cell_2">MD5: 0xF3E2BFC9E6FC7DA87167A1CBE6A9C4A4<br/>SHA-1: 0xA51CDD0EB67CF848F995D684A6AAA3379E6D1119</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">2,150,193 bytes</td>
+<td class="cell_2">MD5: 0x677815CDB70D67BBAB695FDE32609C70<br/>SHA-1: 0x677AA21CBDFAE2146DB6F2AE1A1680F2B8084078</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%DesktopDir% is a variable that refers to the file system directory used to physically store file objects on the desktop. A typical path is C:\Documents and Settings\[UserName]\Desktop.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%Temp%\nst3.tmp</li>
+<li>%ProgramFiles%\OLBPre</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">598,016 bytes</td></tr>
+<tr><td class="cell_1">ns4.tmp</td><td class="cell_1">%Temp%\nst3.tmp\ns4.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OLBPre</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OLBPre]</li><ul>
+<li>DisplayName = "MyPC Backup "</li>
+<li>UninstallString = "%ProgramFiles%\OLBPre\uninst.exe"</li>
+<li>DisplayIcon = "%ProgramFiles%\OLBPre\uninst.exe"</li>
+<li>DisplayVersion = ""</li>
+<li>URLInfoAbout = "http://www.mypcbackup.com"</li>
+<li>Publisher = "MyPC Backup"</li>
+<li>HelpLink = "http://support.mypcbackup.com"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

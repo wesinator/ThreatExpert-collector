@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Farfli.K, Win32.SuspectCrc">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Farfli.K, Win32.SuspectCrc</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 June 2016, 00:37:14</li>
+<li>Processing time: 5 min 34 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE701A596D6E3EA756DA61A66CCC93087</li>
+<li>File SHA-1: 0xA3858ED396054A16456F5D9B2757C6187EDD0C11</li>
+<li>Filesize: 122,880 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-win32-farfli-k.html" target="_blank">Backdoor:Win32/Farfli.K<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\rebfec.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">122,880 bytes</td>
+<td class="cell_1">MD5: 0xE701A596D6E3EA756DA61A66CCC93087<br/>SHA-1: 0xA3858ED396054A16456F5D9B2757C6187EDD0C11</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/backdoor-win32-farfli-k.html" target="_blank">Backdoor:Win32/Farfli.K<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">rebfec.exe</td><td class="cell_1">%Windir%\rebfec.exe</td><td class="cell_2">139,264 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">139,264 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">dfr Tu126564 poierjewio fsd</td><td class="cell_1">rulai mld;kmfkld ewpoijnfcd</td><td class="cell_1">"Running"</td><td class="cell_2">%Windir%\rebfec.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "dfr Tu126564 poierjewio fsd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000]</li><ul>
+<li>Service = "dfr Tu126564 poierjewio fsd"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "rulai mld;kmfkld ewpoijnfcd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dfr Tu126564 poierjewio fsd]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\rebfec.exe"</li>
+<li>DisplayName = "rulai mld;kmfkld ewpoijnfcd"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "5415 ekpewjio dfmnwe eioi"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "dfr Tu126564 poierjewio fsd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000]</li><ul>
+<li>Service = "dfr Tu126564 poierjewio fsd"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "rulai mld;kmfkld ewpoijnfcd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DFR_TU126564_POIERJEWIO_FSD\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dfr Tu126564 poierjewio fsd]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\rebfec.exe"</li>
+<li>DisplayName = "rulai mld;kmfkld ewpoijnfcd"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "5415 ekpewjio dfmnwe eioi"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>c:\windows\rebfec.exe</li>
+<li>9444.f3322.net</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>9444.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">9444.f3322.net<td class="cell_2">2017</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2017:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | CE01 0000 415A 5641 5ABC 0200 007B 9E88 | ....AZVAZ....{..
+00000010 | 5A4A 2981 721A 7BBD C959 2A8F 6E74 D3C3 | ZJ).r.{..Y*.nt..
+00000020 | C574 9C93 0167 3AA1 8767 BC95 6023 63EE | .t...g:..g..`#c.
+00000030 | F06D 0B5C 89B3 F972 7316 A94D 3D2F D2C4 | .m.\...rs..M=/..
+00000040 | 4379 2893 3EC8 B659 9C99 09C7 460C C1F8 | Cy(.>..Y....F...
+00000050 | 7AFA 94BD 7AEF E1F9 F1FB 71DF F5FD FEBF | z...z.....q.....
+00000060 | 500B 9430 0823 A342 AF28 010F F0EC F4CB | P..0.#.B.(......
+00000070 | 2F89 F3FE 8ACB 69DE 86A7 0569 A0DB D978 | /.....i....i...x
+00000080 | DCD8 814E DD4A 19D9 B482 1310 2321 7356 | ...N.J......#!sV
+00000090 | 180E 39D8 AEEF 33F9 EDF1 A8BD 3AC1 653F | ..9...3.....:.e?
+000000A0 | 8760 63E6 7C43 71CE BF50 8EEB BF09 D91A | .`c.|Cq..P......
+000000B0 | DC7D 8579 0604 01F1 A28C 5E98 3EEE E940 | .}.y......^.>..@
+000000C0 | 707E CE3F E319 0EF8 F14F 14B2 36B1 8478 | p~.?.....O..6..x
+000000D0 | 7D7B B11F DFBA 4CE3 DD85 605B 44CB 1F91 | }{....L...`[D...
+000000E0 | AE0F F518 4008 E398 C208 A6E9 340B 230F | ....@.......4.#.
+000000F0 | 4D7E 854F 7857 DD93 59D7 143B 6CA8 22EF | M~.OxW..Y..;l.".
+00000100 | CEB3 6767 72F3 74AF 3A9E 4EA7 700D BCA6 | ..ggr.t.:.N.p...
+00000110 | 289B D0B4 5FFB 5464 7B73 BD2D EA97 5340 | (..._.Td{s.-..S@
+00000120 | 8A01 534C AEAF D895 00AB 1673 92A6 AB5F | ..SL.......s..._
+00000130 | C583 C786 768A 5B7A 554C 0A99 FBE6 B67C | ....v.[zUL.....|
+00000140 | A245 E71F 3874 EA75 8FF4 38A3 D465 CE29 | .E..8t.u..8..e.)
+00000150 | 294D 0251 D27B 72EE 4AAC 893C FC3E 24A1 | )M.Q.{r.J..<.>$.
+00000160 | 2E47 86FD 992C 5199 7D24 C8C7 D398 2235 | .G...,Q.}$...."5
+00000170 | 6DAB A131 EAF3 9A97 E572 6D59 E0F3 3B95 | m..1.....rmY..;.
+00000180 | 1DAB A191 7667 940D 2AD2 D980 227D ACDB | ....vg..*..."}..
+00000190 | 117C B1A2 B972 493E 3F38 481C EED0 EEA2 | .|...rI>?8H.....
+000001A0 | 8AD5 2E45 628F DC4C FF8E E691 6FC8 40C6 | ...Eb..L....o.@.
+000001B0 | 5668 769E B683 B7B5 1336 5452 7DAD A848 | Vhv......6TR}..H
+000001C0 | BC53 F6EE 4591 E744 F003 6F02 8A8F      | .S..E..D..o...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/EncPK-ABD">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/EncPK-ABD</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 1 March 2016, 02:49:49</li>
+<li>Processing time: 5 min 43 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA745AEFFDB5BB5D2BB6FEC90853223DD</li>
+<li>File SHA-1: 0x439C044EEC4E9A2B6470660149219DB3F274F779</li>
+<li>Filesize: 434,176 bytes</li>
+<li>Alias: Mal/EncPK-ABD [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were deleted:</li>
+<ul>
+<li>%CommonDocuments%\My Music\Sample Music\Beethoven's Symphony No. 9 (Scherzo).wma</li>
+<li>%CommonDocuments%\My Music\Sample Music\New Stories (Highway Blues).wma</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Blue hills.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Sunset.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Water lilies.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Winter.jpg</li>
+<li>%Profiles%\Default User\Templates\excel.xls</li>
+<li>%Profiles%\Default User\Templates\excel4.xls</li>
+<li>%Profiles%\Default User\Templates\powerpnt.ppt</li>
+<li>%Profiles%\Default User\Templates\quattro.wb2</li>
+<li>%Profiles%\Default User\Templates\winword.doc</li>
+<li>%Profiles%\Default User\Templates\winword2.doc</li>
+<li>%AppData%\Microsoft\Installer\{3966BA0C-23BA-4B20-9B9D-7561DEC54E6A}\Icon3966BA0C1.txt</li>
+<li>%Templates%\excel.xls</li>
+<li>%Templates%\excel4.xls</li>
+<li>%Templates%\powerpnt.ppt</li>
+<li>%Templates%\quattro.wb2</li>
+<li>%Templates%\winword.doc</li>
+<li>%Templates%\winword2.doc</li>
+<li>c:\Inetpub\wwwroot\index.jpg</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonDocuments% is a variable that refers to the file system directory that contains documents that are common to all users. A typical paths is C:\Documents and Settings\All Users\Documents.</li>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Templates% is a variable that refers to the file system directory that serves as a common repository for document templates. A typical path is C:\Documents and Settings\[UserName]\Templates.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">mgptaqrapnde.exe</td><td class="cell_1">%Windir%\mgptaqrapnde.exe</td><td class="cell_2">544,768 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">544,768 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\F8931E5DD95F2C57</li>
+<li>HKEY_CURRENT_USER\Software\zzzsys</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>EnableLinkedConnections = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>qfrnsdhjbrhs = "%System%\cmd.exe /c start "" "%Windir%\mgptaqrapnde.exe""</li>
+<li>ceomvavmwnch = "%System%\cmd.exe /c start "" "%Windir%\mgptaqrapnde.exe""</li>
+</ul>
+<br/>
+<em>so that %Windir%\mgptaqrapnde.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\F8931E5DD95F2C57]</li><ul>
+<li>data = 31 45 74 66 59 74 65 33 62 4A 69 69 39 38 48 68 69 36 31 68 67 51 76 70 79 36 39 34 56 73 4C 6D 43 67 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 9E 46 1C 94 7C DB 87 41 98 30 97 BD D9 EC 10 76 38 15 90 DC 9B 89 BD 9C FB 53 5B CC 8D B3 F8 EE 88 E0 2</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\zzzsys]</li><ul>
+<li>ID = F8 93 1E 5D D9 5F 2C 57</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+<li>8765-123rvr4</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1045</td><td class="cell_1">TCP</td><td class="cell_2">mgptaqrapnde.exe (%Windir%\mgptaqrapnde.exe)</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">imagescroll.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">music.mbsaeger.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">stacon.eu</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">surrogacyandadoption.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">worldisonefamily.info</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">biocarbon.com.ec</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">.host</td><td class="cell_1">80</td><td class="cell_1">.host</td><td class="cell_2">.host</td></tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

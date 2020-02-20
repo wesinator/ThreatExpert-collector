@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-Downloader.Win32.Agent.bqkb, Generic Downloader.g, Trojan-Dropper.Agent, Win-Trojan/Agent.40960.ZC">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-Downloader.Win32.Agent.bqkb, Generic Downloader.g, Trojan-Dropper.Agent..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 8 June 2014, 02:46:13</li>
+<li>Processing time: 6 min 12 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE37424BAF03D6FEB115FB792979B7BD6</li>
+<li>File SHA-1: 0x99B67D1983415BB123DA31C53719543A8BC91152</li>
+<li>Filesize: 45,056 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-downloader-win32-agent-bqkb.html" target="_blank">Trojan-Downloader.Win32.Agent.bqkb<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/generic-downloader-g.html" target="_blank">Generic Downloader.g<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-dropper-agent.html" target="_blank">Trojan-Dropper.Agent<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win-trojan-agent-40960-zc.html" target="_blank">Win-Trojan/Agent.40960.ZC<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/downloader.gif"></td>
+<td class="cell_1">A program that downloads files to the local computer that may represent security risk</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>PHIME2005 = "[file and pathname of the sample #1] /SYNC"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>125.206.117.59</li>
+<li>158.183.172.61</li>
+<li>158.183.172.1</li>
+<li>158.162.217.65</li>
+<li>159.226.146.1</li>
+<li>159.205.192.5</li>
+<li>159.13.121.197</li>
+<li>160.76.50.133</li>
+<li>160.56.95.137</li>
+<li>161.120.24.73</li>
+<li>161.183.209.8</li>
+<li>161.163.255.12</li>
+<li>162.226.184.204</li>
+<li>162.206.229.208</li>
+<li>163.13.158.144</li>
+<li>163.77.87.80</li>
+<li>163.56.133.84</li>
+<li>164.120.62.20</li>
+<li>164.184.247.212</li>
+<li>165.163.36.216</li>
+<li>165.227.221.152</li>
+<li>165.206.11.156</li>
+<li>158.183.172.2</li>
+<li>166.14.196.91</li>
+<li>220.42.174.250</li>
+<li>166.77.125.27</li>
+<li>229.21.51.140</li>
+<li>166.57.170.31</li>
+<li>158.225.160.53</li>
+<li>167.120.99.223</li>
+<li>167.204.37.199</li>
+<li>167.184.28.159</li>
+<li>176.183.170.89</li>
+<li>168.164.74.163</li>
+<li>105.131.23.2</li>
+<li>168.227.3.99</li>
+<li>114.110.156.148</li>
+<li>168.207.48.103</li>
+<li>124.89.33.38</li>
+<li>169.14.233.39</li>
+<li>52.37.141.207</li>
+<li>169.78.162.231</li>
+<li>62.16.18.97</li>
+<li>170.57.208.235</li>
+<li>246.220.127.10</li>
+<li>170.121.137.171</li>
+<li>0.199.4.156</li>
+<li>170.185.66.106</li>
+<li>9.177.137.46</li>
+<li>171.164.111.110</li>
+<li>194.126.246.215</li>
+<li>171.228.40.46</li>
+<li>203.104.123.105</li>
+<li>172.207.86.50</li>
+<li>212.83.0.252</li>
+<li>172.15.15.242</li>
+<li>141.31.109.165</li>
+<li>172.78.200.178</li>
+<li>151.10.242.55</li>
+<li>173.58.245.182</li>
+<li>79.214.95.224</li>
+<li>173.121.174.118</li>
+<li>158.183.172.3</li>
+<li>89.193.228.114</li>
+<li>174.185.103.54</li>
+<li>159.99.137.151</li>
+<li>98.172.105.4</li>
+<li>174.165.149.58</li>
+<li>175.99.118.157</li>
+<li>27.120.214.173</li>
+<li>174.228.78.250</li>
+<li>62.147.101.162</li>
+<li>36.99.91.63</li>
+<li>175.208.123.254</li>
+<li>78.146.82.167</li>
+<li>45.78.224.209</li>
+<li>175.15.52.189</li>
+<li>94.145.64.173</li>
+<li>230.26.76.122</li>
+<li>176.79.237.125</li>
+<li>237.193.46.178</li>
+<li>239.5.209.12</li>
+<li>176.58.27.129</li>
+<li>253.193.28.184</li>
+<li>168.209.62.181</li>
+<li>176.122.212.65</li>
+<li>13.192.9.189</li>
+<li>177.188.195.71</li>
+<li>177.186.141.1</li>
+<li>156.240.248.194</li>
+<li>187.167.72.217</li>
+<li>177.165.186.5</li>
+<li>172.239.230.200</li>
+<li>115.115.181.130</li>
+<li>178.229.115.197</li>
+<li>59.31.212.205</li>
+<li>125.94.58.20</li>
+<li>178.208.161.201</li>
+<li>75.30.194.210</li>
+<li>134.73.191.166</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://fukyu.jp/updata/TPDB.php?lg1=1.003&amp;lg2=20140608024616&amp;lg3=United%20States&amp;lg4=127.0.0.1&amp;lg5=COMPUTERNAME&amp;lg6=UserName&amp;lg7=0</li>
+</ul></ul>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://fukyu.jp/updata/ACCl3.jpg</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+!@#$%
+!@#$%^
+!@#$%^&
+!@#$%^&*
+00000
+000000
+00000000
+111111
+11111111
+121212
+123123
+12345
+123456
+1234567
+12345678
+123456789
+1234qwer
+123abc
+123asd
+123qwe
+54321
+654321
+88888888
+abc123
+admin
+admin123
+administrator
+april
+asdfgh
+baseball
+godblessyou
+ihavenopass
+letmein
+monday
+mypass
+mypass123
+mypc123
+patrick
+pussy
+pw123
+saturday
+temp123
+test123
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

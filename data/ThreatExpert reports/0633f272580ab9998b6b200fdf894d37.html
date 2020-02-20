@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Gen, Trojan-Downloader.VBS.Agent, VBS/Runner.8192">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Gen, Trojan-Downloader.VBS.Agent, VBS/Runner.8192</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 6 November 2015, 00:43:30</li>
+<li>Processing time: 5 min 27 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0633F272580AB9998B6B200FDF894D37</li>
+<li>File SHA-1: 0x7CFEAEC05190FC5CDF5C68D26E3AEAA3FEAA54A3</li>
+<li>Filesize: 36,864 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-downloader-vbs-agent.html" target="_blank">Trojan-Downloader.VBS.Agent<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/vbs-runner-8192.html" target="_blank">VBS/Runner.8192<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+<li><em>packed with: </em>WScript [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">45,056 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme\RegBackup</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme\RegBackup\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme\RegBackup\0.map</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme\RegBackup\0.map]</li><ul>
+<li>d6e726769561fd44 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7},,"</li>
+<li>f15c2eaac600cd30 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\DefaultIcon,,"</li>
+<li>e52b88533464a684 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\InProcServer32,,"</li>
+<li>4f7fb69b26d709a0 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\InProcServer32,ThreadingModel,"</li>
+<li>8f81dbbebfd6b816 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\ProgID,,"</li>
+<li>a15178d5f856ef50 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\Version,,"</li>
+<li>2bc8f8b891d52f72 = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\VersionIndependentProgID,,"</li>
+<li>a15178d57505081c = ",33,HKCR,CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\TypeLib,,"</li>
+<li>3b6b43b1abf59ddb = ",33,HKCR,Theme.Manager,,"</li>
+<li>779fd4d20f151646 = ",33,HKCR,Theme.Manager\CLSID,,"</li>
+<li>801d926fdce3ed2c = ",33,HKCR,Theme.Manager\CurVer,,"</li>
+<li>53879203f7724331 = ",33,HKCR,Theme.Manager.1,,"</li>
+<li>801d926f9b27b6cc = ",33,HKCR,Theme.Manager.1\CLSID,,"</li>
+<li>4dd6fc2d2159b1e9 = ",33,HKCR,CLSID\{B12AE898-D056-4378-A844-6D393FE37956},,"</li>
+<li>8220bebb92a7a0b3 = ",33,HKCR,CLSID\{B12AE898-D056-4378-A844-6D393FE37956}\DefaultIcon,,"</li>
+<li>8fe8d4314ff620a8 = ",33,HKCR,CLSID\{B12AE898-D056-4378-A844-6D393FE37956}\InProcServer32,,"</li>
+<li>bef4b0cc9c2ed3ab = ",33,HKCR,CLSID\{B12AE898-D056-4378-A844-6D393FE37956}\InProcServer32,ThreadingModel,"</li>
+<li>4461f6d6bfa88894 = ",33,HKCR,CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9},,"</li>
+<li>3184974786bc2b3b = ",33,HKCR,CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}\DefaultIcon,,"</li>
+<li>a2599f95f2c2e2e8 = ",33,HKCR,CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}\InProcServer32,,"</li>
+<li>cb451943231c1b52 = ",33,HKCR,CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}\InProcServer32,ThreadingModel,"</li>
+<li>9788f1175bcb02c9 = ",33,HKCR,CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2},,"</li>
+<li>2faf19f0ec2c7256 = ",33,HKCR,CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}\DefaultIcon,,"</li>
+<li>5525e34629bbcfa8 = ",33,HKCR,CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}\InProcServer32,,"</li>
+<li>bb566fc9036a13b2 = ",33,HKCR,CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}\InProcServer32,ThreadingModel,"</li>
+<li>045fe4223201a3f2 = ",33,HKCR,CLSID\{5a3d988e-820d-4aaf-ba87-440081768a17},,"</li>
+<li>e1f17a2226392c43 = ",33,HKCR,CLSID\{5a3d988e-820d-4aaf-ba87-440081768a17}\DefaultIcon,,"</li>
+<li>a43f5f677ab33ac8 = ",33,HKCR,CLSID\{5a3d988e-820d-4aaf-ba87-440081768a17}\InProcServer32,,"</li>
+<li>f5fde9c16f56bbc0 = ",33,HKCR,CLSID\{5a3d988e-820d-4aaf-ba87-440081768a17}\InProcServer32,ThreadingModel,"</li>
+<li>fb16306eff0534e4 = ",33,HKCR,CLSID\{c79d1575-b8c6-4862-a284-788836518b97},,"</li>
+<li>bcbbaabb7553c4ed = ",33,HKCR,CLSID\{c79d1575-b8c6-4862-a284-788836518b97}\DefaultIcon,,"</li>
+<li>b4b86fed9295bb53 = ",33,HKCR,CLSID\{c79d1575-b8c6-4862-a284-788836518b97}\InProcServer32,,"</li>
+<li>7b8b9050d2a993cb = ",33,HKCR,CLSID\{c79d1575-b8c6-4862-a284-788836518b97}\InProcServer32,ThreadingModel,"</li>
+<li>7f21705bb1cbc880 = ",33,HKCR,CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC},,"</li>
+<li>12d91e2badf880b6 = ",33,HKCR,CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}\DefaultIcon,,"</li>
+<li>21a947db276d8abb = ",33,HKCR,CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}\InProcServer32,,"</li>
+<li>c0095ef158ec93b7 = ",33,HKCR,CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}\InProcServer32,ThreadingModel,"</li>
+<li>a30bcd0db4145b7f = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes\VisualStyleDirs,1,"</li>
+<li>130e5d38d7a8ebd6 = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes,Drop Shadow,"</li>
+<li>130e5d384a5ffe13 = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes,Flat Menus,"</li>
+<li>5ee6816105af600d = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes\DownloadSites\100,DisplayName,"</li>
+<li>3173ff17d679a4f0 = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes\DownloadSites\100,URL,"</li>
+<li>993540a90bf509bd = ",33,HKCR,CLSID\{41E300E0-78B6-11ce-849B-444553540000}\InProcServer32,ThreadingModel,"</li>
+<li>6fe2758e8c810fe4 = ",33,HKCR,CLSID\{41E300E0-78B6-11ce-849B-444553540000}\InProcServer32,,"</li>
+<li>0d43c12273298724 = ",33,HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Controls Folder\Display\shellex\PropertySheetHandlers\PlusPack CPL Extension,,"</li>
+<li>dfcf5359b0598675 = ",33,HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved,{41E300E0-78B6-11ce-849B-444553540000},"</li>
+<li>3bb7df53cd022147 = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},,"</li>
+<li>eef4be2c53dde31c = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},ComponentID,"</li>
+<li>eef4be2c771c2aea = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},IsInstalled,"</li>
+<li>01c35ef49bae3256 = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},Locale,"</li>
+<li>b5de661f824ce8bb = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},StubPath,"</li>
+<li>b5de661fc31a1280 = ",33,HKLM,Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED},Version,"</li>
+<li>e5308ca139226d6b = ",33,HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\IE40,"</li>
+<li>15c64964aa633f93 = ",33,HKLM,Software\Microsoft\Windows\CurrentVersion\Themes,SetupVersion,"</li>
+<li>c4333a294d89fb3b = ",33,HKCR,.theme,,"</li>
+<li>9349186f64ec7901 = ",33,HKCR,themefile,,"</li>
+<li>8b1fcb26e277ad69 = ",33,HKCR,themefile\shell\open\command,,"</li>
+<li>88bbb15a3b8e1ea5 = ",33,HKCR,themefile\DefaultIcon,,"</li>
+<li>a377593e8085439a = ",33,HKCR,.msstyles,,"</li>
+<li>dec8a51c24421bf5 = ",33,HKCR,msstylesfile,,"</li>
+<li>7d2cb6daf0aa8d40 = ",33,HKCR,msstylesfile\shell\open\command,,"</li>
+<li>6496afd61dbedd52 = ",33,HKCR,msstylesfile\DefaultIcon,,"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup\Microsoft.Theme\RegBackup\0]</li><ul>
+<li>d6e726769561fd44 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 2C 2C 00 01 00 00 00 1A 00 00 00 57 69 6E 64 6F 77 73 20 54 68 65 6D 65 20 4D 61 6E 61 67 65 72 20 41 50 49 00</li>
+<li>f15c2eaac600cd30 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>e52b88533464a684 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>4f7fb69b26d709a0 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>8f81dbbebfd6b816 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 50 72 6F 67 49 44 2C 2C 00 01 00 00 00 10 00 00 00 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 2E 31 00</li>
+<li>a15178d5f856ef50 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 56 65 72 73 69 6F 6E 2C 2C 00 01 00 00 00 04 00 00 00 31 2E 30 00</li>
+<li>2bc8f8b891d52f72 = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 56 65 72 73 69 6F 6E 49 6E 64 65 70 65 6E 64 65 6E 74 50 72 6F 67 49 44 2C 2C 00 01 00 00 00 0E 00 00 00 54 68 6</li>
+<li>a15178d57505081c = 2C 43 4C 53 49 44 5C 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 5C 54 79 70 65 4C 69 62 2C 2C 00 01 00 00 00 27 00 00 00 7B 34 30 36 34 33 32 35 30 2D 38 44 32 33 2D 34 37 66 62 2</li>
+<li>3b6b43b1abf59ddb = 2C 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 2C 2C 00 01 00 00 00 1A 00 00 00 57 69 6E 64 6F 77 73 20 54 68 65 6D 65 20 4D 61 6E 61 67 65 72 20 41 50 49 00</li>
+<li>779fd4d20f151646 = 2C 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 5C 43 4C 53 49 44 2C 2C 00 01 00 00 00 27 00 00 00 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 00</li>
+<li>801d926fdce3ed2c = 2C 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 5C 43 75 72 56 65 72 2C 2C 00 01 00 00 00 10 00 00 00 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 2E 31 00</li>
+<li>53879203f7724331 = 2C 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 2E 31 2C 2C 00 01 00 00 00 1A 00 00 00 57 69 6E 64 6F 77 73 20 54 68 65 6D 65 20 4D 61 6E 61 67 65 72 20 41 50 49 00</li>
+<li>801d926f9b27b6cc = 2C 54 68 65 6D 65 2E 4D 61 6E 61 67 65 72 2E 31 5C 43 4C 53 49 44 2C 2C 00 01 00 00 00 27 00 00 00 7B 32 45 31 37 43 30 45 46 2D 32 38 35 31 2D 34 35 39 62 2D 41 33 43 38 2D 32 37 41 34 31 44 34 42 43 39 46 37 7D 00</li>
+<li>4dd6fc2d2159b1e9 = 2C 43 4C 53 49 44 5C 7B 42 31 32 41 45 38 39 38 2D 44 30 35 36 2D 34 33 37 38 2D 41 38 34 34 2D 36 44 33 39 33 46 45 33 37 39 35 36 7D 2C 2C 00 01 00 00 00 16 00 00 00 57 69 6E 64 6F 77 73 20 54 68 65 6D 65 55 49 20 50 61 67 65 73 00</li>
+<li>8220bebb92a7a0b3 = 2C 43 4C 53 49 44 5C 7B 42 31 32 41 45 38 39 38 2D 44 30 35 36 2D 34 33 37 38 2D 41 38 34 34 2D 36 44 33 39 33 46 45 33 37 39 35 36 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>8fe8d4314ff620a8 = 2C 43 4C 53 49 44 5C 7B 42 31 32 41 45 38 39 38 2D 44 30 35 36 2D 34 33 37 38 2D 41 38 34 34 2D 36 44 33 39 33 46 45 33 37 39 35 36 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>bef4b0cc9c2ed3ab = 2C 43 4C 53 49 44 5C 7B 42 31 32 41 45 38 39 38 2D 44 30 35 36 2D 34 33 37 38 2D 41 38 34 34 2D 36 44 33 39 33 46 45 33 37 39 35 36 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>4461f6d6bfa88894 = 2C 43 4C 53 49 44 5C 7B 42 37 42 42 44 34 30 38 2D 46 30 39 43 2D 34 61 61 38 2D 42 36 35 45 2D 41 30 30 42 38 46 45 30 46 30 42 39 7D 2C 2C 00 01 00 00 00 1A 00 00 00 57 69 6E 64 6F 77 73 20 54 68 65 6D 65 20 50 72 65 76 69 65 77 20 41 50 49 00</li>
+<li>3184974786bc2b3b = 2C 43 4C 53 49 44 5C 7B 42 37 42 42 44 34 30 38 2D 46 30 39 43 2D 34 61 61 38 2D 42 36 35 45 2D 41 30 30 42 38 46 45 30 46 30 42 39 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>a2599f95f2c2e2e8 = 2C 43 4C 53 49 44 5C 7B 42 37 42 42 44 34 30 38 2D 46 30 39 43 2D 34 61 61 38 2D 42 36 35 45 2D 41 30 30 42 38 46 45 30 46 30 42 39 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>cb451943231c1b52 = 2C 43 4C 53 49 44 5C 7B 42 37 42 42 44 34 30 38 2D 46 30 39 43 2D 34 61 61 38 2D 42 36 35 45 2D 41 30 30 42 38 46 45 30 46 30 42 39 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>9788f1175bcb02c9 = 2C 43 4C 53 49 44 5C 7B 34 63 38 39 32 36 32 31 2D 36 37 35 37 2D 34 66 65 30 2D 61 64 38 63 2D 61 36 33 30 31 62 65 37 66 62 61 32 7D 2C 2C 00 01 00 00 00 16 00 00 00 57 69 6E 64 6F 77 73 20 53 65 74 74 69 6E 67 73 20 50 61 67 65 00</li>
+<li>2faf19f0ec2c7256 = 2C 43 4C 53 49 44 5C 7B 34 63 38 39 32 36 32 31 2D 36 37 35 37 2D 34 66 65 30 2D 61 64 38 63 2D 61 36 33 30 31 62 65 37 66 62 61 32 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>5525e34629bbcfa8 = 2C 43 4C 53 49 44 5C 7B 34 63 38 39 32 36 32 31 2D 36 37 35 37 2D 34 66 65 30 2D 61 64 38 63 2D 61 36 33 30 31 62 65 37 66 62 61 32 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>bb566fc9036a13b2 = 2C 43 4C 53 49 44 5C 7B 34 63 38 39 32 36 32 31 2D 36 37 35 37 2D 34 66 65 30 2D 61 64 38 63 2D 61 36 33 30 31 62 65 37 66 62 61 32 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>045fe4223201a3f2 = 2C 43 4C 53 49 44 5C 7B 35 61 33 64 39 38 38 65 2D 38 32 30 64 2D 34 61 61 66 2D 62 61 38 37 2D 34 34 30 30 38 31 37 36 38 61 31 37 7D 2C 2C 00 01 00 00 00 20 00 00 00 57 69 6E 64 6F 77 73 20 53 63 72 65 65 6E 20 52 65 73 6F 6C 75 74 69 6F 6E 20 46 6</li>
+<li>e1f17a2226392c43 = 2C 43 4C 53 49 44 5C 7B 35 61 33 64 39 38 38 65 2D 38 32 30 64 2D 34 61 61 66 2D 62 61 38 37 2D 34 34 30 30 38 31 37 36 38 61 31 37 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>a43f5f677ab33ac8 = 2C 43 4C 53 49 44 5C 7B 35 61 33 64 39 38 38 65 2D 38 32 30 64 2D 34 61 61 66 2D 62 61 38 37 2D 34 34 30 30 38 31 37 36 38 61 31 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>f5fde9c16f56bbc0 = 2C 43 4C 53 49 44 5C 7B 35 61 33 64 39 38 38 65 2D 38 32 30 64 2D 34 61 61 66 2D 62 61 38 37 2D 34 34 30 30 38 31 37 36 38 61 31 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>fb16306eff0534e4 = 2C 43 4C 53 49 44 5C 7B 63 37 39 64 31 35 37 35 2D 62 38 63 36 2D 34 38 36 32 2D 61 32 38 34 2D 37 38 38 38 33 36 35 31 38 62 39 37 7D 2C 2C 00 01 00 00 00 19 00 00 00 57 69 6E 64 6F 77 73 20 44 69 73 70 6C 61 79 20 53 65 74 74 69 6E 67 73 00</li>
+<li>bcbbaabb7553c4ed = 2C 43 4C 53 49 44 5C 7B 63 37 39 64 31 35 37 35 2D 62 38 63 36 2D 34 38 36 32 2D 61 32 38 34 2D 37 38 38 38 33 36 35 31 38 62 39 37 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>b4b86fed9295bb53 = 2C 43 4C 53 49 44 5C 7B 63 37 39 64 31 35 37 35 2D 62 38 63 36 2D 34 38 36 32 2D 61 32 38 34 2D 37 38 38 38 33 36 35 31 38 62 39 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>7b8b9050d2a993cb = 2C 43 4C 53 49 44 5C 7B 63 37 39 64 31 35 37 35 2D 62 38 63 36 2D 34 38 36 32 2D 61 32 38 34 2D 37 38 38 38 33 36 35 31 38 62 39 37 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>7f21705bb1cbc880 = 2C 43 4C 53 49 44 5C 7B 41 44 42 39 46 35 41 34 2D 45 37 33 45 2D 34 39 62 38 2D 39 39 42 36 2D 32 46 41 33 31 37 45 46 39 44 42 43 7D 2C 2C 00 01 00 00 00 1F 00 00 00 57 69 6E 64 6F 77 73 20 53 63 72 65 65 6E 53 61 76 65 72 20 50 72 6F 70 65 72 74 6</li>
+<li>12d91e2badf880b6 = 2C 43 4C 53 49 44 5C 7B 41 44 42 39 46 35 41 34 2D 45 37 33 45 2D 34 39 62 38 2D 39 39 42 36 2D 32 46 41 33 31 37 45 46 39 44 42 43 7D 5C 44 65 66 61 75 6C 74 49 63 6F 6E 2C 2C 00 02 00 00 00 24 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5C 73 79 7</li>
+<li>21a947db276d8abb = 2C 43 4C 53 49 44 5C 7B 41 44 42 39 46 35 41 34 2D 45 37 33 45 2D 34 39 62 38 2D 39 39 42 36 2D 32 46 41 33 31 37 45 46 39 44 42 43 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 2C 00 02 00 00 00 22 00 00 00 25 53 79 73 74 65 6D 52 6F 6F 74 25 5</li>
+<li>c0095ef158ec93b7 = 2C 43 4C 53 49 44 5C 7B 41 44 42 39 46 35 41 34 2D 45 37 33 45 2D 34 39 62 38 2D 39 39 42 36 2D 32 46 41 33 31 37 45 46 39 44 42 43 7D 5C 49 6E 50 72 6F 63 53 65 72 76 65 72 33 32 2C 54 68 72 65 61 64 69 6E 67 4D 6F 64 65 6C 2C 00 01 00 00 00 0A 00 0</li>
+<li>a30bcd0db4145b7f = 2C 53 6F 66 74 77 61 72 65 5C 4D 69 63 72 6F 73 6F 66 74 5C 57 69 6E 64 6F 77 73 5C 43 75 72 72 65 6E 74 56 65 72 73 69 6F 6E 5C 54 68 65 6D 65 73 5C 56 69 73 75 61 6C 53 74 79 6C 65 44 69 72 73 2C 31 2C 00 02 00 00 00 15 00 00 00 25 52 65 73 6F 75 7</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f4f0-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f4f8-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f667-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f67D-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5AAF51B2-B1F0-11d1-B6AB-00A0C90833E9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5AAF51B3-B1F0-11d1-B6AB-00A0C90833E9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{607fd4e8-0a03-11d1-ab1d-00c04fc9b304}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE24FDAE-03C6-11D1-8B76-0080C744F389}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3050F3EE-98B5-11CF-BB82-00AA00BDCE0B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{34A715A0-6587-11D0-924A-0020AFC7AC4D}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{79EAC9C9-BAF9-11CE-8C82-00AA004BA90B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}\4.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{40643250-8D23-47FB-895C-EAF48E2C8892}\1.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B025F75A-CD86-4D11-A0C8-D7644FDBFB5A}\1.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B025F75A-CD86-4D11-A0C8-D7644FDBFB5A}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults\Provider\Gemplus GemSAFE Card CSP v1.0]</li><ul>
+<li>Image Path = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Defaults\Provider\Infineon SICRYPT Base Smart Card CSP]</li><ul>
+<li>Image Path = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Default Behaviors]</li><ul>
+<li>TIME = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

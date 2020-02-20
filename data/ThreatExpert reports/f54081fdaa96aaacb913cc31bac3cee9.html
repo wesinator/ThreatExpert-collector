@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Win32.VB">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Win32.VB</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 29 November 2015, 13:58:19</li>
+<li>Processing time: 11 min 44 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF54081FDAA96AAACB913CC31BAC3CEE9</li>
+<li>File SHA-1: 0xBA8599F71C8432ABB8F1BA1B01F67DD8C9155DEC</li>
+<li>Filesize: 278,209 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\oliwe\oliwe.exe
+</td>
+<td class="cell_1">278,271 bytes</td>
+<td class="cell_1">MD5: 0xDAF68E41DBDBD29B5D9E345F884A4622<br/>SHA-1: 0x3FD49319A8DB0DFAE780FB1A0761A0052B116342</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\<a href="http://www.threatexpert.com/files/NetFx20SP1_x86.exe.html" target="_blank">NetFx20SP1_x86.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">125 bytes</td>
+<td class="cell_1">MD5: 0x7C5F5A68051F6B0C0E9A2AD33C40D415<br/>SHA-1: 0x120865765927A61AF83F02B83DC297EEDE61EC41</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">278,209 bytes</td>
+<td class="cell_1">MD5: 0xF54081FDAA96AAACB913CC31BAC3CEE9<br/>SHA-1: 0xBA8599F71C8432ABB8F1BA1B01F67DD8C9155DEC</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\oliwe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">241,664 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\OSUpgrade</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\cb85249879</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Tasks</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Tasks\NowPlaying</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\HTTP</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\MMS</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\RTSP</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Health</li>
+<li>HKEY_CURRENT_USER\Software\cb85249879</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION]</li><ul>
+<li>regsvr32.exe = 0x000022B8</li>
+<li>iexplore.exe = 0x000022B8</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = ""%AppData%\oliwe\oliwe.exe""</li>
+</ul>
+<br/>
+<em>so that oliwe.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\OSUpgrade]</li><ul>
+<li>ReservationsAllowed = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]</li><ul>
+<li>DisableOSUpgrade = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\cb85249879]</li><ul>
+<li>d195cc76 = "864"</li>
+<li>e2e50e0b = "E9CCAB63412039C1"</li>
+<li>da580e22 = "1448834303"</li>
+<li>c0a41ba6 = "%AppData%\oliwe\oliwe.exe"</li>
+<li>a5b7c499 = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION]</li><ul>
+<li>regsvr32.exe = 0x000022B8</li>
+<li>iexplore.exe = 0x000022B8</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\Tasks\NowPlaying]</li><ul>
+<li>InitFlags = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\RTSP]</li><ul>
+<li>ProxyStyle = 0x00000000</li>
+<li>ProxyName = ""</li>
+<li>ProxyPort = 0x0000022A</li>
+<li>ProxyBypass = 0x00000000</li>
+<li>ProxyExclude = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\MMS]</li><ul>
+<li>ProxyStyle = 0x00000000</li>
+<li>ProxyName = ""</li>
+<li>ProxyPort = 0x000006DB</li>
+<li>ProxyBypass = 0x00000000</li>
+<li>ProxyExclude = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\ProxySettings\HTTP]</li><ul>
+<li>ProxyStyle = 0x00000001</li>
+<li>ProxyName = ""</li>
+<li>ProxyPort = 0x00000050</li>
+<li>ProxyBypass = 0x00000000</li>
+<li>ProxyExclude = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = ""%AppData%\oliwe\oliwe.exe""</li>
+</ul>
+<br/>
+<em>so that oliwe.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows Media\WMSDK\General]</li><ul>
+<li>UniqueID = "{501129DD-0C96-4447-BE03-55741DFBD274}"</li>
+<li>%ComputerName% = "%ComputerName%"</li>
+<li>VolumeSerialNumber = 0x00CD1A40</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\cb85249879]</li><ul>
+<li>d195cc76 = "864"</li>
+<li>e2e50e0b = "E9CCAB63412039C1"</li>
+<li>da580e22 = "1448834303"</li>
+<li>c0a41ba6 = "%AppData%\oliwe\oliwe.exe"</li>
+<li>a5b7c499 = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/norway.gif"></td>
+<td class="cell_2">Norway</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Global\8A47813398845DE0</li>
+<li>7AD7B04D57D17676</li>
+<li>EAE374FF3A325C60</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>104.30.3.83</li>
+<li>207.110.162.118</li>
+<li>148.171.28.64</li>
+<li>184.150.104.169</li>
+<li>236.83.20.59</li>
+<li>88.13.102.218</li>
+<li>20.75.167.143</li>
+<li>88.168.6.159</li>
+<li>88.238.40.247</li>
+<li>189.61.122.152</li>
+<li>59.131.223.94</li>
+<li>184.85.36.61</li>
+<li>211.4.19.234</li>
+<li>184.220.226.239</li>
+<li>202.69.39.43</li>
+<li>157.229.83.192</li>
+<li>179.168.240.141</li>
+<li>42.95.229.133</li>
+<li>233.203.212.151</li>
+<li>130.12.64.208</li>
+<li>109.30.39.209</li>
+<li>136.186.235.52</li>
+<li>216.100.179.84</li>
+<li>96.102.37.56</li>
+<li>5.240.1.184</li>
+<li>199.189.228.233</li>
+<li>226.33.94.44</li>
+<li>96.246.206.120</li>
+<li>117.78.21.78</li>
+<li>223.252.221.244</li>
+<li>11.137.229.118</li>
+<li>28.220.139.220</li>
+<li>148.157.211.145</li>
+<li>90.95.2.222</li>
+<li>220.105.116.31</li>
+<li>192.87.217.239</li>
+<li>182.77.98.236</li>
+<li>36.109.248.245</li>
+<li>80.81.4.95</li>
+<li>221.43.182.109</li>
+<li>44.24.187.225</li>
+<li>7.112.2.117</li>
+<li>195.4.152.188</li>
+<li>43.141.191.145</li>
+<li>62.179.19.102</li>
+<li>107.245.77.58</li>
+<li>237.180.43.121</li>
+<li>148.196.114.85</li>
+<li>67.150.73.174</li>
+<li>115.85.50.108</li>
+<li>90.20.169.240</li>
+<li>159.165.14.23</li>
+<li>170.27.117.183</li>
+<li>1.223.222.206</li>
+<li>130.89.88.196</li>
+<li>205.84.157.252</li>
+<li>173.19.67.115</li>
+<li>71.108.50.209</li>
+<li>71.227.124.46</li>
+<li>250.210.53.86</li>
+<li>185.190.226.156</li>
+<li>215.50.105.24</li>
+<li>52.9.121.194</li>
+<li>213.126.206.231</li>
+<li>48.54.166.12</li>
+<li>171.146.212.152</li>
+<li>229.17.242.148</li>
+<li>177.200.196.39</li>
+<li>157.120.147.155</li>
+<li>3.183.245.25</li>
+<li>134.110.192.205</li>
+<li>224.113.213.215</li>
+<li>73.52.216.53</li>
+<li>114.23.200.50</li>
+<li>245.12.137.66</li>
+<li>43.213.46.231</li>
+<li>203.55.9.178</li>
+<li>9.95.106.107</li>
+<li>24.30.85.135</li>
+<li>154.144.249.152</li>
+<li>79.133.135.57</li>
+<li>232.22.152.44</li>
+<li>180.196.82.225</li>
+<li>54.163.217.13</li>
+<li>168.246.167.147</li>
+<li>140.201.39.36</li>
+<li>111.42.134.121</li>
+<li>235.19.249.50</li>
+<li>254.160.40.159</li>
+<li>177.68.5.219</li>
+<li>204.102.91.88</li>
+<li>79.77.103.24</li>
+<li>204.60.4.248</li>
+<li>126.227.188.169</li>
+<li>249.142.176.61</li>
+<li>43.97.53.229</li>
+<li>82.151.53.35</li>
+<li>230.109.70.187</li>
+<li>161.115.249.176</li>
+<li>59.202.208.150</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">88.13.102.218<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">43.141.191.145<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">205.84.157.252<td class="cell_2">8080</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">78.24.220.229</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">download.microsoft.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">microsoft.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>index.html</li>
+<li>download/0/8/c/08c19fa4-4c4f-4ffb-9d6c-150906578c9e/NetFx20SP1_x86.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | C700 0000 706A 42DA 9E6A 0390 C18D DE36 | ....pjB..j.....6
+00000010 | 7148 2130 E5AE B2FA DDAD 48C2 A602 04AB | qH!0......H.....
+00000020 | FB16 F194 9C68 4D11 686F 3F98 49EB 87D5 | .....hM.ho?.I...
+00000030 | 87D2 66C5 8408 0A06 56FD 62B9 DDF7 B5E6 | ..f.....V.b.....
+00000040 | 1498 6250 EE75 C2B5 4A3A 2A35 3934 482F | ..bP.u..J:*594H/
+00000050 | D7E8 3D15 43C0 4B1B 9075 B830 6BBC 493B | ..=.C.K..u.0k.I;
+00000060 | 7878 77FE 1083 8F3D F7D4 1FF6 58ED 5CE9 | xxw....=....X.\.
+00000070 | 7E4B CC94 12DE BF0F 1333 881A 711B 8B02 | ~K.......3..q...
+00000080 | F15D 1976 A1EC 25E2 5BD7 73CC EF54 91BC | .].v..%.[.s..T..
+00000090 | 23FE 85A2 F323 D07E 9CFC D081 3A7B BC6E | #....#.~....:{.n
+000000A0 | 3E89 8AD1 F663 84A7 275E AF02 14D2 BED3 | >....c..'^......
+000000B0 | 0EF2 0B5E 64C8 DD3C 2759 8B91 A1E6 5F73 | ...^d..<'Y...._s
+000000C0 | D9B6 85C0 DA2E 3F50 9263 E4             | ......?P.c.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 29 November 2015 14:10:03</li>
+<li>Processing time: 6 min 12 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0xC61111D7D62306B997CE7DD04898B1CA</li>
+<li>File SHA-1: 0xEEF5A36924CDF0C02598CCF96AA4F60887A49840</li>
+<li>Filesize: 24,758,792 bytes</li>
+<li>Packer info: <em>packed with: </em>PE_Patch [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=a52c79fb-1a9a-4e14-8589-a805bc49318f&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\dd_depcheck_NETFX20_EXP_35.txt
+</td>
+<td class="cell_1">8,699 bytes</td>
+<td class="cell_2">MD5: 0xCEB3D5156EE9FD2FB6B6059E1622DE87<br/>SHA-1: 0x0B451A5FD6827C3C46B2F01F90D7BA01D15EE2AF</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\dd_dotnetfx20error.txt
+</td>
+<td class="cell_1">752 bytes</td>
+<td class="cell_2">MD5: 0xF4D5681D6B0F05832A9A22B629BB777A<br/>SHA-1: 0x09E8D108CBCCD29C679B1CE84AB337A3354A6A16</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\dd_dotnetfx20install.txt
+</td>
+<td class="cell_1">24,134 bytes</td>
+<td class="cell_2">MD5: 0xAA05A326D82F87B95500FD0F56027E3E<br/>SHA-1: 0xB507527D5055B00DA92302405674FB2FC641F4DC</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Temp%\uxeventlog.txt
+</td>
+<td class="cell_1">1,544 bytes</td>
+<td class="cell_2">MD5: 0x00CD6BC00FFAD022F16EFD9A50245177<br/>SHA-1: 0x6A70CABEBEA2AB8E09AFBDEB7CFB62CC9D64B733</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\ngen.log</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\ngen_service.log</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\18facf71d18fc84ed2\<a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">286,720 bytes</td></tr>
+</table></p>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\3.5</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\3.5\Setup</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\Watson</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CLR_OPTIMIZATION_V2.0.50727_32\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CLR_OPTIMIZATION_V2.0.50727_32\0000\Control</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\VisualStudio</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\9.0</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\9.0\DownloadManager</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\Watson]</li><ul>
+<li>UserID = "{A1F5DB86-3AD4-4110-A70B-511E3C23F8E2}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CLR_OPTIMIZATION_V2.0.50727_32\0000\Control]</li><ul>
+<li>ActiveService = "clr_optimization_v2.0.50727_32"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CLR_OPTIMIZATION_V2.0.50727_32\0000\Control]</li><ul>
+<li>ActiveService = "clr_optimization_v2.0.50727_32"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>SetupWatson_Mutex_Name</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.DLoader">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.DLoader</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 April 2015, 10:58:55</li>
+<li>Processing time: 6 min 39 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x1BB9DB20D591BBDF599060F2B5A9E193</li>
+<li>File SHA-1: 0x244086AE85AE2E9265561B86F9172E55A764A430</li>
+<li>Filesize: 96,256 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/suspicious-dloader.html" target="_blank">Suspicious.DLoader<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">wwccommon.exe</td><td class="cell_1">%AppData%\microsoft\wwccommon.exe</td><td class="cell_2">110,592 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">110,592 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office\Common</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office\Common\E5792AFA</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office\Common\E5792AFA\E5792AFAPS</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office\Common\E5792AFA\E5792AFARS</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Office\Common\E5792AFA\E5792AFASS</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>wwccommon.exe = "%AppData%\Microsoft\wwccommon.exe"</li>
+</ul>
+<br/>
+<em>so that %AppData%\Microsoft\wwccommon.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>3E8I</li>
+<li>3E8M</li>
+<li>750I</li>
+<li>750M</li>
+<li>30CI</li>
+<li>30CM</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">192.154.110.228</td><td class="cell_1">8080</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6364 3161 3430 2F65 3537 | POST /cd1a40/e57
+00000010 | 3932 6166 612F 2048 5454 502F 312E 310D | 92afa/ HTTP/1.1.
+00000020 | 0A41 6363 6570 743A 202A 2F2A 0D0A 5573 | .Accept: */*..Us
+00000030 | 6572 2D41 6765 6E74 3A20 4D6F 7A69 6C6C | er-Agent: Mozill
+00000040 | 612F 352E 3020 2863 6F6D 7061 7469 626C | a/5.0 (compatibl
+00000050 | 653B 204D 5349 4520 392E 303B 2057 696E | e; MSIE 9.0; Win
+00000060 | 646F 7773 204E 5420 362E 313B 2054 7269 | dows NT 6.1; Tri
+00000070 | 6465 6E74 2F35 2E30 290D 0A48 6F73 743A | dent/5.0)..Host:
+00000080 | 206C 6F63 616C 686F 7374 3A38 3038 300D |  localhost:8080.
+00000090 | 0A43 6F6E 7465 6E74 2D4C 656E 6774 683A | .Content-Length:
+000000A0 | 2032 3034 0D0A 436F 6E6E 6563 7469 6F6E |  204..Connection
+000000B0 | 3A20 4B65 6570 2D41 6C69 7665 0D0A 4361 | : Keep-Alive..Ca
+000000C0 | 6368 652D 436F 6E74 726F 6C3A 206E 6F2D | che-Control: no-
+000000D0 | 6361 6368 650D 0A0D 0A06 EE65 2929 1747 | cache......e)).G
+000000E0 | B5E7 901C 0F0D 9404 B0F2 D859 1F24 34B0 | ...........Y.$4.
+000000F0 | 5C11 2970 01D1 F503 5C4E A303 12D9 C0E4 | \.)p....\N......
+00000100 | AFF9 F8DC D82E 1B5A 305F B624 33CF 9757 | .......Z0_.$3..W
+00000110 | A683 1D5E FFD5 C8EB EC4C 855E 3774 51C3 | ...^.....L.^7tQ.
+00000120 | BE67 1541 E438 EE22 DBAA 7AEF E7ED 15E0 | .g.A.8."..z.....
+00000130 | 40BF B5D4 5EBE 3D9A EFA2 7DE0 32C8 C8D1 | @...^.=...}.2...
+00000140 | 3BC2 0F3B C5E4 2398 EE6E 0932 35D5 7475 | ;..;..#..n.25.tu
+00000150 | 2828 E9EA A16A EDEE 2A8B D410 DCF3 2F01 | ((...j..*...../.
+00000160 | 5576 D1B9 61BA 964A 9395 444A 8CF9 A084 | Uv..a..J..DJ....
+00000170 | D862 C42A DE10 8CA1 F369 F78E 13C6 ADC0 | .b.*.....i......
+00000180 | A6E5 F9B1 360C 2923 C3D6 8497 7CF5 8CBD | ....6.)#....|...
+00000190 | ABAB 29E0 70B2 0523 8490 E64C 21E3 BE28 | ..).p..#...L!..(
+000001A0 | E596 020B 06                            | .....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

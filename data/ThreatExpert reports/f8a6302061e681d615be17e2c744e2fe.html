@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Generic BackDoor.wi, Troj/Dapato-E">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Generic BackDoor.wi, Troj/Dapato-E</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 3 February 2014, 13:12:35</li>
+<li>Processing time: 6 min 13 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF8A6302061E681D615BE17E2C744E2FE</li>
+<li>File SHA-1: 0xCACA282BA1966981803CC7CEE958A720AC9F656C</li>
+<li>Filesize: 14,848 bytes</li>
+<li>Alias:</li>
+<ul><li>Generic BackDoor.wi [McAfee]</li>
+<li>Troj/Dapato-E [Sophos]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">28,672 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>kulimnisr.net</li>
+<li>ef39dfjw22c.info</li>
+<li>folks23fjjd2.info</li>
+<li>jiokalsmnwe3r43.info</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">kulimnisr.net<td class="cell_2">443</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 6661 7669 636F 6E2E 6963 6F20 | GET favicon.ico
+00000010 | 4854 5450 2F31 2E31 0D0A 486F 7374 3A20 | HTTP/1.1..Host:
+00000020 | 6263 5072 6F78 7942 6F74 2E63 6F6D 0D0A | bcProxyBot.com..
+00000030 | 4163 6365 7074 3A20 696D 6167 652F 6769 | Accept: image/gi
+00000040 | 662C 2069 6D61 6765 2F78 2D78 6269 746D | f, image/x-xbitm
+00000050 | 6170 2C20 696D 6167 652F 6A70 6567 2C20 | ap, image/jpeg,
+00000060 | 696D 6167 652F 706A 7065 670D 0A41 6363 | image/pjpeg..Acc
+00000070 | 6570 742D 4C61 6E67 7561 6765 3A20 656E | ept-Language: en
+00000080 | 2D75 730D 0A55 412D 4350 553A 2078 3836 | -us..UA-CPU: x86
+00000090 | 0D0A 5573 6572 2D41 6765 6E74 3A20 4D6F | ..User-Agent: Mo
+000000A0 | 7A69 6C6C 612F 342E 3020 2863 6F6D 7061 | zilla/4.0 (compa
+000000B0 | 7469 626C 653B 204D 5349 4520 372E 303B | tible; MSIE 7.0;
+000000C0 | 2057 696E 646F 7773 204E 5420 352E 313B |  Windows NT 5.1;
+000000D0 | 202E 4E45 5420 434C 5220 322E 302E 342E |  .NET CLR 2.0.4.
+000000E0 | 3529 0D0A 436F 6F6B 6965 3A20 44FC 1243 | 5)..Cookie: D..C
+000000F0 | 6F6D 7075 7465 724E 616D 650D 0A00 0000 | omputerName.....
+00000100 | 0000 0000 00                            | .....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

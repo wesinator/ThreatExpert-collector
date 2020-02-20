@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 June 2016, 09:02:04</li>
+<li>Processing time: 6 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x45645021C132BBDAD1B0715F7DF4094C</li>
+<li>File SHA-1: 0xB6F4657247BE42F165BA15B61862F4E642844866</li>
+<li>Filesize: 1,048,576 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,069,056 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog</li>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog\International</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>GuaZhuan = ""[file and pathname of the sample #1]" -autorun "</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\CHtmlDialog\International]</li><ul>
+<li>AutoDetect = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1064</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1065</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1066</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1067</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">ap5.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap5.liuliangbao.cn</td><td class="cell_2">ap5.liuliangbao.cn</td></tr>
+<tr><td class="cell_1">ap4.sap1000.com</td><td class="cell_1">8011</td><td class="cell_1">ap4.sap1000.com</td><td class="cell_2">ap4.sap1000.com</td></tr>
+<tr><td class="cell_1">ap2.sap1000.com</td><td class="cell_1">8011</td><td class="cell_1">ap2.sap1000.com</td><td class="cell_2">ap2.sap1000.com</td></tr>
+<tr><td class="cell_1">ap2.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap2.liuliangbao.cn</td><td class="cell_2">ap2.liuliangbao.cn</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=E32CFCCE2A3043C9A0A5760A315ABF36&amp;rd=20255</li>
+<li>clt/jobid/793e9a5703ec590b7fb5da2f0d6a440c3de8f9913ec46dd4ebcd8760209c326ca459b4fe56eee3682089b1ebeb1aac0f73b5fc08db420932e1c66be0dd188e664ded7aec35727e6c51f56856608b3fd8ba381be6941548b68950ee30ee9caf</li>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=9B83DD1A46784500B86C3BA90C84EFAE&amp;rd=23431</li>
+<li>clt/jobid/793e9a5703ec590b7fb5da2f0d6a440c1b032aa2a10ce12cfd208ab55b80eaac492246cf562607b99db31d017c546568d3a365f087902f3eb396c7c212abce666b3ea9eb0c18eecc57c5a17646347e2e939763efc0aa35cc22015616dab69c</li>
+<li>clt/jobid/793e9a5703ec590b7fb5da2f0d6a440c883eb0273ae3c65638e958d8a890e0daa38d137b84166966727f8ad0189a3d5cec51c1c1c82a969686a314cfff121289f6c0b7890ed16a6f424fbc1526f8189b8a93c86d192d21c0bf4408091205c9</li>
+<li>clt/jobid/793e9a5703ec590b7fb5da2f0d6a440c061c293c95f65da6f102cae0a1b77bf14c309578d33ab8d6cf55ca9a2a183486ae8e1e44e53603f58674eeaba64f1366ecf72b199283b25689a348b5c96b4162ea09aaed547bc1257cd6c005d05e3b</li>
+<li>clt/jobid/793e9a5703ec590b7fb5da2f0d6a440ce505b877f3c4119769eab150106384a262a62ed3ead1f6915f7796d80aed057bfa0159a5caa7b2a07b55cbfa97bcd3a7e4da817f7548cbb8ee67bbff688f044172fb3ccec6a3961ef775dd9010961d</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8011:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6173 2F63 2F66 382F 2048 | POST /as/c/f8/ H
+00000010 | 5454 502F 312E 310D 0A41 6363 6570 742D | TTP/1.1..Accept-
+00000020 | 456E 636F 6469 6E67 3A20 677A 6970 2C20 | Encoding: gzip,
+00000030 | 6465 666C 6174 650D 0A43 6F6E 7465 6E74 | deflate..Content
+00000040 | 2D54 7970 653A 2061 7070 6C69 6361 7469 | -Type: applicati
+00000050 | 6F6E 2F78 2D77 7777 2D66 6F72 6D2D 7572 | on/x-www-form-ur
+00000060 | 6C65 6E63 6F64 6564 0D0A 5573 6572 2D41 | lencoded..User-A
+00000070 | 6765 6E74 3A20 6C6C 622F 312E 312E 3635 | gent: llb/1.1.65
+00000080 | 2E38 3133 0D0A 486F 7374 3A20 6C6F 6361 | .813..Host: loca
+00000090 | 6C68 6F73 743A 3830 3131 0D0A 436F 6E74 | lhost:8011..Cont
+000000A0 | 656E 742D 4C65 6E67 7468 3A20 3935 340D | ent-Length: 954.
+000000B0 | 0A43 6F6E 6E65 6374 696F 6E3A 204B 6565 | .Connection: Kee
+000000C0 | 702D 416C 6976 650D 0A43 6163 6865 2D43 | p-Alive..Cache-C
+000000D0 | 6F6E 7472 6F6C 3A20 6E6F 2D63 6163 6865 | ontrol: no-cache
+000000E0 | 0D0A 0D0A 643D 6632 3336 3339 6133 6565 | ....d=f23639a3ee
+000000F0 | 6465 6635 6161 6661 6262 6463 3264 6330 | def5aafabbdc2dc0
+00000100 | 3835 3231 6432 3038 3163 6563 3332 3831 | 8521d2081cec3281
+00000110 | 3666 6633 3037 3639 6633 6661 3333 3762 | 6ff30769f3fa337b
+00000120 | 3937 6635 3933 3762 6434 6563 3165 3165 | 97f5937bd4ec1e1e
+00000130 | 3832 3038 3137 3337 3837 6132 3639 6161 | 8208173787a269aa
+00000140 | 6630 6239 6565 6164 3936 6363 6564 3438 | f0b9eead96cced48
+00000150 | 6261 6633 3662 3738 6437 6237 6662 3562 | baf36b78d7b7fb5b
+00000160 | 3532 6665 6431 3830 6566 3537 6130 6432 | 52fed180ef57a0d2
+00000170 | 3933 6261 3138 6464 6363 3736 6564 3662 | 93ba18ddcc76ed6b
+00000180 | 6131 3131 6539 6238 6432 6364 6465 3034 | a111e9b8d2cdde04
+00000190 | 3337 3734 3834 3766 3462 6437 3362 6532 | 3774847f4bd73be2
+000001A0 | 3934 6534 6238 3631 6163 6533 3265 6332 | 94e4b861ace32ec2
+000001B0 | 6665 3663 3162 6639 6638 6536 3237 3839 | fe6c1bf9f8e62789
+000001C0 | 3665 6564 3565 6539 6161 3930 3837 3066 | 6eed5ee9aa90870f
+000001D0 | 3833 6561 6264 3239 3162 6530 6431 3464 | 83eabd291be0d14d
+000001E0 | 6136 3139 3163 6164 3934 3235 6438 3236 | a6191cad9425d826
+000001F0 | 3737 3637 3934 3835 6539 6633 6230 6233 | 77679485e9f3b0b3
+00000200 | 3062 3664 3864 3365 6562 6265 3066 6361 | 0b6d8d3eebbe0fca
+00000210 | 3635 3638 3530 3631 3936 3166 6534 6138 | 65685061961fe4a8
+00000220 | 3439 3333 3336 3033 3563 6662 3763 3165 | 493336035cfb7c1e
+00000230 | 3230 6565 3266 3835 6238 6437 3132 3061 | 20ee2f85b8d7120a
+00000240 | 6135 6430 6438 3139 3538 6336 3761 6361 | a5d0d81958c67aca
+00000250 | 6432 3935 6465 3038 3737 3630 6231 3066 | d295de087760b10f
+00000260 | 3362 3662 3030 6562 6239 3262 3266 3862 | 3b6b00ebb92b2f8b
+00000270 | 6366 3236 6434 6564 6534 3636 6364 6530 | cf26d4ede466cde0
+00000280 | 3436 6439 3837 3732 3235 6261 6635 3931 | 46d9877225baf591
+00000290 | 3564 3336 3539 3837 6238 3362 3263 3832 | 5d365987b83b2c82
+000002A0 | 6364 3462 6630 3530 3961 3930 3335 3430 | cd4bf0509a903540
+000002B0 | 3664 3463 3931 6365 6364 6162 6362 3734 | 6d4c91cecdabcb74
+000002C0 | 6562 3033 6636 3063 6230 6431 3037 6361 | eb03f60cb0d107ca
+000002D0 | 3362 6430 6135 3531 3138 3236 6165 3531 | 3bd0a5511826ae51
+000002E0 | 3634 3262 6238 6138 3438 3861 3064 6431 | 642bb8a8488a0dd1
+000002F0 | 3235 6337 3337 3362 3365 3463 6134 6135 | 25c7373b3e4ca4a5
+00000300 | 6263 3337 3638 3837 3230 3337 3631 6365 | bc376887203761ce
+00000310 | 3831 6533 6439 3336 3636 3232 6366 3037 | 81e3d9366622cf07
+00000320 | 6336 3261 3030 3539 6534 3932 6263 3361 | c62a0059e492bc3a
+00000330 | 6437 3830 3964 3863 3364 6338 6665 6632 | d7809d8c3dc8fef2
+00000340 | 6639 3232 3663 6135 3436 6539 3862 3930 | f9226ca546e98b90
+00000350 | 3063 6437 3632 3737 3035 3330 3930 3163 | 0cd762770530901c
+00000360 | 6364 6439 6233 3161 6532 6466 3135 3564 | cdd9b31ae2df155d
+00000370 | 3166 6432 3235 3737 3165 6632 3564 3261 | 1fd225771ef25d2a
+00000380 | 3533 3833 3930 6166 6165 3133 3230 3139 | 538390afae132019
+00000390 | 3963 6462 3135 3461 6435 6163 6431 3062 | 9cdb154ad5acd10b
+000003A0 | 3938 6362 3637 3139 6132 3931 3531 3138 | 98cb6719a2915118
+000003B0 | 3036 3036 3438 6463 3638 3335 6432 3863 | 060648dc6835d28c
+000003C0 | 3732 3139 6563 6134 3835 3439 6333 3833 | 7219eca48549c383
+000003D0 | 6430 6236 3966 6432 3734 6364 6631 6432 | d0b69fd274cdf1d2
+000003E0 | 6533 3561 3739 3563 3834 6364 3433 3566 | e35a795c84cd435f
+000003F0 | 6431 3437 3831 3035 6334 3335 6130 6238 | d1478105c435a0b8
+00000400 | 3466 6662 3962 3537 3532 6262 3637 6264 | 4ffb9b5752bb67bd
+00000410 | 3238 6635 3665 3736 3566 3065 3765 3065 | 28f56e765f0e7e0e
+00000420 | 3131 6536 3931 6431 6539 3333 3539 3966 | 11e691d1e933599f
+00000430 | 6232 6232 3238 3136 3136 3730 3765 3432 | b2b2281616707e42
+00000440 | 3331 3432 3638 3732 3438 3434 3333 6364 | 31426872484433cd
+00000450 | 3965 3663 6461 3638 3237 6632 3333 6335 | 9e6cda6827f233c5
+00000460 | 6164 3439 3935 6530 6438 3330 6466 3330 | ad4995e0d830df30
+00000470 | 3935 3361 6565 3739 6663 6231 6163 3136 | 953aee79fcb1ac16
+00000480 | 6464 6633 6531 3832 6437 6263 3565 3332 | ddf3e182d7bc5e32
+00000490 | 3863 6663 3134 3931 3961 6265 3334 0D0A | 8cfc14919abe34..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

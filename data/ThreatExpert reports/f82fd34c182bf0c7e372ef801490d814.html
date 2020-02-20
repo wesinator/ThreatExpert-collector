@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Infostealer.Gampass, Gen.Trojan">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Infostealer.Gampass, Gen.Trojan</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 November 2014, 15:53:02</li>
+<li>Processing time: 7 min 4 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF82FD34C182BF0C7E372EF801490D814</li>
+<li>File SHA-1: 0xB384B6F2B274E548C69F8E144A021455E14BE9A4</li>
+<li>Filesize: 2,520,183 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/infostealer-gampass.html" target="_blank">Infostealer.Gampass<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/gen-trojan.html" target="_blank">Gen.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonPrograms%\WinRAR</li>
+<li>%Programs%\WinRAR</li>
+<li>%ProgramFiles%\WinRAR</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Explorer.exe.html" target="_blank">Explorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\outlook express\data\bin\<a href="http://www.threatexpert.com/files/Explorer.exe.html" target="_blank">Explorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">28,672 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/winrar.exe.html" target="_blank">winrar.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\outlook express\data\bin\<a href="http://www.threatexpert.com/files/winrar.exe.html" target="_blank">winrar.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">155,648 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-GS3VP.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">745,472 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/uninstall.exe.html" target="_blank">uninstall.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\WinRAR\<a href="http://www.threatexpert.com/files/uninstall.exe.html" target="_blank">uninstall.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.zip\ShellNew</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B41DB860-8EE4-11D2-9906-E49FADC173CA}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Drive\shellex\DragDropHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Drive\shellex\DragDropHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\DragDropHandlers\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.7z</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ace</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.arj</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bz</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bz2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.iso</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.jar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lha</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lzh</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r00</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r01</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r02</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r03</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r04</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r05</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r06</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r07</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r08</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r09</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r10</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r11</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r12</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r13</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r14</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r15</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r16</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r17</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r18</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r19</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r20</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r21</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r22</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r23</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r24</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r25</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r26</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r27</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r28</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r29</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rar\ShellNew</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rev</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.taz</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tbz</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tbz2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uu</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uue</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xxe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\ContextMenuHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\ContextMenuHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\DropHandler</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\PropertySheetHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\ContextMenuHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\ContextMenuHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\DropHandler</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\PropertySheetHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinRAR archiver</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4D95660F-5E50-4208-96AB-CB6D7C3F2CA4}_is1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\WinRAR</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.7z</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.ace</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.arj</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.bz</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.bz2</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.cab</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.gz</li>
+<li>HKEY_CURRENT_USER\Software\WinRAR\Setup\.iso</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.gz]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tar]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tgz]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.z]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.zip\ShellNew]</li><ul>
+<li>FileName = "%ProgramFiles%\WinRAR\zipnew.dat"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B41DB860-8EE4-11D2-9906-E49FADC173CA}\InProcServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\WinRAR\rarext.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Drive\shellex\DragDropHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\DragDropHandlers\WinRAR]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.7z]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ace]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.arj]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bz]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bz2]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.iso]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.jar]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lha]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.lzh]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r00]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r01]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r02]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r03]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r04]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r05]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r06]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r07]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r08]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r09]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r10]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r11]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r12]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r13]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r14]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r15]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r16]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r17]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r18]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r19]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r20]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r21]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r22]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r23]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r24]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r25]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r26]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r27]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r28]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.r29]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rar\ShellNew]</li><ul>
+<li>FileName = "%ProgramFiles%\WinRAR\rarnew.dat"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rar]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rev]</li><ul>
+<li>(Default) = "WinRAR.REV"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.taz]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tbz]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tbz2]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uu]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uue]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xxe]</li><ul>
+<li>(Default) = "WinRAR"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\WinRAR\WinRAR.exe" "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\ContextMenuHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\shellex\DropHandler]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\WinRAR\WinRAR.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR]</li><ul>
+<li>(Default) = "WinRAR archive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\WinRAR\WinRAR.exe" "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\WinRAR\WinRAR.exe,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.REV]</li><ul>
+<li>(Default) = "RAR recovery volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\WinRAR\WinRAR.exe" "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\ContextMenuHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\PropertySheetHandlers\{B41DB860-8EE4-11D2-9906-E49FADC173CA}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\shellex\DropHandler]</li><ul>
+<li>(Default) = "{B41DB860-8EE4-11D2-9906-E49FADC173CA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\WinRAR\WinRAR.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WinRAR.ZIP]</li><ul>
+<li>(Default) = "WinRAR ZIP archive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]</li><ul>
+<li>{B41DB860-8EE4-11D2-9906-E49FADC173CA} = "WinRAR shell extension"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinRAR archiver]</li><ul>
+<li>DisplayName = "WinRAR archiver"</li>
+<li>UninstallString = "%ProgramFiles%\WinRAR\uninstall.exe"</li>
+<li>DisplayIcon = "%ProgramFiles%\WinRAR\WinRAR.exe"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4D95660F-5E50-4208-96AB-CB6D7C3F2CA4}_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.2.3"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\Outlook Express\data\bin"</li>
+<li>InstallLocation = "%ProgramFiles%\Outlook Express\data\bin\"</li>
+<li>Inno Setup: Icon Group = "Microsoft Installer"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>DisplayName = "Microsoft Installer"</li>
+<li>UninstallString = ""%ProgramFiles%\Outlook Express\data\bin\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\Outlook Express\data\bin\unins000.exe" /SILENT"</li>
+<li>Publisher = "Microsoft Installer"</li>
+<li>URLInfoAbout = "http://www.Microsoft.com/"</li>
+<li>HelpLink = "http://www.Microsoft.com/"</li>
+<li>URLUpdateInfo = "http://www.Microsoft.com/"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20141112"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\WinRAR]</li><ul>
+<li>exe32 = "%ProgramFiles%\WinRAR\WinRAR.exe"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.gz]</li><ul>
+<li>Content Type = "application/x-gzip"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tar]</li><ul>
+<li>Content Type = "application/x-tar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tgz]</li><ul>
+<li>Content Type = "application/x-compressed"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.z]</li><ul>
+<li>Content Type = "application/x-compress"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.zip]</li><ul>
+<li>Content Type = "application/x-zip-compressed"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.Current]</li><ul>
+<li>(Default) = "%SystemRoot%\media\Windows XP Start.wav"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cab]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.zip]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SharedDlls]</li><ul>
+<li>C:\WINDOWS\system32\comcat.dll = </li>
+<li>C:\WINDOWS\system32\olepro32.dll = </li>
+<li>C:\WINDOWS\system32\stdole2.tlb = </li>
+<li>C:\WINDOWS\system32\oleaut32.dll = </li>
+<li>C:\WINDOWS\system32\asycfilt.dll = </li>
+<li>C:\WINDOWS\system32\msvbvm60.dll = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>_SHuassist.mtx</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.super-trooper.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>update/update.php</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://is.gd/2DF2zJ;</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

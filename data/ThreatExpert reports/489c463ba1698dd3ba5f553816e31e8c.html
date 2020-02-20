@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I, Virus:Win32/Ramnit.A, Gen.Trojan.Heur, Win32/Ramnit.B, W32.Virut.CF, Packed.Win32.Krap.hm, PWS-Zbot.gen.pq, W32/Scribble-B, Virus:Win32/Virut.BN, Virus.Win32.Virut">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 April 2016, 08:18:50</li>
+<li>Processing time: 6 min 3 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x489C463BA1698DD3BA5F553816E31E8C</li>
+<li>File SHA-1: 0x994B81788BE129302C35EBCC0653D14A53BEB121</li>
+<li>Filesize: 138,240 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Patched-I [Sophos]</li>
+<li>Virus:Win32/Ramnit.A [Microsoft]</li>
+<li>Gen.Trojan.Heur [Ikarus]</li>
+<li>Win32/Ramnit.B [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\svchobst.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">138,240 bytes</td>
+<td class="cell_1">MD5: 0x489C463BA1698DD3BA5F553816E31E8C<br/>SHA-1: 0x994B81788BE129302C35EBCC0653D14A53BEB121</td>
+<td class="cell_2">W32.Ramnit!inf [Symantec]<br/>Virus.Win32.Nimnul.a [Kaspersky Lab]<br/>W32/Ramnit.a [McAfee]<br/>W32/Patched-I [Sophos]<br/>Virus:Win32/Ramnit.A [Microsoft]<br/>Gen.Trojan.Heur [Ikarus]<br/>Win32/Ramnit.B [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Windir%\svchobstSrv.exe
+<br/>
+[part of the sample filename]1Srv.exe
+</td>
+<td class="cell_1">86,528 bytes</td>
+<td class="cell_1">MD5: 0x2767B7EF289B722C505276D30AEE7DAE<br/>SHA-1: 0x56C960CD50FF2418F3A846B5379EFAFE293ECA1F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Packed.Win32.Krap.hm [Kaspersky Lab]<br/>PWS-Zbot.gen.pq [McAfee]<br/><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/virus-win32-virut-bn.html" target="_blank">Virus:Win32/Virut.BN<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/virus-win32-virut.html" target="_blank">Virus.Win32.Virut<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">svchobst.exe</td><td class="cell_1">%Windir%\svchobst.exe</td><td class="cell_2">200,704 bytes</td></tr>
+<tr><td class="cell_1">svchobstSrv.exe</td><td class="cell_1">%Windir%\svchobstSrv.exe</td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">200,704 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = "%Windir%\svchobst.exe"</li>
+</ul>
+<br/>
+<em>so that svchobst.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/russian_federation.gif"></td>
+<td class="cell_2">Russian Federation</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+<li>45.34.1.234:7777</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">svchobst.exe (%Windir%\svchobst.exe)</td></tr>
+<tr><td class="cell_1">1046</td><td class="cell_1">TCP</td><td class="cell_2">svchobst.exe (%Windir%\svchobst.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>45.34.1.234</li>
+<li>ilo.brenz.pl</li>
+<li>abucki.com</li>
+<li>iylmqj.com</li>
+<li>pimubl.com</li>
+<li>hmhkdt.com</li>
+<li>lrmxjp.com</li>
+<li>wnlfia.com</li>
+<li>wedusm.com</li>
+<li>uaxyio.com</li>
+<li>eiiial.com</li>
+<li>xyanov.com</li>
+<li>ganvzb.com</li>
+<li>ant.trenz.pl</li>
+<li>vmbgte.com</li>
+<li>cexnfc.com</li>
+<li>aeotys.com</li>
+<li>sgeali.com</li>
+<li>uexfxs.com</li>
+<li>tezsbw.com</li>
+<li>colymb.com</li>
+<li>fokpqf.com</li>
+<li>wzaias.com</li>
+<li>jcicqe.com</li>
+<li>xeimln.com</li>
+<li>bbojxt.com</li>
+<li>viichl.com</li>
+<li>tjeoyf.com</li>
+<li>evxiui.com</li>
+<li>ecluuz.com</li>
+<li>oknacz.com</li>
+<li>yioyfu.com</li>
+<li>oruwti.com</li>
+<li>cjyklq.com</li>
+<li>uosepl.com</li>
+<li>jzawne.com</li>
+<li>zikuyv.com</li>
+<li>onvskh.com</li>
+<li>uaiegi.com</li>
+<li>odsbdl.com</li>
+<li>yvawko.com</li>
+<li>oaqqqb.com</li>
+<li>bhfykq.com</li>
+<li>hniqfm.com</li>
+<li>nvuamn.com</li>
+<li>ywyjpr.com</li>
+<li>igksxp.com</li>
+<li>tkyjia.com</li>
+<li>ycgyhr.com</li>
+<li>rcsowf.com</li>
+<li>buyqjc.com</li>
+<li>vjoiir.com</li>
+<li>mkdjeu.com</li>
+<li>kskape.com</li>
+<li>sofnzw.com</li>
+<li>buynwe.com</li>
+<li>ireouo.com</li>
+<li>pahcfo.com</li>
+<li>iarxug.com</li>
+<li>ajspaw.com</li>
+<li>opyqoy.com</li>
+<li>mcrypz.com</li>
+<li>yepolj.com</li>
+<li>skdyqe.com</li>
+<li>dgkjxq.com</li>
+<li>wzuspv.com</li>
+<li>uoxvot.com</li>
+<li>stucgj.com</li>
+<li>qaldcv.com</li>
+<li>euotfy.com</li>
+<li>aiyshy.com</li>
+<li>qiulag.com</li>
+<li>zswkep.com</li>
+<li>cxuerv.com</li>
+<li>uieunp.com</li>
+<li>magpvt.com</li>
+<li>whcaow.com</li>
+<li>puycqy.com</li>
+<li>ujoizu.com</li>
+<li>beffaw.com</li>
+<li>iinjie.com</li>
+<li>bbjdtp.com</li>
+<li>ilirou.com</li>
+<li>ciulsh.com</li>
+<li>mbynwy.com</li>
+<li>gobyyr.com</li>
+<li>ntugsh.com</li>
+<li>ztghfn.com</li>
+<li>olqiya.com</li>
+<li>duucec.com</li>
+<li>bslszt.com</li>
+<li>dvdkoa.com</li>
+<li>uohlsi.com</li>
+<li>nhoznc.com</li>
+<li>ubwaqk.com</li>
+<li>uwuyga.com</li>
+<li>daguju.com</li>
+<li>ddeaor.com</li>
+<li>wmgiqo.com</li>
+<li>wfezew.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">45.34.1.234<td class="cell_2">7777</td><tr>
+<tr><td class="cell_1">abucki.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">88.198.69.43<td class="cell_2">80</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7777:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6D90 8A99 92CE 64CD D673 8F84 99CE 6A71 | m.....d..s....jq
+00000010 | CDC4 D67A 898F D673 6669 D6D6 D6D6 D679 | ...z...sfi.....y
+00000020 | BECA C6C6 D6D6 76D6 C3D0 C6C6 776E 7CB6 | ......v.....wn|.
+00000030 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000040 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000050 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000060 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000070 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000080 | C4C9 C8D6 7174 B6B6 B6B6 B6B6 B6B6 B6B6 | ....qt..........
+00000090 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000A0 | 678D 90D6 5E66 D663 66C4 B6B6 B6B6 B6B6 | g...^f.cf.......
+000000B0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000C0 | 7268 C4D0 C6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | rh..............
+000000D0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000E0 | ADBA B6B6 FFFF FFFF                     | ........
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Farfli.K, Backdoor.Win32.Torr">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Farfli.K, Backdoor.Win32.Torr</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 March 2016, 05:13:59</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3CF30FA490A94C1E56932E12BC3C1CD8</li>
+<li>File SHA-1: 0x4555CFCB0BA5D66149C79579B67506AFC62B97ED</li>
+<li>Filesize: 139,264 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-win32-farfli-k.html" target="_blank">Backdoor:Win32/Farfli.K<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-torr.html" target="_blank">Backdoor.Win32.Torr<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vipxie.exe</td><td class="cell_1">%System%\vipxie.exe</td><td class="cell_2">155,648 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">155,648 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">DirectX jrq</td><td class="cell_1">DirectX Remover yta for Windows(R).</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\vipxie.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "DirectX jrq"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000]</li><ul>
+<li>Service = "DirectX jrq"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "DirectX Remover yta for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DIRECTX_JRQ\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "DirectX Remover yta for Windows(R)."</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft(R) DirectX mid for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "DirectX jrq"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000]</li><ul>
+<li>Service = "DirectX jrq"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "DirectX Remover yta for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DIRECTX_JRQ\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "DirectX Remover yta for Windows(R)."</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft(R) DirectX mid for Windows(R)."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>c:\windows\system32\vipxie.exe</li>
+<li>xiaoaolong.f3322.org</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>xiaoaolong.f3322.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">xiaoaolong.f3322.org<td class="cell_2">81</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B901 0000 415A 5641 5ABC 0200 0078 9C8D | ....AZVAZ....x..
+00000010 | 524D 2804 6118 7E3F 7FF9 8B4D B684 C39C | RM(.a.~?...M....
+00000020 | AC9C 96D3 5EC5 8948 490E 7EB2 69B6 1562 | ....^..HI.~.i..b
+00000030 | B65D F630 B523 A6F6 A226 B9C8 4F91 4D4E | .].0.#...&..O.MN
+00000040 | 1235 458A E622 2D56 D85C 9CEC 4539 908B | .5E.."-V.\..E9..
+00000050 | 836D BDEF 373F AD72 F0D4 D3D3 F7BD 7FCF | .m..7?.r........
+00000060 | FBCD 0400 6003 598C 64C8 E672 8002 D47E | ....`.Y.d..r...~
+00000070 | 3134 3731 2E0A 7DFE F149 A10D 38AA 30F2 | 1471..}..I..8.0.
+00000080 | C162 98A8 792E E673 08F3 7E75 C800 EF1D | .b..y..s..~u....
+00000090 | C0F1 8801 BBC8 F351 032E A53D 4919 4C48 | .......Q...=I.LH
+000000A0 | 9415 453D 1848 48BE 5E37 2863 06B8 B026 | ..E=.HH.^7(c...&
+000000B0 | 89E7 0C92 EA8F B614 9934 52B1 20EB 664B | .........4R. .fK
+000000C0 | EE01 1803 BDC2 F445 533B 66A6 6723 6131 | .......ES;f.g#a1
+000000D0 | D4EB 9F16 E17F 9070 1D20 9BD5 C887 E79B | .......p. ......
+000000E0 | 637D E736 4D81 0C7A ACEB 56E1 1BF5 2BAF | c}.6M..z..V...+.
+000000F0 | 8066 91CF E59E 8454 6ADD ADD5 EF4B 9413 | .f.....Tj....K..
+00000100 | 652A 0451 B52E 150A 51BD C937 6F6A FBEA | e*.Q....Q..7oj..
+00000110 | B055 4FA7 EF41 E57B 09D8 D381 60D6 D87D | .UO..A.{....`..}
+00000120 | 5FB1 A811 7C7C B74B F283 F4B8 F367 33AE | _...||.K.....g3.
+00000130 | 9B48 9999 394F CE7B 1495 81E5 218E 6F48 | .H..9O.{....!.oH
+00000140 | 5F22 853E C9AB EBA5 16A6 CC52 78C1 18F9 | _".>.......Rx...
+00000150 | 23D4 F0FC BF1F 268E 3941 A6FE 3A6B D66E | #.....&.9A..:k.n
+00000160 | F61C CD89 AA90 C1EF EA20 958D 0DE3 9C96 | ......... ......
+00000170 | 2645 AE43 0554 6679 26D4 5AFB DAA0 77E9 | &E.C.Tfy&.Z...w.
+00000180 | 1403 FEC8 5418 E03D 1BA3 7A3B 5669 F95D | ....T..=..z;Vi.]
+00000190 | CA19 F0B9 B628 9762 2FFE 6735 5D5F 9C9C | .....(.b/.g5]_..
+000001A0 | 9FBD 53A3 9547 4D3E 5D57 64DA 6515 F31B | ..S..GM>]Wd.e...
+000001B0 | 4ADA F95E 3F08 2197 44                  | J..^?.!.D
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B, Virus:Win32/Virut.BN, Gen.Packer.PESpin">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 28 January 2016, 04:00:03</li>
+<li>Processing time: 6 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC5E02005531A74EF5571A5204900A66D</li>
+<li>File SHA-1: 0xD937B1DBF3A40A7156FEAA42E9DF5C903D8417D3</li>
+<li>Filesize: 1,167,360 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-bn.html" target="_blank">Virus:Win32/Virut.BN<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Gen.Packer.PESpin [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,232,896 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>[filename of the sample #1] = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Play_Background_Sounds = "no"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>DirectSound DllMain mutex (0x0000009C)</li>
+<li>DirectSound DllMain mutex (0x00000354)</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1037</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1039</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1051</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1052</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>ilo.brenz.pl</li>
+<li>tmrihj.com</li>
+<li>afyruh.com</li>
+<li>twuwjt.com</li>
+<li>zlyron.com</li>
+<li>uidiri.com</li>
+<li>iejglu.com</li>
+<li>xdyami.com</li>
+<li>zyqzqy.com</li>
+<li>qjyicu.com</li>
+<li>wvdldf.com</li>
+<li>ant.trenz.pl</li>
+<li>egdeim.com</li>
+<li>liuskm.com</li>
+<li>ieosap.com</li>
+<li>lhysjh.com</li>
+<li>lrcoum.com</li>
+<li>aesjne.com</li>
+<li>tpfsyr.com</li>
+<li>agvgzk.com</li>
+<li>uzboui.com</li>
+<li>umuiir.com</li>
+<li>ohywgb.com</li>
+<li>kusqii.com</li>
+<li>bwgueh.com</li>
+<li>oqwyei.com</li>
+<li>ptofib.com</li>
+<li>nujwjq.com</li>
+<li>yoyamu.com</li>
+<li>xzqqpb.com</li>
+<li>ozgqpy.com</li>
+<li>nanoyt.com</li>
+<li>faoaae.com</li>
+<li>ugcqen.com</li>
+<li>jmhylp.com</li>
+<li>iswepc.com</li>
+<li>vuuvtx.com</li>
+<li>cyzyou.com</li>
+<li>hsudbs.com</li>
+<li>enixdh.com</li>
+<li>eohode.com</li>
+<li>akqnar.com</li>
+<li>xuqibj.com</li>
+<li>qgskta.com</li>
+<li>alqtvf.com</li>
+<li>yomxyy.com</li>
+<li>kwznqq.com</li>
+<li>edeaii.com</li>
+<li>ukdocy.com</li>
+<li>ynqbxh.com</li>
+<li>zrrneo.com</li>
+<li>bpmyvp.com</li>
+<li>ouhdan.com</li>
+<li>ohkaxu.com</li>
+<li>nudevi.com</li>
+<li>yuowje.com</li>
+<li>eiqqyy.com</li>
+<li>uxyugy.com</li>
+<li>wrbyez.com</li>
+<li>ofywih.com</li>
+<li>aaaoua.com</li>
+<li>xiwiic.com</li>
+<li>vaztyo.com</li>
+<li>fspwfw.com</li>
+<li>lkyyua.com</li>
+<li>ooobkg.com</li>
+<li>nxokbr.com</li>
+<li>qbtrjq.com</li>
+<li>pmmjsi.com</li>
+<li>wierqv.com</li>
+<li>isftvm.com</li>
+<li>jagsmv.com</li>
+<li>biyjer.com</li>
+<li>uyhxxo.com</li>
+<li>eansuf.com</li>
+<li>luiveo.com</li>
+<li>eheeaz.com</li>
+<li>aygeau.com</li>
+<li>hvozxb.com</li>
+<li>kfyrno.com</li>
+<li>cbojdq.com</li>
+<li>legwep.com</li>
+<li>nepoar.com</li>
+<li>sgihoh.com</li>
+<li>xfgrri.com</li>
+<li>tvaped.com</li>
+<li>vzydid.com</li>
+<li>pwuwnk.com</li>
+<li>cqnwli.com</li>
+<li>buzixu.com</li>
+<li>jbipou.com</li>
+<li>iarrhi.com</li>
+<li>mayrah.com</li>
+<li>iqheta.com</li>
+<li>ylhwrf.com</li>
+<li>asixcj.com</li>
+<li>owgdiq.com</li>
+<li>guazdz.com</li>
+<li>kdaste.com</li>
+<li>ewcqhh.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">tmrihj.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">88.198.69.43<td class="cell_2">80</td><tr>
+<tr><td class="cell_1">ant.trenz.pl<td class="cell_2">1050</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">weiaitianyu.s.f3322.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">www.yy.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>index.html</li>
+<li>index.jpg</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

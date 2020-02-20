@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 November 2015, 09:25:41</li>
+<li>Processing time: 5 min 50 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x91A6DEA627D6DE550F383452490ADCE1</li>
+<li>File SHA-1: 0xEBBF54432B9807BB61EEB831A0F977982FC154D3</li>
+<li>Filesize: 684,665 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Programs%\Startup\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">684,665 bytes</td>
+<td class="cell_2">MD5: 0x91A6DEA627D6DE550F383452490ADCE1<br/>SHA-1: 0xEBBF54432B9807BB61EEB831A0F977982FC154D3</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\system.exe.ini
+</td>
+<td class="cell_1">11 bytes</td>
+<td class="cell_2">MD5: 0x301A3E5A5C08C60B2952122A97E1A838<br/>SHA-1: 0xC85DA2EBD9E1098EED686B8C74016BEE728BB942</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">806,912 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Programs%\startup\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">806,912 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">806,912 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>system.exe = ""%AppData%\system.exe""</li>
+</ul>
+<br/>
+<em>so that system.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>system.exe = ""%AppData%\system.exe""</li>
+</ul>
+<br/>
+<em>so that system.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/united_kingdom.gif"></td>
+<td class="cell_2">United Kingdom</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>appdatasystem.exe</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">system.exe (%AppData%\system.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>mda.no-ip.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mda.no-ip.org<td class="cell_2">88</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 88:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6C76 306E 6A78 7138 302D 2D54 4D52 2D2D | lv0njxq80--TMR--
+00000010 | 5F30 3043 4431 4134 3030 6E6A 7871 3830 | _00CD1A400njxq80
+00000020 | 5553 4130 6E6A 7871 3830 5749 4E5F 5850 | USA0njxq80WIN_XP
+00000030 | 2058 3836 2053 5032 306E 6A78 7138 3030 |  X86 SP20njxq800
+00000040 | 2E33 2E33 6130 6E6A 7871 3830 4E30 6E6A | .3.3a0njxq80N0nj
+00000050 | 7871 3830 6162 6F75 743A 626C 616E 6B20 | xq80about:blank
+00000060 | 2D20 4D69 6372 6F73 6F66 7420 496E 7465 | - Microsoft Inte
+00000070 | 726E 6574 2045 7870 6C6F 7265 720D 0A61 | rnet Explorer..a
+00000080 | 6330 6E6A 7871 3830 6162 6F75 743A 626C | c0njxq80about:bl
+00000090 | 616E 6B20 2D20 4D69 6372 6F73 6F66 7420 | ank - Microsoft
+000000A0 | 496E 7465 726E 6574 2045 7870 6C6F 7265 | Internet Explore
+000000B0 | 720D 0A                                 | r..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

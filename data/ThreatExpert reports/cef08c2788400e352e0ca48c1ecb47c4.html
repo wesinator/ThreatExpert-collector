@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Troj/Dloadr-DNE, DDoS:Win32/Nitol.A, Trojan.Win32.ServStart">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Troj/Dloadr-DNE, DDoS:Win32/Nitol.A, Trojan.Win32.ServStart</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 November 2015, 20:07:59</li>
+<li>Processing time: 5 min 34 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCEF08C2788400E352E0CA48C1ECB47C4</li>
+<li>File SHA-1: 0x23A5039FFEB5E10FEC8ACB6E6121B2EFB6A45173</li>
+<li>Filesize: 30,208 bytes</li>
+<li>Alias:</li>
+<ul><li>Troj/Dloadr-DNE [Sophos]</li>
+<li>DDoS:Win32/Nitol.A [Microsoft]</li>
+<li>Trojan.Win32.ServStart [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">40,960 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Bf.exe.html" target="_blank">Bf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%CommonPrograms%\startup\<a href="http://www.threatexpert.com/files/bf.exe.html" target="_blank">bf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">40,960 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Avast?????? = "%CommonPrograms%\startup\bf.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>117.41.184.204</li>
+<li>ddos.bylg.87wl.cc</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">117.41.184.204<td class="cell_2">1993</td><tr>
+<tr><td class="cell_1">ddos.bylg.87wl.cc<td class="cell_2">9851</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1993:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 434F 4D50 5554 4552 | ........COMPUTER
+00000010 | 4E41 4D45 0000 43E1 5001 0000 6603 0000 | NAME..C.P...f...
+00000020 | 0030 88C0 1889 3B00 0130 1277 0040 A8C0 | .0....;..0.w.@..
+00000030 | C46B 68F9 B91F 5080 5001 0000 6603 0000 | .kh...P.P...f...
+00000040 | 0030 88C0 B904 0000 FC3C 88C0 E048 7481 | .0.......<...Ht.
+00000050 | 9831 1277 6603 0000 FC3C 88C0 E86B 68F9 | .1.wf....<...kh.
+00000060 | 2DFE 5080 F06B 68F9 944A 88C0 E048 7481 | -.P..kh..J...Ht.
+00000070 | DCB6 EE80 9831 1277 DCB6 EE80 0000 0000 | .....1.w........
+00000080 | 206C 68F9 0F15 5180 5769 6E64 6F77 7320 |  lh...Q.Windows
+00000090 | 5850 00F9 D99A 4F80 E19A 4F80 8C31 6681 | XP....O...O..1f.
+000000A0 | 2030 6681 5430 6681 D150 0000 8683 6380 |  0f.T0f..P....c.
+000000B0 | A07D 7981 2030 6681 00A0 FD7F 846C 68F9 | .}y. 0f......lh.
+000000C0 | 2C01 5080 0000 0000 3235 3620 4D42 0000 | ,.P.....256 MB..
+000000D0 | 0000 0000 0000 0000 30D0 4F80 0000 0000 | ........0.O.....
+000000E0 | 0000 0000 ECD0 4F80 3239 3939 204D 487A | ......O.2999 MHz
+000000F0 | 006D 68F9 C0F8 25E1 0000 0000 016C 68F9 | .mh...%......lh.
+00000100 | 0000 0000 A07D 7981 5669 70B0 E600 0000 | .....}y.Vip.....
+00000110 | 0000 0000 0000 0000 1401 5080 9C6C 68F9 | ..........P..lh.
+00000120 | 350C 6D80 B0FF DA00 6650 4000 FFFF FFFF | 5.m.....fP@.....
+00000130 | EB06 917C DBC1 C277 0000 8300 0800 0000 | ...|...w........
+00000140 | 15C2 C277 0000 0000 F0FB DA00 6121 4F77 | ...w........a!Ow
+00000150 | 0000 4E77 0200 0000 302B 2400 0000 0000 | ..Nw....0+$.....
+00000160 | 0200 0000 0000 4E77 10FC DA00 0921 4F77 | ......Nw.....!Ow
+00000170 | 0000 4E77 0200 0000 0000 0000 0000 0000 | ..Nw............
+00000180 | 24FC DA00 00E0 FD7F 30FC DA00 A711 907C | $.......0......|
+00000190 | 0000 4E77 0100 0000 0000 0000 00E0 FD7F | ..Nw............
+000001A0 | 0000 0000 302B 2400 A4FC DA00 00A0 FD7F | ....0+$.........
+000001B0 | A4FC DA00 948E 917C 54FC DA00 878F 917C | .......|T......|
+000001C0 | 00A0 FD7F 00E0 FD7F 0000 0000 1400 0000 | ................
+000001D0 | 0100 0000 0000 0000 0000 0000 1000 0000 | ................
+000001E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001F0 | 0000 0000 0000 0000 00E0 FD7F C120 4F77 | ............. Ow
+00000200 | A41E 2400 48FC DA00 0000 0000 0CFD DA00 | ..$.H...........
+00000210 | 18EE 907C D08E 917C FFFF FFFF 748E 917C | ...|...|....t..|
+00000220 | C4E8 907C FA8D 917C 30FD DA00 18EE 907C | ...|...|0......|
+00000230 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000240 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000250 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000260 | 0000 0000 00A0 FD7F 0000 0000 0000 0000 | ................
+00000270 | 0000 0000 0000 0000 0000 0000 B0FC DA00 | ................
+00000280 | 0000 0000 FFFF FFFF 18EE 907C 008E 917C | ...........|...|
+00000290 | FFFF FFFF FA8D 917C 25D6 907C CFEA 907C | .......|%..|...|
+000002A0 | 30FD DA00 0100 0000 1700 0100 0000 0000 | 0...............
+000002B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002C0 | 0000 0000 0000 0000 B46A 68F9 CC26 5180 | .........jh..&Q.
+000002D0 | 0000 0000 0000 4E77 00A7 3BC0 48A0 59E1 | ......Nw..;.H.Y.
+000002E0 | B06A 68F9 E846 7481 046B 68F9 4864 EE80 | .jh..Ft..kh.Hd..
+000002F0 | 00A7 3BC0 48A0 59E1 602D 5EE1 14C9 42E1 | ..;.H.Y.`-^...B.
+00000300 | 0000 0000 0100 0000 F06A 68F9 F848 5E80 | .........jh..H^.
+00000310 | 602D 5EE1 0E00 0000 0000 0000 944B 5E80 | `-^..........K^.
+00000320 | 0000 0000 736B 68F9 0000 0000 0001 5080 | ....skh.......P.
+00000330 | 0000 0000 0000 0000 3800 0000 2300 0000 | ........8...#...
+00000340 | 2300 0000 3CFB 1200 18EE 907C 0000 0000 | #...<......|....
+00000350 | 4CFB 1200 3815 917C 5950 4000 EB06 917C | L...8..|YP@....|
+00000360 | 5608 817C 1B00 0000 0002 0000 FCFF DA00 | V..|............
+00000370 | 2300 0000 6740 5B0A A96B 68F9 C87C 5EE1 | #...g@[..kh..|^.
+00000380 | 8059 9C81 0C00 0000 1893 5580 1093 5580 | .Y........U...U.
+00000390 | E88F 2200 FFFF FFFF 1C6B 68F9 CF0A 5B80 | .."......kh...[.
+000003A0 | F8F3 2300 3893 5580 0000 0000 C87C 5EE1 | ..#.8.U......|^.
+000003B0 | E07C 5EE1 C46B 68F9 C87C 5EE1 CC7C 5EE1 | .|^..kh..|^..|^.
+000003C0 | 8059 9C81 2C13 5B80 302F 9181 4000 0000 | .Y..,.[.0/..@...
+000003D0 | 8059 9C81 0000 0000 0100 0000 E846 7481 | .Y...........Ft.
+000003E0 | E048 7481 4800 60C0 C402 0000 C302 0000 | .Ht.H.`.........
+000003F0 | 003C 88C0 0000 0000 C06B 68F9 0020 9F81 | .<.......kh.. ..
+00000400 | FE42 5480                               | .BT.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 9851:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 434F 4D50 5554 4552 | ........COMPUTER
+00000010 | 4E41 4D45 0000 0000 0000 0000 B860 9181 | NAME.........`..
+00000020 | A07D 7981 017E 7981 0000 0000 D8FE 3FC0 | .}y..~y.......?.
+00000030 | 0000 0000 0000 0000 0000 1000 AF0B 0000 | ................
+00000040 | 6C7E 7981 FFFF BA00 A07D 7981 0000 0000 | l~y......}y.....
+00000050 | 0000 0000 0000 BB00 406B 06F8 0000 0000 | ........@k......
+00000060 | FFFF FFFF 1050 5380 00B0 FD7F FFFF FFFF | .....PS.........
+00000070 | AC75 5A80 08C8 5380 FFFF FFFF B86C 06F8 | .uZ...S......l..
+00000080 | BC6C 06F8 0080 0000 5769 6E64 6F77 7320 | .l......Windows
+00000090 | 5850 00F8 D99A 4F80 E19A 4F80 9C56 8F81 | XP....O...O..V..
+000000A0 | 3055 8F81 6455 8F81 B860 9181 8683 6380 | 0U..dU...`....c.
+000000B0 | A07D 7981 3055 8F81 00B0 FD7F 846C 06F8 | .}y.0U.......l..
+000000C0 | 2C01 5080 0000 0000 3235 3620 4D42 0000 | ,.P.....256 MB..
+000000D0 | 0000 0000 0000 0000 30D0 4F80 0000 0000 | ........0.O.....
+000000E0 | 0000 0000 ECD0 4F80 3239 3939 204D 487A | ......O.2999 MHz
+000000F0 | 006D 06F8 B5B3 4F80 A07D 7981 0103 6781 | .m....O..}y...g.
+00000100 | 0000 0000 A07D 7981 5669 70B0 E600 0000 | .....}y.Vip.....
+00000110 | 0000 0000 0000 0000 1401 5080 9C6C 06F8 | ..........P..l..
+00000120 | 350C 6D80 B0FF CA00 3647 4000 FFFF FFFF | 5.m.....6G@.....
+00000130 | 6D15 A571 0000 0000 0200 0000 0000 A571 | m..q...........q
+00000140 | 15C2 C277 0000 0000 F0FB CA00 6121 4F77 | ...w........a!Ow
+00000150 | BCFB CA00 0200 0000 D02B 2400 C871 A771 | .........+$..q.q
+00000160 | 7015 A571 FFFF FFFF 6D15 A571 1515 A571 | p..q....m..q...q
+00000170 | 0000 A571 0200 0000 0000 0000 0000 0000 | ...q............
+00000180 | 24FC CA00 00E0 FD7F 30FC CA00 A711 907C | $.......0......|
+00000190 | 0000 A571 0100 0000 0000 0000 00E0 FD7F | ...q............
+000001A0 | 0000 0000 D02B 2400 A4FC CA00 00B0 FD7F | .....+$.........
+000001B0 | A4FC CA00 948E 917C 54FC CA00 878F 917C | .......|T......|
+000001C0 | 00B0 FD7F 00E0 FD7F 0000 0000 1400 0000 | ................
+000001D0 | 0100 0000 0000 0000 0000 0000 1000 0000 | ................
+000001E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001F0 | 0000 0000 0000 0000 00E0 FD7F CD14 A571 | ...............q
+00000200 | A41E 2400 48FC CA00 0000 0000 0CFD CA00 | ..$.H...........
+00000210 | 18EE 907C D08E 917C FFFF FFFF 748E 917C | ...|...|....t..|
+00000220 | C4E8 907C FA8D 917C 30FD CA00 0000 0000 | ...|...|0.......
+00000230 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000240 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000250 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000260 | 0000 0000 00B0 FD7F 0000 0000 0000 0000 | ................
+00000270 | 0000 0000 0000 0000 0000 0000 B0FC CA00 | ................
+00000280 | 0000 0000 FFFF FFFF 18EE 907C 008E 917C | ...........|...|
+00000290 | FFFF FFFF FA8D 917C 25D6 907C CFEA 907C | .......|%..|...|
+000002A0 | 30FD CA00 0100 0000 1700 0100 0000 0000 | 0...............
+000002B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002C0 | 0000 0000 7C6A 06F8 3000 60C0 586A 06F8 | ....|j..0.`.Xj..
+000002D0 | 8CE9 5180 00F0 CA00 0100 0000 0000 0000 | ..Q.............
+000002E0 | 7865 00C0 0000 0000 0000 0000 0000 CB00 | xe..............
+000002F0 | 146B 06F8 DFF0 5180 7C6A 06F8 0000 0000 | .k....Q.|j......
+00000300 | 0000 0000 0000 0000 FFFF CA00 A07D 7981 | .............}y.
+00000310 | 0184 7581 0000 0000 7865 00C0 0000 0000 | ..u.....xe......
+00000320 | 086B 06F8 7549 5E80 483D 17E1 0000 0002 | .k..uI^.H=......
+00000330 | 546C 06F8 0000 0000 3800 0000 2300 0000 | Tl......8...#...
+00000340 | 2300 0000 0100 0000 0000 0000 0000 0000 | #...............
+00000350 | 0000 0000 0000 0000 2947 4000 0000 0000 | ........)G@.....
+00000360 | 5608 817C 1B00 0000 0002 0000 FCFF CA00 | V..|............
+00000370 | 2300 0000 3CFC CA01 0000 0000 0000 0000 | #...<...........
+00000380 | 0000 0000 0000 0000 306B 06F8 0063 9C81 | ........0k...c..
+00000390 | FD3D 5480 0000 1000 A07D 7981 9884 7581 | .=T......}y...u.
+000003A0 | 0000 0000 0100 0001 0000 0000 FFFF FF03 | ................
+000003B0 | 1832 0181 0000 0000 FC3C 88C0 987F 7981 | .2.......<....y.
+000003C0 | 3802 0000 646B 06F8 AAEC 5180 3802 0000 | 8...dk....Q.8...
+000003D0 | 987F 7981 00B0 FD7F 906B 06F8 F81F 60C0 | ..y......k....`.
+000003E0 | 6C6B 06F8 8CE9 5180 00B0 FD7F 0100 0000 | lk....Q.........
+000003F0 | 0000 0000 D8FE 3FC0 0000 0000 0000 0000 | ......?.........
+00000400 | 00C0 FD7F                               | ....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

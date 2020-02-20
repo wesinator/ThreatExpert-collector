@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 June 2016, 12:12:08</li>
+<li>Processing time: 5 min 51 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x42134B9219C7528324F45FC21025639A</li>
+<li>File SHA-1: 0x2F098292227DAA0DD53F88EFAF79C11CE9CEBAA7</li>
+<li>Filesize: 232,960 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\highworker.{2227A280-3AEA-1069-A2DE-08002B30309D}\bfvjkphyr.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">232,960 bytes</td>
+<td class="cell_1">MD5: 0x42134B9219C7528324F45FC21025639A<br/>SHA-1: 0x2F098292227DAA0DD53F88EFAF79C11CE9CEBAA7</td>
+<td class="cell_2"><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%ProgramFiles%\Common Files\highworker.{2227A280-3AEA-1069-A2DE-08002B30309D}</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,077,248 bytes</td></tr>
+<tr><td class="cell_1">bfvjkphyr.exe</td><td class="cell_1">%ProgramFiles%\Common Files\highworker.{2227A280-3AEA-1069-A2DE-08002B30309D}\bfvjkphyr.exe</td><td class="cell_2">1,077,248 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bfvjkphyr.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Win7zip</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{E33A32C7-8437-AA42-A967-28E6FD737A6F}</li>
+<li>HKEY_CURRENT_USER\Software\Win7zip</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>highworker = "%ProgramFiles%\Common Files\highworker.{2227A280-3AEA-1069-A2DE-08002B30309D}\bfvjkphyr.exe"</li>
+</ul>
+<br/>
+<em>so that bfvjkphyr.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bfvjkphyr.exe]</li><ul>
+<li>DisableExceptionChainValidation = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Win7zip]</li><ul>
+<li>Uuid = E3 3A 32 C7 84 37 AA 42 A9 67 28 E6 FD 73 7A 6F</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]</li><ul>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>highworker = "%ProgramFiles%\Common Files\highworker.{2227A280-3AEA-1069-A2DE-08002B30309D}\bfvjkphyr.exe"</li>
+</ul>
+<br/>
+<em>so that bfvjkphyr.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Win7zip]</li><ul>
+<li>Uuid = E3 3A 32 C7 84 37 AA 42 A9 67 28 E6 FD 73 7A 6F</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/poland.gif"></td>
+<td class="cell_2">Poland</td><tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>google.com</li>
+<li>highroller.pxnet.to</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">highroller.pxnet.to<td class="cell_2">666</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">highroller.pxnet.to</td><td class="cell_1">666</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 666:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 7362 6E2D 6164 6D69 6E2F | POST /sbn-admin/
+00000010 | 6F72 6465 722E 7068 7020 4854 5450 2F31 | order.php HTTP/1
+00000020 | 2E31 0D0A 436F 6E74 656E 742D 5479 7065 | .1..Content-Type
+00000030 | 3A20 6170 706C 6963 6174 696F 6E2F 782D | : application/x-
+00000040 | 7777 772D 666F 726D 2D75 726C 656E 636F | www-form-urlenco
+00000050 | 6465 640D 0A55 7365 722D 4167 656E 743A | ded..User-Agent:
+00000060 | 204D 6F7A 696C 6C61 2F35 2E30 2028 636F |  Mozilla/5.0 (co
+00000070 | 6D70 6174 6962 6C65 3B20 4D53 4945 2037 | mpatible; MSIE 7
+00000080 | 2E30 3B20 5769 6E64 6F77 7320 4E54 2035 | .0; Windows NT 5
+00000090 | 2E32 3B20 574F 5736 343B 202E 4E45 5420 | .2; WOW64; .NET
+000000A0 | 434C 5220 322E 302E 3530 3732 3629 0D0A | CLR 2.0.50726)..
+000000B0 | 486F 7374 3A20 6C6F 6361 6C68 6F73 743A | Host: localhost:
+000000C0 | 3636 360D 0A43 6F6E 7465 6E74 2D4C 656E | 666..Content-Len
+000000D0 | 6774 683A 2038 3936 0D0A 4361 6368 652D | gth: 896..Cache-
+000000E0 | 436F 6E74 726F 6C3A 206E 6F2D 6361 6368 | Control: no-cach
+000000F0 | 650D 0A0D 0A70 7330 3D44 3142 3031 4546 | e....ps0=D1B01EF
+00000100 | 4438 3230 3334 3533 3733 3139 4637 3741 | D82034537319F77A
+00000110 | 3737 4235 4134 4445 3234 4244 3530 3544 | 77B5A4DE24BD505D
+00000120 | 3133 4230 4438 4639 4432 3933 3945 4332 | 13B0D8F9D2939EC2
+00000130 | 4537 3743 3533 3744 4546 4538 3036 4536 | E77C537DEFE806E6
+00000140 | 3831 3037 4343 4637 4636 3841 3235 3946 | 8107CCF7F68A259F
+00000150 | 3235 4644 4241 3731 4146 3135 3644 3942 | 25FDBA71AF156D9B
+00000160 | 3144 3937 4645 4635 3626 7073 313D 3946 | 1D97FEF56&ps1=9F
+00000170 | 3733 3041 3337 3833 3541 4544 3039 4430 | 730A37835AED09D0
+00000180 | 4433 3335 3339 4439 3338 3035 3244 3142 | D33539D938052D1B
+00000190 | 3743 4439 3143 3344 3535 3935 4432 3244 | 7CD91C3D5595D22D
+000001A0 | 4642 3338 3737 4434 3533 3636 4231 3044 | FB3877D45366B10D
+000001B0 | 3531 3843 3431 4142 3241 4435 3844 4332 | 518C41AB2AD58DC2
+000001C0 | 3338 3835 4434 4438 3634 3942 4538 3641 | 3885D4D8649BE86A
+000001D0 | 3730 3135 3838 4433 3137 3731 4644 4341 | 701588D31771FDCA
+000001E0 | 3337 3732 3339 4132 4430 3836 3533 4237 | 377239A2D08653B7
+000001F0 | 3431 3537 3233 4442 4235 4332 3145 3142 | 415723DBB5C21E1B
+00000200 | 4645 3836 4437 3534 3133 3542 3641 4635 | FE86D754135B6AF5
+00000210 | 4141 4146 4135 3931 4137 3038 3131 3530 | AAAFA591A7081150
+00000220 | 3045 4437 3042 4545 4430 3837 3135 3031 | 0ED70BEED0871501
+00000230 | 3936 4237 4537 4246 4143 4543 3235 3234 | 96B7E7BFACEC2524
+00000240 | 4534 3346 3442 3135 4442 3133 4235 3544 | E43F4B15DB13B55D
+00000250 | 4341 4541 3932 3645 4335 3033 4637 3141 | CAEA926EC503F71A
+00000260 | 3141 3632 4343 3535 4239 4546 4330 2663 | 1A62CC55B9EFC0&c
+00000270 | 7331 3D35 4543 4338 3345 4134 3143 4345 | s1=5ECC83EA41CCE
+00000280 | 3945 4136 4643 4344 3645 4137 4143 4343 | 9EA6FCCD6EA7ACCC
+00000290 | 4245 4137 4343 4344 3445 4133 4443 4346 | BEA7CCCD4EA3DCCF
+000002A0 | 4645 4137 3443 4344 3545 4137 3843 4343 | FEA74CCD5EA78CCC
+000002B0 | 4145 4134 3143 4346 4145 4137 3243 4344 | AEA41CCFAEA72CCD
+000002C0 | 3445 4137 3043 4344 3645 4137 3343 4339 | 4EA70CCD6EA73CC9
+000002D0 | 3945 4135 4243 4344 3045 4137 3143 4344 | 9EA5BCCD0EA71CCD
+000002E0 | 4345 4136 4543 4345 3545 4137 3543 4344 | CEA6ECCE5EA75CCD
+000002F0 | 3045 4137 4143 4344 3145 4136 4143 4344 | 0EA7ACCD1EA6ACCD
+00000300 | 3645 4136 4643 4344 3245 4137 3843 4343 | 6EA6FCCD2EA78CCC
+00000310 | 4245 4133 3343 4343 3245 4132 4643 4338 | BEA33CCC2EA2FCC8
+00000320 | 4245 4132 4643 4338 4545 4135 4343 4338 | BEA2FCC8EEA5CCC8
+00000330 | 4245 4132 3543 4338 3945 4133 3043 4338 | BEA25CC89EA30CC8
+00000340 | 4145 4135 4343 4346 4345 4135 4343 4339 | AEA5CCCFCEA5CCC9
+00000350 | 3445 4132 4343 4338 3945 4132 4243 4338 | 4EA2CCC89EA2BCC8
+00000360 | 3045 4133 3043 4346 3845 4132 4643 4346 | 0EA30CCF8EA2FCCF
+00000370 | 4445 4135 3843 4339 3445 4132 4443 4338 | DEA58CC94EA2DCC8
+00000380 | 3145 4132 4443 4338 3945 4132 4643 4346 | 1EA2DCC89EA2FCCF
+00000390 | 4245 4132 4543 4338 3945 4132 4543 4338 | BEA2ECC89EA2ECC8
+000003A0 | 3945 4132 3443 4346 4445 4136 3043 4345 | 9EA24CCFDEA60CCE
+000003B0 | 3545 4137 4643 4344 4645 4136 4243 4344 | 5EA7FCCDFEA6BCCD
+000003C0 | 3345 4137 3643 4343 3945 4137 3543 4343 | 3EA76CCC9EA75CCC
+000003D0 | 3045 4136 4643 4339 3745 4137 3843 4343 | 0EA6FCC97EA78CCC
+000003E0 | 3145 4137 3843 4326 6373 323D 3734 4343 | 1EA78CC&cs2=74CC
+000003F0 | 4443 4541 3635 4343 4339 4541 3731 4343 | DCEA65CCC9EA71CC
+00000400 | 4436 4541 3646 4343 4443 4541 3333 4343 | D6EA6FCCDCEA33CC
+00000410 | 4443 4541 3635 4343 4443 4541 2663 7333 | DCEA65CCDCEA&cs3
+00000420 | 3D35 4543 4346 3645 4135 3043 4345 3945 | =5ECCF6EA50CCE9E
+00000430 | 4134 3843 4345 4445 4135 3843 4345 4245 | A48CCEDEA58CCEBE
+00000440 | 4135 3343 4346 3845 4135 3043 4346 4345 | A53CCF8EA50CCFCE
+00000450 | 4134 3143 4345 4345 4136 4543 4344 4345 | A41CCECEA6ECCDCE
+00000460 | 4136 4643 4346 3745 4137 4343 4344 3445 | A6FCCF7EA7CCCD4E
+00000470 | 4137 3843 43                            | A78CC
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

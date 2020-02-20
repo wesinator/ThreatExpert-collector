@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B, Virus:Win32/Virut.BN, Trojan.Win32.KillAV">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 April 2016, 21:36:44</li>
+<li>Processing time: 5 min 50 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x98292FDAF86786AD4C57ED82D03A513C</li>
+<li>File SHA-1: 0x5383375B9E37F83CEA78185530B57854EEFBF9E9</li>
+<li>Filesize: 114,717 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-bn.html" target="_blank">Virus:Win32/Virut.BN<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-killav.html" target="_blank">Trojan.Win32.KillAV<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>lenusma.gicp.net:19927</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>lenusma.gicp.net</li>
+<li>ilo.brenz.pl</li>
+<li>sahvny.com</li>
+<li>nvguvh.com</li>
+<li>euviaw.com</li>
+<li>iiynoi.com</li>
+<li>axpnzn.com</li>
+<li>qoikmg.com</li>
+<li>xiilic.com</li>
+<li>hciyrp.com</li>
+<li>bwvopu.com</li>
+<li>zpeeye.com</li>
+<li>oxbtek.com</li>
+<li>ant.trenz.pl</li>
+<li>iphnqw.com</li>
+<li>nfqsfj.com</li>
+<li>jcyguw.com</li>
+<li>loojcu.com</li>
+<li>pxeyii.com</li>
+<li>hyauuj.com</li>
+<li>gxoeao.com</li>
+<li>nqawsa.com</li>
+<li>jqyhsn.com</li>
+<li>detmdx.com</li>
+<li>kiwvxu.com</li>
+<li>wvhzer.com</li>
+<li>hgoyrq.com</li>
+<li>ukubcb.com</li>
+<li>yfkeca.com</li>
+<li>zbkbhk.com</li>
+<li>mehdvy.com</li>
+<li>zvyhtw.com</li>
+<li>yhvhed.com</li>
+<li>ahkinf.com</li>
+<li>duutpx.com</li>
+<li>xsbahk.com</li>
+<li>ilgpms.com</li>
+<li>movyaw.com</li>
+<li>rmzalu.com</li>
+<li>ywojux.com</li>
+<li>skiogr.com</li>
+<li>jouzdo.com</li>
+<li>alsuca.com</li>
+<li>ziqlwe.com</li>
+<li>enmcoa.com</li>
+<li>snbaou.com</li>
+<li>ndaqzh.com</li>
+<li>unxman.com</li>
+<li>yhuoyb.com</li>
+<li>uryyzx.com</li>
+<li>jkikdo.com</li>
+<li>lyvooc.com</li>
+<li>rhlzoj.com</li>
+<li>ebudip.com</li>
+<li>ivnour.com</li>
+<li>aususj.com</li>
+<li>eugdgu.com</li>
+<li>kzqprc.com</li>
+<li>xumsxt.com</li>
+<li>ditzio.com</li>
+<li>pwlmie.com</li>
+<li>rllrry.com</li>
+<li>avzvsa.com</li>
+<li>wyeffw.com</li>
+<li>pmjwmd.com</li>
+<li>uysaoa.com</li>
+<li>gaqkag.com</li>
+<li>muljie.com</li>
+<li>hirkxj.com</li>
+<li>ovqqui.com</li>
+<li>yucddu.com</li>
+<li>yeldyb.com</li>
+<li>mzveus.com</li>
+<li>ykaimp.com</li>
+<li>gpaqod.com</li>
+<li>miseek.com</li>
+<li>filyqe.com</li>
+<li>vhdovd.com</li>
+<li>wdfkum.com</li>
+<li>ebnqai.com</li>
+<li>ayoyjk.com</li>
+<li>tienit.com</li>
+<li>eushqy.com</li>
+<li>mugoar.com</li>
+<li>lbooya.com</li>
+<li>mjielp.com</li>
+<li>wspkma.com</li>
+<li>ushiea.com</li>
+<li>irvtku.com</li>
+<li>qqjdim.com</li>
+<li>dumcye.com</li>
+<li>owqdlv.com</li>
+<li>xicyob.com</li>
+<li>duysqc.com</li>
+<li>lkwclo.com</li>
+<li>abwiop.com</li>
+<li>mujyhy.com</li>
+<li>gyfnxx.com</li>
+<li>mvfieq.com</li>
+<li>ibqczl.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">lenusma.gicp.net<td class="cell_2">19927</td><tr>
+<tr><td class="cell_1">sahvny.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">88.198.69.43<td class="cell_2">80</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 19927:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | C300 0000 F400 0000 7B9E 4E83 38CD 3284 | ........{.N.8.2.
+00000010 | 8384 8211 891B 855B 8683 8385 0C40 06A5 | .......[.....@..
+00000020 | 1296 6427 AF2B 0620 2566 2A1D 33A2 0109 | ..d'.+. %f*.3...
+00000030 | A11D 1572 E79D 5AE5 04C7 718C 057F E871 | ...r..Z...q....q
+00000040 | 5C2F D32D 1458 5908 62B3 0A4C 80CA 3132 | \/.-.XY.b..L..12
+00000050 | E440 F59C 00CA 2BB8 8932 58C4 1D66 0804 | .@....+..2X..f..
+00000060 | B223 3845 1840 7AA6 7888 304C 038A 4380 | .#8E.@z.x.0L..C.
+00000070 | 08D8 0D0C 8C8C 0CDB B919 180C 1910 7A27 | ..............z'
+00000080 | B88B 80ED AD07 CA3A E7E7 1694 96A4 16F9 | .......:........
+00000090 | 25E6 A632 C41F 66B0 9F3D B1E6 C681 E935 | %..2..f..=.....5
+000000A0 | AF67 0169 4947 860D 812D 0CFF FF03 351E | .g.iIG...-....5.
+000000B0 | F85B BFC1 4485 4191 6162 0D3F 900B 003E | .[..D.A.ab.?...>
+000000C0 | 163B 8E                                 | .;.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | C300 0000 F400 0000 7B9E 4E83 38CD 3284 | ........{.N.8.2.
+00000010 | 8384 8211 891B 855B 8683 8385 0C40 06A5 | .......[.....@..
+00000020 | 1296 6427 AF2B 0620 2566 2A1D 33A2 0109 | ..d'.+. %f*.3...
+00000030 | A11D 1572 E79D 5AE5 04C7 718C 057F E871 | ...r..Z...q....q
+00000040 | 5C2F D32D 1458 5908 62B3 0A4C 80CA 3132 | \/.-.XY.b..L..12
+00000050 | E440 F59C 00CA 2BB8 8932 58C4 1D66 0804 | .@....+..2X..f..
+00000060 | B223 3845 1840 7AA6 7888 304C 038A 4380 | .#8E.@z.x.0L..C.
+00000070 | 08D8 0D0C 8C8C 0CDB B919 180C 1910 7A27 | ..............z'
+00000080 | B88B 80ED AD07 CA3A E7E7 1694 96A4 16F9 | .......:........
+00000090 | 25E6 A632 C41F 66B0 9F3D B1E6 C681 E935 | %..2..f..=.....5
+000000A0 | AF67 0169 4947 860D 812D 0CFF FF03 351E | .g.iIG...-....5.
+000000B0 | F85B BFC1 4485 4191 6162 0D3F 900B 003E | .[..D.A.ab.?...>
+000000C0 | 163B 8E                                 | .;.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

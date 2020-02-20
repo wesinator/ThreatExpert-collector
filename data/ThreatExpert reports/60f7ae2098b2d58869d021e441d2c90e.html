@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Rustock.A, Trojan-Mailfinder.Win32.Mailbot.az, Spam-Mailbot, Mal/EncPk-DT, Trojan:Win32/Meredrop, Trojan.SpamTool.EH, Win32/IRCBot.worm.variant">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Rustock.A, Trojan-Mailfinder.Win32.Mailbot.az, Spam-Mailbot..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 3 June 2015, 21:42:21</li>
+<li>Processing time: 5 min 51 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x60F7AE2098B2D58869D021E441D2C90E</li>
+<li>File SHA-1: 0x7A9B9E9B76E581FAA65936E935CC9D92C263A48B</li>
+<li>Filesize: 66,686 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-rustock-a.html" target="_blank">Backdoor.Rustock.A<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-mailfinder-win32-mailbot-az.html" target="_blank">Trojan-Mailfinder.Win32.Mailbot.az<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/spam-mailbot.html" target="_blank">Spam-Mailbot<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-encpk-dt.html" target="_blank">Mal/EncPk-DT<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-meredrop.html" target="_blank">Trojan:Win32/Meredrop<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Trojan.SpamTool.EH [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-ircbot-worm-variant.html" target="_blank">Win32/IRCBot.worm.variant<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+<li><em>packed with: </em>Yoda [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Contains characteristics a SPAM bot, backdoor trojan, and a rootkit. The backdoor component allows the remote hacker to download/install additional components and instruct the bot to launch massive SPAM attacks from the compromised system.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new memory pages created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">24,576 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">94,208 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>google.com</li>
+<li>www.google.com</li>
+<li>image.nextbanner.net</li>
+<li>ftp.icq.com</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://www.google.com/search?hl=en&amp;q=download+crack</li>
+<li>http://ftp.icq.com/pub/ICQ_Win95_98_NT4/ICQ_5/icq5_setup.exe</li>
+<li>http://www.google.com/search?hl=en&amp;q=games+soft</li>
+<li>http://www.google.com/search?hl=en&amp;q=politic+book</li>
+<li>http://www.google.com/search?hl=en&amp;q=love</li>
+<li>http://www.google.com/search?hl=en&amp;q=processor+leave+book</li>
+<li>http://www.google.com/search?hl=en&amp;q=news</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 3 June 2015 21:50:39</li>
+<li>Processing time: 5 min 47 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0xD84469DED4FB838A5839E05829A3304A</li>
+<li>File SHA-1: 0x0BC5DCCB71ACFDF24938D3603C711E91390DCD66</li>
+<li>Filesize: 6,064,640 bytes</li>
+<li>Packer info: <em>packed with: </em>WiseSFXDropper [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=26fece0f-0b31-4a9b-b977-bf2f4c3f37f7&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">GLB1.tmp</td><td class="cell_1">%Temp%\GLB1.tmp</td><td class="cell_2">28,672 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\ICQLiteMenu</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIME\Database\Content Type\application/x-icq</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uin</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\{B863453A-26C3-4e1f-A54D-A2CD196348E9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ICQLite</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ToolbarICQToolbar.ICQToolbarObjectIEToolbar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Code Store Database</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ\DefaultPrefs</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ\ICQLite</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ\NewOwners</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\&amp;ICQ Toolbar Search</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Runonce</li>
+<li>HKEY_CURRENT_USER\Software\ICQToolbar</li>
+<li>HKEY_CURRENT_USER\Software\ICQToolbar\IEToolbar</li>
+<li>HKEY_CURRENT_USER\Software\ICQToolbar\IEToolbar\Historysearch</li>
+<li>HKEY_CURRENT_USER\Software\ICQToolbar\IEToolbar\tb_items</li>
+<li>HKEY_CURRENT_USER\Software\Mirabilis</li>
+<li>HKEY_CURRENT_USER\Software\Mirabilis\ICQ</li>
+<li>HKEY_CURRENT_USER\Software\Mirabilis\ICQ\NewOwners</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\TypeLib</li>
+<li>HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.Current</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "ToolbarICQToolbar.ICQToolbarObject"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\TypeLib]</li><ul>
+<li>(Default) = "{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\ProgID]</li><ul>
+<li>(Default) = "ToolbarICQToolbar.ICQToolbarObject.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\ICQToolbar\toolbaru.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{855F3B16-6D32-4fe6-8A56-BBB695989046}]</li><ul>
+<li>(Default) = "ICQ  Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\ICQLiteMenu]</li><ul>
+<li>(Default) = "{73B24247-042E-4EF5-ADC2-42F62E6FD654}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\TypeLib]</li><ul>
+<li>(Default) = "{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{7558E739-8E7C-44BB-BCE7-1BF0D72B7026}]</li><ul>
+<li>(Default) = "ISoftomateObj"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIME\Database\Content Type\application/x-icq]</li><ul>
+<li>Extension = ".uin"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\ICQToolbar\toolbaru.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%ProgramFiles%\ICQToolbar\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{77D6DDFA-7834-4541-B2B3-A8B0FB0E3924}\1.0]</li><ul>
+<li>(Default) = "ICQ 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.uin]</li><ul>
+<li>Content Type = "application/x-icq"</li>
+<li>(Default) = "icquser"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar\CurVer]</li><ul>
+<li>(Default) = "ICQ.IEToolbar.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar\CLSID]</li><ul>
+<li>(Default) = "{855F3B16-6D32-4fe6-8A56-BBB695989046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar]</li><ul>
+<li>(Default) = "ICQ Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar.1\CLSID]</li><ul>
+<li>(Default) = "{855F3B16-6D32-4fe6-8A56-BBB695989046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ICQ.IEToolbar.1]</li><ul>
+<li>(Default) = "ICQ Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\shell\open\command]</li><ul>
+<li>(Default) = "%ProgramFiles%\ICQLite\ICQLRun.exe %1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\ICQLite\ICQLite.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\icquser]</li><ul>
+<li>(Default) = "ICQ User"</li>
+<li>EditFlags = 00 00 01 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject\CurVer]</li><ul>
+<li>(Default) = "ToolbarICQToolbar.ICQToolbarObject.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject\CLSID]</li><ul>
+<li>(Default) = "{855F3B16-6D32-4fe6-8A56-BBB695989046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject]</li><ul>
+<li>(Default) = "ICQ  Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject.1\CLSID]</li><ul>
+<li>(Default) = "{855F3B16-6D32-4fe6-8A56-BBB695989046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ToolbarICQToolbar.ICQToolbarObject.1]</li><ul>
+<li>(Default) = "ICQ  Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\{B863453A-26C3-4e1f-A54D-A2CD196348E9}]</li><ul>
+<li>(Default) = ""</li>
+<li>ButtonText = "ICQ Lite"</li>
+<li>MenuText = "ICQ Lite"</li>
+<li>Default Visible = "YES"</li>
+<li>Exec = "%ProgramFiles%\ICQLite\ICQLite.exe"</li>
+<li>Icon = "%ProgramFiles%\ICQLite\ICQLite.exe,1040"</li>
+<li>HotIcon = "%ProgramFiles%\ICQLite\ICQLite.exe,1040"</li>
+<li>clsid = "{1FBA04EE-3024-11D2-8F1F-0000F87ABD16}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Toolbar]</li><ul>
+<li>{855F3B16-6D32-4fe6-8A56-BBB695989046} = 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Accepted Documents]</li><ul>
+<li>icq = "application/x-icq"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>ICQ Lite = ""%ProgramFiles%\ICQLite\ICQLite.exe" -minimize"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]</li><ul>
+<li>{73B24247-042E-4EF5-ADC2-42F62E6FD654} = "ICQ Lite Shell Extension"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ICQLite]</li><ul>
+<li>DisplayName = "ICQ 5.1"</li>
+<li>UninstallString = "%ProgramFiles%\ICQLite\ICQLiteUninstall.EXE"</li>
+<li>DisplayIcon = "%ProgramFiles%\ICQLite\ICQLiteUninstall.EXE"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ToolbarICQToolbar.ICQToolbarObjectIEToolbar]</li><ul>
+<li>DisplayName = "ICQ  Toolbar"</li>
+<li>UninstallString = "regsvr32 /u /s "%ProgramFiles%\ICQToolbar\toolbaru.dll" "</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ\ICQLite]</li><ul>
+<li>SRPKey = "Yes"</li>
+<li>LiteInterOpActive = 0x00000001</li>
+<li>FileName = "%ProgramFiles%\ICQLite\Skin\icqstd.skn"</li>
+<li>SmileyFilePath = "%ProgramFiles%\ICQLite\Smilies"</li>
+<li>SoundFilePath = "%ProgramFiles%\ICQLite\Sounds"</li>
+<li>NewInstall = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Mirabilis\ICQ\DefaultPrefs]</li><ul>
+<li>CBPath = "cb.icq.com"</li>
+<li>Download URL = "web.icq.com/download"</li>
+<li>LastInstallKey = "{79C4C226-5E49-420B-B4C6-E306AB4B067E}"</li>
+<li>SRPKey = "Yes"</li>
+<li>ICQLite Version = "2052"</li>
+<li>LiteDistID = "1085"</li>
+<li>LiteBuildID = "3000"</li>
+<li>InstallMode = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Extensions\CmdMapping]</li><ul>
+<li>{B863453A-26C3-4e1f-A54D-A2CD196348E9} = 0x00002001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Prev Search Page = "http://google.icq.com"</li>
+<li>Prev Search Bar = "http://google.icq.com/search/search_frame.php"</li>
+<li>Prev Use Search Asst = "no"</li>
+<li>Prev Use Custom Search URL = 0x00000001</li>
+<li>Use Search Asst = "no"</li>
+<li>Search Bar = "http://google.icq.com/search/search_frame.php"</li>
+<li>Use Custom Search URL = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{855F3B16-6D32-4FE6-8A56-BBB695989046} = 16 3B 5F 85 32 6D E6 4F 8A 56 BB B6 95 98 90 46</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]</li><ul>
+<li>{855F3B16-6D32-4fe6-8A56-BBB695989046} = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\&ICQ Toolbar Search]</li><ul>
+<li>(Default) = "res://%ProgramFiles%\ICQToolbar\toolbaru.dll/SEARCH.HTML"</li>
+<li>contexts = 0x00000010</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Runonce]</li><ul>
+<li>ICQ Lite = "%ProgramFiles%\icqlite\icqlite.exe -trayboot"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\ICQToolbar\IEToolbar\tb_items]</li><ul>
+<li>tb_btn_WMAobqBE = 0x00000001</li>
+<li>tb_cmb_SVCgVyWG = 0x00000001</li>
+<li>tb_btn_WzTZbvBo = 0x00000001</li>
+<li>tb_btn_pYYczPfJ = 0x00000001</li>
+<li>tb_btn_dXGcGLlR = 0x00000001</li>
+<li>tb_btn_ZoomIn = 0x00000001</li>
+<li>tb_btn_ZoomOut = 0x00000001</li>
+<li>tb_btn_KVasNoxV = 0x00000001</li>
+<li>tb_btn_SendURL_M10_Y05_04 = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\ICQToolbar\IEToolbar]</li><ul>
+<li>ClientInstall = 0x00000001</li>
+<li>toolbar_id = "{78DE16C0-29EB-456b-8D45-26171E330E04}"</li>
+<li>toolbar_version = "1.2"</li>
+<li>s9072 = 0x00000000</li>
+<li>s9073 = 0x00000000</li>
+<li>s9074 = 0x00000000</li>
+<li>ToolbarIsFailed = 0x00000000</li>
+<li>corruptedMsg = "Invalid file. Please try to install later."</li>
+<li>uninstallMsg = "This will remove the ICQ Toolbar from your browser! Are you sure?"</li>
+<li>updateMsg = "This will update the ICQ Toolbar. Do you want to Continue?"</li>
+<li>autoUpdateMsg = "New version of ICQ Toolbar is available. Would you like to download and install the new version?"</li>
+<li>versionError = "Can not find current version information."</li>
+<li>connectionError = "Cannot establish connection."</li>
+<li>lastVersionMsg = "You already have the latest version of the ICQ Toolbar."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\TypeLib]</li><ul>
+<li>(Default) = "{56A868B0-0AD4-11CE-B03A-0020AF0BA770}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{56A868B4-0AD4-11CE-B03A-0020AF0BA770}]</li><ul>
+<li>(Default) = "IVideoWindow"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.Current]</li><ul>
+<li>(Default) = "%SystemRoot%\media\Windows XP Start.wav"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]</li><ul>
+<li>{CFBFAE00-17A6-11D0-99CB-00C04FD64497} = ""</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Extensions\CmdMapping]</li><ul>
+<li>NextId = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Search Page = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{0E5CBF21-D15F-11D0-8301-00AA005B4383} = </li>
+<li>ITBarLayout = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>ICQ_Wise_Mutex</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, PE_VIRUX.R-4, Troj/Dloadr-DNE, DDoS:Win32/Nitol.A, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, PE_VIRUX.R-4..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 April 2016, 04:16:39</li>
+<li>Processing time: 6 min 9 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x543EDBB04E488D427625B232239DB0BE</li>
+<li>File SHA-1: 0x87EB7F878796A552AC1D45855492ED7254D12A6B</li>
+<li>Filesize: 64,512 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li>PE_VIRUX.R-4 [Trend Micro]</li>
+<li>Troj/Dloadr-DNE [Sophos]</li>
+<li>DDoS:Win32/Nitol.A [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\ccuwco.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">64,512 bytes</td>
+<td class="cell_1">MD5: 0x543EDBB04E488D427625B232239DB0BE<br/>SHA-1: 0x87EB7F878796A552AC1D45855492ED7254D12A6B</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/>PE_VIRUX.R-4 [Trend Micro]<br/>Troj/Dloadr-DNE [Sophos]<br/>DDoS:Win32/Nitol.A [Microsoft]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+<li>%System%\ddeshare.exe</li>
+<li>%System%\defrag.exe</li>
+<li>%System%\dfrgfat.exe</li>
+<li>%System%\dfrgntfs.exe</li>
+<li>%System%\diantz.exe</li>
+<li>%System%\diskpart.exe</li>
+<li>%System%\diskperf.exe</li>
+<li>%System%\dllhst3g.exe</li>
+<li>%System%\dmadmin.exe</li>
+<li>%System%\dmremote.exe</li>
+<li>%System%\doskey.exe</li>
+<li>%System%\dplaysvr.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">ccuwco.exe</td><td class="cell_1">%System%\ccuwco.exe</td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ijopuiabcde Ghi</td><td class="cell_1">uhiouhoabcde Ghijklmn Pqrs</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\ccuwco.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "ijopuiabcde Ghi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000]</li><ul>
+<li>Service = "ijopuiabcde Ghi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "uhiouhoabcde Ghijklmn Pqrs"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_IJOPUIABCDE_GHI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_IJOPUIABCDE_GHI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ijopuiabcde Ghi]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\ccuwco.exe"</li>
+<li>DisplayName = "uhiouhoabcde Ghijklmn Pqrs"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "jiopjipbcdefgh Jklmnop Rstuvwxy Bcd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "ijopuiabcde Ghi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI\0000]</li><ul>
+<li>Service = "ijopuiabcde Ghi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "uhiouhoabcde Ghijklmn Pqrs"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IJOPUIABCDE_GHI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_IJOPUIABCDE_GHI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ijopuiabcde Ghi]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\ccuwco.exe"</li>
+<li>DisplayName = "uhiouhoabcde Ghijklmn Pqrs"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "jiopjipbcdefgh Jklmnop Rstuvwxy Bcd"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\ccuwco.exe</li>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>ijopuiabcde Ghi</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">ccuwco.exe (%System%\ccuwco.exe)</td></tr>
+<tr><td class="cell_1">1038</td><td class="cell_1">TCP</td><td class="cell_2">ccuwco.exe (%System%\ccuwco.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>180.97.215.19</li>
+<li>ilo.brenz.pl</li>
+<li>tanjoe.com</li>
+<li>dxennd.com</li>
+<li>ktyyyw.com</li>
+<li>zrqhxe.com</li>
+<li>vjalwj.com</li>
+<li>tnyvwt.com</li>
+<li>fbwjuz.com</li>
+<li>tvdynk.com</li>
+<li>yvuboy.com</li>
+<li>uabmio.com</li>
+<li>lohpcr.com</li>
+<li>ant.trenz.pl</li>
+<li>ozeqhi.com</li>
+<li>ubieuk.com</li>
+<li>bkyxap.com</li>
+<li>limiip.com</li>
+<li>xeoaca.com</li>
+<li>teoxyo.com</li>
+<li>mskpfs.com</li>
+<li>ilwtqj.com</li>
+<li>abbfbo.com</li>
+<li>ueqcod.com</li>
+<li>pxairi.com</li>
+<li>lkbvhw.com</li>
+<li>xklawo.com</li>
+<li>mayuoy.com</li>
+<li>ihayii.com</li>
+<li>mybhtm.com</li>
+<li>qruahi.com</li>
+<li>xkvirn.com</li>
+<li>fnuiza.com</li>
+<li>ozwmdr.com</li>
+<li>igdvjz.com</li>
+<li>yoyxco.com</li>
+<li>ertkuy.com</li>
+<li>sjplqv.com</li>
+<li>ykuvof.com</li>
+<li>mobblg.com</li>
+<li>bynhyj.com</li>
+<li>fwkatt.com</li>
+<li>xcgmaj.com</li>
+<li>uyinwh.com</li>
+<li>idjyva.com</li>
+<li>oyeupi.com</li>
+<li>lreiya.com</li>
+<li>hxjrza.com</li>
+<li>aufzxu.com</li>
+<li>gefarl.com</li>
+<li>vhnfzr.com</li>
+<li>oofpbx.com</li>
+<li>kzwshe.com</li>
+<li>ofybmc.com</li>
+<li>tkiqci.com</li>
+<li>lquoht.com</li>
+<li>uvmmve.com</li>
+<li>dneyix.com</li>
+<li>pqkaec.com</li>
+<li>jtivfv.com</li>
+<li>siaevq.com</li>
+<li>uoqyku.com</li>
+<li>ijteye.com</li>
+<li>zihkro.com</li>
+<li>bclagz.com</li>
+<li>vvxiwt.com</li>
+<li>nasaxu.com</li>
+<li>coihot.com</li>
+<li>wloihi.com</li>
+<li>qvpkeo.com</li>
+<li>amplyi.com</li>
+<li>yyogcl.com</li>
+<li>cfmrrh.com</li>
+<li>ekhvcm.com</li>
+<li>mpluci.com</li>
+<li>arfaui.com</li>
+<li>gtwikt.com</li>
+<li>eijkta.com</li>
+<li>nqqaqy.com</li>
+<li>oyarjo.com</li>
+<li>jyaany.com</li>
+<li>boroip.com</li>
+<li>zbyiat.com</li>
+<li>hlgopn.com</li>
+<li>ftnhln.com</li>
+<li>uzeevn.com</li>
+<li>ihkaua.com</li>
+<li>jeuneq.com</li>
+<li>jdmrdo.com</li>
+<li>eyaaqy.com</li>
+<li>ztzcnu.com</li>
+<li>aiswam.com</li>
+<li>djudpa.com</li>
+<li>vputkj.com</li>
+<li>hsammz.com</li>
+<li>yefpao.com</li>
+<li>oxbzxg.com</li>
+<li>ajoiqw.com</li>
+<li>fdijcm.com</li>
+<li>rcsasw.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">180.97.215.19<td class="cell_2">9993</td><tr>
+<tr><td class="cell_1">tanjoe.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">83.133.119.197<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">127.0.0.2</td><td class="cell_1">80</td><td class="cell_1">127.0.0.2</td><td class="cell_2">127.0.0.2</td></tr>
+<tr><td class="cell_1">127.0.0.3</td><td class="cell_1">80</td><td class="cell_1">127.0.0.3</td><td class="cell_2">127.0.0.3</td></tr>
+<tr><td class="cell_1">127.0.0.4</td><td class="cell_1">80</td><td class="cell_1">127.0.0.4</td><td class="cell_2">127.0.0.4</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9993:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 5769 6E20 5850 2053 | ........Win XP S
+00000010 | 5032 0000 0000 0000 0000 0000 0000 0000 | P2..............
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 3235 3620 4D42 0000 | ........256 MB..
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 312A 3239 3939 4D48 | ........1*2999MH
+00000070 | 7A00 0000 0000 0000 0000 0000 0000 0000 | z...............
+00000080 | 0000 0000 0000 0000 5631 2E30 2D31 3030 | ........V1.0-100
+00000090 | 3933 3000 0000 0000 0000 0000 0000 0000 | 930.............
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 0000 0000 0090 FD7F | ................
+000000D0 | 3011 F676 A41E 2400 48FC D700 0000 0000 | 0..v..$.H.......
+000000E0 | 0CFD D700 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+000000F0 | 748E 917C C4E8 907C FA8D 917C 30FD D700 | t..|...|...|0...
+00000100 | B700 0000 0000 0000 0000 0000 0000 0000 | ................
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000130 | 0000 0000 0000 0000 00A0 FD7F 0000 0000 | ................
+00000140 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000150 | B0FC D700 0000 0000 FFFF FFFF 18EE 907C | ...............|
+00000160 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+00000170 | CFEA 907C 30FD D700 0100 0000 1700 0100 | ...|0...........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 CA49 CDF9 984B CDF9 | .........I...K..
+000001A0 | FFFF FFFF 9D56 CDF9 FF56 CDF9 580A 95F7 | .....V...V..X...
+000001B0 | 0100 0000 CFE1 4E80 784F 6A81 0000 0000 | ......N.xOj.....
+000001C0 | 30FB 6781 A0A7 7481 3C0B 95F7 8B77 5780 | 0.g...t.<....wW.
+000001D0 | C40A 95F7 0020 9F81 FE42 5480 0900 0000 | ..... ...BT.....
+000001E0 | 0000 0000 0700 0000 5040 9F81 2826 28E1 | ........P@..(&(.
+000001F0 | 0500 0000 E80A 95F7 0020 9F81 FE42 5480 | ......... ...BT.
+00000200 | 0900 0000 0000 0000 0000 0000 3800 0000 | ............8...
+00000210 | 2300 0000 2300 0000 750B 817C B700 0000 | #...#...u..|....
+00000220 | 0000 0000 0000 0000 00CC FD7F 5041 4000 | ............PA@.
+00000230 | 0000 0000 5608 817C 1B00 0000 0002 0000 | ....V..|........
+00000240 | FCFF D700 2300 0000 6020 7A81 4463 1900 | ....#...` z.Dc..
+00000250 | A857 1900 0C0B 95F7 1E28 5380 FFFF FF03 | .W.......(S.....
+00000260 | BC10 0181 0000 0000 FC3C 88C0 987F 7981 | .........<....y.
+00000270 | 0903 0000 400B 95F7 AAEC 5180 0903 0000 | ....@.....Q.....
+00000280 | 987F 7981 00C0 FD7F 6C0B 95F7 F81F 60C0 | ..y.....l.....`.
+00000290 | 480B 95F7 8CE9 5180 00C0 FD7F 0100 0000 | H.....Q.........
+000002A0 | 0000 0000 E0FE 3FC0 0000 0000 0000 0000 | ......?.........
+000002B0 | 00D0 FD7F 040C 95F7 DFF0 5180 6C0B 95F7 | ..........Q.l...
+000002C0 | 0000 0000 0000 0000 0000 0000 A03D 9181 | .............=..
+000002D0 | A07D 7981 017E 7981 0000 0000 E0FE 3FC0 | .}y..~y.......?.
+000002E0 | 0500 0000 D8FF FFFF 900F 0600 F0BE 7781 | ..............w.
+000002F0 | E0BE 7781 2830 9F81 E074 8AE1 0600 0000 | ..w.(0...t......
+00000300 | D0FF FFFF 207A 7C81 6020 7A81 5020 7A81 | .... z|.` z.P z.
+00000310 | 5CBF 1900 2830 9F81 00C0 FD7F 0600 0000 | \...(0..........
+00000320 | A07D 7981 887D 7981 F80B 95F7 5C40 5480 | .}y..}y.....\@T.
+00000330 | 0000 0000 E874 8AE1 0000 0000 0100 0000 | .....t..........
+00000340 | 2830 9F81 FFFF FFFF 4602 0000 E209 5480 | (0......F.....T.
+00000350 | 240C 95F7 80D7 8F81 20F1 DFFF 1CD9 8F81 | $....... .......
+00000360 | 9C01 5080 F0D7 8F81 80D7 8F81 BE99 4F80 | ..P...........O.
+00000370 | ECD8 8F81 80D7 8F81 B4D7 8F81 4602 0000 | ............F...
+00000380 | 8683 6380 780D 8D81 80D7 8F81 00A0 FD7F | ..c.x...........
+00000390 | 840C 95F7 2C01 5080 0000 0000 0500 0000 | ....,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | 80D7 8F81 500D 95F7 F072 5C80 0800 2000 | ....P....r\... .
+000003D0 | 0100 0000 0000 0000 780D 8D81 DEFC 4F80 | ........x.....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9C0C 95F7 350C 6D80 0000 0000 B0FF D700 | ....5.m.........
+00000400 | 5A41 4000                               | ZA@.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8081:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 5769 6E20 5850 2053 | ........Win XP S
+00000010 | 5032 0000 0000 0000 0000 0000 0000 0000 | P2..............
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 3235 3620 4D42 0000 | ........256 MB..
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 312A 3239 3939 4D48 | ........1*2999MH
+00000070 | 7A00 0000 0000 0000 0000 0000 0000 0000 | z...............
+00000080 | 0000 0000 0000 0000 5631 2E30 2D31 3030 | ........V1.0-100
+00000090 | 3933 3000 0000 0000 0000 0000 0000 0000 | 930.............
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 0000 0000 0090 FD7F | ................
+000000D0 | 3011 F676 A41E 2400 48FC C700 0000 0000 | 0..v..$.H.......
+000000E0 | 0CFD C700 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+000000F0 | 748E 917C C4E8 907C FA8D 917C 30FD C700 | t..|...|...|0...
+00000100 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000130 | 0000 0000 0000 0000 00B0 FD7F 0000 0000 | ................
+00000140 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000150 | B0FC C700 0000 0000 FFFF FFFF 18EE 907C | ...............|
+00000160 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+00000170 | CFEA 907C 30FD C700 0100 0000 1700 0100 | ...|0...........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 7CCA 93F7 3000 60C0 | ........|...0.`.
+000001A0 | 58CA 93F7 8CE9 5180 00F0 C700 0100 0000 | X.....Q.........
+000001B0 | 0000 0000 F863 00C0 0000 0000 0000 0000 | .....c..........
+000001C0 | 0000 C800 14CB 93F7 DFF0 5180 7CCA 93F7 | ..........Q.|...
+000001D0 | 0000 0000 0000 0000 0000 0000 FFFF C700 | ................
+000001E0 | 780D 8D81 0177 7381 0000 0000 F863 00C0 | x....ws......c..
+000001F0 | 0000 0000 08CB 93F7 7549 5E80 30E0 28E1 | ........uI^.0.(.
+00000200 | 0000 0002 54CC 93F7 0000 0000 3800 0000 | ....T.......8...
+00000210 | 2300 0000 2300 0000 2916 1277 0000 0000 | #...#...)..w....
+00000220 | 0000 0000 0100 0000 0000 0000 5049 4000 | ............PI@.
+00000230 | 0000 0000 5608 817C 1B00 0000 0002 0000 | ....V..|........
+00000240 | FCFF C700 2300 0000 32FD C701 0000 0000 | ....#...2.......
+00000250 | 0000 0000 0000 0000 0000 0000 30CB 93F7 | ............0...
+00000260 | 0063 9C81 FD3D 5480 0000 1000 780D 8D81 | .c...=T.....x...
+00000270 | 2077 7381 0000 0000 0200 0001 0000 0000 |  ws.............
+00000280 | FFFF FF03 641C EB80 0000 0000 FC3C 88C0 | ....d........<..
+00000290 | 700F 8D81 F301 0000 64CB 93F7 AAEC 5180 | p.......d.....Q.
+000002A0 | F301 0000 700F 8D81 00B0 FD7F 90CB 93F7 | ....p...........
+000002B0 | F81F 60C0 6CCB 93F7 8CE9 5180 00B0 FD7F | ..`.l.....Q.....
+000002C0 | 0100 0000 0000 0000 D8FE 3FC0 0000 0000 | ..........?.....
+000002D0 | 0000 0000 00C0 FD7F 28CC 93F7 DFF0 5180 | ........(.....Q.
+000002E0 | 90CB 93F7 0000 0000 0000 0000 0000 0000 | ................
+000002F0 | F828 6C81 780D 8D81 010E 8D81 0000 0000 | .(l.x...........
+00000300 | D8FE 3FC0 0000 0000 0000 0000 0000 1000 | ..?.............
+00000310 | 7F0B 0000 440E 8D81 FFFF B700 780D 8D81 | ....D.......x...
+00000320 | 0000 0000 0000 0000 0000 B800 40CB 93F7 | ............@...
+00000330 | 0000 0000 FFFF FFFF 1050 5380 00B0 FD7F | .........PS.....
+00000340 | FFFF FFFF AC75 5A80 08C8 5380 FFFF FFFF | .....uZ...S.....
+00000350 | B8CC 93F7 BCCC 93F7 0080 0000 14CD 93F7 | ................
+00000360 | BC31 9081 24CC 93F7 D99A 4F80 E19A 4F80 | .1..$.....O...O.
+00000370 | 8C31 9081 2030 9081 5430 9081 F828 6C81 | .1.. 0..T0...(l.
+00000380 | 8683 6380 780D 8D81 2030 9081 00B0 FD7F | ..c.x... 0......
+00000390 | 84CC 93F7 2C01 5080 0000 0000 0500 0000 | ....,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | 2030 9081 50CD 93F7 B5B3 4F80 780D 8D81 |  0..P.....O.x...
+000003D0 | 01D9 8F81 0000 0000 780D 8D81 DEFC 4F80 | ........x.....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9CCC 93F7 350C 6D80 0000 0000 B0FF C700 | ....5.m.........
+00000400 | 5A49 4000                               | ZI@.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 5769 6E20 5850 2053 | ........Win XP S
+00000010 | 5032 0000 0000 0000 0000 0000 0000 0000 | P2..............
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 3235 3620 4D42 0000 | ........256 MB..
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 312A 3239 3939 4D48 | ........1*2999MH
+00000070 | 7A00 0000 0000 0000 0000 0000 0000 0000 | z...............
+00000080 | 0000 0000 0000 0000 5631 2E30 2D31 3030 | ........V1.0-100
+00000090 | 3933 3000 0000 0000 0000 0000 0000 0000 | 930.............
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 0000 0000 0090 FD7F | ................
+000000D0 | 3011 F676 A41E 2400 48FC D700 0000 0000 | 0..v..$.H.......
+000000E0 | 0CFD D700 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+000000F0 | 748E 917C C4E8 907C FA8D 917C 30FD D700 | t..|...|...|0...
+00000100 | B700 0000 0000 0000 0000 0000 0000 0000 | ................
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000130 | 0000 0000 0000 0000 00A0 FD7F 0000 0000 | ................
+00000140 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000150 | B0FC D700 0000 0000 FFFF FFFF 18EE 907C | ...............|
+00000160 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+00000170 | CFEA 907C 30FD D700 0100 0000 1700 0100 | ...|0...........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 CA49 CDF9 984B CDF9 | .........I...K..
+000001A0 | FFFF FFFF 9D56 CDF9 FF56 CDF9 580A 95F7 | .....V...V..X...
+000001B0 | 0100 0000 CFE1 4E80 784F 6A81 0000 0000 | ......N.xOj.....
+000001C0 | 30FB 6781 A0A7 7481 3C0B 95F7 8B77 5780 | 0.g...t.<....wW.
+000001D0 | C40A 95F7 0020 9F81 FE42 5480 0900 0000 | ..... ...BT.....
+000001E0 | 0000 0000 0700 0000 5040 9F81 2826 28E1 | ........P@..(&(.
+000001F0 | 0500 0000 E80A 95F7 0020 9F81 FE42 5480 | ......... ...BT.
+00000200 | 0900 0000 0000 0000 0000 0000 3800 0000 | ............8...
+00000210 | 2300 0000 2300 0000 750B 817C B700 0000 | #...#...u..|....
+00000220 | 0000 0000 0000 0000 00CC FD7F 5041 4000 | ............PA@.
+00000230 | 0000 0000 5608 817C 1B00 0000 0002 0000 | ....V..|........
+00000240 | FCFF D700 2300 0000 6020 7A81 4463 1900 | ....#...` z.Dc..
+00000250 | A857 1900 0C0B 95F7 1E28 5380 FFFF FF03 | .W.......(S.....
+00000260 | BC10 0181 0000 0000 FC3C 88C0 987F 7981 | .........<....y.
+00000270 | 0903 0000 400B 95F7 AAEC 5180 0903 0000 | ....@.....Q.....
+00000280 | 987F 7981 00C0 FD7F 6C0B 95F7 F81F 60C0 | ..y.....l.....`.
+00000290 | 480B 95F7 8CE9 5180 00C0 FD7F 0100 0000 | H.....Q.........
+000002A0 | 0000 0000 E0FE 3FC0 0000 0000 0000 0000 | ......?.........
+000002B0 | 00D0 FD7F 040C 95F7 DFF0 5180 6C0B 95F7 | ..........Q.l...
+000002C0 | 0000 0000 0000 0000 0000 0000 A03D 9181 | .............=..
+000002D0 | A07D 7981 017E 7981 0000 0000 E0FE 3FC0 | .}y..~y.......?.
+000002E0 | 0500 0000 D8FF FFFF 900F 0600 F0BE 7781 | ..............w.
+000002F0 | E0BE 7781 2830 9F81 E074 8AE1 0600 0000 | ..w.(0...t......
+00000300 | D0FF FFFF 207A 7C81 6020 7A81 5020 7A81 | .... z|.` z.P z.
+00000310 | 5CBF 1900 2830 9F81 00C0 FD7F 0600 0000 | \...(0..........
+00000320 | A07D 7981 887D 7981 F80B 95F7 5C40 5480 | .}y..}y.....\@T.
+00000330 | 0000 0000 E874 8AE1 0000 0000 0100 0000 | .....t..........
+00000340 | 2830 9F81 FFFF FFFF 4602 0000 E209 5480 | (0......F.....T.
+00000350 | 240C 95F7 80D7 8F81 20F1 DFFF 1CD9 8F81 | $....... .......
+00000360 | 9C01 5080 F0D7 8F81 80D7 8F81 BE99 4F80 | ..P...........O.
+00000370 | ECD8 8F81 80D7 8F81 B4D7 8F81 4602 0000 | ............F...
+00000380 | 8683 6380 780D 8D81 80D7 8F81 00A0 FD7F | ..c.x...........
+00000390 | 840C 95F7 2C01 5080 0000 0000 0500 0000 | ....,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | 80D7 8F81 500D 95F7 F072 5C80 0800 2000 | ....P....r\... .
+000003D0 | 0100 0000 0000 0000 780D 8D81 DEFC 4F80 | ........x.....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9C0C 95F7 350C 6D80 0000 0000 B0FF D700 | ....5.m.........
+00000400 | 5A41 4000                               | ZA@.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

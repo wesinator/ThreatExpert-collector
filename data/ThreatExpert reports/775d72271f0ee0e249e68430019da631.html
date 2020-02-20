@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 April 2016, 17:23:17</li>
+<li>Processing time: 6 min 15 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x775D72271F0EE0E249E68430019DA631</li>
+<li>File SHA-1: 0xBDD41D507EF9B32825350907F770F9F7E290EC0B</li>
+<li>Filesize: 1,048,576 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\LSinglePro\cfg.ini
+</td>
+<td class="cell_1">379 bytes</td>
+<td class="cell_2">MD5: 0xFE27F133C292F775C6ABCC30011293E2<br/>SHA-1: 0x756B5A1556C6F54EED8CFF5CC2E9CD015BD8638D</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\LSinglePro\log.txt
+</td>
+<td class="cell_1">20,300 bytes</td>
+<td class="cell_2">MD5: 0xFA3CBAE243D8D8FD1F4C42D3894E7ED0<br/>SHA-1: 0x963380AE96639D5A27B46307CFFA3A4865559344</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%AppData%\LSinglePro\Temporary Internet Files\desktop.ini
+</td>
+<td class="cell_1">67 bytes</td>
+<td class="cell_2">MD5: 0x4A3DEB274BB5F0212C2419D3D8D08612<br/>SHA-1: 0xFA52F823B821155CF0EC527D52CE9B1390EC615E</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%AppData%\LSinglePro\TFExecuter4\cfg.ini
+</td>
+<td class="cell_1">220 bytes</td>
+<td class="cell_2">MD5: 0x56DC9F924668F7D52EF18B3674A33F06<br/>SHA-1: 0x270490FE847BE84F38C455CBAB2AF948781F1D09</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">1,048,576 bytes</td>
+<td class="cell_2">MD5: 0x775D72271F0EE0E249E68430019DA631<br/>SHA-1: 0xBDD41D507EF9B32825350907F770F9F7E290EC0B</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\LSinglePro</li>
+<li>%AppData%\LSinglePro\Temporary Internet Files</li>
+<li>%AppData%\LSinglePro\TFExecuter4</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,069,056 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog</li>
+<li>HKEY_CURRENT_USER\Software\CHtmlDialog\International</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>GuaZhuan = ""[file and pathname of the sample #1]" -autorun "</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\CHtmlDialog\International]</li><ul>
+<li>AutoDetect = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1048</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1049</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">ap2.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap2.liuliangbao.cn</td><td class="cell_2">ap2.liuliangbao.cn</td></tr>
+<tr><td class="cell_1">ap3.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap3.liuliangbao.cn</td><td class="cell_2">ap3.liuliangbao.cn</td></tr>
+<tr><td class="cell_1">ap4.sap1000.com</td><td class="cell_1">8011</td><td class="cell_1">ap4.sap1000.com</td><td class="cell_2">ap4.sap1000.com</td></tr>
+<tr><td class="cell_1">ap1.liuliangbao.cn</td><td class="cell_1">80</td><td class="cell_1">ap1.liuliangbao.cn</td><td class="cell_2">ap1.liuliangbao.cn</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=FA29D6B7A2324D9FACAAA73A300AFAD9&amp;rd=20150</li>
+<li>redirect/CFGUpdate?number=6.5&amp;checksum=&amp;cid=731514465A5540F281606509679086BF&amp;rd=7162</li>
+<li>clt/jobid/658668c75be1d166f1e352047817d60e103dfe6a9a3c5e73e06a37af6385645825b815ff760244ed06749aa5696c95afb9d7984a92af8abe1818fa0e3fee3137656db6d7ec7b806ce75ac23429f16bddfdb2865b174aae736886540780125f</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8011:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6173 2F32 2F68 312F 2048 | POST /as/2/h1/ H
+00000010 | 5454 502F 312E 310D 0A41 6363 6570 742D | TTP/1.1..Accept-
+00000020 | 456E 636F 6469 6E67 3A20 677A 6970 2C20 | Encoding: gzip,
+00000030 | 6465 666C 6174 650D 0A43 6F6E 7465 6E74 | deflate..Content
+00000040 | 2D54 7970 653A 2061 7070 6C69 6361 7469 | -Type: applicati
+00000050 | 6F6E 2F78 2D77 7777 2D66 6F72 6D2D 7572 | on/x-www-form-ur
+00000060 | 6C65 6E63 6F64 6564 0D0A 5573 6572 2D41 | lencoded..User-A
+00000070 | 6765 6E74 3A20 6C6C 622F 312E 312E 3635 | gent: llb/1.1.65
+00000080 | 2E38 3133 0D0A 486F 7374 3A20 6C6F 6361 | .813..Host: loca
+00000090 | 6C68 6F73 743A 3830 3131 0D0A 436F 6E74 | lhost:8011..Cont
+000000A0 | 656E 742D 4C65 6E67 7468 3A20 3230 320D | ent-Length: 202.
+000000B0 | 0A43 6F6E 6E65 6374 696F 6E3A 204B 6565 | .Connection: Kee
+000000C0 | 702D 416C 6976 650D 0A43 6163 6865 2D43 | p-Alive..Cache-C
+000000D0 | 6F6E 7472 6F6C 3A20 6E6F 2D63 6163 6865 | ontrol: no-cache
+000000E0 | 0D0A 0D0A 643D 3338 3434 3664 3937 3965 | ....d=38446d979e
+000000F0 | 6230 3864 6536 3362 3232 3764 3135 3038 | b08de63b227d1508
+00000100 | 3564 3361 6561 3339 6431 3062 3130 6438 | 5d3aea39d10b10d8
+00000110 | 3036 6133 3666 3730 6439 3534 3831 6330 | 06a36f70d95481c0
+00000120 | 3336 3438 3565 3466 6431 3831 6364 6134 | 36485e4fd181cda4
+00000130 | 6530 3364 3639 6138 6234 6134 6237 6661 | e03d69a8b4a4b7fa
+00000140 | 3661 3831 6566 3832 3832 3765 3832 3966 | 6a81ef82827e829f
+00000150 | 6361 3837 6233 6630 3762 6332 6630 3266 | ca87b3f07bc2f02f
+00000160 | 6162 3734 3030 6237 3733 6535 3730 3032 | ab7400b773e57002
+00000170 | 6234 3639 6561 3332 3131 6137 3438 6334 | b469ea3211a748c4
+00000180 | 6266 6438 6431 3761 3333 3535 3361 6236 | bfd8d17a33553ab6
+00000190 | 3530 3061 6565 6466 3838 3961 6337 3939 | 500aeedf889ac799
+000001A0 | 3064 3361 3861 3762 3837 3738 6432 0D0A | 0d3a8a7b8778d2..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

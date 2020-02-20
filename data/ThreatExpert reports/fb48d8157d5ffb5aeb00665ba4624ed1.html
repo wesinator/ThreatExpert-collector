@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Backdoor.Win32.Hupigon.qurf, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Backdoor.Win32.Hupigon.qurf, Backdoor.Win32.Inject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 October 2015, 23:12:08</li>
+<li>Processing time: 5 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xFB48D8157D5FFB5AEB00665BA4624ED1</li>
+<li>File SHA-1: 0x6601640D8DDA782FFB3D59A0E1D8BC5F796BDA97</li>
+<li>Filesize: 55,406 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Backdoor.Win32.Hupigon.qurf [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\Setup]</li><ul>
+<li>InfoGroup = ""</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>yinzhil.gnway.cc</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">yinzhil.gnway.cc<td class="cell_2">3601</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 3601:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4368 456E 4190 0100 00B0 0200 0078 9C4B | ChEnA........x.K
+00000010 | 6360 6098 03C4 AC40 CC08 C41A 5C0C 0C4C | c``....@....\..L
+00000020 | 403A 38B5 A82C 3339 5521 2031 395B C188 | @:8..,39U! 19[..
+00000030 | 81C1 2458 88A1 3676 62CD 0679 1586 2B40 | ..$X..6vb..y..+@
+00000040 | F616 205B 0CA8 F048 8410 0308 1C09 84D0 | .. [...H........
+00000050 | 2033 4C80 EC05 02C2 0C1C 0CA2 0718 A040 |  3L............@
+00000060 | E0D0 F41A 03A0 385C ECC1 DF7A 860B 7FEB | ......8\...z....
+00000070 | 3F04 0831 7885 4EAC D901 3453 C34B 84C1 | ?..1x.N...4S.K..
+00000080 | 02A8 E60D 508C 096C 1823 C376 6E06 0643 | ....P..l.#.vn..C
+00000090 | 8689 3522 4071 1F20 B608 6460 0499 530F | ..5"@q. ..d`..S.
+000000A0 | 9475 CECF 2D28 2D49 2DF2 4BCC 4D65 2012 | .u..-(-I-.K.Me .
+000000B0 | 2800 F17F A83B 8FAC 3971 7EFB B5EB 2F19 | (....;..9q~.../.
+000000C0 | 80E6 951C 9C5E E31F 3DB1 C601 AF6E 8333 | .....^..=....n.3
+000000D0 | 6F0C 4E6D 34DC 7E0D A70A 7614 5E03 8304 | o.Nm4.~...v.^...
+000000E0 | 90B4 8062 9D20 4818 4930 4831 30DC F95B | ...b. H.I0H10..[
+000000F0 | 7FF3 3D54 4FF8 C41A 50A8 FF00 BA03 8641 | ..=TO...P......A
+00000100 | FE07 E117 C070 6186 9A06 529F 01E4 2F00 | .....pa...R.../.
+00000110 | 9A03 A219 A226 D684 40CD 7409 1162 4805 | .....&..@.t..bH.
+00000120 | F205 8220 7E09 0981 884F 01D2 2B82 216C | ... ~....O..+.!l
+00000130 | 0EA8 D806 30BF 81E1 0854 2F0C C0DC 0562 | ....0....T/....b
+00000140 | DB30 E20D 083C 4081 C105 68BE 4BF0 A1C7 | .0...<@...h.K...
+00000150 | 1BF7 6CF9 7CFE 2424 CC41 C043 5F84 C183 | ..l.|.$$.A.C_...
+00000160 | 8F89 8917 C87E 02B4 DB31 6062 0D0F 50ED | .....~...1`b..P.
+00000170 | 1306 6106 16A0 D815 20CD 00C4 2A40 31E3 | ..a..... ...*@1.
+00000180 | 2088 1C44 0C98 7E18 2069 1400 AE43 6DB7 |  ..D..~. i...Cm.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

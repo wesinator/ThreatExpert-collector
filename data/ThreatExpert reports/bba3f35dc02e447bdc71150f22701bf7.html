@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 17 February 2016, 13:07:06</li>
+<li>Processing time: 6 min 18 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBBA3F35DC02E447BDC71150F22701BF7</li>
+<li>File SHA-1: 0x151E74CC66DEBD8CF12F020950AC7F8ED4E4A6F4</li>
+<li>Filesize: 731,448 bytes</li>
+<li>Packer info: <em>packed with: </em>PE_Patch.PECompact [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates desktop.ini system file in the fake Recycle Bin folder in order to register it in Windows as a valid Recycle Bin.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Creates fake Recycle Bin folder.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%CommonAppData%\tsageoj.html
+</td>
+<td class="cell_1">4,839 bytes</td>
+<td class="cell_1">MD5: 0xBBA18C3339676A1DDE48D1B5C6E7DE15<br/>SHA-1: 0x8E391592B59DC9357F80652D245B3897132786E9</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%CommonDocuments%\My Pictures\Sample Pictures\Blue hills.JPG.bgjwvln
+</td>
+<td class="cell_1">26,736 bytes</td>
+<td class="cell_1">MD5: 0xEDDBAAC7CD53DA1F88A007AD0D6C2CBC<br/>SHA-1: 0x2BBF3770729C9AF94FEE5C4868EE3ED4C7B9496A</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%CommonDocuments%\My Pictures\Sample Pictures\Sunset.JPG.bgjwvln
+</td>
+<td class="cell_1">69,632 bytes</td>
+<td class="cell_1">MD5: 0x64D74D50173678DA02ADDA638821DDC4<br/>SHA-1: 0xFC388362F078D3A6229D464F75B520AB6C0D5EF0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%CommonDocuments%\My Pictures\Sample Pictures\Water lilies.JPG.bgjwvln
+</td>
+<td class="cell_1">82,848 bytes</td>
+<td class="cell_1">MD5: 0x1B0DD9264B0DE395C591E4B0EF69EDF4<br/>SHA-1: 0xDA5E21691ECE7F429E593CB20685131171C2A049</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%CommonDocuments%\My Pictures\Sample Pictures\Winter.JPG.bgjwvln
+</td>
+<td class="cell_1">104,064 bytes</td>
+<td class="cell_1">MD5: 0x08ABBA8E434D7D6CD9B1F4161D4BFF55<br/>SHA-1: 0x72741318256C74516D3D526F2179F2814A0026C8</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\excel.XLS.bgjwvln
+</td>
+<td class="cell_1">1,232 bytes</td>
+<td class="cell_1">MD5: 0xA44D0EAF18626EE35CB701234B10FE39<br/>SHA-1: 0x1B5C941B3CC22CBB13357E268241262219600117</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\excel4.XLS.bgjwvln
+</td>
+<td class="cell_1">704 bytes</td>
+<td class="cell_1">MD5: 0x2AC574D78FC5993DF0CAFF18D54EE083<br/>SHA-1: 0x9327021BDF995FB822A58C300CCB47F5DC5702F7</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\powerpnt.PPT.bgjwvln
+</td>
+<td class="cell_1">2,048 bytes</td>
+<td class="cell_1">MD5: 0x715E16B15FF9AD631C28CBF92E331BD3<br/>SHA-1: 0xCDACEFFC5629F7469E724B63A1DC6A29009D9DC6</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\quattro.WB2.bgjwvln
+</td>
+<td class="cell_1">1,984 bytes</td>
+<td class="cell_1">MD5: 0x3609112DC3605E6397B1AEB04892F52D<br/>SHA-1: 0xE64539FB00B2ADBEE4BB7C88C3CC75CA83F49A60</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\winword.DOC.bgjwvln
+</td>
+<td class="cell_1">816 bytes</td>
+<td class="cell_1">MD5: 0x3F38D175A60B67CCACDDEEE6E0593079<br/>SHA-1: 0xD454ED5632188A6CB207037A78F64EBCC513574A</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%Profiles%\Default User\Templates\winword2.DOC.bgjwvln
+</td>
+<td class="cell_1">352 bytes</td>
+<td class="cell_1">MD5: 0x2E1E83EFD4B34265F48C4ED12B25A83F<br/>SHA-1: 0xC5232BF39137481D2F5643DFE3A49E1A45CCDDC0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%Temp%\misiiyh.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">731,448 bytes</td>
+<td class="cell_1">MD5: 0xBBA3F35DC02E447BDC71150F22701BF7<br/>SHA-1: 0x151E74CC66DEBD8CF12F020950AC7F8ED4E4A6F4</td>
+<td class="cell_2"><em>packed with </em>PE_Patch.PECompact [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%MyDocuments%\!Decrypt-All-Files-bgjwvln.bmp
+</td>
+<td class="cell_1">921,654 bytes</td>
+<td class="cell_1">MD5: 0xD8CA230A944BEE5E1E528514DE6F5D4E<br/>SHA-1: 0x821674267C52A671FFBC16BDE92A02483DD8B2D5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%MyDocuments%\!Decrypt-All-Files-bgjwvln.txt
+</td>
+<td class="cell_1">1,266 bytes</td>
+<td class="cell_1">MD5: 0xAEF8A8626E7A5721CC10752C11F5C358<br/>SHA-1: 0x67A421B38DF26B48A14496538BE78BD9A426C246</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%Templates%\excel.XLS.bgjwvln
+</td>
+<td class="cell_1">1,232 bytes</td>
+<td class="cell_1">MD5: 0xDC51A9848F244EC769979B824673D25D<br/>SHA-1: 0xD5C5B307EE406DAEB0CCEF73ED8E41128858DF3E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%Templates%\excel4.XLS.bgjwvln
+</td>
+<td class="cell_1">704 bytes</td>
+<td class="cell_1">MD5: 0x851F117B92DDD1F7BCFCD0CA359B01C5<br/>SHA-1: 0x0536C535B3FAEACFC9526372E3C5D3784157B13F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%Templates%\powerpnt.PPT.bgjwvln
+</td>
+<td class="cell_1">2,048 bytes</td>
+<td class="cell_1">MD5: 0x8F9380807C072C4DE0C8FA35F1AEAB57<br/>SHA-1: 0x5E0EC0FCA6993B21A30583CEE5A45BB5DDFDE2D5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%Templates%\quattro.WB2.bgjwvln
+</td>
+<td class="cell_1">1,984 bytes</td>
+<td class="cell_1">MD5: 0xA1323024F0E89FC0327058AB2E2D1104<br/>SHA-1: 0x4F57118ED8A2442605B3328457997F1A6E515A9C</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%Templates%\winword.DOC.bgjwvln
+</td>
+<td class="cell_1">816 bytes</td>
+<td class="cell_1">MD5: 0xD5E8C41FC4B701C29358D7866FEEC319<br/>SHA-1: 0xBFBA66EA14D0D0A33E9A16A9D30BA63D54B5F197</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%Templates%\winword2.DOC.bgjwvln
+</td>
+<td class="cell_1">352 bytes</td>
+<td class="cell_1">MD5: 0x3D24C8D69155198587EE1000A4079F00<br/>SHA-1: 0x6F5F5FE9759098B61204136616F963D2040AA686</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+c:\Inetpub\wwwroot\index.JPG.bgjwvln
+</td>
+<td class="cell_1">160,624 bytes</td>
+<td class="cell_1">MD5: 0x57AF783E5960E0B3C74DA3A0934AF011<br/>SHA-1: 0x2E105814189451110EC6583793AE67819AFF0615</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Clear Day Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">4,224 bytes</td>
+<td class="cell_1">MD5: 0x6B093F20D7264D4A18790733BA4F3DB4<br/>SHA-1: 0xAC5A2B72831810ED5BCAEFB31952DAB8354679AE</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Fiesta Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">4,448 bytes</td>
+<td class="cell_1">MD5: 0xA63759EC9F487E66361A89862C3A5B6C<br/>SHA-1: 0x7E2E28424A2FCE89524C2E8923E6FF62C2E52065</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">24</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Glacier Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">1,216 bytes</td>
+<td class="cell_1">MD5: 0x025504A85032AD48A9B281546C2ED6B2<br/>SHA-1: 0x4C5B76E682409776378F81B56A9AAEFE6D2F95AD</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">25</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Leaves Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">3,856 bytes</td>
+<td class="cell_1">MD5: 0xA83D54AE7376D55356372577FAED45F4<br/>SHA-1: 0x9511CC2ADA6A62DB8CC41831343AA7FED5B5AA0B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">26</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Maize Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">11,248 bytes</td>
+<td class="cell_1">MD5: 0xEA035529A10A45B571F2733545982173<br/>SHA-1: 0x49A77D201CB6BA26B8ABD9E06D6310AC9C0A45C0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">27</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Nature Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">3,264 bytes</td>
+<td class="cell_1">MD5: 0x6D3B3F3C67A58F416480924D2314C16C<br/>SHA-1: 0x2F85EF3D3766238C43503648733B0CED3E9D0B2A</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">28</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Pie Charts Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">1,424 bytes</td>
+<td class="cell_1">MD5: 0xE455A5CAF6A9AFD570C5BA0621F2B194<br/>SHA-1: 0xD356F76B11F2C5C1266F9A0E5D2BD78F285A28FC</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">29</td>
+<td class="cell_1">
+[pathname with a string SHARE]\Sunflower Bkgrd.JPG.bgjwvln
+</td>
+<td class="cell_1">16,080 bytes</td>
+<td class="cell_1">MD5: 0xD6C346128ADE7AF226C29B1617DE7B33<br/>SHA-1: 0x5946A8C0FB319D0E46FB2B5664B7A5793511AEF0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">30</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\System\Ole DB\MSDASC.TXT.bgjwvln
+</td>
+<td class="cell_1">3,024 bytes</td>
+<td class="cell_1">MD5: 0x6E68F1CB12F6305E290B96B22FF615ED<br/>SHA-1: 0x5A8395A1BA0B7C5436415C1AB168BB55B669469A</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">31</td>
+<td class="cell_1">
+%ProgramFiles%\Common Files\System\Ole DB\MSDASQLreadme.TXT.bgjwvln
+</td>
+<td class="cell_1">1,376 bytes</td>
+<td class="cell_1">MD5: 0x475049E59C2F16543B31D3EAA9AF1125<br/>SHA-1: 0x45A2EEAB05AE3A15F7BBC61605F17611A0B22B38</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">32</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\msoe.TXT.bgjwvln
+</td>
+<td class="cell_1">160 bytes</td>
+<td class="cell_1">MD5: 0x4545EBC07039DBB9CE3173916888664B<br/>SHA-1: 0x43CDE9306F5DD14E91E846086B8E6C8EAB9A6F0E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">33</td>
+<td class="cell_1">
+%ProgramFiles%\Windows Media Player\npdrmv2.ZIP.bgjwvln
+</td>
+<td class="cell_1">432 bytes</td>
+<td class="cell_1">MD5: 0x4B55CD9A68822A49A8AEBBEBDC646E07<br/>SHA-1: 0xB026490D618D7A44B307606D68A8DF88E1F24984</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">34</td>
+<td class="cell_1">
+%ProgramFiles%\Windows Media Player\npds.ZIP.bgjwvln
+</td>
+<td class="cell_1">7,904 bytes</td>
+<td class="cell_1">MD5: 0xA2CA6BA48F16A1B021C2974721768013<br/>SHA-1: 0xB28E75AF8E31596770CCF2112CA2BAF23690A5E5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">35</td>
+<td class="cell_1">
+c:\RECYCLER\S-1-5-18\desktop.ini
+</td>
+<td class="cell_1">65 bytes</td>
+<td class="cell_1">MD5: 0xAD0B0B4416F06AF436328A3C12DC491B<br/>SHA-1: 0x743C7AD130780DE78CCBF75AA6F84298720AD3FA</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">36</td>
+<td class="cell_1">
+c:\RECYCLER\S-1-5-18\INFO2
+</td>
+<td class="cell_1">20 bytes</td>
+<td class="cell_1">MD5: 0x6B467C588BE40CCDF492DF4A5F914977<br/>SHA-1: 0x5EDD4F8D91886F8198617BA68C169BFC91BC5F28</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">37</td>
+<td class="cell_1">
+%Windir%\Tasks\wmiqprb.job
+</td>
+<td class="cell_1">254 bytes</td>
+<td class="cell_1">MD5: 0x4E2606E2A1B1BB6BA25DF4B3A71CCD31<br/>SHA-1: 0xDC969DFD930B3575C13972C8E1FBAFAE7A762D75</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%CommonDocuments% is a variable that refers to the file system directory that contains documents that are common to all users. A typical paths is C:\Documents and Settings\All Users\Documents.</li>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%MyDocuments% is a variable that refers to the file system directory used to physically store a user's common repository of documents. A typical path is C:\Documents and Settings\[UserName]\My Documents.</li>
+<li>%Templates% is a variable that refers to the file system directory that serves as a common repository for document templates. A typical path is C:\Documents and Settings\[UserName]\Templates.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following files were deleted:</li>
+<ul>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Blue hills.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Sunset.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Water lilies.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Winter.jpg</li>
+<li>%Profiles%\Default User\Templates\excel.xls</li>
+<li>%Profiles%\Default User\Templates\excel4.xls</li>
+<li>%Profiles%\Default User\Templates\powerpnt.ppt</li>
+<li>%Profiles%\Default User\Templates\quattro.wb2</li>
+<li>%Profiles%\Default User\Templates\winword.doc</li>
+<li>%Profiles%\Default User\Templates\winword2.doc</li>
+<li>%Profiles%\Default User\Templates\wordpfct.wpd</li>
+<li>%AppData%\Microsoft\Installer\{3966BA0C-23BA-4B20-9B9D-7561DEC54E6A}\Icon3966BA0C1.txt</li>
+<li>%Templates%\excel.xls</li>
+<li>%Templates%\excel4.xls</li>
+<li>%Templates%\powerpnt.ppt</li>
+<li>%Templates%\quattro.wb2</li>
+<li>%Templates%\winword.doc</li>
+<li>%Templates%\winword2.doc</li>
+<li>%Templates%\wordpfct.wpd</li>
+<li>c:\Inetpub\wwwroot\index.jpg</li>
+<li>[pathname with a string SHARE]\Clear Day Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Fiesta Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Glacier Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Leaves Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Maize Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Nature Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Pie Charts Bkgrd.jpg</li>
+<li>[pathname with a string SHARE]\Sunflower Bkgrd.jpg</li>
+<li>%ProgramFiles%\Common Files\System\Ole DB\MSDASC.TXT</li>
+<li>%ProgramFiles%\Common Files\System\Ole DB\MSDASQLreadme.txt</li>
+<li>%ProgramFiles%\Outlook Express\msoe.txt</li>
+<li>%ProgramFiles%\Windows Media Player\npdrmv2.zip</li>
+<li>%ProgramFiles%\Windows Media Player\npds.zip</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>c:\RECYCLER\S-1-5-18</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">672,768 bytes</td></tr>
+<tr><td class="cell_1">misiiyh.exe</td><td class="cell_1">%Temp%\misiiyh.exe</td><td class="cell_2">672,768 bytes</td></tr>
+</table></p>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">DcomLaunch</td><td class="cell_1">DCOM Server Process Launcher</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost -k DcomLaunch</td></tr>
+<tr><td class="cell_1">TermService</td><td class="cell_1">Terminal Services</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost -k DComLaunch</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = "%Temp%\misiiyh.exe"</li>
+</ul>
+<br/>
+<em>so that misiiyh.exe runs every time Windows starts</em><br/>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,31"</li>
+<li>Full = "%System%\shell32.dll,32"</li>
+<li>Empty = "%System%\shell32.dll,31"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_USERS\.DEFAULT\Control Panel\Desktop]</li><ul>
+<li>WallpaperStyle = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Personal = </li>
+<li>Cache = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Control Panel\Desktop]</li><ul>
+<li>Wallpaper = </li>
+<li>WallpaperStyle = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>fpfllsalafsunc</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

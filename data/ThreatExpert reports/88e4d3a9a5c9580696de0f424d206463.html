@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 2 March 2015, 10:06:19</li>
+<li>Processing time: 7 min 10 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x88E4D3A9A5C9580696DE0F424D206463</li>
+<li>File SHA-1: 0xDCCCD8EB1727756AE2FC1BCAEF53E736480C60A1</li>
+<li>Filesize: 162,304 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">221,184 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%CommonAppData%\mozilla\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+</ul></ul>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">RSVPSys</td><td class="cell_1">OS RSVP</td><td class="cell_1">"Stopped"</td><td class="cell_2">%CommonAppData%\Mozilla\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVPSys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVPSys\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVPSys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVPSys\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVPSys\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVPSys]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%CommonAppData%\Mozilla\svchost.exe"</li>
+<li>DisplayName = "OS RSVP"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVPSys\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVPSys]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%CommonAppData%\Mozilla\svchost.exe"</li>
+<li>DisplayName = "OS RSVP"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Global\UV5FXlFbb11FF1dL</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>185.29.9.51</li>
+<li>playbetingx.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">185.29.9.51<td class="cell_2">443</td><tr>
+</table></p>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://playbetingx.net/fjndzWibCV08KK/DY/rhsKf6Z9PJnewENg/dJ3T-SVJp2qZgU4bUSRr5a7HH8BWwANM0.rj-wXx.php</li>
+<li>http://playbetingx.net/WE/bCiQz/UUhgSoeVDmZSreqwHYtuGal.UibKy51GaY1PM.bml?2pbM=j1DcT360IXcUZrYbKD&amp;hPqhatnhgutY3bc0H5D=TKW1jKJIF3Lw.-z3SLx</li>
+<li>http://playbetingx.net/cZGJxLlO7Y3/7/phatUf8C/MbBtHxYnEMB/oiLglbg8M0DTlAXl4oOaRJz4Nf.8ee0d4y0HuYxRHSeBHdhGYZEsvqM2un1H5gBeMahN9ya6w.gif</li>
+<li>http://playbetingx.net/eRQTqScOQp/8dZUCw4lu/T/OLE3pjK/R2RKMa5Ouj5UjBMqmE.bml?eOn9AJhCZQz=7&amp;64UWt8=RgsKDpiN85&amp;3w-e.b2rJfZ7BLp=WHa32GbLsYE8-9Hw</li>
+<li>http://playbetingx.net/v/HJIyZTImGwE6bLis6R7kGoXo1VLLrMrtEigXlIXsU.php?7d-T=5J.EQDLKVJ&amp;prr=MvcldrnSrRpEbJK&amp;n2RBEp=W8kynwGPH8zyjRZ6zyTT0K9-</li>
+<li>http://playbetingx.net/AaN/daV/FyzTd/fg/PNY5Px2yA8HvztzE3vDc6nr9QGzKVHFgB.php?yKgNd6k95FfdZcKGvLq8xbxZfL-HMsk1jv=MEstI4HsSmLpXUGd9QZiwA0B</li>
+<li>http://playbetingx.net/eLD/gzITuVOOvRMCh/Fo2lylV.IwgoRcC2vXtV/ptFEYEqWkfxAmvDqccAcl/KAWsfPIPAZJBJWJBuwhsdZbd00UavAydk9u6RqjTjaxfsGK.html</li>
+<li>http://playbetingx.net/cfxPsDliVr/kXrAs-Vr/hnCVDKJDin6QHz5z.cgi?yvM3cUQMd2opYrx4Efb6WVu.w=CII4o50nNtVsN</li>
+<li>http://playbetingx.net/PibZHvRJD91/9cB/FY0cGaebVw5lKVIkRqJgMFXog/vQO8AcY7UfWcwegNqDimRwKGr8L70miXT821wscvLbvqUKdJEFjNC9Mdml9h8JQP2.jpg</li>
+<li>http://playbetingx.net/sMEnqvHUtZ/m/E3uKyc/xbf/9w69QLHqTir6cCAryrgdjD66q3I2HDx.php?MCoweH7fz9W-uvoeMYBd2pZZ3i991vp5fh0PgiLo9Y=nATEr9JQkME</li>
+<li>http://playbetingx.net/NuB/ivjudhgmXdhgvDdeFm3DkESXfGZiFE3KITN9j/TcHS1nvbG7Wvw8r14qbtQAsa-IfM3KLBqdeAJdlDauAu6EihzsmeZdHm3r9NafMh.htm</li>
+<li>http://playbetingx.net/GofXKwGEjlrw1olfZPO/5URR/UTI6LNB28/1uMHB/FLTknE.Ru826hKQqubgO004EvcR1Af0nDbZ8ySWHGkq4Tu0oSrkAloj4EpgfoHfinkD.png</li>
+<li>http://playbetingx.net/S/TVPpmiGQ8ROH/e73k7N0wln.c/Wui7C1Z0NI8VyU1bhPMlj-aeoKWG0cazhsQ4LXYbJlAX3C8A.U39gyCJbAGMVW0G9let4pgxLaunfcr.shtml</li>
+<li>http://playbetingx.net/xEwMLxMhIHRjGjpUaIleujeV6.yU394N8Ha/vfeVWzn04RIQcFuAsotX5K-jcJYujF.Bw/00pl4VQ.aAQkzZ8xuFiqGTg0SCdxFYYmWf0F.png</li>
+<li>http://playbetingx.net/baPwSuZG4FhmNm/eiWOCF757kAvW57Yy/kvltojXglwGcdznW8H.6uUru.cgi?su=x&amp;9SgI=MwV&amp;qpxe-z=&amp;KHiTB-Tq=A0lHDZiU1oP5fx.GU360IkfJL</li>
+<li>http://playbetingx.net/SfuhnRLW1/lrzUADMGJc5GSNm9/NPRyDsU.o/PSwXBHQ-QfOpm9S5eDE.php?DAvXAygmcTgVFdV=82z&amp;XYzAzy735Ns3ZtnJS3=TdmhSSPA55djWr-</li>
+<li>http://playbetingx.net/SmTuangEbxBp1fREflG3xvJ9/zG8JcdkQt.WJ0IisChj.S.php?1Ayk.c=I.lA&amp;BP.I=L&amp;kMx2-0TcheweT8MxxU4oiI=RSu8A8lWMGqAMpD9UefXST</li>
+<li>http://playbetingx.net/ynLrtWdy9Z386tS.B/3u/IV2S8g7Wn83K5kA7gFgCTn/7xgQJoYagRh4rNaWZmoxGyRX681Tldkbked8l7DeHOJNGpazcKdKKli.v8.FTy0.png</li>
+<li>http://playbetingx.net/LwKUP/wVdREVWhONAL61/EVPEHgzV-v/u4.VPs6RB.I/nIV2.zkLZvt4FQ9PAGeMB6DOhFrUAoOED9ttpUyEARhQ0JNL5Z6VREmbo2AUXuSt.htm</li>
+<li>http://playbetingx.net/DcsxwCwsFikVxB1Kzgdm1QwD/O6PL5IdSxDCrn4K/s-eZZHs2ZTKdJKPi9PvEwj6lczVpGCjt5pS4ATns1.i.aZaTyDag9WHbxe6pokoQg.shtml</li>
+<li>http://playbetingx.net/nBujZUf/DsghzvaV4/Ja8.kq3WZtooZ-5/CroFvmtC5/1h.xVHiv8kv99D5H.php?ke2WAUpGOKNT=W&amp;nWfs.58bSniVZTSxKmXPaATka=T-TJb7T21q</li>
+<li>http://playbetingx.net/OBVKvKiTi5eW0yC0KUqU/Zvf/0a8NWghbJ/yFCMhSNLuGOKik8aDby3oomUcapM-2u8Rqw8rzN9wY1Q-ZBkficSv4LV7Z2PrnM7txtIbSUp.png</li>
+<li>http://playbetingx.net/pVSJxJLB4-7a597ikn.yfOnbgOLqt/zJW7vsX1T1dESLB6nCc5OHu9pmc5by3.bml?Zg=0&amp;0qrY1T3=JR&amp;XnR=snWob1lz&amp;DWgyHHql=kw83BDj9nCKy9</li>
+<li>http://playbetingx.net/gPsRP/OENV6S/u.Q/GdcuEaf.Z/xjwPO73ACRdbY2ejDzq-JsROR02Vp.bml?TSI=Dfvu&amp;JgVC=KdstIr&amp;V2bOGN=6jgIrfT&amp;DakEiMfaH-C=CZr2ZYnVUFL</li>
+<li>http://playbetingx.net/snmXMLHlS9ybU/Tqda4xPB-B2TBaPn/5b4qc9K/xHD1Rhosv3Vibn6KYi1.bml?YBNXk.-W3=rscct&amp;YTxkmGnC7OQ6NCo5rYzcL.w9RAeocualRNU</li>
+<li>http://playbetingx.net/vAlWFkKq60mCYTit/rplhPczyMQbK/Puq/B2fLttp4jOTSpDUqFoSFh.KhKQrpNCKtsL-DWvZ0azev0z.GHllrpnh5fI8lUZUB8.EVxPBl6.gif</li>
+<li>http://playbetingx.net/FUuw/C/VFHkiCMqLZ82qsf8RyNJZAwj1gWMw2tkT49ZSZX.cgi?2N=n&amp;4HzOb=ap&amp;tFDlRuD=36&amp;13H1=eBsADn4dP1lTRXmU8a.t5rTtl78CsfZPUszFm</li>
+<li>http://playbetingx.net/M/wge/Bys/Qggr.7l-oRXhgpNpv1cOQOBtEBFF62hmkOmE2vWQ8lHtsESHwinQNDZY.Ytl4ZFd..htm</li>
+<li>http://playbetingx.net/wNBf/QadCdZv/NYlZKe6gOaR8NhlLCKqDgsy0LGLb-P.cgi?0Ju=2aG7&amp;BWaNmbu=lmzES7&amp;y7dR2=9wkO5VYKq&amp;ii4Bhvo3twbY95=hjcMBY4TbOHmAzu</li>
+<li>http://playbetingx.net/M/tPhMFC/i386G/PneLAnrxsg.S.bml?r4migSh4C=HA&amp;Mxd1r-W=7M&amp;fVFs=82gS6RQPnX7hGYQM4s.8GIRG</li>
+<li>http://playbetingx.net/IGdvDcSSd.zPI/PIgro-AXW9Xe.q1J/jY/XlKULjHp8TpJXd312q5bThSAOjRX.bml?d8BmAawEf=kqg&amp;VVoOjabH4ma9Uua9T=Opy6RuGO2PppeaV-</li>
+<li>http://playbetingx.net/mfrCMReGiZfGxWy71KEsN1IdMU/Kz2mwhhW3vZVdvtx3rDurVf7RHVkjspmIWWEJl8zqDT1bLNFtidFH7uixJhSDvfJS-WqYTa8TFfuaX.html</li>
+<li>http://playbetingx.net/EDfXNGxT/UU6stYSvq1/o/Xlvd0PnHgvtA/PkAqq2sHjIghwLm7rSG.bml?DwgJq3yNK.KWdooWm8VlEhaLzna-JmH=UtZ-yovHSeKPZGYkdycnEND</li>
+<li>http://playbetingx.net/NTVehoHuKr.C/yo-6e9zr18NWVtaTRTRSLzkuaD.f6c.php?I=&amp;8y83XhEUkID1O.280-YKPu0BIK7hO8gT0XECAKd1.t2UoF-v0q6v5gyBHa=WhX</li>
+<li>http://playbetingx.net/AFLDlJEcW9dHZljYozAP6/WmbP3W.K/CqkJSP5Ng26h/TtiXyTkHimduTaWoKckcj.h/P0Cr16CH39xjqixHn-JJEY2D.hOZbpg66BDPvd1p.html</li>
+<li>http://playbetingx.net/VOyTeLFpZj-N/hm.K/KJAz-oKuz1bF06s.oEraWst9xN7z73nj.cgi?dmNes=dsrjjNlYnY3XlFdK&amp;3uT9wg-0YUPf=abQPm1NKU5KEp53igw56hHy</li>
+<li>http://playbetingx.net/xUUWpImYwB6IcjqZIf7s3Qzy5uie-6g8tgaFpfAU55I/hFK8RMDBRSdOVqVxmEf.fzPwuz0oD8FxCkA6XC2pI9N/DwD7gQblciRd7Ol1Aa.html</li>
+<li>http://playbetingx.net/sRLCeBXZxXXJ8oHVKiUKP2QRAbu/ksGZk9ryj6BGPdugGQ7HET8/QnzDQk-5kOEODgWmMf3D/WytEl1b1ebExv1wa3UxYujKn2svLGj8byt.gif</li>
+<li>http://playbetingx.net/ITAIdioh.Je1/sABylC.D/7dXjUqWgx/0eRLCWuDeSXd-wvk33w91Z.NHVUTe-rcWkEYj.wwJ2F3uI.nV9WqFBZjCXqCJghib85IOBjhg.1.shtml</li>
+<li>http://playbetingx.net/IxRYYy/Pm0ZYYL/M/AOf5Yzagxv6tA.96EyZIDx9S-UN46hc3E.php?KJbHW1gKR=GO&amp;ntrSfUN93Vl=pX&amp;a55IPMi=0mEA&amp;B22=Ubu-lnaHoGAKzb62LLt</li>
+<li>http://playbetingx.net/ineXrpDGTP7YbOdXbzgyh-Pi.hg8rPqFB/D8KEp2R0FoT.php?q3=jR&amp;Sygi=9t&amp;yLt=kD&amp;3Ry7XDV6Z.IvJ</li>
+<li>http://playbetingx.net/VdAQ/EdTEbj/h5Z9ung/jCtC9zkenBY4F-mo7Tg3PK8zIzzr.php?aLMAY-ZM=GJJ&amp;yqw=B6&amp;Pt=m&amp;81jo7DhyV5cbrh541SEZcj5tz6MLSLuc=PDwfU3jl</li>
+<li>http://playbetingx.net/XOUGFgPozPT2pdcDDz/kAMqI4uuAvHDDmDW9mjjWZuGolk4.php?8A=l&amp;3SCOK9z=RWpwloYVLr-nf-E&amp;VKHN=3Cr0cu.QoDkmsCu5SNKDXpYQDushs</li>
+<li>http://playbetingx.net/oTrlRvlOjOkp9l-1z-I/zGoaLd.ltAuLMnoL2KH27Gq6/Ht1LH-qgWGDVWtHaPMmcn2I8lmwaNai9WkSdmKi-R3ZhyoRhRssP1ksodzc0U.shtml</li>
+<li>http://playbetingx.net/oDQjoNvQhS/66VfX2NRmdy4AXbKLZPxpn/bhDrJDX/VqANnslX3EQAX5mqBmOlb/n5JlUpxN4T3alkb77.ns0F-afjhd4VFqWS9E2b3z.1Xp.png</li>
+<li>http://playbetingx.net/kDnrnJYB5t6uHa5lrJi/yJv/L7szP/iU-RKkqlI7V3brbFonMDahDeeCqbdNy5NRhVQ-lV0fQTPt5xWM76x4p.V3LRa4hZZd8ggthHCHsHK.html</li>
+<li>http://playbetingx.net/aaKcsmwfyb2MovoRfd-W.TG8HThsJ9/Qvrvn.8u70zSsBQIxGxZBq/67ZvjknfUL5/pWWMLVaSn1LNzUYIW0JW890Q18AUvU6xNvRj3xmg6.png</li>
+<li>http://playbetingx.net/YRx/kKZAvRxr1q/ybn/SmDE/XbE0porOzLfyI-wn04-zVrJkes.php?l1.5Xj1p-1=uZzfRkKj69.RBGNhFWN&amp;0qYTIRm3VX1nOjrU=TuK4fcE7Og8z3</li>
+<li>http://playbetingx.net/ruWDNvDOkYTlN0ldqLbHiCTE0Objc9A/4S3kx9yTLv8ls4fiqFpB81GX2.php?K40Df8tWJSqrXW.q=URX85n5HddD.9NIlZkJXQ6UauAC5EcpU</li>
+<li>http://playbetingx.net/UXrGhrkGIV/CwsyEpN.3KNCJMCuGzCG3VdYnccpDYyLa5poFDbGekFUpE/4.yeIv36vxwE2MUgmPTx.tqFKGiN-lhC0ECKAthYmxewp9xy.png</li>
+<li>http://playbetingx.net/sOQuqHfCNr3PdUgjdIXNnlqDThfXydejwQqJI6/hMNkmYXNhcIgTuZTbbk-JyEFSvdHIMHLQ0gVfml5HwRlzVNDf0h-koEe0PDAOAoT-N.htm</li>
+<li>http://playbetingx.net/baeWzfFLGtEuhCzSfgO6S31eU0kgHB/mYTqbOgCw-Xv3/pWHB9x4-9IDyeuGS/toNlvet6jvBIIKtP6dHwBqQPzxpI.K2AvpqODpsF5UM7U.htm</li>
+<li>http://playbetingx.net/RYPd/pkLjOsijD/Oy9nPQNtWbvW/Wkm4AFT4oZV6/0lHo3gdp6L.php?BdSKfDpaWAMVqoQnaiDZkaMzRJ2imaCZuvv6tp.4PUtLGgzhse87veI=6a</li>
+<li>http://playbetingx.net/KbvtbAxBVUkumomeDXrJMRFDz9h3XfScJmATgQvkYD/93UUYfO0HZMvoJrbscJ4nd248L3HZLVwADizzXp6aK.B5w/1zcvabLdLD.4mVbN.htm</li>
+<li>http://playbetingx.net/kXmbVfqn9f3uOlaa9-A5W7kkcjSRT/CKcd.y-qAvWzYZyX60InWyFdF2b/i3PJdTr1L5w/XEclyFyOYgmpicPNdzotnoIIHPJBrJNQD1rQR.htm</li>
+<li>http://playbetingx.net/I/zvVasiHuEZlRnSnhGwD/03OJb1TQEooI4Z2TSSxoaTz.php?o5NT8BQrLHNbi57jSM=ki&amp;BPZu3G9QlaoLdZ4jM=j&amp;atjFCVy-t6lBR=ajNh6-LpRl</li>
+<li>http://playbetingx.net/haT/AaHuzd-Xukh/KbAYgVjddVq0.php?Ts=y&amp;Ne=&amp;69bZfYgnZX=4&amp;Qn2X8ifub25PNP=QyagzYG5Qcg7gP9Y</li>
+<li>http://playbetingx.net/WeaHPKekR/jfg5TPhiHwPA/EB2vo/W52gYdz/D1tm6LSHFNc.bml?p.I=S&amp;kjikMFlwX0WAPZ.bt07BgSx4KBRjFufn=HiMM8WZKIUBBHoONPMDa3tFs</li>
+<li>http://playbetingx.net/vMGYYCoq/4BEB6p.5AKtK/k-1nidbNYC/zKWf2xg1e0a.bml?i=v&amp;hwkCszUFH6N7W77vEAYe.jDWOb4TmQvRV=i5w00wJ4cUODskXxMAJBvuDJ-5QF</li>
+<li>http://playbetingx.net/rLHdoFJLf88aYVgdML.wojE/qWn.BG3tkrgJbUAK.d-8jP04sXY9Q5rG/ZHbqz51uh4nGOIU5Y6gWoY8YuqkSNmp11m.rVUSsvVhJaFmfs.php</li>
+<li>http://playbetingx.net/mEgizsmQC2/H5a/q8.NRIcfndlTmpWO.d4d/s.Z1mb2yf8UMIz-O/o3uugfD0Abxij4LqZyS6Joz6-Bh2Yns0b3LcvjuVD1xUwg79rwuLOEL.shtml</li>
+<li>http://playbetingx.net/pHFv/Fz/iCpk1Y/gvEUbB/jepFyn4cDyoYQOUyl-V-P.php?r&amp;=P0E.6-V=&amp;bZWGiJST1vukv=idu3pdhtu8g9</li>
+<li>http://playbetingx.net/VSeKVKPFDLndb.De1obRkmn8RHc7k5Ey-DqMfgxzMXYKni8zyhb8.Ibi-2n/611nbXDunCmrYaZ8w0r2dEnQWAOZiPdenpKw271twnqjj.jpg</li>
+<li>http://playbetingx.net/ctzVlI/rgpwcJRu/htuUd3OFeDBb/1d/spLpwmVL7vPn6mz2EEFHK2C34-aO.php?qK=yK&amp;5N3=gH9Y8scO-h&amp;7f=Q&amp;z-cpoy606M-y0BS.j93DZ=ZwOvOjR</li>
+<li>http://playbetingx.net/jyKmCdaFk6BT8N/LOweChIT3KT0qHuB7z1Z3GjM9oVP/sVx0tK/GbBSZ2RNPFxT6d0GSsFCydjxvkR3LdygFh9ISaPaFhvoR0d..0wqhgbT.html</li>
+<li>http://playbetingx.net/boaQtcOMWHbDHsIh/oeJsG0XLcm5/3fBqUWW-oJ3pch/nMzkd.C/yL4k4G.Gs3rg3x6f.PLxYNeKHHU1wM9uTspm.mZlGr3nxGGGjrC7ujQi.gif</li>
+<li>http://playbetingx.net/TcOnUcTQyMpbtDI0mzpJO/mB6WGxB2nEpxOKK/Xr8Q4HTTeDR4UXNof41TlpsC/HXJcAmFtTI88X648rou0zQSjL-8dh6UZjCv8zeFDsdT3.shtml</li>
+<li>http://playbetingx.net/RcrucTou/9bqFO1wErv8I2I6WqUdVko99.el/FRl8o-PLssCxgojeEN39.php?rj=4&amp;7-.f=q6x&amp;Xm&amp;=ErtuN-i6uby5zl1N4xB3x=cuNCKWb5snTlxya9</li>
+<li>http://playbetingx.net/YoyB/aDUPvqB6HmtTxPv/OziYxSVerkBNJn7bWl-CHcpyIvqzxZyQC6QM5yl.php?VZ=H&amp;Itm=R&amp;z=a&amp;H.DOaN=Kx1viE3giUK1KLix11hwVgBhyrxbVTH</li>
+<li>http://playbetingx.net/SxvPGvyIPf0ZC/jaHkjRUv0fwTJIrjf9srLcyPOGkGacl3.cgi?xVjyfl1lTKhH=S0&amp;6=W&amp;7GqM=48yL&amp;zntcnslMtCUCkYX.S=wdCeadnSO7hOpZfZCD</li>
+<li>http://playbetingx.net/yFhfTrDp6o/uQ4ns0DMYFPailvH/fzTAi8ZpzM3/t2tEJvuM3vj2ofzrFUB2kke/vsdJilkItpM7ABbj1NEwZOlQgkNI1aBiwSDdIaGKuvOV.jpg</li>
+<li>http://playbetingx.net/bzAAXN/gYaF-BpnBO6/Fq2QI0LC/ImY.Zyfa/nozwNnd5D1w8eGJt8azE.JFNA.cgi?j&amp;=wdVKL=ie&amp;fpfQL9K-wUg2maCMAK4toQDd8p-65J0-NPvH=7w</li>
+<li>http://playbetingx.net/EAdOe/Hyy/tkOZHkIbL/Z.ZJuNqk2/kq2.OQUYRS7AUwIwD.php?SYaoZR5JIRWs1ih9dzQbg=hm2&amp;atKPUqUr9yBzkqva9jDe=YonRkYqo.ELYSGrtV</li>
+<li>http://playbetingx.net/JKw/cQGtMmtyy/ML9wtqGrojNDi-A9HqZ6rzSHcejbdwReQqddy83xfH9p.php?pQgrAu=24tNa&amp;MwB=cl8&amp;6Wc=4cy3VBNx&amp;G6rQo=Z9bG5sjonAo.Fz4</li>
+<li>http://playbetingx.net/FY/JxMRxekC5Agy1/NkQqhbk/x5pgPAsfxp5miOX5/KctmnSVwF6GIS13png9OaSL86fHhAGwfdwWtlqUVx33LnYgwyuLlIhUwVXq5jtveYa.png</li>
+<li>http://playbetingx.net/SPubHnRzb0Qh5f4XjNri5xjhcR/vecRqXd/YIUm27sP0lT5r5QML1qsiAx.bml?SlIQD4ksCMhH4eev=bxRJDc41-imh95H9WqQ-ynXOiYH1p3Dd</li>
+<li>http://playbetingx.net/ldKcDobT0OODXp49cmaNGVfgntoIS7e4Z5/kgrSHF2SW8Dt8/R.rD1L8HwHs6S-JPR.El9jgDqevrjE8QQwTyAX8EFCvDmdrIO-IvOYhto.html</li>
+<li>http://playbetingx.net/hBdKqxffW/zgfkHSsn/l.QmQYSu/1/7abOwM2C5clR7iO.bml?LeMXqlTneRjUhaX=SeAZfoXsnMoA69qB</li>
+<li>http://playbetingx.net/gPRCLYqAoMVWmXkk/DEouC/VYHX4PmppNJC/CmUI3f3yOSyARxd5/JRg6S6QqhRUjjEaVF5DW1Jv-0FJZe7E0WCqho976L.NtHqpT5UH55EK.php</li>
+<li>http://playbetingx.net/MWcyxOqtb.wlWbuZm5IXKyYAW1iI7UNM0tkwGQqnuZZWtiDdoDAT8O42.c.oGbb5vJNKJ-D/9PpFaR6o9bv0R8gXm-IU0sF0bQ.uvOdRR.gif</li>
+<li>http://playbetingx.net/bxNwYDOfAGazhpmGvvkrXRVObSIovO43C3zaErimvFtVf0DYA/T8GLHB6tONR.wqjBGsFSPB7GOf51oMT.YYNP8ZwMI3fpG-1qx3Xt8vO.php</li>
+<li>http://playbetingx.net/ZuBtLHxLsF9IKkMFAEgxVk/x8xrWkRK7xbAkZQWc0RqH/uynVj.php?XE=L..gkiMq2Hm8yEp4cm4oYM9ON3qegw8Tik.C5IK4FckKvAXaKl2hx6</li>
+<li>http://playbetingx.net/Q/AwlIjvq3q/rT1FfXxZQ6wkUq/PqxTwq1C-x/vHIPa-O8B4jx0p1ttc2L.cgi?o&amp;=wugp77=M&amp;yHX=&amp;uftbAJ.TEklopcWrQYDKKdGbuvUlKpMW=TZxOpIF</li>
+<li>http://playbetingx.net/eLtVxiksLN8Uko7dYIcicVY14fJ/1F5BHIg5aRVmCAIUHX6o/3WO5PZY2N8fde.cgi?b4=B&amp;PNw=x&amp;FPy=2dN&amp;lXFX0g0ZmVqN5yc=LCKCq7uALqTiHXyb</li>
+<li>http://playbetingx.net/XLmSBYBTJTBJXIssB675TBJyTUoGhU63Oj.YlFh/3PcuZgGgl-B.php?GG=IY2&amp;EHh=oTuMi&amp;mFpK.PR=EyRc&amp;Dq9cqmtsBPf5dB2Lu=GvSuNIbKD4a23</li>
+<li>http://playbetingx.net/LkzJNgDennIIvBaG/dPKDqNtI0ed8DRFPQiJpUATZlUI21.xn2KLpcfxFyH.g1TC7qkHr8.2W.html</li>
+<li>http://playbetingx.net/WXuewmJa-5/KPob/tHBUC609o6XbqPyD/NUyEQCxN8QozS52rz4D7uFcVbyjIN9hBwd1yBa1jbcfdUGeZP8-stpKydczlKgo3Owt5Bg83IP.shtml</li>
+<li>http://playbetingx.net/Coo/YHmTSSypxeTtAGrmgp/539-1GOom7-N/NtbJgjthNpnxi8IDMH6K7a-dYXBJ6ZjkU0pKFOCZVtoLZWhcbORXM0-2gE9aSEJZCbxQVC5.htm</li>
+<li>http://playbetingx.net/EA/lpTgFIScCDJYBBRqF8wx9YXkOWou73gg8TZCP0S8u0/9tJAFf3qYA70XqOfo9vllQ2YKt8r3lFpvr8vOzCrp9Dke4atSob6nCXKzEsc.html</li>
+<li>http://playbetingx.net/YOyajegfql/x3vp.CF9Osr1g8mAQu6B5BJ0I.4V/rfshbewL0uAxBXU8IaaILtIDVD/jmkogpUxds98hM3o6bVxJpZaZJZXRhUS6zvn1ZxH.shtml</li>
+<li>http://playbetingx.net/rdoKlap/ICWfq3HOSBIdgh9M/xv4HUDzxCzXU165s4r/7bX/mMAdxCrZoqkTV8wm2JohmqwNvdTXNyKmydGNVxdqXHygYG-TzTJCzW-cSgxV.htm</li>
+<li>http://playbetingx.net/TMjQDXVHfIOwuppc3xQAkPDb/rMnhqY3aDiIW/OV8pw.dKWklfhIXgim-Qw.vJ78lHvRcf7yxBSmz1BoUPJ2cysbfxSjGxKFz-Ra535cBu.jpg</li>
+<li>http://playbetingx.net/UPzGnYhfoIEew/zJT7GXqyzU/t3r1Rk2/Sx21e1MAbXb/WD4Yco-FFL.php?KSkZ3K6zA4Jo63cQhIWw0xpcynmI3CvE50bT9M2dZfdeyO1g=zKj3R</li>
+<li>http://playbetingx.net/DkMwaFfIdaFMzbh3xVWxRAjh4F5cKmK3sMjM0Yhbnc2nAgmTW8Jep/mRG8ZLduRNkHZMtylYal8bHS4Eesvsk5isL30LL.i2DxyIEhhPP.html</li>
+<li>http://playbetingx.net/tNTTIdvq/oSAzuCaNJIY-evAA9w/yBVQ/tsXumoJyCj-iK9wmUC9srlLz8ETC-HH3IQP0tqpUW2tlq9Cl6knWEnR27si7x15EIUHq89yohR.png</li>
+<li>http://playbetingx.net/DsGhQxNnAffAViLP/T4jCFaacxx.1upyWXg8yxn4.bml?KR=Tqs464dR4&amp;w-R7rY=PJd&amp;NhMJOjCf7=HIDX</li>
+<li>http://playbetingx.net/bOGgVaoG8i88vRt.KTp/daRp4NUW.N/Uzm3jLqULu0YjfXF7wY/SQypBCPhUv93yA76i0lUvkaZHP6D9hF0Aykr.SXiits1Gfh.xxJIzpHq.png</li>
+<li>http://playbetingx.net/mLRMFTZBWgrgJ1fKG3TKYX0stMtWJdtbMguqf95-ZubHKxIcGBXh.HAHNWlT0v0/ZW1Vp3929Z8A9j1WKDGqx6Elfn39r9A8mOEAuALJE.jpg</li>
+<li>http://playbetingx.net/DGpnamvZ1Cfu9-moVMEX/FzYiISyX2c/1wJgrrPJHw6b9aED/Ex6vxwSn5HsPDV-RUr7yBjfQ3o.gif</li>
+<li>http://playbetingx.net/iQCLtoOc/UmLPC5j/VRhDF1dZffn5s1ZrbQOGWMmGvwX.H.cgi?04fIuVQI6wjJmiMdpVIVTn=L9y021sQJCkbPZTR2gd31Kqtn.hv-aogyBs8qn</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0801 1800 0000 1800 0000 0200 0000 0000 | ................
+00000010 | 0000 0000 3CFF C800 4172 6162 4C61 6230 | ....<...ArabLab0
+00000020 | 3030 3030 3030 3030 3063 3233 3031 6235 | 000000000c2301b5
+00000030 | 2001 0F00 0000 0F00 0000 0203 0000 0000 |  ...............
+00000040 | 0000 0000 6026 A900 4F19 0D05 2F0E 0C56 | ....`&..O.../..V
+00000050 | 5957 1E40 5C45 573A 0149 0000 0049 0000 | YW.@\EW:.I...I..
+00000060 | 0002 0200 0000 0000 0000 0060 26A9 0040 | ...........`&..@
+00000070 | 7261 624C 6162 300C 3030 307F 630A 1067 | rabLab0.000.c..g
+00000080 | 0A5C 6B60 6232 076D 5225 0D21 000B 5E0A | .\k`b2.mR%.!..^.
+00000090 | 1073 5F5D 4045 4455 117C 525D 544E 1514 | .s_]@EDU.|R]TN..
+000000A0 | 0104 1076 4131 6963 6475 7D1C 1066 5542 | ...vA1icdu}..fUB
+000000B0 | 5912 021E 034C 0141 0901 0000 0000 0000 | Y....L.A........
+000000C0 | 0000 0200 0000 0000 0000 0000 984F 0B00 | .............O..
+000000D0 | 0901 0000 0000 0000 0000 0200 0000 0000 | ................
+000000E0 | 0000 0000 984F 0B00 0901 0000 0000 0000 | .....O..........
+000000F0 | 0000 0200 0000 0000 0000 0000 984F 0B00 | .............O..
+00000100 | 0901 0000 0000 0000 0000 0200 0000 0000 | ................
+00000110 | 0000 0000 984F 0B00 0901 0000 0000 0000 | .....O..........
+00000120 | 0000 0200 0000 0000 0000 0000 984F 0B00 | .............O..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

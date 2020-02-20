@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 10 November 2014, 09:22:07</li>
+<li>Processing time: 9 min 2 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC2735466F57519E6DFA62EBC6BFAB929</li>
+<li>File SHA-1: 0x72CF9A399D3CE85F85A5999B452D09CCEE8A28EE</li>
+<li>Filesize: 1,609,216 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,634,304 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>ConsentPromptBehaviorAdmin = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>[filename of the sample #1] = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>cashbay.org</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">Cashbay.org</td><td class="cell_1">80</td><td class="cell_1">Cashbay.org</td><td class="cell_2">Cashbay.org</td></tr>
+<tr><td class="cell_1">checkip.dyndns.org</td><td class="cell_1">80</td><td class="cell_1">checkip.dyndns.org</td><td class="cell_2">checkip.dyndns.org</td></tr>
+<tr><td class="cell_1">api.exip.org</td><td class="cell_1">80</td><td class="cell_1">api.exip.org</td><td class="cell_2">api.exip.org</td></tr>
+<tr><td class="cell_1">www.myexternalip.com</td><td class="cell_1">80</td><td class="cell_1">www.myexternalip.com</td><td class="cell_2">www.myexternalip.com</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>cbs.exe</li>
+<li>index.html</li>
+<li>?call=ip</li>
+<li>raw</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 10 November 2014 09:31:10</li>
+<li>Processing time: 7 min 0 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x9CA78609FAFE9B5FD3CA46B5B4F71B40</li>
+<li>File SHA-1: 0xEDC9794EB15FA7DB2597BB2930E98C591721A782</li>
+<li>Filesize: 1,447,424 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,474,560 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>ConsentPromptBehaviorAdmin = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>[filename of the sample #1] = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">checkip.dyndns.org</td><td class="cell_1">80</td><td class="cell_1">checkip.dyndns.org</td><td class="cell_2">checkip.dyndns.org</td></tr>
+<tr><td class="cell_1">api.exip.org</td><td class="cell_1">80</td><td class="cell_1">api.exip.org</td><td class="cell_2">api.exip.org</td></tr>
+<tr><td class="cell_1">www.myexternalip.com</td><td class="cell_1">80</td><td class="cell_1">www.myexternalip.com</td><td class="cell_2">www.myexternalip.com</td></tr>
+<tr><td class="cell_1">Cashbay.org</td><td class="cell_1">80</td><td class="cell_1">Cashbay.org</td><td class="cell_2">Cashbay.org</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>index.html</li>
+<li>?call=ip</li>
+<li>raw</li>
+<li>Cahbupdate.exe</li>
+<li>Cb.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary (Generation #2):</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 10 November 2014 09:38:10</li>
+<li>Processing time: 6 min 49 sec</li>
+<li>Downloaded sample #1:</li>
+<ul>
+<li>File MD5: 0xCAC7ECAABC301CB6347BB6F5FC209E53</li>
+<li>File SHA-1: 0x95C231991DEAEE3F55B4C860BF067BB87819A8B0</li>
+<li>Filesize: 1,432,576 bytes</li>
+</ul>
+<li>Downloaded sample #2:</li>
+<ul>
+<li>File MD5: 0x7072F3831E453298D1309CB859E35891</li>
+<li>File SHA-1: 0x5D81768AC9CD0B9E8692B72020702F493BBE89E0</li>
+<li>Filesize: 1,302,016 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,458,176 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #2]</td><td class="cell_1">[file and pathname of the sample #2]</td><td class="cell_2">1,327,104 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">Cashbay.org</td><td class="cell_1">80</td><td class="cell_1">Cashbay.org</td><td class="cell_2">Cashbay.org</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>Cbv.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded Files Summary (Generation #3):</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 10 November 2014 09:47:27</li>
+<li>Processing time: 6 min 0 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0xBB3B4A99A5FEFE30D5820DBCCDF233F9</li>
+<li>File SHA-1: 0x85F66E37238F2395FC533EF3C213ABE33E019127</li>
+<li>Filesize: 1,305,600 bytes</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

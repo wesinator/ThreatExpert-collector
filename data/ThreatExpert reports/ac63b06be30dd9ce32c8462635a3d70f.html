@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 19 September 2014, 09:39:23</li>
+<li>Processing time: 6 min 56 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xAC63B06BE30DD9CE32C8462635A3D70F</li>
+<li>File SHA-1: 0x7062221D3AA31E4D8D7F708844A858DC4827D381</li>
+<li>Filesize: 3,262,712 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/ravmond.exe.html" target="_blank">ravmond.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\rising\rsd\backup\rav\monbasedui\<a href="http://www.threatexpert.com/files/ravmond.exe.html" target="_blank">ravmond.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">286,720 bytes</td></tr>
+<tr><td class="cell_1">popwndexe.exe</td><td class="cell_1">%ProgramFiles%\rising\rsd\backup\rsd\rssetup\popwndexe.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">ravxp.exe</td><td class="cell_1">%ProgramFiles%\rising\rsd\backup\rav\ravxp\ravxp.exe</td><td class="cell_2">94,208 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,236,992 bytes</td></tr>
+<tr><td class="cell_1">rsDefense.exe</td><td class="cell_1">%ProgramFiles%\Rising\RZC\rsDefense.exe</td><td class="cell_2">286,720 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\RsdSfxTmp\<a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">749,568 bytes</td></tr>
+<tr><td class="cell_1">rsbackup.exe</td><td class="cell_1">%ProgramFiles%\rising\rsd\backup\rsd\rssetup\rsbackup.exe</td><td class="cell_2">360,448 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>There were new services created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">RsMgrSvc</td><td class="cell_1">Rsd Service</td><td class="cell_1">"Running"</td><td class="cell_2">"%ProgramFiles%\Rising\RSD\RsMgrSvc.exe"</td></tr>
+<tr><td class="cell_1">Defense</td><td class="cell_1">Rs RZC Serve</td><td class="cell_1">"Running"</td><td class="cell_2">"%ProgramFiles%\Rising\RZC\rsDefense.exe"</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC3909C5-DC79-47e5-86CA-7FB5C041A37C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CAA2D3B1-4BB5-4a45-A17A-122773379D99}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F1CF8F61-AB1D-11d4-ABBD-0050BACEC828}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F1CF8F61-AB1D-11d4-ABBD-0050BACEC828}\RzNBMlVLLUswUDBORC1MMEVGU1UtRkg1MzAw</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RSD</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RZC</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising\MimeType</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising\MimeType\application/x-rs-extension</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\lockie</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\perflog</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\BRScan</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\BRScan\pro_path</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\BRScan\reg_path</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\Count</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\EngDelay</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\Mode</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\KillTroy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\KillTroy\DelayCloud</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\KillTroy\Radio</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\bxfix</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\conntest</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\navig</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\oswhite</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\JoinImprovementPlan</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\UseCloudDefence</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\UseCloudEngine</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\JoinImprovementPlan</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\UseCloudDefence</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\UseCloudEngine</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\BRScan</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\GlobalCache</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\NoBacore</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\NoTrayIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\REGO</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\UninstallProtect</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ScanResultCountPerPage</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowAgent</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowLogonIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowScanAd</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ScanResultCountPerPage</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowAgent</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowLogonIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowScanAd</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog\Default</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog\Default\KeepDays</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog\KeepDays</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\bamon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\bamon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\bamon\verdict_vir_found</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\bamon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\bamon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\bamon\verdict_vir_found</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\eshopmon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\eshopmon\sites</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\eshopmon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\file_ext_filter</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\mode</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\notify_timeout</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\verdict_vir_found</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\homepageguard</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\homepageguard\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\level</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\notify_user</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\whitemask</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\writelog</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\zone</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\mailmon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\mailmon\notify_timeout</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\mailmon\port_list</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\mailmon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\mailmon\verdict_vir_found</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon\app_filters</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon\app_pathnames</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon\exploit_scan_state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon\instrmon_state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\officemon\state</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\rdskmon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\rdskmon\attach_scan_mode</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\rdskmon\autorun_disable_state</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC3909C5-DC79-47e5-86CA-7FB5C041A37C}]</li><ul>
+<li>RAV = "EqDTEoCmM30ijg=="</li>
+<li>Title = "EqDTEoCmqdexpoOLqYypjI/H8g=="</li>
+<li>InstallPath = "EqDTEoCmRHczLnRrIGolKGEcPXUIElpXBnszO3Bt"</li>
+<li>ravmonexe = "EqDTEoCmE1QlBFVcD1QET1ZBBCg="</li>
+<li>monServerName = "EqDTEoCmJUIHBF1KBJ0="</li>
+<li>monShowName = "EqDTEoCmM1RBM2l6QXQEE0VcmA=="</li>
+<li>rstrayexe = "EqDTEoCmE10CFUFYGAkEGVZG"</li>
+<li>regtray = "EqDTEoCmE1IPE0laxQ=="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CAA2D3B1-4BB5-4a45-A17A-122773379D99}]</li><ul>
+<li>ProcID = "{C04F6F76-2204-6648-3030-303030303030}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F1CF8F61-AB1D-11d4-ABBD-0050BACEC828}\RzNBMlVLLUswUDBORC1MMEVGU1UtRkg1MzAw]</li><ul>
+<li>ProcInfo = "1411144768"</li>
+<li>ProcKind = "5"</li>
+<li>ProcDll = "1442767168"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F1CF8F61-AB1D-11d4-ABBD-0050BACEC828}]</li><ul>
+<li>ProcKey = "RzNBMlVLLUswUDBORC1MMEVGU1UtRkg1MzAw"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>RSDTRAY = ""%ProgramFiles%\Rising\RSD\popwndexe.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RSD]</li><ul>
+<li>DisplayName = "Rising Software Deployment System"</li>
+<li>InstallLocation = "%ProgramFiles%\Rising\RSD"</li>
+<li>DisplayVersion = "23.00.00.95"</li>
+<li>DisplayIcon = "%ProgramFiles%\Rising\RSD\Setup.exe"</li>
+<li>UninstallString = ""%ProgramFiles%\Rising\RSD\Setup.exe" /UNINSTALL /PRODUCT=RSD"</li>
+<li>Publisher = "Beijing Rising Information Technology, Inc."</li>
+<li>URLInfoAbout = "http://help.ikaka.com/"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RZC]</li><ul>
+<li>DisplayName = "Rising Software Deployment System"</li>
+<li>InstallLocation = "%ProgramFiles%\Rising\RZC"</li>
+<li>DisplayVersion = "24.00.14.25"</li>
+<li>DisplayIcon = "%ProgramFiles%\Rising\RSD\Setup.exe"</li>
+<li>UninstallString = ""%ProgramFiles%\Rising\RSD\Setup.exe" /UNINSTALL /PRODUCT=RAV"</li>
+<li>Publisher = "Beijing Rising Information Technology, Inc."</li>
+<li>URLInfoAbout = "http://help.ikaka.com/"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising\MimeType\application/x-rs-extension]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising\MimeType]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins\@rising.com.cn/nprising]</li><ul>
+<li>Description = ""</li>
+<li>Path = "%ProgramFiles%\Rising\RZC\nprising.dll"</li>
+<li>Vender = "Rising"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\BRScan\reg_path]</li><ul>
+<li>ver = 0x00000001</li>
+<li>(Default) = 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\BRScan\pro_path]</li><ul>
+<li>ver = 0x00000001</li>
+<li>(Default) = 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\Mode]</li><ul>
+<li>(Default) = "Post"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\EngDelay]</li><ul>
+<li>(Default) = 0x00000100</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\HTTP\Count]</li><ul>
+<li>(Default) = 0x00000250</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\KillTroy\Radio]</li><ul>
+<li>(Default) = 0x00000005</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\KillTroy\DelayCloud]</li><ul>
+<li>(Default) = 0x00000500</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\oswhite]</li><ul>
+<li>(Default) = "http://rscloud.rising.net.cn/navigate_oswhite.xml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\navig]</li><ul>
+<li>(Default) = "http://rscloud.rising.net.cn/navigate.xml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\conntest]</li><ul>
+<li>(Default) = "http://rscloud.rising.net.cn/cloud.html"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudQuery\NavigateXml\bxfix]</li><ul>
+<li>(Default) = "http://rscloud.rising.net.cn/navigate_bwfix.xml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\UseCloudEngine]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\UseCloudDefence]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\Default\JoinImprovementPlan]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\UseCloudEngine]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\UseCloudDefence]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\CloudSafe\JoinImprovementPlan]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\UninstallProtect]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\REGO]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\NoTrayIcon]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\NoBacore]</li><ul>
+<li>ver = 0x00000001</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\GlobalCache]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Features\BRScan]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowScanAd]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowLogonIcon]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ShowAgent]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\Default\ScanResultCountPerPage]</li><ul>
+<li>(Default) = 0x0FFFFFFF</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowScanAd]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowLogonIcon]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ShowAgent]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\Personality\ScanResultCountPerPage]</li><ul>
+<li>(Default) = 0x0FFFFFFF</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog\Default\KeepDays]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x0000003C</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsLog\KeepDays]</li><ul>
+<li>ver = 0x00000003</li>
+<li>(Default) = 0x0000003C</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\bamon\verdict_vir_found]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\bamon\state]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\bamon\verdict_vir_found]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\bamon\state]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\eshopmon\state]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\eshopmon\sites]</li><ul>
+<li>ver = 0x00000010</li>
+<li>(Default) = D8 6D 9D 5B 51 7F 00 00 2A 00 2E 00 74 00 61 00 6F 00 62 00 61 00 6F 00 2E 00 63 00 6F 00 6D 00 00 00 29 59 2B 73 00 00 77 00 77 00 77 00 2E 00 74 00 6D 00 61 00 6C 00 6C 00 2E 00 63 00 6F 00 6D 00 00 00 AC 4E 1C 4E 46 55 CE 57 00 00 77 00 77 00 77 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\verdict_vir_found]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\state]</li><ul>
+<li>(Default) = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\notify_timeout]</li><ul>
+<li>(Default) = 0x00020000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\mode]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000002</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\filemon\file_ext_filter]</li><ul>
+<li>ver = 0x00000001</li>
+<li>(Default) = "VBS;VBE;JS;JSE;LSP;FAS;ASP;HTT;HTA;CSS;WSH;MHT;JSP;PHP;HTM;HTML;RB;LUA;PY;EXE;COM;SYS;VXD;DRV;DLL;BIN;OVL;386;FON;DOC;DOT;XLS;XLT;PPT;BAT;SCT;OCX;CPL;LNK;EML;NWS;PIF;SHS;MAI;SCR;ZIP;7Z;ARJ;BZ2;BZIP2;CAB;GZ;GZIP;HFS;ISO;LHA;LZH;LZMA;RAR;TAR;"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\homepageguard\state]</li><ul>
+<li>ver = 0x00000002</li>
+<li>(Default) = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\rising\RAV\cfg\RsmonService\Default\kernelreinforce\zone]</li><ul>
+<li>(Default) = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Control Panel\Desktop]</li><ul>
+<li>FontSmoothingType = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>{{887FE1BB-7C1F-4d73-BD44-B726E1672DC7}}_RSD</li>
+<li>{E5C53971-D80E-4500-BE0D-761BF3CD8457}</li>
+<li>Global\MutexRS_SERVER_TABLE_LOCK_C__YYYIYOU_S1.DAT</li>
+<li>Global\MutexRS_SERVER_TABLE_OPEN_C__YYYIYOU_S1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_LOCK_C__YYYIYOU_C1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_OPEN_C__YYYIYOU_C1.DAT</li>
+<li>Global\Rising_RSD_Setup_RAV</li>
+<li>Local_RSD_Setup_RAV</li>
+<li>Global\Load_Shared_Memory</li>
+<li>Global\Global\CfgDll.dll_MUTEX_WRITE_MEM_Rav_Formal11</li>
+<li>Global\RSFMAF</li>
+<li>Global\MutexRS_SERVER_TABLE_LOCK_C__PROGRAM_FILES_RISING_RSD_RSSETUP_S1.DAT</li>
+<li>Global\MutexRS_SERVER_TABLE_OPEN_C__PROGRAM_FILES_RISING_RSD_RSSETUP_S1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_LOCK_C__PROGRAM_FILES_RISING_RSD_RSSETUP_C1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_OPEN_C__PROGRAM_FILES_RISING_RSD_RSSETUP_C1.DAT</li>
+<li>Global\0BE9B2B0-68B5-43f3-AC16-4846F19A4F84-CCenterrav</li>
+<li>Global\0BE9B2B0-68B5-43f3-AC16-4846F19A4F84-CCenterravRPCOK</li>
+<li>Global\MutexRS_SERVER_TABLE_LOCK_C__DOCUMENTS_AND_SETTINGS_ALL_USERS_APPLICATION_DATA_RISING_RZC_RAV_S1.DAT</li>
+<li>Global\MutexRS_SERVER_TABLE_OPEN_C__DOCUMENTS_AND_SETTINGS_ALL_USERS_APPLICATION_DATA_RISING_RZC_RAV_S1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_LOCK_C__DOCUMENTS_AND_SETTINGS_ALL_USERS_APPLICATION_DATA_RISING_RZC_RAV_C1.DAT</li>
+<li>Global\MutexRS_CLIENT_TABLE_OPEN_C__DOCUMENTS_AND_SETTINGS_ALL_USERS_APPLICATION_DATA_RISING_RZC_RAV_C1.DAT</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">center.rising.com.cn</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">rsup10.rising.com.cn</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>LogCenter.asp?info=EqDTEoCmKkIYXGFqJXIPCF1KFUYNDRVPUBoiUQd/V2FWVwELURNXVwcBUhdSUQAJUhdSUQAJUhdSURVPUxpRR0UKXBdHFwcETnRHFwYEUcI=</li>
+<li>rs2012/RsPcVer12.xml</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

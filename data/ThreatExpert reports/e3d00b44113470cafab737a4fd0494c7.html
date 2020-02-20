@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 March 2016, 23:27:24</li>
+<li>Processing time: 5 min 49 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE3D00B44113470CAFAB737A4FD0494C7</li>
+<li>File SHA-1: 0xB58F6EC891F2943E98EFA878DA15326219B7733F</li>
+<li>Filesize: 118,875 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+<br/>
+%Windir%\Terms.exe
+</td>
+<td class="cell_1">118,875 bytes</td>
+<td class="cell_2">MD5: 0xE3D00B44113470CAFAB737A4FD0494C7<br/>SHA-1: 0xB58F6EC891F2943E98EFA878DA15326219B7733F</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Terms.exe</td><td class="cell_1">%Windir%\terms.exe</td><td class="cell_2">122,880 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">122,880 bytes</td></tr>
+</table></p>
+<ul><li>There were new services created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Abrdiy makoma</td><td class="cell_1">Nnafvs ygkeaqmi</td><td class="cell_1">"Starting"</td><td class="cell_2">%Windir%\Terms.exe</td></tr>
+<tr><td class="cell_1">Cztlua yaucya</td><td class="cell_1">Hfmfxk amsuagyu</td><td class="cell_1">"Stopped"</td><td class="cell_2">%Windir%\Terms.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Protection program</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Protection program</li>
+<li>HKEY_USERS\.DEFAULT\NetSubKey</li>
+<li>HKEY_CURRENT_USER\NetSubKey</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Abrdiy makoma = "%Windir%\Terms.exe"</li>
+<li>Cztlua yaucya = "%Windir%\Terms.exe"</li>
+</ul>
+<br/>
+<em>so that Terms.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Abrdiy makoma"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000]</li><ul>
+<li>Service = "Abrdiy makoma"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Nnafvs ygkeaqmi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ABRDIY_MAKOMA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Cztlua yaucya"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000]</li><ul>
+<li>Service = "Cztlua yaucya"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Hfmfxk amsuagyu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CZTLUA_YAUCYA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ABRDIY_MAKOMA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Abrdiy makoma]</li><ul>
+<li>MarkTime = "2016-03-09 23:27"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.exe"</li>
+<li>DisplayName = "Nnafvs ygkeaqmi"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Aqmywm oossyaic qcaimuqasiw"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya\Enum]</li><ul>
+<li>0 = "Root\LEGACY_CZTLUA_YAUCYA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cztlua yaucya]</li><ul>
+<li>MarkTime = "2016-03-09 23:29"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.exe"</li>
+<li>DisplayName = "Hfmfxk amsuagyu"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Egywqe awkkiays osauicoaguu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Protection program]</li><ul>
+<li>ReleiceName = "Cztlua yaucya"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Abrdiy makoma"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA\0000]</li><ul>
+<li>Service = "Abrdiy makoma"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Nnafvs ygkeaqmi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ABRDIY_MAKOMA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Cztlua yaucya"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA\0000]</li><ul>
+<li>Service = "Cztlua yaucya"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Hfmfxk amsuagyu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CZTLUA_YAUCYA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ABRDIY_MAKOMA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abrdiy makoma]</li><ul>
+<li>MarkTime = "2016-03-09 23:27"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.exe"</li>
+<li>DisplayName = "Nnafvs ygkeaqmi"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Aqmywm oossyaic qcaimuqasiw"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya\Enum]</li><ul>
+<li>0 = "Root\LEGACY_CZTLUA_YAUCYA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cztlua yaucya]</li><ul>
+<li>MarkTime = "2016-03-09 23:29"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.exe"</li>
+<li>DisplayName = "Hfmfxk amsuagyu"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Egywqe awkkiays osauicoaguu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Protection program]</li><ul>
+<li>ReleiceName = "Cztlua yaucya"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/hong_kong.gif"></td>
+<td class="cell_2">Hong Kong</td><tr>
+</table></p>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">Terms.exe (%Windir%\Terms.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>vip0564.f3322.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">vip0564.f3322.org<td class="cell_2">2015</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | DC00 0000 6C01 0000 7B9E 4E6B 6561 9A00 | ....l...{.Nkea..
+00000010 | C6A9 43C8 09C6 1E5F 0904 4E44 3F30 B4AA | ..C...._..ND?0..
+00000020 | 2830 3854 2921 333D 58C0 8904 0E8C DD16 | (08T)!3=X.......
+00000030 | 67DB D4BD 8978 C15B 6205 8E6A E00C 2A42 | g....x.[b..j..*B
+00000040 | 28C6 0957 0E32 0EE4 0F9A 0D7C 082D 0CFE | (..W.2.....|.-..
+00000050 | 4056 3090 1FC2 90CA 50C4 90CB 50CC A007 | @V0.....P...P...
+00000060 | 6455 0031 A900 E406 0646 46B0 9BB6 7343 | dU.1.....FF...sC
+00000070 | 1C57 0FB2 CFDF 3720 34C4 35C8 CFD1 D795 | .W....7 4.5.....
+00000080 | 48A3 6A04 A08C 3537 84C1 F41E 9183 E5C9 | H.j...57........
+00000090 | C5B9 0F18 A1E2 C6AF 1B6B 9881 B402 EB64 | .........k.....d
+000000A0 | C990 6021 861D C98E 380D 5362 6038 00A2 | ..`!....8.Sb`8..
+000000B0 | 2D2C 2C2D 1982 8418 727E 4FA8 2904 6209 | -,,-....r~O.).b.
+000000C0 | A03E 1DF5 4370 7341 E6F1 00C5 388E 3B32 | .>..CpsA....8.;2
+000000D0 | B09C 7264 0089 0300 4071 3409           | ..rd....@q4.
+00000000 | CD00 0000 6C01 0000 7B9E 4E6B 6561 9A00 | ....l...{.Nkea..
+00000020 | 2830 3854 2921 333D 58C0 8904 29FA 3151 | (08T)!3=X...).1Q
+00000030 | 054F F602 F384 7C17 054D E88C 3735 4333 | .O....|..M..75C3
+00000040 | 8A36 8139 0A83 C69A CF10 01DB 0102 1C40 | .6.9...........@
+00000050 | 351C 50BD 1D8C 1071 07A0 9E05 8C22 70B3 | 5.P....q....."p.
+00000060 | 416E 6060 6404 BA49 8461 3B37 C471 F540 | An``d..I.a;7.q.@
+00000070 | D2D9 DF37 2034 C435 C8CF D1D7 15BB AB30 | ...7 4.5.......0
+00000080 | 408D 1E88 7C2F 0475 F4DF FA3D 2207 CB93 | @...|/.u...="...
+00000090 | 8B73 1F30 4215 18BF 6EAC 6106 D20A AC93 | .s.0B...n.a.....
+000000A0 | 2563 1276 33EC 4876 2468 A885 85A5 2532 | %c.v3.Hv$h....%2
+000000B0 | 5F01 A84F 47FD 10DC 5C90 7922 4031 8EE3 | _..OG...\.y"@1..
+000000C0 | 8E0C 2CA7 1C19 40E2 00ED 4531 06        | ..,...@...E1.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 0:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | CD00 0000 6C01 0000 7B9E 4E6B 6561 9A00 | ....l...{.Nkea..
+00000010 | C6A9 43C8 09C6 1E5F 0904 4E44 3F30 B4AA | ..C...._..ND?0..
+00000020 | 2830 3854 2921 333D 58C0 8904 29FA 3151 | (08T)!3=X...).1Q
+00000030 | 054F F602 F384 7C17 054D E88C 3735 4333 | .O....|..M..75C3
+00000040 | 8A36 8139 0A83 C69A CF10 01DB 0102 1C40 | .6.9...........@
+00000050 | 351C 50BD 1D8C 1071 07A0 9E05 8C22 70B3 | 5.P....q....."p.
+00000060 | 416E 6060 6404 BA49 8461 3B37 C471 F540 | An``d..I.a;7.q.@
+00000070 | D2D9 DF37 2034 C435 C8CF D1D7 15BB AB30 | ...7 4.5.......0
+00000080 | 408D 1E88 7C2F 0475 F4DF FA3D 2207 CB93 | @...|/.u...="...
+00000090 | 8B73 1F30 4215 18BF 6EAC 6106 D20A AC93 | .s.0B...n.a.....
+000000A0 | 2563 1276 33EC 4876 2468 A885 85A5 2532 | %c.v3.Hv$h....%2
+000000B0 | 5F01 A84F 47FD 10DC 5C90 7922 4031 8EE3 | _..OG...\.y"@1..
+000000C0 | 8E0C 2CA7 1C19 40E2 00ED 4531 06        | ..,...@...E1.
+00000000 | DD00 0000 6C01 0000 7B9E 4E6B 6561 9A00 | ....l...{.Nkea..
+00000040 | 8A36 8139 0A83 C69A CF14 00D9 0501 1940 | .6.9...........@
+00000080 | 400D 987C 2F04 75F4 DFFA 3D22 07CB 938B | @..|/.u...="....
+00000090 | 731F 3042 1518 BF6E AC61 06D2 0AAC 9325 | s.0B...n.a.....%
+000000A0 | 6312 7633 EC48 7664 D000 8505 9A41 1B8C | c.v3.Hvd.....A..
+000000B0 | 6783 E91B 40DA C2C2 D292 2101 C49B 0DC6 | g...@.....!.....
+000000C0 | 0A40 7D3A EA87 E0E6 82CC 1301 8A71 1C77 | .@}:.........q.w
+000000D0 | 6460 39E5 C800 1207 00E9 9235 E2        | d`9........5.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

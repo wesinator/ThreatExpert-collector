@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 28 February 2015, 12:21:11</li>
+<li>Processing time: 6 min 35 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBC0C00B56FC4C0FEE4FA5F39F01A8823</li>
+<li>File SHA-1: 0x01060F46D76580ABDF1DCCB859A1F64DE14CCE03</li>
+<li>Filesize: 3,350,761 bytes</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">nssm.exe</td><td class="cell_1">%AppData%\nssm.exe</td><td class="cell_2">311,296 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">nssm.exe</td><td class="cell_1">%Temp%\is-puf33.tmp\nssm.exe</td><td class="cell_2">311,296 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-T5EJR.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">770,048 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">clr_optimization_v1.0.23171</td><td class="cell_1">Microsoft .NET Framework NGEN v1.0</td><td class="cell_1">"Stopped"</td><td class="cell_2">%AppData%\nssm.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Parameters\AppExit</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Parameters\AppExit</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Parameters\AppExit]</li><ul>
+<li>(Default) = "Restart"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171\Parameters]</li><ul>
+<li>Application = "svchost.exe"</li>
+<li>AppParameters = "-o stratum+tcp://pool.monero.net:80 -o stratum+tcp://xmr.cryptopool.org:8080 -o stratum+tcp://xmr-eu.dwarfpool.com:8080 -o stratum+cp://xmr.crypto-pool.fr:3333 -o stratum+tcp://mine.moneropool.com:3333 -o stratum+tcp://pool.minexmr.com:4444 -u 44XYT</li>
+<li>AppDirectory = ""</li>
+<li>AppPriority = 0x00000040</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\clr_optimization_v1.0.23171]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%AppData%\nssm.exe"</li>
+<li>DisplayName = "Microsoft .NET Framework NGEN v1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft .NET Framework NGEN"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Parameters\AppExit]</li><ul>
+<li>(Default) = "Restart"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171\Parameters]</li><ul>
+<li>Application = "svchost.exe"</li>
+<li>AppParameters = "-o stratum+tcp://pool.monero.net:80 -o stratum+tcp://xmr.cryptopool.org:8080 -o stratum+tcp://xmr-eu.dwarfpool.com:8080 -o stratum+cp://xmr.crypto-pool.fr:3333 -o stratum+tcp://mine.moneropool.com:3333 -o stratum+tcp://pool.minexmr.com:4444 -u 44XYT</li>
+<li>AppDirectory = ""</li>
+<li>AppPriority = 0x00000040</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v1.0.23171]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%AppData%\nssm.exe"</li>
+<li>DisplayName = "Microsoft .NET Framework NGEN v1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft .NET Framework NGEN"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 April 2016, 02:49:03</li>
+<li>Processing time: 5 min 44 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD2D65CE5F382D640DEB3FA91F0D04C8F</li>
+<li>File SHA-1: 0xA01A237DC4DB17B534432E9724DA1AB4F4767E92</li>
+<li>Filesize: 61,524 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">65,536 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\https://hao.360.cn/?wd_xp1</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\https://hao.360.cn/?wd_xp1</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\https://hao.360.cn/?wd_xp1]</li><ul>
+<li>ConnectGroup = "XXXXXXXXX"</li>
+<li>MarkTime = "2016-04-14 02:49"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\https://hao.360.cn/?wd_xp1]</li><ul>
+<li>ConnectGroup = "XXXXXXXXX"</li>
+<li>MarkTime = "2016-04-14 02:49"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>gov.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">gov.f3322.net<td class="cell_2">51012</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 51012:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1F93 97D3 9401 6949 4D7B A7AC F67A 3A3C | ......iIM{...z:<
+00000010 | E564 C689 B63E 5938 E3C4 0B99 8F08 2F56 | .d...>Y8....../V
+00000020 | 9C27 03B3 5171 44EF EF85 B386 49CD 5C76 | .'..QqD.....I.\v
+00000030 | 1DAC C373 449A A6D7 34A8 C88A E03D 4884 | ...sD...4....=H.
+00000040 | 60AD 60B6 A5A6 0F50 2A4E 894F 0690 0A8F | `.`....P*N.O....
+00000050 | 0C3B 2FA9 11DE B785 6C79 EBDB E039 EA98 | .;/.....ly...9..
+00000060 | CFAD 771F D562 6EDA 9662 008C A127 EF1B | ..w..bn..b...'..
+00000070 | AB37 3FA2 7DD0 EF1B CD5A B631 9FC9 116C | .7?.}....Z.1...l
+00000080 | 7EB3 37EB A5FF 6D04 ED41 051C 15E3 C8C1 | ~.7...m..A......
+00000090 | A99B 2EFA 972C 040A F407 8F9B D869 ACB8 | .....,.......i..
+000000A0 | A01F D38B FD47 73BF FEFB 180F 4A97 AAAC | .....Gs.....J...
+000000B0 | 36D1 17FC 991C 299E B40D BE22 CCE7 FCBF | 6.....)...."....
+000000C0 | F31F 378E F24F A2D7 3989 6C45 1878 E177 | ..7..O..9.lE.x.w
+000000D0 | F883 743D 9F2F 6283 3E74 5DF0 B0E1 80B9 | ..t=./b.>t].....
+000000E0 | 2375 AF16 FD01 BBC2 1246 E0E2 04E4 5A16 | #u.......F....Z.
+000000F0 | 29FF AD94 0CA6 3EF6 5884 C0BB 8240 08D7 | ).....>.X....@..
+00000100 | 8340 4E2D FB90 EEB4 641B 7853 C1F4 74CF | .@N-....d.xS..t.
+00000110 | 503F 033B 9370 7FB0 BD75 C9AA 8E0F 5C5B | P?.;.p...u....\[
+00000120 | 3BD2 1C71 E033 FD3B 1944 523D 7D47 EFF3 | ;..q.3.;.DR=}G..
+00000130 | 5FAD C382 E0C0 7401 4434 2CFF 94C0 08EF | _.....t.D4,.....
+00000140 | DE90 8369 CDF9 4BCA 28D9 8EB1 93BE 0243 | ...i..K.(......C
+00000150 | 4643 0CA9 D59D 4EDF 9BF5 FCC4 9B3E BDED | FC....N......>..
+00000160 | 6C7C 5F78 701E 84B7 8E4E 4DC1 1134 037F | l|_xp....NM..4..
+00000170 | 1794 F5E7 7F09 29D6 3A8B A168 BFD5 5747 | ......).:..h..WG
+00000180 | 9FB5 81EF C597 10B5 A5F9 6954 088C FA8C | ..........iT....
+00000190 | 64CD D367 1420 724A B766 FE94 3928 B228 | d..g. rJ.f..9(.(
+000001A0 | E336 2A9F D15D 7F01 7E3E 3EA4 F281 4486 | .6*..]..~>>...D.
+000001B0 | FB32 0E6F 6BB2 1982 51BE 0D9B 8663 D554 | .2.ok...Q....c.T
+000001C0 | 77CA FDCD F6F4 A74A 37E4 42E9 8D4A BECC | w......J7.B..J..
+000001D0 | 4C88 6391 F9B4 82A7 4312 36B1 D3A4 8334 | L.c.....C.6....4
+000001E0 | 421C 36DF 4973 EE4C E22E B2A3 9E59 1CF8 | B.6.Is.L.....Y..
+000001F0 | 4328 8A20 303D 2882 7DCE 264F 6043 651B | C(. 0=(.}.&O`Ce.
+00000200 | 9E51 B007 D077 A094 C7A5 4636 9C22 785A | .Q...w....F6."xZ
+00000210 | 6F27 E03A FE37 5C78 BFAA ABE3 2B02 5990 | o'.:.7\x....+.Y.
+00000220 | 7C6E D41D 1B0D 7A07 66                  | |n....z.f
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

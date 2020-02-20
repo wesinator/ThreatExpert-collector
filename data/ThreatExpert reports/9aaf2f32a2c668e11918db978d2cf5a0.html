@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2016, 00:35:36</li>
+<li>Processing time: 5 min 32 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x9AAF2F32A2C668E11918DB978D2CF5A0</li>
+<li>File SHA-1: 0x8D03CC9A7BEC05D48EC9EFAFBC12F49C2A58212C</li>
+<li>Filesize: 2,380,447 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">2,646,016 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}]</li><ul>
+<li>IsInstalled = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}]</li><ul>
+<li>IsInstalled = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>Flags = "db"</li>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>2106 = 0x00000000</li>
+<li>2401 = 0x00000000</li>
+<li>2600 = 0x00000000</li>
+<li>TemplateIndex = 0x00002CEC</li>
+<li>2007 = 0x00002710</li>
+<li>2701 = 0x00000000</li>
+<li>2704 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemHand\.Current]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.Current]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Play_Animations = "yes"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]</li><ul>
+<li>DisableCachingOfSSLPages = 0x00000000</li>
+<li>WarnonZoneCrossing = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache]</li><ul>
+<li>Persistent = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>Flags = "db"</li>
+<li>2500 = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>1409 = 0x00000003</li>
+<li>2106 = 0x00000000</li>
+<li>2401 = 0x00000000</li>
+<li>2600 = 0x00000000</li>
+<li>TemplateIndex = 0x00002CEC</li>
+<li>2007 = 0x00002710</li>
+<li>2701 = 0x00000000</li>
+<li>2704 = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>Flags = 0x000000DB</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemHand\.Current]</li><ul>
+<li>(Default) = "%SystemRoot%\media\Windows XP Critical Stop.wav"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.Current]</li><ul>
+<li>(Default) = "%SystemRoot%\media\Windows XP Start.wav"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]</li><ul>
+<li>Flags = 0x000000DB</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>MinLevel = </li>
+<li>Flags = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>CurrentLevel = </li>
+<li>MinLevel = </li>
+<li>RecommendedLevel = </li>
+<li>1407 = </li>
+<li>1601 = </li>
+<li>1A00 = </li>
+<li>1C00 = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]</li><ul>
+<li>MinLevel = </li>
+<li>Flags = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]</li><ul>
+<li>CurrentLevel = </li>
+<li>MinLevel = </li>
+<li>RecommendedLevel = </li>
+<li>1407 = </li>
+<li>1601 = </li>
+<li>1A00 = </li>
+<li>1C00 = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">51376</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">tb.tangbaow.com</td><td class="cell_1">98</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>[file and pathname of the sample #1]</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 98:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 2F31 2E35 302F 7265 662E 6874 | GET /1.50/ref.ht
+00000010 | 6D6C 2048 5454 502F 312E 310D 0A52 6566 | ml HTTP/1.1..Ref
+00000020 | 6572 6572 3A20 6874 7470 3A2F 2F74 622E | erer: http://tb.
+00000030 | 7461 6E67 6261 6F77 2E63 6F6D 3A39 382F | tangbaow.com:98/
+00000040 | 312E 3530 2F72 6566 2E68 746D 6C0D 0A41 | 1.50/ref.html..A
+00000050 | 6363 6570 743A 2069 6D61 6765 2F67 6966 | ccept: image/gif
+00000060 | 2C20 696D 6167 652F 782D 7862 6974 6D61 | , image/x-xbitma
+00000070 | 702C 2069 6D61 6765 2F6A 7065 672C 2069 | p, image/jpeg, i
+00000080 | 6D61 6765 2F70 6A70 6567 2C20 6170 706C | mage/pjpeg, appl
+00000090 | 6963 6174 696F 6E2F 782D 7368 6F63 6B77 | ication/x-shockw
+000000A0 | 6176 652D 666C 6173 682C 2061 7070 6C69 | ave-flash, appli
+000000B0 | 6361 7469 6F6E 2F76 6E64 2E6D 732D 6578 | cation/vnd.ms-ex
+000000C0 | 6365 6C2C 2061 7070 6C69 6361 7469 6F6E | cel, application
+000000D0 | 2F76 6E64 2E6D 732D 706F 7765 7270 6F69 | /vnd.ms-powerpoi
+000000E0 | 6E74 2C20 6170 706C 6963 6174 696F 6E2F | nt, application/
+000000F0 | 6D73 776F 7264 2C20 2A2F 2A0D 0A41 6363 | msword, */*..Acc
+00000100 | 6570 742D 4C61 6E67 7561 6765 3A20 7A68 | ept-Language: zh
+00000110 | 2D63 6E0D 0A55 7365 722D 4167 656E 743A | -cn..User-Agent:
+00000120 | 204D 6F7A 696C 6C61 2F34 2E30 2028 636F |  Mozilla/4.0 (co
+00000130 | 6D70 6174 6962 6C65 3B20 4D53 4945 2036 | mpatible; MSIE 6
+00000140 | 2E30 3B20 5769 6E64 6F77 7320 4E54 2035 | .0; Windows NT 5
+00000150 | 2E30 290D 0A48 6F73 743A 206C 6F63 616C | .0)..Host: local
+00000160 | 686F 7374 3A39 380D 0A43 6163 6865 2D43 | host:98..Cache-C
+00000170 | 6F6E 7472 6F6C 3A20 6E6F 2D63 6163 6865 | ontrol: no-cache
+00000180 | 0D0A 0D0A                               | ....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

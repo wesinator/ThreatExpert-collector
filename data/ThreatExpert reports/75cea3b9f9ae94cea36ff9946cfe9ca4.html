@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-Dropper.Win32.Injector">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-Dropper.Win32.Injector</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 17 November 2014, 11:19:56</li>
+<li>Processing time: 8 min 6 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x75CEA3B9F9AE94CEA36FF9946CFE9CA4</li>
+<li>File SHA-1: 0x357930FEE666E56EF21F9CB3ACB62F30B78F811C</li>
+<li>Filesize: 533,617 bytes</li>
+<li>Alias: Trojan-Dropper.Win32.Injector [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/backdoor-bifrose.html" target="_blank">Backdoor.Bifrose<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Backdoor.Bifrose is a backdoor trojan that attempts to propagate by exploiting local network shares. It will also attempt to join a predefined IRC server and channel in order to participate in DDoS attacks.</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\addons.dat
+</td>
+<td class="cell_1">25,328 bytes</td>
+<td class="cell_1">MD5: 0x7C5A09E5C06AD5A33C6BF145A93A0F7B<br/>SHA-1: 0x256BA96ABD7419DAA42C499CE81C4AF6A0A17BD5</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%ProgramFiles%\ineternet\<a href="http://www.threatexpert.com/files/internet.exe.html" target="_blank">internet.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">533,617 bytes</td>
+<td class="cell_1">MD5: 0x75CEA3B9F9AE94CEA36FF9946CFE9CA4<br/>SHA-1: 0x357930FEE666E56EF21F9CB3ACB62F30B78F811C</td>
+<td class="cell_2">Trojan-Dropper.Win32.Injector [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%ProgramFiles%\ineternet\logg.dat
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%ProgramFiles%\ineternet</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/internet.exe.html" target="_blank">internet.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\ineternet\<a href="http://www.threatexpert.com/files/internet.exe.html" target="_blank">internet.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">512,000 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">512,000 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">344,064 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{9D71D88C-C598-4935-C5D1-43AA4DB90836}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\services</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\Software\services</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{9D71D88C-C598-4935-C5D1-43AA4DB90836}]</li><ul>
+<li>stubpath = "%ProgramFiles%\ineternet\internet.exe s"</li>
+</ul>
+<br/>
+<em>so that internet.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\services]</li><ul>
+<li>nck = 67 AF 66 9B EC 88 6D DF BB C3 CD 74 FA 93 5B 67</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\services]</li><ul>
+<li>klg = 01</li>
+<li>plg1 = EA 44 DC 02 A3 27 D7 5F 11 AD B9 07 DA F2 35 03 2A 35 8E 58 1B 0E 11 94 D4 F9 28 1F 11 4D 98 BC D2 64 44 8E CD F9 B9 BA 23 BD 45 ED 15 A6 77 AF B8 7C 04 4D 90 91 58 5F 81 61 19 72 00 4E 53 7A E1 AB E6 8B 30 CA 34 56 F9 AD AD F8 4D 41 0F F6 9F 90 A2 1</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>PvLogiciels.dotNetProtector.Runtime.1008</li>
+<li>PvLogiciels.dotNetProtector.Runtime.1036</li>
+<li>Bif1234</li>
+<li>PvLogiciels.dotNetProtector.Runtime.1340</li>
+<li>PvLogiciels.dotNetProtector.Runtime.156</li>
+<li>PvLogiciels.dotNetProtector.Runtime.1776</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2088</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2180</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2264</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2372</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2456</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2552</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2636</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2720</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2788</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2872</li>
+<li>PvLogiciels.dotNetProtector.Runtime.2984</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3060</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3156</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3240</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3344</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3428</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3496</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3516</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3660</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3760</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3800</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3844</li>
+<li>PvLogiciels.dotNetProtector.Runtime.3916</li>
+<li>PvLogiciels.dotNetProtector.Runtime.4012</li>
+<li>PvLogiciels.dotNetProtector.Runtime.780</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>elshabah.zapto.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">elshabah.zapto.org<td class="cell_2">81</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\Internet Explorer\iexplore.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | BA00 0901 E22D D667 CC44 A33B 8CBF B32B | .....-.g.D.;...+
+00000010 | 85E4 9867 5575 23C5 750E A0F7 C3D8 1115 | ...gUu#.u.......
+00000020 | 9427 AEB5 3FA9 B8E7 2DF9 DDBB 693C 981D | .'..?...-...i<..
+00000030 | 5358 26E2 B021 8496 3628 CE14 D32E CF88 | SX&..!..6(......
+00000040 | 1A44 6B7E 1CD4 D9D4 F9DF E556 73D6 2DC0 | .Dk~.......Vs.-.
+00000050 | CD2C 0FE9 CBC9 D16D 37B5 B17C 718E 462D | .,.....m7..|q.F-
+00000060 | 00A3 CB22 BEBF 0B2B EBD4 3BCB F32C 6660 | ..."...+..;..,f`
+00000070 | 7F58 EF29 0000 2FE6 B4F1 C1F9 2E9C 16EB | .X.)../.........
+00000080 | 7795 906C 9E88 CC61 9111 98FC 9602 74F7 | w..l...a......t.
+00000090 | 20C6 FDD1 3163 3969 7E14 67C7 A1AA 6A4C |  ...1c9i~.g...jL
+000000A0 | 81AB E323 3A5B CE76 B2F9 9ED4 3ECB F078 | ...#:[.v....>..x
+000000B0 | 075A 082B E16B 6CA9 84A0 3201 B6FC      | .Z.+.kl...2...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

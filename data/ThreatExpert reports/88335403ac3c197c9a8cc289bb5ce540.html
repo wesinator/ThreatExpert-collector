@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-001">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-001</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 October 2015, 03:30:54</li>
+<li>Processing time: 5 min 48 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x88335403AC3C197C9A8CC289BB5CE540</li>
+<li>File SHA-1: 0x3ABDB16FA75F90D550505C10C990AE0A82EEFD5C</li>
+<li>Filesize: 45,056 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/mal-behav-001.html" target="_blank">Mal/Behav-001<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\Qiiciys.exe
+</td>
+<td class="cell_1">45,056 bytes</td>
+<td class="cell_1">MD5: 0x88335403AC3C197C9A8CC289BB5CE540<br/>SHA-1: 0x3ABDB16FA75F90D550505C10C990AE0A82EEFD5C</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/mal-behav-001.html" target="_blank">Mal/Behav-001<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Qiiciys.exe</td><td class="cell_1">%Windir%\qiiciys.exe</td><td class="cell_2">49,152 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">49,152 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Wscmys cwoysmau</td><td class="cell_1">Giegoe mykmcimu</td><td class="cell_1">"Starting"</td><td class="cell_2">%Windir%\Qiiciys.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Wscmys cwoysmau"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000]</li><ul>
+<li>Service = "Wscmys cwoysmau"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Giegoe mykmcimu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSCMYS_CWOYSMAU]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WSCMYS_CWOYSMAU\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wscmys cwoysmau]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2015-10-23 03:30"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Qiiciys.exe"</li>
+<li>DisplayName = "Giegoe mykmcimu"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Icmsek agucyyaoiyqewaouug"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Wscmys cwoysmau"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU\0000]</li><ul>
+<li>Service = "Wscmys cwoysmau"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Giegoe mykmcimu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSCMYS_CWOYSMAU]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WSCMYS_CWOYSMAU\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wscmys cwoysmau]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2015-10-23 03:30"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Qiiciys.exe"</li>
+<li>DisplayName = "Giegoe mykmcimu"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Icmsek agucyyaoiyqewaouug"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>jshm9527.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">jshm9527.f3322.net<td class="cell_2">2014</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2014:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | E772 6F20 1A0D 6587 0F9F 2F31 B34F 75C7 | .ro ..e.../1.Ou.
+00000010 | E964 985B AD45 43F1 C97B E77E 62A2 9143 | .d.[.EC..{.~b..C
+00000020 | C5DD AEFC 66CF 45D2 2FC3 1E2E 7BDB 15AB | ....f.E./...{...
+00000030 | 658F D303 5B49 10B2 48DF CE7A 651A 6E12 | e...[I..H..ze.n.
+00000040 | 41CA 003C C08B 404C AD21 4867 DA26 A1C8 | A..<..@L.!Hg.&..
+00000050 | 409F 3778 2DFC 8351 F9C7 E923 AFE2 9E0D | @.7x-..Q...#....
+00000060 | B511 F8D5 B35D 895E A460 F24D A025 6E2A | .....].^.`.M.%n*
+00000070 | DC14 1709 699B D4B3 305B 7297 5B47 163C | ....i...0[r.[G.<
+00000080 | 8257 CDAC C571 7C77 D534 376E E83A B773 | .W...q|w.47n.:.s
+00000090 | E5B8 B2D6 CED2 296A 1120 13D0 FC3B D76A | ......)j. ...;.j
+000000A0 | 83BE 8D13 6DF4 F199 4180 6008 B59D 7FD0 | ....m...A.`.....
+000000B0 | F6D3 D1BC E53C C31D FC01 4749 8926 49EA | .....<....GI.&I.
+000000C0 | 940E E545 37A8 4E0A 519E 5870 48FB DE82 | ...E7.N.Q.XpH...
+000000D0 | 2176 D96A B061 8F20 52DC 5C1F 0362 9445 | !v.j.a. R.\..b.E
+000000E0 | 02ED 3014 148F BF07 765B 679B D2BC 1F5E | ..0.....v[g....^
+000000F0 | 2F99 2E26 8EC3 3989 7115 92DF 756A 9BE2 | /..&..9.q...uj..
+00000100 | E570 F0F8 5210 BF2C 396D 16F4 03E4 30BB | .p..R..,9m....0.
+00000110 | 4040 CA57 5193 6683 992B DD83 442F 70E6 | @@.WQ.f..+..D/p.
+00000120 | 37C6 D3B1 9C00 DDBA DAC6 221A F89E AAC3 | 7.........".....
+00000130 | 6DA5 A75C 115C 1D14 6887 05BC 67F7 6D03 | m..\.\..h...g.m.
+00000140 | 39D8 CDE4 9F8F A93D D184 5B0A AE48 A5BB | 9......=..[..H..
+00000150 | 3868 4DC4 05CC 6EC6 5FE0 2B62 8805 12C1 | 8hM...n._.+b....
+00000160 | 7637 2080 4E5B 48B9 B814 2633 6F7D 0B4C | v7 .N[H...&3o}.L
+00000170 | 3C49 EA54 6F66 C037 D35F 284A 13F1 0CE6 | <I.Tof.7._(J....
+00000180 | 8D4B 9BA2 BE97 6211 16C1 5C1B BE42 DB7D | .K....b...\..B.}
+00000190 | 2091 147C AFE0 1AC5 F8B1 5769 B84E BCAF |  ..|......Wi.N..
+000001A0 | 4183 A70A 04D7 D943 34B9 1BBD 2C6F CCEF | A......C4...,o..
+000001B0 | 07B7 A26F 1E90 B077 E1E3 FB40 712B 009C | ...o...w...@q+..
+000001C0 | 637F 6B10 7315 96BD A879 CBA3 AA4C 04E0 | c.k.s....y...L..
+000001D0 | 3E04 2362 3E07 8587 1CA4 DDA1 3A08 572F | >.#b>.......:.W/
+000001E0 | 9F5F 2FCC 51B5 2C33 C6B1 4884 91EF 6AFD | ._/.Q.,3..H...j.
+000001F0 | A4A9 C48A 1DB1 3B21 8892 4FE7 882F 5FD9 | ......;!..O../_.
+00000200 | E5DB EF91 2AE8 6193 C605 A360 225A EC90 | ....*.a....`"Z..
+00000210 | E319 3109 5350 8C0A DD6D EE17 19B3 8E57 | ..1.SP...m.....W
+00000220 | DFD2 A8EF 96B4 F672 AA83 D00C B102 3C4C | .......r......<L
+00000230 | 3E47 774B 6643 3EA6 68FF 632C C23A FDAD | >GwKfC>.h.c,.:..
+00000240 | 5E45 5351 45DA 66FC 8B7A 7D29 8FE5 597F | ^ESQE.f..z})..Y.
+00000250 | 5AA2 C91C CD21 0B71 0173 B92B 842D 08B1 | Z....!.q.s.+.-..
+00000260 | AAE4 68BD C2BC CD8E 984F D817 D509 D79A | ..h......O......
+00000270 | 1831 F4C3 BB59 7924 08                  | .1...Yy$.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

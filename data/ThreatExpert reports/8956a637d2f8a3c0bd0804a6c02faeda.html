@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Win32.Meredrop">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Win32.Meredrop</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 26 September 2015, 23:08:37</li>
+<li>Processing time: 5 min 45 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x8956A637D2F8A3C0BD0804A6C02FAEDA</li>
+<li>File SHA-1: 0xCF3B19ABB387541C542C58D6B11129A323645FC3</li>
+<li>Filesize: 302,756 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-win32-meredrop.html" target="_blank">Trojan.Win32.Meredrop<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\nsoD.tmp</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">krip.exe</td><td class="cell_1">%ProgramFiles%\napnut\nezavisimo\krip.exe</td><td class="cell_2">229,376 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Nezavisimo 1.5</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+<li>HKEY_CURRENT_USER\Software\NVIDIA Corporation</li>
+<li>HKEY_CURRENT_USER\Software\NVIDIA Corporation\Global</li>
+<li>HKEY_CURRENT_USER\Software\NVIDIA Corporation\Global\nvUpdate</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Nezavisimo = "%ProgramFiles%\Napnut\Nezavisimo\krip.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Nezavisimo 1.5]</li><ul>
+<li>DisplayName = "Nezavisimo 1.5"</li>
+<li>DisplayVersion = "1.5"</li>
+<li>VersionMajor = 0x00000001</li>
+<li>VersionMinor = 0x00000005</li>
+<li>Publisher = "Napnut"</li>
+<li>DisplayIcon = "%ProgramFiles%\Napnut\Nezavisimo\Uninstall.exe"</li>
+<li>UninstallString = "%ProgramFiles%\Napnut\Nezavisimo\Uninstall.exe"</li>
+<li>InstallLocation = "%ProgramFiles%\Napnut\Nezavisimo\"</li>
+<li>InstallSource = "%System%\"</li>
+<li>InstallDate = "20150926"</li>
+<li>Language = 0x00000409</li>
+<li>EstimatedSize = 0x000000B2</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\NVIDIA Corporation\Global\nvUpdate]</li><ul>
+<li>value = "20150714"</li>
+<li>GUID = "ca556cb3-8aa8-4272-9a8a-3a754095550b"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Global\Mp6c3Ygukx29GbDk</li>
+</ul></ul>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mappings:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+# -----------
+192.71.144.119 my.mail.ru
+192.71.144.119 m.my.mail.ru
+192.71.144.119 vk.com
+192.71.144.119 ok.ru
+192.71.144.119 m.vk.com
+192.71.144.119 odnoklassniki.ru
+192.71.144.119 www.odnoklassniki.ru
+192.71.144.119 m.odnoklassniki.ru
+192.71.144.119 m.ok.ru
+192.71.144.119 sotialmonstercookie.ru
+217.20.152.226 st.mycdn.me
+217.20.156.72 mycdn.me
+</textarea></tr></td></table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>server-4.statgglr.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">server-4.statgglr.com<td class="cell_2">8000</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">netoobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>test.php?id=208&amp;mwa=5ce9e7</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 2F73 7461 743F 7570 7469 6D65 | GET /stat?uptime
+00000010 | 3D31 3030 2664 6F77 6E6C 696E 6B3D 3131 | =100&downlink=11
+00000020 | 3131 2675 706C 696E 6B3D 3131 3131 2669 | 11&uplink=1111&i
+00000030 | 643D 3030 3031 3933 3033 2673 7461 7470 | d=00019303&statp
+00000040 | 6173 733D 6270 6173 7326 7665 7273 696F | ass=bpass&versio
+00000050 | 6E3D 3230 3135 3037 3134 2666 6561 7475 | n=20150714&featu
+00000060 | 7265 733D 3330 2667 7569 643D 6361 3535 | res=30&guid=ca55
+00000070 | 3663 6233 2D38 6161 382D 3432 3732 2D39 | 6cb3-8aa8-4272-9
+00000080 | 6138 612D 3361 3735 3430 3935 3535 3062 | a8a-3a754095550b
+00000090 | 2663 6F6D 6D65 6E74 3D32 3031 3530 3731 | &comment=2015071
+000000A0 | 3426 703D 3026 733D 2048 5454 502F 312E | 4&p=0&s= HTTP/1.
+000000B0 | 300D 0A0D 0A                            | 0....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

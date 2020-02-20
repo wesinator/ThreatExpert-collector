@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 3 September 2014, 04:56:24</li>
+<li>Processing time: 6 min 27 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA24F80F347FBFE7F9970D1DEDDB1E8F7</li>
+<li>File SHA-1: 0x71252EE3B3C0BC079D35EA6A6CEDC9DA37AF2A88</li>
+<li>Filesize: 1,802,561 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\BabylonToolbar</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">BabylonToolbarsrv.exe</td><td class="cell_1">%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbarsrv.exe</td><td class="cell_2">397,312 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">339,968 bytes</td></tr>
+<tr><td class="cell_1">guninstaller.exe</td><td class="cell_1">%ProgramFiles%\babylontoolbar\babylontoolbar\1.8.4.9\guninstaller.exe</td><td class="cell_2">356,352 bytes</td></tr>
+<tr><td class="cell_1">BabylonToolbar4ie.exe</td><td class="cell_1">%Temp%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbar4ie.exe</td><td class="cell_2">339,968 bytes</td></tr>
+<tr><td class="cell_1">BabylonToolbar4ffx.exe</td><td class="cell_1">%Temp%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbar4ffx.exe</td><td class="cell_2">344,064 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escort.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escortApp.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escortEng.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escorTlbr.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\esrv.EXE</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{09C554C3-109B-483C-A06B-F14172F1A947}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{35C1605E-438B-4D64-AAB1-8885F097A9B1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{4E1E9D45-8BF9-4139-915C-9F83CC3D5921}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{B12E99ED-69BD-437C-86BE-C862B9E5444D}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}\Instl</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}\Instl\Data</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}\Instl\dfltLng</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{D7EE8177-D51E-4F89-92B6-83EA2EC40800}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B0B75FBA-7288-4FD3-A9EB-7EE27FA65599}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B0B75FBA-7288-4FD3-A9EB-7EE27FA65599}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B0B75FBA-7288-4FD3-A9EB-7EE27FA65599}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B0B75FBA-7288-4FD3-A9EB-7EE27FA65599}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B173667F-8395-4317-8DD6-45AD1FE00047}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B173667F-8395-4317-8DD6-45AD1FE00047}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B173667F-8395-4317-8DD6-45AD1FE00047}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B173667F-8395-4317-8DD6-45AD1FE00047}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B32672B3-F656-46E0-B584-FE61C0BB6037}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B32672B3-F656-46E0-B584-FE61C0BB6037}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B32672B3-F656-46E0-B584-FE61C0BB6037}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B32672B3-F656-46E0-B584-FE61C0BB6037}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2434722-5C85-4CA0-BA69-1B67E7AB3D68}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2434722-5C85-4CA0-BA69-1B67E7AB3D68}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2434722-5C85-4CA0-BA69-1B67E7AB3D68}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2434722-5C85-4CA0-BA69-1B67E7AB3D68}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2996524-2187-441F-A398-CD6CB6B3D020}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2996524-2187-441F-A398-CD6CB6B3D020}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2996524-2187-441F-A398-CD6CB6B3D020}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C2996524-2187-441F-A398-CD6CB6B3D020}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E047E227-5342-4D94-80F7-CFB154BF55BD}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E047E227-5342-4D94-80F7-CFB154BF55BD}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E047E227-5342-4D94-80F7-CFB154BF55BD}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E047E227-5342-4D94-80F7-CFB154BF55BD}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E3F79BE9-24D4-4F4D-8C13-DF2C9899F82E}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E3F79BE9-24D4-4F4D-8C13-DF2C9899F82E}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E3F79BE9-24D4-4F4D-8C13-DF2C9899F82E}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E3F79BE9-24D4-4F4D-8C13-DF2C9899F82E}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E77EEF95-3E83-4BB8-9C0D-4A5163774997}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{E77EEF95-3E83-4BB8-9C0D-4A5163774997}\ProxyStubClsid</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escort.DLL]</li><ul>
+<li>AppID = "{09C554C3-109B-483C-A06B-F14172F1A947}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escortApp.DLL]</li><ul>
+<li>AppID = "{D7EE8177-D51E-4F89-92B6-83EA2EC40800}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escortEng.DLL]</li><ul>
+<li>AppID = "{B12E99ED-69BD-437C-86BE-C862B9E5444D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\escorTlbr.DLL]</li><ul>
+<li>AppID = "{4E1E9D45-8BF9-4139-915C-9F83CC3D5921}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\esrv.EXE]</li><ul>
+<li>AppID = "{35C1605E-438B-4D64-AAB1-8885F097A9B1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{09C554C3-109B-483C-A06B-F14172F1A947}]</li><ul>
+<li>(Default) = "escort"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{35C1605E-438B-4D64-AAB1-8885F097A9B1}]</li><ul>
+<li>(Default) = "esrv"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{4E1E9D45-8BF9-4139-915C-9F83CC3D5921}]</li><ul>
+<li>(Default) = "escorTlbr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{B12E99ED-69BD-437C-86BE-C862B9E5444D}]</li><ul>
+<li>(Default) = "escortEng"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}\Instl\dfltLng]</li><ul>
+<li>dfltLng = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{BDB69379-802F-4eaf-B541-F8DE92DD98DB}\Instl\Data]</li><ul>
+<li>hrdId = "00cd1a40000000000000000000000000"</li>
+<li>instlDay = 0x00003FBC</li>
+<li>vrsni = "1.8.4.9"</li>
+<li>afltId = "orgnl"</li>
+<li>aflt = "orgnl"</li>
+<li>smplGrp = "none"</li>
+<li>tlbrId = "base"</li>
+<li>instlRef = "na"</li>
+<li>vrsnTs = "1.8.4.94:56:27"</li>
+<li>tlbrSrchUrl = "http://search.babylon.com/?babsrc=TB_def&mntrId=00cd1a40000000000000000000000000&q="</li>
+<li>uninstallAll = "false"</li>
+<li>autoRvrt = "false"</li>
+<li>rvrt = "false"</li>
+<li>admin = "false"</li>
+<li>postUninstall = "http://www.babylon.com/redirects/redir.cgi?type=mtbuninst&instlRef="</li>
+<li>newTab = "false"</li>
+<li>dpblck = ""</li>
+<li>ds_url = "http://search.babylon.com/?babsrc=SP_&amp;q={searchTerms}&amp;mntrId=00cd1a40000000000000000000000000&amp;tlver=1.8.4.9&amp;&amp;r=296"</li>
+<li>excTlbr = "false"</li>
+<li>uninstExt = "false"</li>
+<li>dsIE = ""</li>
+<li>dsFFX = "Search the web (Babylon)"</li>
+<li>dpk = "03a1fc9cc346acb01268798dc854c2d9"</li>
+<li>uninstaller = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\uninstall.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{D7EE8177-D51E-4F89-92B6-83EA2EC40800}]</li><ul>
+<li>(Default) = "escortApp"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "esrv.BabylonESrvc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\TypeLib]</li><ul>
+<li>(Default) = "{35C1605E-438B-4D64-AAB1-8885F097A9B1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\ProgID]</li><ul>
+<li>(Default) = "esrv.BabylonESrvc.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}\LocalServer32]</li><ul>
+<li>(Default) = ""%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbarsrv.exe""</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{291BCCC1-6890-484a-89D3-318C928DAC1B}]</li><ul>
+<li>(Default) = "escrtSrvc Object"</li>
+<li>AppID = "{35C1605E-438B-4D64-AAB1-8885F097A9B1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "bbylntlbr.bbylntlbrHlpr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\TypeLib]</li><ul>
+<li>(Default) = "{09C554C3-109B-483C-A06B-F14172F1A947}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\ProgID]</li><ul>
+<li>(Default) = "bbylntlbr.bbylntlbrHlpr.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\bh\BabylonToolbar.dll"</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2EECD738-5844-4a99-B4B6-146BF802613B}]</li><ul>
+<li>(Default) = "Babylon toolbar helper"</li>
+<li>AppID = "{09C554C3-109B-483C-A06B-F14172F1A947}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "escort.escortIEPane"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\TypeLib]</li><ul>
+<li>(Default) = "{09C554C3-109B-483C-A06B-F14172F1A947}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\ProgID]</li><ul>
+<li>(Default) = "escort.escortIEPane.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\bh\BabylonToolbar.dll"</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{97F2FF5B-260C-4ccf-834A-2DDA4E29E39E}]</li><ul>
+<li>(Default) = "escortIEPane Object"</li>
+<li>AppID = "{09C554C3-109B-483C-A06B-F14172F1A947}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "Babylon.dskBnd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\TypeLib]</li><ul>
+<li>(Default) = "{4E1E9D45-8BF9-4139-915C-9F83CC3D5921}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\ProgID]</li><ul>
+<li>(Default) = "Babylon.dskBnd.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbarTlbr.dll"</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{98889811-442D-49dd-99D7-DC866BE87DBC}]</li><ul>
+<li>(Default) = "Babylon Toolbar"</li>
+<li>AppID = "{4E1E9D45-8BF9-4139-915C-9F83CC3D5921}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "b"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\TypeLib]</li><ul>
+<li>(Default) = "{B12E99ED-69BD-437C-86BE-C862B9E5444D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\ProgID]</li><ul>
+<li>(Default) = "b"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbarEng.dll"</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8276A94-891D-453C-9FF3-715C042A2575}]</li><ul>
+<li>(Default) = "escrtAx Object"</li>
+<li>AppID = "{B12E99ED-69BD-437C-86BE-C862B9E5444D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "bbylnApp.appCore"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\TypeLib]</li><ul>
+<li>(Default) = "{D7EE8177-D51E-4F89-92B6-83EA2EC40800}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\ProgID]</li><ul>
+<li>(Default) = "bbylnApp.appCore.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\BabylonToolbar\BabylonToolbar\1.8.4.9\BabylonToolbarApp.dll"</li>
+<li>ThreadingModel = "apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FFB9ADCB-8C79-4C29-81D3-74D46A93D370}]</li><ul>
+<li>(Default) = "appCore Object"</li>
+<li>AppID = "{D7EE8177-D51E-4F89-92B6-83EA2EC40800}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\TypeLib]</li><ul>
+<li>(Default) = "{6E8BF012-2C85-4834-B10A-1B31AF173D70}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{44C3C1DB-2127-433C-98EC-4C9412B5FC3A}]</li><ul>
+<li>(Default) = "IappCore"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\TypeLib]</li><ul>
+<li>(Default) = "{6E8BF012-2C85-4834-B10A-1B31AF173D70}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D5132DD-BB2B-4249-B5E0-D145A8C982E1}]</li><ul>
+<li>(Default) = "IEHostWnd"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\TypeLib]</li><ul>
+<li>(Default) = "{6E8BF012-2C85-4834-B10A-1B31AF173D70}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{706D4A4B-184A-4434-B331-296B07493D2D}]</li><ul>
+<li>(Default) = "IxpEmphszr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\TypeLib]</li><ul>
+<li>(Default) = "{6E8BF012-2C85-4834-B10A-1B31AF173D70}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{8BE10F21-185F-4CA0-B789-9921674C3993}]</li><ul>
+<li>(Default) = "IEscortFctry"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}\TypeLib]</li><ul>
+<li>(Default) = "{6E8BF012-2C85-4834-B10A-1B31AF173D70}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{94C0B25D-3359-4B10-B227-F96A77DB773F}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>MT_DP_196</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">reports.montiera.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>reports/jsRprt.srf?rid=nsis&amp;nsisState=0&amp;prdct=BabylonToolbar&amp;tlbrId=base&amp;aflt=orgnl&amp;vrsn=1.8.4.9&amp;instlRef=na&amp;hardId=00cd1a40000000000000000000000000&amp;hostApp=IE&amp;smplGrp=none&amp;bho=-2147221164&amp;tlbr=0&amp;ie=6.0.2900.2180&amp;ffx=&amp;os=5.1&amp;hp=&amp;ds=&amp;nt=&amp;</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

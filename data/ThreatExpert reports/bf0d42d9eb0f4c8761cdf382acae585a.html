@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 March 2016, 14:50:00</li>
+<li>Processing time: 6 min 11 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBF0D42D9EB0F4C8761CDF382ACAE585A</li>
+<li>File SHA-1: 0x09DE08C97311022BE221328EA026C79E6B9641CD</li>
+<li>Filesize: 436,664 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">cmpbpnet.exe</td><td class="cell_1">%AppData%\desktlog\cmpbpnet.exe</td><td class="cell_2">442,368 bytes</td></tr>
+<tr><td class="cell_1">cmpbpnet.exe</td><td class="cell_1">%UserProfile%\APPLIC~1\desktlog\cmpbpnet.exe</td><td class="cell_2">442,368 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">442,368 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%UserProfile% is a variable that specifies the current user's profile folder. By default, this is C:\Documents and Settings\[UserName] (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\AppDataLow</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow\Software</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow\Software\Microsoft</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow\Software\Microsoft\42B0B82E-B932-C43C-5396-FD38372A81EC</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>cdmousic = "%AppData%\desktlog\cmpbpnet.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\AppDataLow\Software\Microsoft\42B0B82E-B932-C43C-5396-FD38372A81EC]</li><ul>
+<li>Install = 29 62 38 4C F6 01 64 01 21 60 30 4E DE 05 AC 04 D1 6B 20 45 7E 14 AC 15 D1 66 60 69 7E 6A 2C 41 D1 48 60 AB 7F BE 2D 37 D3 7C 62 33 7A FE 28 0F DE FC 6A C3 6D DE 33 4F FB 3C 4D 03 35 5E 4F 4F 50 3C D9 03 FB 5F E5 4E D4 3E 29 01 EB 5A A5 4B 64 34 89 0</li>
+<li>Temp = 7F 8A 96 94 51 38 7F 09 9D 71 30 E4 C5 E5 BA 9E 64 23 9A BC 91 D8 CD AD 84 8A B7 F1 58 87 94 D1 13 A5 14 43 69 46 BC B2 8D B7 F3 5F 24 97 78 45 A7 BA D8 84 D1 C0 1C 10 49 1B 67 EA 80 1B 0B C7 F5 B7 07 59 93 58 CA D9 4F 19 85 DC E7 D9 9F 16 44 FF DF B</li>
+<li>Client = 13 27 00 00 4C 80 00 00 28 B8 89 D4 A1 ED B4 31 53 96 FD 38 E6 08 CB 4A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</li>
+<li>{9C194F7E-4B68-2E21-B590-AF42B9C45396} = C2 B5 A0 A4 46 7E D1 01</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>{D6D455C4-3D06-7892-776A-C12C9B3E8520}</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">192.5.5.241<td class="cell_2">1033</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">z1.zedo.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>robots.txt</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

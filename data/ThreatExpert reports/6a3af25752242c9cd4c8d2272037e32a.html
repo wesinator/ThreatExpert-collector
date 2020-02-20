@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.Jorik.Yoddos.my, Mal/Emogen-Y, Backdoor:Win32/Zegost.AK, Trojan.Win32.SystemHijack">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.Jorik.Yoddos.my, Mal/Emogen-Y..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 6 January 2016, 03:14:43</li>
+<li>Processing time: 6 min 35 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6A3AF25752242C9CD4C8D2272037E32A</li>
+<li>File SHA-1: 0x471968D623CE5069DD353B8041AC8B6FD5CC1CDF</li>
+<li>Filesize: 25,600 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.Jorik.Yoddos.my [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-emogen-y.html" target="_blank">Mal/Emogen-Y<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Backdoor:Win32/Zegost.AK [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-systemhijack.html" target="_blank">Trojan.Win32.SystemHijack<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1">3s6.exe</td><td class="cell_1">%System%\3s6.exe</td><td class="cell_2">45,056 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">dadsadsa</td><td class="cell_1">cxzcxzcxzcxzczxcxzcz</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\3s6.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "dadsadsa"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA\0000]</li><ul>
+<li>Service = "dadsadsa"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "cxzcxzcxzcxzczxcxzcz"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DADSADSA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DADSADSA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dadsadsa]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\3s6.exe"</li>
+<li>DisplayName = "cxzcxzcxzcxzczxcxzcz"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>SYSTEM\CurrentControlSet\Services\dadsadsa = "xczcxzcxzcxzcxzcxzcxzcxzcxzcxzczxc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "dadsadsa"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA\0000]</li><ul>
+<li>Service = "dadsadsa"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "cxzcxzcxzcxzczxcxzcz"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DADSADSA]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DADSADSA\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dadsadsa]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\3s6.exe"</li>
+<li>DisplayName = "cxzcxzcxzcxzczxcxzcz"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>SYSTEM\CurrentControlSet\Services\dadsadsa = "xczcxzcxzcxzcxzcxzcxzcxzcxzcxzczxc"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cookies = </li>
+<li>History = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>a18778450799a.f3322.net:7474</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>a18778450799a.f3322.net</li>
+<li>8080dk.sxzyong.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">a18778450799a.f3322.net<td class="cell_2">7474</td><tr>
+<tr><td class="cell_1">8080dk.sxzyong.com<td class="cell_2">8080</td><tr>
+</table></p>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://www.003azzya.com/dkk.htm</li>
+<li>http://www.103azzxa.com/dkk.htm</li>
+<li>http://www.203azzwa.com/dkk.htm</li>
+<li>http://www.303azzva.com/dkk.htm</li>
+<li>http://www.403azzua.com/dkk.htm</li>
+<li>http://www.503azzta.com/dkk.htm</li>
+<li>http://www.603azzsa.com/dkk.htm</li>
+<li>http://www.703azzra.com/dkk.htm</li>
+<li>http://www.803azzqa.com/dkk.htm</li>
+<li>http://www.903azzpa.com/dkk.htm</li>
+<li>http://www.:03azzoa.com/dkk.htm</li>
+<li>http://www.;03azzna.com/dkk.htm</li>
+<li>http://www.&lt;03azzma.com/dkk.htm</li>
+<li>http://www.=03azzla.com/dkk.htm</li>
+<li>http://www.&gt;03azzka.com/dkk.htm</li>
+<li>http://www.?03azzja.com/dkk.htm</li>
+<li>http://www.@03azzia.com/dkk.htm</li>
+<li>http://www.A03azzha.com/dkk.htm</li>
+<li>http://www.B03azzga.com/dkk.htm</li>
+<li>http://www.C03azzfa.com/dkk.htm</li>
+<li>http://www.D03azzea.com/dkk.htm</li>
+<li>http://www.E03azzda.com/dkk.htm</li>
+<li>http://www.F03azzca.com/dkk.htm</li>
+<li>http://www.G03azzba.com/dkk.htm</li>
+<li>http://www.H03azzaa.com/dkk.htm</li>
+<li>http://www.I03azz`a.com/dkk.htm</li>
+<li>http://www.J03azz_a.com/dkk.htm</li>
+<li>http://www.K03azz^a.com/dkk.htm</li>
+<li>http://www.L03azz]a.com/dkk.htm</li>
+<li>http://www.M03azz\a.com/dkk.htm</li>
+<li>http://www.N03azz[a.com/dkk.htm</li>
+<li>http://www.O03azzZa.com/dkk.htm</li>
+<li>http://www.P03azzYa.com/dkk.htm</li>
+<li>http://www.Q03azzXa.com/dkk.htm</li>
+<li>http://www.R03azzWa.com/dkk.htm</li>
+<li>http://www.S03azzVa.com/dkk.htm</li>
+<li>http://www.T03azzUa.com/dkk.htm</li>
+<li>http://www.U03azzTa.com/dkk.htm</li>
+<li>http://www.V03azzSa.com/dkk.htm</li>
+<li>http://www.W03azzRa.com/dkk.htm</li>
+<li>http://www.X03azzQa.com/dkk.htm</li>
+<li>http://www.Y03azzPa.com/dkk.htm</li>
+<li>http://www.Z03azzOa.com/dkk.htm</li>
+<li>http://www.[03azzNa.com/dkk.htm</li>
+<li>http://www.\03azzMa.com/dkk.htm</li>
+<li>http://www.]03azzLa.com/dkk.htm</li>
+<li>http://www.^03azzKa.com/dkk.htm</li>
+<li>http://www._03azzJa.com/dkk.htm</li>
+<li>http://www.`03azzIa.com/dkk.htm</li>
+<li>http://www.i03azz@a.com/dkk.htm</li>
+<li>http://www.j03azz?a.com/dkk.htm</li>
+<li>http://www.k03azz&gt;a.com/dkk.htm</li>
+<li>http://www.l03azz=a.com/dkk.htm</li>
+<li>http://www.m03azz&lt;a.com/dkk.htm</li>
+<li>http://www.n03azz;a.com/dkk.htm</li>
+<li>http://www.o03azz:a.com/dkk.htm</li>
+<li>http://www.p03azz9a.com/dkk.htm</li>
+<li>http://www.q03azz8a.com/dkk.htm</li>
+<li>http://www.r03azz7a.com/dkk.htm</li>
+<li>http://www.s03azz6a.com/dkk.htm</li>
+<li>http://www.t03azz5a.com/dkk.htm</li>
+<li>http://www.u03azz4a.com/dkk.htm</li>
+<li>http://www.v03azz3a.com/dkk.htm</li>
+<li>http://www.w03azz2a.com/dkk.htm</li>
+<li>http://www.x03azz1a.com/dkk.htm</li>
+<li>http://www.y03azz0a.com/dkk.htm</li>
+<li>http://www.z03azz/a.com/dkk.htm</li>
+<li>http://www.{03azz.a.com/dkk.htm</li>
+<li>http://www.</li>
+<li>http://www.}03azz,a.com/dkk.htm</li>
+<li>http://www.~03azz+a.com/dkk.htm</li>
+<li>http://www.03azz*a.com/dkk.htm</li>
+<li>http://www.?03azz)a.com/dkk.htm</li>
+<li>http://www.?03azz(a.com/dkk.htm</li>
+<li>http://www.?03azz'a.com/dkk.htm</li>
+<li>http://www.?03azz&amp;a.com/dkk.htm</li>
+<li>http://www.?03azz%a.com/dkk.htm</li>
+<li>http://www.?03azz$a.com/dkk.htm</li>
+<li>http://www.?03azz#a.com/dkk.htm</li>
+<li>http://www.?03azz&quot;a.com/dkk.htm</li>
+<li>http://www.?03azz!a.com/dkk.htm</li>
+<li>http://www.?03azz a.com/dkk.htm</li>
+<li>http://www.?03azz?a.com/dkk.htm</li>
+<li>http://www.?03azz</li>
+<li>http://www.?03azz?`.com/dkk.htm</li>
+<li>http://www.?13azz?`.com/dkk.htm</li>
+<li>http://www. 13azz?`.com/dkk.htm</li>
+<li>http://www.!13azz?`.com/dkk.htm</li>
+<li>http://www.&quot;13azz?`.com/dkk.htm</li>
+<li>http://www.#13azz?`.com/dkk.htm</li>
+<li>http://www.$13azz?`.com/dkk.htm</li>
+<li>http://www.%13azz?`.com/dkk.htm</li>
+<li>http://www.&amp;13azz?`.com/dkk.htm</li>
+<li>http://www.'13azz?`.com/dkk.htm</li>
+<li>http://www.(13azz?`.com/dkk.htm</li>
+<li>http://www.)13azz?`.com/dkk.htm</li>
+<li>http://www.*13azz`.com/dkk.htm</li>
+<li>http://www.+13azz~`.com/dkk.htm</li>
+<li>http://www.,13azz}`.com/dkk.htm</li>
+<li>http://www.-13azz</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7474:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6D90 8A99 92CE 64CD D673 8F84 99CE 6A71 | m.....d..s....jq
+00000010 | CDC4 D67A 898F D673 6669 D6D6 D6D6 D679 | ...z...sfi.....y
+00000020 | BECA C6C6 D6D6 76D6 C3D0 C6C6 776E 7CB6 | ......v.....wn|.
+00000030 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000040 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000050 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000060 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000070 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000080 | C4C9 C8D6 7174 B6B6 B6B6 B6B6 B6B6 B6B6 | ....qt..........
+00000090 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000A0 | 678D 90D6 5E66 D663 66C4 B6B6 B6B6 B6B6 | g...^f.cf.......
+000000B0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000C0 | 6899 84C4 C6C4 78C5 C4B6 B6B6 B6B6 B6B6 | h.....x.........
+000000D0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000E0 | ADBA B6B6 FFFF FFFF                     | ........
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6D90 8A99 92CE 64CD D673 8F84 99CE 6A71 | m.....d..s....jq
+00000010 | CDC4 D67A 898F D673 6669 D6D6 D6D6 D679 | ...z...sfi.....y
+00000020 | BECA C6C6 D6D6 76D6 C3D0 C6C6 776E 7CB6 | ......v.....wn|.
+00000030 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000040 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000050 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000060 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000070 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000080 | C4C9 C8D6 7174 B6B6 B6B6 B6B6 B6B6 B6B6 | ....qt..........
+00000090 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000A0 | 678D 90D6 5E66 D663 66C4 B6B6 B6B6 B6B6 | g...^f.cf.......
+000000B0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000C0 | 6899 84C4 C6C4 78C5 C4B6 B6B6 B6B6 B6B6 | h.....x.........
+000000D0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000E0 | ADBA B6B6 FFFF FFFF                     | ........
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

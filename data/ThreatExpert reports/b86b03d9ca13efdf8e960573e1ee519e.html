@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Gen, Trojan-Spy.Win32.KeyLogger.rke, BackDoor-FBG, Troj/Slime-H, Virus:Win32/Slime.A, Trojan-Spy.Win32.KeyLogger">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Gen, Trojan-Spy.Win32.KeyLogger.rke, BackDoor-FBG, Troj/Slime-H..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 November 2015, 03:47:58</li>
+<li>Processing time: 5 min 35 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xB86B03D9CA13EFDF8E960573E1EE519E</li>
+<li>File SHA-1: 0x74ED8223A9DF001A82116E03E258C821DEE5807F</li>
+<li>Filesize: 2,537,510 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Spy.Win32.KeyLogger.rke [Kaspersky Lab]</li>
+<li>BackDoor-FBG [McAfee]</li>
+<li>Troj/Slime-H [Sophos]</li>
+<li>Virus:Win32/Slime.A [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-spy-win32-keylogger.html" target="_blank">Trojan-Spy.Win32.KeyLogger<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates an executable file in the fake Recycle Bin folder with the purpose of concealing its presence in the system.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Creates fake Recycle Bin folder.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\RECYCLER\%ComputerName%\96781.log
+</td>
+<td class="cell_1">566 bytes</td>
+<td class="cell_1">MD5: 0x060171D38BE499AB44F2A8BABF2FA613<br/>SHA-1: 0xF9576BCFECDC35E600713C1C58E07B40C37EB6E3</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+c:\RECYCLER\%ComputerName%\96921.log
+</td>
+<td class="cell_1">51,026 bytes</td>
+<td class="cell_1">MD5: 0x648719E4E2818FCE6A427948C8407BF5<br/>SHA-1: 0x666083164978E93F6EA0294A3CCE8F1D5B9EE8D9</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+c:\RECYCLER\%ComputerName%\97078.log
+</td>
+<td class="cell_1">33 bytes</td>
+<td class="cell_1">MD5: 0xD789D0EAE4935B7486B64CC9D114DB85<br/>SHA-1: 0x88CC8F0A349D86177D164A50586393886C89ADAC</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+c:\RECYCLER\%ComputerName%\97406.log
+</td>
+<td class="cell_1">88 bytes</td>
+<td class="cell_1">MD5: 0xD62438B9050C6B073A97B07CF0836155<br/>SHA-1: 0x6FE0B81D51A5F2B6CA735096B38C17A1D82A3FF3</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+c:\RECYCLER\%ComputerName%\97515.log
+</td>
+<td class="cell_1">214,520 bytes</td>
+<td class="cell_1">MD5: 0xFEA78AF14B78D730E37A4638167E6B9D<br/>SHA-1: 0x416B2BA42C1DE687EA37F2DB913C14F7C357F33F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+c:\RECYCLER\ctf_mon.exe
+</td>
+<td class="cell_1">2,537,510 bytes</td>
+<td class="cell_1">MD5: 0xB86B03D9CA13EFDF8E960573E1EE519E<br/>SHA-1: 0x74ED8223A9DF001A82116E03E258C821DEE5807F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan-Spy.Win32.KeyLogger.rke [Kaspersky Lab]<br/>BackDoor-FBG [McAfee]<br/>Troj/Slime-H [Sophos]<br/>Virus:Win32/Slime.A [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-spy-win32-keylogger.html" target="_blank">Trojan-Spy.Win32.KeyLogger<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ComputerName% is a variable that refers to the current computer name.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>c:\RECYCLER\%ComputerName%</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">ctf_mon.exe</td><td class="cell_1">c:\recycler\ctf_mon.exe</td><td class="cell_2">393,216 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">393,216 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG</li>
+<li>HKEY_CURRENT_USER\Software\V_DISK</li>
+<li>HKEY_CURRENT_USER\Software\V_DISK\V_DISK</li>
+<li>HKEY_CURRENT_USER\Software\V_DISK\V_DISK\DISK</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG]</li><ul>
+<li>Trace Level = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>ctf_mon = ""C:\RECYCLER\ctf_mon.exe""</li>
+<li>cft_mon = ""C:\RECYCLER\ctf_mon.exe""</li>
+</ul>
+<br/>
+<em>so that ctf_mon.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\V_DISK\V_DISK\DISK]</li><ul>
+<li>Install = 0x00000001</li>
+<li>CdRom = 0x00000001</li>
+<li>FileMon = 0x00000001</li>
+<li>Dir = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>dddisk</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>www.google.com</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

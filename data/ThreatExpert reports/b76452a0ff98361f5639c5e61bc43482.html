@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.HLLW.Gaobot.gen, Backdoor.Win32.Agobot.gen, W32/Gaobot.worm.gen.b, W32/Agobot-Gen, Backdoor:Win32/Gaobot.CY, Backdoor.Win32.Agobot.3, Win32/AgoBot.worm.205824">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.HLLW.Gaobot.gen, Backdoor.Win32.Agobot.gen, W32/Gaobot.worm.gen.b..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 31 October 2015, 22:33:34</li>
+<li>Processing time: 10 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xB76452A0FF98361F5639C5E61BC43482</li>
+<li>File SHA-1: 0x18D6B41A6439579D8A5BDEF1C51737E4A24D4F53</li>
+<li>Filesize: 205,894 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-hllw-gaobot-gen.html" target="_blank">W32.HLLW.Gaobot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-agobot-gen.html" target="_blank">Backdoor.Win32.Agobot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li>W32/Gaobot.worm.gen.b [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-agobot-gen.html" target="_blank">W32/Agobot-Gen<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Backdoor:Win32/Gaobot.CY [Microsoft]</li>
+<li>Backdoor.Win32.Agobot.3 [Ikarus]</li>
+<li>Win32/AgoBot.worm.205824 [AhnLab]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-012: DCOM RPC Overflow exploit - replication across TCP 135/139/445/593 (common for Blaster, Welchia, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS03-007: Microsoft IIS WebDAV Remote Compromise Vulnerability - Unchecked Buffer In Windows Component Could Cause Server Compromise.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Backdoor functionality: connected remote users are able to perform multiple actions on the compromised system.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to perform DoS attacks against other computers.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to terminate Antivirus, Firewall and other security related processes.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">565,248 bytes</td></tr>
+<tr><td class="cell_1">lttime.exe</td><td class="cell_1">%System%\lttime.exe</td><td class="cell_2">565,248 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>127.0.0.158</li>
+<li>127.0.0.211</li>
+<li>127.0.0.5</li>
+<li>127.0.5.73</li>
+<li>127.0.57.175</li>
+<li>127.0.158.85</li>
+<li>127.0.210.60</li>
+<li>eatsquash.cjb.net</li>
+<li>127.0.0.137</li>
+<li>127.0.239.13</li>
+<li>127.0.144.183</li>
+<li>127.0.32.216</li>
+<li>127.0.127.173</li>
+<li>127.0.0.163</li>
+<li>127.0.0.73</li>
+<li>127.0.0.144</li>
+<li>127.0.0.190</li>
+<li>127.0.160.82</li>
+<li>127.0.91.52</li>
+<li>127.0.241.241</li>
+<li>127.0.10.149</li>
+<li>127.0.0.96</li>
+<li>127.0.86.156</li>
+<li>127.0.0.234</li>
+<li>127.0.100.206</li>
+<li>127.0.0.191</li>
+<li>127.0.173.36</li>
+<li>127.0.140.71</li>
+<li>127.0.0.183</li>
+<li>127.0.0.33</li>
+<li>127.0.110.137</li>
+<li>127.0.50.34</li>
+<li>127.0.51.224</li>
+<li>127.0.109.202</li>
+<li>127.0.0.91</li>
+<li>127.0.0.115</li>
+<li>127.0.0.184</li>
+<li>127.0.64.103</li>
+<li>127.0.130.73</li>
+<li>127.0.135.163</li>
+<li>127.0.0.52</li>
+<li>127.0.202.133</li>
+<li>127.0.0.88</li>
+<li>127.0.207.99</li>
+<li>127.0.244.231</li>
+<li>127.0.0.100</li>
+<li>127.0.101.147</li>
+<li>127.0.95.184</li>
+<li>127.0.0.133</li>
+<li>127.0.0.206</li>
+<li>127.0.75.102</li>
+<li>127.0.28.112</li>
+<li>127.0.10.204</li>
+<li>127.0.0.127</li>
+<li>127.0.94.137</li>
+<li>127.0.0.171</li>
+<li>127.0.221.169</li>
+<li>127.0.88.158</li>
+<li>127.0.50.23</li>
+<li>127.0.132.50</li>
+<li>127.0.0.44</li>
+<li>127.0.0.42</li>
+<li>127.0.0.109</li>
+<li>127.0.233.23</li>
+<li>127.0.0.239</li>
+<li>127.0.12.141</li>
+<li>127.0.119.104</li>
+<li>127.0.213.240</li>
+<li>127.0.0.202</li>
+<li>127.0.0.49</li>
+<li>127.0.0.125</li>
+<li>127.0.212.86</li>
+<li>127.0.23.123</li>
+<li>127.0.23.45</li>
+<li>127.0.85.164</li>
+<li>127.0.0.197</li>
+<li>127.0.209.22</li>
+<li>127.0.206.147</li>
+<li>127.0.105.181</li>
+<li>127.0.0.237</li>
+<li>127.0.55.243</li>
+<li>127.0.0.43</li>
+<li>127.0.141.185</li>
+<li>127.0.0.27</li>
+<li>127.0.205.90</li>
+<li>127.0.138.250</li>
+<li>127.0.74.27</li>
+<li>127.0.0.95</li>
+<li>127.0.0.108</li>
+<li>127.0.121.237</li>
+<li>127.0.147.199</li>
+<li>127.0.150.7</li>
+<li>127.0.252.45</li>
+<li>127.0.0.61</li>
+<li>127.0.28.94</li>
+<li>127.0.108.26</li>
+<li>127.0.0.181</li>
+<li>127.0.29.105</li>
+<li>127.0.0.199</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+NICK [xXx]-jjbx
+USER [xXx]-jjbx 0 0 :[xXx]-jjbx
+JOIN ##[xXx]##
+USERHOST [xXx]-jjbx
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>Heuristically identified capability to terminate the following security related processes:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+ave32.exe
+avgctrl.exe
+avkserv.exe
+avnt.exe
+avp.exe
+avp32.exe
+avpcc.exe
+avpdos32.exe
+avpm.exe
+avptc32.exe
+avpupd.exe
+avsched32.exe
+avwin95.exe
+avwupd32.exe
+blackd.exe
+blackice.exe
+cfiadmin.exe
+cfiaudit.exe
+cfinet.exe
+cfinet32.exe
+claw95.exe
+claw95cf.exe
+cleaner.exe
+cleaner3.exe
+dvp95.exe
+dvp95_0.exe
+ecengine.exe
+esafe.exe
+espwatch.exe
+f-agnt95.exe
+findviru.exe
+fprot.exe
+f-prot.exe
+f-prot95.exe
+fp-win.exe
+frw.exe
+f-stopw.exe
+iamapp.exe
+iamserv.exe
+ibmasn.exe
+ibmavsp.exe
+icload95.exe
+icloadnt.exe
+icmon.exe
+icsupp95.exe
+icsuppnt.exe
+iface.exe
+iomon98.exe
+jedi.exe
+lockdown2000.exe
+lookout.exe
+luall.exe
+moolive.exe
+mpftray.exe
+msblast.exe
+n32scanw.exe
+navapw32.exe
+navlu32.exe
+navnt.exe
+navw32.exe
+navwnt.exe
+nisum.exe
+nmain.exe
+normist.exe
+nupgrade.exe
+nvc95.exe
+outpost.exe
+padmin.exe
+pavcl.exe
+pavsched.exe
+pavw.exe
+pccwin98.exe
+pcfwallicon.exe
+persfw.exe
+rav7.exe
+rav7win.exe
+rescue.exe
+safeweb.exe
+scan32.exe
+scan95.exe
+scanpm.exe
+scrscan.exe
+serv95.exe
+smc.exe
+sphinx.exe
+sweep95.exe
+tbscan.exe
+tca.exe
+tds2-98.exe
+tds2-nt.exe
+vet95.exe
+vettray.exe
+vscan40.exe
+vsecomr.exe
+vshwin32.exe
+vsstat.exe
+webscanx.exe
+wfindv32.exe
+winppr32.exe
+zonealarm.exe
+</textarea></tr></td></table></p>
+<ul><li>Heuristically identified capability of spreading across the following weakly restricted network shares:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="5">
+ADMIN$
+C$
+D$
+E$
+IPC$
+PRINT$
+</textarea></tr></td></table></p>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+000000
+00000000
+111111
+11111111
+121212
+123123
+12345
+123456
+1234567
+12345678
+123456789
+1234qwer
+123abc
+123asd
+123qwe
+54321
+654321
+88888888
+admin
+admin$
+administrador
+administrateur
+administrator
+email
+godblessyou
+guest
+ihavenopass
+inviter
+mypass
+patrick
+private
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-GameThief.Win32.Magania">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-GameThief.Win32.Magania</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 7 January 2016, 09:09:48</li>
+<li>Processing time: 6 min 25 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x743B8278EFC6DA0C35C138AC74C37516</li>
+<li>File SHA-1: 0x6BC6FD8EE7449A7F5956AF193EA266107772AD4A</li>
+<li>Filesize: 151,552 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-gamethief-win32-magania.html" target="_blank">Trojan-GameThief.Win32.Magania<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">155,648 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>111.73.45.252</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">111.73.45.252<td class="cell_2">7777</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7777:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 8201 0000 4002 0000 7E95 4364 6465 9906 | ....@...~.Cdde..
+00000010 | C2A5 48C8 09C2 195A 0E0D 4944 3C3B B7A0 | ..H....Z..ID<;..
+00000020 | 2B37 3854 2226 3638 5EC8 8B09 0D7F 9121 | +78T"&68^......!
+00000030 | D232 4944 4ABE 1482 0A17 B97F 34A8 E08E | .2IDJ.......4...
+00000040 | D9C3 1E0C A1DD 8521 2934 079F F019 0A41 | .......!)4.....A
+00000050 | EFF2 4208 33C4 646B ADC8 7D34 A6E7 2499 | ..B.3.dk..}4..$.
+00000060 | 7509 4BF9 0CD4 0238 8709 3804 5FC0 6E2A | u.K....8..8._.n*
+00000070 | 5612 69F1 06BD 369E C58F 2083 A795 2997 | V.i...6... ...).
+00000080 | 2009 EF00 0447 4686 EDDC 0C0C 8640 E609 |  ....GF......@..
+00000090 | A8FB 38A0 F6D7 03B9 CEF9 B905 A525 A945 | ..8..........%.E
+000000A0 | 7E89 B9A9 0C44 0205 2006 B9C1 E0CC 1B83 | ~....D.. .......
+000000B0 | 0B0B 4F6D 0439 3497 7562 8D95 E4CA 4206 | ..Om.94.ub....B.
+000000C0 | 0611 B01A 8E0E 3186 8C18 2186 03B6 A20C | ......1...!.....
+000000D0 | DE40 7187 0821 060B 4648 B880 DCC0 06C4 | .@q..!..FH......
+000000E0 | 0250 8C61 B802 8409 52F7 9299 8121 0DA8 | .P.a....R....!..
+000000F0 | 8B03 4989 F945 0686 0340 F35E 1BAC 2C04 | ..I..E...@.^..,.
+00000100 | 99C9 C0C2 0031 1808 2C90 8C00 4919 D889 | .....1..,...I...
+00000110 | 82C3 08E4 962F C070 745C 7CB8 1CE4 A630 | ...../.pt\|....0
+00000120 | 8E46 7078 3318 3030 FCF9 BF17 AC9E 07C9 | .Fpx3.00........
+00000130 | 8E0A A07A 1010 8E5B 5A78 2666 6921 88FD | ...z...[Zx&fi!..
+00000140 | E031 C46F 2033 41C0 2152 8861 6AE0 D242 | .1.o 3A.!R.aj..B
+00000150 | 9079 2003 6C80 1682 DC03 8A35 26A0 C762 | .y .l......5&..b
+00000160 | 80EA 58A0 EA7F B303 C581 EC7D D72E 7F3A | ..X........}...:
+00000170 | FB03 683E FB5C 8696 4890 1DAD 0C00 8F6C | ..h>.\..H......l
+00000180 | 6663                                    | fc
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

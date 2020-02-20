@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 May 2014, 10:30:36</li>
+<li>Processing time: 7 min 40 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x108CCB95D53FDD2F78572F26A11F0B8C</li>
+<li>File SHA-1: 0x744DF2325C5EEE8FAF747D9E3017317C2D0B2C33</li>
+<li>Filesize: 1,806,104 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\BeFrugal</li>
+<li>%Temp%\SymCCIS2.0.0</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">SymCCISExe.exe</td><td class="cell_1">%Temp%\symccis2.0.0\symccisexe.exe</td><td class="cell_2">1,142,784 bytes</td></tr>
+<tr><td class="cell_1">BFHP.exe</td><td class="cell_1">%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFHP.exe</td><td class="cell_2">942,080 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">befrgl.exe</td><td class="cell_1">%ProgramFiles%\common files\befrugal.com\toolbar\befrgl.exe</td><td class="cell_2">438,272 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-F9D9S.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">770,048 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">norton-install.exe</td><td class="cell_1">%ProgramFiles%\common files\befrugal.com\toolbar\norton-install.exe</td><td class="cell_2">237,568 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">BeFrugal.com Service</td><td class="cell_1">BeFrugal.com Service</td><td class="cell_1">"Running"</td><td class="cell_2">"%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\befrgl.exe"</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\befrgl.EXE</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{4ABB59EB-8AF9-4590-8F40-3FDD1083C9FA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{C86DB3F5-5BF9-4EE2-97FB-A74C10F71EDA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{2335A057-CBA6-40F6-A712-C6A7C98F7813}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BeFrugal.com Toolbar_is1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\BeFrugal</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\BeFrugal\Toolbar</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BeFrugal.com Service</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BeFrugal.com Service\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BeFrugal.com Service\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BEFRUGAL.COM_SERVICE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BeFrugal.com Service</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BeFrugal.com Service\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BeFrugal.com Service\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ApprovedExtensionsMigration</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ApprovedExtensionsMigration{2335A057-CBA6-40F6-A712-C6A7C98F7813}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ApprovedExtensionsMigration{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}</li>
+<li>HKEY_CURRENT_USER\Software\BeFrugal</li>
+<li>HKEY_CURRENT_USER\Software\BeFrugal\Toolbar</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\befrgl.EXE]</li><ul>
+<li>AppID = "{4ABB59EB-8AF9-4590-8F40-3FDD1083C9FA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{4ABB59EB-8AF9-4590-8F40-3FDD1083C9FA}]</li><ul>
+<li>(Default) = "befrgl"</li>
+<li>LocalService = "BeFrugal.com Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFTB.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2335A057-CBA6-40F6-A712-C6A7C98F7813}]</li><ul>
+<li>(Default) = "BeFrugalIEHelper"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFTB.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7}]</li><ul>
+<li>(Default) = "BeFrugal.com Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\TypeLib]</li><ul>
+<li>(Default) = "{93AB986F-51E4-4188-8CE2-B6E03E004943}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}\LocalServer32]</li><ul>
+<li>(Default) = ""%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\befrgl.exe""</li>
+<li>ServerExecutable = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\befrgl.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{81DBD99D-8D37-439A-A705-6A6504261E26}]</li><ul>
+<li>(Default) = "SuppressionList Class"</li>
+<li>AppID = "{4ABB59EB-8AF9-4590-8F40-3FDD1083C9FA}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFTB.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83571411-ED91-467A-A172-CEC63A645ED4}]</li><ul>
+<li>(Default) = "BFOCT Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\TypeLib]</li><ul>
+<li>(Default) = "{2A05A54D-0614-4EA3-B955-8814E45DCD83}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFNB.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8534A9F-4F29-4FDC-9CD9-023ACF0EF9B9}]</li><ul>
+<li>(Default) = "BFNotificationBar Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\TypeLib]</li><ul>
+<li>(Default) = "{2A05A54D-0614-4EA3-B955-8814E45DCD83}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6E673599-659A-439E-837D-A0931AFA3A7F}]</li><ul>
+<li>(Default) = "IBFNotificationBar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\TypeLib]</li><ul>
+<li>(Default) = "{93AB986F-51E4-4188-8CE2-B6E03E004943}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{84654D5D-611C-41C9-BBA1-BEB77502F633}]</li><ul>
+<li>(Default) = "ISuppressionList"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{AB50591C-2474-4890-9D06-518D415ADA7C}]</li><ul>
+<li>(Default) = "IBFToolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B2793774-A9B9-43FB-94F8-EC94BF3E6BC2}]</li><ul>
+<li>(Default) = "IBFBHO"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\TypeLib]</li><ul>
+<li>(Default) = "{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{EF6A3723-635E-4905-A0F8-5FAC26932330}]</li><ul>
+<li>(Default) = "IBFOCT"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFNB.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A05A54D-0614-4EA3-B955-8814E45DCD83}\1.0]</li><ul>
+<li>(Default) = "BFNBLib"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFTB.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{9250F6C1-0B7F-4D0A-A55A-44876D353DCF}\1.0]</li><ul>
+<li>(Default) = "BFTBLib"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\0\win32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\befrgl.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{93AB986F-51E4-4188-8CE2-B6E03E004943}\1.0]</li><ul>
+<li>(Default) = "SLSLib"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Toolbar]</li><ul>
+<li>{5BA2C4EE-42EF-4E2D-88BE-7271AE4E35B7} = "BFToolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{C86DB3F5-5BF9-4EE2-97FB-A74C10F71EDA}]</li><ul>
+<li>AppName = "befrgl.exe"</li>
+<li>AppPath = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{2335A057-CBA6-40F6-A712-C6A7C98F7813}]</li><ul>
+<li>(Default) = "BFBHO"</li>
+<li>NoExplorer = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>BFHP = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFHP.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BeFrugal.com Toolbar_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.5.3 (a)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar"</li>
+<li>InstallLocation = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\"</li>
+<li>Inno Setup: Icon Group = "(Default)"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Language = "default"</li>
+<li>DisplayName = "BeFrugal.com Toolbar"</li>
+<li>DisplayIcon = "%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\BFTB.dll"</li>
+<li>UninstallString = ""%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\Common Files\BeFrugal.com\Toolbar\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "2013.3.13.3"</li>
+<li>Publisher = "BeFrugal.com"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20140530"</li>
+<li>MajorVersion = 0x000007DD</li>
+<li>MinorVersion = 0x00000003</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\BeFrugal\Toolbar]</li><ul>
+<li>ISIE = 0x00000000</li>
+<li>IEFF = 0x00000000</li>
+<li>Hidden = 0x00000000</li>
+<li>Buttons = 0x0000077E</li>
+<li>SuggestionLimits = 0x00030003</li>
+<li>UTMSource = ""</li>
+<li>TStamp = "1405"</li>
+<li>FFYahooHomepage = "false"</li>
+<li>FFYahooSearch = "false"</li>
+<li>Port = 0x00000904</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{0E5CBF21-D15F-11D0-8301-00AA005B4383} = </li>
+<li>ITBarLayout = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Global\BFFBToken</li>
+<li>Global\BFHelper</li>
+<li>Global\SFX_MUTEX</li>
+<li>BeFrugalToolbarInstaller</li>
+<li>Global\SYMSETUP_MUTEX</li>
+<li>SymCCISv2_0</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.befrugal.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">liveupdate.symantecliveupdate.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>toolbar/welcome/</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

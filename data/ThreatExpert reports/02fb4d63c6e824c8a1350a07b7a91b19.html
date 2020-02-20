@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: BackDoor-AWQ.b.gen.r, Mal/Inject-K, Trojan.Win32.Sasfis, Win-Trojan/Antisb.190976.J">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: BackDoor-AWQ.b.gen.r, Mal/Inject-K, Trojan.Win32.Sasfis..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 15 August 2014, 04:00:50</li>
+<li>Processing time: 5 min 52 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x02FB4D63C6E824C8A1350A07B7A91B19</li>
+<li>File SHA-1: 0xF65C57763C445B32D45FEBC63664799DB424B9B0</li>
+<li>Filesize: 190,976 bytes</li>
+<li>Alias:</li>
+<ul><li>BackDoor-AWQ.b.gen.r [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-inject-k.html" target="_blank">Mal/Inject-K<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-sasfis.html" target="_blank">Trojan.Win32.Sasfis<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li>Win-Trojan/Antisb.190976.J [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WindowsName</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WindowsName]</li><ul>
+<li>ID = "Server ID"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>8TI6W35KD314J3R</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>hack-iraq.no-ip.biz</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">hack-iraq.no-ip.biz<td class="cell_2">3340</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 3340:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4854 5450 2F31 2E31 2032 3030 204F 4B0D | HTTP/1.1 200 OK.
+00000010 | 0A44 6174 653A 2053 756E 2C20 3133 2044 | .Date: Sun, 13 D
+00000020 | 6563 2032 3030 3920 3133 3A33 363A 3535 | ec 2009 13:36:55
+00000030 | 2047 4D54 0D0A 5365 7276 6572 3A20 4170 |  GMT..Server: Ap
+00000040 | 6163 6865 2F32 2E32 2E33 2028 4365 6E74 | ache/2.2.3 (Cent
+00000050 | 4F53 290D 0A4C 6173 742D 4D6F 6469 6669 | OS)..Last-Modifi
+00000060 | 6564 3A20 4672 692C 2030 3720 4175 6720 | ed: Fri, 07 Aug
+00000070 | 3230 3039 2030 393A 3338 3A33 3220 474D | 2009 09:38:32 GM
+00000080 | 540D 0A45 5461 673A 2022 3466 3831 3939 | T..ETag: "4f8199
+00000090 | 2D34 6438 2D66 6664 3762 3630 3022 0D0A | -4d8-ffd7b600"..
+000000A0 | 4163 6365 7074 2D52 616E 6765 733A 2062 | Accept-Ranges: b
+000000B0 | 7974 6573 0D0A 436F 6E74 656E 742D 4C65 | ytes..Content-Le
+000000C0 | 6E67 7468 3A20 3132 3430 0D0A 436F 6E6E | ngth: 1240..Conn
+000000D0 | 6563 7469 6F6E 3A20 636C 6F73 650D 0A43 | ection: close..C
+000000E0 | 6F6E 7465 6E74 2D54 7970 653A 2061 7070 | ontent-Type: app
+000000F0 | 6C69 6361 7469 6F6E 2F6F 6374 6574 2D73 | lication/octet-s
+00000100 | 7472 6561 6D0D 0A43 6F6E 7465 6E74 2D54 | tream..Content-T
+00000110 | 7261 6E73 6665 722D 456E 636F 6469 6E67 | ransfer-Encoding
+00000120 | 3A20 6261 7365 3634 0D0A 0D0A 4573 614D | : base64....EsaM
+00000130 | 6557 4C62 4E55 7063 6567 752F 6272 7365 | eWLbNUpcegu/brse
+00000140 | 644E 734D 6375 7445 4D72 3079 0D0A 2D2D | dNsMcutEMr0y..--
+00000150 | 6672 6F6E 7469 6572 2D2D 0D0A 4854 5450 | frontier--..HTTP
+00000160 | 2F31 2E31 2032 3030 204F 4B0D 0A44 6174 | /1.1 200 OK..Dat
+00000170 | 653A 2053 756E 2C20 3133 2044 6563 2032 | e: Sun, 13 Dec 2
+00000180 | 3030 3920 3133 3A33 363A 3535 2047 4D54 | 009 13:36:55 GMT
+00000190 | 0D0A 5365 7276 6572 3A20 4170 6163 6865 | ..Server: Apache
+000001A0 | 2F32 2E32 2E33 2028 4365 6E74 4F53 290D | /2.2.3 (CentOS).
+000001B0 | 0A4C 6173 742D 4D6F 6469 6669 6564 3A20 | .Last-Modified:
+000001C0 | 4672 692C 2030 3720 4175 6720 3230 3039 | Fri, 07 Aug 2009
+000001D0 | 2030 393A 3338 3A33 3220 474D 540D 0A45 |  09:38:32 GMT..E
+000001E0 | 5461 673A 2022 3466 3831 3939 2D34 6438 | Tag: "4f8199-4d8
+000001F0 | 2D66 6664 3762 3630 3022 0D0A 4163 6365 | -ffd7b600"..Acce
+00000200 | 7074 2D52 616E 6765 733A 2062 7974 6573 | pt-Ranges: bytes
+00000210 | 0D0A 436F 6E74 656E 742D 4C65 6E67 7468 | ..Content-Length
+00000220 | 3A20 3132 3430 0D0A 436F 6E6E 6563 7469 | : 1240..Connecti
+00000230 | 6F6E 3A20 636C 6F73 650D 0A43 6F6E 7465 | on: close..Conte
+00000240 | 6E74 2D54 7970 653A 2061 7070 6C69 6361 | nt-Type: applica
+00000250 | 7469 6F6E 2F6F 6374 6574 2D73 7472 6561 | tion/octet-strea
+00000260 | 6D0D 0A43 6F6E 7465 6E74 2D54 7261 6E73 | m..Content-Trans
+00000270 | 6665 722D 456E 636F 6469 6E67 3A20 6261 | fer-Encoding: ba
+00000280 | 7365 3634 0D0A 0D0A 5547 6449 424A 5637 | se64....UGdIBJV7
+00000290 | 6137 4461 3735 6C6C 5350 4170 6C6C 746B | a7Da75llSPAplltk
+000002A0 | 4667 4147 596B 5566 0D0A 2D2D 6672 6F6E | FgAGYkUf..--fron
+000002B0 | 7469 6572 2D2D 0D0A 4854 5450 2F31 2E31 | tier--..HTTP/1.1
+000002C0 | 2032 3030 204F 4B0D 0A44 6174 653A 2053 |  200 OK..Date: S
+000002D0 | 756E 2C20 3133 2044 6563 2032 3030 3920 | un, 13 Dec 2009
+000002E0 | 3133 3A33 363A 3535 2047 4D54 0D0A 5365 | 13:36:55 GMT..Se
+000002F0 | 7276 6572 3A20 4170 6163 6865 2F32 2E32 | rver: Apache/2.2
+00000300 | 2E33 2028 4365 6E74 4F53 290D 0A4C 6173 | .3 (CentOS)..Las
+00000310 | 742D 4D6F 6469 6669 6564 3A20 4672 692C | t-Modified: Fri,
+00000320 | 2030 3720 4175 6720 3230 3039 2030 393A |  07 Aug 2009 09:
+00000330 | 3338 3A33 3220 474D 540D 0A45 5461 673A | 38:32 GMT..ETag:
+00000340 | 2022 3466 3831 3939 2D34 6438 2D66 6664 |  "4f8199-4d8-ffd
+00000350 | 3762 3630 3022 0D0A 4163 6365 7074 2D52 | 7b600"..Accept-R
+00000360 | 616E 6765 733A 2062 7974 6573 0D0A 436F | anges: bytes..Co
+00000370 | 6E74 656E 742D 4C65 6E67 7468 3A20 3132 | ntent-Length: 12
+00000380 | 3430 0D0A 436F 6E6E 6563 7469 6F6E 3A20 | 40..Connection:
+00000390 | 636C 6F73 650D 0A43 6F6E 7465 6E74 2D54 | close..Content-T
+000003A0 | 7970 653A 2061 7070 6C69 6361 7469 6F6E | ype: application
+000003B0 | 2F6F 6374 6574 2D73 7472 6561 6D0D 0A43 | /octet-stream..C
+000003C0 | 6F6E 7465 6E74 2D54 7261 6E73 6665 722D | ontent-Transfer-
+000003D0 | 456E 636F 6469 6E67 3A20 6261 7365 3634 | Encoding: base64
+000003E0 | 0D0A 0D0A 5547 6449 424A 5637 6137 4461 | ....UGdIBJV7a7Da
+000003F0 | 3735 6C6C 5350 4170 6C6C 746B 4667 4147 | 75llSPAplltkFgAG
+00000400 | 596B 5566 0D0A 2D2D 6672 6F6E 7469 6572 | YkUf..--frontier
+00000410 | 2D2D 0D0A 4854 5450 2F31 2E31 2032 3030 | --..HTTP/1.1 200
+00000420 | 204F 4B0D 0A44 6174 653A 2053 756E 2C20 |  OK..Date: Sun,
+00000430 | 3133 2044 6563 2032 3030 3920 3133 3A33 | 13 Dec 2009 13:3
+00000440 | 363A 3535 2047 4D54 0D0A 5365 7276 6572 | 6:55 GMT..Server
+00000450 | 3A20 4170 6163 6865 2F32 2E32 2E33 2028 | : Apache/2.2.3 (
+00000460 | 4365 6E74 4F53 290D 0A4C 6173 742D 4D6F | CentOS)..Last-Mo
+00000470 | 6469 6669 6564 3A20 4672 692C 2030 3720 | dified: Fri, 07
+00000480 | 4175 6720 3230 3039 2030 393A 3338 3A33 | Aug 2009 09:38:3
+00000490 | 3220 474D 540D 0A45 5461 673A 2022 3466 | 2 GMT..ETag: "4f
+000004A0 | 3831 3939 2D34 6438 2D66 6664 3762 3630 | 8199-4d8-ffd7b60
+000004B0 | 3022 0D0A 4163 6365 7074 2D52 616E 6765 | 0"..Accept-Range
+000004C0 | 733A 2062 7974 6573 0D0A 436F 6E74 656E | s: bytes..Conten
+000004D0 | 742D 4C65 6E67 7468 3A20 3132 3430 0D0A | t-Length: 1240..
+000004E0 | 436F 6E6E 6563 7469 6F6E 3A20 636C 6F73 | Connection: clos
+000004F0 | 650D 0A43 6F6E 7465 6E74 2D54 7970 653A | e..Content-Type:
+00000500 | 2061 7070 6C69 6361 7469 6F6E 2F6F 6374 |  application/oct
+00000510 | 6574 2D73 7472 6561 6D0D 0A43 6F6E 7465 | et-stream..Conte
+00000520 | 6E74 2D54 7261 6E73 6665 722D 456E 636F | nt-Transfer-Enco
+00000530 | 6469 6E67 3A20 6261 7365 3634 0D0A 0D0A | ding: base64....
+00000540 | 5547 6449 424A 5637 6137 4461 3735 6C6C | UGdIBJV7a7Da75ll
+00000550 | 5350 4170 6C6C 746B 4667 4147 596B 5566 | SPAplltkFgAGYkUf
+00000560 | 0D0A 2D2D 6672 6F6E 7469 6572 2D2D 0D0A | ..--frontier--..
+00000570 | 4854 5450 2F31 2E31 2032 3030 204F 4B0D | HTTP/1.1 200 OK.
+00000580 | 0A44 6174 653A 2053 756E 2C20 3133 2044 | .Date: Sun, 13 D
+00000590 | 6563 2032 3030 3920 3133 3A33 363A 3535 | ec 2009 13:36:55
+000005A0 | 2047 4D54 0D0A 5365 7276 6572 3A20 4170 |  GMT..Server: Ap
+000005B0 | 6163 6865 2F32 2E32 2E33 2028 4365 6E74 | ache/2.2.3 (Cent
+000005C0 | 4F53 290D 0A4C 6173 742D 4D6F 6469 6669 | OS)..Last-Modifi
+000005D0 | 6564 3A20 4672 692C 2030 3720 4175 6720 | ed: Fri, 07 Aug
+000005E0 | 3230 3039 2030 393A 3338 3A33 3220 474D | 2009 09:38:32 GM
+000005F0 | 540D 0A45 5461 673A 2022 3466 3831 3939 | T..ETag: "4f8199
+00000600 | 2D34 6438 2D66 6664 3762 3630 3022 0D0A | -4d8-ffd7b600"..
+00000610 | 4163 6365 7074 2D52 616E 6765 733A 2062 | Accept-Ranges: b
+00000620 | 7974 6573 0D0A 436F 6E74 656E 742D 4C65 | ytes..Content-Le
+00000630 | 6E67 7468 3A20 3132 3430 0D0A 436F 6E6E | ngth: 1240..Conn
+00000640 | 6563 7469 6F6E 3A20 636C 6F73 650D 0A43 | ection: close..C
+00000650 | 6F6E 7465 6E74 2D54 7970 653A 2061 7070 | ontent-Type: app
+00000660 | 6C69 6361 7469 6F6E 2F6F 6374 6574 2D73 | lication/octet-s
+00000670 | 7472 6561 6D0D 0A43 6F6E 7465 6E74 2D54 | tream..Content-T
+00000680 | 7261 6E73 6665 722D 456E 636F 6469 6E67 | ransfer-Encoding
+00000690 | 3A20 6261 7365 3634 0D0A 0D0A 5547 6449 | : base64....UGdI
+000006A0 | 424A 5637 6137 4461 3735 6C6C 5350 4170 | BJV7a7Da75llSPAp
+000006B0 | 6C6C 746B 4667 4147 596B 5566 0D0A 2D2D | lltkFgAGYkUf..--
+000006C0 | 6672 6F6E 7469 6572 2D2D 0D0A 4854 5450 | frontier--..HTTP
+000006D0 | 2F31 2E31 2032 3030 204F 4B0D 0A44 6174 | /1.1 200 OK..Dat
+000006E0 | 653A 2053 756E 2C20 3133 2044 6563 2032 | e: Sun, 13 Dec 2
+000006F0 | 3030 3920 3133 3A33 363A 3535 2047 4D54 | 009 13:36:55 GMT
+00000700 | 0D0A 5365 7276 6572 3A20 4170 6163 6865 | ..Server: Apache
+00000710 | 2F32 2E32 2E33 2028 4365 6E74 4F53 290D | /2.2.3 (CentOS).
+00000720 | 0A4C 6173 742D 4D6F 6469 6669 6564 3A20 | .Last-Modified:
+00000730 | 4672 692C 2030 3720 4175 6720 3230 3039 | Fri, 07 Aug 2009
+00000740 | 2030 393A 3338 3A33 3220 474D 540D 0A45 |  09:38:32 GMT..E
+00000750 | 5461 673A 2022 3466 3831 3939 2D34 6438 | Tag: "4f8199-4d8
+00000760 | 2D66 6664 3762 3630 3022 0D0A 4163 6365 | -ffd7b600"..Acce
+00000770 | 7074 2D52 616E 6765 733A 2062 7974 6573 | pt-Ranges: bytes
+00000780 | 0D0A 436F 6E74 656E 742D 4C65 6E67 7468 | ..Content-Length
+00000790 | 3A20 3132 3430 0D0A 436F 6E6E 6563 7469 | : 1240..Connecti
+000007A0 | 6F6E 3A20 636C 6F73 650D 0A43 6F6E 7465 | on: close..Conte
+000007B0 | 6E74 2D54 7970 653A 2061 7070 6C69 6361 | nt-Type: applica
+000007C0 | 7469 6F6E 2F6F 6374 6574 2D73 7472 6561 | tion/octet-strea
+000007D0 | 6D0D 0A43 6F6E 7465 6E74 2D54 7261 6E73 | m..Content-Trans
+000007E0 | 6665 722D 456E 636F 6469 6E67 3A20 6261 | fer-Encoding: ba
+000007F0 | 7365 3634 0D0A 0D0A 5547 6449 424A 5637 | se64....UGdIBJV7
+00000800 | 6137 4461 3735 6C6C 5350 4170 6C6C 746B | a7Da75llSPAplltk
+00000810 | 4667 4147 596B 5566 0D0A 2D2D 6672 6F6E | FgAGYkUf..--fron
+00000820 | 7469 6572 2D2D 0D0A 4854 5450 2F31 2E31 | tier--..HTTP/1.1
+00000830 | 2032 3030 204F 4B0D 0A44 6174 653A 2053 |  200 OK..Date: S
+00000840 | 756E 2C20 3133 2044 6563 2032 3030 3920 | un, 13 Dec 2009
+00000850 | 3133 3A33 363A 3535 2047 4D54 0D0A 5365 | 13:36:55 GMT..Se
+00000860 | 7276 6572 3A20 4170 6163 6865 2F32 2E32 | rver: Apache/2.2
+00000870 | 2E33 2028 4365 6E74 4F53 290D 0A4C 6173 | .3 (CentOS)..Las
+00000880 | 742D 4D6F 6469 6669 6564 3A20 4672 692C | t-Modified: Fri,
+00000890 | 2030 3720 4175 6720 3230 3039 2030 393A |  07 Aug 2009 09:
+000008A0 | 3338 3A33 3220 474D 540D 0A45 5461 673A | 38:32 GMT..ETag:
+000008B0 | 2022 3466 3831 3939 2D34 6438 2D66 6664 |  "4f8199-4d8-ffd
+000008C0 | 3762 3630 3022 0D0A 4163 6365 7074 2D52 | 7b600"..Accept-R
+000008D0 | 616E 6765 733A 2062 7974 6573 0D0A 436F | anges: bytes..Co
+000008E0 | 6E74 656E 742D 4C65 6E67 7468 3A20 3132 | ntent-Length: 12
+000008F0 | 3430 0D0A 436F 6E6E 6563 7469 6F6E 3A20 | 40..Connection:
+00000900 | 636C 6F73 650D 0A43 6F6E 7465 6E74 2D54 | close..Content-T
+00000910 | 7970 653A 2061 7070 6C69 6361 7469 6F6E | ype: application
+00000920 | 2F6F 6374 6574 2D73 7472 6561 6D0D 0A43 | /octet-stream..C
+00000930 | 6F6E 7465 6E74 2D54 7261 6E73 6665 722D | ontent-Transfer-
+00000940 | 456E 636F 6469 6E67 3A20 6261 7365 3634 | Encoding: base64
+00000950 | 0D0A 0D0A 5547 6449 424A 5637 6137 4461 | ....UGdIBJV7a7Da
+00000960 | 3735 6C6C 5350 4170 6C6C 746B 4667 4147 | 75llSPAplltkFgAG
+00000970 | 596B 5566 0D0A 2D2D 6672 6F6E 7469 6572 | YkUf..--frontier
+00000980 | 2D2D 0D0A 4854 5450 2F31 2E31 2032 3030 | --..HTTP/1.1 200
+00000990 | 204F 4B0D 0A44 6174 653A 2053 756E 2C20 |  OK..Date: Sun,
+000009A0 | 3133 2044 6563 2032 3030 3920 3133 3A33 | 13 Dec 2009 13:3
+000009B0 | 363A 3535 2047 4D54 0D0A 5365 7276 6572 | 6:55 GMT..Server
+000009C0 | 3A20 4170 6163 6865 2F32 2E32 2E33 2028 | : Apache/2.2.3 (
+000009D0 | 4365 6E74 4F53 290D 0A4C 6173 742D 4D6F | CentOS)..Last-Mo
+000009E0 | 6469 6669 6564 3A20 4672 692C 2030 3720 | dified: Fri, 07
+000009F0 | 4175 6720 3230 3039 2030 393A 3338 3A33 | Aug 2009 09:38:3
+00000A00 | 3220 474D 540D 0A45 5461 673A 2022 3466 | 2 GMT..ETag: "4f
+00000A10 | 3831 3939 2D34 6438 2D66 6664 3762 3630 | 8199-4d8-ffd7b60
+00000A20 | 3022 0D0A 4163 6365 7074 2D52 616E 6765 | 0"..Accept-Range
+00000A30 | 733A 2062 7974 6573 0D0A 436F 6E74 656E | s: bytes..Conten
+00000A40 | 742D 4C65 6E67 7468 3A20 3132 3430 0D0A | t-Length: 1240..
+00000A50 | 436F 6E6E 6563 7469 6F6E 3A20 636C 6F73 | Connection: clos
+00000A60 | 650D 0A43 6F6E 7465 6E74 2D54 7970 653A | e..Content-Type:
+00000A70 | 2061 7070 6C69 6361 7469 6F6E 2F6F 6374 |  application/oct
+00000A80 | 6574 2D73 7472 6561 6D0D 0A43 6F6E 7465 | et-stream..Conte
+00000A90 | 6E74 2D54 7261 6E73 6665 722D 456E 636F | nt-Transfer-Enco
+00000AA0 | 6469 6E67 3A20 6261 7365 3634 0D0A 0D0A | ding: base64....
+00000AB0 | 5547 6449 424A 5637 6137 4461 3735 6C6C | UGdIBJV7a7Da75ll
+00000AC0 | 5350 4170 6C6C 746B 4667 4147 596B 5566 | SPAplltkFgAGYkUf
+00000AD0 | 0D0A 2D2D 6672 6F6E 7469 6572 2D2D 0D0A | ..--frontier--..
+00000AE0 | 4854 5450 2F31 2E31 2032 3030 204F 4B0D | HTTP/1.1 200 OK.
+00000AF0 | 0A44 6174 653A 2053 756E 2C20 3133 2044 | .Date: Sun, 13 D
+00000B00 | 6563 2032 3030 3920 3133 3A33 363A 3535 | ec 2009 13:36:55
+00000B10 | 2047 4D54 0D0A 5365 7276 6572 3A20 4170 |  GMT..Server: Ap
+00000B20 | 6163 6865 2F32 2E32 2E33 2028 4365 6E74 | ache/2.2.3 (Cent
+00000B30 | 4F53 290D 0A4C 6173 742D 4D6F 6469 6669 | OS)..Last-Modifi
+00000B40 | 6564 3A20 4672 692C 2030 3720 4175 6720 | ed: Fri, 07 Aug
+00000B50 | 3230 3039 2030 393A 3338 3A33 3220 474D | 2009 09:38:32 GM
+00000B60 | 540D 0A45 5461 673A 2022 3466 3831 3939 | T..ETag: "4f8199
+00000B70 | 2D34 6438 2D66 6664 3762 3630 3022 0D0A | -4d8-ffd7b600"..
+00000B80 | 4163 6365 7074 2D52 616E 6765 733A 2062 | Accept-Ranges: b
+00000B90 | 7974 6573 0D0A 436F 6E74 656E 742D 4C65 | ytes..Content-Le
+00000BA0 | 6E67 7468 3A20 3132 3430 0D0A 436F 6E6E | ngth: 1240..Conn
+00000BB0 | 6563 7469 6F6E 3A20 636C 6F73 650D 0A43 | ection: close..C
+00000BC0 | 6F6E 7465 6E74 2D54 7970 653A 2061 7070 | ontent-Type: app
+00000BD0 | 6C69 6361 7469 6F6E 2F6F 6374 6574 2D73 | lication/octet-s
+00000BE0 | 7472 6561 6D0D 0A43 6F6E 7465 6E74 2D54 | tream..Content-T
+00000BF0 | 7261 6E73 6665 722D 456E 636F 6469 6E67 | ransfer-Encoding
+00000C00 | 3A20 6261 7365 3634 0D0A 0D0A 5547 6449 | : base64....UGdI
+00000C10 | 424A 5637 6137 4461 3735 6C6C 5350 4170 | BJV7a7Da75llSPAp
+00000C20 | 6C6C 746B 4667 4147 596B 5566 0D0A 2D2D | lltkFgAGYkUf..--
+00000C30 | 6672 6F6E 7469 6572 2D2D 0D0A 4854 5450 | frontier--..HTTP
+00000C40 | 2F31 2E31 2032 3030 204F 4B0D 0A44 6174 | /1.1 200 OK..Dat
+00000C50 | 653A 2053 756E 2C20 3133 2044 6563 2032 | e: Sun, 13 Dec 2
+00000C60 | 3030 3920 3133 3A33 363A 3535 2047 4D54 | 009 13:36:55 GMT
+00000C70 | 0D0A 5365 7276 6572 3A20 4170 6163 6865 | ..Server: Apache
+00000C80 | 2F32 2E32 2E33 2028 4365 6E74 4F53 290D | /2.2.3 (CentOS).
+00000C90 | 0A4C 6173 742D 4D6F 6469 6669 6564 3A20 | .Last-Modified:
+00000CA0 | 4672 692C 2030 3720 4175 6720 3230 3039 | Fri, 07 Aug 2009
+00000CB0 | 2030 393A 3338 3A33 3220 474D 540D 0A45 |  09:38:32 GMT..E
+00000CC0 | 5461 673A 2022 3466 3831 3939 2D34 6438 | Tag: "4f8199-4d8
+00000CD0 | 2D66 6664 3762 3630 3022 0D0A 4163 6365 | -ffd7b600"..Acce
+00000CE0 | 7074 2D52 616E 6765 733A 2062 7974 6573 | pt-Ranges: bytes
+00000CF0 | 0D0A 436F 6E74 656E 742D 4C65 6E67 7468 | ..Content-Length
+00000D00 | 3A20 3132 3430 0D0A 436F 6E6E 6563 7469 | : 1240..Connecti
+00000D10 | 6F6E 3A20 636C 6F73 650D 0A43 6F6E 7465 | on: close..Conte
+00000D20 | 6E74 2D54 7970 653A 2061 7070 6C69 6361 | nt-Type: applica
+00000D30 | 7469 6F6E 2F6F 6374 6574 2D73 7472 6561 | tion/octet-strea
+00000D40 | 6D0D 0A43 6F6E 7465 6E74 2D54 7261 6E73 | m..Content-Trans
+00000D50 | 6665 722D 456E 636F 6469 6E67 3A20 6261 | fer-Encoding: ba
+00000D60 | 7365 3634 0D0A 0D0A 5547 6449 424A 5637 | se64....UGdIBJV7
+00000D70 | 6137 4461 3735 6C6C 5350 4170 6C6C 746B | a7Da75llSPAplltk
+00000D80 | 4667 4147 596B 5566 0D0A 2D2D 6672 6F6E | FgAGYkUf..--fron
+00000D90 | 7469 6572 2D2D 0D0A                     | tier--..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

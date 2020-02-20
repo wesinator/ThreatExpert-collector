@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Win32.Dialer.adub, BackDoor-EMA.gen.e, Troj/Agent-VES, Backdoor:Win32/Zegost.AD, Trojan-GameThief.Win32.OnLineGames">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Win32.Dialer.adub, BackDoor-EMA.gen.e, Troj/Agent-VES..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 February 2016, 23:42:03</li>
+<li>Processing time: 5 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCC47C4142CF4E131253C469281C30288</li>
+<li>File SHA-1: 0xA5537438559F063957961EF6F36193A4FAE16CE8</li>
+<li>Filesize: 241,664 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan.Win32.Dialer.adub [Kaspersky Lab]</li>
+<li>BackDoor-EMA.gen.e [McAfee]</li>
+<li>Troj/Agent-VES [Sophos]</li>
+<li>Backdoor:Win32/Zegost.AD [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-gamethief-win32-onlinegames.html" target="_blank">Trojan-GameThief.Win32.OnLineGames<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">svchso</td><td class="cell_2">245,760 bytes</td></tr>
+<tr><td class="cell_1">svchso</td><td class="cell_2">245,760 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>XXXXXXEEA8BB5E = "%Windir%\XXXXXXEEA8BB5E\svchsot.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>AAAAAA9/4A+Prm970FsLCxsb39AvOptLGusZ8=</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>hackmyh.f3322.net</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">hackmyh.f3322.net<td class="cell_2">7212</td><tr>
+<tr><td class="cell_1">hackmyh.f3322.net<td class="cell_2">8000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7212:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74BF 0000 0018 0100 0078 9C4B | Gh0st........x.K
+00000010 | CB37 6398 C3C0 C0C0 0AC4 8C40 ACC1 C5C0 | .7c........@....
+00000020 | C004 A483 538B CA32 9353 1502 1293 B315 | ....S..2.S......
+00000030 | 8C18 0A7F 00C5 12BE 8A32 6400 E90F 518F | .........2d...Q.
+00000040 | 1998 1920 EA40 7AD8 80B8 0188 0580 D880 | ... .@z.........
+00000050 | C98C 010E 14A0 1808 1630 9A81 D5A7 0149 | .........0.....I
+00000060 | 1906 0B30 1B64 EF05 20E6 1745 6861 049B | ...0.d.. ..Eha..
+00000070 | 0831 9B81 9191 613B 37C4 8E7A 20E5 9C9F | .1....a;7..z ...
+00000080 | 5B50 5A92 5AE4 9798 9BCA 8003 80DC F01F | [PZ.Z...........
+00000090 | 88CB 8CF4 0C0C 81B4 1010 5780 8D6C 00FB | ..........W..l..
+000000A0 | 910D AACE 03E8 2FBD C74F 2FBF DAB5 17AE | ....../..O/.....
+000000B0 | D703 1816 1380 7400 9006 00A2 E022 FF   | ......t......".
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74BD 0000 0018 0100 0078 9C4B | Gh0st........x.K
+00000010 | 8B7A CC30 8781 8181 1588 1981 5883 8B81 | .z.0........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 14FE 008A 257C 1565 C800 D21F 807A | .1....%|.e.....z
+00000040 | 9819 20EA 407A D880 5800 8A51 8002 1443 | .. .@z..X..Q...C
+00000050 | D5BD 046A 4A03 EA92 61B0 00EB 05D9 7B01 | ...jJ...a.....{.
+00000060 | 88A7 8922 B430 8255 42CC 6660 6464 D8CE | ...".0.UB.f`dd..
+00000070 | 0DD1 5B0F A49C F373 0B4A 4B52 8BFC 1273 | ..[....s.JKR...s
+00000080 | 53D1 AD42 06FF 81B8 CC48 CFC0 1048 0B01 | S..B.....H...H..
+00000090 | B10C C819 FB99 1866 5841 DC0A 021E 407F | .......fXA....@.
+000000A0 | E93D 7E7A F9D5 AEBD 6027 6EFB 5D19 F5E8 | .=~z....`'n.]...
+000000B0 | FB29 B0E5 0FF2 CD18 004B 1828 76        | .).......K.(v
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Generic BackDoor.adu, Mal_OLGM-6, Backdoor:Win32/Zegost.H!dll, Trojan.Win32.Redosdru">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Generic BackDoor.adu, Mal_OLGM-6, Backdoor:Win32/Zegost.H!dll..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 31 October 2015, 09:52:53</li>
+<li>Processing time: 5 min 37 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x32F93F4ED719A851F84C847D0DAEF3A6</li>
+<li>File SHA-1: 0x6611D0639F102812BE1B25352BE6E1A42F5CC45F</li>
+<li>Filesize: 113,801 bytes</li>
+<li>Alias:</li>
+<ul><li>Generic BackDoor.adu [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-olgm-6.html" target="_blank">Mal_OLGM-6<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li>Backdoor:Win32/Zegost.H!dll [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-redosdru.html" target="_blank">Trojan.Win32.Redosdru<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">126,976 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>SoftupNotify.exe = "%AllUsersProfile%\??????????\???????????????.lnk"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>58.30.227.148:2014</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>58.30.227.148</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">58.30.227.148<td class="cell_2">2014</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2014:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4657 4B4A 472D 0100 0088 0100 0078 9C4B | FWKJG-.......x.K
+00000010 | 8BD9 CF30 8781 8181 1588 1981 5883 8B81 | ...0........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 3074 3040 0048 0D1F 50C5 47C6 7A08 | .10t0@.H..P.G.z.
+00000040 | 0709 B444 ED67 10BD C0C0 B004 68E6 1420 | ...D.g......h..
+00000050 | DE10 BB9F E144 E1F2 C286 F0A5 852A 4036 | .....D.......*@6
+00000060 | 089C 609D 58E3 E027 CAF0 01C8 0F04 B223 | ..`.X..'.......#
+00000070 | 3845 1872 81F4 9C08 1186 6D40 7110 28E5 | 8E.r......m@q.(.
+00000080 | 6EAC 6102 5BC6 C8B0 9D9B 81C1 10C8 4C41 | n.a.[.........LA
+00000090 | D2EF CA39 B106 64BB 737E 6E41 6949 6A91 | ...9..d.s~nAiIj.
+000000A0 | 5F62 6E2A 43B8 08C4 1107 FED6 7BC4 EF67 | _bn*C.......{..g
+000000B0 | D052 6BA8 6101 D20C 405A 634D 434D B96C | .Rk.a...@ZcMCM.l
+000000C0 | 434D 0B23 438D 3E50 C9B9 2DDB 179D BFA6 | CM.#C.>P..-.....
+000000D0 | C0B0 D079 620D 488B BB02 23C3 1BB0 F922 | ...yb.H...#...."
+000000E0 | 0C5D 7110 7B16 00CD BB01 B733 CC33 0028 | .]q.{......3.3.(
+000000F0 | B724 0EE2 E61D 3003 80E0 8F73 43CD 3EA0 | .$....0....sC.>.
+00000100 | B80E D09E 2A66 0606 1F20 FBF2 EC89 60B1 | ....*f... ....`.
+00000110 | ADCC 2015 40FB 4D1B 6A40 EA60 E1B7 076A | .. .@.M.j@.`...j
+00000120 | 0724 F81A 6A5E 0031 0062 4B66 B0        | .$..j^.1.bKf.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

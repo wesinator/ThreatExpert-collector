@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.AD">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.AD</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 June 2016, 10:18:00</li>
+<li>Processing time: 5 min 43 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCF6392122F8E0B804CA9C18EB5F42418</li>
+<li>File SHA-1: 0xA8E9444B5003DBD6CCB5993DA13FDA8FE98B4BB7</li>
+<li>Filesize: 212,992 bytes</li>
+<li>Alias: Backdoor:Win32/Zegost.AD [Microsoft]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Programs%\Startup\7b9924774ae4e0cd2ea15e188b4e341b.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">212,992 bytes</td>
+<td class="cell_1">MD5: 0xCF6392122F8E0B804CA9C18EB5F42418<br/>SHA-1: 0xA8E9444B5003DBD6CCB5993DA13FDA8FE98B4BB7</td>
+<td class="cell_2">Backdoor:Win32/Zegost.AD [Microsoft]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">212,992 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Free Star jrq</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Free Star jrq</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Free Star jrq]</li><ul>
+<li>MarkTime = "2016-06-20 10:19"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Free Star jrq]</li><ul>
+<li>MarkTime = "2016-06-20 10:19"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>tLXzDgn1+dAIs7O0tNAQCfqm</li>
+<li>c:\documents and settings\username\start menu\programs\startup\7b9924774ae4e0cd2ea15e188b4e341b.exe</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>21shequ.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">21shequ.f3322.net<td class="cell_2">81</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 2601 0000 4745 5420 2F77 7777 6261 6964 | &...GET /wwwbaid
+00000010 | 7563 6F6D CC01 0000 7A9A 4E60 6762 9804 | ucom....z.N`gb..
+00000020 | CCAE 46CD 00CD 185A 090F 4B42 3A3F BDAA | ..F....Z..KB:?..
+00000030 | 2A32 315C 2326 343A 5CC3 8886 4926 5E89 | *21\#&4:\...I&^.
+00000040 | 290C 8A8B 5A34 D14A 03E2 919A 1219 0C89 | )...Z4.J........
+00000050 | 7E63 25B8 998B C106 4033 52AB 5586 F09E | ~c%.....@3R.U...
+00000060 | D259 5403 1460 68FA F99E 0D41 80B6 4CA3 | .YT..`h....A..L.
+00000070 | 17C1 D6E3 87F6 3048 3180 8103 FF2E 6606 | ......0H1.....f.
+00000080 | 2460 01C4 12EF 186A 60FC DD0E 136B 406E | $`.....j`....k@n
+00000090 | 6060 6464 D8CE 0D71 573D 9072 CECF 2D28 | ``dd...qW=.r..-(
+000000A0 | 2D49 2DF2 4BCC 4D65 2012 0800 3117 C835 | -I-.K.Me ...1..5
+000000B0 | 40FC 9B9D 81C1 2535 2DB1 34A7 042C 97F0 | @.....%5-.4..,..
+000000C0 | 421C 437D 19C8 7D0C 4E0C 0C7F FED6 83F8 | B.C}..}.N.......
+000000D0 | 112F 0CCE BC31 38B5 D170 FB35 0603 2004 | ./...18..p.5.. .
+000000E0 | E961 049A 3A85 15A6 C35C CF94 E1DA 66F1 | .a..:....\....f.
+000000F0 | D317 1937 F142 6806 8EDB CF25 E0B4 C2B9 | ...7.Bh....%....
+00000100 | 7B0A 50A5 0E10 6F2B 82FC 4BC0 DD46 0686 | {.P...o+..K..F..
+00000110 | 66BA 0666 BA46 060A 8606 5686 1644 78F5 | f..f.F....V..Dx.
+00000120 | 0000 561E 46FD                          | ..V.F.
+00000000 | 3A01 0000 4745 5420 2F77 7777 6261 6964 | :...GET /wwwbaid
+00000070 | 17C1 D6E4 8FF4 3649 3180 8103 FF2E 6606 | ......6I1.....f.
+000000A0 | 2D49 2DF2 4BCC 4D65 2012 F003 3117 C835 | -I-.K.Me ...1..5
+000000B0 | 40FC 9B9D 81C1 2535 2DB1 34A7 8481 E1CF | @.....%5-.4.....
+000000C0 | DFFA 8417 E218 EA97 01F1 3186 1360 7910 | ..........1..`y.
+000000D0 | 9F99 C1E0 CC1B 8353 1B8D B75F 6368 0342 | .......S..._ch.B
+000000E0 | 909E 0940 9CC2 0AD3 61AE 67CA 20B1 45FC | ...@....a.g. .E.
+000000F0 | F445 46BB 4D10 9A81 E3F6 7309 38AD 70EE | .EF.M.....s.8.p.
+00000100 | 9E02 54A9 03C4 DB8A 40EC 0115 9260 3067 | ..T.....@....`0g
+00000110 | 7062 B004 4223 0613 863A 0643 063D B0B8 | pb..B#...:.C.=..
+00000120 | 9181 A199 AE81 99AE 9181 82A1 8195 A125 | ...............%
+00000130 | 619F 5A30 0000 9B5C 4C15                | a.Z0...\L.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

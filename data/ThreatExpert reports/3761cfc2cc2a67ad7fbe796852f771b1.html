@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Pinfi, Virus.Win32.Parite.c, W32/Pate.c, PE_PARITE.A, W32/Parite-C, Virus:Win32/Parite.C, Backdoor.Win32.Zegost, Win32/Parite">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Pinfi, Virus.Win32.Parite.c, W32/Pate.c, PE_PARITE.A, W32/Parite-C..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 May 2016, 11:57:23</li>
+<li>Processing time: 5 min 45 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3761CFC2CC2A67AD7FBE796852F771B1</li>
+<li>File SHA-1: 0x1917D5669D056F0749F9311A8FE95799B00BF14B</li>
+<li>Filesize: 407,536 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-pinfi.html" target="_blank">W32.Pinfi<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-parite-c.html" target="_blank">Virus.Win32.Parite.c<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-pate-c.html" target="_blank">W32/Pate.c<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/pe-parite-a.html" target="_blank">PE_PARITE.A<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-parite-c.html" target="_blank">W32/Parite-C<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-parite-c.html" target="_blank">Virus:Win32/Parite.C<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Backdoor.Win32.Zegost [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-parite.html" target="_blank">Win32/Parite<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\DW20.EXE</li>
+<li>[pathname with a string SHARE]\DWTRIG20.EXE</li>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\MSN9Components\Digcore.exe</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\MSN9Components\Msncli.exe</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\msnsusii.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%ProgramFiles%\WinPcap\rpcapd.exe</li>
+<li>%ProgramFiles%\WinPcap\Uninstall.exe</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\instmsia.exe</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\instmsiw.exe</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\AppLaunch.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regiis.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_state.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_wp.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\csc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\cvtres.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\ilasm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\Microsoft .NET Framework 2.0\install.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\mscorsvw.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\ngen.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\regtlibv12.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\vbc.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%Windir%\TASKMAN.EXE</li>
+<li>%Windir%\twunk_32.exe</li>
+<li>%Windir%\winhlp32.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/updata.exe.html" target="_blank">updata.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\<a href="http://www.threatexpert.com/files/updata.exe.html" target="_blank">updata.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">249,856 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">249,856 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">249,856 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>updata = "C:\updata.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>180.97.215.51</li>
+<li>0.0.0.0</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">180.97.215.51<td class="cell_2">7777</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">.host</td><td class="cell_1">80</td><td class="cell_1">.host</td><td class="cell_2">.host</td></tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%Temp%\kma1.tmp</li>
+<ul><li>the hook is handled by its export "AttachHook()"</li></ul>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7777:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F100 0000 4801 0000 7E95 4364 B0B5 9DC6 | ....H...~.Cd....
+00000010 | C6C9 C80E C58A 43AA C3C4 C5C4 02A7 815B | ......C........[
+00000020 | 8CCE 3392 5013 0513 96BA 1684 190D 12C4 | ..3.P...........
+00000030 | 9314 F702 810C 24BC 3673 6FE3 8AE0 A405 | ......$.6so.....
+00000040 | 2FA5 811D 0585 6CC6 08FD 4E86 1BCE 66D9 | /.....l...N...f.
+00000050 | 39AB A705 4697 7237 D66C 6740 057B 2285 | 9...F.r7.lg@.{".
+00000060 | C0F4 09D6 8960 351D 5142 0C81 40B6 035B | .....`5.QB..@..[
+00000070 | 0F43 2E90 5E2C B6B2 F00A 50AC 6286 28D8 | .C..^,....P.b.(.
+00000080 | 0D0C 8C8C 0CDB B919 180C 1984 189E 29AE | ..............).
+00000090 | 2C7C 7F63 0258 9F01 D0A1 F540 59E7 FCDC | ,|.c.X.....@Y...
+000000A0 | 82D2 92D4 22BF C4DC 5406 2281 3C10 FF00 | ...."...T.".<...
+000000B0 | 6223 0343 335D 0353 5D43 3305 4343 0688 | b#.C3].S]C3.CC..
+000000C0 | 9F41 FE67 03E2 0AC6 1EB0 BF24 2C7A 101A | .A.g.......$,z..
+000000D0 | 1518 187E B333 30FC 0732 F75D BBFC E92C | ...~.30..2.]...,
+000000E0 | D090 34A0 2E0E 205F 86C1 8201 004A B641 | ..4... _.....J.A
+000000F0 | 46                                      | F
+00000030 | 9314 F702 810C 24BC 3673 6F23 CF7D 578F | ......$.6so#.}W.
+00000040 | 1BD6 4609 0345 B36E 88F8 2646 0F62 306D | ..F..E.n..&F.b0m
+00000050 | 9BD3 5600 A04B B91B 6BB6 33A0 823D 9142 | ..V..K..k.3..=.B
+00000060 | 60FA 04EB 44B0 9A8E 2821 8640 20DB 81AD | `...D...(!.@ ...
+00000070 | 8721 1748 2F16 5B59 7805 28F6 0068 36C8 | .!.H/.[Yx.(..h6.
+000000A0 | 82D2 92D4 22BF C4DC 5406 2201 C8BD 3F80 | ...."...T."...?.
+000000B0 | D8C8 C0D0 4CD7 C054 D7D0 4CC1 D090 01E2 | ....L..T..L.....
+000000C0 | 6790 FFD9 80B8 82B1 07AC EE85 790F 42A3 | g...........y.B.
+000000D0 | 0203 C36F 7606 86FF 40E6 BE6B 973F 9D05 | ...ov...@..k.?..
+000000E0 | 1A92 06D4 C501 E4CB 3058 3000 0010 1041 | ........0X0....A
+000000F0 | D5                                      | .
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

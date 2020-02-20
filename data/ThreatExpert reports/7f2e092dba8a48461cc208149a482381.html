@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/TDSSPack-AH, Worm.Win32.AutoRun, Mal/Agent-IR, Trojan-GameThief.Win32.Magania">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/TDSSPack-AH, Worm.Win32.AutoRun, Mal/Agent-IR..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 December 2014, 03:08:19</li>
+<li>Processing time: 8 min 36 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7F2E092DBA8A48461CC208149A482381</li>
+<li>File SHA-1: 0xDF036D82E3F1FA803AB045256C415D5C968B482F</li>
+<li>Filesize: 291,680 bytes</li>
+<li>Alias:</li>
+<ul><li>Mal/TDSSPack-AH [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-win32-autorun.html" target="_blank">Worm.Win32.AutoRun<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\8oa.dll
+</td>
+<td class="cell_1">23,040 bytes</td>
+<td class="cell_1">MD5: 0xC05F1FEDEFE4821674D738BA017CE744<br/>SHA-1: 0x2123F0D8966B6B442853C9C88FED929D3AABA33D</td>
+<td class="cell_2"><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\A1.zip
+</td>
+<td class="cell_1">19,968 bytes</td>
+<td class="cell_1">MD5: 0x90AFFACB3C4F110BA63DF2BE93F2E41A<br/>SHA-1: 0xA1F071AE9ED951B1EB7EFB040E9CC7204A967E76</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\B1.zip
+</td>
+<td class="cell_1">19,456 bytes</td>
+<td class="cell_1">MD5: 0x0B14DFD82A538CF8933435397DBC4925<br/>SHA-1: 0x82AC612BF9A1C832BF75B8FA8D38714E28640A94</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Temp%\C1.zip
+</td>
+<td class="cell_1">18,944 bytes</td>
+<td class="cell_1">MD5: 0x743CAC2A53BA132D086853141246D7D7<br/>SHA-1: 0xDAF54FE899EA885CD8E70F8BCDB1E3349F4C4526</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Temp%\Coor.bat
+</td>
+<td class="cell_1">151 bytes</td>
+<td class="cell_1">MD5: 0x5055D8342408F688ADA50B3BEEBDB365<br/>SHA-1: 0x50DDA9BCC77911C0CBBA1B3B90F0F25D037E117B</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Temp%\UTYy5
+</td>
+<td class="cell_1">18,944 bytes</td>
+<td class="cell_1">MD5: 0xD330908F5702DD474D25145B227B26D7<br/>SHA-1: 0x603CE5DFF8E6447842B52420242223A276AEFF04</td>
+<td class="cell_2">Mal/Agent-IR [Sophos]</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%Temp%\YhhJ.dll
+</td>
+<td class="cell_1">23,040 bytes</td>
+<td class="cell_1">MD5: 0xFF4E73191CC65C9C9FA28B7AD608D4EB<br/>SHA-1: 0xD150821518EB624CD59A210E61048FB58BD76EA5</td>
+<td class="cell_2"><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%System%\drivers\28253900.sys
+</td>
+<td class="cell_1">39,488 bytes</td>
+<td class="cell_1">MD5: 0x39B0A5535BA977A0BA9B6B70172A7F5A<br/>SHA-1: 0x90787686D45634140C01DF3387EF0574F7DDA0E7</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%System%\HrfyGxg
+<br/>
+%System%\safemono.dll
+</td>
+<td class="cell_1">19,968 bytes</td>
+<td class="cell_1">MD5: 0xA7F95A53EE055115DF03588997A47D4D<br/>SHA-1: 0x81C4564E21F028A0E968B3FB1822C3485BA46E84</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%System%\kakutk.dll
+</td>
+<td class="cell_1">154,624 bytes</td>
+<td class="cell_1">MD5: 0xD74CA99202CDBB9504BF933C94EB2E21<br/>SHA-1: 0x5BED6C6CB0D18DAD61A7EDC353BE51D58BA8FE97</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-gamethief-win32-magania.html" target="_blank">Trojan-GameThief.Win32.Magania<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">291,680 bytes</td>
+<td class="cell_1">MD5: 0x7F2E092DBA8A48461CC208149A482381<br/>SHA-1: 0xDF036D82E3F1FA803AB045256C415D5C968B482F</td>
+<td class="cell_2">Mal/TDSSPack-AH [Sophos]<br/><a href="http://www.threatexpert.com/threats/worm-win32-autorun.html" target="_blank">Worm.Win32.AutoRun<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\wshtcpip.dll</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,949,696 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\HOOK_ID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\SYS_DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{DAF9F01C-30F0-4A52-AF52-E236961977F4}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86\Enum</li>
+</ul></ul>
+<ul><li>The following Registry Key was deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{06849E9F-C8D7-4D59-B87D-784B7D6BE0B3}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\HOOK_ID]</li><ul>
+<li>name = "[filename of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\SYS_DLL]</li><ul>
+<li>name = "8oa.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "IEHelper.IEHlprObj"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\TypeLib]</li><ul>
+<li>(Default) = "{D42047D9-38C2-4FD1-8337-F69C8F835A30}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\ProgID]</li><ul>
+<li>(Default) = "IEHelper.IEHlprObj.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\kakutk.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DAF9F01C-30F0-4A52-AF52-E236961977F4}]</li><ul>
+<li>(Default) = "IEHlprObj Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\TypeLib]</li><ul>
+<li>(Default) = "{D42047D9-38C2-4FD1-8337-F69C8F835A30}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{C0BEBABF-1785-4075-8C4D-8FEE7833D3CD}]</li><ul>
+<li>(Default) = "IIEHlprObj"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\0\win32]</li><ul>
+<li>(Default) = "%System%\kakutk.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{D42047D9-38C2-4FD1-8337-F69C8F835A30}\1.0]</li><ul>
+<li>(Default) = "IEHelper 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj\CurVer]</li><ul>
+<li>(Default) = "IEHelper.IEHlprObj.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj\CLSID]</li><ul>
+<li>(Default) = "{DAF9F01C-30F0-4A52-AF52-E236961977F4}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj]</li><ul>
+<li>(Default) = "IEHlprObj Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj.1\CLSID]</li><ul>
+<li>(Default) = "{DAF9F01C-30F0-4A52-AF52-E236961977F4}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IEHelper.IEHlprObj.1]</li><ul>
+<li>(Default) = "IEHlprObj Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900\0000]</li><ul>
+<li>Service = "28253900"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_28253900]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "548e0c86"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86\0000]</li><ul>
+<li>Service = "548e0c86"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "548e0c86"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_548E0C86]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900\Enum]</li><ul>
+<li>0 = "Root\LEGACY_28253900\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\28253900]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\28253900.sys"</li>
+<li>DisplayName = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86\Enum]</li><ul>
+<li>0 = "Root\LEGACY_548E0C86\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\548e0c86]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\548e0c86.sys"</li>
+<li>DisplayName = "548e0c86"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900\0000]</li><ul>
+<li>Service = "28253900"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_28253900]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "548e0c86"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86\0000]</li><ul>
+<li>Service = "548e0c86"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "548e0c86"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_548E0C86]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900\Enum]</li><ul>
+<li>0 = "Root\LEGACY_28253900\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\28253900]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\28253900.sys"</li>
+<li>DisplayName = "28253900"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86\Enum]</li><ul>
+<li>0 = "Root\LEGACY_548E0C86\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\548e0c86]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\drivers\548e0c86.sys"</li>
+<li>DisplayName = "548e0c86"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/republic_of_korea.gif"></td>
+<td class="cell_2">Republic of Korea</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://209.73.152.126/post.asp?mac=38FFB0DF3BC5751A574FFFF62EA49037&amp;os=winxp Professional&amp;avs=unknow&amp;ps=NO.&amp;ver=xh&amp;pnum=25</li>
+<li>http://uid.dkdowz.com/gif/</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

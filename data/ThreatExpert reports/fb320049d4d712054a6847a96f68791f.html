@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 September 2014, 08:02:38</li>
+<li>Processing time: 6 min 52 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xFB320049D4D712054A6847A96F68791F</li>
+<li>File SHA-1: 0xFB1F9616784B2301D45014CFCAFB84032CD8E297</li>
+<li>Filesize: 647,408 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\Microsoft\CLR Security Config</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">253,952 bytes</td></tr>
+<tr><td class="cell_1">ns3.tmp</td><td class="cell_1">%Temp%\nsd2.tmp\ns3.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">WxStations.exe</td><td class="cell_1">%AppData%\DesktopTemperature\WxStations.exe</td><td class="cell_2">180,224 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Desktop Temperature Monitor</li>
+<li>HKEY_CURRENT_USER\Software\DesktopTemperature</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Desktop Temperature Monitor]</li><ul>
+<li>DisplayName = "Desktop Temperature Monitor"</li>
+<li>UninstallString = "%AppData%\DesktopTemperature\uninstall.exe"</li>
+<li>DisplayVersion = "1.24.0.0"</li>
+<li>Publisher = "System Alerts LLC"</li>
+<li>URLInfoAbout = "http://desktoptemperaturemonitor.com"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DesktopTemperature]</li><ul>
+<li>Installed = "True"</li>
+<li>GUID = "cf12c78c-5282-4fff-afe5-182d4bbb4665"</li>
+<li>DistributorID = "1"</li>
+<li>ChannelID = "1"</li>
+<li>SubChannelID = ""</li>
+<li>Country = "United States"</li>
+<li>WindowPosition = "Qk8QERsZBFRUDQkVWB9WER0MW0ULFxcSEBEbGQRWAlMBEV4fShwABEoVAFwQERsZBAcWFgAaBgFATQwCQkoEEgpWDRwCE1wQERsZBEo="</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>wpad.mrc.pctools.com.</li>
+<li>checkip.dyndns.org</li>
+<li>maps.googleapis.com</li>
+<li>forecast.weather.gov</li>
+</ul></ul>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>wpad.dat</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://checkip.dyndns.org/index.html</li>
+<li>http://maps.googleapis.com/maps/api/geocode/xml?address=United%20States&amp;sensor=false</li>
+<li>http://forecast.weather.gov/MapClick.php?lat=37.0902400&amp;lon=-95.7128910</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

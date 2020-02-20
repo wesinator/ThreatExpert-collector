@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Bifrose, Backdoor.Win32.Bifrose.fvn, BackDoor-CEP.gen.cm, Troj/Bifrose-WC, Backdoor:Win32/Bifrose.AE, Trojan.Win32.Refroso">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Bifrose, Backdoor.Win32.Bifrose.fvn, BackDoor-CEP.gen.cm..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 November 2015, 02:26:30</li>
+<li>Processing time: 5 min 32 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x977A6E6372F83F763E78A65BF54F0251</li>
+<li>File SHA-1: 0x27BF76CCD3EEA680A8C120EF24AAFEA775771B44</li>
+<li>Filesize: 29,980 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-bifrose.html" target="_blank">Backdoor.Bifrose<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Backdoor.Win32.Bifrose.fvn [Kaspersky Lab]</li>
+<li>BackDoor-CEP.gen.cm [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/troj-bifrose-wc.html" target="_blank">Troj/Bifrose-WC<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-bifrose-ae.html" target="_blank">Backdoor:Win32/Bifrose.AE<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-refroso.html" target="_blank">Trojan.Win32.Refroso<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">33,696 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\bifrost\<a href="http://www.threatexpert.com/files/server.exe.html" target="_blank">server.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">33,696 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\java</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\Software\java</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\java]</li><ul>
+<li>nck = C4 11 ED 29 CC 44 A2 32 74 C3 CD 74 FA 93 5B 67</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\java]</li><ul>
+<li>klg = 00</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Bif1234</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>b224.no-ip.biz</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">b224.no-ip.biz<td class="cell_2">81</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 0000 984F B271 E274 8C02 5AF2 B119 | .....O.q.t..Z...
+00000010 | 95FE 341B 4929 A67C 3A33 3AA1 E9E4 3029 | ..4.I).|:3:...0)
+00000020 | 086A A5B8 CD4F 79A2 D8F5 A5E2 6EEE 52F8 | .j...Oy.....n.R.
+00000030 | 06F8 2BC6 E874 556D C0C0 0D02 9323 4B27 | ..+..tUm.....#K'
+00000040 | 1D0A 2F4A 9CC8 82BA 090C 162A FF2F 71C0 | ../J.......*./q.
+00000050 | C6D0 689B 0967 5511 E3ED 1EF7 0CA5 4DB1 | ..h..gU.......M.
+00000060 | 83B6 B291 3E18 EA71 77F2 09B4 9086 4D9D | ....>..qw.....M.
+00000070 | 6749 5A85 A8A7 BD66 618C 6230 E3C5 1C3E | gIZ....fa.b0...>
+00000080 | 7DE8 45EE 69B9 20C0 27D1 0D57 8F4F 1599 | }.E.i. .'..W.O..
+00000090 | 0EEA BD37 58F7 2FD2 3D55 9DE3 73E1 BEE7 | ...7X./.=U..s...
+000000A0 | 5A46 7EE6 A78E 10EC 808B 739D 964A D6AA | ZF~.......s..J..
+000000B0 | A7DD D43B D33A 8156 8F8D 0C8D 1599 23C0 | ...;.:.V......#.
+000000C0 | 5409 D718 3C44 32EA 87D0 7AF1 B5C6 B19C | T...<D2...z.....
+000000D0 | 4387 98DE 6743 7CE8 F20C 13BB 7048 6721 | C...gC|.....pHg!
+000000E0 | 4522 EF43 4F06 F541 EFF6 79C7 AAAD 9DE0 | E".CO..A..y.....
+000000F0 | 47DE 4EAD 2FDA D6C6 342C A828 38DA DE0C | G.N./...4,.(8...
+00000100 | F52D 5948 BD28 F341                     | .-YH.(.A
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

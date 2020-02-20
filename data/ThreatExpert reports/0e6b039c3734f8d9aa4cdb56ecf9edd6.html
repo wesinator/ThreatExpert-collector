@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Win32.Swisyn.bopf, BackDoor-DVB.gen.w, Mal/Redos-I, Backdoor:Win32/Morix.B, Win32.SuspectCrc">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Win32.Swisyn.bopf, BackDoor-DVB.gen.w, Mal/Redos-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 10 November 2015, 22:55:12</li>
+<li>Processing time: 7 min 56 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0E6B039C3734F8D9AA4CDB56ECF9EDD6</li>
+<li>File SHA-1: 0x5A3DB28086AACAB04F3CD864AC1EE996DA3DDDB4</li>
+<li>Filesize: 274,432 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan.Win32.Swisyn.bopf [Kaspersky Lab]</li>
+<li>BackDoor-DVB.gen.w [McAfee]</li>
+<li>Mal/Redos-I [Sophos]</li>
+<li>Backdoor:Win32/Morix.B [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">294,912 bytes</td></tr>
+<tr><td class="cell_1">V2011.exe</td><td class="cell_1">%Windir%\v2011.exe</td><td class="cell_2">294,912 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/SVCHOST.SCR.html" target="_blank">SVCHOST.SCR<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%CommonPrograms%\startup\<a href="http://www.threatexpert.com/files/svchost.scr.html" target="_blank">svchost.scr<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">294,912 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\InfoTime</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\InfoTime]</li><ul>
+<li>InfoTime = "20151110"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>V2011 = "%Windir%\V2011.exe"</li>
+</ul>
+<br/>
+<em>so that %Windir%\V2011.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>AAAAAAAfb+/AQCrqamp70FsLCxsb39AvOppq+utJ8=CCCCCC2vYA8fzw/AXzv+MC9fYAAvC/2v79/gSunw==</li>
+<li>oleacc-msaa-loaded</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>biaoge1998.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">biaoge1998.f3322.net<td class="cell_2">9017</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9017:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74E6 0000 003C 0100 0078 9C4B | Gh0st....<...x.K
+00000010 | 135B 5938 8781 8181 1588 1981 5883 8B81 | .[Y8........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 30FC 018A FD60 8000 3E20 BEB2 4E90 | .10....`..> ..N.
+00000040 | 21C2 C792 E10D 90BE 20BB BAB0 6BBD 2003 | !....... ...k. .
+00000050 | 8BC8 EA42 0DA0 9C04 907D 79F6 C41A 0E20 | ...B.....}y....
+00000060 | BB14 8867 4AAD 2CFC 23BD BAB0 82D1 12AC | ...gJ.,.#.......
+00000070 | FF86 B725 4307 500D 03D4 4E06 86D5 851F | ...%C.P...N.....
+00000080 | 4018 6816 D80D 4039 26B0 2423 C376 6E88 | @.h...@9&.$#.vn.
+00000090 | 1AB7 6A63 C67A 20D3 393F B7A0 B424 B5C8 | ..jc.z .9?...$..
+000000A0 | 2F31 3795 0107 7076 6660 F80F A49D 1273 | /17...pvf`.....s
+000000B0 | 7240 9A41 FEAB 6147 C857 6C00 99FF 91C5 | r@.A..aG.Wl.....
+000000C0 | 2535 2DB1 34A7 8481 2352 04EC 3F10 D80D | %5-.4...#R..?...
+000000D0 | 9403 B90F 0474 7521 6236 8C98 765C 00AA | .....tu!b6..v\..
+000000E0 | 0100 B020 3937                          | ... 97
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

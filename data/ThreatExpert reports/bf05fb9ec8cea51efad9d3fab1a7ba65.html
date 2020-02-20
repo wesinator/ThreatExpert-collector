@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 September 2015, 09:49:18</li>
+<li>Processing time: 5 min 59 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBF05FB9EC8CEA51EFAD9D3FAB1A7BA65</li>
+<li>File SHA-1: 0xC7450D8A804D7D11A9C9CDF050767DBA8A2097CB</li>
+<li>Filesize: 348,287 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\Grab.au3
+</td>
+<td class="cell_1">40,393 bytes</td>
+<td class="cell_1">MD5: 0xE6F7EB42C943B74019F7C31F5DC5E09B<br/>SHA-1: 0x9A3CEB1012FB64AB9C17660760F7544245239056</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\PhoeniX\Microsoft.ApplicationId.Framework.exe
+</td>
+<td class="cell_1">348,287 bytes</td>
+<td class="cell_1">MD5: 0xBF05FB9EC8CEA51EFAD9D3FAB1A7BA65<br/>SHA-1: 0xC7450D8A804D7D11A9C9CDF050767DBA8A2097CB</td>
+<td class="cell_2"><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\PhoeniX\PhoeniX.lnk
+</td>
+<td class="cell_1">2,194 bytes</td>
+<td class="cell_1">MD5: 0xB4C42AABDF2D45E1FB072E8223288330<br/>SHA-1: 0xA73A72EA740516D1821D744FECDF2DC7E04AC762</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\PhoeniX</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">Microsoft.ApplicationId.Framework.exe</td><td class="cell_1">%Temp%\PhoeniX\Microsoft.ApplicationId.Framework.exe</td><td class="cell_2">794,624 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_2">794,624 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce]</li><ul>
+<li>PhoeniX Corporation = "%Temp%\PhoeniX\PhoeniX.lnk"</li>
+</ul>
+<br/>
+<em>so that PhoeniX.lnk runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/united_kingdom.gif"></td>
+<td class="cell_2">United Kingdom</td><tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>magalyamaya.mooo.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">magalyamaya.mooo.com<td class="cell_2">443</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.privateinternetaccess.com</td><td class="cell_1">443</td><td class="cell_1">www.privateinternetaccess.com</td><td class="cell_2">www.privateinternetaccess.com</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 804C 0103 0000 3300 0000 1000 0004 0000 | .L....3.........
+00000010 | 0500 000A 0100 8007 00C0 0300 8000 0009 | ................
+00000020 | 0600 4000 0064 0000 6200 0003 0000 0602 | ..@..d..b.......
+00000030 | 0080 0400 8000 0013 0000 1200 0063 1429 | .............c.)
+00000040 | 07F3 33F1 CD8E 67F0 5C85 1355 F851      | ..3...g.\..U.Q
+00000030 | 0080 0400 8000 0013 0000 1200 0063 8F07 | .............c..
+00000040 | 21C6 7A2A CF29 C0CF 6CC9 C48D 461F      | !.z*.)..l...F.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

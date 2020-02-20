@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-010, Trojan.Win32.KillAV">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-010, Trojan.Win32.KillAV</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 November 2015, 07:06:56</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC0549BA59FC97D39B3CF38AE05E8F571</li>
+<li>File SHA-1: 0x36D3EB664B73143809C2BD3C60D66C29964D2810</li>
+<li>Filesize: 86,037 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-010.html" target="_blank">Mal/Behav-010<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-killav.html" target="_blank">Trojan.Win32.KillAV<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>127.0.0.1:2013</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2013:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | C400 0000 F400 0000 7B9E 4E83 38CD 3284 | ........{.N.8.2.
+00000010 | 8384 8211 891B 855B 8683 8385 0C40 06A5 | .......[.....@..
+00000020 | 1296 6427 AF2B 0620 2566 2A1D 33A2 0109 | ..d'.+. %f*.3...
+00000030 | A11D 1572 E79D 5AE5 04C7 718C 057F E871 | ...r..Z...q....q
+00000040 | 5C2F D32D 1458 5908 62B3 0A4C 80CA 3132 | \/.-.XY.b..L..12
+00000050 | E440 F59C 00CA 9F70 1265 B088 3BCC 1008 | .@.....p.e..;...
+00000060 | 6447 708A 3080 F44C F110 61B0 7316 851A | dGp.0..L..a.s...
+00000070 | 2402 7603 0323 23C3 766E 0606 4306 84DE | $.v..##.vn..C...
+00000080 | 09EE 2260 7BEB 81B2 CEF9 B905 A525 A945 | .."`{........%.E
+00000090 | 7E89 B9A9 0CF1 8719 EC67 4FAC B971 607A | ~........gO..q`z
+000000A0 | CDEB 5940 5AD2 9161 4360 0BC3 FFFF 408D | ..Y@Z..aC`....@.
+000000B0 | 07FE D66F 3051 6150 6498 58A3 00E4 0200 | ...o0QaPd.X.....
+000000C0 | 6B69 3BE8                               | ki;.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

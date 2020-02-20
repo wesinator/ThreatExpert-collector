@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 June 2015, 04:03:55</li>
+<li>Processing time: 7 min 12 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBEA95BEBEC95E0893A845F62E832D7CF</li>
+<li>File SHA-1: 0x5F1F00E5EC9F2749BD0A9B86D15C16C1060F6325</li>
+<li>Filesize: 102,607 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\mcwsazmq.exe
+</td>
+<td class="cell_1">53,248 bytes</td>
+<td class="cell_2">MD5: 0x0873780720FD754EAF235D73916ADB56<br/>SHA-1: 0x49144DBBE672B2EB5AD37690889E9FA50E486497</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\setup.dat
+</td>
+<td class="cell_1">56,246 bytes</td>
+<td class="cell_2">MD5: 0x89014244C43985CE562336EC434795F9<br/>SHA-1: 0x8306C161468D7F90C4F3BEA74F7D657402873DCC</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">102,607 bytes</td>
+<td class="cell_2">MD5: 0xBEA95BEBEC95E0893A845F62E832D7CF<br/>SHA-1: 0x5F1F00E5EC9F2749BD0A9B86D15C16C1060F6325</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%AppData%\Sysinternals</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">mcwsazmq.exe</td><td class="cell_1">%Temp%\mcwsazmq.exe</td><td class="cell_2">16,384 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">229,376 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce]</li><ul>
+<li>{CF78CB86-9F27-E694-97F7-20DAA39C4491} = "%Temp%\mcwsazmq.exe"</li>
+</ul>
+<br/>
+<em>so that mcwsazmq.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Sysinternals]</li><ul>
+<li>{7BC56762-CFA7-A5F1-8629-A60927EA0B8D} = 7F 00 BB 53 D3 0B 18 27 86 58 51 36 A0 CA 70 F4 4C F0 0F 29 78 43 27 8F 0F C0 3E 53 37 08 02 96 EA C7 DF 30 26 B1 68 08 E8 58 EF F2 37 2E 63 16 08 C0 FF 07 33 05 A2 24 F9 DF C7 29 0D 71 3A 84 77 4E 99 01 AF 4F 03 6E F9 39 7D AF 72 6A B5 35 3B 44 BC 0</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>{B443654D-4A34-F369-3E3E-7848307B89DC}</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">95.211.9.145<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">95.211.9.145</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>FJcLuE0BBdxTLV%2buMvJ7KgOwpIyvGNTi21V5 iSX7ky2wT1cDKCTP9d92BL%2b8AuKPb5Sw7%2b%2fO7TQNznmj W%2fG2V4ykip1q7qi1Xo0k1ccY%2bCXNdQ7TXyNTMvqS%2fRcy 7k01K2hZ99nIBRzP0RN9YUh%2fe9oxz89CvHeM8cU9KAeFA7s1 hjcc55zxun85XzpsCrAzl4V6pTp4YJ9FvWiQJKM%2bZAZY5qBA..</li>
+<li>index.jpg</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://95.211.9.145/FJcLuE0BBdxTLV%2buMvJ7 KgOwpIyvGNTi21V5iSX7ky2wT1cDKCTP9d92BL%2b8AuKPb5Sw 7%2b%2fO7TQNznmjW%2fG2V4ykip1q7qi1Xo0k1ccY%2bCXNdQ 7TXyNTMvqS%2fRcy7k01K2hZ99nIBRzP0RN9YUh%2fe9oxz89C vHeM8cU9KAeFA7s1hjcc55zxun85XzpsCrAzl4V6pTp4YJ9FvW..</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

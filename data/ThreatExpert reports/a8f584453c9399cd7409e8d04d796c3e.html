@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Backdoor:Win32/Zegost.AF, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Backdoor:Win32/Zegost.AF, Backdoor.Win32.Inject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 June 2016, 03:25:56</li>
+<li>Processing time: 5 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA8F584453C9399CD7409E8D04D796C3E</li>
+<li>File SHA-1: 0xD10EAAD13C77774384B681E9FB645BF46276A40C</li>
+<li>Filesize: 244,424 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Backdoor:Win32/Zegost.AF [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/FileName.exe.html" target="_blank">FileName.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/filename.exe.html" target="_blank">filename.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">261,224 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">261,224 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\NetSubKey</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run]</li><ul>
+<li>Please Input Service Name = 43 3A 5C 57 69 6E 64 6F 77 73 5C 46 69 6C 65 4E 61 6D 65 2E 65 78 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Please Input Service Name</li>
+<li>www.g0oo0gle.com:8080</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">FileName.exe (%Windir%\FileName.exe)</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">filename.exe (%Windir%\filename.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.168.88.134</li>
+<li>www.g0oo0gle.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">192.168.88.134<td class="cell_2">8370</td><tr>
+<tr><td class="cell_1">www.g0oo0gle.com<td class="cell_2">8080</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8370:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74E9 0000 004C 0100 0078 9C4B | Gh0st....L...x.K
+00000010 | 6368 A899 C3C0 C0C0 0AC4 8C40 ACC1 C5C0 | ch.........@....
+00000020 | C004 A483 538B CA32 9353 1502 1293 B315 | ....S..2.S......
+00000030 | 8C18 522B 18BB 183A 80E2 120C 20D0 C5B0 | ..R+...:.... ...
+00000040 | 264A 08CC 6289 85D0 0C1F FED6 6B00 D95A | &J..b.......k..Z
+00000050 | 6A0D 354F 6280 6240 7A8D A013 C317 3606 | j.5Ob.b@z.....6.
+00000060 | 861A FDC6 1A11 A8F9 3020 00C4 0A6E 5D10 | ........0 ...n].
+00000070 | CE84 BFF5 20FD 30B9 1B40 FD20 3730 3032 | .... .0..@. 7002
+00000080 | 02F5 34D7 6CE7 8668 062A 6074 F6F7 0D08 | ..4.l..h.*`t....
+00000090 | 0D71 0DF2 73F4 7565 200E D428 0089 90D4 | .q..s.ue ..(....
+000000A0 | A2DC CCBC C492 5413 2706 0665 0706 8178 | ......T.'..e...x
+000000B0 | 2106 C620 4786 1F40 F73D 5372 40A8 86CA | !.. G..@.=Sr@...
+000000C0 | C100 C8CD 4B2B 1819 3601 0D71 5269 A8E9 | ....K+..6..qRi..
+000000D0 | 7EDD C008 124B 78C5 C0D0 210C 0A2B 854D | ~....Kx...!..+.M
+000000E0 | F550 AF01 00B5 D534 07                  | .P.....4.
+00000000 | 4768 3073 74E8 0000 004C 0100 0078 9C4B | Gh0st....L...x.K
+00000040 | 264A 08CC 6289 85D0 0C17 FED6 6B00 D95A | &J..b.......k..Z
+00000050 | 6A0D 354F 6280 6240 7A8D A013 8300 D0D0 | j.5Ob.b@z.......
+00000060 | 1AFD C61A 11A8 F930 2000 C40A 6E5D 10CE | .......0 ...n]..
+00000070 | 83BF F520 FD30 B91B 40FD 2037 3030 3202 | ... .0..@. 7002.
+00000080 | F534 D76C E786 6806 2A60 74F6 F70D 080D | .4.l..h.*`t.....
+00000090 | 710D F273 F475 6520 0ED4 80EC 0A49 2DCA | q..s.ue .....I-.
+000000A0 | CDCC 4B2C 4935 7162 6050 7660 1088 1762 | ..K,I5qb`Pv`...b
+000000B0 | 600C 7264 E001 9AFB 4CC9 01A1 1A2A 0703 | `.rd....L....*..
+000000C0 | 2037 9FE6 6066 D8A4 C0C0 E0A4 D250 D3FD |  7..`f.......P..
+000000D0 | BA81 1124 96F0 8A81 A143 1814 560A 9BEA | ...$.....C..V...
+000000E0 | A15E 0300 8B94 31E5                     | .^....1.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6D90 8A99 92CE 64CD D673 8F84 99CE 6A71 | m.....d..s....jq
+00000010 | CDC4 D67A 898F D673 6669 D6D6 D6D6 D679 | ...z...sfi.....y
+00000020 | BECA C6C6 D6D6 76D6 C3D0 C6C6 776E 7CB6 | ......v.....wn|.
+00000030 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000040 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000050 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000060 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000070 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+00000080 | C4C9 C8D6 7174 B6B6 B6B6 B6B6 B6B6 B6B6 | ....qt..........
+00000090 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000A0 | 678D 90D6 5E66 D663 66C4 B6B6 B6B6 B6B6 | g...^f.cf.......
+000000B0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000C0 | 688D 86C6 BDC6 78C6 CAB6 B6B6 B6B6 B6B6 | h.....x.........
+000000D0 | B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 B6B6 | ................
+000000E0 | ADBA B6B6 FFFF FFFF                     | ........
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

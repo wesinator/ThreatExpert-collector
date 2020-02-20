@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 18 September 2015, 15:48:49</li>
+<li>Processing time: 5 min 39 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3AE97CB476F6DF4DFA0B4378E9DD9A81</li>
+<li>File SHA-1: 0x966C233E5ACF7A18656E2A8BE5D1418660CF47CF</li>
+<li>Filesize: 3,898,960 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=3048037e-e88c-45ed-af2a-ab48ab342a19&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\IDM\Scheduler\s_1.dt
+</td>
+<td class="cell_1">304 bytes</td>
+<td class="cell_2">MD5: 0x35B2898F5B11DA2019C94CAC95647940<br/>SHA-1: 0xFBA81A2939A40E7D99A142891798D82DB3EFCF19</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">3,898,960 bytes</td>
+<td class="cell_2">MD5: 0x3AE97CB476F6DF4DFA0B4378E9DD9A81<br/>SHA-1: 0x966C233E5ACF7A18656E2A8BE5D1418660CF47CF</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\IDM</li>
+<li>%AppData%\DMCache</li>
+<li>%AppData%\IDM</li>
+<li>%AppData%\IDM\DwnlData</li>
+<li>%AppData%\IDM\DwnlData\%UserName%</li>
+<li>%AppData%\IDM\Grabber</li>
+<li>%AppData%\IDM\Grabber\Projects</li>
+<li>%AppData%\IDM\Scheduler</li>
+<li>%MyDocuments%\Downloads</li>
+<li>%MyDocuments%\Downloads\Compressed</li>
+<li>%MyDocuments%\Downloads\Documents</li>
+<li>%MyDocuments%\Downloads\Music</li>
+<li>%MyDocuments%\Downloads\Programs</li>
+<li>%MyDocuments%\Downloads\Video</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%MyDocuments% is a variable that refers to the file system directory used to physically store a user's common repository of documents. A typical path is C:\Documents and Settings\[UserName]\My Documents.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">3,915,776 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6DDF00DB-1234-46EC-8356-27E7B2051192}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC746233-E9D3-49CD-862F-068F7B7CCCA4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC746233-E9D3-49CD-862F-068F7B7CCCA4}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PROTOCOLS\Name-Space Handler\ftp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PROTOCOLS\Name-Space Handler\http</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PROTOCOLS\Name-Space Handler\https</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IDMan.CIDMLinkTransmitter</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IDMan.CIDMLinkTransmitter\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{0055C089-8582-441B-A0BF-17B458C2A3A8}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Google</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\Extensions</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Internet Download Manager</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\DragDrop</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\DragDrop\{19129CDA-AFC0-4330-99BC-C5A834F89006}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{1902485B-CE75-42C1-BA2D-57E660793D9A}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{E0DACC63-037F-46EE-AC02-E4C7B0FBFEB4}</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Download all links with IDM</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Download with IDM</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{D5B91409-A8CA-4973-9A0B-59F713D25671}</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\ConfigTime</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\DwnlPanel</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Compressed</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Documents</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Music</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Programs</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Video</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\chrome</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Firefox</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\IEXPLORE</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Mozilla</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\OPERA</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Safari</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\ListSettings</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\maxID</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\MCN</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\menuExt</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\Passwords</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\ProxyPac</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\Queue</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\Scheduler</li>
+<li>HKEY_CURRENT_USER\Software\DownloadManager\SpecialKeys</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6DDF00DB-1234-46EC-8356-27E7B2051192}]</li><ul>
+<li>Model = 0x00000104</li>
+<li>Therad = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC746233-E9D3-49CD-862F-068F7B7CCCA4}\LocalServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AC746233-E9D3-49CD-862F-068F7B7CCCA4}]</li><ul>
+<li>(Default) = "IDMan.CIDMLinkTransmitter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\IDMan.CIDMLinkTransmitter\CLSID]</li><ul>
+<li>(Default) = "{AC746233-E9D3-49CD-862F-068F7B7CCCA4}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer]</li><ul>
+<li>DownloadUI = "{7D11E719-FF90-479C-B0D7-96EB43EE55D7}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{0055C089-8582-441B-A0BF-17B458C2A3A8}]</li><ul>
+<li>(Default) = "IDM Helper"</li>
+<li>NoExplorer = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek]</li><ul>
+<li>path = "%System%\IDMGCExt.crx"</li>
+<li>version = "6.23.11"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Internet Download Manager]</li><ul>
+<li>AdvIntDriverEnabled2 = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer]</li><ul>
+<li>DownloadUI = "{7D11E719-FF90-479C-B0D7-96EB43EE55D7}"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\DragDrop\{19129CDA-AFC0-4330-99BC-C5A834F89006}]</li><ul>
+<li>AppName = "[filename of the sample #1]"</li>
+<li>AppPath = "%Windir%\system32"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{E0DACC63-037F-46EE-AC02-E4C7B0FBFEB4}]</li><ul>
+<li>AppName = "[filename of the sample #1]"</li>
+<li>AppPath = "%Windir%\system32"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{1902485B-CE75-42C1-BA2D-57E660793D9A}]</li><ul>
+<li>AppName = "IEMonitor.exe"</li>
+<li>AppPath = "%Windir%\system32"</li>
+<li>Policy = 0x00000003</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Download with IDM]</li><ul>
+<li>(Default) = "%System%\IEExt.htm"</li>
+<li>contexts = 0x000000F3</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Download all links with IDM]</li><ul>
+<li>(Default) = "%System%\IEGetAll.htm"</li>
+<li>contexts = 0x000000F3</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>IDMan = "[file and pathname of the sample #1] /onboot"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Video]</li><ul>
+<li>ID = 0x00000003</li>
+<li>mask = "avi mpg mpe mpeg asf wmv mov qt rm mp4 flv m4v webm ogv ogg mkv"</li>
+<li>pathW = 43 00 3A 00 5C 00 44 00 6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 73 00 20 00 61 00 6E 00 64 00 20 00 53 00 65 00 74 00 74 00 69 00 6E 00 67 00 73 00 5C 00 55 00 73 00 65 00 72 00 4E 00 61 00 6D 00 65 00 5C 00 4D 00 79 00 20 00 44 00 6F 00 63 00 75 0</li>
+<li>rememberLastPath = 0x00000000</li>
+<li>forSiteOnly = 0x00000000</li>
+<li>sites = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Programs]</li><ul>
+<li>ID = 0x00000001</li>
+<li>mask = "exe msi"</li>
+<li>pathW = 43 00 3A 00 5C 00 44 00 6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 73 00 20 00 61 00 6E 00 64 00 20 00 53 00 65 00 74 00 74 00 69 00 6E 00 67 00 73 00 5C 00 55 00 73 00 65 00 72 00 4E 00 61 00 6D 00 65 00 5C 00 4D 00 79 00 20 00 44 00 6F 00 63 00 75 0</li>
+<li>rememberLastPath = 0x00000000</li>
+<li>forSiteOnly = 0x00000000</li>
+<li>sites = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Music]</li><ul>
+<li>ID = 0x00000002</li>
+<li>mask = "mp3 wav wma mpa ram ra aac aif m4a"</li>
+<li>pathW = 43 00 3A 00 5C 00 44 00 6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 73 00 20 00 61 00 6E 00 64 00 20 00 53 00 65 00 74 00 74 00 69 00 6E 00 67 00 73 00 5C 00 55 00 73 00 65 00 72 00 4E 00 61 00 6D 00 65 00 5C 00 4D 00 79 00 20 00 44 00 6F 00 63 00 75 0</li>
+<li>rememberLastPath = 0x00000000</li>
+<li>forSiteOnly = 0x00000000</li>
+<li>sites = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Documents]</li><ul>
+<li>ID = 0x00000005</li>
+<li>mask = "doc pdf ppt pps"</li>
+<li>pathW = 43 00 3A 00 5C 00 44 00 6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 73 00 20 00 61 00 6E 00 64 00 20 00 53 00 65 00 74 00 74 00 69 00 6E 00 67 00 73 00 5C 00 55 00 73 00 65 00 72 00 4E 00 61 00 6D 00 65 00 5C 00 4D 00 79 00 20 00 44 00 6F 00 63 00 75 0</li>
+<li>rememberLastPath = 0x00000000</li>
+<li>forSiteOnly = 0x00000000</li>
+<li>sites = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\FoldersTree\Compressed]</li><ul>
+<li>ID = 0x00000007</li>
+<li>mask = "zip rar r0* r1* arj gz sit sitx sea ace bz2 7z"</li>
+<li>pathW = 43 00 3A 00 5C 00 44 00 6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 73 00 20 00 61 00 6E 00 64 00 20 00 53 00 65 00 74 00 74 00 69 00 6E 00 67 00 73 00 5C 00 55 00 73 00 65 00 72 00 4E 00 61 00 6D 00 65 00 5C 00 4D 00 79 00 20 00 44 00 6F 00 63 00 75 0</li>
+<li>rememberLastPath = 0x00000000</li>
+<li>forSiteOnly = 0x00000000</li>
+<li>sites = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Safari]</li><ul>
+<li>name = "Apple Safari"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\OPERA]</li><ul>
+<li>name = "Opera"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Mozilla]</li><ul>
+<li>name = "Mozilla"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\IEXPLORE]</li><ul>
+<li>name = "Internet Explorer"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\Firefox]</li><ul>
+<li>name = "Mozilla firefox"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\IDMBI\chrome]</li><ul>
+<li>name = "Google Chrome"</li>
+<li>int = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\SpecialKeys]</li><ul>
+<li>UseKeyToPrevent = 0x00000001</li>
+<li>UseKeyToForce = 0x00000000</li>
+<li>AltP = 0x00000001</li>
+<li>ShiftP = 0x00000000</li>
+<li>CtrlP = 0x00000000</li>
+<li>AltF = 0x00000000</li>
+<li>CtrlF = 0x00000000</li>
+<li>ShiftF = 0x00000000</li>
+<li>InsF = 0x00000001</li>
+<li>CheckMouse = 0x00000000</li>
+<li>SkipHtml = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\menuExt]</li><ul>
+<li>ffdownl1_str = "Download with IDM"</li>
+<li>ffdownlAll_str = "Download all links with IDM"</li>
+<li>ffdownlFLV_str = "Download last requested FLV video"</li>
+<li>ffdownl10FLV_str = "Choose from 10 last requested FLV videos"</li>
+<li>ffdownlppFLV_str = "Download FLV video with IDM"</li>
+<li>ffdownlFLVa_str = "Download last requested FLV video with IDM"</li>
+<li>ffdownl10FLVa_str = "Download FLV videos with IDM from 10 last requested"</li>
+<li>iedownl1_str = "Download with IDM"</li>
+<li>iedownlAll_str = "Download all links with IDM"</li>
+<li>ffdownlFLV_v = 0x00000002</li>
+<li>ffdownl10FLV_v = 0x00000002</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\maxID]</li><ul>
+<li>maxID = 0x00000002</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\DownloadManager\DwnlPanel]</li><ul>
+<li>FLV = 0x00000001</li>
+<li>MP3 = 0x00000001</li>
+<li>MP4 = 0x00000001</li>
+<li>M4V = 0x00000001</li>
+<li>F4V = 0x00000001</li>
+<li>M4A = 0x00000001</li>
+<li>MPG = 0x00000001</li>
+<li>MPEG = 0x00000001</li>
+<li>AVI = 0x00000001</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Tonec_Internet_Download_Manager_MTX</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

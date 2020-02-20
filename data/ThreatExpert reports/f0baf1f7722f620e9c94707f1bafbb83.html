@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 August 2015, 09:42:21</li>
+<li>Processing time: 5 min 40 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF0BAF1F7722F620E9C94707F1BAFBB83</li>
+<li>File SHA-1: 0x1E07FA58527C1EFE59C5F105CF9D5EE954E49CF5</li>
+<li>Filesize: 144,721 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">hufzuk.exe</td><td class="cell_1">%Windir%\hufzuk.exe</td><td class="cell_2">143,360 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">143,360 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Pqrstu Wxyabcde Ghi</td><td class="cell_1">Pqrstu Wxyabcde Ghijklmn Pqrs</td><td class="cell_1">"Running"</td><td class="cell_2">%Windir%\hufzuk.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Pqrstu Wxyabcde Ghi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000]</li><ul>
+<li>Service = "Pqrstu Wxyabcde Ghi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Pqrstu Wxyabcde Ghijklmn Pqrs"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Pqrstu Wxyabcde Ghi]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\hufzuk.exe"</li>
+<li>DisplayName = "Pqrstu Wxyabcde Ghijklmn Pqrs"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Pqrstuvw Yabcdefgh Jklmnop Rstuvwxy Bcd"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Pqrstu Wxyabcde Ghi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000]</li><ul>
+<li>Service = "Pqrstu Wxyabcde Ghi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Pqrstu Wxyabcde Ghijklmn Pqrs"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PQRSTU_WXYABCDE_GHI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_PQRSTU_WXYABCDE_GHI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pqrstu Wxyabcde Ghi]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\hufzuk.exe"</li>
+<li>DisplayName = "Pqrstu Wxyabcde Ghijklmn Pqrs"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Pqrstuvw Yabcdefgh Jklmnop Rstuvwxy Bcd"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\hufzuk.exe</li>
+<li>c:\documents and settings\all users\start menu\programs\startup\sample_1.exe</li>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>61.183.41.74 2014</li>
+<li>eed3bd3a-a1ad-4e99-987b-d7cb3fcfa7f0 - S-1-5-18</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">hufzuk.exe (%Windir%\hufzuk.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>61.183.41.74</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">61.183.41.74<td class="cell_2">2014</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2014:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 3641 4142 3403 0100 0060 0100 00D3 0043 | 6AAB4....`.....C
+00000010 | 18DF CC55 FF1B 10AE 33A5 6FC0 5477 B3E0 | ...U....3.o.Tw..
+00000020 | 8DC6 E709 46D3 9E92 8F29 5B8E 9596 3D57 | ....F....)[...=W
+00000030 | 1DE8 DB8A 6026 8A2E 8BD5 AFF1 DCA4 DABF | ....`&..........
+00000040 | 44A5 EA71 5ED9 A355 6A57 632D DF5C C5D8 | D..q^..UjWc-.\..
+00000050 | 5035 BC64 7BEC 42E4 DDF2 25F4 6945 D759 | P5.d{.B...%.iE.Y
+00000060 | 02E4 7714 8A30 2C88 87A8 6580 9AC9 C0C0 | ..w..0,...e.....
+00000070 | C164 128B 106B 01CA 83DC C0C0 C8C8 B09D | .d...k..........
+00000080 | 9B81 C190 6169 E17F 20A8 085F 5AB8 3E74 | ....ai.. .._Z.>t
+00000090 | 6961 0250 ED7F A074 3D50 8573 7E6E 4169 | ia.P...t=P.s~nAi
+000000A0 | 496A 915F 626E 2A03 71A0 461F 489C DBB2 | Ij._bn*.q.F.H...
+000000B0 | 7DD1 F96B 0A0C AE9C 136B 1CD8 3AC0 B41F | }..k.....k..:...
+000000C0 | 27CC 6F40 50F0 B71E 845D 52D3 124B 734A | '.o@P....]R..KsJ
+000000D0 | 1858 0520 7EBA 0375 E709 D689 352B 9E8B | .X. ~..u....5+..
+000000E0 | 306C BA70 F14B 5966 C186 670C 220C B940 | 0l.p.KYf..g."..@
+000000F0 | B1A2 2211 06B9 1722 6035 1C4F 4518 00C7 | .."...."`5.OE...
+00000100 | 2052 A5                                 |  R.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

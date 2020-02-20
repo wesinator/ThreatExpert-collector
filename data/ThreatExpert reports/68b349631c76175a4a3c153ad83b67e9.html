@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 December 2014, 08:07:59</li>
+<li>Processing time: 8 min 7 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x68B349631C76175A4A3C153AD83B67E9</li>
+<li>File SHA-1: 0x92C8A60FE8707C4A5340FB49132878334369AA6D</li>
+<li>Filesize: 664,576 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\lyma.jio
+</td>
+<td class="cell_1">1,009 bytes</td>
+<td class="cell_2">MD5: 0xB82244A04FACD36759BF9E17B6310971<br/>SHA-1: 0xE3C4AB294DE510E9EDC480C34693F78968E6F375</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\MRG39D7.bat
+</td>
+<td class="cell_1">142 bytes</td>
+<td class="cell_2">MD5: 0x7BC0015A178F802CE42F56FF4ED89BBE<br/>SHA-1: 0xEFD99C440FF3BEC14D6C7C0B4FDACFA599AFFAFD</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\Vyguys\vuzit.exe
+</td>
+<td class="cell_1">664,576 bytes</td>
+<td class="cell_2">MD5: 0x5E02B441002B96C397785D5E843B4081<br/>SHA-1: 0xE843F07EF480827E2BD32945797F01392CEA4C2A</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%System%\drivers\3b91f54d95f2c01b.sys
+</td>
+<td class="cell_1">33,024 bytes</td>
+<td class="cell_2">MD5: 0x5B4F803464B3C1027358AC05197A9315<br/>SHA-1: 0x8B849A47C41EFB4908962A091AB217C4761F31A1</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\Vyguys</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">409,600 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\3b91f54d95f2c01b</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3b91f54d95f2c01b</li>
+<li>HKEY_CURRENT_USER\Software\Efguqaemcu</li>
+<li>HKEY_CURRENT_USER\Software\Efguqaemcu?</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\AGP</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Arbiters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Arbiters\AllocationOrder</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Arbiters\ReservedResources</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BackupRestore</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BackupRestore\AsrKeysNotToRestore</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BackupRestore\KeysNotToRestore</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Biosinfo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BootVerificationProgram</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{25DBCE51-6C8F-4A72-8A6D-B54C2B4FC835}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4658EE7E-F050-11D1-B6BD-00C04FA372A7}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{48721B56-6795-11D2-B1A8-0080C72E74A2}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{49CE6AC8-6F86-11D2-B1E5-0080C72E74A2}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0000\DigitalAudio</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0001</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0001\DigitalAudio</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\Properties</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E966-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E966-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E967-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E967-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E967-E325-11CE-BFC1-08002BE10318}\Properties</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000\Settings</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\Properties</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E969-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E969-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E969-E325-11CE-BFC1-08002BE10318}\Properties</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}\0001</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}\0002</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}\Properties</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96B-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}\0001</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}\0002</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}\0003</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96C-E325-11CE-BFC1-08002BE10318}\0004</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96D-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96E-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96F-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96F-E325-11CE-BFC1-08002BE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E970-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E971-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0005</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0005\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0005\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0005\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0006</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0006\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0006\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0006\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0007</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0007\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\params</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\params\MaxTsoSegSize</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\params\MinTsoSegCount</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\params\NetworkAddress</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0008\Ndi\params\TsoEnable</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0009</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0009\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0010</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0010\Linkage</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0010\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0010\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0011</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0011\Linkage</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "1898e"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E\0000]</li><ul>
+<li>Service = "1898e"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "vuzit.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_1898E]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "3b91f54d95f2c01b"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B\0000]</li><ul>
+<li>Service = "3b91f54d95f2c01b"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "vuzit.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_3B91F54D95F2C01B]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "1898e"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E\0000]</li><ul>
+<li>Service = "1898e"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "vuzit.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_1898E]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "3b91f54d95f2c01b"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B\0000]</li><ul>
+<li>Service = "3b91f54d95f2c01b"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "vuzit.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_3B91F54D95F2C01B]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Identities]</li><ul>
+<li>Identity Login = 0x00098053</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Vuzit = ""%Temp%\Vyguys\vuzit.exe""</li>
+</ul>
+<br/>
+<em>so that vuzit.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Efguqaemcu?]</li><ul>
+<li>1i85cff7 = 31 48 79 A7 B7 AC 27 31 43 9E EA F3 C6 02 BC 2B 09 EB 45 47 92 F0 8D 82</li>
+<li>1dc6a83h = 10 48 14 A7</li>
+<li>df1f5jd = "qUAUp5G/UjEhnobz"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\3b91f54d95f2c01b]</li><ul>
+<li>ImagePath = "%System%\Drivers\3b91f54d95f2c01b.sys"</li>
+<li>Group = "Boot Bus Extender"</li>
+<li>ErrorControl = 0x00000000</li>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000000</li>
+<li>Tag = 0x00000001</li>
+<li>DisplayName = "vuzit.exe"</li>
+<li>DB6 = 01 76 43 91 62 8D A5 69 CE DF 4D 7D 9E 13 68 ED 02 4F 7F A7 84 9D 85 81 CB C5 F0 3F 19 F3 23 E4 02 BB F5 74 B8 8C F9 2F BC DB 96 B2 8A 5F 53 1E 03 01 84 AA 6A 98 8E BD C3 E0 4F 7E 2F 1B 25 95 03 FB FC EB 2C AA 58 90 07 B6 68 42 17 81 26 48 04 1C 7B 7</li>
+<li>DB5 = 3A B4 03 5C 30 BA 43 00 2A 1A 00 13 E8 ED 93 00 06 81 5E 54 55 0D 4B 01 0A 91 1C 10 06 34 C6 01 5A C4 95 B3 B0 E8 D3 01 17 9E CD 4E 4F 8D 16 06 0F 50 D5 6C 7F 7C 69 06 A5 69 79 AF 3A EA 92 07 55 BD 2C AA 1F A7 C2 07 AF 64 DE 0B 3A 5F 32 08 D9 80 1C 7</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Arbiters\ReservedResources]</li><ul>
+<li>PCStandard = 08 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 07 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 02 00 00 00 00 00 00 FF 02 00 00 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+<li>BrokenVideo = 28 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 28 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 EC 02 00 00 00 00 00 00 EF 02 00 00 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+<li>BrokenMemAtF8 = 08 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 07 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 02 00 00 00 00 00 00 FF 02 00 00 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+<li>Gateway9500Workaround = 08 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 07 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 02 00 00 00 00 00 00 FF 02 00 00 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+<li>Root = "PCStandard"</li>
+<li>Pci = "PCStandard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Arbiters\AllocationOrder]</li><ul>
+<li>Pci = 48 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 11 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 FF FF FF FF 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+<li>Root = 68 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 01 00 22 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 FF FF 00 00 00 00 00 00 08 01 00 00 00 00 00 00 00 00 00 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BackupRestore\KeysNotToRestore]</li><ul>
+<li>Plug & Play = "CurrentControlSet\Control\CriticalDeviceDatabase\"</li>
+<li>Mount Manager = "MountedDevices\"</li>
+<li>Fault Tolerance = "Disk\"</li>
+<li>Installed Services = "CurrentControlSet\Services\*"</li>
+<li>Active Directory Restore = "CurrentControlSet\Services\NTDS\Restore In Progress\ CurrentControlSet\Services\NTDS\Parameters\New Database GUID"</li>
+<li>Windows Setup = "Setup\SystemPartition"</li>
+<li>Session Manager = "CurrentControlSet\Control\Session Manager\AllowProtectedRenames"</li>
+<li>ASR Information = "CurrentControlSet\Control\ASR\"</li>
+<li>Removable Storage Manager = "CurrentControlSet\Control\NTMS\ImportDatabase"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\BackupRestore\AsrKeysNotToRestore]</li><ul>
+<li>Plug & Play = "CurrentControlSet\Control\CriticalDeviceDatabase\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0000\DigitalAudio]</li><ul>
+<li>RegistryVersion = 0x00000001</li>
+<li>NumberOfBuffers = 0x00000008</li>
+<li>SectorsPerRead = 0x00000010</li>
+<li>SectorsPerReadMask = 0xFFFFFFFF</li>
+<li>CDDASupported = 0x00000001</li>
+<li>CDDAAccurate = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0001\DigitalAudio]</li><ul>
+<li>RegistryVersion = 0x00000001</li>
+<li>NumberOfBuffers = 0x00000008</li>
+<li>SectorsPerRead = 0x00000010</li>
+<li>SectorsPerReadMask = 0xFFFFFFFF</li>
+<li>CDDASupported = 0x00000001</li>
+<li>CDDAAccurate = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0001]</li><ul>
+<li>EnumPropPages32 = "storprop.dll,DvdPropPageProvider"</li>
+<li>InfPath = "cdrom.inf"</li>
+<li>InfSection = "cdrom_install"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2535.0"</li>
+<li>MatchingDeviceId = "gencdrom"</li>
+<li>DriverDesc = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}\0000]</li><ul>
+<li>EnumPropPages32 = "storprop.dll,DvdPropPageProvider"</li>
+<li>InfPath = "cdrom.inf"</li>
+<li>InfSection = "cdrom_install"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2535.0"</li>
+<li>MatchingDeviceId = "gencdrom"</li>
+<li>DriverDesc = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E966-E325-11CE-BFC1-08002BE10318}\0000]</li><ul>
+<li>ResourcePickerTags = "HAL"</li>
+<li>InfPath = "hal.inf"</li>
+<li>InfSection = "ACPIAPIC_UP_HAL"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2600.0"</li>
+<li>MatchingDeviceId = "acpiapic_up"</li>
+<li>DriverDesc = "ACPI Uniprocessor PC"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E967-E325-11CE-BFC1-08002BE10318}\0000]</li><ul>
+<li>InfPath = "disk.inf"</li>
+<li>InfSection = "disk_install"</li>
+<li>InfSectionExt = ".NT"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2535.0"</li>
+<li>MatchingDeviceId = "gendisk"</li>
+<li>DriverDesc = "Disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000\Settings]</li><ul>
+<li>InstalledDisplayDrivers = "vmx_fb"</li>
+<li>VgaCompatible = 0x00000000</li>
+<li>DefaultSettings.XResolution = 0x00000280</li>
+<li>DefaultSettings.YResolution = 0x000001E0</li>
+<li>DefaultSettings.BitsPerPel = 0x00000020</li>
+<li>Device Description = "VMware SVGA II"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000]</li><ul>
+<li>CoInstallers32 = "vmx_mode.dll, VMX_ModeChange"</li>
+<li>InfPath = "oem0.inf"</li>
+<li>InfSection = "vmx_svga"</li>
+<li>ProviderName = "VMware, Inc."</li>
+<li>DriverDateData = 00 00 DD 6A 21 2B C4 01</li>
+<li>DriverDate = "4-26-2004"</li>
+<li>DriverVersion = "10.10.7.0"</li>
+<li>MatchingDeviceId = "pci\ven_15ad&dev_0405&subsys_040515ad&rev_00"</li>
+<li>DriverDesc = "VMware SVGA II"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E969-E325-11CE-BFC1-08002BE10318}\0000]</li><ul>
+<li>InfPath = "fdc.inf"</li>
+<li>InfSection = "fdc_install"</li>
+<li>InfSectionExt = ".NT"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2600.0"</li>
+<li>MatchingDeviceId = "*pnp0700"</li>
+<li>DriverDesc = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control\Class\{4D36E96A-E325-11CE-BFC1-08002BE10318}\0002]</li><ul>
+<li>EnumPropPages32 = "storprop.dll,IdePropPageProvider"</li>
+<li>InfPath = "mshdc.inf"</li>
+<li>InfSection = "atapi_Inst_secondary"</li>
+<li>ProviderName = "Microsoft"</li>
+<li>DriverDateData = 00 80 62 C5 C0 01 C1 01</li>
+<li>DriverDate = "7-1-2001"</li>
+<li>DriverVersion = "5.1.2600.2180"</li>
+<li>MatchingDeviceId = "secondary_ide_channel"</li>
+<li>DriverDesc = "Secondary IDE Channel"</li>
+<li>MasterDeviceType = 0x00000000</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Local\{FA4803F7-084F-6AC9-A6BA-A75086AF8442}</li>
+<li>Local\{DBEE66C7-6D7F-4B6F-A6BA-A75086AF8442}</li>
+<li>Local\{DBEE66C6-6D7E-4B6F-A6BA-A75086AF8442}</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

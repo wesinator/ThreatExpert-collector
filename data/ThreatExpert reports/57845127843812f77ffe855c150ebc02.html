@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Bobax!dr, Backdoor.Win32.Donbot.p, W32/Bobax.worm.gen, PE_BOBAX.AH, W32/Bobax-S, Virus:Win32/Bobax.A, Trojan-Proxy.Win32.Agent.mf, Dropper/Bobax, W32.Bobax.AJ@mm, Net-Worm.Win32.Bobic.dg, W32/Bobax.worm.gen@MM, WORM_BOBAX.BD, Worm:Win32/Bobax.U..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Bobax!dr, Backdoor.Win32.Donbot.p, W32/Bobax.worm.gen, PE_BOBAX.AH..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 October 2015, 05:26:57</li>
+<li>Processing time: 8 min 15 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x57845127843812F77FFE855C150EBC02</li>
+<li>File SHA-1: 0x2D65FED5F1B9AA9443B4F7C722DE15B26DD0A4E2</li>
+<li>Filesize: 123,816 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-bobax-dr.html" target="_blank">W32.Bobax!dr<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Backdoor.Win32.Donbot.p [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-bobax-worm-gen.html" target="_blank">W32/Bobax.worm.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/pe-bobax-ah.html" target="_blank">PE_BOBAX.AH<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-bobax-s.html" target="_blank">W32/Bobax-S<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-bobax-a.html" target="_blank">Virus:Win32/Bobax.A<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-proxy-win32-agent-mf.html" target="_blank">Trojan-Proxy.Win32.Agent.mf<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/dropper-bobax.html" target="_blank">Dropper/Bobax<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-011: LSASS Overflow exploit - replication across TCP 445 (common for Sasser, Bobax, Kibuv, Korgo, Gaobot, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote SMTP server and sending out email.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/net-worm-bobic-sd5.html" target="_blank">Net-Worm.Bobic!sd5<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Net-Worm.Bobic!sd5 is a network-aware worm that attempts to replicate across the existing network.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\ddeupxu.exe
+<br/>
+%System%\hgcijkygideit.exe
+</td>
+<td class="cell_1">43,520 bytes</td>
+<td class="cell_1">MD5: 0x98A09933FC8884944F75D65B07964FA1<br/>SHA-1: 0xDB95B69E3E42B172C81E6C32413C40364B544E87</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-bobax-aj-mm.html" target="_blank">W32.Bobax.AJ@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Net-Worm.Win32.Bobic.dg [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-bobax-worm-gen-mm.html" target="_blank">W32/Bobax.worm.gen@MM<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-bobax-bd.html" target="_blank">WORM_BOBAX.BD<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-bobax-s.html" target="_blank">W32/Bobax-S<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/worm-win32-bobax-u.html" target="_blank">Worm:Win32/Bobax.U<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/net-worm-win32-bobic.html" target="_blank">Net-Worm.Win32.Bobic<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-bobax-worm-43520.html" target="_blank">Win32/Bobax.worm.43520<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">ddeupxu.exe</td><td class="cell_1">%System%\ddeupxu.exe</td><td class="cell_2">73,728 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">262,056 bytes</td></tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">~1.tmp.exe</td><td class="cell_2">73,728 bytes</td></tr>
+<tr><td class="cell_1">~7.tmp.exe</td><td class="cell_2">73,728 bytes</td></tr>
+<tr><td class="cell_1">~1.tmp.exe</td><td class="cell_2">73,728 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>dijWosrmrvcVxel = "%System%\ddeupxu.exe"</li>
+</ul>
+<br/>
+<em>so that ddeupxu.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>AntiVirusOverride = </li>
+<li>FirewallOverride = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>00:09:02:13640159</li>
+<li>a1c21d0e0d6af099e3b6ed38f9d85d58ced8</li>
+</ul></ul>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mapping:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+255.255.255.255 ar.atwola.com atdmt.com avp.ch avp .com avp.ru awaps.net ca.com dispatch.mcafee.com d ownload.mcafee.com download.microsoft.com download s.microsoft.com engine.awaps.net f-secure.com ftp. f-secure.com ftp.sophos.com go.microsoft.com liveu..
+</textarea></tr></td></table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>mx1.hotmail.com</li>
+<li>ftp.newaol.com</li>
+<li>mailin-02.mx.aol.com</li>
+<li>ftp.scarlet.be</li>
+<li>mailin-03.mx.aol.com</li>
+<li>ftp.icq.com</li>
+<li>mailin-01.mx.aol.com</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://yutunrz.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=0&amp;p=0&amp;e=0&amp;o=0&amp;a=0&amp;wr=75</li>
+<li>http://yutunrz.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=0&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ftp.newaol.com/aim/win95/Install_AIM.exe</li>
+<li>http://mcduii.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://jdjsloy.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://wyqggvow.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://nttstziinpa.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://fcnhysydw.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://dlivmg.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://neytteybbo.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://fzzdik.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://pkvgzaecagx.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yraqztt.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://kpxvrvdefs.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qeqfsvxousx.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://imtoey.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://jrscqsshxs.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yjjtuvsro.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://firradbqzku.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://dgwigom.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://mfltoqgqt.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ksfvgfrf.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://uhqoyjlu.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://bdtjkffl.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ipurfbqpsdj.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://orugtuapnzu.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://gyssafafiq.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ihhyzby.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://pvxkideqlen.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://bhlnklify.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://tsyunetwmi.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://exrjbk.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://fndvrix.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ryhszzinxss.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ooyvsk.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qujuvukbvbq.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ichyig.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://gtyeywobh.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://vfpqyv.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://cnntzas.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://lslpcl.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qqycilcd.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://aflnxlpko.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yeaigapqs.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://eivysjix.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://aazuxmmqqkq.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://rzstdrbnzs.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://jqevnl.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yrztpzjou.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://rdjqleu.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yldgjpojof.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qjdvlkr.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yxnhwhmrckk.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://idgucupep.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://dkpkkvkvdzm.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://lvzxlhmjfje.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://sfowpix.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://fuyofzgrbdj.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://rjzjxmnvxcu.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://njpwrj.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://kkqsox.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://wrompw.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://tnwuaqh.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://xypvxdnurje.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ajfgffpjh.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://bxffhm.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://opdyes.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ddujmhzyhlg.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://wovygce.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://druuvb.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://yleamly.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://cludphxadw.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://xeulvjqoyup.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://uvotww.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://utnmaalui.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://gzyaymegja.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://rapirpixlwo.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ivrzxfebv.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://xmutobdw.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://oawdzeux.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ywrepa.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://dvblqvgnmgg.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://vmwovxidv.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://likhmmkgo.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://hbotqdnejfx.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://mzlbom.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://kzpshxi.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://ckmknwzcmn.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://pomwfvizn.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://goswkcozwpb.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://vubwaxcjy.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://bkqlwznbxa.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qiilumf.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://xictoed.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qmdcva.dynserv.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://nmgpoqqiwmh.afraid.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://idzmdcnpi.hn.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://qtvyflqzuyk.yi.org/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://icsftpwne.1dumb.com/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+<li>http://awyjdbhxto.3-a.net/reg?u=00D02124&amp;v=187&amp;s=0&amp;su=417426&amp;p=1&amp;e=0&amp;o=0&amp;a=1&amp;wr=75</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/smtp_mod.gif"/></td><td width="100%" class="h3">Generated SMTP traffic</td></tr></table>
+<ul><li>Email Sender:</li>
+<ul>
+<li>crap@crap.com</li>
+</ul></ul>
+<ul><li>Email Recipient:</li>
+<ul>
+<li>crap@aol.com</li>
+</ul></ul>
+<ul><li>For example, the generated email message may look similar to the one shown below:</li></ul><p><img src="getimage.aspx?uid=11927607-1d01-4335-8f66-3c7a6935456a&image=email&sub=1"></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 24 October 2015 05:35:13</li>
+<li>Processing time: 6 min 41 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0xD6422234299B22D658505766F33F229A</li>
+<li>File SHA-1: 0x182E8A46D2CE7B797E6B5C71C42BC0F4A947C45C</li>
+<li>Filesize: 6,653,096 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=11927607-1d01-4335-8f66-3c7a6935456a&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">aimlangen-us.exe</td><td class="cell_1">%Temp%\aim_7.5.14.8\aimlangen-us.exe</td><td class="cell_2">200,704 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/bsetutil.exe.html" target="_blank">bsetutil.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\aim_7.5.14.8\<a href="http://www.threatexpert.com/files/bsetutil.exe.html" target="_blank">bsetutil.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/dlupd.exe.html" target="_blank">dlupd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\aim_7.5.14.8\<a href="http://www.threatexpert.com/files/dlupd.exe.html" target="_blank">dlupd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">196,608 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/AIMinst.exe.html" target="_blank">AIMinst.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_75~1.8\<a href="http://www.threatexpert.com/files/AIMinst.exe.html" target="_blank">AIMinst.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">217,088 bytes</td></tr>
+<tr><td class="cell_1">AIMLAN~1.EXE</td><td class="cell_1">%Temp%\AIM_75~1.8\AIMLAN~1.EXE</td><td class="cell_2">200,704 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">208,896 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/bsetutil.exe.html" target="_blank">bsetutil.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_75~1.8\<a href="http://www.threatexpert.com/files/bsetutil.exe.html" target="_blank">bsetutil.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/tbsetup.exe.html" target="_blank">tbsetup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_75~1.8\<a href="http://www.threatexpert.com/files/tbsetup.exe.html" target="_blank">tbsetup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">229,376 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/dlupd.exe.html" target="_blank">dlupd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_75~1.8\<a href="http://www.threatexpert.com/files/dlupd.exe.html" target="_blank">dlupd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">196,608 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_7.5.14.8\<a href="http://www.threatexpert.com/files/setup.exe.html" target="_blank">setup.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">475,136 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/migrator.exe.html" target="_blank">migrator.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\AIM\<a href="http://www.threatexpert.com/files/migrator.exe.html" target="_blank">migrator.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">249,856 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/postproc.exe.html" target="_blank">postproc.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\AIM_75~1.8\<a href="http://www.threatexpert.com/files/postproc.exe.html" target="_blank">postproc.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/rbm.exe.html" target="_blank">rbm.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\AIM\<a href="http://www.threatexpert.com/files/rbm.exe.html" target="_blank">rbm.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/aiminst.exe.html" target="_blank">aiminst.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\aim_7.5.14.8\<a href="http://www.threatexpert.com/files/aiminst.exe.html" target="_blank">aiminst.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">217,088 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\AOLSearch.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\isaim.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{20918C3C-8F03-4A1D-A4EB-92008CB60CA7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{C0976A97-CF72-4A5B-9B39-F0CE4FE6D94C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CEF14279-A65B-4636-99E0-173485FAC837}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CEF14279-A65B-4636-99E0-173485FAC837}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49876E6B-7242-427D-A75E-764EC4C8C411}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49876E6B-7242-427D-A75E-764EC4C8C411}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49876E6B-7242-427D-A75E-764EC4C8C411}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49876E6B-7242-427D-A75E-764EC4C8C411}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D0CC892-B61C-11D6-9156-001083341CF5}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D0CC892-B61C-11D6-9156-001083341CF5}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D0CC892-B61C-11D6-9156-001083341CF5}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4D0CC892-B61C-11D6-9156-001083341CF5}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{53780D28-3F9B-407C-9F55-FE3EA90091FB}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{53780D28-3F9B-407C-9F55-FE3EA90091FB}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{53780D28-3F9B-407C-9F55-FE3EA90091FB}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{53780D28-3F9B-407C-9F55-FE3EA90091FB}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{54FAA38F-F5D0-42D7-9998-E6B52F1C1B1D}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{54FAA38F-F5D0-42D7-9998-E6B52F1C1B1D}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{54FAA38F-F5D0-42D7-9998-E6B52F1C1B1D}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{54FAA38F-F5D0-42D7-9998-E6B52F1C1B1D}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{5B1AF4E2-09EF-49BE-AE79-3016070B6CB4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{5B1AF4E2-09EF-49BE-AE79-3016070B6CB4}\ProxyStubClsid</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\AOLSearch.DLL]</li><ul>
+<li>AppID = "{20918C3C-8F03-4A1D-A4EB-92008CB60CA7}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\isaim.DLL]</li><ul>
+<li>AppID = "{C0976A97-CF72-4A5B-9B39-F0CE4FE6D94C}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{20918C3C-8F03-4A1D-A4EB-92008CB60CA7}]</li><ul>
+<li>(Default) = "AOLSearch"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{C0976A97-CF72-4A5B-9B39-F0CE4FE6D94C}]</li><ul>
+<li>(Default) = "isaim"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "AOLSearch.AOLSearchHook"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\TypeLib]</li><ul>
+<li>(Default) = "{76049169-E6AA-4048-8C46-69EB33DF2C82}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\ProgID]</li><ul>
+<li>(Default) = "AOLSearch.AOLSearchHook.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\AOL Search\AOLSearch.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{54EB34EA-E6BE-4CFD-9F4F-C4A0C2EAFA22}]</li><ul>
+<li>(Default) = "AOLSearchHook Class"</li>
+<li>AppID = "{20918C3C-8F03-4A1D-A4EB-92008CB60CA7}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "isaim.aimlocator"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\TypeLib]</li><ul>
+<li>(Default) = "{F72723CA-3F96-4DC7-801A-55B405451BCF}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\ProgID]</li><ul>
+<li>(Default) = "isaim.aimlocator.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\AIM\isaim.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BAEB32D0-732D-11d2-8BF4-0060B0A4A9EA}]</li><ul>
+<li>(Default) = "aimlocator Class"</li>
+<li>AppID = "{C0976A97-CF72-4A5B-9B39-F0CE4FE6D94C}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CEF14279-A65B-4636-99E0-173485FAC837}\InProcServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\AOL Search\AOLSearch.dll"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CEF14279-A65B-4636-99E0-173485FAC837}]</li><ul>
+<li>(Default) = "PSFactoryBuffer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0558B1D7-C287-4EE5-8DC3-5E996370FAD6}]</li><ul>
+<li>(Default) = "IAccSecurityManager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{06201F8E-3F34-4DAA-BEA9-BE298D92CD67}]</li><ul>
+<li>(Default) = "IAccBartCacheManager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0B951410-9D33-11D8-89B5-0003936CB786}]</li><ul>
+<li>(Default) = "IAccEmoticon"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D476EFC-40DB-4D5F-AF29-C7D08FB56B8C}]</li><ul>
+<li>(Default) = "DAccEvents"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1617C55E-9D33-11D8-8884-0003936CB786}]</li><ul>
+<li>(Default) = "IAccEmoticonSet"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{212BDEAD-A5C9-49B4-88B2-13639ABD4E6B}]</li><ul>
+<li>(Default) = "IAccUpgradeInfo"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2508F89B-E84C-4D6D-B475-0F0F41F17EC3}]</li><ul>
+<li>(Default) = "IAccCommandTarget"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E58E07-F9C7-4D46-8CF1-AB28E36C8472}]</li><ul>
+<li>(Default) = "IAccCertificate"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2C3C9AB6-FB7A-473F-B632-88C28340F988}]</li><ul>
+<li>(Default) = "IAccStreamListener"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3B99239D-0066-4F7E-9E1C-0888BE7F4799}]</li><ul>
+<li>(Default) = "IAccBartItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3EB54AE3-76CF-4F47-9165-81BFB7963ED6}]</li><ul>
+<li>(Default) = "IAccPreferencesHook"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{40DA67CB-1C81-4D9C-92BF-55CA2545DF92}]</li><ul>
+<li>(Default) = "IAccPluginAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4203D4F3-FC58-473D-B5FA-3A909078C760}]</li><ul>
+<li>(Default) = "IAccShareBuddiesSession"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\TypeLib]</li><ul>
+<li>(Default) = "{F72723CA-3F96-4DC7-801A-55B405451BCF}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{43D5A25E-EB70-49D2-A6E1-24FBEAA925EE}]</li><ul>
+<li>(Default) = "IAIMLocator"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{477ACC33-E523-4F16-8EE3-62B425F75738}]</li><ul>
+<li>(Default) = "IAccLocation"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\TypeLib]</li><ul>
+<li>(Default) = "{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{48AAB4B7-2B63-4691-A933-01616C335EF4}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Start Page = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>dnUpdateMutex</li>
+<li>Local\spiral_persistent_counter_mutexAOLIMAppServiceUSGMWin327.5.14.8</li>
+<li>AimLaunchingMutex</li>
+<li>oleacc-msaa-loaded</li>
+<li>Global\InstDriverSync</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.aol.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>?src=aim&amp;ncid=snsusaimc00000001</li>
+<li>index.jpg</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CStag&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690118&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;STAGE=0</li>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CInst&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690120&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;DIR=C%3A%5CProgram%20Files%5CAIM</li>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CInst&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690120&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;I2E1=1&amp;I2E2=1&amp;I2E3=1</li>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CStag&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690120&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;STAGE=1</li>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CInst&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690123&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;TIM=3</li>
+<li>http://cb.icq.com/cb/icqsrp/20/srp.cb?TP=CStag&amp;VN=705&amp;BD=75148&amp;DS=529&amp;LSP=0&amp;GD=E965B7AE-C292-4EAB-BF33-9D3E65293527&amp;TM=1445690123&amp;IE=6.0.2900.2180&amp;EP=1&amp;NP=1&amp;OS=W2.5.1.2.0&amp;STAGE=2</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

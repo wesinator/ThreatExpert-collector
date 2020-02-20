@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/MSIL-CA, Virus.Win32.BeeInject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/MSIL-CA, Virus.Win32.BeeInject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 July 2015, 21:21:38</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE7BDB4EC814D947332300D972505CF4E</li>
+<li>File SHA-1: 0xA033A53F2F6D46B33A26D7F011756B9164F10DE8</li>
+<li>Filesize: 254,845 bytes</li>
+<li>Alias:</li>
+<ul><li>Mal/MSIL-CA [Sophos]</li>
+<li>Virus.Win32.BeeInject [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/driver.exe.html" target="_blank">driver.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\nvidia\<a href="http://www.threatexpert.com/files/driver.exe.html" target="_blank">driver.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">32,768 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">32,768 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{6BFB01B8-ABF8-27DA-A257-52E5C2283D12}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\nvidia</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\Software\nvidia</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{6BFB01B8-ABF8-27DA-A257-52E5C2283D12}]</li><ul>
+<li>stubpath = "%ProgramFiles%\nvidia\driver.exe s"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\nvidia]</li><ul>
+<li>nck = 63 A2 63 66 0B A5 6E EE AA C3 CD 74 FA 93 5B 67</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\nvidia]</li><ul>
+<li>klg = 00</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>pooi222.no-ip.biz</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">pooi222.no-ip.biz<td class="cell_2">2121</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2121:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0C01 0000 994F B271 E274 8C02 5AF2 B1BE | .....O.q.t..Z...
+00000010 | 2670 7BA0 EBAA 37F2 1324 30BE F7F0 2929 | &p{...7..$0...))
+00000020 | 2671 9790 FA7D 4DBC D8FB 9BB2 2DB9 4DF4 | &q...}M.....-.M.
+00000030 | 4BE6 658F A539 5722 8DC5 401D DE6E 076A | K.e..9W"..@..n.j
+00000040 | 500D 6B4A 9C9B 9ABA 1408 5A66 C076 49B5 | P.kJ......Zf.vI.
+00000050 | C887 2D8A 2F33 7D26 ACEF 05FE 4998 5CB6 | ..-./3}&....I.\.
+00000060 | D7BE B292 6D17 DA76 66E9 29B2 8EBF 44BC | ....m..vf.)...D.
+00000070 | 6758 718A B1BE A20E 58AB 683D E2D4 3A6A | gXq.....X.h=..:j
+00000080 | 55DF 0AEC 72B0 65FD 36D6 595F 8F4C 4696 | U...r.e.6.Y_.LF.
+00000090 | 3EED AC2C 78F1 31EB 3462 9DE2 56F4 BCF2 | >..,x.1.4b..V...
+000000A0 | 7A41 21C9 8895 1CE9 91AD 27B5 A105 D4B1 | zA!.......'.....
+000000B0 | AE98 E92A D46E 8956 8CDE 03BD 1288 38E0 | ...*.n.V......8.
+000000C0 | 5217 EE11 0258 60E0 89DE 6AC0 9DD1 E5AB | R....X`...j.....
+000000D0 | 50B1 BECF 321D 38AB BE6D 70FE 3C19 357E | P...2.8..mp.<.5~
+000000E0 | 0062 E518 5F06 F945 BAAF 63E8 AFAF 81E4 | .b.._..E..c.....
+000000F0 | 149C 0894 66F0 CADD 2231 A039 6CB3 F500 | ....f..."1.9l...
+00000100 | E033 585F AC7A CA39 836D D014 3C7D 979A | .3X_.z.9.m..<}..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

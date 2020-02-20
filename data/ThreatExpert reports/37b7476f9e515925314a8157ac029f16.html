@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 April 2014, 20:54:04</li>
+<li>Processing time: 7 min 14 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x37B7476F9E515925314A8157AC029F16</li>
+<li>File SHA-1: 0xC15D779BD90780A788CD34EA3D41FBB5D68A5B0E</li>
+<li>Filesize: 883,224 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=839b4391-0332-4775-8102-0d441b6e9cfe&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\NCH Software</li>
+<li>%CommonPrograms%\NCH Software Suite</li>
+<li>%CommonPrograms%\Programmi audio correlati</li>
+<li>%AppData%\NCH Software</li>
+<li>%ProgramFiles%\NCH Software</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">wavepad.exe</td><td class="cell_1">%ProgramFiles%\nch software\wavepad\wavepad.exe</td><td class="cell_2">2,789,376 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">884,736 bytes</td></tr>
+<tr><td class="cell_1">nchsetup.exe</td><td class="cell_1">%Temp%\n1s\nchsetup.exe</td><td class="cell_2">2,789,376 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dct\OpenWithProgIds</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mov\OpenWithProgIds</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIFFFile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIFFFile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ASFFile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ASFFile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AUFile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AUFile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AVIFile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AVIFile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\cdafile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\cdafile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIDFile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIDFile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mp3file\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mp3file\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpegfile\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpegfile\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SoundRec\shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SoundRec\shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aif\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aif\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aif\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aifc\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aifc\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aifc\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aiff\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aiff\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aiff\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.asf\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.asf\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.asf\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.au\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.au\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.au\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.avi\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.avi\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.avi\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mid\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mid\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mid\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp2\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp2\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp2\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp3\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp3\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp3\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpeg\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpeg\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpeg\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpg\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpg\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpg\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wav\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wav\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wav\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wma\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wma\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wma\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wmv\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wmv\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wmv\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3gp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3gp\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3gp\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3gp\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aac</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aac\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aac\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aac\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.act</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.act\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.act\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.act\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.amr</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.amr\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.amr\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.amr\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ape</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ape\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ape\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ape\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.caf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.caf\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.caf\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.caf\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.cda</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.cda\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.cda\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.cda\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dart</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dart\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dart\Shell\Modifica con WavePad Sound Editor</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dart\Shell\Modifica con WavePad Sound Editor\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dct</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aif\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.aif = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aifc\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.aifc = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aiff\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.aiff = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.asf\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.asf = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.au\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.au = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.avi\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.avi = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cda\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.cda = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dct\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.dct = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mid\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mid = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mov\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mov = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp2\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mp2 = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp3\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mp3 = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mpeg = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpg\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.mpg = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wav\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.wav = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wma\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.wma = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wmv\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.wmv = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIFFFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe" "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\NCH Software\WavePad\wavepad.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\wavepad.exe]</li><ul>
+<li>(Default) = "WavePad Sound Editor"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ASFFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AUFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AVIFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\cdafile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIDFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mp3file\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\mpegfile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SoundRec\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aif\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aifc\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aiff\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.asf\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.au\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.avi\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mid\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp2\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mp3\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpeg\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpg\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wav\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wma\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wmv\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3gp\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.aac\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.act\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.amr\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ape\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.caf\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.cda\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dart\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dct\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ds2\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dss\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dvf\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dvs\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.flac\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.flv\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.gsm\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.m4a\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mkv\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mod\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.moh\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mov\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpc\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.mpga\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.msv\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.oga\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ogg\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.qcp\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ra\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ram\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.raw\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.rcd\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.rec\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.rm\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.rmj\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.shn\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.smf\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.spx\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.voc\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.vox\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wpp\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wv\Shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\wmafile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMVFile\shell\Modifica con WavePad Sound Editor\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\WavePad\wavepad.exe"  "%L""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3gp\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.3gp = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aac\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.aac = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.act\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.act = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.amr\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.amr = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ape\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.ape = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.caf\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.caf = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dart\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.dart = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ds2\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.ds2 = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dss\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.dss = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dvf\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.dvf = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dvs\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.dvs = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.flac\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.flac = (zero-length binary value)</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.flv\OpenWithProgIds]</li><ul>
+<li>NCH.WavePad.flv = (zero-length binary value)</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>DirectSound DllMain mutex (0x00000798)</li>
+<li>DirectSound Administrator shared thread array (lock)</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>www.audiochannel.net</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://www.audiochannel.net/versions/components/tb_google_row.dat</li>
+<li>http://www.audiochannel.net/components/toolbars/NCH_Chrome.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 23 April 2014 21:01:18</li>
+<li>Processing time: 6 min 50 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x385A271188A9034AB44DA194B5170DDF</li>
+<li>File SHA-1: 0xDB4584C14559B03F3ED21783B005D035B0429761</li>
+<li>Filesize: 782,440 bytes</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/GoogleUpdate.exe.html" target="_blank">GoogleUpdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Google\Update\<a href="http://www.threatexpert.com/files/GoogleUpdate.exe.html" target="_blank">GoogleUpdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">122,880 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/GoogleUpdate.exe.html" target="_blank">GoogleUpdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\GUM3.tmp\<a href="http://www.threatexpert.com/files/GoogleUpdate.exe.html" target="_blank">GoogleUpdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">122,880 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,339,392 bytes</td></tr>
+<tr><td class="cell_1">GoogleUpdateSetup_latest.exe</td><td class="cell_1">%ProgramFiles%\Google\GoogleUpdateSetup_latest.exe</td><td class="cell_2">770,048 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Low Rights\ElevationPolicy</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext\PreApproved</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Ext\Stats</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GoogleUpdate.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Google</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\MozillaPlugins</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows Script</li>
+<li>HKEY_USERS\.DEFAULT\Software\Microsoft\Windows Script\Settings</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script\Settings</li>
+<li>HKEY_CURRENT_USER\Software\Google</li>
+<li>HKEY_CURRENT_USER\Software\Google\Update</li>
+<li>HKEY_CURRENT_USER\Software\Google\Update\proxy</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows Script\Settings]</li><ul>
+<li>JITDebug = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows Script\Settings]</li><ul>
+<li>JITDebug = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>wpad.mrc.pctools.com.</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">wpad.mrc.pctools.com.<td class="cell_2">1036</td><tr>
+<tr><td class="cell_1">wpad.mrc.pctools.com.<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">wpad.mrc.pctools.com.<td class="cell_2">1059</td><tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>wpad.dat</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

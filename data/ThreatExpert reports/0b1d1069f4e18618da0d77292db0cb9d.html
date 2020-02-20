@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Win32.Hupigon">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Win32.Hupigon</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 15 May 2016, 21:15:25</li>
+<li>Processing time: 5 min 48 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0B1D1069F4E18618DA0D77292DB0CB9D</li>
+<li>File SHA-1: 0x5F725E71A2D9A814E0B3A31641B808AE65A59C7B</li>
+<li>Filesize: 175,129 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-win32-hupigon.html" target="_blank">Backdoor.Win32.Hupigon<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Mxebsdb.exe</td><td class="cell_1">%ProgramFiles%\mxebsdb.exe</td><td class="cell_2">155,648 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">155,648 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsxcpx rtjskwse</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsxcpx rtjskwse</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Cao360 = "%ProgramFiles%\Mxebsdb.exe"</li>
+</ul>
+<br/>
+<em>so that %ProgramFiles%\Mxebsdb.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsxcpx rtjskwse]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-05-15 21:15"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsxcpx rtjskwse]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-05-15 21:15"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1037</td><td class="cell_1">UDP</td><td class="cell_2">Mxebsdb.exe (%ProgramFiles%\Mxebsdb.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>qingfeng.win</li>
+<li>PCTools-Esse</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">qingfeng.win<td class="cell_2">3194</td><tr>
+<tr><td class="cell_1">PCTools-Esse<td class="cell_2">2014</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">user.qzone.qq.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>1055069491</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 3194:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | EBBA 83AB 1363 B160 C602 A48D DBD1 2133 | .....c.`......!3
+00000010 | BB43 5696 CB49 0C58 6378 5566 A606 69BB | .CV..I.XcxUf..i.
+00000020 | 1F27 4AB1 52A1 2FBE 0469 47D8 499C 37D4 | .'J.R./..iG.I.7.
+00000030 | 76F4 79ED D641 B423 BCED 6E7A 3F40 0229 | v.y..A.#..nz?@.)
+00000040 | AF31 C720 A8FB 0F0C EC8F 8994 2D48 E9BC | .1. ........-H..
+00000050 | CB5A CC29 5667 7FFE FA4A 0E07 CB82 40D8 | .Z.)Vg...J....@.
+00000060 | 4F55 A201 6620 C54A 54CB F4F5 4AF7 5C50 | OU..f .JT...J.\P
+00000070 | BE0D ADC7 7096 BEBA 5F88 7E95 5B40 19A4 | ....p..._.~.[@..
+00000080 | A18A 1E7E 1EC6 E933 4420 166C 53EE A317 | ...~...3D .lS...
+00000090 | 6022 0F64 4B9D 54BB 4B7F 3A57 423D EC4C | `".dK.T.K.:WB=.L
+000000A0 | 1859 986C 4DA9 5961 D309 7301 1EEE 91B5 | .Y.lM.Ya..s.....
+000000B0 | 8AD2 E293 05EB FE35 1FAC 26FB 01E6 7CB0 | .......5..&...|.
+000000C0 | C1E3 821E AE9E D8F9 6095 F80A 6528 E858 | ........`...e(.X
+000000D0 | 851D B837 31E4 A151 5AA2 FFF6 5D0F 2CF2 | ...71..QZ...].,.
+000000E0 | A3BE 47F1 BF39 4318 5FB4 4D83 5F00 797F | ..G..9C._.M._.y.
+000000F0 | 3C23 1796 8984 584A B21D 76E7 2BD9 CA9F | <#....XJ..v.+...
+00000100 | 0EE2 F2F8 3971 D5F8 118B C0DF 618A 64D2 | ....9q......a.d.
+00000110 | 8185 FAB6 16BF 354A 13A9 31FE 0516 FE89 | ......5J..1.....
+00000120 | DFC9 D03C B92D 1C6F 5FD5 7C29 2EDE 26D7 | ...<.-.o_.|)..&.
+00000130 | 5F91 7F83 CADD DE20 8F66 FF29 4343 D938 | _...... .f.)CC.8
+00000140 | 59FD B860 E402 6382 5322 AA24 5366 C583 | Y..`..c.S".$Sf..
+00000150 | C99A AE8B C6B8 26F9 121F 1BE3 B91F 7F5B | ......&........[
+00000160 | B3D9 C78C 114D A1E9 EF0C 8B1B F941 FC4B | .....M.......A.K
+00000170 | 3993 DEDC 1D3D 8201 65E7 6A63 00A1 4F75 | 9....=..e.jc..Ou
+00000180 | C068 E090 D896 543C C029 9AF1 D856 17EC | .h....T<.)...V..
+00000190 | 41FC 8106 D1A1 BFD7 C583 8F3E 9D11 C163 | A..........>...c
+000001A0 | 8DE9 E419 64D6 618D FFB7 3249 E9D5 1E4B | ....d.a...2I...K
+000001B0 | FB8B F8E3 FA2C 8B48 62DC F881 4111 DA96 | .....,.Hb...A...
+000001C0 | E3D7 0FBB BEA7 BB1F C876 4D0C 210A A180 | .........vM.!...
+000001D0 | 6A51 7FA3 DEFE 1CFA C9                  | jQ.......
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I, Virus:Win32/Ramnit.A, Trojan.Win32.ServStart, Win32/Ramnit.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 June 2016, 05:20:22</li>
+<li>Processing time: 5 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xDB5F254C6DC1A9E76FE543A780009F79</li>
+<li>File SHA-1: 0x3CA3334E3EAFB9943D5BDC86A664BDF8F6A8BD14</li>
+<li>Filesize: 103,936 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Patched-I [Sophos]</li>
+<li>Virus:Win32/Ramnit.A [Microsoft]</li>
+<li>Trojan.Win32.ServStart [Ikarus]</li>
+<li>Win32/Ramnit.B [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">118,784 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Bf.exe.html" target="_blank">Bf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%CommonPrograms%\startup\<a href="http://www.threatexpert.com/files/bf.exe.html" target="_blank">bf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">118,784 bytes</td></tr>
+<tr><td class="cell_1">bfSrv.exe</td><td class="cell_1">%CommonPrograms%\startup\bfSrv.exe</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Avast?????? = "%CommonPrograms%\startup\bf.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>45.34.191.159</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">45.34.191.159<td class="cell_2">1995</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1995:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 0904 0000 434F 4D50 5554 4552 | ........COMPUTER
+00000010 | 4E41 4D45 0000 0000 48F7 7581 B49B B8F7 | NAME....H.u.....
+00000020 | 32A6 5380 C49B B8F7 0400 0000 0000 0000 | 2.S.............
+00000030 | 48F7 7581 242B 8E81 289C B8F7 0000 0000 | H.u.$+..(.......
+00000040 | 4B00 0000 FF00 0000 0000 0000 E89B B8F7 | K...............
+00000050 | C3A7 5380 0050 6581 FF00 0000 7CF8 7581 | ..S..Pe.....|.u.
+00000060 | E89B B8F7 14AA 5380 C86C 8B81 20CC 8881 | ......S..l.. ...
+00000070 | FFFF FFFF 4B00 0000 0000 0000 0002 0000 | ....K...........
+00000080 | 209C B8F7 EA15 5180 5769 6E64 6F77 7320 |  .....Q.Windows
+00000090 | 5850 00F7 D99A 4F80 E19A 4F80 8C41 6581 | XP....O...O..Ae.
+000000A0 | 2040 6581 5440 6581 0000 0000 8683 6380 |  @e.T@e.......c.
+000000B0 | A07D 7981 2040 6581 00A0 FD7F 849C B8F7 | .}y. @e.........
+000000C0 | 2C01 5080 0000 0000 3235 3620 4D42 0000 | ,.P.....256 MB..
+000000D0 | 0000 0000 0000 0000 30D0 4F80 0000 0000 | ........0.O.....
+000000E0 | 0000 0000 ECD0 4F80 3239 3939 204D 487A | ......O.2999 MHz
+000000F0 | 009D B8F7 68F4 1200 0000 0000 019C B8F7 | ....h...........
+00000100 | 0000 0000 A07D 7981 B8D0 C8BE 2000 0000 | .....}y..... ...
+00000110 | 0000 0000 0000 0000 1401 5080 9C9C B8F7 | ..........P.....
+00000120 | 350C 6D80 B0FF DB00 5A50 4000 FFFF FFFF | 5.m.....ZP@.....
+00000130 | EB06 917C DBC1 C277 0000 8500 0800 0000 | ...|...w........
+00000140 | 15C2 C277 0000 0000 F0FB DB00 6121 4F77 | ...w........a!Ow
+00000150 | 0000 4E77 0200 0000 882A 2500 0000 0000 | ..Nw.....*%.....
+00000160 | 0200 0000 0000 4E77 10FC DB00 0921 4F77 | ......Nw.....!Ow
+00000170 | 0000 4E77 0200 0000 0000 0000 0000 0000 | ..Nw............
+00000180 | 24FC DB00 00E0 FD7F 30FC DB00 A711 907C | $.......0......|
+00000190 | 0000 4E77 0100 0000 0000 0000 00E0 FD7F | ..Nw............
+000001A0 | 0000 0000 882A 2500 A4FC DB00 00A0 FD7F | .....*%.........
+000001B0 | A4FC DB00 948E 917C 54FC DB00 878F 917C | .......|T......|
+000001C0 | 00A0 FD7F 00E0 FD7F 0000 0000 1400 0000 | ................
+000001D0 | 0100 0000 0000 0000 0000 0000 1000 0000 | ................
+000001E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001F0 | 0000 0000 0000 0000 00E0 FD7F C120 4F77 | ............. Ow
+00000200 | A41E 2500 48FC DB00 0000 0000 0CFD DB00 | ..%.H...........
+00000210 | 18EE 907C D08E 917C FFFF FFFF 748E 917C | ...|...|....t..|
+00000220 | C4E8 907C FA8D 917C 30FD DB00 18EE 907C | ...|...|0......|
+00000230 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000240 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000250 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000260 | 0000 0000 00A0 FD7F 0000 0000 0000 0000 | ................
+00000270 | 0000 0000 0000 0000 0000 0000 B0FC DB00 | ................
+00000280 | 0000 0000 FFFF FFFF 18EE 907C 008E 917C | ...........|...|
+00000290 | FFFF FFFF FA8D 917C 25D6 907C CFEA 907C | .......|%..|...|
+000002A0 | 30FD DB00 0100 0000 1700 0100 0000 0000 | 0...............
+000002B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002C0 | 0000 0000 3800 0000 B65E 47E1 FEB7 7C2B | ....8....^G...|+
+000002D0 | 1400 0000 F05E 47E1 485D 19E1 C89A B8F7 | .....^G.H]......
+000002E0 | 0400 0000 0100 0000 F09A B8F7 E848 5E80 | .............H^.
+000002F0 | 0400 0000 485D 19E1 485D 19E1 2C29 5EE1 | ....H]..H]..,)^.
+00000300 | 0000 0000 0100 0000 F09A B8F7 F848 5E80 | .............H^.
+00000310 | 485D 19E1 0400 0000 2C8B 7481 944B 5E80 | H]......,.t..K^.
+00000320 | 0000 0000 739B B8F7 0000 0000 0000 0000 | ....s...........
+00000330 | 0000 0000 0000 0000 3800 0000 2300 0000 | ........8...#...
+00000340 | 2300 0000 3CFB 1200 18EE 907C 0000 0000 | #...<......|....
+00000350 | 4CFB 1200 3815 917C 4D50 4000 EB06 917C | L...8..|MP@....|
+00000360 | 5608 817C 1B00 0000 0002 0000 FCFF DB00 | V..|............
+00000370 | 2300 0000 FFFF FFFF 0000 0000 0000 0000 | #...............
+00000380 | E431 5380 2C00 0000 0000 0000 A8F5 1200 | .1S.,...........
+00000390 | 1829 5EE1 EC9A B8F7 489B B8F7 3C9D B8F7 | .)^.....H...<...
+000003A0 | 1050 5380 C0C5 4D80 FFFF FFFF E431 5380 | .PS...M......1S.
+000003B0 | E463 6080 4371 6080 649D B8F7 78F4 1200 | .c`.Cq`.d...x...
+000003C0 | 3E63 6080 0000 0000 0400 0000 A067 6681 | >c`..........gf.
+000003D0 | 489D B8F7 1315 5C80 28F9 1200 0400 0000 | H.....\.(.......
+000003E0 | AF23 5C80 649D B8F7 28F9 1200 0500 0000 | .#\.d...(.......
+000003F0 | 0042 5B80 0000 0000 0100 0000 909B B8F7 | .B[.............
+00000400 | 3546 5B80                               | 5F[.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

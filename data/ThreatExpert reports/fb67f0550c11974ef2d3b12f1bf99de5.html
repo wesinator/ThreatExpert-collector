@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-001, Trojan:Win32/Malex.gen!H">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-001, Trojan:Win32/Malex.gen!H</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 2 August 2016, 21:06:33</li>
+<li>Processing time: 5 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xFB67F0550C11974EF2D3B12F1BF99DE5</li>
+<li>File SHA-1: 0x06248F3A41C151BDA83DDB6E32499BF38C021155</li>
+<li>Filesize: 40,960 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-001.html" target="_blank">Mal/Behav-001<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Trojan:Win32/Malex.gen!H [Microsoft]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svch0st.exe.html" target="_blank">svch0st.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/svch0st.exe.html" target="_blank">svch0st.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">40,960 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">40,960 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">svch0st</td><td class="cell_1">windows ??????????</td><td class="cell_1">"Starting"</td><td class="cell_2">%Windir%\<a href="http://www.threatexpert.com/files/svch0st.exe.html" target="_blank">svch0st.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "svch0st"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST\0000]</li><ul>
+<li>Service = "svch0st"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "windows ??????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SVCH0ST]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st\Enum]</li><ul>
+<li>0 = "Root\LEGACY_SVCH0ST\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\svch0st]</li><ul>
+<li>ConnectGroup = "20160801"</li>
+<li>MarkTime = "2016-08-02 21:06"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\svch0st.exe"</li>
+<li>DisplayName = "windows ??????????"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "windows ??????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "svch0st"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST\0000]</li><ul>
+<li>Service = "svch0st"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "windows ??????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SVCH0ST]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st\Enum]</li><ul>
+<li>0 = "Root\LEGACY_SVCH0ST\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\svch0st]</li><ul>
+<li>ConnectGroup = "20160801"</li>
+<li>MarkTime = "2016-08-02 21:06"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\svch0st.exe"</li>
+<li>DisplayName = "windows ??????????"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "windows ??????????"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>oo3350736036.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">oo3350736036.f3322.net<td class="cell_2">32</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 32:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 9FCF 4418 91B6 EA63 4F0A 0A05 59D2 F8C1 | ..D....cO...Y...
+00000010 | 4A41 3087 E379 A466 9D3A 2E2D 9D81 49A2 | JA0..y.f.:.-..I.
+00000020 | 6017 8397 812B 3F10 35C7 2913 190F 3DD0 | `....+?.5.)...=.
+00000030 | B7DB D759 87C0 850F E348 0F01 41DE 2C6E | ...Y.....H..A.,n
+00000040 | 5471 25FD 2105 A471 8B51 B225 0835 D963 | Tq%.!..q.Q.%.5.c
+00000050 | 4FE1 7BDA B758 894F 893F 50C3 4545 AB9B | O.{..X.O.?P.EE..
+00000060 | CCA6 9127 9D30 04BD 68B3 32DB 0F99 7DB7 | ...'.0..h.2...}.
+00000070 | 85EF FD43 82D8 82E9 396D 9116 D166 6E87 | ...C....9m...fn.
+00000080 | 5727 5DBB 0983 6495 ED45 BF01 4B4B 6EFA | W']...d..E..KKn.
+00000090 | 9542 3D6A 15E0 5169 3680 AA97 BA74 740B | .B=j..Qi6....tt.
+000000A0 | 55E4 1C77 2147 FF56 9466 7267 8530 BB13 | U..w!G.V.frg.0..
+000000B0 | D2CD D07A 08BB 50E0 4FA1 8EEC D477 F393 | ...z..P.O....w..
+000000C0 | 6F60 77FD FA37 AB76 992A 894B 4DC7 3EE7 | o`w..7.v.*.KM.>.
+000000D0 | ABA6 09D1 09C0 E956 823A B520 5685 32F6 | .......V.:. V.2.
+000000E0 | D63B 03D8 EFAA D5D6 9B4F 7BAD 48C4 3C59 | .;.......O{.H.<Y
+000000F0 | 9EDA AA4A 17DE AD1F 1236 527B 647E DE95 | ...J.....6R{d~..
+00000100 | 4DB2 AD86 E19F B2C2 E390 B971 38E4 9DE6 | M..........q8...
+00000110 | B39A 89A8 A64D 5AA9 C004 4C02 0DB7 2CA7 | .....MZ...L...,.
+00000120 | 54D6 9A30 65C6 E59B 75DE AFF8 1875 AD25 | T..0e...u....u.%
+00000130 | 36E3 00BB C9A2 0B6E 5891 C4EC 7226 27A5 | 6......nX...r&'.
+00000140 | 9FFE 3598 F85D 129C 2931 4E4C 4825 6AC8 | ..5..]..)1NLH%j.
+00000150 | 0302 998A 0443 4678 ED29 E8B4 C350 AB0F | .....CFx.)...P..
+00000160 | 1D5A 7EA3 403C FE72 39D7 5B69 7AB6 35EF | .Z~.@<.r9.[iz.5.
+00000170 | 2E3F 00DD EC07 DBF5 CA0E 04F3 A070 4D20 | .?...........pM
+00000180 | BD1B 84A3 88B4 3ED3 9AE3 EDE6 BFAD 97B1 | ......>.........
+00000190 | 85C4 8C39 35DF 650B C49A 9A8A 0A51 44C3 | ...95.e......QD.
+000001A0 | 2A5C 6195 CCEF 34C6 23C3 C70D 2A4F B536 | *\a...4.#...*O.6
+000001B0 | 7230 C42D CD02 70B0 5A3D 6EB7 F2AC D430 | r0.-..p.Z=n....0
+000001C0 | CB35 2C17 6BE3 5A7B 112F 099D 8A04 BB19 | .5,.k.Z{./......
+000001D0 | 1F35 41E9 8F6E F908 C0                  | .5A..n...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

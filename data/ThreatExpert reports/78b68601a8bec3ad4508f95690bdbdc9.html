@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Virut.CF, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Virut.CF, Backdoor.Win32.Inject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 18 July 2016, 00:27:35</li>
+<li>Processing time: 6 min 3 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x78B68601A8BEC3AD4508F95690BDBDC9</li>
+<li>File SHA-1: 0x3CD888A04A1297393148B21B83674B8F800C568E</li>
+<li>Filesize: 50,688 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+<li>%System%\ddeshare.exe</li>
+<li>%System%\defrag.exe</li>
+<li>%System%\dfrgfat.exe</li>
+<li>%System%\dfrgntfs.exe</li>
+<li>%System%\diantz.exe</li>
+<li>%System%\diskpart.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vipxie.exe</td><td class="cell_1">%Windir%\vipxie.exe</td><td class="cell_2">98,304 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">98,304 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">hra33.dll</td><td class="cell_1">%System%\hra33.dll</td><td class="cell_2">Process name: vipxie.exe<br/>Process filename: %Windir%\vipxie.exe<br/>Address space: 0x3A0000 - 0x3B2000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">QQ.exe</td><td class="cell_1">QQ.exe,bate201607010011</td><td class="cell_1">"Running"</td><td class="cell_2">%Windir%\vipxie.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "QQ.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE\0000]</li><ul>
+<li>Service = "QQ.exe"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "QQ.exe,bate201607010011"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_QQ.EXE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe\Enum]</li><ul>
+<li>0 = "Root\LEGACY_QQ.EXE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\QQ.exe]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\vipxie.exe"</li>
+<li>DisplayName = "QQ.exe,bate201607010011"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Defghijk QQ2016 nate8.3"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "QQ.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE\0000]</li><ul>
+<li>Service = "QQ.exe"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "QQ.exe,bate201607010011"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_QQ.EXE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe\Enum]</li><ul>
+<li>0 = "Root\LEGACY_QQ.EXE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QQ.exe]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\vipxie.exe"</li>
+<li>DisplayName = "QQ.exe,bate201607010011"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Defghijk QQ2016 nate8.3"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings]</li><ul>
+<li>ProxyEnable = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>C:\WINDOWS\vipxie.exe</li>
+<li>QQ.exe</li>
+<li>c:\windows\system32\sample_1.exe</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">vipxie.exe (%Windir%\vipxie.exe)</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">vipxie.exe (%Windir%\vipxie.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>104.156.239.2</li>
+<li>base8.gyddos.com</li>
+<li>ilo.brenz.pl</li>
+<li>invfni.com</li>
+<li>jmjuli.com</li>
+<li>wuvnao.com</li>
+<li>xzesax.com</li>
+<li>gcbhis.com</li>
+<li>vefhdi.com</li>
+<li>usqrwe.com</li>
+<li>ieadmz.com</li>
+<li>gwmrdo.com</li>
+<li>eehyxo.com</li>
+<li>gwhwij.com</li>
+<li>ant.trenz.pl</li>
+<li>jsqgul.com</li>
+<li>kryeso.com</li>
+<li>jciwqv.com</li>
+<li>ynbpmy.com</li>
+<li>ktnvug.com</li>
+<li>dvwyce.com</li>
+<li>sgcmou.com</li>
+<li>asqqws.com</li>
+<li>eoqtax.com</li>
+<li>tquneu.com</li>
+<li>gepabr.com</li>
+<li>fxeqau.com</li>
+<li>kiqaee.com</li>
+<li>ursekg.com</li>
+<li>kpaaub.com</li>
+<li>qlrono.com</li>
+<li>geweyo.com</li>
+<li>vipedo.com</li>
+<li>ntiaku.com</li>
+<li>eqpcga.com</li>
+<li>zupxyf.com</li>
+<li>fsxvkd.com</li>
+<li>erhmol.com</li>
+<li>rzznif.com</li>
+<li>cjevos.com</li>
+<li>iirbtz.com</li>
+<li>udssjh.com</li>
+<li>ojnlgr.com</li>
+<li>housho.com</li>
+<li>ycreej.com</li>
+<li>lyibpf.com</li>
+<li>lajgna.com</li>
+<li>yiyogi.com</li>
+<li>xpyuky.com</li>
+<li>mwhoyg.com</li>
+<li>aczjea.com</li>
+<li>mepuod.com</li>
+<li>moaoii.com</li>
+<li>xjsuji.com</li>
+<li>totrgw.com</li>
+<li>hoyatt.com</li>
+<li>yrybck.com</li>
+<li>zrezci.com</li>
+<li>kopmww.com</li>
+<li>yayqqj.com</li>
+<li>icyuey.com</li>
+<li>ybjrek.com</li>
+<li>esnopv.com</li>
+<li>ofolop.com</li>
+<li>fzprpx.com</li>
+<li>yutyvr.com</li>
+<li>eijchf.com</li>
+<li>leacly.com</li>
+<li>zbagnb.com</li>
+<li>xkbboy.com</li>
+<li>ggswlz.com</li>
+<li>kbasys.com</li>
+<li>mauhhi.com</li>
+<li>euyljs.com</li>
+<li>przvdj.com</li>
+<li>fqwbac.com</li>
+<li>hfkupc.com</li>
+<li>bquaen.com</li>
+<li>wvofbw.com</li>
+<li>oramuy.com</li>
+<li>kseude.com</li>
+<li>jtgnoa.com</li>
+<li>wcfoew.com</li>
+<li>txygfj.com</li>
+<li>ihoisu.com</li>
+<li>iceafm.com</li>
+<li>aackrd.com</li>
+<li>adqbwo.com</li>
+<li>zdzvke.com</li>
+<li>roapfn.com</li>
+<li>ubxxbs.com</li>
+<li>usoviq.com</li>
+<li>jmhyoh.com</li>
+<li>ctjmsy.com</li>
+<li>eutnau.com</li>
+<li>uatwxt.com</li>
+<li>yydvho.com</li>
+<li>qwphwd.com</li>
+<li>zrzyel.com</li>
+<li>byduur.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">base8.gyddos.com<td class="cell_2">8889</td><tr>
+<tr><td class="cell_1">invfni.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">83.133.119.197<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">127.0.0.2</td><td class="cell_1">80</td><td class="cell_1">127.0.0.2</td><td class="cell_2">127.0.0.2</td></tr>
+<tr><td class="cell_1">127.0.0.3</td><td class="cell_1">80</td><td class="cell_1">127.0.0.3</td><td class="cell_2">127.0.0.3</td></tr>
+<tr><td class="cell_1">127.0.0.4</td><td class="cell_1">80</td><td class="cell_1">127.0.0.4</td><td class="cell_2">127.0.0.4</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8889:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B000 0000 7700 0000 0904 0000 5769 6E20 | ....w.......Win
+00000010 | 5850 2053 5032 0000 0000 0000 0000 0000 | XP SP2..........
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 0000 0000 3235 3620 | ............256
+00000050 | 4D42 0000 0000 0000 0000 0000 0000 0000 | MB..............
+00000060 | 0000 0000 0000 0000 0000 0000 312A 3239 | ............1*29
+00000070 | 3939 4D48 7A00 0000 0000 0000 0000 0000 | 99MHz...........
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0200 0000 0300 0000 | ................
+000000B0 | 0400 0000 CE79 0100                     | .....y..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8001:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B000 0000 7700 0000 0904 0000 5769 6E20 | ....w.......Win
+00000010 | 5850 2053 5032 0000 0000 0000 0000 0000 | XP SP2..........
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 0000 0000 3235 3620 | ............256
+00000050 | 4D42 0000 0000 0000 0000 0000 0000 0000 | MB..............
+00000060 | 0000 0000 0000 0000 0000 0000 312A 3239 | ............1*29
+00000070 | 3939 4D48 7A00 0000 0000 0000 0000 0000 | 99MHz...........
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0200 0000 0300 0000 | ................
+000000B0 | 0400 0000 CE79 0100                     | .....y..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B000 0000 7700 0000 0904 0000 5769 6E20 | ....w.......Win
+00000010 | 5850 2053 5032 0000 0000 0000 0000 0000 | XP SP2..........
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 0000 0000 3235 3620 | ............256
+00000050 | 4D42 0000 0000 0000 0000 0000 0000 0000 | MB..............
+00000060 | 0000 0000 0000 0000 0000 0000 312A 3239 | ............1*29
+00000070 | 3939 4D48 7A00 0000 0000 0000 0000 0000 | 99MHz...........
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0200 0000 0300 0000 | ................
+000000B0 | 0400 0000 CE79 0100                     | .....y..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Infostealer.Gampass, Mal/Behav-004, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Infostealer.Gampass, Mal/Behav-004, Backdoor.Win32.Inject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 15 April 2016, 05:42:55</li>
+<li>Processing time: 5 min 48 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xED2916E58751AE92CF671A4CC3A17608</li>
+<li>File SHA-1: 0xA8D2FC08BE6DF1E16360150CA3F85C5876486189</li>
+<li>Filesize: 49,152 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/infostealer-gampass.html" target="_blank">Infostealer.Gampass<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-004.html" target="_blank">Mal/Behav-004<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%CommonPrograms%\Startup\Sword.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">49,152 bytes</td>
+<td class="cell_1">MD5: 0xED2916E58751AE92CF671A4CC3A17608<br/>SHA-1: 0xA8D2FC08BE6DF1E16360150CA3F85C5876486189</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/infostealer-gampass.html" target="_blank">Infostealer.Gampass<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/mal-behav-004.html" target="_blank">Mal/Behav-004<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">Sword.exe</td><td class="cell_1">%CommonPrograms%\startup\sword.exe</td><td class="cell_2">135,168 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>222.186.34.196</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">222.186.34.196<td class="cell_2">1155</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1155:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4049 435A 5BD2 0708 01AF 0000 0379 9F8A | @ICZ[........y..
+00000010 | 5138 4B53 6312 354D 5AFA CA16 9D40 E392 | Q8KSc.5MZ....@..
+00000020 | 8A40 0784 A0B7 2154 6CA2 1523 3490 6C84 | .@....!Tl..#4.l.
+00000030 | 8814 4427 A095 5638 A03C C202 21C1 0434 | ..D'..V8.<..!..4
+00000040 | 5E85 3F41 157D 4142 EC56 58B5 57A2 91C8 | ^.?A.}AB.VX.W...
+00000050 | C34C C209 A810 8162 B40C 8799 9AFE 0AA0 | .L.....b........
+00000060 | 542B 59E6 FF2B F79B 70E8 F513 0F63 1548 | T+Y..+..p....c.H
+00000070 | 81CD 1D8B 3886 12CE AACB CBDE D474 2498 | ....8........t$.
+00000080 | 969F 761F 17C0 5C74 00D4 9D30 17E0 F9BC | ..v...\t...0....
+00000090 | 8572 CF6D CED7 EBF6 B761 57C7 F36B 1957 | .r.m.....aW..k.W
+000000A0 | 83A3 8E78 D75F 5646 76A7 EE6D F763 63C5 | ...x._VFv..m.cc.
+000000B0 | 43F3 7D12 A759 36A5 2834 387E 5B1A 6984 | C.}..Y6.(48~[.i.
+000000C0 | 99C4 3973 1503 0198 A7F2 C186 8EB6 CB8A | ..9s............
+000000D0 | 1EED 8ECD A3ED 0E23 107A C703 FBD4 3387 | .......#.z....3.
+000000E0 | 7D44 FD52 C1D2 B3CE 39F2 BF5A F1DC EADB | }D.R....9..Z....
+000000F0 | B770 9824 7AE8 661E 912E 12BB B23B 6ED5 | .p.$z.f......;n.
+00000100 | 3264 9BD3 C4BE 6035 70F8 CE57 70EA 6BBB | 2d....`5p..Wp.k.
+00000110 | B791 0521 1C51 C5CE 58FC 96F9 95EB 2AC3 | ...!.Q..X.....*.
+00000120 | 40C5 971A E547 2E19 A2C8 B21B 6C4E 26A6 | @....G......lN&.
+00000130 | 8BB7 FE6D D650 CD7A 8EE0 58E0 7536 D057 | ...m.P.z..X.u6.W
+00000140 | D090 F9E4 7918 6AB2 BCAD A966 98B9 62BA | ....y.j....f..b.
+00000150 | 5B3F C31D B8BC F1E6 462F F3B8 B1A4 DB25 | [?......F/.....%
+00000160 | 0C64 0693 7D76 CDB2 6B5B BBA6 7819 C4D0 | .d..}v..k[..x...
+00000170 | C195 BC75 7EE5 667D D1E8 690E 36B3 A74F | ...u~.f}..i.6..O
+00000180 | 309D 10A4 04C5 46D7 BDA1 5FFA 533F CFFD | 0.....F..._.S?..
+00000190 | A8DB 26A0 8BCB 164F 5274 55C1 6375 F7CD | ..&....ORtU.cu..
+000001A0 | 84E9 83BA 1CF7 BFF3 D8DF 2AC2 7F3E E525 | ..........*..>.%
+000001B0 | 349E C458 4757 D997 CEE1 ED84 FE83 F511 | 4..XGW..........
+000001C0 | 0FCB F4E0 5054 D95A B13B 9EF0 90C4 FC51 | ....PT.Z.;.....Q
+000001D0 | F500 C69C 89BD                          | ......
+00000000 | 4049 435A 5BC9 0708 01AF 0000 0379 9F8A | @ICZ[........y..
+00000010 | 513E 4B4A 6312 F6AC 6D9C 10C0 CE1D B71D | Q>KJc...m.......
+00000020 | 3C37 34DF 5913 D4D1 6F2E C2B1 5311 8E16 | <74.Y...o...S...
+00000030 | 8D53 81D7 1D94 0B10 2B4B 69D1 A672 6F0B | .S......+Ki..ro.
+00000040 | E311 477B BB41 9DE3 D4D6 10B6 4F00 4206 | ..G{.A......O.B.
+00000050 | 6A71 0DEB 15EB 10AA AA0D 0BE0 FD36 EF99 | jq...........6..
+00000060 | E83F E224 49C5 0905 181F 8D6D 7501 14FA | .?.$I......mu...
+00000070 | 5AE2 C499 D6A2 B4CF B4B1 B5E2 6FCB 2ADA | Z...........o.*.
+00000080 | 0B1B 10F6 9F74 7B61 CE0D 661E D183 265D | .....t{a..f...&]
+00000090 | 9758 CFED 910C 6CA6 AD16 5B47 E866 4A0F | .X....l...[G.fJ.
+000000A0 | C857 FEFD 9955 D33D 2C27 DCAC 6097 F9AE | .W...U.=,'..`...
+000000B0 | 5233 3E22 8B96 CA28 65CC 9926 5956 01AC | R3>"...(e..&YV..
+000000C0 | E3A1 17D0 0949 B345 1E80 EA92 88E5 AFF4 | .....I.E........
+000000D0 | EFFA 6622 847D C761 F925 F3DA 6FE4 13CB | ..f".}.a.%..o...
+000000E0 | 94AE 3A5C 5273 D076 7E1E 524D 41D8 B3AA | ..:\Rs.v~.RMA...
+000000F0 | B93C 4A03 B68E 9A31 6F01 34A7 9455 34A0 | .<J....1o.4..U4.
+00000100 | 8F8F 5A54 3DCA 2D58 82D2 E972 A6D5 9B65 | ..ZT=.-X...r...e
+00000110 | F6C9 3E92 D307 C6CA C759 D29B 66E3 0F59 | ..>......Y..f..Y
+00000120 | 6980 2CFD B79F 191E 0412 B02B BB35 A58F | i.,........+.5..
+00000130 | 713B FA35 37F0 C4D3 614C 691D E1AD 6AA4 | q;.57...aLi...j.
+00000140 | 36A1 CD67 615A 24DE ECB6 BED1 4C3A BD7A | 6..gaZ$.....L:.z
+00000150 | C93F 5111 DB68 604A F1D9 FCE3 D4D2 F46B | .?Q..h`J.......k
+00000160 | E465 BAA6 6DA3 CA89 F588 AC79 5144 EFD3 | .e..m......yQD..
+00000170 | E9EC 2A56 0436 B7EA 5E3D 60D9 7171 92F1 | ..*V.6..^=`.qq..
+00000180 | 5B5E 2725 7530 9B89 19B5 5848 14F0 8B1C | [^'%u0....XH....
+00000190 | CA1B A646 3153 7672 9437 F667 EFFE 6A91 | ...F1Svr.7.g..j.
+000001A0 | 6680 E020 EB32 39E5 C159 7E4B 7F14 DF2C | f.. .29..Y~K...,
+000001B0 | CEC6 FF0D 9CCD FA84 E77D 6A4A 88F3 AFBB | .........}jJ....
+000001C0 | 16F1 ED81 EA5B 8CEE 0FA6 2E8B 21        | .....[......!
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

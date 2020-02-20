@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Troj/Zegost-AC, Backdoor:Win32/Farfli.K, Trojan-Dropper.Win32.Zegost">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Troj/Zegost-AC, Backdoor:Win32/Farfli.K, Trojan-Dropper.Win32.Zegost</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 April 2016, 07:34:34</li>
+<li>Processing time: 5 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xEDC4F269E1E14145C853C8ECB2F11012</li>
+<li>File SHA-1: 0x523970543C81F36C26F48784CC56230E9960FC8C</li>
+<li>Filesize: 131,584 bytes</li>
+<li>Alias:</li>
+<ul><li>Troj/Zegost-AC [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-farfli-k.html" target="_blank">Backdoor:Win32/Farfli.K<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li>Trojan-Dropper.Win32.Zegost [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">139,264 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/debug.dll.html" target="_blank">debug.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/debug.dll.html" target="_blank">debug.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x810000 - 0x832000</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">xiaoyi</td><td class="cell_1">Microsoft Device Manager</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "xiaoyi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI\0000]</li><ul>
+<li>Service = "xiaoyi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft Device Manager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_XIAOYI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_XIAOYI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi\Parameters]</li><ul>
+<li>ServiceDll = "%System%\Debug.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\xiaoyi]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "Microsoft Device Manager"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?????????????????????????????"</li>
+<li>ConnectGroup = "03"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "xiaoyi"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI\0000]</li><ul>
+<li>Service = "xiaoyi"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft Device Manager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_XIAOYI]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Enum]</li><ul>
+<li>0 = "Root\LEGACY_XIAOYI\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi\Parameters]</li><ul>
+<li>ServiceDll = "%System%\Debug.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xiaoyi]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "Microsoft Device Manager"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?????????????????????????????"</li>
+<li>ConnectGroup = "03"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost]</li><ul>
+<li>netsvcs = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>fanwangjianke.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">fanwangjianke.f3322.net<td class="cell_2">8000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74DD 0100 00AC 0200 0078 9C8D | Gh0st........x..
+00000010 | 524D 481B 6110 7D2B 6A9A B587 A252 D25B | RMH.a.}+j....R.[
+00000020 | 3C08 1E63 6AEC EA4D 3C6A 5B45 6AB5 4D45 | <..cj..M<j[Ej.ME
+00000030 | B129 4A13 EAE7 FFE1 03CD 6973 E821 3914 | .)J.......is.!9.
+00000040 | 3C88 6075 B1A1 8722 0A39 B668 0F52 820A | <.`u...".9.h.R..
+00000050 | 96E0 A1C7 2205 FFCF 15E2 9B5D 05E9 A138 | ...."......]...8
+00000060 | 303B F3CD BE79 3B6F BE7D 6300 F300 CAE8 | 0;...y;o.}c.....
+00000070 | 4C51 6702 258C 5DB1 D1C9 E1C1 58B0 6360 | LQg.%.].....X.c`
+00000080 | F06D 308C 1BB6 097C DB60 FC8A D4D3 08DA | .m0....|.`......
+00000090 | FB6C 6CF1 F48B 0445 DA35 6ADF F0A2 8FAC | .ll....E.5j.....
+000000A0 | 89B2 8C6E 7E90 5580 DFAD 59A7 2696 D957 | ...n~.U...Y.&..W
+000000B0 | B767 A28D F5F8 0B72 18DE 77A5 AD1C 5E0E | .g.....r..w...^.
+000000C0 | C340 AE02 9861 D6FA 2E31 3231 1E1B 7D32 | .@...a...121..}2
+000000D0 | 9088 E176 A6EE F111 7AF8 7F50 FDA3 A6C6 | ...v....z..P....
+000000E0 | 86C6 06CB 828D C321 47B5 2C6D 4ED5 B3DE | .......!G.,mN...
+000000F0 | 7D27 A903 0208 0117 C50D 88B0 BF3E 607B | }'...........>`{
+00000100 | 3DF7 71A7 1074 7BAB FA1C 958F 3AEA ECD8 | =.q..t{.....:...
+00000110 | 4428 6862 BA37 8239 6A12 8BBF B4F1 A1D3 | D(hb.7.9j.......
+00000120 | 51A2 1184 EF52 9868 940D 9570 B0EF AC97 | Q....R.h...p....
+00000130 | 0A7D FE28 B4BB F863 359C 2B14 F6E0 A8EB | .}.(...c5.+.....
+00000140 | 7E89 EBE4 0022 08FB 32BA 92D9 1F7F C43D | ~...."..2......=
+00000150 | CBDE DFBB EFC8 FBCA 46E0 24AD 2D62 64FF | ........F.$.-bd.
+00000160 | 82FD 5C9E D187 745C 2491 BAD2 796E CC78 | ..\...t\$...yn.x
+00000170 | CBBD 61F1 5E1B A563 70B9 347D 2ECA 7B50 | ..a.^..cp.4}..{P
+00000180 | 2B6A F6B9 A384 6B9A F1CB 336F A61E DE97 | +j....k...3o....
+00000190 | EC33 CFF3 6FBA F4AF 2DCC 6A89 1315 499D | .3..o...-.j...I.
+000001A0 | FB67 AFED 516F BE2D DEBD 557B 1701 CED9 | .g..Qo.-..U{....
+000001B0 | C9FC 93CF EFFE 0F4B F7B3 EA35 6B23 3F4D | .......K...5k#?M
+000001C0 | 576B 3FF1 12AB F99D 839A AC3A DD4F EB9E | Wk?........:.O..
+000001D0 | C78E 4A73 E6D4 D5DC 973E F0A3 CD        | ..Js.....>...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

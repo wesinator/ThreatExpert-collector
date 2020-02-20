@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 10 July 2014, 07:48:14</li>
+<li>Processing time: 6 min 46 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x86122DBF79EC3A983D9ECB120470A00F</li>
+<li>File SHA-1: 0x092A075010809199698A6B5B9FA346A1C0A51B03</li>
+<li>Filesize: 147,968 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">45,056 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion]</li><ul>
+<li>WireLMode = 35 91 C4 5F 50 B2 87 09 02 5D FA 94 4D 9B 75 03 C6 33 64 49 47 84 B5 5C F7 74 49 92 93 28 86 D8 19 53 92 A0</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>MicrosoftStCnt = ""[file and pathname of the sample #1]""</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>{CBCDE2F2-CB31-FF5A-6FA1-731547ACF810}</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>206.137.17.89</li>
+<li>8.8.8.8</li>
+<li>mail.hotmail.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mail.hotmail.com<td class="cell_2">443</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">mail.hfwjwww10proxiesss.com</td><td class="cell_1">443</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6B75 626C 7664 7272 2E61 | POST /kublvdrr.a
+00000010 | 7370 2048 5454 502F 312E 310D 0A43 6F6E | sp HTTP/1.1..Con
+00000020 | 7465 6E74 2D54 7970 653A 2061 7070 6C69 | tent-Type: appli
+00000030 | 6361 7469 6F6E 2F78 2D77 7777 2D66 6F72 | cation/x-www-for
+00000040 | 6D2D 7572 6C65 6E63 6F64 6564 0D0A 4361 | m-urlencoded..Ca
+00000050 | 6368 652D 436F 6E74 726F 6C3A 206E 6F2D | che-Control: no-
+00000060 | 6361 6368 650D 0A55 7365 722D 4167 656E | cache..User-Agen
+00000070 | 743A 204D 6F7A 696C 6C61 2F35 2E30 2028 | t: Mozilla/5.0 (
+00000080 | 636F 6D70 6174 6962 6C65 3B20 4D53 4945 | compatible; MSIE
+00000090 | 2037 2E30 3B20 5769 6E64 6F77 7320 4E54 |  7.0; Windows NT
+000000A0 | 2036 2E30 3B20 656E 2D55 5329 0D0A 486F |  6.0; en-US)..Ho
+000000B0 | 7374 3A20 6C6F 6361 6C68 6F73 740D 0A43 | st: localhost..C
+000000C0 | 6F6E 7465 6E74 2D4C 656E 6774 683A 2038 | ontent-Length: 8
+000000D0 | 360D 0A43 6F6E 6E65 6374 696F 6E3A 2043 | 6..Connection: C
+000000E0 | 6C6F 7365 0D0A 0D0A 7563 7968 6762 626A | lose....ucyhgbbj
+000000F0 | 673D 6370 2F64 5835 454D 797A 4A36 336D | g=cp/dX5EMyzJ63m
+00000100 | 7A37 4A70 524B 417A 6834 6B78 676E 5A79 | z7JpRKAzh4kxgnZy
+00000110 | 366B 6145 7057 5647 306E 6F39 3430 4C4A | 6kaEpWVG0no940LJ
+00000120 | 3678 7357 4B2B 5435 5776 434C 6F51 4271 | 6xsWK+T5WvCLoQBq
+00000130 | 767A 3956 5A39 2F46 6750 4C41 3D3D      | vz9VZ9/FgPLA==
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

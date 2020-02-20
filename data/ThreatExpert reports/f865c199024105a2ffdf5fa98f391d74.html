@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Win32.BitCoinMiner">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Win32.BitCoinMiner</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 21 September 2015, 07:29:14</li>
+<li>Processing time: 5 min 52 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF865C199024105A2FFDF5FA98F391D74</li>
+<li>File SHA-1: 0xF838FB106E39FE4D9804B1D65EDBC58C1FC98713</li>
+<li>Filesize: 589,798 bytes</li>
+<li>Alias: Win32.BitCoinMiner [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\syso\critical\antivirus.bat
+</td>
+<td class="cell_1">108 bytes</td>
+<td class="cell_1">MD5: 0x6D773B3BDFE2E132C4E532D53FB43E38<br/>SHA-1: 0x788812EDAAF1BA30D361E52727F86FA3823A83B0</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Windir%\syso\critical\<a href="http://www.threatexpert.com/files/libcurl-4.dll.html" target="_blank">libcurl-4.dll<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Windir%\syso\critical\<a href="http://www.threatexpert.com/files/libcurl.dll.html" target="_blank">libcurl.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">245,795 bytes</td>
+<td class="cell_1">MD5: 0x6F15C32334D2310ABF30187D6294EAF5<br/>SHA-1: 0x4CD819BECE131457122A992200BC0E58CE6B8A40</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Windir%\syso\critical\<a href="http://www.threatexpert.com/files/pthreadGC2.dll.html" target="_blank">pthreadGC2.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">119,888 bytes</td>
+<td class="cell_1">MD5: 0x72C1FF7F3C7474850B11FC962EE1620C<br/>SHA-1: 0xB94F73A1CE848D18B38274C96E863DF0636F48A7</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Windir%\syso\critical\sys.bat
+</td>
+<td class="cell_1">337 bytes</td>
+<td class="cell_1">MD5: 0xEA41C2506507111DB4B472348A9710FE<br/>SHA-1: 0xB5665D5D91BD0A9E4C14DFBD3849F843A09E35C4</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Windir%\syso\critical\<a href="http://www.threatexpert.com/files/system.exe.html" target="_blank">system.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">187,904 bytes</td>
+<td class="cell_1">MD5: 0xE2C655DB1CCD3A632DED94EACB933643<br/>SHA-1: 0xEC9DC88A828D4A1381C9671FBB4E1E76C959AFDD</td>
+<td class="cell_2">Win32.BitCoinMiner [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Windir%\syso\critical\<a href="http://www.threatexpert.com/files/zlib1.dll.html" target="_blank">zlib1.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">100,864 bytes</td>
+<td class="cell_1">MD5: 0xBCAF983AB27437913E76776F79B850C5<br/>SHA-1: 0x8544045069E9F6E7A121825D3CFA95F77547BAB3</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/nircmd.exe.html" target="_blank">nircmd.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">43,520 bytes</td>
+<td class="cell_1">MD5: 0x466A42AEA0ABDF4C6B610F0F5E61CFA2<br/>SHA-1: 0x7E7998642BABCB567FF7845CFAF4F3636CE209F7</td>
+<td class="cell_2"><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">589,798 bytes</td>
+<td class="cell_1">MD5: 0xF865C199024105A2FFDF5FA98F391D74<br/>SHA-1: 0xF838FB106E39FE4D9804B1D65EDBC58C1FC98713</td>
+<td class="cell_2">Win32.BitCoinMiner [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%Windir%\syso</li>
+<li>%Windir%\syso\critical</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/nircmd.exe.html" target="_blank">nircmd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/nircmd.exe.html" target="_blank">nircmd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">110,592 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">335,872 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Windows Update = "%Windir%\syso\critical\antivirus.bat"</li>
+</ul>
+<br/>
+<em>so that antivirus.bat runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/israel.gif"></td>
+<td class="cell_2">Israel</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>_SHuassist.mtx</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>mine.pool-x.eu</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mine.pool-x.eu<td class="cell_2">9000</td><tr>
+<tr><td class="cell_1">mine.pool-x.eu<td class="cell_2">9332</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 7B22 6964 223A 2031 2C20 226D 6574 686F | {"id": 1, "metho
+00000010 | 6422 3A20 226D 696E 696E 672E 7375 6273 | d": "mining.subs
+00000020 | 6372 6962 6522 2C20 2270 6172 616D 7322 | cribe", "params"
+00000030 | 3A20 5B22 7375 636B 6572 7272 2F32 2E33 | : ["suckerrr/2.3
+00000040 | 2E32 225D 7D0A                          | .2"]}.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 9332:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 7B22 6964 223A 2031 2C20 226D 6574 686F | {"id": 1, "metho
+00000010 | 6422 3A20 226D 696E 696E 672E 7375 6273 | d": "mining.subs
+00000020 | 6372 6962 6522 2C20 2270 6172 616D 7322 | cribe", "params"
+00000030 | 3A20 5B22 7375 636B 6572 7272 2F32 2E33 | : ["suckerrr/2.3
+00000040 | 2E32 225D 7D0A                          | .2"]}.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

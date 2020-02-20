@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Morix.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Morix.B</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 3 April 2016, 02:03:52</li>
+<li>Processing time: 7 min 54 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF547B6A3A996A563ED3D56927E108F37</li>
+<li>File SHA-1: 0xFC3133A179611A6AF426459C72343DC7B703DBA5</li>
+<li>Filesize: 1,861,632 bytes</li>
+<li>Alias: Backdoor:Win32/Morix.B [Microsoft]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">servero.exe</td><td class="cell_1">%System%\setup\servero.exe</td><td class="cell_2">200,704 bytes</td></tr>
+<tr><td class="cell_1">svchdsort.exe</td><td class="cell_1">%System%\svchdsort.exe</td><td class="cell_2">1,089,536 bytes</td></tr>
+<tr><td class="cell_1">shevvootst.exe</td><td class="cell_1">%Windir%\shevvootst.exe</td><td class="cell_2">839,680 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/space.exe.html" target="_blank">space.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/space.exe.html" target="_blank">space.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,871,872 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/space.exe.html" target="_blank">space.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\<a href="http://www.threatexpert.com/files/space.exe.html" target="_blank">space.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,871,872 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">2,441,216 bytes</td></tr>
+<tr><td class="cell_1">svchosto.exe</td><td class="cell_1">c:\svchosto.exe</td><td class="cell_2">2,441,216 bytes</td></tr>
+<tr><td class="cell_1">svchdsossss.exe</td><td class="cell_1">%System%\svchdsossss.exe</td><td class="cell_2">983,040 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following process was intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">space.exe_1.exe</td><td class="cell_2">1,871,872 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\shell\Open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\shell\Open\Command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\ShellFolder</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\shell\Open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\shell\Open\Command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\ShellFolder</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft\Windows</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft\Windows\CurrentVersion</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft\Windows\CurrentVersion\Policies</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc002}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc003}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc004}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Mainy</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\364</li>
+<li>HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer</li>
+<li>HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\control Panel</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{871C5380-42A0-1069-A2EA-08002B30309D}\shell\OpenHomePage\Command]</li><ul>
+<li>(Default) = "%ProgramFiles%\Internet Explorer\IEXPLORE.EXE http://www.2345.com/?k61539783"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\shell\Open\Command]</li><ul>
+<li>(Default) = "%ProgramFiles%\Internet Explorer\IEXPLORE.EXE http://shop1399222689674.1688.com/</li>
+</ul>
+<li>["]</li><ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\shell\Open = (Default)</li>
+</ul>
+<li>["??"]</li><ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\ShellFolder = Attributes</li>
+</ul>
+<li>[0x00000000]</li><ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002}\DefaultIcon = (Default)</li>
+</ul>
+<li>["%ProgramFiles%\Internet Explorer\IEXPLORE.EXE"]</li><ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc002} = (Default)</li>
+</ul>
+<li>["??????"]</li><ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\shell\Open\Command = (Default)</li>
+</ul>
+<li>["%ProgramFiles%\Internet Explorer\IEXPLORE.EXE http://www.hao123.com/?tn=97405087_hao_pg]</li><ul>
+<li>" = HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\shell\Open</li>
+</ul>
+<li>[(Default)]</li><ul>
+<li>"??" = HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\ShellFolder</li>
+<li>"%ProgramFiles%\Internet Explorer\IEXPLORE.EXE" = HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}</li>
+<li>"hao123???" = HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+<li>"" = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc003}</li>
+<li>"" = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc004}</li>
+<li>"" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+<li>"d:\svchosto.exe" = HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\control Panel</li>
+</ul>
+<li>[Attributes]</li><ul>
+<li>0x00000000 = HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{e17d4f88-5564-41d1-83f2-00a0c90dc003}\DefaultIcon</li>
+</ul>
+<li>[DisableTaskMgr]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e17d4f88-5564-41d1-83f2-00a0c90dc002}</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Enum</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Enum</li>
+<li>0x00000001 = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+<li>[*NewlyCreated*]</li><ul>
+<li>0x00000000 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+<li>0x00000000 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+</ul>
+<li>[ActiveService]</li><ul>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[Service]</li><ul>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[Legacy]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[ConfigFlags]</li><ul>
+<li>0x00000000 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>0x00000000 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[Class]</li><ul>
+<li>"LegacyDriver" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>"LegacyDriver" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[ClassGUID]</li><ul>
+<li>"{8ECC055D-047F-11D1-A537-0000F8753ED1}" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+<li>"{8ECC055D-047F-11D1-A537-0000F8753ED1}" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000</li>
+</ul>
+<li>[DeviceDesc]</li><ul>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_VNQVADFJ</li>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ</li>
+</ul>
+<li>[NextInstance]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Security</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\0001\Software\Microsoft\windows\CurrentVersion\Policies\System</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Security</li>
+</ul>
+<li>[0]</li><ul>
+<li>"Root\LEGACY_VNQVADFJ\0000" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Enum</li>
+<li>"Root\LEGACY_VNQVADFJ\0000" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Enum</li>
+</ul>
+<li>[Count]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ\Enum</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ\Enum</li>
+</ul>
+<li>[Security]</li><ul>
+<li>01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+</ul>
+<li>[DisplayName]</li><ul>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>"VNQVADFJ" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+</ul>
+<li>[ErrorControl]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+</ul>
+<li>[ImagePath]</li><ul>
+<li>"%System%\drivers\VNQVADFJ.sys" = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>"%System%\drivers\VNQVADFJ.sys" = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+</ul>
+<li>[Start]</li><ul>
+<li>0x00000003 = HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VNQVADFJ</li>
+<li>0x00000003 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VNQVADFJ</li>
+</ul>
+<li>[Type]</li><ul>
+<li>0x00000001 = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_VNQVADFJ\0000\Control</li>
+<li>0x00000001 = HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Mainy</li>
+</ul>
+<li>[Start Page]</li><ul>
+<li>"http://www.2345.com/?k61539783" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System</li>
+</ul>
+<li>[36555]</li><ul>
+<li>"%System%\svchosto.exe" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+<li>[360]</li><ul>
+<li>"f:\svchosto.exe" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+<li>[361]</li><ul>
+<li>"g:\svchosto.exe" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+<li>[362]</li><ul>
+<li>"h:\svchosto.exe" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+<li>[363]</li><ul>
+<li>"C:\svchosto.exe" = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\364</li>
+</ul>
+<li>[HomePage]</li><ul>
+<li>0x00000001 = HKEY_CURRENT_USER\Software\Classes\CLSID</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{871C5380-42A0-1069-A2EA-08002B30309D}\shell\OpenHomePage\Command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\Internet Explorer\iexplore.exe""</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Start Page = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>888666.iok.la127.0.0.1127.0.0.1</li>
+<li>qwert8800.gicp.net127.0.0.1127.0.0.1</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1037</td><td class="cell_1">TCP</td><td class="cell_2">servero.exe (%System%\Setup\servero.exe)</td></tr>
+<tr><td class="cell_1">1040</td><td class="cell_1">TCP</td><td class="cell_2">space.exe (%Windir%\space.exe)</td></tr>
+<tr><td class="cell_1">1042</td><td class="cell_1">TCP</td><td class="cell_2">servero.exe (%System%\Setup\servero.exe)</td></tr>
+<tr><td class="cell_1">1043</td><td class="cell_1">TCP</td><td class="cell_2">space.exe (%Windir%\space.exe)</td></tr>
+<tr><td class="cell_1">1050</td><td class="cell_1">TCP</td><td class="cell_2">servero.exe (%System%\Setup\servero.exe)</td></tr>
+<tr><td class="cell_1">1051</td><td class="cell_1">TCP</td><td class="cell_2">space.exe (%ProgramFiles%\space.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>888666.iok.la</li>
+<li>qwert8800.gicp.net</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">888666.iok.la<td class="cell_2">2015</td><tr>
+<tr><td class="cell_1">qwert8800.gicp.net<td class="cell_2">2013</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.txj888.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">www.hao123.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>?tn=97405087_hao_pg</li>
+<li>index.jpg</li>
+<li>2013/bd.txt</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 1C80 1800 7FA3 | biN.N3tu1.......
+00000070 | 1652                                    | .R
+00000000 | 4131 4345 4171 0000 0030 0100 007A 994F | A1CEAq...0...z.O
+00000060 | 6269 4E09 4E33 7475 B1E8 0162 007F B316 | biN.N3tu...b....
+00000070 | 56                                      | V
+00000060 | 6269 4E09 4E33 7475 31C5 3881 1800 7EC7 | biN.N3tu1.8...~.
+00000070 | 161B                                    | ..
+00000000 | 4131 4345 416F 0000 0030 0100 007B 9543 | A1CEAo...0...{.C
+00000010 | 6065 6890 0BC3 AF49 C40B C112 5404 0B4F | `eh....I....T..O
+00000020 | 4932 3BB0 A024 3B3E 5628 2832 3C5B C188 | I2;..$;>V((2<[..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 CDC5 1F87 | q.g.....nx.C....
+00000060 | DEE2 3343 5717 53CC 1188 01AA 8817 06   | ..3CW.S........
+00000060 | 6269 4E09 4E33 7475 31C5 0281 1800 7FE7 | biN.N3tu1.......
+00000070 | 1663                                    | .c
+00000000 | 4131 4345 4173 0000 0030 0100 007A 994F | A1CEAs...0...z.O
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C288 | I8=..*7:]()3<_..
+00000060 | 6269 4E09 4E33 7475 31C5 8041 C300 007E | biN.N3tu1..A...~
+00000070 | CB16 1C                                 | ...
+00000060 | 6269 4E09 4E33 7475 31C5 5C81 1800 7FB7 | biN.N3tu1.\.....
+00000070 | 1657                                    | .W
+00000060 | 6269 4E09 4E33 7475 31C5 9C80 1800 7FAB | biN.N3tu1.......
+00000070 | 1654                                    | .T
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1047:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 3881 1800 7EC7 | biN.N3tu1.8...~.
+00000070 | 161B                                    | ..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1048:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 3881 1800 7EC7 | biN.N3tu1.8...~.
+00000070 | 161B                                    | ..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 2013:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 416F 0000 0030 0100 007B 9543 | A1CEAo...0...{.C
+00000010 | 6065 6890 0BC3 AF49 C40B C112 5404 0B4F | `eh....I....T..O
+00000020 | 4932 3BB0 A024 3B3E 5628 2832 3C5B C188 | I2;..$;>V((2<[..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 CDC5 1F87 | q.g.....nx.C....
+00000060 | DEE2 3343 5717 53CC 1188 01AA 8817 06   | ..3CW.S........
+00000060 | DEE2 3343 5717 53CC 1F88 01AA C017 14   | ..3CW.S........
+00000060 | DEE2 3343 5717 53CC 0988 01AA 8C17 07   | ..3CW.S........
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1033:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 3881 1800 7EC7 | biN.N3tu1.8...~.
+00000070 | 161B                                    | ..
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1035:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4173 0000 0030 0100 007A 994F | A1CEAs...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C288 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 8041 C300 007E | biN.N3tu1..A...~
+00000070 | CB16 1C                                 | ...
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1038:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 0281 1800 7FE7 | biN.N3tu1.......
+00000070 | 1663                                    | .c
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1046:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4131 4345 4172 0000 0030 0100 007A 994F | A1CEAr...0...z.O
+00000010 | 6066 649B 0BCD A542 C90C C71C 580F 0445 | `fd....B....X..E
+00000020 | 4938 3DB1 AB2A 373A 5D28 2933 3C5F C188 | I8=..*7:]()3<_..
+00000030 | 81EE 00E4 0606 4646 86ED DC10 77D5 0329 | ......FF....w..)
+00000040 | E7FC DC82 D292 D422 BFC4 DC54 7C7A FF03 | ......."...T|z..
+00000050 | 7198 67C0 D5BF A7F6 6E78 8643 8D4B 6A5A | q.g.....nx.C.KjZ
+00000060 | 6269 4E09 4E33 7475 31C5 3881 1800 7EC7 | biN.N3tu1.8...~.
+00000070 | 161B                                    | ..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 April 2015, 07:07:42</li>
+<li>Processing time: 7 min 15 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7E29C5FDD235B81BF7D84E3D980E730F</li>
+<li>File SHA-1: 0x4BDCBF6438693DC64CD67D9195317A207A8F9B1A</li>
+<li>Filesize: 4,341,309 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%System%\MSCOMCT2.OCX</li>
+<li>%System%\MSCOMCTL.OCX</li>
+<li>%System%\msscript.ocx</li>
+<li>%System%\RICHTX32.OCX</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">299,008 bytes</td></tr>
+<tr><td class="cell_1">maxservice.exe</td><td class="cell_1">%ProgramFiles%\max-ftp\maxservice.exe</td><td class="cell_2">176,128 bytes</td></tr>
+<tr><td class="cell_1">MaxUtility.exe</td><td class="cell_1">%ProgramFiles%\Max-FTP\MaxUtility.exe</td><td class="cell_2">249,856 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">NTControls22.ocx</td><td class="cell_1">%System%\NTControls22.ocx</td><td class="cell_2">Process name: MaxFTP.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxftp.exe<br/>Address space: 0x11000000 - 0x1104A000</td></tr>
+<tr><td class="cell_1">NTSchedule20.dll</td><td class="cell_1">%System%\NTSchedule20.dll</td><td class="cell_2">Process name: MaxFTP.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxftp.exe<br/>Address space: 0x1DA0000 - 0x1DAD000</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/msado15.dll.html" target="_blank">msado15.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/msado15.dll.html" target="_blank">msado15.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: MaxFTP.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxftp.exe<br/>Address space: 0x4DE10000 - 0x4DE93000</td></tr>
+<tr><td class="cell_1">NTPopup21.dll</td><td class="cell_1">%System%\NTPopup21.dll</td><td class="cell_2">Process name: MaxFTP.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxftp.exe<br/>Address space: 0x83C0000 - 0x83D0000</td></tr>
+<tr><td class="cell_1">NTAdvFTP61.dll</td><td class="cell_1">%System%\NTAdvFTP61.dll</td><td class="cell_2">Process name: MaxFTP.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxftp.exe<br/>Address space: 0x85D0000 - 0x860F000</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/msado15.dll.html" target="_blank">msado15.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/msado15.dll.html" target="_blank">msado15.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: MaxIDE.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxide.exe<br/>Address space: 0x4DE10000 - 0x4DE93000</td></tr>
+<tr><td class="cell_1">NTControls22.ocx</td><td class="cell_1">%System%\NTControls22.ocx</td><td class="cell_2">Process name: MaxUtility.exe<br/>Process filename: %ProgramFiles%\max-ftp\maxutility.exe<br/>Address space: 0x11000000 - 0x1104A000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MaxFTPService</td><td class="cell_1">Max-FTP Schedules</td><td class="cell_1">"Stopped"</td><td class="cell_2">%ProgramFiles%\Max-FTP\MaxService.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\LocalServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\ToolboxBitmap32</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\VERSION]</li><ul>
+<li>(Default) = "532.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\TypeLib]</li><ul>
+<li>(Default) = "{C63ED29D-9313-406E-BCF9-083BEE0B2E18}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\ProgID]</li><ul>
+<li>(Default) = "NTPopup21.Window"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTPopup21.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A2B9F77-856F-4C99-A3D6-2800971ACE7C}]</li><ul>
+<li>(Default) = "NTPopup21.Window"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\VERSION]</li><ul>
+<li>(Default) = "132.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\TypeLib]</li><ul>
+<li>(Default) = "{55FB12FD-20A3-4105-877B-18D9D312A93C}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\ProgID]</li><ul>
+<li>(Default) = "NTShell22.Services"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTShell22.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1B1F0E52-A18E-4049-B3F6-9E87DC385283}]</li><ul>
+<li>(Default) = "NTShell22.Services"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\VERSION]</li><ul>
+<li>(Default) = "519.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\TypeLib]</li><ul>
+<li>(Default) = "{BE894266-1DAD-4859-82BD-13F39E130783}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\ProgID]</li><ul>
+<li>(Default) = "NTSmpFTP30.Client"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTSmpFTP30.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3086C25A-0B0A-4929-B7F4-A5BE2DC00A43}]</li><ul>
+<li>(Default) = "NTSmpFTP30.Client"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\VERSION]</li><ul>
+<li>(Default) = "506.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\TypeLib]</li><ul>
+<li>(Default) = "{7FF3E6C6-1DB9-4FC3-8810-D6E83C52513D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx, 30002"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\ProgID]</li><ul>
+<li>(Default) = "NTControls22.SiteInformation"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4E4DBAD1-9AA1-420F-82DC-D10FCAB84D09}]</li><ul>
+<li>(Default) = "NTControls22.SiteInformation"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\VERSION]</li><ul>
+<li>(Default) = "540.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\TypeLib]</li><ul>
+<li>(Default) = "{21FCB784-6F1F-4BA6-9C32-8107A8AE3F10}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\ProgID]</li><ul>
+<li>(Default) = "NTSound20.Player"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTSound20.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{568562D4-D1D3-4AD1-BB11-021AC90BDEA7}]</li><ul>
+<li>(Default) = "NTSound20.Player"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\VERSION]</li><ul>
+<li>(Default) = "46.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\TypeLib]</li><ul>
+<li>(Default) = "{42C9B2C3-7D1D-4453-B765-BB31FC317B37}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\ProgID]</li><ul>
+<li>(Default) = "NTAdvFTP61.URL"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTAdvFTP61.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6EE53BF7-8FF3-47CB-9C5D-B82CC03BBBA3}]</li><ul>
+<li>(Default) = "NTAdvFTP61.URL"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\VERSION]</li><ul>
+<li>(Default) = "132.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\TypeLib]</li><ul>
+<li>(Default) = "{55FB12FD-20A3-4105-877B-18D9D312A93C}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\ProgID]</li><ul>
+<li>(Default) = "NTShell22.Process"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTShell22.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{71CA5315-F79D-4534-B7B6-48E49BFF0AE6}]</li><ul>
+<li>(Default) = "NTShell22.Process"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\VERSION]</li><ul>
+<li>(Default) = "541.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\TypeLib]</li><ul>
+<li>(Default) = "{C3FACB60-C2D5-4830-B9BB-C8FC5A586F90}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\ProgID]</li><ul>
+<li>(Default) = "NTSchedule20.Schedule"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTSchedule20.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{901E8DA8-361C-4236-96E7-C8B86871BE60}]</li><ul>
+<li>(Default) = "NTSchedule20.Schedule"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\VERSION]</li><ul>
+<li>(Default) = "527.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\TypeLib]</li><ul>
+<li>(Default) = "{C3FACB60-C2D5-4830-B9BB-C8FC5A586F90}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\ProgID]</li><ul>
+<li>(Default) = "NTService20.Controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTService20.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96CA9D99-985C-4BE2-B74A-C31B1B5A0B83}]</li><ul>
+<li>(Default) = "NTService20.Controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\VERSION]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\TypeLib]</li><ul>
+<li>(Default) = "{49510C62-84B4-4029-BDAF-178CFBD682D1}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\ProgID]</li><ul>
+<li>(Default) = "MaxFTP.Application"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}\LocalServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\max-ftp\maxftp.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9ACD7CDE-C921-404B-9B97-BA4432104156}]</li><ul>
+<li>(Default) = "MaxFTP.Application"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\VERSION]</li><ul>
+<li>(Default) = "506.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\TypeLib]</li><ul>
+<li>(Default) = "{7FF3E6C6-1DB9-4FC3-8810-D6E83C52513D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx, 30000"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\ProgID]</li><ul>
+<li>(Default) = "NTControls22.BrowseButton"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A1ACDDF0-B6D4-4DC3-92A7-AA7AEA324B7F}]</li><ul>
+<li>(Default) = "NTControls22.BrowseButton"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A388F327-D6AF-45EB-9404-9C36DB54230A}\VERSION]</li><ul>
+<li>(Default) = "24.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A388F327-D6AF-45EB-9404-9C36DB54230A}\TypeLib]</li><ul>
+<li>(Default) = "{C9D996F9-6CDE-4434-B585-4D2E2DF6B14C}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A388F327-D6AF-45EB-9404-9C36DB54230A}\ProgID]</li><ul>
+<li>(Default) = "MaxService.Application"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A388F327-D6AF-45EB-9404-9C36DB54230A}\LocalServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Max-FTP\MaxService.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A388F327-D6AF-45EB-9404-9C36DB54230A}]</li><ul>
+<li>(Default) = "MaxService.Application"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE594C24-01E2-48B5-8A6E-00644A34A4C5}\VERSION]</li><ul>
+<li>(Default) = "541.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE594C24-01E2-48B5-8A6E-00644A34A4C5}\TypeLib]</li><ul>
+<li>(Default) = "{C3FACB60-C2D5-4830-B9BB-C8FC5A586F90}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE594C24-01E2-48B5-8A6E-00644A34A4C5}\ProgID]</li><ul>
+<li>(Default) = "NTSchedule20.Timer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE594C24-01E2-48B5-8A6E-00644A34A4C5}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTSchedule20.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE594C24-01E2-48B5-8A6E-00644A34A4C5}]</li><ul>
+<li>(Default) = "NTSchedule20.Timer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B4182524-AE6E-4A94-AB71-B5355B542605}\VERSION]</li><ul>
+<li>(Default) = "46.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B4182524-AE6E-4A94-AB71-B5355B542605}\TypeLib]</li><ul>
+<li>(Default) = "{42C9B2C3-7D1D-4453-B765-BB31FC317B37}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B4182524-AE6E-4A94-AB71-B5355B542605}\ProgID]</li><ul>
+<li>(Default) = "NTAdvFTP61.Socket"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B4182524-AE6E-4A94-AB71-B5355B542605}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTAdvFTP61.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B4182524-AE6E-4A94-AB71-B5355B542605}]</li><ul>
+<li>(Default) = "NTAdvFTP61.Socket"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B617B991-A767-4F05-99BA-AC6FCABB102E}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\RICHTX32.OCX"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B617B991-A767-4F05-99BA-AC6FCABB102E}]</li><ul>
+<li>(Default) = "Microsoft Rich Textbox Control 6.0 (SP6)"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\VERSION]</li><ul>
+<li>(Default) = "506.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\TypeLib]</li><ul>
+<li>(Default) = "{7FF3E6C6-1DB9-4FC3-8810-D6E83C52513D}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx, 30004"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\ProgID]</li><ul>
+<li>(Default) = "NTControls22.URLBox"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\NTControls22.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B8F6BC05-21FE-4597-A668-090D4631A57E}]</li><ul>
+<li>(Default) = "NTControls22.URLBox"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B9C041C0-41A6-4F4F-BF14-A6087E022F0E}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B9C041C0-41A6-4F4F-BF14-A6087E022F0E}\VERSION]</li><ul>
+<li>(Default) = "506.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B9C041C0-41A6-4F4F-BF14-A6087E022F0E}\TypeLib]</li><ul>
+<li>(Default) = "{7FF3E6C6-1DB9-4FC3-8810-D6E83C52513D}"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD897-BB45-11CF-9ABC-0080C7E7B78D}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>`NTP6lYuf(laaqF-Q9q."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE3-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE5-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE7-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA2-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA4-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000507-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>ThreadingModel = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0000050B-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>ThreadingModel = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000514-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000535-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>ThreadingModel = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000541-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+<li>ThreadingModel = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000542-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000560-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000566-0000-0010-8000-00AA006D2EA4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0E59F1D5-1FBE-11D0-8FF2-00A0D10038BC}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{232E456A-87C3-11D1-8BE3-0000F8754DA1}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{232E456A-87C3-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{232E456A-87C3-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD896-BB45-11CF-9ABC-0080C7E7B78D}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD896-BB45-11CF-9ABC-0080C7E7B78D}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD896-BB45-11CF-9ABC-0080C7E7B78D}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{248DD897-BB45-11CF-9ABC-0080C7E7B78D}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3B7C8860-D78F-101B-B9B5-04021C009402}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6352-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6353-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6354-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6355-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6356-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6357-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6359-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603C7E80-87C2-11D1-8BE3-0000F8754DA1}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603C7E80-87C2-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603C7E80-87C2-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B09DE715-87C1-11D1-8BE3-0000F8754DA1}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B09DE715-87C1-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B09DE715-87C1-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2D139E3-B6CA-11d1-9F31-00C04FC29D52}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DE88C160-FF2C-11D1-BB6F-00C04FAE22DA}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FE38753A-44A3-11D1-B5B7-0000C09000C4}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FE38753A-44A3-11D1-B5B7-0000C09000C4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FE38753A-44A3-11D1-B5B7-0000C09000C4}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000266-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000400-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000500-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000501-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000503-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000504-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000505-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000506-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000508-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000050C-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000050D-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000050E-0000-0010-8000-00AA006D2EA4}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000050E-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000512-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000513-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000515-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000534-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000054C-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000054D-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000054E-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0000054F-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000550-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000555-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000556-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000562-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000564-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000565-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{00000569-0000-0010-8000-00AA006D2EA4}\TypeLib]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B1-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B3-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{B08400BD-F9D1-4D02-B856-71D5DBA123E9}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComCtl2.Animation]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%System%\MSVBVM60.DLL</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

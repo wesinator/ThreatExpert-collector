@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.DLoader, Mal/EncPk-BW, Trojan-Downloader.Win32.Mazahaka, Packed/Upack">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.DLoader, Mal/EncPk-BW, Trojan-Downloader.Win32.Mazahaka..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 28 September 2014, 14:03:16</li>
+<li>Processing time: 6 min 13 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD244613324948F74B341851C88A61F66</li>
+<li>File SHA-1: 0x690054382B550DCAEBF86FD8AB36C192141D49BD</li>
+<li>Filesize: 32,987 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-dloader.html" target="_blank">Suspicious.DLoader<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-encpk-bw.html" target="_blank">Mal/EncPk-BW<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Trojan-Downloader.Win32.Mazahaka [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/packed-upack.html" target="_blank">Packed/Upack<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+<li><em>packed with: </em>UPack [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ALG</td><td class="cell_1">Application Layer Gateway Service</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\<a href="http://www.threatexpert.com/files/alg.exe.html" target="_blank">alg.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+<tr><td class="cell_1">SharedAccess</td><td class="cell_1">Windows Firewall/Internet Connection Sharing (ICS)</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Global\sample_1.exe1057i8ds6sdl</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">183.60.233.205</td><td class="cell_1">12987</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 12987:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6665 6E2F 6130 312F 792E | POST /fen/a01/y.
+00000010 | 6173 7020 4854 5450 2F31 2E31 0D0A 4163 | asp HTTP/1.1..Ac
+00000020 | 6365 7074 3A20 696D 6167 652F 6769 662C | cept: image/gif,
+00000030 | 2069 6D61 6765 2F78 2D78 6269 746D 6170 |  image/x-xbitmap
+00000040 | 2C20 696D 6167 652F 6A70 6567 2C20 696D | , image/jpeg, im
+00000050 | 6167 652F 706A 7065 672C 202A 2F2A 0D0A | age/pjpeg, */*..
+00000060 | 436F 6E74 656E 742D 5479 7065 3A20 6170 | Content-Type: ap
+00000070 | 706C 6963 6174 696F 6E2F 782D 7777 772D | plication/x-www-
+00000080 | 666F 726D 2D75 726C 656E 636F 6465 640D | form-urlencoded.
+00000090 | 0A48 6F73 743A 206C 6F63 616C 686F 7374 | .Host: localhost
+000000A0 | 3A31 3239 3837 0D0A 436F 6E74 656E 742D | :12987..Content-
+000000B0 | 4C65 6E67 7468 3A20 300D 0A43 6163 6865 | Length: 0..Cache
+000000C0 | 2D43 6F6E 7472 6F6C 3A20 6E6F 2D63 6163 | -Control: no-cac
+000000D0 | 6865 0D0A 0D0A                          | he....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

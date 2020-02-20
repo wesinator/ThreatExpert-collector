@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 April 2014, 10:18:36</li>
+<li>Processing time: 6 min 41 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x5B028722015240564755A49DDF48486C</li>
+<li>File SHA-1: 0xED05B554F055E82B70FEA8C92A53D60FE077C23A</li>
+<li>Filesize: 2,469,824 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\app_icons</li>
+<li>c:\META-INF</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">139,264 bytes</td></tr>
+<tr><td class="cell_1">Install Adobe Download Assistant.exe</td><td class="cell_1">%Temp%\AIR1.tmp\Install Adobe Download Assistant.exe</td><td class="cell_2">147,456 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/7z.exe.html" target="_blank">7z.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\air1.tmp\adobe download assistant\<a href="http://www.threatexpert.com/files/7z.exe.html" target="_blank">7z.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">184,320 bytes</td></tr>
+<tr><td class="cell_1">adobe download assistant.exe</td><td class="cell_1">%Temp%\air1.tmp\adobe download assistant\adobe download assistant.exe</td><td class="cell_2">159,744 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\F01CB51EAA40DFA06A9C74760391F5B8</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\EF178266ED470D9934FCB9F3D1306925</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\EF178266ED470D9934FCB9F3D1306925</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\com.adobe.downloadassistant.AdobeDownloadAssistant</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E15BC10F-04AA-0AFD-A6C9-476730195F8B}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR]</li><ul>
+<li>AppRefcount = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\F01CB51EAA40DFA06A9C74760391F5B8]</li><ul>
+<li>Application = ""</li>
+<li>DesktopShortcut = ""</li>
+<li>ProgramShortcut = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList\Net]</li><ul>
+<li>1 = "%Temp%\air1.tmp\adobe download assistant\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList\Media]</li><ul>
+<li>1 = ";"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8\SourceList]</li><ul>
+<li>PackageName = "setup.msi"</li>
+<li>LastUsedSource = "n;1;%Temp%\air1.tmp\adobe download assistant\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\F01CB51EAA40DFA06A9C74760391F5B8]</li><ul>
+<li>ProductName = "Adobe Download Assistant"</li>
+<li>PackageCode = "F01CB51EAA40DFA06A9C74760391F5B8"</li>
+<li>Language = 0x00000409</li>
+<li>Version = 0x01020006</li>
+<li>Assignment = 0x00000001</li>
+<li>AdvertiseFlags = 0x00000184</li>
+<li>InstanceType = 0x00000000</li>
+<li>AuthorizedLUAApp = 0x00000000</li>
+<li>Clients = ":"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\EF178266ED470D9934FCB9F3D1306925]</li><ul>
+<li>F01CB51EAA40DFA06A9C74760391F5B8 = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]</li><ul>
+<li>c:\META-INF\ = ""</li>
+<li>c:\META-INF\AIR\ = ""</li>
+<li>c:\app_icons\ = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\EF178266ED470D9934FCB9F3D1306925]</li><ul>
+<li>F01CB51EAA40DFA06A9C74760391F5B8 = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\com.adobe.downloadassistant.AdobeDownloadAssistant]</li><ul>
+<li>DisplayIcon = "c:\Adobe Download Assistant.exe"</li>
+<li>DisplayName = "Adobe Download Assistant"</li>
+<li>DisplayVersion = "1.2.6"</li>
+<li>VersionMajor = "1"</li>
+<li>VersionMinor = "2"</li>
+<li>InstallLocation = "c:\"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>UninstallString = "msiexec /qb /x {E15BC10F-04AA-0AFD-A6C9-476730195F8B}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E15BC10F-04AA-0AFD-A6C9-476730195F8B}]</li><ul>
+<li>AuthorizedCDFPrefix = ""</li>
+<li>Comments = ""</li>
+<li>Contact = ""</li>
+<li>DisplayVersion = "1.2.6"</li>
+<li>HelpLink = ""</li>
+<li>HelpTelephone = ""</li>
+<li>InstallDate = "20140424"</li>
+<li>InstallLocation = ""</li>
+<li>InstallSource = "%Temp%\air1.tmp\adobe download assistant\"</li>
+<li>ModifyPath = "MsiExec.exe /I{E15BC10F-04AA-0AFD-A6C9-476730195F8B}"</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>Readme = ""</li>
+<li>Size = ""</li>
+<li>EstimatedSize = 0x00000AC3</li>
+<li>SystemComponent = 0x00000001</li>
+<li>UninstallString = "MsiExec.exe /I{E15BC10F-04AA-0AFD-A6C9-476730195F8B}"</li>
+<li>URLInfoAbout = ""</li>
+<li>URLUpdateInfo = ""</li>
+<li>VersionMajor = 0x00000001</li>
+<li>VersionMinor = 0x00000002</li>
+<li>WindowsInstaller = 0x00000001</li>
+<li>Version = 0x01020006</li>
+<li>Language = 0x00000409</li>
+<li>DisplayName = "Adobe Download Assistant"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">airdownload.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>air/3/nai/windows5.1/x86/installer</li>
+<li>air/3/nai/windows5.1/x86/installer.p7</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://crl.adobe.com/prodSvce.crl0</li>
+<li>http://crl.adobe.com/cds.crl0</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 24 April 2014 10:25:17</li>
+<li>Processing time: 7 min 35 sec</li>
+<li>Downloaded sample:</li>
+<ul>
+<li>File MD5: 0x59B55A1AE95A799E59D629082D773EA1</li>
+<li>File SHA-1: 0x1D6A34D48F3526088DBE6A2D24852705051778D4</li>
+<li>Filesize: 18,134,016 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=85e60578-b164-4d97-a1d4-cf8baf4c8ea9&image=screen&sub=2"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Adobe AIR Updater.exe</td><td class="cell_1">%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR Updater.exe</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%ProgramFiles%\adobe\flash player\addins\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1">Adobe AIR Installer.exe</td><td class="cell_1">%Temp%\AIR1.tmp\Adobe AIR Installer.exe</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">159,744 bytes</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%Profiles%\default user\application data\macromedia\flash player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1">airappinstaller.exe</td><td class="cell_1">%AppData%\macromedia\flash player\www.macromedia.com\bin\airappinstaller\airappinstaller.exe</td><td class="cell_2">65,536 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following system service was modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">MSIServer</td><td class="cell_1">Windows Installer</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\msiexec.exe /V</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR\FileTypeRegistration</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\AE5293A0E0B5B1041A9847914179742B</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air\OpenWithProgids</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Adobe AIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{0A3925EA-5B0E-401B-A189-7419149747B2}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe AIR\FileTypeRegistration]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\AE5293A0E0B5B1041A9847914179742B]</li><ul>
+<li>Runtime = ""</li>
+<li>Management = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList\Net]</li><ul>
+<li>1 = "%Temp%\air1.tmp\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList\Media]</li><ul>
+<li>1 = ";"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B\SourceList]</li><ul>
+<li>PackageName = "setup.msi"</li>
+<li>LastUsedSource = "n;1;%Temp%\air1.tmp\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\AE5293A0E0B5B1041A9847914179742B]</li><ul>
+<li>ProductName = "Adobe AIR"</li>
+<li>PackageCode = "361968AF4D563764A980C7DC33654BD1"</li>
+<li>Language = 0x00000409</li>
+<li>Version = 0x0D000000</li>
+<li>Assignment = 0x00000001</li>
+<li>AdvertiseFlags = 0x00000184</li>
+<li>InstanceType = 0x00000000</li>
+<li>AuthorizedLUAApp = 0x00000000</li>
+<li>Clients = ":"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E]</li><ul>
+<li>AE5293A0E0B5B1041A9847914179742B = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air\OpenWithProgids]</li><ul>
+<li>AIR.InstallerPackage = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.air]</li><ul>
+<li>(Default) = "AIR.InstallerPackage"</li>
+<li>Content Type = "application/vnd.adobe.air-application-installer-package+zip"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open\command]</li><ul>
+<li>(Default) = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\ADOBEA~1.EXE "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\shell\open]</li><ul>
+<li>(Default) = "Install"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage\DefaultIcon]</li><ul>
+<li>(Default) = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\ADOBEA~1.EXE,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AIR.InstallerPackage]</li><ul>
+<li>(Default) = "Installer Package"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]</li><ul>
+<li>%ProgramFiles%\Common Files\Adobe AIR\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\ = ""</li>
+<li>%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\WebKit\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns\airappinstaller\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\AddIns\ = ""</li>
+<li>%ProgramFiles%\Adobe\Flash Player\ = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UpgradeCodes\5D029AD8C14C0E24FB1378AB9489E44E]</li><ul>
+<li>AE5293A0E0B5B1041A9847914179742B = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Adobe AIR]</li><ul>
+<li>DisplayIcon = "c:\PROGRA~1\COMMON~1\ADOBEA~1\Versions\1.0\RESOUR~1\ADOBEA~1.EXE"</li>
+<li>DisplayName = "Adobe AIR"</li>
+<li>DisplayVersion = "13.0.0.83"</li>
+<li>InstallLocation = "%ProgramFiles%\Common Files\Adobe AIR\"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>UninstallString = "%ProgramFiles%\Common Files\Adobe AIR\Versions\1.0\Resources\Adobe AIR Updater.exe -arp:uninstall"</li>
+<li>VersionMajor = 0x0000000D</li>
+<li>VersionMinor = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{0A3925EA-5B0E-401B-A189-7419149747B2}]</li><ul>
+<li>AuthorizedCDFPrefix = ""</li>
+<li>Comments = ""</li>
+<li>Contact = ""</li>
+<li>DisplayVersion = "13.0.0.83"</li>
+<li>HelpLink = ""</li>
+<li>HelpTelephone = ""</li>
+<li>InstallDate = "20140424"</li>
+<li>InstallLocation = "%ProgramFiles%\Common Files\Adobe AIR\"</li>
+<li>InstallSource = "%Temp%\air1.tmp\"</li>
+<li>ModifyPath = "MsiExec.exe /I{0A3925EA-5B0E-401B-A189-7419149747B2}"</li>
+<li>Publisher = "Adobe Systems Incorporated"</li>
+<li>Readme = ""</li>
+<li>Size = ""</li>
+<li>EstimatedSize = 0x0000B88F</li>
+<li>SystemComponent = 0x00000001</li>
+<li>UninstallString = "MsiExec.exe /I{0A3925EA-5B0E-401B-A189-7419149747B2}"</li>
+<li>URLInfoAbout = ""</li>
+<li>URLUpdateInfo = ""</li>
+<li>VersionMajor = 0x0000000D</li>
+<li>VersionMinor = 0x00000000</li>
+<li>WindowsInstaller = 0x00000001</li>
+<li>Version = 0x0D000000</li>
+<li>Language = 0x00000409</li>
+<li>DisplayName = "Adobe AIR"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>AppData = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>oleacc-msaa-loaded</li>
+<li>DirectSound DllMain mutex (0x00000400)</li>
+<li>DirectSound DllMain mutex (0x00000418)</li>
+<li>DirectSound DllMain mutex (0x0000041C)</li>
+<li>DirectSound DllMain mutex (0x000005E8)</li>
+<li>DirectSound DllMain mutex (0x000001C8)</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">airinstall.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">airdownload.adobe.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>air.updates.req?t=sa&amp;r=13.0.0.83&amp;l=en&amp;o=w</li>
+<li>air/3/background/windows5.1/x86/patch/13.0.0.83/update</li>
+<li>air.updates.req?t=u&amp;r=13.0.0.83&amp;l=en&amp;o=w</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%System%\DINPUT8.dll</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

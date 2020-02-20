@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.AD, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.AD, Backdoor.Win32.Inject</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 25 March 2016, 10:18:49</li>
+<li>Processing time: 5 min 38 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC847EAB54F591EE1C21AF6BFC304B78B</li>
+<li>File SHA-1: 0xF6792DDBBFA31359F526468A6D67DA78081CDD0A</li>
+<li>Filesize: 131,228 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor:Win32/Zegost.AD [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">131,072 bytes</td></tr>
+<tr><td class="cell_1">Sword.exe</td><td class="cell_1">%CommonPrograms%\startup\sword.exe</td><td class="cell_2">131,072 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>42.51.155.213</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">42.51.155.213<td class="cell_2">2014</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2014:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 434B 4A58 59D9 0100 00A8 0200 007B 9E84 | CKJXY........{..
+00000010 | 533F 4C5D 5915 F99C 187C 96F3 9D48 BFC6 | S?L]Y....|...H..
+00000020 | A541 8120 08D6 C326 72AB 6EDB 38BD 35A0 | .A. ...&r.n.8.5.
+00000030 | 4B43 512D 139E 2D52 1C2F 36C6 1315 8623 | KCQ-..-R./6....#
+00000040 | 40D7 A0BE CF62 90A4 183D DAC2 5550 2286 | @....b...=..UP".
+00000050 | 8B81 87AA 412D 84D8 E85B B8DC C07F 80D7 | ....A-...[......
+00000060 | AE0E 0AE2 D4C8 75BB F47C FE36 B287 7305 | ......u..|.6..s.
+00000070 | 4A4E B3B8 D205 32B8 8B66 145C B591 CECF | JN....2..f.\....
+00000080 | 5730 B4F7 F96D F514 5B87 E338 D087 BC11 | W0...m..[..8....
+00000090 | F5E8 88D8 B7FF 22F0 9458 453B 92AF C565 | ......"..XE;...e
+000000A0 | CA87 4AF9 C0DE 8D02 27B6 B3F0 9D06 6E75 | ..J.....'.....nu
+000000B0 | 68FE 4F07 C5BD CBAC 6FF4 5B61 AC8D 34C5 | h.O.....o.[a..4.
+000000C0 | F2B8 2DED B407 557C D07D 93B0 8AFF 9D81 | ..-...U|.}......
+000000D0 | C296 BCFB D065 75E0 F249 2689 FB85 B4A4 | .....eu..I&.....
+000000E0 | 98FE 4514 0214 BCFA 8955 C8DC 98AA 0E75 | ..E......U.....u
+000000F0 | 0C92 1415 38D9 B7AD 6707 4202 BA6F F2E9 | ....8...g.B..o..
+00000100 | 6D63 B44A AFC6 9560 5C94 48FA 2D4B 378A | mc.J...`\.H.-K7.
+00000110 | 8E88 435B 41C6 2F99 7564 B87D 7926 1C63 | ..C[A./.ud.}y&.c
+00000120 | B08C 9EEB 535C AC27 444F E518 030E 724D | ....S\.'DO....rM
+00000130 | 138B C1F4 AE7F 5397 955E 7064 8B84 E8E7 | ......S..^pd....
+00000140 | 969E EDB2 D6AC 9E24 0BAA D778 3567 21F2 | .......$...x5g!.
+00000150 | BBA1 F98D 92F5 16EA 41BD A7AE 9F4D 387B | ........A....M8{
+00000160 | EF61 2ED5 74D1 2EA6 17FF 70B8 7EB3 1A7F | .a..t.....p.~...
+00000170 | 0430 4E69 BB36 3159 71E5 F8AD 8AAB F3A8 | .0Ni.61Yq.......
+00000180 | 0FC8 7820 5429 A99F 9B19 4B2B F14F DA3A | ..x T)....K+.O.:
+00000190 | E9F0 383A D8EB E6F7 7E42 02CE 56FD A2DB | ..8:....~B..V...
+000001A0 | FBEF 8994 55AB ABC9 BDD9 9237 9C55 F4FB | ....U......7.U..
+000001B0 | A081 81A0 1374 3A29 2B4E EA65 7F14 F673 | .....t:)+N.e...s
+000001C0 | E4AD B474 C98E CA89 FC74 5ADC EAA4 AC63 | ...t.....tZ....c
+000001D0 | ED3F 04FB 0716 A393 26                  | .?......&
+00000000 | 434B 4A58 59CE 0100 00A8 0200 007B 9E84 | CKJXY........{..
+00000010 | 533B 4F05 6911 7AA9 894A 1522 AB59 8C5E | S;O.i.z..J.".Y.^
+00000020 | E42E 2AEA 07C5 2C1F 8121 D7AD 6348 D288 | ..*...,..!..cH..
+00000030 | 4713 0AFB 8813 BEA8 C317 1412 41A8 A4B5 | G...........A...
+00000040 | 53C0 A36F 6BBC 52F0 8713 1491 FD01 9285 | S..ok.R.........
+00000050 | E803 121F 80CA 623F 2253 361B 6FBC 8E32 | ......b?"S6.o..2
+00000060 | 3466 6223 2D63 0D85 9A8D 4BDC 9105 41E1 | 4fb#-c....K...A.
+00000070 | F360 F64B D610 3757 7D7F 61C4 5F86 5C31 | .`.K..7W}.a._.\1
+00000080 | 03DD C9CC 17C0 10D3 15EA 9FA4 3D88 10D0 | ............=...
+00000090 | 33A9 C409 48A0 7F53 D7B1 3FAB 3151 6D05 | 3...H..S..?.1Qm.
+000000A0 | E7CB FFBE 0C28 4F51 DBF9 9D05 5BFC 1D09 | .....(OQ....[...
+000000B0 | CD69 90CF B89D 520A 3086 27E6 A70D A92F | .i....R.0.'..../
+000000C0 | 12FD 5847 E242 63CD 6A9E 8ECD 2C28 C3EF | ..XG.Bc.j...,(..
+000000D0 | B8C6 E636 FE14 A697 CCB3 20B2 BF1A 18CB | ...6...... .....
+000000E0 | E729 3FCA 5B85 614B 5E2A FC40 C0A5 7B40 | .)?.[.aK^*.@..{@
+000000F0 | F137 CE0E 7575 9A12 DEE3 B949 5946 C0AB | .7..uu.....IYF..
+00000100 | 27E6 430F 723D AEC9 DCE7 EB6B 0F9D 3D1A | '.C.r=.....k..=.
+00000110 | 5854 C2B0 620D 9899 970A 509B 63E7 0F13 | XT..b.....P.c...
+00000120 | B182 0DEB DB2E 09D7 5E04 0CC6 6F89 19A1 | ........^...o...
+00000130 | 97CF FB4B ED3C 3CE2 1F4D 8BA2 9848 C9BE | ...K.<<..M...H..
+00000140 | 1DE3 A9A9 E2A1 4C87 F621 A70D 89C2 F963 | ......L..!.....c
+00000150 | E687 90D1 9D49 939C FC3F 8B4C 4EF4 B99A | .....I...?.LN...
+00000160 | B4E4 BEBD 5474 BD7B C192 C016 1BAE 0F65 | ....Tt.{.......e
+00000170 | A43B B3A8 5910 5D74 209F 326A BE33 4D72 | .;..Y.]t .2j.3Mr
+00000180 | 6999 B813 B61B CC46 3CDA E588 2471 C638 | i......F<...$q.8
+00000190 | A41A E09A 3C24 7872 14EF 3CF4 61EF FEA2 | ....<$xr..<.a...
+000001A0 | 5037 91EB 10E5 7EB3 318A 7C66 444D 4AF9 | P7....~.1.|fDMJ.
+000001B0 | 3ACB C6F4 FCBB 377A 26EE F1A9 3F20 561D | :.....7z&...? V.
+000001C0 | 1452 2660 0ECF AFA6 403E 63B8 8A5C      | .R&`....@>c..\
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

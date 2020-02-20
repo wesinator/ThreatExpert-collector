@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Mydoom.M@mm, Email-Worm.Win32.Mydoom.m, W32/Mydoom.o@MM, WORM_MYDOOM.GEN, W32/MyDoom-O, Worm:Win32/Mydoom.O@mm, Email-Worm.Win32.Mydoom, Win32/MyDoom.worm.M, Email-Worm.Win32.Mydoom.m.log, Backdoor.Zincite.A, W32/Mydoom.o@MM!a..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Mydoom.M@mm, Email-Worm.Win32.Mydoom.m, W32/Mydoom.o@MM, WORM_MYDOOM.GEN..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 May 2015, 11:28:12</li>
+<li>Processing time: 6 min 54 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBAB34A64AE1A90C92E40CE551B4B60EB</li>
+<li>File SHA-1: 0x15CEE0D59D381A9E9CA2CBEEA83396CF3487B264</li>
+<li>Filesize: 28,864 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-mydoom-m-mm.html" target="_blank">W32.Mydoom.M@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom-m.html" target="_blank">Email-Worm.Win32.Mydoom.m<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-mydoom-o-mm.html" target="_blank">W32/Mydoom.o@MM<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-mydoom-gen.html" target="_blank">WORM_MYDOOM.GEN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-mydoom-o.html" target="_blank">W32/MyDoom-O<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-win32-mydoom-o-mm.html" target="_blank">Worm:Win32/Mydoom.O@mm<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom.html" target="_blank">Email-Worm.Win32.Mydoom<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-mydoom-worm-m.html" target="_blank">Win32/MyDoom.worm.M<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Communication with a remote SMTP server and sending out email.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Mass-mailer that sends out email to the email addresses harvested from the local computer.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risks were identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/backdoor-zincite-sd5.html" target="_blank">Backdoor.Zincite!sd5<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Backdoor.Zincite!sd5 is a malicious application that runs in the background and allows remote access to your system, giving the attacker full control of your system.</td>
+</tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/adware-component-unrelated.html" target="_blank">Adware.Component.Unrelated<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">These common components have files and keys that are in different threats but the threats are not related to one another in that the author of the signature is not the same. It is recommended that all these entries be removed.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\Ctsnebs.log
+</td>
+<td class="cell_1">1,184 bytes</td>
+<td class="cell_1">MD5: 0x10CF1E85D1F58F053F7900E1A61E9AB6<br/>SHA-1: 0xBE89726087A12DA3A5E250C36812B822A835211A</td>
+<td class="cell_2">Email-Worm.Win32.Mydoom.m.log [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Windir%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">8,192 bytes</td>
+<td class="cell_1">MD5: 0xB0FE74719B1B647E2056641931907F4A<br/>SHA-1: 0xE858C206D2D1542A79936CB00D85DA853BFC95E2</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/backdoor-zincite-a.html" target="_blank">Backdoor.Zincite.A<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom-m.html" target="_blank">Email-Worm.Win32.Mydoom.m<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/>W32/Mydoom.o@MM!a [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-mydoom-gen.html" target="_blank">WORM_MYDOOM.GEN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-mydoom-o.html" target="_blank">W32/MyDoom-O<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/worm-win32-mydoom-o-backdoor.html" target="_blank">Worm:Win32/Mydoom.O!backdoor<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom-m.html" target="_blank">Email-Worm.Win32.Mydoom.m<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win-trojan-mydoom-8192.html" target="_blank">Win-Trojan/MyDoom.8192<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\tmp1.tmp
+<br/>
+%Temp%\tmp3.tmp
+<br/>
+%Temp%\tmp4.tmp
+<br/>
+%Temp%\tmp8.tmp
+<br/>
+%Windir%\<a href="http://www.threatexpert.com/files/java.exe.html" target="_blank">java.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">28,864 bytes</td>
+<td class="cell_1">MD5: 0xBAB34A64AE1A90C92E40CE551B4B60EB<br/>SHA-1: 0x15CEE0D59D381A9E9CA2CBEEA83396CF3487B264</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-mydoom-m-mm.html" target="_blank">W32.Mydoom.M@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom-m.html" target="_blank">Email-Worm.Win32.Mydoom.m<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-mydoom-o-mm.html" target="_blank">W32/Mydoom.o@MM<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-mydoom-gen.html" target="_blank">WORM_MYDOOM.GEN<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-mydoom-o.html" target="_blank">W32/MyDoom-O<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/worm-win32-mydoom-o-mm.html" target="_blank">Worm:Win32/Mydoom.O@mm<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-mydoom.html" target="_blank">Email-Worm.Win32.Mydoom<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-mydoom-worm-m.html" target="_blank">Win32/MyDoom.worm.M<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Temp%\zincite.log
+</td>
+<td class="cell_1">1,216 bytes</td>
+<td class="cell_1">MD5: 0x6A60A3CE541DD737BA7658B563CA9E57<br/>SHA-1: 0xD5641D597C0C59E5FCF9EAD68B390285C1044B06</td>
+<td class="cell_2">Email-Worm.Win32.Mydoom.m.log [Kaspersky Lab]<br/>Troj/MyDoomCn-B [Sophos]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">32,768 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/java.exe.html" target="_blank">java.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/java.exe.html" target="_blank">java.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">32,768 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Daemon</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Daemon</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>JavaVM = "%Windir%\java.exe"</li>
+<li>Services = "%Windir%\services.exe"</li>
+</ul>
+<br/>
+<em>so that java.exe runs every time Windows starts</em><br/>
+<em>so that services.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>computernamerootcomputernamerootccomputernamerootcomputernamerootcc</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">services.exe (%Windir%\services.exe)</td></tr>
+<tr><td class="cell_1">1046</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1068</td><td class="cell_1">UDP</td><td class="cell_2">java.exe (%Windir%\java.exe)</td></tr>
+<tr><td class="cell_1">1078</td><td class="cell_1">UDP</td><td class="cell_2">java.exe (%Windir%\java.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>206.137.17.89</li>
+<li>mail.[user's domain]</li>
+<li>cryptsoft.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mail.[user's domain]<td class="cell_2">1040</td><tr>
+<tr><td class="cell_1">24.131.210.134<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">208.189.196.18<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">10.0.0.111<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">16.57.233.190<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">16.69.10.33<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">4.240.78.237<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">4.240.75.111<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">4.240.75.97<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">16.23.58.153<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">4.240.78.3<td class="cell_2">1034</td><tr>
+<tr><td class="cell_1">mail.[user's domain]<td class="cell_2">1066</td><tr>
+<tr><td class="cell_1">mail.[user's domain]<td class="cell_2">1076</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">www.altavista.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">www.google.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">search.lycos.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">search.yahoo.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>web/results?q=someplace.com+contact+mail&amp;kgs=0&amp;kls=0&amp;nbq=20</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=contact+email+someplace.com&amp;num=100</li>
+<li>default.asp?lpv=1&amp;loc=searchhp&amp;tab=web&amp;query=reply+somewhere.com</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=someplace.com+e-mail&amp;num=50</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=mailto+somewhere.com&amp;num=50</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=contact+e-mail+somewhere.com&amp;num=100</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=mail+somewhere.com&amp;num=100</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=somewhere.com+mail&amp;num=50</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=contact+mail+nowhere.com&amp;num=100</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=mailto+someplace.com&amp;num=100</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=e-mail+someplace.com&amp;num=100</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=someplace.com+mailto&amp;num=100</li>
+<li>default.asp?lpv=1&amp;loc=searchhp&amp;tab=web&amp;query=email+someplace.com</li>
+<li>search?p=email+nowhere.com&amp;ei=UTF-8&amp;fr=fp-tab-web-t&amp;cop=mss&amp;tab=&amp;n=50</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=nowhere.com+mailto&amp;num=100</li>
+<li>search?p=email+nowhere.com&amp;ei=UTF-8&amp;fr=fp-tab-web-t&amp;cop=mss&amp;tab=&amp;n=100</li>
+<li>default.asp?lpv=1&amp;loc=searchhp&amp;tab=web&amp;query=somewhere.com+mailto</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=mailto+nowhere.com&amp;num=100</li>
+<li>search?p=reply+someplace.com&amp;ei=UTF-8&amp;fr=fp-tab-web-t&amp;cop=mss&amp;tab=&amp;n=50</li>
+<li>web/results?q=mailto+somewhere.com&amp;kgs=0&amp;kls=0&amp;nbq=50</li>
+<li>default.asp?lpv=1&amp;loc=searchhp&amp;tab=web&amp;query=e-mail+someplace.com</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=mail+someplace.com&amp;num=20</li>
+<li>search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=email+someplace.com&amp;num=100</li>
+</ul></ul>
+<ul><li>The following Internet downloads were started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+email+alumni.caltech.edu&kgs=0&kls=0&nbq=50</td><td class="cell_2">.edu</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=alumni.caltech.edu+contact+mail&num=100</td><td class="cell_2">ail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+alumni.caltech.edu&num=100</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+email+lebanon-online.com.lb&kgs=0&kls=0&nbq=50</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+lebanon-online.com.lb&num=100</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=alumni.caltech.edu+contact+email&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">mail</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=lebanon-online.com.lb+contact+mail</td><td class="cell_2">t+mail</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+email+lebanon-online.com.lb</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+msdirectservices.com&num=100</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+alumni.caltech.edu&num=100</td><td class="cell_2">.edu</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+mail+msdirectservices.com</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=msdirectservices.com+contact+email&kgs=0&kls=0</td><td class="cell_2">+email</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+alumni.caltech.edu</td><td class="cell_2">.edu</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+lebanon-online.com.lb&num=100</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=lebanon-online.com.lb+contact+email&num=100</td><td class="cell_2">t+email</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+e-mail+lebanon-online.com.lb&kgs=0&kls=0</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=msdirectservices.com+contact+mail</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+mail+alumni.caltech.edu</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+mail+msdirectservices.com&kgs=0&kls=0&nbq=50</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+e-mail+lebanon-online.com.lb</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=lebanon-online.com.lb+contact+mail</td><td class="cell_2">t+mail</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=lebanon-online.com.lb+contact+e-mail</td><td class="cell_2">t+e-mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+alumni.caltech.edu</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+msdirectservices.com&num=100</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+alumni.caltech.edu&num=100</td><td class="cell_2">h.edu</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+msdirectservices.com&num=20</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+lebanon-online.com.lb&num=100</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=lebanon-online.com.lb+contact+e-mail&num=100</td><td class="cell_2">t+e-mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=msdirectservices.com+contact+mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=lebanon-online.com.lb+contact+e-mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">t+e-mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=alumni.caltech.edu+contact+e-mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">-mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+lebanon-online.com.lb&num=50</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+e-mail+alumni.caltech.edu</td><td class="cell_2">h.edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+e-mail+alumni.caltech.edu&kgs=0&kls=0&nbq=50</td><td class="cell_2">h.edu</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=msdirectservices.com+contact+email</td><td class="cell_2">+email</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+e-mail+msdirectservices.com</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=msdirectservices.com+contact+e-mail</td><td class="cell_2">+e-mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=msdirectservices.com+contact+e-mail&num=50</td><td class="cell_2">+e-mail</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+mail+alumni.caltech.edu&kgs=0&kls=0&nbq=50</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+email+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">es.com</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+mail+lebanon-online.com.lb</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+email+alumni.caltech.edu</td><td class="cell_2">.edu</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=alumni.caltech.edu+contact+email&num=100</td><td class="cell_2">mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=msdirectservices.com+contact+mail&num=100</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+lebanon-online.com.lb</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+msdirectservices.com&num=50</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://search.lycos.com/default.asp?lpv=1&loc=searchhp&tab=web&query=contact+email+msdirectservices.com</td><td class="cell_2">es.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+lebanon-online.com.lb&num=50</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=msdirectservices.com+contact+email&num=100</td><td class="cell_2">+email</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=lebanon-online.com.lb+contact+mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">t+mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+lebanon-online.com.lb&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+e-mail+lebanon-online.com.lb&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=msdirectservices.com+contact+mail&kgs=0&kls=0&nbq=50</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=msdirectservices.com+contact+e-mail&num=100</td><td class="cell_2">+e-mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+alumni.caltech.edu&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=alumni.caltech.edu+contact+e-mail&kgs=0&kls=0&nbq=50</td><td class="cell_2">-mail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+msdirectservices.com&num=20</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+e-mail+msdirectservices.com&kgs=0&kls=0&nbq=50</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+msdirectservices.com&num=50</td><td class="cell_2">es.com</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+email+lebanon-online.com.lb&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+lebanon-online.com.lb&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+e-mail+lebanon-online.com.lb&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=alumni.caltech.edu+contact+mail</td><td class="cell_2">ail</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=alumni.caltech.edu+contact+mail&kgs=0&kls=0&nbq=50</td><td class="cell_2">ail</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+email+lebanon-online.com.lb&num=20</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+mail+lebanon-online.com.lb&num=20</td><td class="cell_2">com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=alumni.caltech.edu+contact+mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">ail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+email+alumni.caltech.edu&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">.edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=msdirectservices.com+contact+mail&kgs=0&kls=0</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+email+lebanon-online.com.lb&kgs=0&kls=0</td><td class="cell_2">.com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+alumni.caltech.edu&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=100</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=alumni.caltech.edu+contact+e-mail&num=100</td><td class="cell_2">-mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+e-mail+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+e-mail+lebanon-online.com.lb&kgs=0&kls=0&nbq=50</td><td class="cell_2">e.com.lb</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=lebanon-online.com.lb+contact+email&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">t+email</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=msdirectservices.com+contact+email&num=20</td><td class="cell_2">+email</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=contact+mail+alumni.caltech.edu&kgs=0&kls=0&nbq=20</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=msdirectservices.com+contact+mail&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">+mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+alumni.caltech.edu&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">edu</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=lebanon-online.com.lb+contact+e-mail&kgs=0&kls=0&nbq=50</td><td class="cell_2">t+e-mail</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+email+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">es.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=contact+e-mail+msdirectservices.com</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+e-mail+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=</td><td class="cell_2">ces.com</td></tr>
+<tr><td class="cell_1">http://www.altavista.com/web/results?q=lebanon-online.com.lb+contact+email&kgs=0&kls=0</td><td class="cell_2">t+email</td></tr>
+<tr><td class="cell_1">http://search.yahoo.com/search?p=contact+mail+msdirectservices.com&ei=UTF-8&fr=fp-tab-web-t&cop=mss&tab=&n=50</td><td class="cell_2">s.com</td></tr>
+<tr><td class="cell_1">http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=lebanon-online.com.lb+contact+email&num=50</td><td class="cell_2">t+email</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/smtp_mod.gif"/></td><td width="100%" class="h3">Generated SMTP traffic</td></tr></table>
+<ul><li>Email Senders:</li>
+<ul>
+<li>Mail Delivery Subsystem &lt;MAILER-DAEMON@[user's domain]&gt;</li>
+<li>[user's email address]</li>
+<li>Mail Administrator &lt;MAILER-DAEMON@[user's domain]&gt;</li>
+<li>madler@alumni.caltech.edu</li>
+</ul></ul>
+<ul><li>Email Recipients:</li>
+<ul>
+<li>[user's email address]</li>
+<li>eay@cryptsoft.com</li>
+</ul></ul>
+<ul><li>Email Subjects:</li>
+<ul>
+<li>RETURNED MAIL: SEE TRANSCRIPT FOR DETAILS</li>
+<li>Returned mail: Data format error</li>
+<li>hi</li>
+</ul></ul>
+<ul><li>Email Attachments:</li>
+<ul>
+<li>document.zip (39,666 bytes)</li>
+<li>[user's domain] (40,024 bytes)</li>
+<li>[user's email address] (39,502 bytes)</li>
+<li>eay@cryptsoft.com.zip (39,682 bytes)</li>
+</ul></ul>
+<ul><li>Email Body:</li></ul>
+<p><table width=50% class="tbl" cellpadding="25" cellspacing="0">
+<tr><td class="cell">The original message was received at Tue, 12 May 2015 11:28:16 -0700 from [user's domain] [222.84.100.17]
+----- The following addresses had permanent fatal errors -----
+[user's email address]</td></tr>
+<tr><td class="cell">`V??\???Â(L?]?1#?ok??"?B???{??
+S???Ds???C?????\?.W????1
+?Q?V??G???\??]cn???N??????
+8?X)e?e??GO???????????'?????*?M??z.???-?????B>?U?P?Wh????`?~E??R[D}?5Z;??
+?&'zl?H?GI?N?7????;?N??w?!T;???C??z>?-??F?4?Q???????????.?2??z?yfq???_m??y?_?1?#?6?"iPfT
+????a?mE?(Q?o???5??m????????F?\????%???f8?!?l4?6?r?%n?V????"A$????~?6?G?Vt?~?S???2????m??(???5W?qy?p#D?</td></tr>
+<tr><td class="cell">Your message was not delivered due to the following reason:
+Your message could not be delivered because the destination server was
+unreachable within the allowed queue period. The amount of time
+a message is queued before it is returned depends on local configura-
+tion parameters.
+Most likely there is a network problem that prevented delivery, but
+it is also possible that the computer is turned off, or does not
+have a mail system running right now.
+Your message was not delivered within 1 days:
+Server 31.103.106.123 is not responding.
+The following recipients could not receive this message:
+Please reply to postmaster@[user's domain]
+if you feel this message to be in error.</td></tr>
+<tr><td class="cell">The original message was received at Tue, 12 May 2015 11:28:34 -0700 from alumni.caltech.edu [21.46.246.78]
+----- The following addresses had permanent fatal errors -----
+----- Transcript of session follows -----
+.... while talking to 32.187.200.48:
+554 ... Message is too large
+554 ... Service unavailable</td></tr>
+</table></p>
+<ul><li>For example, the generated email message may look similar to the one shown below:</li></ul><p><img src="getimage.aspx?uid=55ca04b9-7ae8-4089-bd8e-5b2677ebd322&image=email&sub=1"></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

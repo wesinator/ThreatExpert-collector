@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Gen, Trojan.Win32.Scar.dcrm, Downloader-CLP, Troj/DwnLdr-JEA, Trojan.Win32.Scar, Win-Trojan/Scar.15360.V">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Gen, Trojan.Win32.Scar.dcrm, Downloader-CLP, Troj/DwnLdr-JEA..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 June 2014, 21:30:30</li>
+<li>Processing time: 7 min 17 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x1C16BD1488163C03CD506C2F71486A0F</li>
+<li>File SHA-1: 0xBCF6827B3F5A0215465F6BC1A20CA421B6E6A5C8</li>
+<li>Filesize: 15,360 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.Scar.dcrm [Kaspersky Lab]</li>
+<li>Downloader-CLP [McAfee]</li>
+<li>Troj/DwnLdr-JEA [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-scar.html" target="_blank">Trojan.Win32.Scar<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li>Win-Trojan/Scar.15360.V [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">%UserProfile%\[filename of the sample #1]</td><td class="cell_2">4,030,464 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">4,030,464 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%UserProfile% is a variable that specifies the current user's profile folder. By default, this is C:\Documents and Settings\[UserName] (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>systemupdate = "%UserProfile%\[filename of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that %UserProfile%\[filename of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>letusgozrmmv1.1</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[filename of the sample #1] (%UserProfile%\[filename of the sample #1])</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[filename of the sample #1] (%UserProfile%\[filename of the sample #1])</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">[filename of the sample #1] (%UserProfile%\[filename of the sample #1])</td></tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">media.conci.com.au</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">media.sadayuki.jp</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>index3.html?1402029033</li>
+<li>index3.html?1402029034</li>
+<li>index3.html?1402029035</li>
+<li>index3.html?1402029036</li>
+<li>index3.html?1402029037</li>
+<li>index3.html?1402029038</li>
+<li>index3.html?1402029039</li>
+<li>index3.html?1402029040</li>
+<li>index3.html?1402029041</li>
+<li>index3.html?1402029042</li>
+<li>index3.html?1402029043</li>
+<li>index3.html?1402029044</li>
+<li>index3.html?1402029045</li>
+<li>index3.html?1402029046</li>
+<li>index3.html?1402029047</li>
+<li>index3.html?1402029048</li>
+<li>index3.html?1402029049</li>
+<li>index3.html?1402029050</li>
+<li>index3.html?1402029051</li>
+<li>index3.html?1402029052</li>
+<li>index3.html?1402029053</li>
+<li>index3.html?1402029054</li>
+<li>index3.html?1402029055</li>
+<li>index3.html?1402029056</li>
+<li>index3.html?1402029057</li>
+<li>index3.html?1402029058</li>
+<li>index3.html?1402029059</li>
+<li>index3.html?1402029060</li>
+<li>index3.html?1402029061</li>
+<li>index3.html?1402029062</li>
+<li>index3.html?1402029063</li>
+<li>index3.html?1402029064</li>
+<li>index3.html?1402029065</li>
+<li>index3.html?1402029066</li>
+<li>index3.html?1402029067</li>
+<li>index3.html?1402029068</li>
+<li>index3.html?1402029069</li>
+<li>index3.html?1402029070</li>
+<li>index3.html?1402029071</li>
+<li>index3.html?1402029072</li>
+<li>index3.html?1402029073</li>
+<li>index3.html?1402029074</li>
+<li>index3.html?1402029075</li>
+<li>index3.html?1402029076</li>
+<li>index3.html?1402029077</li>
+<li>index3.html?1402029078</li>
+<li>index3.html?1402029079</li>
+<li>index3.html?1402029080</li>
+<li>index3.html?1402029081</li>
+<li>index3.html?1402029082</li>
+<li>index3.html?1402029083</li>
+<li>index3.html?1402029084</li>
+<li>index3.html?1402029085</li>
+<li>index3.html?1402029086</li>
+<li>index3.html?1402029087</li>
+<li>index3.html?1402029088</li>
+<li>index3.html?1402029089</li>
+<li>index3.html?1402029090</li>
+<li>index3.html?1402029091</li>
+<li>index3.html?1402029092</li>
+<li>index3.html?1402029093</li>
+<li>index3.html?1402029094</li>
+<li>index3.html?1402029095</li>
+<li>index3.html?1402029096</li>
+<li>index3.html?1402029097</li>
+<li>index3.html?1402029098</li>
+<li>index3.html?1402029099</li>
+<li>index3.html?1402029100</li>
+<li>index3.html?1402029101</li>
+<li>index3.html?1402029102</li>
+<li>index3.html?1402029103</li>
+<li>index3.html?1402029104</li>
+<li>index3.html?1402029105</li>
+<li>index3.html?1402029106</li>
+<li>index3.html?1402029107</li>
+<li>index3.html?1402029108</li>
+<li>index3.html?1402029109</li>
+<li>index3.html?1402029110</li>
+<li>index3.html?1402029111</li>
+<li>index3.html?1402029112</li>
+<li>index3.html?1402029113</li>
+<li>index3.html?1402029114</li>
+<li>index3.html?1402029115</li>
+<li>index3.html?1402029116</li>
+<li>index3.html?1402029117</li>
+<li>index3.html?1402029118</li>
+<li>index3.html?1402029119</li>
+<li>index3.html?1402029120</li>
+<li>index3.html?1402029121</li>
+<li>index3.html?1402029122</li>
+<li>index3.html?1402029123</li>
+<li>index3.html?1402029124</li>
+<li>index3.html?1402029125</li>
+<li>index3.html?1402029126</li>
+<li>index3.html?1402029127</li>
+<li>index3.html?1402029128</li>
+<li>index3.html?1402029129</li>
+<li>index3.html?1402029130</li>
+<li>index3.html?1402029131</li>
+<li>index3.html?1402029132</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

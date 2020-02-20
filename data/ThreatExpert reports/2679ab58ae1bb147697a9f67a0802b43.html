@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 6 July 2014, 03:28:16</li>
+<li>Processing time: 6 min 46 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x2679AB58AE1BB147697A9F67A0802B43</li>
+<li>File SHA-1: 0xB76EA3E2C2CA5A5E0F808F4C7C006C2491A1736D</li>
+<li>Filesize: 1,530,504 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=bc858ada-47e1-451d-9a02-dbbaa1b714e8&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\NCH Software</li>
+<li>%CommonPrograms%\NCH Software Suite</li>
+<li>%CommonPrograms%\Video Related Programs</li>
+<li>%MyDocuments%\Debut</li>
+<li>%ProgramFiles%\NCH Software</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%MyDocuments% is a variable that refers to the file system directory used to physically store a user's common repository of documents. A typical path is C:\Documents and Settings\[UserName]\My Documents.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">debut.exe</td><td class="cell_1">%ProgramFiles%\nch software\debut\debut.exe</td><td class="cell_2">1,896,448 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,536,000 bytes</td></tr>
+<tr><td class="cell_1">mp3el2.exe</td><td class="cell_1">%ProgramFiles%\NCH Software\Debut\mp3el2.exe</td><td class="cell_2">196,608 bytes</td></tr>
+<tr><td class="cell_1">nchsetup.exe</td><td class="cell_1">%Temp%\n1s\nchsetup.exe</td><td class="cell_2">1,896,448 bytes</td></tr>
+<tr><td class="cell_1">x264enc4.exe</td><td class="cell_1">%ProgramFiles%\NCH Software\Debut\x264enc4.exe</td><td class="cell_2">479,232 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">debuthooksdll.dll</td><td class="cell_1">%ProgramFiles%\NCH Software\Debut\debuthooksdll.dll</td><td class="cell_2">Process name: debut.exe<br/>Process filename: %ProgramFiles%\nch software\debut\debut.exe<br/>Address space: 0x1420000 - 0x1433000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Debut</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\AppPaths</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\AppPaths\Debut.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Components</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Components\mp3el2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Components\x264enc4</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Debut</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Debut\Settings</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Debut\Software</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound\Components</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound\Components\mp3el2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound\Components\x264enc4</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{0CD7A5C0-9F37-11CE-AE65-08002B2E1262}</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{0CD7A5C0-9F37-11CE-AE65-08002B2E1262}\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{0CD7A5C0-9F37-11CE-AE65-08002B2E1262}\Shell\Extract with Express Zip</li>
+<li>HKEY_CURRENT_USER\Software\Classes\CLSID\{0CD7A5C0-9F37-11CE-AE65-08002B2E1262}\Shell\Extract with Express Zip\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.7z</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.aac</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.dct</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.divx</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.docx</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.ds2</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.dss</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.flac</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.gsm</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.gz</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.iso</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.ivr</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.m4a</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.m4v</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.meo</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.moh</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.mov</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.mp4</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.mpdp</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.mpeg2</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.nef</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.odt</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.ogg</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.rar</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.spj</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.tar</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.tar.gz</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.vob</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.voc</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.vox</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.vpj</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.wdp</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.wp</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.wpd</li>
+<li>HKEY_CURRENT_USER\Software\Classes\.xvid</li>
+<li>HKEY_CURRENT_USER\Software\Classes\7zfile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\7zfile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\7zfile\Shell\Extract with Express Zip</li>
+<li>HKEY_CURRENT_USER\Software\Classes\7zfile\Shell\Extract with Express Zip\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Convert sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Convert sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Edit sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Edit sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AcroExch.Document</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AcroExch.Document\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AcroExch.Document\Shell\Convert file type</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AcroExch.Document\Shell\Convert file type\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Convert sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Convert sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Edit sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Edit sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Convert video file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Convert video file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Edit video file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Edit video file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Convert sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Convert sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Edit sound file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Edit sound file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Convert video file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Convert video file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Edit video file</li>
+<li>HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Edit video file\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\dctfile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\dctfile\DefaultIcon</li>
+<li>HKEY_CURRENT_USER\Software\Classes\dctfile\shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\dctfile\shell\open</li>
+<li>HKEY_CURRENT_USER\Software\Classes\dctfile\shell\open\command</li>
+<li>HKEY_CURRENT_USER\Software\Classes\divxfile</li>
+<li>HKEY_CURRENT_USER\Software\Classes\divxfile\Shell</li>
+<li>HKEY_CURRENT_USER\Software\Classes\divxfile\Shell\Convert video file</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Debut]</li><ul>
+<li>DisplayName = "Debut Video Capture Software"</li>
+<li>Publisher = "NCH Software"</li>
+<li>UninstallString = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -uninstall"</li>
+<li>DisplayIcon = "%ProgramFiles%\NCH Software\Debut\debut.exe"</li>
+<li>Version = "1.68"</li>
+<li>VersionMajor = "1"</li>
+<li>VersionMinor = "68"</li>
+<li>InstallLocation = "%ProgramFiles%\NCH Software\Debut"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\AppPaths\Debut.exe]</li><ul>
+<li>AppPath = "%ProgramFiles%\NCH Software\Debut\debut.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Components\x264enc4]</li><ul>
+<li>Path = "%ProgramFiles%\NCH Software\Components\x264enc4\x264enc4.exe"</li>
+<li>Version = "1.00"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Components\mp3el2]</li><ul>
+<li>Path = "%ProgramFiles%\NCH Software\Components\mp3el2\lame.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Debut\Software]</li><ul>
+<li>Installer = "%ProgramFiles%\NCH Software\Debut\debutsetup_v1.68.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Software\Debut\Settings]</li><ul>
+<li>RelatedRuns = "-1"</li>
+<li>InstallerPath = "%ProgramFiles%\NCH Software\Debut"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound\Components\x264enc4]</li><ul>
+<li>Path = "%ProgramFiles%\NCH Software\Components\x264enc4\x264enc4.exe"</li>
+<li>Version = "1.00"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\NCH Swift Sound\Components\mp3el2]</li><ul>
+<li>Path = "%ProgramFiles%\NCH Software\Components\mp3el2\lame.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{0CD7A5C0-9F37-11CE-AE65-08002B2E1262}\Shell\Extract with Express Zip\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind ExpressZip "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.7z]</li><ul>
+<li>(Default) = "7zfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.aac]</li><ul>
+<li>(Default) = "aacfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.dct]</li><ul>
+<li>(Default) = "dctfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.divx]</li><ul>
+<li>(Default) = "divxfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.docx]</li><ul>
+<li>(Default) = "docxfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.ds2]</li><ul>
+<li>(Default) = "ds2file"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.dss]</li><ul>
+<li>(Default) = "dssfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.flac]</li><ul>
+<li>(Default) = "flacfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.gsm]</li><ul>
+<li>(Default) = "gsmfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.gz]</li><ul>
+<li>(Default) = "gzfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.iso]</li><ul>
+<li>(Default) = "isofile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.ivr]</li><ul>
+<li>(Default) = "ivrfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.m4a]</li><ul>
+<li>(Default) = "m4afile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.m4v]</li><ul>
+<li>(Default) = "m4vfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.meo]</li><ul>
+<li>(Default) = "meofile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.moh]</li><ul>
+<li>(Default) = "mohfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.mov]</li><ul>
+<li>(Default) = "movfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.mp4]</li><ul>
+<li>(Default) = "mp4file"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.mpdp]</li><ul>
+<li>(Default) = "mpdpfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.mpeg2]</li><ul>
+<li>(Default) = "mpeg2file"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.nef]</li><ul>
+<li>(Default) = "neffile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.odt]</li><ul>
+<li>(Default) = "odtfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.ogg]</li><ul>
+<li>(Default) = "oggfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.rar]</li><ul>
+<li>(Default) = "rarfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.spj]</li><ul>
+<li>(Default) = "spjfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.tar]</li><ul>
+<li>(Default) = "tarfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.tar.gz]</li><ul>
+<li>(Default) = "tar.gzfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.vob]</li><ul>
+<li>(Default) = "vobfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.voc]</li><ul>
+<li>(Default) = "vocfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.vox]</li><ul>
+<li>(Default) = "voxfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.vpj]</li><ul>
+<li>(Default) = "vpjfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.wdp]</li><ul>
+<li>(Default) = "wdpfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.wp]</li><ul>
+<li>(Default) = "wpfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.wpd]</li><ul>
+<li>(Default) = "wpdfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\.xvid]</li><ul>
+<li>(Default) = "xvidfile"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\7zfile\Shell\Extract with Express Zip\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind ExpressZip "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\aacfile\Shell\Edit sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind WavePad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\AcroExch.Document\Shell\Convert file type\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Doxillion "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\AIFFFile\Shell\Edit sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind WavePad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Convert video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Prism "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ASFFile\Shell\Edit video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind VideoPad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\AUFile\Shell\Edit sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind WavePad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Convert video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Prism "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\avifile\Shell\Edit video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind VideoPad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dctfile\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Scribe "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dctfile\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dctfile\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,19"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dctfile]</li><ul>
+<li>(Default) = "Unhandled Extension Handler Finder"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\divxfile\Shell\Convert video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Prism "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\divxfile\Shell\Edit video file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind VideoPad "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\docxfile\Shell\Convert file type\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Doxillion "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ds2file\shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ds2file\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Scribe "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ds2file\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ds2file\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,19"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ds2file]</li><ul>
+<li>(Default) = "Unhandled Extension Handler Finder"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dssfile\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Scribe "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dssfile\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dssfile\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,19"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\dssfile]</li><ul>
+<li>(Default) = "Unhandled Extension Handler Finder"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\flacfile\Shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\giffile\Shell\Convert image file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Pixillion "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\giffile\Shell\Create slideshow\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind PhotoStage "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\gsmfile\Shell\Convert sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Switch "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\gzfile\Shell\Extract with Express Zip\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind ExpressZip "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\htmlfile\Shell\Convert file type\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Doxillion "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\isofile\shell\Extract with Express Zip\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind ExpressZip "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\isofile\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind ExpressBurn "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\isofile\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\isofile\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,19"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\isofile]</li><ul>
+<li>(Default) = "Unhandled Extension Handler Finder"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ivrfile\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind IVM "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ivrfile\shell]</li><ul>
+<li>(Default) = "Open"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ivrfile\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\shell32.dll,19"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\ivrfile]</li><ul>
+<li>(Default) = "Unhandled Extension Handler Finder"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\jpegfile\Shell\Convert image file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind Pixillion "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\jpegfile\Shell\Create slideshow\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind PhotoStage "%L""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\m4afile\Shell\Edit sound file\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\NCH Software\Debut\debut.exe" -extfind WavePad "%L""</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>DDrawWindowListMutex</li>
+<li>DDrawDriverObjectListMutex</li>
+<li>__DDrawExclMode__</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>google.com</li>
+<li>yahoo.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">yahoo.com<td class="cell_2">1033</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">google.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">yahoo.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">www.nch.com.au</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>software/bug.html?software=Debut&amp;version=1.68&amp;xi=GUI-AccessViolation-Win51-nchsetup.exe-MAINGuiIni2</li>
+<li>software/index.jpg</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\NCH Software\Debut\debuthooksdll.dll</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

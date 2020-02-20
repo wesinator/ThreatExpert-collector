@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.Agent.cnav, Troj/Redosdru-A, Trojan.Win32.Redosdru">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.Agent.cnav, Troj/Redosdru-A..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 June 2016, 12:37:59</li>
+<li>Processing time: 5 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xCBAEABB82FC384207B647596B7E0F84B</li>
+<li>File SHA-1: 0x1F604ACF1AC693D4A18685BE503D993FF6B576FB</li>
+<li>Filesize: 85,504 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.Agent.cnav [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/troj-redosdru-a.html" target="_blank">Troj/Redosdru-A<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-redosdru.html" target="_blank">Trojan.Win32.Redosdru<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">208,896 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/nt6to4.dll.html" target="_blank">nt6to4.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/nt6to4.dll.html" target="_blank">nt6to4.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x630000 - 0x657000</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">6to4</td><td class="cell_1">ruptrsv?</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "6to4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4\0000]</li><ul>
+<li>Service = "6to4"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "ruptrsv?"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_6TO4]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Enum]</li><ul>
+<li>0 = "Root\LEGACY_6TO4\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4\Parameters]</li><ul>
+<li>ServiceDll = "%System%\nt6to4.dll"</li>
+<li>ServiceMain = "FreeTest"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\6to4]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "ruptrsv?"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?????????????????????????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "6to4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4\0000]</li><ul>
+<li>Service = "6to4"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "ruptrsv?"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_6TO4]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Enum]</li><ul>
+<li>0 = "Root\LEGACY_6TO4\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4\Parameters]</li><ul>
+<li>ServiceDll = "%System%\nt6to4.dll"</li>
+<li>ServiceMain = "FreeTest"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\6to4]</li><ul>
+<li>Type = 0x00000120</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k netsvcs"</li>
+<li>DisplayName = "ruptrsv?"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "?????????????????????????????"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>feng12763.3322.org</li>
+<li>feng12763.oicp.net</li>
+<li>feng5.f3322.net</li>
+<li>byw.s.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">feng12763.3322.org<td class="cell_2">2016</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2016:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6362 3173 7432 0000 0048 0400 0078 9CEB | cb1st2...H...x..
+00000010 | AD67 6060 6420 0238 E7E7 1694 96A4 16F9 | .g``d .8........
+00000020 | 25E6 A612 A37E 148C 8251 3062 0000 3F66 | %....~...Q0b..?f
+00000030 | 05DE 6362 3173 7412 0200 001F 0500 0078 | ..cb1st........x
+00000040 | 9C4B 6360 6098 03C4 AC40 CC08 C41A 5C0C | .Kc``....@....\.
+00000050 | 0C4C 403A 38B5 A82C 3339 5521 2031 395B | .L@:8..,39U! 19[
+00000060 | C188 81EE 00E4 0606 4646 86ED DC0C 0CF5 | ........FF......
+00000070 | 4096 737E 6E41 6949 6A91 5F62 6E2A 9146 | @.s~nAiIj._bn*.F
+00000080 | 30C2 88FF 401C 09C4 BFD9 1918 E602 050C | 0...@...........
+00000090 | 2C0D 4C0D 4C0C 2EFF F5DC FEEF DCC7 63DF | ,.L.L.........c.
+000000A0 | 69E3 8391 050C 3001 03C3 E147 DB2F 1E3B | i.....0....G./.;
+000000B0 | B0E9 D186 6708 851C E7C2 421E 7D3F C588 | ....g.....B.}?..
+000000C0 | A4F7 4EAC 3613 8CBD 63DE 7BC6 0A46 5306 | ..N.6...c.{..FS.
+000000D0 | 7905 4686 0340 B600 54BC 2672 6921 48FC | y.F..@..T.&ri!H.
+000000E0 | 86AD 1858 FD8E 686D 2664 3384 81B8 211A | ...X..hm&d3...!.
+000000F0 | 620E 485D 010B 44DC 032A E670 9017 CC57 | b.H]..D..*.p...W
+00000100 | 81F2 D7FC D766 3A51 B8BC 9081 C194 E13F | .....f:Q.......?
+00000110 | 1080 CCFF E1B4 BA10 661E 2330 F185 01CD | ........f.#0....
+00000120 | F812 A5CD 64A4 BDBA F005 509F C4BB 0935 | ....d.....P....5
+00000130 | 05AC 136B 6418 2CC0 E953 8799 81E1 0190 | ...kd.,..S......
+00000140 | AE15 45B8 8311 92EC 1840 59C6 810B AA06 | ..E......@Y.....
+00000150 | 98B9 8E00 F583 FC03 B277 4ACC E1F2 0285 | .........wJ.....
+00000160 | 83E5 207B 1F1F 3A54 9EA5 9B0C F62B 2334 | .. {..:T.....+#4
+00000170 | 2C1E 00D3 A907 D4FD 4240 EC02 3447 152A | ,.......B@..4G.*
+00000180 | 8792 0F18 21E9 5B01 888B 1962 1842 1892 | ....!.[....b.B..
+00000190 | C17A 22E6 BE67 04D9 57C4 90C8 3001 C897 | .z"..g..W...0...
+000001A0 | 78C7 5003 F267 0CD0 2FAF 674D AC01 2B4A | x.P..g../.gM..+J
+000001B0 | F851 7F25 469B 494B ADA1 6602 9066 00D2 | .Q.%F.IK..f..f..
+000001C0 | 8C50 3783 EC17 6180 6620 2880 C583 0328 | .P7...a.f (....(
+000001D0 | AE0A FED6 83F4 C3E4 5A80 FA41 769E E161 | ........Z..Av..a
+000001E0 | 60F8 3CB3 B986 0368 16C8 6F20 339D 541B | `.<....h..o 3.T.
+000001F0 | 6A40 EE9F 7475 42CD EED9 1036 0898 FD4C | j@..tuB....6...L
+00000200 | 06FB 0BE4 A702 8D64 30CD 08C4 20B1 65EA | .......d0... .e.
+00000210 | C908 8B81 F6D4 C442 DC69 110B 7127 729A | .......B.i..q'r.
+00000220 | C1E5 4E30 80BA D307 A816 9458 7480 B4A1 | ..N0.......Xt...
+00000230 | 99B9 3928 0EB0 B913 E47E 64C0 A895 0C00 | ..9(.....~d.....
+00000240 | 7D4D BD15                               | }M..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

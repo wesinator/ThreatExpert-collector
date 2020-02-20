@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-001">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-001</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 26 December 2016, 00:33:17</li>
+<li>Processing time: 5 min 28 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x23B24F00B01EECC2A2DDF948C099E2C8</li>
+<li>File SHA-1: 0xAB10AA3F3ADFA2F2AE48158E224D1D46C082734A</li>
+<li>Filesize: 40,960 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/mal-behav-001.html" target="_blank">Mal/Behav-001<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Terms.EXE</td><td class="cell_1">%System%\terms.exe</td><td class="cell_2">40,960 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">40,960 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Wsmney ldbgeqwn</td><td class="cell_1">SuperProServer</td><td class="cell_1">"Starting"</td><td class="cell_2">%System%\Terms.EXE</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Wsmney ldbgeqwn"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000]</li><ul>
+<li>Service = "Wsmney ldbgeqwn"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WSMNEY_LDBGEQWN]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WSMNEY_LDBGEQWN\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmney ldbgeqwn]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-12-26 00:33"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Terms.EXE"</li>
+<li>DisplayName = "SuperProServer"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Sentinel SuperPro Server"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Wsmney ldbgeqwn"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN\0000]</li><ul>
+<li>Service = "Wsmney ldbgeqwn"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WSMNEY_LDBGEQWN]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WSMNEY_LDBGEQWN\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmney ldbgeqwn]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-12-26 00:33"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Terms.EXE"</li>
+<li>DisplayName = "SuperProServer"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Sentinel SuperPro Server"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>free1.neiwangtong.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">free1.neiwangtong.com<td class="cell_2">1000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | E213 EE1C BC73 2AD0 EF13 2B6E 5DC6 347D | .....s*...+n].4}
+00000010 | 096C 242E 4B0F 569F 233C FCB2 C10A E6D3 | .l$.K.V.#<......
+00000020 | 5E15 D037 7E98 1B63 FFF3 2BC3 CB80 458B | ^..7~..c..+...E.
+00000030 | 96B3 55A5 92C1 46AD AD73 A435 ECD6 38FF | ..U...F..s.5..8.
+00000040 | FA7E EE4A 0834 0A4C D9DE 235B 85A8 E896 | .~.J.4.L..#[....
+00000050 | 3BAB 143B B15A 78E4 58E8 27EB 3AD8 8B17 | ;..;.Zx.X.'.:...
+00000060 | 5D01 C57E B659 012C 1D92 B8FC 3FCB C997 | ]..~.Y.,....?...
+00000070 | 71D5 335C 8A39 F2CA 0FA5 4116 9307 F84F | q.3\.9....A....O
+00000080 | 23C9 7BCE 5AEA 4F5D E891 7712 4BDB 822E | #.{.Z.O]..w.K...
+00000090 | F831 A47C 4854 E1F2 0FBF B095 5D57 CD57 | .1.|HT......]W.W
+000000A0 | 886B E28B 3030 BB13 5092 3111 EE4C EABC | .k..00..P.1..L..
+000000B0 | 533C 19D2 62A6 68E1 44EF CF71 AB7F B417 | S<..b.h.D..q....
+000000C0 | 4CF2 7BDA 1613 47B8 54DA 0FE6 7272 ABF1 | L.{...G.T...rr..
+000000D0 | 1166 3BD5 F7D3 04BF 085B 194C C83B CB28 | .f;......[.L.;.(
+000000E0 | F429 93DD 9DB1 EDAD 92F0 78AF DB7D 966E | .)........x..}.n
+000000F0 | 801F CE44 C4A5 6E0D 4ECF 91EC 9739 7B69 | ...D..n.N....9{i
+00000100 | 5B38 EE5A FEA3 A8A7 1914 FF9B 7589 37ED | [8.Z........u.7.
+00000110 | E309 3103 B8DA 319F 86B9 B84B 926D F71F | ..1...1....K.m..
+00000120 | 1EC3 E40B 9D0A DC84 A412 788F 6BE2 C32B | ..........x.k..+
+00000130 | 9E54 42C7 8AED 5DCD 1EAA 488C 3E72 A0E3 | .TB...]...H.>r..
+00000140 | 6F04 C855 44AF 3D5F 2111 5665 3331 CDD4 | o..UD.=_!.Ve31..
+00000150 | 5AFD E306 47FA 16C0 BC1C EF06 C5AC 7E1B | Z...G.........~.
+00000160 | 0A6C 687B 96C0 EA0A 4A51 D6EF 31A4 A1D6 | .lh{....JQ..1...
+00000170 | 617D FBA7 F16A 4456 8D7E 5BB1 2B13 90DC | a}...jDV.~[.+...
+00000180 | 6673 D7A1 3BC6 6093 882D 3ADF 36D5 FE4F | fs..;.`..-:.6..O
+00000190 | 3BB5 BED1 34D5 7AA3 BF77 1B54 EAF9 B40F | ;...4.z..w.T....
+000001A0 | 13FC BD6A E4CE F342 1EC6 0F5D DEDE 01E1 | ...j...B...]....
+000001B0 | 9160 7C28 D8BD FE87 B0B0 951C 69CA 3041 | .`|(........i.0A
+000001C0 | 6E07 C66F DDD6 E375 C92A 641E 6CD4 3367 | n..o...u.*d.l.3g
+000001D0 | 499D 4452 9004 8816 14                  | I.DR.....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

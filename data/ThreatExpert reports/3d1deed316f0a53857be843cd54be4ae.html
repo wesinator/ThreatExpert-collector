@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 10 March 2015, 00:09:08</li>
+<li>Processing time: 6 min 42 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3D1DEED316F0A53857BE843CD54BE4AE</li>
+<li>File SHA-1: 0x5CBB20F3F0D6D6EF4193F651ECB461F612EDD38F</li>
+<li>Filesize: 3,639,128 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">180,224 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-E0D40.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">1,241,088 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\VBReFormer 2014 Free_is1</li>
+<li>HKEY_CURRENT_USER\Software\VBReFormer</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217746-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217752-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217755-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B21775E-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\VBReFormer 2014 Free_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.5.5 (u)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\VBReFormer"</li>
+<li>InstallLocation = "%ProgramFiles%\VBReFormer\"</li>
+<li>Inno Setup: Icon Group = "VBReFormer"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = ""</li>
+<li>Inno Setup: Deselected Tasks = "desktopicon,quicklaunchicon"</li>
+<li>Inno Setup: Language = "eng"</li>
+<li>DisplayName = "VBReFormer 6.2 Free Edition"</li>
+<li>UninstallString = ""%ProgramFiles%\VBReFormer\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\VBReFormer\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "6.2.210"</li>
+<li>Publisher = "Decompiler-vb.net"</li>
+<li>URLInfoAbout = "http://www.decompiler-vb.net/"</li>
+<li>HelpLink = "http://www.decompiler-vb.net/"</li>
+<li>URLUpdateInfo = "http://www.decompiler-vb.net/"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20150310"</li>
+<li>MajorVersion = 0x00000006</li>
+<li>MinorVersion = 0x00000002</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\VBReFormer]</li><ul>
+<li>ASCCodeColoration = "0"</li>
+<li>CodeType = "0"</li>
+<li>ColorASMInstr = "32768"</li>
+<li>ColorASMReg = "16384"</li>
+<li>ColorVBInstr = "12582912"</li>
+<li>ColorVBRem = "32768"</li>
+<li>ColorVBString = "128"</li>
+<li>EnableDisassemblage = "-1"</li>
+<li>LanguageUsed = "2"</li>
+<li>SolveAPIReferences = "-1"</li>
+<li>UsedMoreThanOnce = "-1"</li>
+<li>VBCodeColoration = "-1"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217746-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217752-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B217755-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8B21775E-717D-11CE-AB5B-D41203C10000}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8B217740-717D-11CE-AB5B-D41203C10000}\1.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\vbreformer\MSVBVM60.DLL</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

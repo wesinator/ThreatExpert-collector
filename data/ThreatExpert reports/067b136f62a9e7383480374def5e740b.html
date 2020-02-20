@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 April 2015, 00:29:56</li>
+<li>Processing time: 7 min 50 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x067B136F62A9E7383480374DEF5E740B</li>
+<li>File SHA-1: 0x33AA5FE7765E3011E296B24B6D1990480C419662</li>
+<li>Filesize: 902,269 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,024,000 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/WinUpdat.exe.html" target="_blank">WinUpdat.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/winupdat.exe.html" target="_blank">winupdat.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">N/A</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>localhost</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">jorteto.zapto.org</td><td class="cell_1">81</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 504F 5354 202F 6973 2D72 6561 6479 2048 | POST /is-ready H
+00000010 | 5454 502F 312E 310D 0A41 6363 6570 743A | TTP/1.1..Accept:
+00000020 | 202A 2F2A 0D0A 4163 6365 7074 2D4C 616E |  */*..Accept-Lan
+00000030 | 6775 6167 653A 2065 6E2D 7573 0D0A 5573 | guage: en-us..Us
+00000040 | 6572 2D41 6765 6E74 3A20 3C7C 3E43 4F4D | er-Agent: <|>COM
+00000050 | 5055 5445 524E 414D 453C 7C3E 5573 6572 | PUTERNAME<|>User
+00000060 | 4E61 6D65 3C7C 3E70 6C75 733C 7C3E 6E61 | Name<|>plus<|>na
+00000070 | 6E2D 6176 3C7C 3E66 616C 7365 202D 2034 | n-av<|>false - 4
+00000080 | 2F39 2F32 3031 350D 0A41 6363 6570 742D | /9/2015..Accept-
+00000090 | 456E 636F 6469 6E67 3A20 677A 6970 2C20 | Encoding: gzip,
+000000A0 | 6465 666C 6174 650D 0A48 6F73 743A 206C | deflate..Host: l
+000000B0 | 6F63 616C 686F 7374 3A38 310D 0A43 6F6E | ocalhost:81..Con
+000000C0 | 7465 6E74 2D4C 656E 6774 683A 2030 0D0A | tent-Length: 0..
+000000D0 | 436F 6E6E 6563 7469 6F6E 3A20 4B65 6570 | Connection: Keep
+000000E0 | 2D41 6C69 7665 0D0A 4361 6368 652D 436F | -Alive..Cache-Co
+000000F0 | 6E74 726F 6C3A 206E 6F2D 6361 6368 650D | ntrol: no-cache.
+00000100 | 0A0D 0A                                 | ...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

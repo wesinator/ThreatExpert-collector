@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 February 2015, 15:15:42</li>
+<li>Processing time: 6 min 15 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x41BC5BC831D434BFE166D0936F25F499</li>
+<li>File SHA-1: 0x0A7A03B6D2E52AFF11C7BF88048919957E2FE034</li>
+<li>Filesize: 1,116,432 bytes</li>
+<li>Packer info: <em>packed with: </em>WiseSFXDropper [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,126,400 bytes</td></tr>
+<tr><td class="cell_1">GLB1.tmp</td><td class="cell_1">%Temp%\GLB1.tmp</td><td class="cell_2">28,672 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ECD5188E-CC86-4BC3-AA19-5836E40973E4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ECD5188E-CC86-4BC3-AA19-5836E40973E4}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{ecd5188e-cc86-4bc3-aa19-5836e40973e4}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Secretia-_El_Secreto_y_la_Ley_de_Atraccion Toolbar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Community Alerts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Secretia-_El_Secreto_y_la_Ley_de_Atraccion</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Wise Solutions</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Wise Solutions\Wise Installation System</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Wise Solutions\Wise Installation System\Repair</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Wise Solutions\Wise Installation System\Repair\C:/Program Files/Secretia-_El_Secreto_y_la_Ley_de_Atraccion/INSTALL.LOG</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{afdbddaa-5d3f-42ee-b79c-185a7020515b}</li>
+<li>HKEY_CURRENT_USER\Software\Conduit</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Data</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Data\Channels</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\RegisteredSources</li>
+<li>HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Settings</li>
+<li>HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion</li>
+<li>HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar</li>
+<li>HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar\IE5</li>
+<li>HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar\settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Conduit\Community Alerts\Alert.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3c471948-f874-49f5-b338-4f214a2ee0b1}]</li><ul>
+<li>(Default) = "Conduit Community Alerts"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ECD5188E-CC86-4BC3-AA19-5836E40973E4}\InprocServer32]</li><ul>
+<li>(Default) = "%ProgramFiles%\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\tbSecr.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ECD5188E-CC86-4BC3-AA19-5836E40973E4}]</li><ul>
+<li>(Default) = "Secretia- El Secreto y la Ley de Atraccion Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Toolbar]</li><ul>
+<li>{ecd5188e-cc86-4bc3-aa19-5836e40973e4} = "Secretia-_El_Secreto_y_la_Ley_de_Atraccion Toolbar"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{ecd5188e-cc86-4bc3-aa19-5836e40973e4}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Secretia-_El_Secreto_y_la_Ley_de_Atraccion Toolbar]</li><ul>
+<li>DisplayName = "Secretia-_El_Secreto_y_la_Ley_de_Atraccion Toolbar"</li>
+<li>UninstallString = "C:\PROGRA~1\SECRET~1\UNWISE.EXE C:\PROGRA~1\SECRET~1\INSTALL.LOG"</li>
+<li>DisplayVersion = ""</li>
+<li>HelpLink = " "</li>
+<li>Publisher = ""</li>
+<li>URLInfoAbout = ""</li>
+<li>Contact = ""</li>
+<li>Comments = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Conduit\Community Alerts]</li><ul>
+<li>Path = "%ProgramFiles%\Conduit\Community Alerts\Alert.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar]</li><ul>
+<li>Path = "%ProgramFiles%\Secretia-_El_Secreto_y_la_Ley_de_Atraccion"</li>
+<li>ComId = "{ecd5188e-cc86-4bc3-aa19-5836e40973e4}"</li>
+<li>Server = "users.conduit.com"</li>
+<li>SponsorId = "CT1464703"</li>
+<li>DisplayTitle = "Secretia-_El_Secreto_y_la_Ley_de_Atraccion Toolbar"</li>
+<li>DisplayName = "Secretia- El Secreto y la Ley de Atraccion"</li>
+<li>MultiCommunityEnabled = "FALSE"</li>
+<li>GroupingEnabled = "FALSE"</li>
+<li>version = "4.5.176.0"</li>
+<li>UserID = "UN20150211151550035"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Wise Solutions\Wise Installation System\Repair\C:/Program Files/Secretia-_El_Secreto_y_la_Ley_de_Atraccion/INSTALL.LOG]</li><ul>
+<li>1\Software\Microsoft\Internet Explorer\SearchScopes\{afdbddaa-5d3f-42ee-b79c-185a7020515b}\\ = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]</li><ul>
+<li>Use Search Asst = "no"</li>
+<li>Enable Browser Extensions = "yes"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{ECD5188E-CC86-4BC3-AA19-5836E40973E4} = 8E 18 D5 EC 86 CC C3 4B AA 19 58 36 E4 09 73 E4</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]</li><ul>
+<li>{ecd5188e-cc86-4bc3-aa19-5836e40973e4} = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{afdbddaa-5d3f-42ee-b79c-185a7020515b}]</li><ul>
+<li>(Default) = ""</li>
+<li>DisplayName = "Web Search"</li>
+<li>URL = "http://search.conduit.com/ResultsExt.aspx?q={searchTerms}&SearchSource=4&ctid=CT1464703"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]</li><ul>
+<li>DefaultScope = "{afdbddaa-5d3f-42ee-b79c-185a7020515b}"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Data\Channels]</li><ul>
+<li>LastCheckTime = 0x54DBE2B3</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Community Alerts\Settings]</li><ul>
+<li>AutoUpdateEnabled = "TRUE"</li>
+<li>ShowAlerts = "TRUE"</li>
+<li>UserID = "7E861CA7-2DCF-4F23-B996-59A61DC1C2D6"</li>
+<li>FirstTimeStamp = 0x54DBE2A8</li>
+<li>LoginMessageLastCheckTime = 0x54DBE2B3</li>
+<li>AutoUpdateLastTime = 0x54DBE2BC</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Conduit\Community Alerts\RegisteredSources]</li><ul>
+<li>IE_TB_CT1464703 = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar\settings]</li><ul>
+<li>AUTOUPDATE = 0x00000001</li>
+<li>AutoUpdateIntervalInHours = 0x000000A8</li>
+<li>EnableSearchFromAddress = "TRUE"</li>
+<li>SearchFromAddressUrl = "http://search.conduit.com/ResultsExt.aspx?ctid=CT1464703&amp;q=MYSEARCHTERM"</li>
+<li>ToolbarShowIntervalDays = "7"</li>
+<li>AlignMode = 0x00000000</li>
+<li>SettingsLastCheck = 0x54DBE2A6</li>
+<li>LastAutoUpdate = 0x54DBE2B0</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar\IE5]</li><ul>
+<li>ExplorerVisible = "FALSE"</li>
+<li>FirstTime = "FALSE"</li>
+<li>Visible = "TRUE"</li>
+<li>CabinetVisible = "FALSE"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\toolbar]</li><ul>
+<li>Write us link = "cyrik@hotmail.com"</li>
+<li>Server = "users.conduit.com"</li>
+<li>WebServerUrl = "http://SecretiaElSecretoylaLeydeAtraccion.GreatToolbars.com/"</li>
+<li>DisplayName = "Secretia- El Secreto y la Ley de Atraccion"</li>
+<li>UserID = "UN20150211151550035"</li>
+<li>users.conduit.com Last Login = 0x54DBE2BA</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\WebBrowser]</li><ul>
+<li>{0E5CBF21-D15F-11D0-8301-00AA005B4383} = </li>
+<li>ITBarLayout = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>EI_Login_Cache_MutexCT1464703</li>
+<li>ShowTBSecretia-_El_Secreto_y_la_Ley_de_Atraccion</li>
+<li>_!SHMSFTHISTORY!_</li>
+<li>Community Alerts</li>
+<li>EI_Login_Cache_Mutex_CT1464703</li>
+<li>Conduit_Alert_Autoupdate_Mutex</li>
+</ul></ul>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">users.conduit.com</td><td class="cell_1">80</td><td class="cell_1">users.conduit.com</td><td class="cell_2">users.conduit.com</td></tr>
+<tr><td class="cell_1">secretiaelsecretoylaleydeatraccion.greattoolbars.com</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>SetupFinish</li>
+<li>index.jpg</li>
+</ul></ul>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://SecretiaElSecretoylaLeydeAtraccion.GreatToolbars.com/update/update.xml</li>
+</ul></ul>
+<ul><li>There were application-defined hook procedures installed into the hook chain (e.g. to monitor keystrokes). The installed hooks are handled by the following modules:</li><ul>
+<li>%ProgramFiles%\Secretia-_El_Secreto_y_la_Ley_de_Atraccion\tbSecr.dll</li>
+<li>%ProgramFiles%\Conduit\Community Alerts\Alert.dll</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

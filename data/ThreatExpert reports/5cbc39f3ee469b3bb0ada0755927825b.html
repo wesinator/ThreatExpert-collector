@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-031, Win32.SuspectCrc">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-031, Win32.SuspectCrc</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 June 2016, 01:01:37</li>
+<li>Processing time: 5 min 52 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x5CBC39F3EE469B3BB0ADA0755927825B</li>
+<li>File SHA-1: 0x09E95FDAC18A1B85C40DD7E6C7BEE2FF3DB74102</li>
+<li>Filesize: 41,472 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-031.html" target="_blank">Mal/Behav-031<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\gjxgph.exe
+</td>
+<td class="cell_1">41,472 bytes</td>
+<td class="cell_1">MD5: 0x5CBC39F3EE469B3BB0ADA0755927825B<br/>SHA-1: 0x09E95FDAC18A1B85C40DD7E6C7BEE2FF3DB74102</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/mal-behav-031.html" target="_blank">Mal/Behav-031<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">gjxgph.exe</td><td class="cell_1">%System%\gjxgph.exe</td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">102,400 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">DirectX jrq</td><td class="cell_1">DirectX Remover yta for Windows(R).</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\gjxgph.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = "%System%\gjxgph.exe"</li>
+</ul>
+<br/>
+<em>so that gjxgph.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "DirectX jrq"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ\0000]</li><ul>
+<li>Service = "DirectX jrq"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "DirectX Remover yta for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_DIRECTX_JRQ]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]</li><ul>
+<li>ConnectGroup = "Default"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DIRECTX_JRQ\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DirectX jrq]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\gjxgph.exe"</li>
+<li>DisplayName = "DirectX Remover yta for Windows(R)."</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft(R) DirectX mid for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "DirectX jrq"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ\0000]</li><ul>
+<li>Service = "DirectX jrq"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "DirectX Remover yta for Windows(R)."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_DIRECTX_JRQ]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]</li><ul>
+<li>ConnectGroup = "Default"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Enum]</li><ul>
+<li>0 = "Root\LEGACY_DIRECTX_JRQ\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DirectX jrq]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\gjxgph.exe"</li>
+<li>DisplayName = "DirectX Remover yta for Windows(R)."</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft(R) DirectX mid for Windows(R)."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cookies = </li>
+<li>History = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\gjxgph.exe</li>
+<li>mybi.mtcls.pw</li>
+<li>c:\windows\system32\sample_1.exe</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">gjxgph.exe (%System%\gjxgph.exe)</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">gjxgph.exe (%System%\gjxgph.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>mybi.mtcls.pw</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mybi.mtcls.pw<td class="cell_2">6538</td><tr>
+</table></p>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://118.193.225.34:3421/Plugin32.dll</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 6538:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0001 0000 4233 3136 35B8 0100 007A 9A4E | ....B3165....z.N
+00000010 | 6067 6298 04CC AE46 CD00 CD1D 5E05 0D48 | `gb....F....^..H
+00000020 | 4633 3BBD AC2D 3631 5623 2730 315D C98D | F3;..-61V#'01]..
+00000030 | 82A6 27FC 0B47 8D93 200A 3E76 25E1 0B85 | ..'..G.. .>v%...
+00000040 | 9BCE A6F0 1D47 345B 7A9B 68B9 06A3 F4A8 | .....G4[z.h.....
+00000050 | 0E03 92DA 02A3 B9FF E614 62D2 F380 D820 | ..........b....
+00000060 | 3730 3032 326C E786 B8AB 1E48 39E7 E716 | 70022l.....H9...
+00000070 | 9496 A416 F925 E6A6 E234 180D E803 B12D | .....%...4.....-
+00000080 | 2F03 C37F 20FD 9B9D 81C1 2535 2DB1 34A7 | /... .....%5-.4.
+00000090 | 0445 0D07 123B 6FD9 DB72 5413 0CCE BC31 | .E...;o..rT....1
+000000A0 | 38B5 D170 FB35 863F 5F85 183E 4031 C481 | 8..p.5.?_..>@1..
+000000B0 | 0C0C 1FCA C20C F5CC 6C0C 4C0D CDEC 40FC | ........l.L...@.
+000000C0 | 1F11 6718 7EBD 9A50 0362 83FC 03F2 1B08 | ..g.~..P.b......
+000000D0 | 9CDB B27D D1F9 6B0A 60B6 F1EB C61A 6620 | ...}..k.`.....f
+000000E0 | ADC0 3A59 F20A D0AF 117A 8E0C F660 5F62 | ..:Y.....z...`_b
+000000F0 | 07F5 4CFF 81CE FF0F 0630 3100 54B2 5DEE | ..L......01.T.].
+00000000 | 1001 0000 4233 3136 35B8 0100 007A 9A4E | ....B3165....z.N
+00000020 | 4633 3BBD AC2D 3631 5623 2730 315D C90D | F3;..-61V#'01]..
+00000030 | AB21 4C80 26C6 C193 0212 B015 29C1 A7A2 | .!L.&.......)...
+00000040 | 78A0 FB06 500A CA6B 2583 1E41 1D98 7F11 | x...P..k%..A....
+00000050 | 09C9 03D3 E934 9852 83A9 07C6 00B8 8988 | .....4.R........
+00000060 | 9693 683B 37C4 5DF5 40CA 393F B7A0 B424 | ..h;7.].@.9?...$
+00000070 | B5C8 2F31 3715 A7C1 5880 2D2F 03C3 7F20 | ../17...X.-/...
+00000080 | FD9B 9D81 C125 352D B134 A784 C10D 2A57 | .....%5-.4....*W
+00000090 | 0084 390C 990C C9A8 5A1A FEDB C398 0667 | ..9.....Z......g
+000000A0 | DE18 9CDA 68BC FD1A 9857 7355 9841 E3A6 | ....h....WsU.A..
+000000B0 | 30C3 9E1B C20C 12EF 26D4 D45C 0D33 D433 | 0.......&..\.3.3
+000000C0 | B331 3035 34B3 6378 3781 8123 4A88 E1D7 | .1054.cx7..#J...
+000000D0 | AB09 3520 B520 FF80 FC06 02E7 B66C 5F74 | ..5 . .......l_t
+000000E0 | FE9A 0298 6DFC BAB1 8619 482B B04E 967C | ....m.....H+.N.|
+000000F0 | F20B 184E 7A8E 0CF6 605F 6207 F54C FFFF | ...Nz...`_b..L..
+00000100 | 3338 FC07 834A B5EB 5120 3100 6738 5389 | 38...J..Q 1.g8S.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

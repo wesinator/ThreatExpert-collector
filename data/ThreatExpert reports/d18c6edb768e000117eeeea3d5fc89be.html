@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 September 2014, 05:44:11</li>
+<li>Processing time: 9 min 20 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD18C6EDB768E000117EEEEA3D5FC89BE</li>
+<li>File SHA-1: 0x775CEB1BD0D24DF850773B5B57EA588983AA18D2</li>
+<li>Filesize: 463,880 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">253,952 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1">SevereWeatherAlertsBrowser.exe</td><td class="cell_1">%AppData%\severeweatheralerts\severeweatheralertsbrowser.exe</td><td class="cell_2">1,351,680 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Severe Weather Alerts</li>
+<li>HKEY_CURRENT_USER\Software\SevereWeatherAlerts</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Severe Weather Alerts]</li><ul>
+<li>DisplayName = "Severe Weather Alerts"</li>
+<li>UninstallString = "%AppData%\SevereWeatherAlerts\uninstall.exe"</li>
+<li>DisplayVersion = "1.23.0.0"</li>
+<li>Publisher = "Weather Notifications, LLC"</li>
+<li>URLInfoAbout = "http://www.severeweatheralerts.net"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\SevereWeatherAlerts]</li><ul>
+<li>Installed = "True"</li>
+<li>GUID = "8287a434-f952-4500-b3ab-1fe83eb1d834"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}\1.1\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>__178F8F34D89265031E11B200F0FC14EFBFC8AC17_</li>
+<li>SevereWeatherAlertsApp_Mutex</li>
+<li>_D41D8CD98F00B204E9800998ECF8427E_9DBCA44907E02788E4520A53B74F5399</li>
+<li>oleacc-msaa-loaded</li>
+<li>_!SHMSFTHISTORY!_</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>wpad.mrc.pctools.com.</li>
+<li>updates.severeweatheralerts.net</li>
+<li>severeweatheralerts02.severeweatheralerts.net</li>
+<li>checkip.dyndns.org</li>
+<li>maps.googleapis.com</li>
+<li>www.spc.noaa.gov</li>
+<li>earthquake.usgs.gov</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">updates.severeweatheralerts.net<td class="cell_2">1044</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">severeweatheralerts.net</td><td class="cell_1">80</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The following GET requests were made:</li>
+<ul>
+<li>wpad.dat</li>
+<li>index.html</li>
+<li>index.jpg</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://checkip.dyndns.org/index.html</li>
+<li>http://maps.googleapis.com/maps/api/geocode/xml?address=United%20States&amp;sensor=false</li>
+<li>http://www.spc.noaa.gov/products/outlook/archive/2014/KWNSPTSDY1_201409032000.txt</li>
+<li>http://earthquake.usgs.gov/earthquakes/feed/v0.1/summary/2.5_day.csv</li>
+<li>http://severeweatheralerts02.severeweather alerts.net/te.aspx?eid=50&amp;ver=&amp;brand=SevereWeather Alerts&amp;mt=&amp;partid=&amp;did=7595301&amp;os=Microsoft%20Wind ows%20NT%205.1.2600%20Service%20Pack%202&amp;rnd=45&amp;un reported=0&amp;where=InstallCheck&amp;data=System%2eExcept..</li>
+<li>http://updates.severeweatheralerts.net/severeweatheralerts/version.php?id=8287a434-f952-4500-b3ab-1fe83eb1d834&amp;version=1.21.0.0</li>
+<li>http://www.spc.noaa.gov/products/outlook/archive/2014/day1otlk_20140904_1300.gif</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

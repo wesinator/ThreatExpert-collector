@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 9 December 2014, 05:18:25</li>
+<li>Processing time: 7 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x42547BDB010599365C14128CC1E88FC0</li>
+<li>File SHA-1: 0x128D81761AC17F9850BEB3BDEDDF3859BA7424C1</li>
+<li>Filesize: 172,032 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">221,184 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">HidServSys</td><td class="cell_1">Uman Interface Device Access</td><td class="cell_1">"Stopped"</td><td class="cell_2">%CommonAppData%\Mozilla\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HidServSys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HidServSys\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidServSys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidServSys\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HidServSys\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HidServSys]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%CommonAppData%\Mozilla\svchost.exe"</li>
+<li>DisplayName = "Uman Interface Device Access"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidServSys\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidServSys]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%CommonAppData%\Mozilla\svchost.exe"</li>
+<li>DisplayName = "Uman Interface Device Access"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Global\UV5FXlFbb11FF1dL</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>216.170.117.28</li>
+<li>mail.ru</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">216.170.117.28<td class="cell_2">443</td><tr>
+</table></p>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://mail.ru/lQvIulqOmg4r2Z/Lxv/eK81Dldurig.bml?6E2Z=ahnnCDsRn2&amp;u42.svC=sQAOr0pmahtsFsLXwm4576B</li>
+<li>http://mail.ru/bevkcFhKaDceHJ1wnvKmq4v5ZO1IzYXCRDg2GtPTcTw4S4sxdUDqMJh/BCcQQqC7dYcvPiS3uAxy5/Z2TM.1fb3CwJyNqRn4u9V13dlSMqlFd11dpvXCqYZcQk9nXFODn2B2z6Y2b-.html</li>
+<li>http://mail.ru/qPHPssEYN5VrDJqiEm/PB8pAqXyYXWIvMjECr/Hz97.xJdoPkPlhvA5aID1RslPO71uAN-How4.htm</li>
+<li>http://mail.ru/FTYnYmBRMmTA/p/G7GH/gNKXQ/kYCWLGT-icVmfN1fyv4K7uwg.php?RH=NwxE1AuqkxDI&amp;zvfld2mL9=Ukev-JLGkf&amp;Gd-cHRGCySMK=KscQy4PAIL0Xn</li>
+<li>http://mail.ru/uliSXJmUo5yGga/6rTdHbHUvn/HD/hiqKn5.7bZn3uoauVp3dXR04Qc.bml?kS=&amp;jKI=fX&amp;o3NxyMbVE-IcJwe-iTfJvIu5d=5MziYrdJrqBqiOgLOg8c</li>
+<li>http://mail.ru/TQBGGgMS7BKyOcHV/pXPpocvQ-PE3PxNT8dW6j.W/2Q7D5AsdBGgmjKZmsmbTHt.izqSxk/rIoF3A3kHSXFjPI-.x3jE61a0EGeyNDf0e-D.html</li>
+<li>http://mail.ru/JqQpGxQA8oW/lORbu5VJ9-CJJfpgmeJfVmKkt6HnUZFawFDq43SXCOCas1Bu-lTR.Q46nO.QxVo1aLebKfQEc5nAyV-hOWJYvgCCUMpf..htm</li>
+<li>http://mail.ru/pWrSdclRO/HeAP8S-R/JBH.cdkuXb-UWSp9qnHoMPH-xr6.php?Qi=&amp;8=6&amp;82r=DR&amp;tLj9cEYQ-pRtQbRRjGqQ7FXDIVTAaeU8=AGQUi2bDaiH0RhXtu3p</li>
+<li>http://mail.ru/MoPAQkjOq2-Z/9KrZgOSyjHsgkvUMD6/NsH4SekPoyzYRVfLp5IiZH2hohw.php?jFf=MIB&amp;DOU=5&amp;2sleN6=l&amp;bgB9NDH.YArsB1TaJR3ikFtdA7PcL-</li>
+<li>http://mail.ru/DmJwEskZf/l9yE5h/2u/jUbfyhR3n3/xFsxHtBojRy8pa9TUl7HYY.cgi?va3sTVetWvqmiH7vpIH9dVY62tBmF.BzF4RCqwVKk=Tt8oMlrhTFBQnE</li>
+<li>http://mail.ru/PfobkfRDoTc9R0VD3C-u/4rAR1F/HT/6gyawXn1BTezbjJ/yUu2WzdhXtnPAWzziwJEbGCtMQgy8dAg-HNZQ5cCRM07dfRM.1uoWyoppsp-V.php</li>
+<li>http://mail.ru/Wc/ffpa/HIwmj.9/H/mbq5QumxMg2hpZIhbkNqyLLL8nY2-NrI9.php?t=N&amp;9Mvj9EQY=Py8RR8g&amp;Cz4Eq=Q&amp;uQkiQxVhQIhqxM9AxgQFV=msNUEfuPunYt5</li>
+<li>http://mail.ru/VEATsANPFjb5FlYixZDzLDkg5DFxxCyia8JBgCCcnOI9jf00NUKYFL5BmtXvdfbs8v3fsjenBWz/MlGag1W9TfMJjf3TPNb2aoPPVjJoK.shtml</li>
+<li>http://mail.ru/sQTZVQFaS8jSPkTno/q8qUR5GlGNNbWMP5OG/QEE/kvoxPdC-iHwOpMe.f.php?4sllGisEYtqqCtVUbsanTaMkKRqdj=Td-tsCIibTnd.Kg9Jjn0</li>
+<li>http://mail.ru/GrnpkAxTdLVdFu5j-1G3ygNLxUI6q03M0y/duKeLQW.php?T6PDRskXe7bl=5o&amp;iIfS0q7.5OFtO1WLG.hBmpCIU.vnbq=Dm9jJWrZTRH.zwSU5oK</li>
+<li>http://mail.ru/zHfpI/kza.QCDrPSVQzY7eNM7wkQ1Sr6rIdj3tq0MkS0GTI3n3i-H.bml?zqweCT=u.VNy&amp;eK=p&amp;9aPSVR.jt703yDEQgPMvoXRb=aQBJ-TqTSMoKPT</li>
+<li>http://mail.ru/olxTkJDt8yQawFEEUOJj3/xu2VSs5Q9Oq9K6Qqxpsk3Gwye/v3jyzmW7u.bml?5.XJTP=x973&amp;IKdd=19IIAFUQ&amp;DlxfCxbVkFjpg7SYzmt6V=HFuCqd</li>
+<li>http://mail.ru/wrlbMHbk95JPXapyUo0wHZZzCMt0uRV84tY/FxnYikMcQvzTT2vDGEfDexhTD6NG/qHpQrQnq2NfFVfwZH.TvRd3s9wswZmHi3IazDDHX4.gif</li>
+<li>http://mail.ru/EYCdPPSCZ/RzQPyBggpQ-C/40k/S/RyB2WaoPuG8DWcYyo0ynoWI.php?fOl=ppfxkl&amp;isAgI.M=T&amp;ppVfOUc9g6=HY&amp;VLQ0-zJKEQ5UwQqbXHp=yPzM6dnt</li>
+<li>http://mail.ru/yCUCvV/sJZBq/2A/maRhvyWJzuwtbd/5YVx9z2Odfnryway6cS-.CFHqXEq6.php?avpdMVCdk49qTOLhneQNLPF=R1OgNIZDCuYmbsfa53SHkvrdj</li>
+<li>http://mail.ru/oOdaTtIJ.mygF/fas2Sjm/tHq2GBe5lCO.dQkJUQf.php?KFt=c&amp;rgjC-N=R&amp;PArO2MB8IJUYDG=FKTMq.Os</li>
+<li>http://mail.ru/BzUgev/V/L.Qg97HRUdvBbPfJTy/FtSCx8csbt8PtWbUyMPZbYcSLRp.ky.php?BfBn8=E-jU6tSiI-c&amp;E20KU3s6.4hFWjKs=f47oK1CP4XF4SvETg</li>
+<li>http://mail.ru/FtIHCDzyTyKCqlAY5/qekCTagc57ID177r6RX1mJQ-bub8qZTQbvu3mXhuyDX/pekjFd9ufGtnwkVLIU.S9sUAonwu2aeMk.tkob8zksfb.jpg</li>
+<li>http://mail.ru/Q/APtfn/OWmsoA5Fyyz4N/D1jNWmV5pj7fqS6d5JFRCN.N.cgi?GKFNx=TV&amp;AX4-cYngEEOTrYbRCCt=L0p</li>
+<li>http://mail.ru/TPl/JR/hcFEYg.EiA.0/F6H9BBv8zO/O5WLqP1P.Q3.php?w&amp;=wjGVM7=gy&amp;LX6=H&amp;OKSb2ZmOt8SaundTB03KAppEK-r6TSd2QDL8Q9UwxhYPiSyK=idxxH</li>
+<li>http://mail.ru/qDsCmWG/TZltnYA/I4rzVcSZcWglg/wnkiNl1guduKa4aySthd6enhaY1u2PRPZdKCPgL55Zo3XKtzl7Snwrc9Gzm6DdUBy55Ov8vyAtGle.php</li>
+<li>http://mail.ru/aAcyKalqVNYDuzQORjvhVqxozATxa5GUamJEJQJyWPb09.zENzLnduCTPQdnbKRGmDwEf04YmAkq.X/8.YUCilC0LV23PF1nRNPTF-F0i.php</li>
+<li>http://mail.ru/GHtDTph/WxL/VeQk/qtwyaA0h/NN67Gm-uGdoWuF4eUMlx373Q3SL.php?qqI=Z&amp;5L9=at&amp;s3InJsxtNKA35T=JsKOB91kvkMl..QISPSGVdU0B6gSmXA9</li>
+<li>http://mail.ru/ReGNRhCxi93FT0guqpWowV2CL3aFq4FH4H5YZ170SqKNR/MPRIy30FeRaUHPox-wllY5jrvpia64G-EvITj4BpcKJ13tTqBTer9hjhgPV.jpg</li>
+<li>http://mail.ru/JEeitPR/Nlxzw0dM/mYe/sShqat/tnqQsOBn2EHNc48-CKRfsv3gg88rGD.k17qrkYsk.4fSVr4N.html</li>
+<li>http://mail.ru/wTvk/uGeHhdTURh40HUVUq.E/HXYAg5eE/DlDpJXBt-9gEpo7jNNMmX.bml?bBmaKts4K2Hzhk=UQIiQgQ9&amp;Oq5OHdwRmxqe.wcz=hd6Qx4kzzitw5p</li>
+<li>http://mail.ru/nXYzNFgZ3c/R/DQH9zTXxpwl4yQlIcc/2yL.fLI4c8JKyP0hWIIdPkFgmWzgicNJVeAUaExCSUFHmcONh-rD4V6olx2WPs-9lK43UQsAnNP.shtml</li>
+<li>http://mail.ru/FpaqyaflsU4-GwL1ku7klWvmGILR/SFLYHZxEIwWuqt3KvoAZpdx-w/3ME.bml?Xaz=9-7&amp;db=l&amp;KYY=UqH8RUQGeRY9jY44I6gqyW9YHwwkeHXAEbea</li>
+<li>http://mail.ru/AbYbXxrXf/D4/KoPHUauCqY/Pw6GnqjaduZVryi0QQJa2UaDZJUP1qOLlechb1kPlqH33qPtNJv.html</li>
+<li>http://mail.ru/bacfKZtv2wM-XNkZ-5/wmtyWi.Rk--iw7R9Mj9/k0o6rVds.bml?wZ=J&amp;I9g=V8jQnPdmCFfv97tzykfGoJj7O.eIdnrqsJIH-.srS.ZEHFZx7H822</li>
+<li>http://mail.ru/UtI/XcGldiCdgA9/4nDmJH6/pd-heaw3y0ASI.bml?s8=0d&amp;421S=1pWsxu9&amp;Iql-3p8S8IrI.0h5=7sc1.at</li>
+<li>http://mail.ru/QzlRleFvWHaEvoR7-N-czg0TsXkYDe7tMBX/u6cpqVT.cgi?DF147A=APQVu1jdTlOjo5HIR.wzsMQS</li>
+<li>http://mail.ru/oQpCDkYu5a-Yu4IxrbIKc25hDiYU5/pITlPeBKAIjiQ5CABBejkB/CJkgO2.HxX9.R58uORT/0ApCe69T4c7J5sFHJHdZKVf2IU7UTAhHpc.shtml</li>
+<li>http://mail.ru/ZFLIGPsxHkVJ/8jMKQ6kOazqsw/zJfHBF6-F9/BWsysH.bml?2IRKoHMQkfTyfia4NsveQVODouCgdUC2G7OuEWcZrvRXPLsqa=CeMxQP.zA2GFTX</li>
+<li>http://mail.ru/C/VXYipOZK4Dugiw/Ip8RsgkH3mEYk-Z.Kw9OhdOH28JsanD8-O.bml?dQ6Lei7g3M6tJLL9Le1kA=2KR62bI8ptkfnWMOyVvswEJhaHpbO938q-</li>
+<li>http://mail.ru/hBeYsLaC65m7xKMTVHS/ECNCt-EdnAwKuAKhBmHqL1mCr/gBhxY6dHcfjWTk8b8sTx1uuG8RS8.php</li>
+<li>http://mail.ru/rxZzaRx/tvs32K4TX3/jRrBGOWsA-ILKflGn8/deaI66pkDC7IeWxN.bml?Zcv4p=2S&amp;EPq9VjH=mX2RG&amp;sOeMh2Xm=PInU&amp;mJaxHTiPhLYat=gktarr5Tb</li>
+<li>http://mail.ru/dVmosSaGl7SE/ZBWrB-vIu-om8mCyDgW/1SnggrB9I1/3nkFOh1g1dmSpK6J.cgi?=Y&amp;4loDlzuhaTPeMh=ZXROqYCphgISZqrJPtQ8-yL9bYN2Watu</li>
+<li>http://mail.ru/D/tGbMWq/EwUa6/k/FeexThxgp.php?=i&amp;LP&amp;=ukg=QYVgCs1Q&amp;XREsMzxEcYt=DvJI-hYBGIlmJ3hd75scc5SgV</li>
+<li>http://mail.ru/oqYTYFxUEldBOE48zIi1XGRKfrFDS-SuvTgDK2LLluO3bVv8yNLquhhshfmPbJppBg5J-gTF0bZlWJN8hGhbt3T/z38jhX3T-t37UBSF8.shtml</li>
+<li>http://mail.ru/vczIstwS/7LK/V55DslLh/bloQkje/OGj2tIn.cgi?Q.e8=MRiHQ&amp;Zsljzce3qXGYlG3AVNN2V=jULfiJrd4</li>
+<li>http://mail.ru/jFcvXhJeORu2ATPzpeCjhpohJBhfFqY4sX/WL/0DQujPVTOsVZC1GjLPdkza3AsvoOWPVmy0PAqXGI4i1F.ZNOghPSnZGE3LPbGo-OpVsm.htm</li>
+<li>http://mail.ru/lKNzC/PZsaSTc-pYf32V3N9uYh9CRjIHKMW/2YhroaF4T4PXkmG3IDmkURDt9.bml?CS0k=sAKIX3FX7N4whPeSx6CtdxhzR3LqzTyD4n4KhAvu7</li>
+<li>http://mail.ru/DWqAZyxs0Uf8gynwHlKadds6J8X2.UFdykLX0HdrCYDo5yP8BqXBxbM4Cb99QqQxiJSdnu9Uzim1AKE5/TluDDxUW59Psvys.Z.JTusN7.gif</li>
+<li>http://mail.ru/mnXINLjR/yw/XE16x9U3/C72VoU4pwx5VLlP9Y-evSyx73yHQ-NWdeZ0hi.bml?0wP=McNefn.mu&amp;3VfG8KXgjn=ODB&amp;nhs=CuG.JULHJc7H49-2jMus6</li>
+<li>http://mail.ru/fsoclDugDz/TswuUJk8MNYRzM/OtS-cmTYbK02uBV-sIjNBAQE8W6MvUadVXL.bml?CE1i=t9Fi6K&amp;FRQze0p4f-XmCkkkAvJ.rOKLv=ql6suiqcJg</li>
+<li>http://mail.ru/eEY/zgXJOi89/AJYSJvCu8gE/drsZZN0pCllc7n/vGnS6E612UBCyCQTs.cgi?j5=WDv0rW5loQZ8qk&amp;nO8NqONYTaFnRpUi79JVC82ZMakDlTUKSda</li>
+<li>http://mail.ru/aobsKQsTTb/J/MHp69owXLAoWSJ7qpa9dhLCq-982FFr8DdC4W84dZpLKdvn8U.bml?p0=&amp;nn=T&amp;qFVyqEu=LLQ&amp;AJ2EsNVCF=HYRAleqMPgaIv8OyRGY1</li>
+<li>http://mail.ru/ppBeJCPesos/8TgzZNkJRsRsKRTGFzxdEEdNVk.nylaHu-Yi/gOQb2N8sUZ4EFPjYcTBmF8E8GhcIpgVMN1EhC.DxV4616FtR98-18H2l0.shtml</li>
+<li>http://mail.ru/ObRKBGNYVy4CKj3ddfq8XtcGJqJUm5GwRa/hQ/x71QvHTbGLUXmFUdtN.Lg5Hb.WNj6-EkAi6zMjQdKNZX-uiBS60gBtplebs.rQjCxWzm.gif</li>
+<li>http://mail.ru/KoTF/xmHryQJq0wLEA/Ps/GIysUwc1JhXPZRkk3SYnPNX9yC9Rg6m.php?ObOq1UtzwUqjZHEBCACT9t2MGdh=TXPWTXFyWl1zEf3V4L.ilrp5nik</li>
+<li>http://mail.ru/HzMfGaovBzKcoqpePORd5q5uETAAJ-jqywIoKheg12TthjZG8HJ0ehkcILZV1TRrd.rzg-Q3p28wRjVO/3IgZMYOs8gj.O5AYOOnspiWp.html</li>
+<li>http://mail.ru/MaoyVf/CZXWJqLtvSXPA/ohNdG/uCiNpRBwH7TdDu76wgiWW7xz8K9pCNo9VPtX.hke7wuQrnjBFDHP7eQzTnaxz7caB-EOA6DtCzU21dx7.htm</li>
+<li>http://mail.ru/VbyTtpG/zVgetH/ctmr/s/RlV1SQDzomLj9CT2pWcK4uP.bml?SjFQ2=p77&amp;XLNq.ysKCKL=3vCKEfD&amp;HWws2blA.Cy4fvQ7dLQP7BR.H=cFYAGTSQK1It</li>
+<li>http://mail.ru/GUnQkMcscbu.ZU.cFNkKWfCsZ39cN551Pp-aHNqQpQTNEHo/CLOPFVM.cgi?jB=kZNP&amp;5=w&amp;ehdvR=LNl9hy&amp;kD-k3=V0Bi3ELFefdfKaDZIXfnAIQV.l</li>
+<li>http://mail.ru/eFhOrqACLHI2TLgB4Wm3up/Tlp3EiG7M6NDkKfcY/xk.xpndl8QBkdPM3xjA1z/sdTtn-80BjTtTkiK1fqP3yaXl72Y.vIryrF7uOPceRK..php</li>
+<li>http://mail.ru/mwjWvKTr/b2-2c/ZavJBhlrtggtOvEhH/fhzqB78Ol5LgZZ5ACx2W.cgi?9acvz.lrrduBBML=Yb1w5&amp;XItIuJ=UCuKBQkQ8OzbMSfgS3zLxyUEyhRw</li>
+<li>http://mail.ru/xdTzetroqXIv1Yc/r9-ezeN1xY1eR9qdzLXXr/xxPEYwP1DR.cq96sJgk/w1l780YW7qIG-kuOXr.YjqEAUMWHJKstM3HShmw3pimdfyM9H.jpg</li>
+<li>http://mail.ru/nHoFRGeYbRdwTiBqMiWX8/1kTSjJ2lRwMAi9njcH-GRk.cgi?dX.8=&amp;XgqdVY7Pmnrt2C2HNw-jijNqhopYbIQc-Pk78Rhy2QJd0=uNVED0smlR-X</li>
+<li>http://mail.ru/sYgiBpSx/Y2DPSEz/dw29toNqGoWv1/fvjOg5Lq6qr3Q.bml?k2Rz=e&amp;Shh=&amp;fqwk=1xy&amp;Y.STFYw5CClil=i5N</li>
+<li>http://mail.ru/IhjKpBS/bwhoj9/Lve3Uzpo/K3R2WWq/jWRIRocIjp.bml?VcmXyE53riS4k6wIuTJnivO0.kRF3ziPhO1sAH1pIlfu6Dw2=EG4snBsa1ZAJvN2UZn</li>
+<li>http://mail.ru/tpBUVvmfpiDXb0.TGE0I7fg63234Yw9dxObgRRUHOEU0..wc86/20lXOWWTbiopfJAX3xaiEyQ-s.v2YUXSMQjqHzpG.wAoFd2I6sLwWH.jpg</li>
+<li>http://mail.ru/hrq/qCteScI8K/X/kPVba5aU-ot310yWbh.cgi?jwdwBB=AjubSFFt8SeLPzbC1JAIfJNlTOH1e0blMzo</li>
+<li>http://mail.ru/QBBSYEImCDnNxgX57/v8A5CAjYddJbF/kZutqiAEEND3TMP1iPT.cgi?5iG-wqUY=oVg4&amp;sBL0v=OIDRoBqdglVyO&amp;IDDrcYVwPmV0KE7b55=lnT11B4</li>
+<li>http://mail.ru/PlEaHC/cne21xFe1FE1Nf/dAOPsZbKSzDo.qhwcZcO9Sg5Pqws5VHAnQ8CiXssuSsG93-pVVGKcXmHdjhAIgXtwq-LxaDCd.spJcRUiqM6.html</li>
+<li>http://mail.ru/DXsCGBqNw6U/XVImblx/aYSSPAsssrRpEndZpSdgtwfcqpGYW93NCQeIUX.ERZGvORjJXjImn0.htm</li>
+<li>http://mail.ru/YSOtYZD/cOKh2PMybQCOIr9gW99uSGQfhuDEu6X2yRy1/absM6WXhOBRq79M-fZ64ji1TaCKfoIfcJl9BRb2rsDfpwQ-zX0ginI2Niewfw.png</li>
+<li>http://mail.ru/Krm/Kp/HzhFYgfPhb/7aCVWinC5P4FbLqqbNhdA8D5WPQ.bml?1JeA5wy=nj4&amp;lQCTajq7=m.X4W9N&amp;qmbki-FB9wNL6ecAjItAT0c7.63zH=7M3n8eA9</li>
+<li>http://mail.ru/dcUUCZy/QOvv6R.O/V/P.l/MiDxxLX.bml?qY3o7VQ.n=DTQFIpuf6eTH&amp;lgDI=jzry13fqX6juy0.XhhsAm</li>
+<li>http://mail.ru/UT/zRsATi0--8/PkGXcc/BiFJJEhfQi5ItGm.2Va8CwMu6c7Bw3.php?d=p&amp;CBLDvP4=oSvPfKQ&amp;ruK=i&amp;wXBBUGNK-O622QWwNeXJEB-HLNP4a=FqhNG86</li>
+<li>http://mail.ru/Eb/zdJgNYGBQw5/JoBUL-rW4SwgnUBphZSW1aKWcpJvXDF.bml?nyZPD=6&amp;Ac&amp;=Llj=9&amp;jpIegmyy.-M=F3cSj</li>
+<li>http://mail.ru/cBvimft/AO/3i0h.V/aEjLvlpW/1sXJT.cgi?aCQ=14p.t&amp;Rp=i1lg&amp;jQ=f&amp;SBZdKU2KEvzrneig4=O-mSOdH0i4</li>
+<li>http://mail.ru/qpHptyHuv4v2LhOOfI8v/elsUwLNDfA.Ounur77r3l-qGPj4zW.1zCGQlVz86whwDNOIcAo7pHngiguWBkAzo6JlcB5f5AqNDvDMuldyq.php</li>
+<li>http://mail.ru/hcSEiajJpHn0A-MwNiHx.ZRDO-OcBdd-YpU18LHoN0nfkE-lBW3eFUGwtF958CVpl/Rzzr1HfiNl9AK56ZQEQ4oEsMJrwKo4ECrLuY.IG.jpg</li>
+<li>http://mail.ru/nwHWpLDGV/oG3.f/t1gXi4PuYjk/Zn5Fq/qW9kEIlGRvH.KWB-O.cgi?Su=I&amp;8vGCx=6pn.ac&amp;Cc3c=YwWFi5Gt&amp;hfO8ZvyghZ7E=bkyKx1xP8qvExeQbf-n</li>
+<li>http://mail.ru/WcQMGNBp-xukw4DJxdUz/7cuGEVC7joTuxBTjjSn/jfJCDtm.-TUkr.bml?qC=ik&amp;Tl-dFlAO.wgu6Q3xiHmRAM9Vt.eA-zY=UwLHZd-VlWqjm6md-</li>
+<li>http://mail.ru/kRl/yekNUnMFfQ/1WD5Q4jnnypUOB3.q/gCY8A4H0s11M5fz0iHdyaJ8XmI-l.bml?x.9u-M12oTA6yY58X=fUGyugUz617XFxG2Xo23djSclLHHL</li>
+<li>http://mail.ru/dAeGnMEyPDELW6rD1L7nhS/FRC4yH4lNU-etUKxbNPY50vYBy9/RUyZFgGmG8kStboIrr0O2BXZdRJ3eOPwMMC-hz9qowQ.HdYey8Uo74U.gif</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0801 1500 0000 1500 0000 0200 0000 0000 | ................
+00000010 | 0000 0000 3CFF C800 6675 636B 3030 3030 | ....<...fuck0000
+00000020 | 3030 3030 3030 6332 3330 3162 353A 014B | 000000c2301b5:.K
+00000030 | 0000 004B 0000 0002 0200 0000 0000 0000 | ...K............
+00000040 | 0000 0000 0067 7563 6B30 3030 300E 3030 | .....guck0000.00
+00000050 | 307F 6359 1264 595F 3A65 3525 5147 1074 | 0.cY.dY_:e5%QG.t
+00000060 | 5F5D 5159 5E0A 1073 0C5F 4345 4507 4728 | _]QY^..s._CEE.G(
+00000070 | 140E 0E1C 1065 4355 420A 1065 4306 407D | .....eCUB..eC.@}
+00000080 | 515C 0719 4623 0619 0A10 011E 021E 0430 | Q\..F#.........0
+00000090 | 0901 0000 0000 0000 0000 0200 0000 0000 | ................
+000000A0 | 0000 0000 8050 0B00 0901 0000 0000 0000 | .....P..........
+000000B0 | 0000 0200 0000 0000 0000 0000 8050 0B00 | .............P..
+000000C0 | 0901 0000 0000 0000 0000 0200 0000 0000 | ................
+000000D0 | 0000 0000 8050 0B00 0901 0000 0000 0000 | .....P..........
+000000E0 | 0000 0200 0000 0000 0000 0000 8050 0B00 | .............P..
+000000F0 | 0901 0000 0000 0000 0000 0200 0000 0000 | ................
+00000100 | 0000 0000 8050 0B00 0901 0000 0000 0000 | .....P..........
+00000110 | 0000 0200 0000 0000 0000 0000 8050 0B00 | .............P..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

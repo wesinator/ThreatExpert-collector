@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 May 2015, 22:59:20</li>
+<li>Processing time: 6 min 3 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF6172FB991610AA97D0031FD911F4384</li>
+<li>File SHA-1: 0xCA703A38D5E001AFABB9191CFBB3035850397D42</li>
+<li>Filesize: 2,200,239 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were deleted:</li>
+<ul>
+<li>%System%\MSCOMCTL.OCX</li>
+<li>%System%\MSFLXGRD.OCX</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">_RegDLL.tmp</td><td class="cell_1">%Temp%\is-9S6DE.tmp\_isetup\_RegDLL.tmp</td><td class="cell_2">12,288 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">is-CFHBL.tmp</td><td class="cell_1">%Temp%\is-CBI61.tmp\is-CFHBL.tmp</td><td class="cell_2">720,896 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">vbprndlg.dll</td><td class="cell_1">%System%\vbprndlg.dll</td><td class="cell_2">Process name: BYOH.exe<br/>Process filename: %ProgramFiles%\cost estimate\byoh.exe<br/>Address space: 0x1920000 - 0x1939000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Implemented Categories\{0DE86A52-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Implemented Categories\{0DE86A53-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Implemented Categories\{0DE86A57-2BAA-11CF-A229-00AA003D7352}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\VERSION</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.byh</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSFlexGridWizard.SubWizard</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSFlexGridWizard.SubWizard\Clsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Cost Estimate_is1</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "VBPrnDlg.PrinterDlg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\TypeLib]</li><ul>
+<li>(Default) = "{8620B873-D801-11D2-AC47-00600832A1F6}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\ProgID]</li><ul>
+<li>(Default) = "VBPrnDlg.PrinterDlg.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\vbprndlg.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E2E2172-D819-11D2-AC47-00600832A1F6}]</li><ul>
+<li>(Default) = "PrinterDlg Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\MiscStatus\1]</li><ul>
+<li>(Default) = "131473"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\VERSION]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\TypeLib]</li><ul>
+<li>(Default) = "{BEC61919-E6C4-11D1-BE7D-C63815000000}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\flexwiz.ocx, 30000"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\ProgID]</li><ul>
+<li>(Default) = "MSFlexGridWizard.SubWizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\flexwiz.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}\Control]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BEC6191B-E6C4-11D1-BE7D-C63815000000}]</li><ul>
+<li>(Default) = "MSFlexGridWizard.SubWizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\TypeLib]</li><ul>
+<li>(Default) = "{8620B873-D801-11D2-AC47-00600832A1F6}"</li>
+<li>Version = "2.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2E2E2171-D819-11D2-AC47-00600832A1F6}]</li><ul>
+<li>(Default) = "IPrinterDlg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\TypeLib]</li><ul>
+<li>(Default) = "{BEC61919-E6C4-11D1-BE7D-C63815000000}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191A-E6C4-11D1-BE7D-C63815000000}]</li><ul>
+<li>(Default) = "SubWizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\TypeLib]</li><ul>
+<li>(Default) = "{BEC61919-E6C4-11D1-BE7D-C63815000000}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{BEC6191E-E6C4-11D1-BE7D-C63815000000}]</li><ul>
+<li>(Default) = "SubWizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\0\win32]</li><ul>
+<li>(Default) = "%System%\vbprndlg.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\HELPDIR]</li><ul>
+<li>(Default) = "%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8620B873-D801-11D2-AC47-00600832A1F6}\2.1]</li><ul>
+<li>(Default) = "Microsoft VB Printer Dialog(PSS)"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\0\win32]</li><ul>
+<li>(Default) = "%System%\flexwiz.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%Windir%\system32"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0\FLAGS]</li><ul>
+<li>(Default) = "2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{BEC61919-E6C4-11D1-BE7D-C63815000000}\1.0]</li><ul>
+<li>(Default) = "MSFlexGrid Wizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.byh]</li><ul>
+<li>(Default) = "byoh"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\shell\open\command]</li><ul>
+<li>(Default) = "%ProgramFiles%\cost estimate\byoh.exe %1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\cost estimate\GRAPH03.ICO"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\byoh]</li><ul>
+<li>(Default) = "byoh"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSFlexGridWizard.SubWizard\Clsid]</li><ul>
+<li>(Default) = "{BEC6191B-E6C4-11D1-BE7D-C63815000000}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSFlexGridWizard.SubWizard]</li><ul>
+<li>(Default) = "MSFlexGridWizard.SubWizard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg\CurVer]</li><ul>
+<li>(Default) = "VBPrnDlg.PrinterDlg.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg\CLSID]</li><ul>
+<li>(Default) = "{2E2E2172-D819-11D2-AC47-00600832A1F6}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg]</li><ul>
+<li>(Default) = "PrinterDlg Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg.1\CLSID]</li><ul>
+<li>(Default) = "{2E2E2172-D819-11D2-AC47-00600832A1F6}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VBPrnDlg.PrinterDlg.1]</li><ul>
+<li>(Default) = "PrinterDlg Class"</li>
+</ul>
+<li>[[pathname with a string SHARE]\SharedDlls]</li><ul>
+<li>%System%\vbprndlg.dll = 0x00000001</li>
+<li>%System%\flexwiz.ocx = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Cost Estimate_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.1.6"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\Cost Estimate"</li>
+<li>InstallLocation = "%ProgramFiles%\Cost Estimate\"</li>
+<li>Inno Setup: Icon Group = "Cost Estimate"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = "desktopicon"</li>
+<li>Inno Setup: Deselected Tasks = ""</li>
+<li>DisplayName = "Cost Estimate 2.46"</li>
+<li>UninstallString = ""%ProgramFiles%\Cost Estimate\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\Cost Estimate\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "2.4.6"</li>
+<li>Publisher = "Humhost"</li>
+<li>URLInfoAbout = "http://www.humhost.com"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE3-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE5-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C4F3BE7-47EB-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA2-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7629CFA4-3FE5-101B-A3C9-08002B2F49FB}\InprocServer32]</li><ul>
+<li>InprocServer32 = "IW[F9`$@Q?NcrI3z%N[,>-S}(z(Bof(0l9efGjyo1"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{232E456A-87C3-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{232E456A-87C3-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{275DBBA0-805A-11CF-91F7-C2863C385E30}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6352-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6353-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6354-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6355-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6356-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6357-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{586A6359-87C8-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603C7E80-87C2-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603C7E80-87C2-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6262D3A0-531B-11CF-91F6-C2863C385E30}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6262D3A0-531B-11CF-91F6-C2863C385E30}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6319EEA0-531B-11CF-91F6-C2863C385E30}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B09DE715-87C1-11D1-8BE3-0000F8754DA1}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B09DE715-87C1-11D1-8BE3-0000F8754DA1}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE32-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE33-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE34-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE35-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE36-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE37-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE38-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE39-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3A-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3B-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3C-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3D-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3E-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE3F-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE40-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE41-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C27CCE42-8596-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FE38753A-44A3-11D1-B5B7-0000C09000C4}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FE38753A-44A3-11D1-B5B7-0000C09000C4}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B1-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{2334D2B3-713E-11CF-8AE5-00AA00C00905}\TypeLib]</li><ul>
+<li>(Default) = </li>
+<li>Version = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageComboCtl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageComboCtl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageListCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ImageListCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ListViewCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ListViewCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ProgCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.ProgCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.SBarCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.SBarCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Slider]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Slider.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TabStrip]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TabStrip.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Toolbar]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.Toolbar.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TreeCtrl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComctlLib.TreeCtrl.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComDlg.CommonDialog]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSComDlg.CommonDialog.1]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{5E9E78A0-531B-11CF-91F6-C2863C385E30}\1.0]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{5E9E78A0-531B-11CF-91F6-C2863C385E30}\1.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{5E9E78A0-531B-11CF-91F6-C2863C385E30}\1.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}\2.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}\2.0\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{F9043C88-F6F2-101A-A3C9-08002B2F49FB}\1.2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{F9043C88-F6F2-101A-A3C9-08002B2F49FB}\1.2\HELPDIR]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

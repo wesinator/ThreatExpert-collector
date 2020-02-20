@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-GameThief.Win32.Magania">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-GameThief.Win32.Magania</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 November 2015, 17:22:49</li>
+<li>Processing time: 5 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xA846CEF171E8E23885CFC1E50C5DFF86</li>
+<li>File SHA-1: 0xFB4C04F57D96BE4D79DE411D42068F7A371ECBE3</li>
+<li>Filesize: 147,574 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/trojan-gamethief-win32-magania.html" target="_blank">Trojan-GameThief.Win32.Magania<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>admin = "[file and pathname of the sample #1]"</li>
+</ul>
+<br/>
+<em>so that [file and pathname of the sample #1] runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>1.93.39.67</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">1.93.39.67<td class="cell_2">7777</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7777:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 9601 0000 9002 0000 7E95 8557 394D 4364 | ........~..W9MCd
+00000010 | 1234 C79B 9574 9351 446C 6A68 7A4A 814C | .4...t.QDljhzJ.L
+00000020 | 4255 5A11 4916 FA99 25AB 1329 F4A3 B6E7 | BUZ.I...%..)....
+00000030 | 853B 010B 0E3F B054 58E6 E610 0C88 9518 | .;...?.TX.......
+00000040 | BC43 5C5C 8031 0C1B 1C2D 4595 5364 F5FB | .C\\.1...-E.Sd..
+00000050 | 5B26 4B1E BAB4 C0BD F69D EC98 1C03 B546 | [&K............F
+00000060 | 66AE 13AF F3DC 0501 74A2 8097 89A4 4857 | f.......t.....HW
+00000070 | 74F9 0BC2 945A E336 A851 AF3C 1786 8EA0 | t....Z.6.Q.<....
+00000080 | AB55 B31F B7FE 39F5 DAAC 5287 E7EB 84DF | .U....9...R.....
+00000090 | 19E4 6BD1 67EA C3DE 649A 3AC6 28F5 CAB3 | ..k.g...d.:.(...
+000000A0 | 222A A55D B5EA 4CAA BC03 0401 990E A0BF | "*.]..L.........
+000000B0 | C52B B128 E2D0 1253 A3D4 1D5F 09AF AEAF | .+.(...S..._....
+000000C0 | 0523 53FE 7010 FF84 5DCF 2BE7 CA72 FEE8 | .#S.p...].+..r..
+000000D0 | E6AC B95E A21B F288 A399 53C3 05F0 91A5 | ...^......S.....
+000000E0 | EF29 B63D 71BC D2DB ACBD FE93 6D42 1759 | .).=q.......mB.Y
+000000F0 | 48CD 7CD8 9C54 077B D30A D0A5 DD8C BC07 | H.|..T.{........
+00000100 | 7C22 2E87 1D98 24DE 362F C225 6877 6669 | |"....$.6/.%hwfi
+00000110 | 9BBE 971D 7F20 E9A5 CFBD 1981 10A9 AC2D | ..... .........-
+00000120 | 232F 0FC0 0EF9 BDCB 6985 3D61 8266 4C70 | #/......i.=a.fLp
+00000130 | B558 708B F371 8EC6 2E94 65EC E46A 9377 | .Xp..q....e..j.w
+00000140 | 9AB1 C6D4 1E16 C8C0 773D DB98 B7B5 BC71 | ........w=.....q
+00000150 | 779E 39BE 2F48 E8F4 A594 9C37 A530 572C | w.9./H.....7.0W,
+00000160 | 51B6 622D CA9E 0CDB 8288 3D4F 4A61 3F36 | Q.b-......=OJa?6
+00000170 | 18A2 0779 1FBE 9281 8279 69CE A4EF F065 | ...y.....yi....e
+00000180 | 219E AF5B 78FA BCAD 025B 9603 B849 0FC4 | !..[x....[...I..
+00000190 | F103 6902 78EA                          | ..i.x.
+00000000 | 9C01 0000 9002 0000 7E95 8557 394D 4364 | ........~..W9MCd
+00000010 | 1234 F6D0 9214 9161 446C 8B89 296A 92A0 | .4.....aDl..)j..
+00000020 | 2F6E 0A43 0AA4 1812 2197 1329 F4A3 B6E7 | /n.C....!..)....
+00000030 | 853B 010B 0E3C 000C 1D53 3EBA 0C48 E66D | .;...<...S>..H.m
+00000040 | 0C6A 6520 4414 B20D 2641 0BD7 1792 DABC | .je D...&A......
+00000050 | BBA3 5E50 0526 E875 CE3C E4BD E007 04E5 | ..^P.&.u.<......
+00000060 | 513D 501E A1BC 5F02 2A78 24E2 F4DB CABB | Q=P..._.*x$.....
+00000070 | EAF6 0CEF 1194 268A 675D A9D9 D52B 6689 | ......&.g]...+f.
+00000080 | 4853 6CC7 68D3 FBF7 D264 BC4C 1BCB 5708 | HSl.h....d.L..W.
+00000090 | B519 BC97 238F C4C3 56EF D475 8C21 E28A | ....#...V..u.!..
+000000A0 | 5322 4A85 84FA E94A AABC 030C 0664 5A81 | S"J....J.....dZ.
+000000B0 | 9E06 AFF8 9C88 7D21 AA46 881D 590A 2DAF | ......}!.F..Y.-.
+000000C0 | AEC8 E1F1 4048 C63F D146 A50A 8094 2B4A | ....@H.?.F....+J
+000000D0 | F983 CB93 5A3F 1FEF 8034 E8A8 E7D4 7046 | ....Z?...4....pF
+000000E0 | 7B67 E97B 8C4D 6F0C 2FF4 366B 7784 DFD9 | {g.{.Mo./.6kw...
+000000F0 | 4675 9140 6AEE 879A 926A 5F57 5A01 DAB5 | Fu.@j....j_WZ...
+00000100 | 9B91 77AF 5FC4 F980 0363 D4B7 CE88 701B | ..w._....c....p.
+00000110 | B43B B3B4 19DA 596C F803 A75E FADC AB09 | .;....Yl...^....
+00000120 | 0892 CAD2 30F2 B40A 6C91 DF9B 9456 D813 | ....0...l....V..
+00000130 | 6668 C604 7783 0553 9C8F 7354 77A1 2CC3 | fh..w..S..sTw.,.
+00000140 | 4717 EBBC D3A4 25AA 76B2 4002 BE2B D9EA | G.....%.v.@..+..
+00000150 | BCB5 E18D EBD3 CCE1 CD83 1376 7F4A C9F9 | ...........v.J..
+00000160 | 524A E2DE 8EE7 0265 CB97 23EC C9B0 CE8A | RJ.....e..#.....
+00000170 | D8F6 A614 F663 837E 7A90 F7E1 2B19 2998 | .....c.~z...+.).
+00000180 | 8FE6 CCFA 0E5F 7C3F BEEE C3DD C7D5 27B0 | ....._|?......'.
+00000190 | 21EC C143 7A20 861F 5846 79B0           | !..Cz ..XFy.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

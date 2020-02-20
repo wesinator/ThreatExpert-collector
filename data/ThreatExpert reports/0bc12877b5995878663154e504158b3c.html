@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Inject-K">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Inject-K</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 26 May 2018, 07:06:18</li>
+<li>Processing time: 5 min 34 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0BC12877B5995878663154E504158B3C</li>
+<li>File SHA-1: 0xA6CD28D372CF69875E69EDD15D1C30C4F826071B</li>
+<li>Filesize: 102,400 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/mal-inject-k.html" target="_blank">Mal/Inject-K<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\EXCEL\<a href="http://www.threatexpert.com/files/EXCEL.exe.html" target="_blank">EXCEL.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">102,400 bytes</td>
+<td class="cell_1">MD5: 0x0BC12877B5995878663154E504158B3C<br/>SHA-1: 0xA6CD28D372CF69875E69EDD15D1C30C4F826071B</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/mal-inject-k.html" target="_blank">Mal/Inject-K<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%AppData%\remcos\logs.dat
+</td>
+<td class="cell_1">88 bytes</td>
+<td class="cell_1">MD5: 0x12DD94A6368A0CBB36A74981C7D2DC19<br/>SHA-1: 0x1959CCCEFE860CABA8A475B50AB9A88BE4EEDE39</td>
+<td class="cell_2">(not available)</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\EXCEL</li>
+<li>%AppData%\remcos</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/excel.exe.html" target="_blank">excel.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\excel\<a href="http://www.threatexpert.com/files/excel.exe.html" target="_blank">excel.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">102,400 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\remcos_bjynqcwqnb</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\remcos_bjynqcwqnb]</li><ul>
+<li>EXEpath = "?}.+L??P?????????e???f???H?M?b??F?.DÃºU@?:,5?V?????R? ?????w??L?"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>remcos_bjynqcwqnb</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>115.186.136.237</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">115.186.136.237<td class="cell_2">9999</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%AppData%\EXCEL\EXCEL.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9999:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1B84 D5B0 5DF4 C493 C530 C2C5 8CDA B1FD | ....]....0......
+00000010 | C8CB 002A F30F 162A 2BB1 9001 20B9 D665 | ...*...*+... ..e
+00000020 | B6E8 EF49 0D6E AF6C 366C AD0F 723B 00AA | ...I.n.l6l..r;..
+00000030 | 77C2 1D6B 2E7C 694B 121A 75EE DD99 8E59 | w..k.|iK..u....Y
+00000040 | B471 F42F BF77 BD8F 927D AD75 6248 E22B | .q./.w...}.ubH.+
+00000050 | 9FF8 1250 5A5E D910 162E 7A19 C7EE 236B | ...PZ^....z...#k
+00000060 | 4059 C565 14EF 175B 5F9B 81F2 0022 5029 | @Y.e...[_...."P)
+00000070 | EBFA 3EE4 AC4C 12F9 19FE 742C BA31 9E1E | ..>..L....t,.1..
+00000080 | 1672 C459 8C85 F012 1800 0F13 2D47 0D06 | .r.Y........-G..
+00000090 | 445F 0AC7 4123 136F 92F3 1F2A F2C1 D83A | D_..A#.o...*...:
+000000A0 | 23CD E08C 161D D48A 3647 931F 29DD 87B9 | #.......6G..)...
+000000B0 | F360 DD2F 4E6F 6294 78B5 E46D 3FC3 AA40 | .`./Nob.x..m?..@
+000000C0 | 259F 061F 2B2C 6E95 39A6 DCE5 04B6 ECB0 | %...+,n.9.......
+000000D0 | A0F5 D4A2 B9CD F04F EBBD EE9D F85E 6F38 | .......O.....^o8
+000000E0 | 0EA7 7500 3B76 55DF 808C 1C32 F36E E50F | ..u.;vU....2.n..
+000000F0 | 7166 ECD4 7352 B546 4981 FEC8 5497 711B | qf..sR.FI...T.q.
+00000100 | 4C3F 2EA7 86EC 4421 2BAC 0E01 9387 1B71 | L?....D!+......q
+00000110 | D743 9178 D5EA 1FEE 7ED6 BA08 589C CD44 | .C.x....~...X..D
+00000120 | CD05 FA94 A803 5310 7783 1849 305D 0ECB | ......S.w..I0]..
+00000130 | 0AAF 90CB 8AD5 5386 6F17 7229 38E7 9546 | ......S.o.r)8..F
+00000140 | DF94 A8BB F851 48D2 41CB 0B72 E2DB 27F1 | .....QH.A..r..'.
+00000150 | B381 2E01 1A47 ED4B 37A3 AD6C 914C 569D | .....G.K7..l.LV.
+00000160 | 2095 51AD EA47 4376 2FA2 1F61 7722 6F97 |  .Q..GCv/..aw"o.
+00000170 | 2E7B 8CF3 4BB0 7932 12                  | .{..K.y2.
+00000000 | 1B84 D5B0 5DF4 C493 C530 C2C3 8CDA B1FD | ....]....0......
+00000130 | 0AAF 90CB 8AD5 5386 6F17 722D 3CE7 990D | ......S.o.r-<...
+00000140 | C09A A1A3 BD56 49DA 4184 5C63 E5CA 72F1 | .....VI.A.\c..r.
+00000150 | E190 2910 4F0A E954 33B5 AA7A 9651 5180 | ..).O..T3..z.QQ.
+00000160 | 2488 54E2 BE56 4467 39BB 0067 7532 5F86 | $.T..VDg9..gu2_.
+00000170 | 1B60 88FB 46B6 6B2B 0119 6D             | .`..F.k+..m
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

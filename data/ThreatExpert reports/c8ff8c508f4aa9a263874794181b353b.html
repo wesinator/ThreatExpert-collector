@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Emogen-P">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Emogen-P</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 June 2016, 20:04:44</li>
+<li>Processing time: 5 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC8FF8C508F4AA9A263874794181B353B</li>
+<li>File SHA-1: 0xF40B30255DA0D2DA09017D1B85CE134DA25F31A5</li>
+<li>Filesize: 125,440 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-emogen-p.html" target="_blank">Mal/Emogen-P<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">ggiogq.exe</td><td class="cell_1">%Windir%\ggiogq.exe</td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">270,336 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">By:???BestFxeHacker??</td><td class="cell_1">QQ??1980540096</td><td class="cell_1">"Running"</td><td class="cell_2">%Windir%\ggiogq.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "By:???BestFxeHacker??"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000]</li><ul>
+<li>Service = "By:???BestFxeHacker??"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "QQ??1980540096"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??\Enum]</li><ul>
+<li>0 = "Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\By:???BestFxeHacker??]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\ggiogq.exe"</li>
+<li>DisplayName = "QQ??1980540096"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "???????????????????? BestFxe QQ:1980540096"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "By:???BestFxeHacker??"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000]</li><ul>
+<li>Service = "By:???BestFxeHacker??"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "QQ??1980540096"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??\Enum]</li><ul>
+<li>0 = "Root\LEGACY_BY:*00D0*00A1*00D2*00E3*00A3*00A8BESTFXEHACKER*00A3*00A9\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\By:???BestFxeHacker??]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\ggiogq.exe"</li>
+<li>DisplayName = "QQ??1980540096"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "???????????????????? BestFxe QQ:1980540096"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">ggiogq.exe (%Windir%\ggiogq.exe)</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">ggiogq.exe (%Windir%\ggiogq.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.dnzlx.com</li>
+<li>myss.ter.tf</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">www.dnzlx.com<td class="cell_2">6868</td><tr>
+<tr><td class="cell_1">myss.ter.tf<td class="cell_2">8006</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 6868:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0B00 0000 0000 0000 5769 6E64 6F77 7320 | ........Windows
+00000010 | 5850 0081 1800 0000 0700 0000 0016 7081 | XP............p.
+00000020 | 0000 0000 E816 7081 3C5F B2F9 E816 7081 | ......p.<_....p.
+00000030 | 0600 0000 0700 0000 40AD 98E1 0800 43E1 | ........@.....C.
+00000040 | 0000 0000 0000 E000 CCEC B7A3 2056 6572 | ............ Ver
+00000050 | 2020 372E 3000 43E1 1800 1800 381C 07E1 |   7.0.C.....8...
+00000060 | 60E1 7F00 281C 9DF7 B70B 0000 0100 0000 | `...(...........
+00000070 | 434F 4D50 5554 4552 4E41 4D45 0052 6781 | COMPUTERNAME.Rg.
+00000080 | 681C 9DF7 8889 01E1 7089 01E1 281C 9DF7 | h.......p...(...
+00000090 | 0904 0000 C452 6781 F452 6781 5052 6781 | .....Rg..Rg.PRg.
+000000A0 | 1000 F800 821B 07E1 24FC E200 10FC E200 | ........$.......
+000000B0 | 8011 C077 0900 0000 0000 0000 30FC E200 | ...w........0...
+000000C0 | A711 907C 0000 C077 0200 0000 0000 0000 | ...|...w........
+000000D0 | 0050 FD7F 0000 0000 702C 2400 A4FC E200 | .P......p,$.....
+000000E0 | 00C0 FD7F A4FC E200 948E 917C 54FC E200 | ...........|T...
+000000F0 | 878F 917C 00C0 FD7F 0050 FD7F 0000 0000 | ...|.....P......
+00000100 | 1400 0000 0100 0000 0000 0000 0000 0000 | ................
+00000110 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0050 FD7F | .............P..
+00000130 | 3511 C077 A41E 2400 48FC E200 0000 0000 | 5..w..$.H.......
+00000140 | 0CFD E200 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+00000150 | 748E 917C C4E8 907C FA8D 917C 30FD E200 | t..|...|...|0...
+00000160 | 18EE 907C 0000 0000 0000 0000 0000 0000 | ...|............
+00000170 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 00C0 FD7F 0000 0000 | ................
+000001A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001B0 | B0FC E200 0000 0000 FFFF FFFF 18EE 907C | ...............|
+000001C0 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+000001D0 | CFEA 907C 30FD E200 0100 0000 1700 0100 | ...|0...........
+000001E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001F0 | 0000 0000 0000 0000 3800 0000 FE1B 07E1 | ........8.......
+00000200 | 9D3C 1CAF 1800 0000                     | .<......
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8006:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0B00 0000 0000 0000 5769 6E64 6F77 7320 | ........Windows
+00000010 | 5850 0080 00D0 FD7F 0100 0000 0000 0000 | XP..............
+00000020 | E8FE 3FC0 0000 0000 0000 0000 00E0 FD7F | ..?.............
+00000030 | 286C 68F9 DFF0 5180 906B 68F9 0000 0000 | (lh...Q..kh.....
+00000040 | 0000 0000 0000 0000 CCEC B7A3 2056 6572 | ............ Ver
+00000050 | 2020 372E 3000 0000 E8FE 3FC0 0000 0000 |   7.0.....?.....
+00000060 | 0000 0000 0000 1000 B70B 0000 0100 0000 | ................
+00000070 | 434F 4D50 5554 4552 4E41 4D45 0000 0000 | COMPUTERNAME....
+00000080 | 0000 C300 406B 68F9 0000 0000 FFFF FFFF | ....@kh.........
+00000090 | 0904 0000 00D0 FD7F FFFF FFFF AC75 5A80 | .............uZ.
+000000A0 | 08C8 5380 FFFF FFFF 0200 0000 0000 0000 | ..S.............
+000000B0 | 0000 0000 24FC D200 0050 FD7F 30FC D200 | ....$....P..0...
+000000C0 | A711 907C 0000 A571 0100 0000 0000 0000 | ...|...q........
+000000D0 | 0050 FD7F 0000 0000 102D 2400 A4FC D200 | .P.......-$.....
+000000E0 | 00D0 FD7F A4FC D200 948E 917C 54FC D200 | ...........|T...
+000000F0 | 878F 917C 00D0 FD7F 0050 FD7F 0000 0000 | ...|.....P......
+00000100 | 1400 0000 0100 0000 0000 0000 0000 0000 | ................
+00000110 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0050 FD7F | .............P..
+00000130 | CD14 A571 A41E 2400 48FC D200 0000 0000 | ...q..$.H.......
+00000140 | 0CFD D200 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+00000150 | 748E 917C C4E8 907C FA8D 917C 30FD D200 | t..|...|...|0...
+00000160 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000170 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 00D0 FD7F 0000 0000 | ................
+000001A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001B0 | B0FC D200 0000 0000 FFFF FFFF 18EE 907C | ...............|
+000001C0 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+000001D0 | CFEA 907C 30FD D200 0100 0000 1700 0100 | ...|0...........
+000001E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001F0 | 0000 0000 0000 0000 7C6A 68F9 3000 60C0 | ........|jh.0.`.
+00000200 | 586A 68F9 8CE9 5180                     | Xjh...Q.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Packed.Vmpbad!gen1, Trojan-Downloader.Win32.Adload.kmm, Mal/Behav-363, Backdoor.Win32.Simda, Trojan.Gen, Generic.dx!bdd4, Mal/Generic-L, Trojan.Win32.Scar, Suspicious.Emit, Trojan.Win32.Spy">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Packed.Vmpbad!gen1, Trojan-Downloader.Win32.Adload.kmm, Mal/Behav-363..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 June 2016, 21:43:33</li>
+<li>Processing time: 5 min 54 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7D06B50E11F74F8EE0E08B867384F080</li>
+<li>File SHA-1: 0x1F7B989466081EC28B497DE93998ECCD52DC3388</li>
+<li>Filesize: 197,632 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Packed.Vmpbad!gen1 [Symantec]</li>
+<li>Trojan-Downloader.Win32.Adload.kmm [Kaspersky Lab]</li>
+<li>Mal/Behav-363 [Sophos]</li>
+<li>Backdoor.Win32.Simda [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/downloader.gif"></td>
+<td class="cell_1">A program that downloads files to the local computer that may represent security risk</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\install.bat
+</td>
+<td class="cell_1">372 bytes</td>
+<td class="cell_1">MD5: 0xD4C5F9E5BDD6176A99023499DAA7E4E3<br/>SHA-1: 0xBF1C833F0D625E860E28C2CE87696131057C0391</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\netsf.inf
+<br/>
+c:\netsf.inf
+<br/>
+%Windir%\inf\netsf.inf
+</td>
+<td class="cell_1">5,468 bytes</td>
+<td class="cell_1">MD5: 0xF3382C8AED0569D5C49EAA6BD36D2FCF<br/>SHA-1: 0x1B891237C057EED3508867456FD354A679C355C9</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Temp%\netsf_m.inf
+<br/>
+c:\netsf_m.inf
+<br/>
+%Windir%\inf\netsf_m.inf
+</td>
+<td class="cell_1">2,624 bytes</td>
+<td class="cell_1">MD5: 0x5A7EEFC75B9E3FA71DFC38E3ED9B53C5<br/>SHA-1: 0x9BD703B73DEBE7C25B5CB18560D67EED228D7858</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Temp%\passthru.sys
+<br/>
+c:\passthru.sys
+<br/>
+%Windir%\inf\passthru.sys
+<br/>
+%System%\drivers\passthru.sys
+</td>
+<td class="cell_1">15,360 bytes</td>
+<td class="cell_1">MD5: 0xF23E8927CC852084F6EBAF3C7290AC80<br/>SHA-1: 0x0D094623EC356EFF22E76D0F2016BDC4C3165BED</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Generic.dx!bdd4 [McAfee]<br/><a href="http://www.threatexpert.com/threats/mal-generic-l.html" target="_blank">Mal/Generic-L<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-scar.html" target="_blank">Trojan.Win32.Scar<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Temp%\<a href="http://www.threatexpert.com/files/Server.dll.html" target="_blank">Server.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">81,920 bytes</td>
+<td class="cell_1">MD5: 0x62D9007DA13FDE1C9A0A4EFD1A5E0301<br/>SHA-1: 0x22871E5FF8CF27C3C9CF77CF5F03F2DFFE234592</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Temp%\<a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">11,776 bytes</td>
+<td class="cell_1">MD5: 0xE5F0A97853D45C4753060680A5EF02BA<br/>SHA-1: 0xF981D52614A7C9B61F841BBA47F4A7594E958089</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%Temp%\x7GPXe.exe
+</td>
+<td class="cell_1">125 bytes</td>
+<td class="cell_1">MD5: 0x7C5F5A68051F6B0C0E9A2AD33C40D415<br/>SHA-1: 0x120865765927A61AF83F02B83DC297EEDE61EC41</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%Windir%\inf\netsf.PNF
+</td>
+<td class="cell_1">6,976 bytes</td>
+<td class="cell_1">MD5: 0xF99B7DA20387770CFB7078BF53C5ABD6<br/>SHA-1: 0xE2486EF6400480471A394444BD09172227DB4F9F</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%Windir%\inf\netsf_m.PNF
+</td>
+<td class="cell_1">5,348 bytes</td>
+<td class="cell_1">MD5: 0x1A5763A189CD5A793C50A02F648133C5<br/>SHA-1: 0x9655C2230CCDBD79D89C0D280062EFE640CB2D80</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">197,632 bytes</td>
+<td class="cell_1">MD5: 0x7D06B50E11F74F8EE0E08B867384F080<br/>SHA-1: 0x1F7B989466081EC28B497DE93998ECCD52DC3388</td>
+<td class="cell_2">Packed.Vmpbad!gen1 [Symantec]<br/>Trojan-Downloader.Win32.Adload.kmm [Kaspersky Lab]<br/>Mal/Behav-363 [Sophos]<br/>Backdoor.Win32.Simda [Ikarus]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%Windir%\Tasks\<a href="http://www.threatexpert.com/files/conime.exe.html" target="_blank">conime.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">266,240 bytes</td>
+<td class="cell_1">MD5: 0xA937001EEA6BE865426C6DA7EEBA2FF3<br/>SHA-1: 0xDC067580EFFA6225BB625DA0A3B46FA83D672170</td>
+<td class="cell_2">Suspicious.Emit [Symantec]<br/>Trojan.Win32.Spy [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%Windir%\inf\INFCACHE.1</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/conime.exe.html" target="_blank">conime.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\tasks\<a href="http://www.threatexpert.com/files/conime.exe.html" target="_blank">conime.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">24,576 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">708,608 bytes</td></tr>
+<tr><td class="cell_1">MUbjqy.exe</td><td class="cell_1">%Temp%\MUbjqy.exe</td><td class="cell_2">270,336 bytes</td></tr>
+</table></p>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/cmd.exe.html" target="_blank">cmd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/cmd.exe.html" target="_blank">cmd.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">65,536 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi\Interfaces]</li><ul>
+<li>UpperRange = "noupper"</li>
+<li>LowerRange = "nolower"</li>
+<li>FilterMediaTypes = "ethernet, tokenring, fddi, wan"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Parameters]</li><ul>
+<li>Param1 = "4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi]</li><ul>
+<li>HelpText = "Passthru Driver"</li>
+<li>FilterClass = "failover"</li>
+<li>FilterDeviceInfId = "ms_passthrump"</li>
+<li>Service = "Passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}]</li><ul>
+<li>Characteristics = 0x00004410</li>
+<li>InfPath = "netsf.inf"</li>
+<li>InfSection = "Passthru.ndi"</li>
+<li>Description = "Passthru Driver"</li>
+<li>ComponentId = "ms_passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\Drivers\passthru.sys"</li>
+<li>DisplayName = "Passthru Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi\Interfaces]</li><ul>
+<li>UpperRange = "noupper"</li>
+<li>LowerRange = "nolower"</li>
+<li>FilterMediaTypes = "ethernet, tokenring, fddi, wan"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Parameters]</li><ul>
+<li>Param1 = "4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}\Ndi]</li><ul>
+<li>HelpText = "Passthru Driver"</li>
+<li>FilterClass = "failover"</li>
+<li>FilterDeviceInfId = "ms_passthrump"</li>
+<li>Service = "Passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{FD4AF846-470C-4B1C-89E2-F6B9580F81F7}]</li><ul>
+<li>Characteristics = 0x00004410</li>
+<li>InfPath = "netsf.inf"</li>
+<li>InfSection = "Passthru.ndi"</li>
+<li>Description = "Passthru Driver"</li>
+<li>ComponentId = "ms_passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\Drivers\passthru.sys"</li>
+<li>DisplayName = "Passthru Service"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Userinit = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network]</li><ul>
+<li>Config = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network]</li><ul>
+<li>Config = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>180.97.239.112:7438</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">conime.exe (%Windir%\Tasks\conime.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>version.webddos.com</li>
+<li>180.97.239.112</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">180.97.239.112<td class="cell_2">7438</td><tr>
+</table></p>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://version.webddos.com/key.txt</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 7438:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 5634 0200 EB06 917C DBC1 C277 0000 8700 | V4.....|...w....
+00000010 | 0800 0000 15C2 C277 0000 0000 F0FB 1201 | .......w........
+00000020 | 6121 4F77 0000 4E77 0200 0000 A028 2400 | a!Ow..Nw.....($.
+00000030 | 0000 0000 0200 0000 0000 4E77 10FC 1201 | ..........Nw....
+00000040 | 0921 4F77 0000 4E77 0200 0000 0000 0000 | .!Ow..Nw........
+00000050 | 0000 0000 24FC 1201 0040 FD7F 30FC 1201 | ....$....@..0...
+00000060 | A711 907C 0000 4E77 0100 0000 0000 0000 | ...|..Nw........
+00000070 | 0040 FD7F 0000 0000 A028 2400 A4FC 1201 | .@.......($.....
+00000080 | 00A0 FD7F A4FC 1201 948E 917C 54FC 1201 | ...........|T...
+00000090 | 878F 917C 00A0 FD7F 0040 FD7F 0000 0000 | ...|.....@......
+000000A0 | 1400 0000 0100 0000 0000 0000 0000 0000 | ................
+000000B0 | 1000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 0000 0000 0040 FD7F | .............@..
+000000D0 | C120 4F77 A41E 2400 48FC 1201 0000 0000 | . Ow..$.H.......
+000000E0 | 0CFD 1201 18EE 907C D08E 917C FFFF FFFF | .......|...|....
+000000F0 | 748E 917C C4E8 907C FA8D 917C 30FD 1201 | t..|...|...|0...
+00000100 | 18EE 907C 0000 0000 0000 0000 0000 0000 | ...|............
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000130 | 0000 0000 0000 0000 00A0 FD7F 0000 0000 | ................
+00000140 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000150 | B0FC 1201 0000 0000 FFFF FFFF 18EE 907C | ...............|
+00000160 | 008E 917C FFFF FFFF FA8D 917C 25D6 907C | ...|.......|%..|
+00000170 | CFEA 907C 30FD 1201 0100 0000 1700 0100 | ...|0...........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 7CEA 03F8 1800 60C0 | ........|.....`.
+000001A0 | 58EA 03F8 8CE9 5180 00F0 6600 0100 0000 | X.....Q...f.....
+000001B0 | 0000 0000 7833 00C0 0000 0000 0000 0000 | ....x3..........
+000001C0 | 0000 6700 14EB 03F8 DFF0 5180 7CEA 03F8 | ..g.......Q.|...
+000001D0 | 0000 0000 0000 0000 0000 0000 FFFF 6600 | ..............f.
+000001E0 | 5815 7881 01E8 8681 0000 0000 7833 00C0 | X.x.........x3..
+000001F0 | FFFF 8800 A0ED 7581 0140 8681 0000 0000 | ......u..@......
+00000200 | 7844 00C0 0300 0000 0000 0000 3800 0000 | xD..........8...
+00000210 | 2300 0000 2300 0000 F4FC E000 18EE 907C | #...#..........|
+00000220 | 0000 0000 04FD E000 3815 917C A025 CF00 | ........8..|.%..
+00000230 | EB06 917C 5608 817C 1B00 0000 0002 0000 | ...|V..|........
+00000240 | FCFF 1201 2300 0000 5608 817C 89EB 03F8 | ....#...V..|....
+00000250 | F034 8781 F89B 9C81 2300 0000 30EB 03F8 | .4......#...0...
+00000260 | 0063 9C81 FD3D 5480 0000 0400 5815 7881 | .c...=T.....X.x.
+00000270 | F8E8 8681 0000 0000 0400 0001 0000 0000 | ................
+00000280 | FFFF FF03 D444 FD80 0000 0000 FC3C 88C0 | .....D.......<..
+00000290 | 5017 7881 A400 0000 64EB 03F8 AAEC 5180 | P.x.....d.....Q.
+000002A0 | A400 0000 5017 7881 00C0 FD7F 90EB 03F8 | ....P.x.........
+000002B0 | F81F 60C0 6CEB 03F8 8CE9 5180 00C0 FD7F | ..`.l.....Q.....
+000002C0 | 0100 0000 0000 0000 E0FE 3FC0 0000 0000 | ..........?.....
+000002D0 | 0000 0000 00D0 FD7F 28EC 03F8 DFF0 5180 | ........(.....Q.
+000002E0 | 90EB 03F8 0000 0000 0000 0000 0000 0000 | ................
+000002F0 | 48E9 8681 5815 7881 0116 7881 0000 0000 | H...X.x...x.....
+00000300 | E0FE 3FC0 0000 0000 6401 0000 0000 0400 | ..?.....d.......
+00000310 | 2F06 0000 2416 7881 FFFF 6200 5815 7881 | /...$.x...b.X.x.
+00000320 | 0000 0000 C812 82E1 0000 6300 40EB 03F8 | ..........c.@...
+00000330 | 3A30 6080 FFFF FFFF 1050 5380 00C0 FD7F | :0`......PS.....
+00000340 | FFFF FFFF AC75 5A80 08C8 5380 FFFF FFFF | .....uZ...S.....
+00000350 | B8EC 03F8 BCEC 03F8 0080 0000 14ED 03F8 | ................
+00000360 | 4C7E 6781 24EC 03F8 D99A 4F80 E19A 4F80 | L~g.$.....O...O.
+00000370 | 1C7E 6781 B07C 6781 E47C 6781 48E9 8681 | .~g..|g..|g.H...
+00000380 | 8683 6380 E052 8F81 B07C 6781 00A0 FD7F | ..c..R...|g.....
+00000390 | 84EC 03F8 2C01 5080 0000 0000 0500 0000 | ....,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | B07C 6781 50ED 03F8 B5B3 4F80 5815 7881 | .|g.P.....O.X.x.
+000003D0 | 01E6 8681 0000 0000 E052 8F81 DEFC 4F80 | .........R....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9CEC 03F8 350C 6D80 0000 0000 DCE2 907C | ....5.m........|
+00000400 | 858E 917C                               | ...|
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

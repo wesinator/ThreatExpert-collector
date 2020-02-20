@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.SillyFDC, Backdoor.Win32.mIRC-based.o, BackDoor-DKH, WORM_IRCBOT.CAV, Troj/Zapchas-EG, Trojan:Win32/Agent.AAP, Backdoor.Win32.mIRC-based, Win-Trojan/Mirc-based.705312">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.SillyFDC, Backdoor.Win32.mIRC-based.o, BackDoor-DKH, WORM_IRCBOT.CAV..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 November 2015, 10:23:53</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC61B98DBD4302E84EC20FACE7C2C3694</li>
+<li>File SHA-1: 0x0EDD50FE5557EF1352223933DC24D1CEDE27EDDA</li>
+<li>Filesize: 705,312 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-sillyfdc.html" target="_blank">W32.SillyFDC<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-mirc-based-o.html" target="_blank">Backdoor.Win32.mIRC-based.o<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-dkh.html" target="_blank">BackDoor-DKH<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-ircbot-cav.html" target="_blank">WORM_IRCBOT.CAV<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/troj-zapchas-eg.html" target="_blank">Troj/Zapchas-EG<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-agent-aap.html" target="_blank">Trojan:Win32/Agent.AAP<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-mirc-based.html" target="_blank">Backdoor.Win32.mIRC-based<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win-trojan-mirc-based-705312.html" target="_blank">Win-Trojan/Mirc-based.705312<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/WINWORD.EXE.html" target="_blank">WINWORD.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Microsoft Office\<a href="http://www.threatexpert.com/files/WINWORD.EXE.html" target="_blank">WINWORD.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,052,672 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\mirc\irc bot\<a href="http://www.threatexpert.com/files/services.exe.html" target="_blank">services.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">1,052,672 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,052,672 bytes</td></tr>
+<tr><td class="cell_1">adobe gamma loader.com</td><td class="cell_1">%Programs%\startup\adobe gamma loader.com</td><td class="cell_2">1,052,672 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ALG</td><td class="cell_1">Application Layer Gateway Service</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\<a href="http://www.threatexpert.com/files/alg.exe.html" target="_blank">alg.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+<tr><td class="cell_1">SharedAccess</td><td class="cell_1">Windows Firewall/Internet Connection Sharing (ICS)</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wscsvc</td><td class="cell_1">Security Center</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wuauserv</td><td class="cell_1">Automatic Updates</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cha</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.chat</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Application</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\ifexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Topic</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Application</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\ifexec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Topic</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\mIRC</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acha.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AmyMastura.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\csrsz.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\registry.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wscript.exe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinDefend</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Microsoft Agent</li>
+<li>HKEY_CURRENT_USER\Software\mIRC</li>
+<li>HKEY_CURRENT_USER\Software\mIRC\DateUsed</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile]</li><ul>
+<li>NeverShowExt = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cha]</li><ul>
+<li>(Default) = "ChatFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.chat]</li><ul>
+<li>(Default) = "ChatFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Topic]</li><ul>
+<li>(Default) = "Connect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\ifexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec\Application]</li><ul>
+<li>(Default) = "mIRC"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\ddeexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\Shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\mIRC\IRC Bot\svchost.exe" -noconnect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile\DefaultIcon]</li><ul>
+<li>(Default) = ""%ProgramFiles%\mIRC\IRC Bot\svchost.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChatFile]</li><ul>
+<li>(Default) = "Chat File"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Topic]</li><ul>
+<li>(Default) = "Connect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\ifexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec\Application]</li><ul>
+<li>(Default) = "mIRC"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\ddeexec]</li><ul>
+<li>(Default) = "%1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\Shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\mIRC\IRC Bot\svchost.exe" -noconnect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc\DefaultIcon]</li><ul>
+<li>(Default) = ""%ProgramFiles%\mIRC\IRC Bot\svchost.exe""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\irc]</li><ul>
+<li>(Default) = "URL:IRC Protocol"</li>
+<li>EditFlags = 02 00 00 00</li>
+<li>URL Protocol = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]</li><ul>
+<li>EnableLUA = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\mIRC]</li><ul>
+<li>DisplayName = "mIRC"</li>
+<li>UninstallString = ""%ProgramFiles%\mIRC\IRC Bot\svchost.exe" -uninstall"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acha.exe]</li><ul>
+<li>Debugger = "cmd.exe /c del"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AmyMastura.exe]</li><ul>
+<li>Debugger = "cmd.exe /c del"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\csrsz.exe]</li><ul>
+<li>Debugger = "cmd.exe /c del"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\registry.exe]</li><ul>
+<li>Debugger = "cmd.exe /c del"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wscript.exe]</li><ul>
+<li>Debugger = "rundll32.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinDefend]</li><ul>
+<li>Start = 0x00000004</li>
+<li>Type = 0x00000004</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]</li><ul>
+<li>Start = 0x00000004</li>
+<li>Type = 0x00000004</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>Shell = "Explorer.exe, %ProgramFiles%\Microsoft Office\WINWORD.EXE"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Microsoft Agent]</li><ul>
+<li>VoiceEnabled = 0x00000001</li>
+<li>UseVoiceTips = 0x00000001</li>
+<li>KeyHoldHotKey = 0x00000091</li>
+<li>UseBeepSRPrompt = 0x00000001</li>
+<li>SRTimerDelay = 0x000007D0</li>
+<li>SRModeID = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</li>
+<li>EnableSpeaking = 0x00000001</li>
+<li>UseBalloon = 0x00000001</li>
+<li>UseCharacterFont = 0x00000001</li>
+<li>UseSoundEffects = 0x00000001</li>
+<li>SpeakingSpeed = 0x00000005</li>
+<li>PropertySheetX = 0x000F423F</li>
+<li>PropertySheetY = 0x000F423F</li>
+<li>PropertySheetWidth = 0x00000000</li>
+<li>PropertySheetHeight = 0x00000000</li>
+<li>PropertySheetPage = 0x00000000</li>
+<li>CommandsWindowLeft = 0xFFFFFFFF</li>
+<li>CommandsWindowTop = 0xFFFFFFFF</li>
+<li>CommandsWindowWidth = 0x000000C8</li>
+<li>CommandsWindowHeight = 0x000000C8</li>
+<li>CommandsWindowLocationSet = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\mIRC\DateUsed]</li><ul>
+<li>(Default) = "1448303038"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center]</li><ul>
+<li>AntiVirusOverride = </li>
+<li>FirewallOverride = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden]</li><ul>
+<li>UncheckedValue = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.putera.com</li>
+<li>www.data0.net</li>
+<li>punch.va.us.dal.net</li>
+<li>www.fileden.com</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%ProgramFiles%\mIRC\IRC Bot\svchost.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+NICK thaor
+USER lionello "" "punch.va.us.dal.net" :kater_ine
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

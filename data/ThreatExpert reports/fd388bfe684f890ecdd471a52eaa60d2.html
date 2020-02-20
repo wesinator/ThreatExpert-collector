@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Pinfi, Virus.Win32.Parite.b, W32/Pate.b, PE_PARITE.A, W32/Parite-B, Virus:Win32/Parite.B, Trojan.Win32.KillAV, Win32/Parite">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Pinfi, Virus.Win32.Parite.b, W32/Pate.b, PE_PARITE.A, W32/Parite-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 17 May 2016, 03:38:56</li>
+<li>Processing time: 6 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xFD388BFE684F890ECDD471A52EAA60D2</li>
+<li>File SHA-1: 0x12D5BBB2FCA23CEFAB22772D246B29B40BC8B44D</li>
+<li>Filesize: 394,714 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-pinfi.html" target="_blank">W32.Pinfi<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-parite-b.html" target="_blank">Virus.Win32.Parite.b<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-pate-b.html" target="_blank">W32/Pate.b<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/pe-parite-a.html" target="_blank">PE_PARITE.A<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-parite-b.html" target="_blank">W32/Parite-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-parite-b.html" target="_blank">Virus:Win32/Parite.B<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-killav.html" target="_blank">Trojan.Win32.KillAV<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-parite.html" target="_blank">Win32/Parite<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\DW20.EXE</li>
+<li>[pathname with a string SHARE]\DWTRIG20.EXE</li>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\MSN9Components\Digcore.exe</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\MSN9Components\Msncli.exe</li>
+<li>%ProgramFiles%\MSN\MSNCoreFiles\Install\msnsusii.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">BRemotes.exe</td><td class="cell_1">%System%\bremotes.exe</td><td class="cell_2">225,280 bytes</td></tr>
+<tr><td class="cell_1">BRemotesSrv.exe</td><td class="cell_1">%System%\BRemotesSrv.exe</td><td class="cell_2">77,824 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">225,280 bytes</td></tr>
+</table></p>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %Windir%\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x1E10000 - 0x1E83000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: dllhost.exe<br/>Process filename: %System%\dllhost.exe<br/>Address space: 0x2890000 - 0x2903000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: sdnsmain.exe<br/>Process filename: %Windir%\dns\sdnsmain.exe<br/>Address space: 0x1620000 - 0x1693000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: BRemotes.exe<br/>Process filename: %System%\bremotes.exe<br/>Address space: 0xC00000 - 0xC73000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0xC60000 - 0xCD3000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/VMwareUser.exe.html" target="_blank">VMwareUser.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\vmware\vmware tools\<a href="http://www.threatexpert.com/files/vmwareuser.exe.html" target="_blank">vmwareuser.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0xC30000 - 0xCA3000</td></tr>
+<tr><td class="cell_1">bma3.tmp</td><td class="cell_1">%Windir%\TEMP\bma3.tmp</td><td class="cell_2">Process name: BRemotes.exe<br/>Process filename: %System%\bremotes.exe<br/>Address space: 0xC00000 - 0xC73000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Microsoft? Windows?</td><td class="cell_1">Microsoft? Windows? Operating System</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\BRemotes.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Microsoft? Windows?"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000]</li><ul>
+<li>Service = "Microsoft? Windows?"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft? Windows? Operating System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]</li><ul>
+<li>ConnectGroup = "6gkIBfkS+qY="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MICROSOFT?_WINDOWS?\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Microsoft? Windows?]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\BRemotes.exe"</li>
+<li>DisplayName = "Microsoft? Windows? Operating System"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft? Windows? Operating System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Microsoft? Windows?"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?\0000]</li><ul>
+<li>Service = "Microsoft? Windows?"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft? Windows? Operating System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MICROSOFT?_WINDOWS?]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]</li><ul>
+<li>ConnectGroup = "6gkIBfkS+qY="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MICROSOFT?_WINDOWS?\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft? Windows?]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\BRemotes.exe"</li>
+<li>DisplayName = "Microsoft? Windows? Operating System"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Microsoft? Windows? Operating System"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+<li>c:\windows\system32\bremotes.exe</li>
+<li>106.75.137.33</li>
+<li>eed3bd3a-a1ad-4e99-987b-d7cb3fcfa7f0 - S-1-5-18</li>
+<li>c:\windows\system32\sample_1.exe</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">BRemotes.exe (%System%\BRemotes.exe)</td></tr>
+<tr><td class="cell_1">1048</td><td class="cell_1">TCP</td><td class="cell_2">bremotes.exe (%System%\bremotes.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>106.75.137.33</li>
+<li>0.0.0.0</li>
+<li>ilo.brenz.pl</li>
+<li>iyiwoc.com</li>
+<li>nnbfnp.com</li>
+<li>mofimo.com</li>
+<li>mkipob.com</li>
+<li>svvyhw.com</li>
+<li>hdinof.com</li>
+<li>emflfj.com</li>
+<li>xytrha.com</li>
+<li>ymjgsi.com</li>
+<li>olpaog.com</li>
+<li>ant.trenz.pl</li>
+<li>qqoosi.com</li>
+<li>uebelu.com</li>
+<li>bunyje.com</li>
+<li>aruahx.com</li>
+<li>vkrrpw.com</li>
+<li>hiybhq.com</li>
+<li>wgeilp.com</li>
+<li>yulber.com</li>
+<li>zewhgs.com</li>
+<li>aficia.com</li>
+<li>kyfdhe.com</li>
+<li>povprk.com</li>
+<li>exkgpi.com</li>
+<li>wuszgb.com</li>
+<li>ievkip.com</li>
+<li>uqepae.com</li>
+<li>heerno.com</li>
+<li>cvooyi.com</li>
+<li>aeqvgo.com</li>
+<li>ykarsy.com</li>
+<li>ejuoxo.com</li>
+<li>eriyyc.com</li>
+<li>couuir.com</li>
+<li>cwhucg.com</li>
+<li>wugajy.com</li>
+<li>iodser.com</li>
+<li>jypmco.com</li>
+<li>yvqzly.com</li>
+<li>yexehi.com</li>
+<li>fvcqqz.com</li>
+<li>jlvmdi.com</li>
+<li>fxuyww.com</li>
+<li>tlvzun.com</li>
+<li>eopfjn.com</li>
+<li>irzpms.com</li>
+<li>dsyclu.com</li>
+<li>uomeri.com</li>
+<li>vmhuoy.com</li>
+<li>cpeaxu.com</li>
+<li>uduakd.com</li>
+<li>yawogm.com</li>
+<li>jiriwj.com</li>
+<li>fbnfyx.com</li>
+<li>flimie.com</li>
+<li>pqqbgn.com</li>
+<li>jsruau.com</li>
+<li>nitaiu.com</li>
+<li>igokum.com</li>
+<li>ccpwke.com</li>
+<li>chlpol.com</li>
+<li>tiuino.com</li>
+<li>iwkbap.com</li>
+<li>ntpezu.com</li>
+<li>ohooaw.com</li>
+<li>dvyoyc.com</li>
+<li>cyjnso.com</li>
+<li>dgqxeu.com</li>
+<li>nuvuex.com</li>
+<li>emaedc.com</li>
+<li>zwhgmz.com</li>
+<li>hbxyfs.com</li>
+<li>qjrvno.com</li>
+<li>suyqxh.com</li>
+<li>nmoudx.com</li>
+<li>zempyu.com</li>
+<li>jrrhuu.com</li>
+<li>xtepjr.com</li>
+<li>gtfuha.com</li>
+<li>kaumgf.com</li>
+<li>sueget.com</li>
+<li>idjexy.com</li>
+<li>sxgkds.com</li>
+<li>toduvf.com</li>
+<li>uedudl.com</li>
+<li>bbiiuo.com</li>
+<li>loxefq.com</li>
+<li>njqori.com</li>
+<li>tbtiuw.com</li>
+<li>uxhfju.com</li>
+<li>jyxlpc.com</li>
+<li>irxoka.com</li>
+<li>fqeswe.com</li>
+<li>rosfcy.com</li>
+<li>fnsggx.com</li>
+<li>qoubty.com</li>
+<li>rwralu.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">106.75.137.33<td class="cell_2">1277</td><tr>
+<tr><td class="cell_1">iyiwoc.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">83.133.119.197<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">.host</td><td class="cell_1">80</td><td class="cell_1">.host</td><td class="cell_2">.host</td></tr>
+</table></p>
+<ul><li>The following Internet download was started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://www.lhdljt.com/ks/data.exe</td><td class="cell_2">[pathname with a string SHARE]\data.exe</td></tr>
+</table></p>
+<ul><li>There were application-defined hook procedures installed into the hook chain (e.g. to monitor keystrokes). The installed hooks are handled by the following modules:</li><ul>
+<li>%Windir%\TEMP\bma3.tmp</li>
+<ul><li>the hook is handled by its export "AttachHook()"</li></ul>
+<li>%Temp%\nma1.tmp</li>
+<ul><li>the hook is handled by its export "AttachHook()"</li></ul>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1277:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 0000 4235 3136 35B8 0100 007A 9A4E | ....B5165....z.N
+00000010 | 6067 6298 04CC AE46 CD00 CD1D 5E05 0D48 | `gb....F....^..H
+00000020 | 4633 3BBD AC2D 3631 5623 2730 315D C98D | F3;..-61V#'01]..
+00000030 | 8226 255C 8F25 48CF 9208 135E 1127 C3A6 | .&%\.%H....^.'..
+00000040 | AD79 AF7E 0257 CC8D 9B47 051A 8733 3BF4 | .y.~.W...G...3;.
+00000050 | 2902 903D 04D7 B0DD 7C45 05B8 3811 13E4 | )..=....|E..8...
+00000060 | 0606 4646 86ED DC10 77D5 0329 E7FC DC82 | ..FF....w..)....
+00000070 | D292 D422 BFC4 DC54 9C06 6301 402F 31FC | ..."...T..c.@/1.
+00000080 | 07E2 DFEC 0C0C 2EA9 6989 A539 2570 B933 | ........i..9%p.3
+00000090 | 1F1A 6A62 5C76 315B A9A2 6869 F86F 0F63 | ..jb\v1[..hi.o.c
+000000A0 | 1A9C 7963 706A A3F1 F66B 60DE 9ECF C20C | ..ycpj...k`.....
+000000B0 | 131C 27D6 24BC 1087 F277 6CD9 FD6E C333 | ..'.$....wl..n.3
+000000C0 | 0607 2130 FF42 8410 C3AF 5713 6A40 6C90 | ..!0.B....W.j@l.
+000000D0 | 7F40 7E03 8173 5BB6 2F3A 7F4D 01CC 367E | .@~..s[./:.M..6~
+000000E0 | DD58 C30C A415 5827 4BAE 01F9 5BD1 91C1 | .X....X'K...[...
+000000F0 | 1EEC 4BEC A048 E83F D0F9 FFC1 0026 0600 | ..K..H.?.....&..
+00000100 | 63C6 556A                               | c.Uj
+00000000 | FF00 0000 4235 3136 35B8 0100 007A 9A4E | ....B5165....z.N
+00000030 | 8246 25F2 3E47 8B98 200A 3E96 11F0 9B47 | .F%.>G.. .>....G
+00000040 | 40EB 577B 0057 4CC3 FBE2 0504 471D 9A7B | @.W{.WL.....G..{
+00000050 | 1902 CB73 05F6 EA35 9F57 8BAC 09C4 06B9 | ...s...5.W......
+00000060 | 8181 9191 613B 37C4 5DF5 40CA 393F B7A0 | ....a;7.].@.9?..
+00000070 | B424 B5C8 2F31 3715 A7C1 6840 0088 815E | .$../17...h@...^
+00000080 | 62F8 0FC4 BFD9 1918 5C52 D312 4B73 4A50 | b.......\R..KsJP
+00000090 | D470 20B1 F396 BD2D 4735 C1E0 CC1B 8353 | .p ....-G5.....S
+000000A0 | 1B0D B75F 6338 F045 8861 0B14 431C C8C0 | ..._c8.E.a..C...
+000000B0 | F0A1 6CC7 96DD EF36 3C63 0878 0EE6 4F88 | ..l....6<c.x..O.
+000000C0 | 7BCE F0EB D584 1A10 1BE4 1F90 DF40 E0DC | {............@..
+000000D0 | 96ED 8BCE 5F53 00B3 8D5F 37D6 3003 6905 | ...._S..._7.0.i.
+000000E0 | D6C9 9239 40BF 6E50 7464 B007 FB12 3BA8 | ...9@.nPtd....;.
+000000F0 | 67FA 0F74 FE7F 3080 8901 007E 895C 4C   | g..t..0....~.\L
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | FF00 0000 4235 3136 35B8 0100 007A 9A4E | ....B5165....z.N
+00000010 | 6067 6298 04CC AE46 CD00 CD1D 5E05 0D48 | `gb....F....^..H
+00000020 | 4633 3BBD AC2D 3631 5623 2730 315D C98D | F3;..-61V#'01]..
+00000030 | 8246 25F2 3E47 8B98 200A 3E96 11F0 9B47 | .F%.>G.. .>....G
+00000040 | 40EB 577B 0057 4CC3 FBE2 0504 471D 9A7B | @.W{.WL.....G..{
+00000050 | 1902 CB73 05F6 EA35 9F57 8BAC 09C4 06B9 | ...s...5.W......
+00000060 | 8181 9191 613B 37C4 5DF5 40CA 393F B7A0 | ....a;7.].@.9?..
+00000070 | B424 B5C8 2F31 3715 A7C1 6840 0088 815E | .$../17...h@...^
+00000080 | 62F8 0FC4 BFD9 1918 5C52 D312 4B73 4A50 | b.......\R..KsJP
+00000090 | D470 20B1 F396 BD2D 4735 C1E0 CC1B 8353 | .p ....-G5.....S
+000000A0 | 1B0D B75F 6338 F045 8861 0B14 431C C8C0 | ..._c8.E.a..C...
+000000B0 | F0A1 6CC7 96DD EF36 3C63 0878 0EE6 4F88 | ..l....6<c.x..O.
+000000C0 | 7BCE F0EB D584 1A10 1BE4 1F90 DF40 E0DC | {............@..
+000000D0 | 96ED 8BCE 5F53 00B3 8D5F 37D6 3003 6905 | ...._S..._7.0.i.
+000000E0 | D6C9 9239 40BF 6E50 7464 B007 FB12 3BA8 | ...9@.nPtd....;.
+000000F0 | 67FA 0F74 FE7F 3080 8901 007E 895C 4C   | g..t..0....~.\L
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-GameThief.Win32.Magania.gpgd, Backdoor:Win32/Zegost.H!dll, Win32.SuspectCrc">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-GameThief.Win32.Magania.gpgd, Backdoor:Win32/Zegost.H!dll..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 4 November 2015, 06:10:50</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x5C18AC74AEC98D4E0CF1DFB605241119</li>
+<li>File SHA-1: 0x0597F85C1931113E9FE957A24072EEE4CEA529E9</li>
+<li>Filesize: 134,656 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan-GameThief.Win32.Magania.gpgd [Kaspersky Lab]</li>
+<li>Backdoor:Win32/Zegost.H!dll [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0xB50000 - 0xB74000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0xB10000 - 0xB34000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Mnopqr Tuvwxyab Def</td><td class="cell_1">Mnopqr Tuvwxyab Defghijk Mnop</td><td class="cell_1">"Starting"</td><td class="cell_2">%System%\svchost.exe -k imgsvc</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\228419938</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\228419938\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\228419938\Security</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\DComLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\HTTPFilter</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\LocalService</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\netsvcs</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\PCHealth</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\80276975\termsvcs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Enum</li>
+<li>HKEY_CURRENT_USER\NetSubKey</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\228419938\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\228419938\Parameters]</li><ul>
+<li>ServiceDll = "%ProgramFiles%\Rnop\Wnopqrstu.gif"</li>
+<li>ServiceMain = "DarkAngel"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\228419938]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Mnopqr Tuvwxyab Defghijk Mnop"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Mnopqrst Vwxyabcde Ghijklm Opqrstuv Xya"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\termsvcs]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>DefaultRpcStackSize = 0x00000008</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\PCHealth]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000002</li>
+<li>AuthenticationCapabilities = 0x00000040</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\netsvcs]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>AuthenticationCapabilities = 0x00003020</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\LocalService]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>AuthenticationCapabilities = 0x00002000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\HTTPFilter]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975\DComLaunch]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>DefaultRpcStackSize = 0x00000008</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\80276975]</li><ul>
+<li>HTTPFilter = "HTTPFilter"</li>
+<li>LocalService = "Alerter WebClient LmHosts RemoteRegistry upnphost SSDPSRV"</li>
+<li>NetworkService = "DnsCache"</li>
+<li>netsvcs = "6to4 AppMgmt AudioSrv Browser CryptSvc DMServer DHCP ERSvc EventSystem FastUserSwitchingCompatibility HidServ Ias Iprip Irmon LanmanServer LanmanWorkstation Messenger Netman Nla Ntmssvc NWCWorkstation Nwsapagent Rasauto Rasman Remoteaccess Schedule</li>
+<li>DcomLaunch = "DcomLaunch TermService"</li>
+<li>rpcss = "RpcSs"</li>
+<li>imgsvc = 53 74 69 53 76 63 00 4D 6E 6F 70 71 72 20 54 75 76 77 78 79 61 62 20 44 65 66 00</li>
+<li>termsvcs = "TermService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Mnopqr Tuvwxyab Def"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000]</li><ul>
+<li>Service = "Mnopqr Tuvwxyab Def"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Mnopqr Tuvwxyab Defghijk Mnop"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def\Parameters]</li><ul>
+<li>ServiceDll = "%ProgramFiles%\Rnop\Wnopqrstu.gif"</li>
+<li>ServiceMain = "DarkAngel"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Mnopqr Tuvwxyab Def]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Mnopqr Tuvwxyab Defghijk Mnop"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Mnopqrst Vwxyabcde Ghijklm Opqrstuv Xya"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 53 00 65 00 01 00 00 00 E8 03 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Mnopqr Tuvwxyab Def"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000]</li><ul>
+<li>Service = "Mnopqr Tuvwxyab Def"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Mnopqr Tuvwxyab Defghijk Mnop"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MNOPQR_TUVWXYAB_DEF]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MNOPQR_TUVWXYAB_DEF\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def\Parameters]</li><ul>
+<li>ServiceDll = "%ProgramFiles%\Rnop\Wnopqrstu.gif"</li>
+<li>ServiceMain = "DarkAngel"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mnopqr Tuvwxyab Def]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Mnopqr Tuvwxyab Defghijk Mnop"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Mnopqrst Vwxyabcde Ghijklm Opqrstuv Xya"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 53 00 65 00 01 00 00 00 E8 03 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost]</li><ul>
+<li>imgsvc = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>45.35.52.176</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">45.35.52.176<td class="cell_2">1999</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1999:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74F0 0000 0050 0100 0078 9C4B | Gh0st....P...x.K
+00000010 | 8B65 6798 C3C0 C0C0 0AC4 8C40 ACC1 C5C0 | .eg........@....
+00000020 | C004 A483 538B CA32 9353 1502 1293 B315 | ....S..2.S......
+00000030 | 8C18 1824 80EA 0259 27D6 ECE0 E164 C805 | ...$...Y'....d..
+00000040 | D240 250C 7F9C 1B6A 8C80 E23A 6A0D 3586 | .@%....j...:j.5.
+00000050 | 40FE 8118 7686 CBB3 2782 C5B6 3283 5434 | @...v...'...2.T4
+00000060 | D468 9836 D480 D431 40CD 9761 B000 9B7F | .h.6...1@..a....
+00000070 | 0288 2F00 F134 5106 3860 04AB 80E8 6302 | ../..4Q.8`....c.
+00000080 | 0B40 44B6 7343 34D7 0349 677F DF80 D010 | .@D.sC4..Ig.....
+00000090 | D720 3F47 5F57 0622 813E 10BB 2416 653B | . ?G_W.".>..$.e;
+000000A0 | E6A5 A7E6 30FC FF6F 0074 1F08 8340 750E | ....0..o.t...@u.
+000000B0 | D0DD F292 0CE5 B321 6E9C 91C1 CC90 9897 | .......!n.......
+000000C0 | 9293 CAC0 C930 01EC 4990 B5CC 0C2E D1EC | .....0..I.......
+000000D0 | 0C1E AD9C 1003 3FFC ADDF 03D4 AF05 F477 | ......?........w
+000000E0 | 05C8 1C20 1DC2 0852 C5C0 0000 9903 393D | ... ...R......9=
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

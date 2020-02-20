@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 March 2016, 22:40:48</li>
+<li>Processing time: 5 min 27 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x503674154E9EE10BB190D8BF5991529A</li>
+<li>File SHA-1: 0xAAD6CFF25D4C868C3E4B94C5B432BC2EA0540893</li>
+<li>Filesize: 566,790 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x506A0000 - 0x5072D000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x506A0000 - 0x5072D000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{B366DEBE-645B-43A5-B865-DDD82C345492}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{e30984f1-b02b-4c27-a40f-23d11b8c1212}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13639463-00DB-4646-803D-528026140D88}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB43D7F-7EEE-4906-8698-60DA1C38F2FE}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BAF654A-5A07-4264-A255-9FF54C7151E7}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{650503CF-9108-4DDC-A2CE-6C2341E1C582}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{72C97D74-7C3B-40AE-B77D-ABDB22EBA6FB}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B699E5E8-67FF-4177-88B0-3684A3388BFB}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BFE18E9C-6D87-4450-B37C-E02F0B373803}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C01B9BA0-BEA7-41BA-B604-D0A36F469133}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2E0FE7F-D23E-48E1-93C0-6FA8CC346474}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}\Elevation</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85074451-173D-4091-8648-C0E196BB363E}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85074451-173D-4091-8648-C0E196BB363E}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3442D4FE-224D-4CEE-98CF-30E0C4D229E6}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3442D4FE-224D-4CEE-98CF-30E0C4D229E6}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3442D4FE-224D-4CEE-98CF-30E0C4D229E6}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3442D4FE-224D-4CEE-98CF-30E0C4D229E6}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49EBD502-4A96-41BD-9E3E-4C5057F4250C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49EBD502-4A96-41BD-9E3E-4C5057F4250C}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49EBD502-4A96-41BD-9E3E-4C5057F4250C}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{49EBD502-4A96-41BD-9E3E-4C5057F4250C}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4A2F5C31-CFD9-410E-B7FB-29A653973A0F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4A2F5C31-CFD9-410E-B7FB-29A653973A0F}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4A2F5C31-CFD9-410E-B7FB-29A653973A0F}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4A2F5C31-CFD9-410E-B7FB-29A653973A0F}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4CBDCB2D-1589-4BEB-BD1C-3E582FF0ADD0}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4CBDCB2D-1589-4BEB-BD1C-3E582FF0ADD0}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4CBDCB2D-1589-4BEB-BD1C-3E582FF0ADD0}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4CBDCB2D-1589-4BEB-BD1C-3E582FF0ADD0}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{615C4269-7A48-43BD-96B7-BF6CA27D6C3E}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{615C4269-7A48-43BD-96B7-BF6CA27D6C3E}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{615C4269-7A48-43BD-96B7-BF6CA27D6C3E}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{615C4269-7A48-43BD-96B7-BF6CA27D6C3E}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6ABC136A-C3CA-4384-8171-CB2B1E59B8DC}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6ABC136A-C3CA-4384-8171-CB2B1E59B8DC}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6ABC136A-C3CA-4384-8171-CB2B1E59B8DC}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{6ABC136A-C3CA-4384-8171-CB2B1E59B8DC}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{70CF5C82-8642-42BB-9DBC-0CFD263C6C4F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{70CF5C82-8642-42BB-9DBC-0CFD263C6C4F}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{70CF5C82-8642-42BB-9DBC-0CFD263C6C4F}\ProxyStubClsid32</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{B366DEBE-645B-43A5-B865-DDD82C345492}]</li><ul>
+<li>(Default) = "Windows Update Agent - Remote Access"</li>
+<li>DllSurrogate = ""</li>
+<li>AuthenticationLevel = 0x00000006</li>
+<li>LaunchPermission = 01 00 04 80 34 00 00 00 44 00 00 00 00 00 00 00 14 00 00 00 02 00 20 00 01 00 00 00 00 00 18 00 1F 00 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 0</li>
+<li>AccessPermission = 01 00 04 80 34 00 00 00 44 00 00 00 00 00 00 00 14 00 00 00 02 00 20 00 01 00 00 00 00 00 18 00 07 00 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{e30984f1-b02b-4c27-a40f-23d11b8c1212}]</li><ul>
+<li>(Default) = "Windows Update Agent User Interface for Published Applications"</li>
+<li>DllSurrogate = ""</li>
+<li>AuthenticationLevel = 0x00000006</li>
+<li>AccessPermission = 01 00 04 80 58 00 00 00 68 00 00 00 00 00 00 00 14 00 00 00 02 00 44 00 03 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 04 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0A 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 0</li>
+<li>LaunchPermission = 01 00 04 80 5C 00 00 00 6C 00 00 00 00 00 00 00 14 00 00 00 02 00 48 00 03 00 00 00 00 00 14 00 0B 00 00 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 0B 00 00 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 00 00 14 00 0B 00 00 00 01 01 00 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13639463-00DB-4646-803D-528026140D88}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB43D7F-7EEE-4906-8698-60DA1C38F2FE}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BAF654A-5A07-4264-A255-9FF54C7151E7}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{650503CF-9108-4DDC-A2CE-6C2341E1C582}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{72C97D74-7C3B-40AE-B77D-ABDB22EBA6FB}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B699E5E8-67FF-4177-88B0-3684A3388BFB}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BFE18E9C-6D87-4450-B37C-E02F0B373803}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C01B9BA0-BEA7-41BA-B604-D0A36F469133}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2E0FE7F-D23E-48E1-93C0-6FA8CC346474}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}\Elevation]</li><ul>
+<li>Enabled = 0x00000001</li>
+<li>IconReference = "@[file and pathname of the sample #1],-63101"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{26D32566-760A-40A2-AA82-A40366528916}]</li><ul>
+<li>(Default) = "WUPublishedAppInstallorElevator Class"</li>
+<li>AppID = "{e30984f1-b02b-4c27-a40f-23d11b8c1212}"</li>
+<li>LocalizedString = "@[file and pathname of the sample #1],-63513"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.InstallationAgent"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\ProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.InstallationAgent.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{317E92FC-1679-46FD-A0B5-F08914DD8623}]</li><ul>
+<li>(Default) = "InstallationAgent Class"</li>
+<li>AppID = "{B366DEBE-645B-43A5-B865-DDD82C345492}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85074451-173D-4091-8648-C0E196BB363E}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{85074451-173D-4091-8648-C0E196BB363E}]</li><ul>
+<li>(Default) = "WSUS App Publisher"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.AgentInfo"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\ProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.AgentInfo.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C2E88C2F-6F5B-4AAA-894B-55C847AD3A2D}]</li><ul>
+<li>(Default) = "WindowsUpdateAgentInfo Class"</li>
+<li>AppID = "{B366DEBE-645B-43A5-B865-DDD82C345492}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.ServiceManager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\Version]</li><ul>
+<li>(Default) = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\ProgID]</li><ul>
+<li>(Default) = "Microsoft.Update.ServiceManager.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F8D253D9-89A4-4daa-87B6-1168369F0B21}]</li><ul>
+<li>(Default) = "UpdateServiceManager Class"</li>
+<li>AppID = "{B366DEBE-645B-43A5-B865-DDD82C345492}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{004C6A2B-0C19-4C69-9F5C-A269B2560DB9}]</li><ul>
+<li>(Default) = "IWindowsDriverUpdate4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{04C6895D-EAF2-4034-97F3-311DE9BE413A}]</li><ul>
+<li>(Default) = "IUpdateSearcher3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0BB8531D-7E8D-424F-986C-A0B8F60A3E7B}]</li><ul>
+<li>(Default) = "IUpdateServiceManager2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0D521700-A372-4BEF-828B-3D00C10ADEBD}]</li><ul>
+<li>(Default) = "IWindowsDriverUpdateEntryCollection"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{112EDA6B-95B3-476F-9D90-AEE82C6B8181}]</li><ul>
+<li>(Default) = "IUpdate3"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{144FE9B0-D23D-4A8B-8634-FB4457533B7A}]</li><ul>
+<li>(Default) = "IUpdate2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1518B460-6518-4172-940F-C75883B24CEB}]</li><ul>
+<li>(Default) = "IUpdateService2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{23857E3C-02BA-44A3-9423-B1C900805F37}]</li><ul>
+<li>(Default) = "IUpdateServiceManager"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{27E94B0D-5139-49A2-9A61-93522DC54652}]</li><ul>
+<li>(Default) = "IUpdate4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{3442D4FE-224D-4CEE-98CF-30E0C4D229E6}\TypeLib]</li><ul>
+<li>(Default) = "{B596CC9F-56E5-419E-A622-E01BB457431E}"</li>
+<li>Version = "2.0"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13639463-00DB-4646-803D-528026140D88}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BAF654A-5A07-4264-A255-9FF54C7151E7}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{650503CF-9108-4DDC-A2CE-6C2341E1C582}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{72C97D74-7C3B-40AE-B77D-ABDB22EBA6FB}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B699E5E8-67FF-4177-88B0-3684A3388BFB}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C01B9BA0-BEA7-41BA-B604-D0A36F469133}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2E0FE7F-D23E-48E1-93C0-6FA8CC346474}]</li><ul>
+<li>AppID = "{B93C1D78-DAD0-4C93-BE0B-9A91E0A8301F}"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{13639463-00DB-4646-803D-528026140D88}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB43D7F-7EEE-4906-8698-60DA1C38F2FE}]</li><ul>
+<li>AppID = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4CB43D7F-7EEE-4906-8698-60DA1C38F2FE}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5BAF654A-5A07-4264-A255-9FF54C7151E7}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{650503CF-9108-4DDC-A2CE-6C2341E1C582}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{72C97D74-7C3B-40AE-B77D-ABDB22EBA6FB}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B699E5E8-67FF-4177-88B0-3684A3388BFB}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BFE18E9C-6D87-4450-B37C-E02F0B373803}]</li><ul>
+<li>AppID = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BFE18E9C-6D87-4450-B37C-E02F0B373803}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C01B9BA0-BEA7-41BA-B604-D0A36F469133}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2E0FE7F-D23E-48E1-93C0-6FA8CC346474}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Microsoft.Update.ServiceManager\CLSID]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Microsoft.Update.ServiceManager.1\CLSID]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{B596CC9F-56E5-419E-A622-E01BB457431E}\2.0\0\win32]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

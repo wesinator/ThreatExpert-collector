@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-024">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-024</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 15 June 2016, 02:36:02</li>
+<li>Processing time: 5 min 38 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC65D6D5E546C6F29ED309D251F70E6E7</li>
+<li>File SHA-1: 0xE229DFF43CAB66A2247C45634260F8BA252951E2</li>
+<li>Filesize: 27,136 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-024.html" target="_blank">Mal/Behav-024<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Terms.EXE</td><td class="cell_1">%ProgramFiles%\terms.exe</td><td class="cell_2">184,320 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">184,320 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">32423434</td><td class="cell_1">43534545</td><td class="cell_1">"Starting"</td><td class="cell_2">%ProgramFiles%\Terms.EXE</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "32423434"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434\0000]</li><ul>
+<li>Service = "32423434"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "43534545"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_32423434]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434\Enum]</li><ul>
+<li>0 = "Root\LEGACY_32423434\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\32423434]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-06-15 02:36"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%ProgramFiles%\Terms.EXE"</li>
+<li>DisplayName = "43534545"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "465656"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "32423434"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434\0000]</li><ul>
+<li>Service = "32423434"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "43534545"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_32423434]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434\Enum]</li><ul>
+<li>0 = "Root\LEGACY_32423434\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\32423434]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-06-15 02:36"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%ProgramFiles%\Terms.EXE"</li>
+<li>DisplayName = "43534545"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "465656"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>61.147.103.220</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">61.147.103.220<td class="cell_2">9000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 2CA9 63D1 D4AE AE71 0740 F5AE E186 7547 | ,.c....q.@....uG
+00000010 | 9CE3 9847 AD62 CA3A 9479 2989 4937 CEA0 | ...G.b.:.y).I7..
+00000020 | C089 62E5 D07F 2009 D408 5461 534C 79A9 | ..b... ...TaSLy.
+00000030 | 5853 7BA3 DBF4 0594 392C 2978 7FF3 8B0F | XS{.....9,)x....
+00000040 | B096 3089 AB44 02DC CEA3 33E9 FBC9 A164 | ..0..D....3....d
+00000050 | 7849 C704 7590 65A6 DB98 2E9B 0485 3858 | xI..u.e.......8X
+00000060 | 001A 3B84 7231 B140 1395 4542 C112 BFB8 | ..;.r1.@..EB....
+00000070 | 2C9A 586B 5C89 999B 4466 FC27 8439 C214 | ,.Xk\...Df.'.9..
+00000080 | 2300 3882 3D0A A9B3 181C 47A8 4588 F744 | #.8.=.....G.E..D
+00000090 | FCB3 0B8F F2CF 355D EAA1 74D0 C4C4 10C8 | ......5]..t.....
+000000A0 | 5E1E 3B60 08FF 4CD7 32C0 8ACE F53F 3302 | ^.;`..L.2....?3.
+000000B0 | 33F0 6068 970E 94B0 8EBF 13C2 2B9C 860B | 3.`h........+...
+000000C0 | 7B77 3686 536D CE18 CCEE 0547 1063 57CC | {w6.Sm.....G.cW.
+000000D0 | BFF1 9B99 A4FF 0CB6 665F 1D6E D57D 0CEB | ........f_.n.}..
+000000E0 | 9C83 D6EB 4326 35F0 FAED 857D 1790 A0C9 | ....C&5....}....
+000000F0 | 2E67 865F 6F89 C09B 5A71 CBA6 3A72 44C7 | .g._o...Zq..:rD.
+00000100 | 894D 10F3 1F99 7B61 110D 2E6F 4462 F773 | .M....{a...oDb.s
+00000110 | 5F78 57B1 52FA 7C2D 9BC8 8B3B 3DDC 6F16 | _xW.R.|-...;=.o.
+00000120 | 241C 9402 8AB7 4CCF 1028 45A5 6537 1187 | $.....L..(E.e7..
+00000130 | 2949 64F4 B06A 3567 8CAE 8052 40C3 DCD8 | )Id..j5g...R@...
+00000140 | 81C7 E8B5 D34C 58E6 C9D0 6549 C0D9 664B | .....LX...eI..fK
+00000150 | 8759 BACA C55D 2C9F 5879 C766 E115 0A1F | .Y...],.Xy.f....
+00000160 | C312 3C8D FED5 FA65 F814 7CBA 0FE5 4628 | ..<....e..|...F(
+00000170 | 7C0A C893 9559 9D9F F896 2B34 DC66 2F6F | |....Y....+4.f/o
+00000180 | 1670 00B1 D16F 20A4 FD35 2506 3539 935F | .p...o ..5%.59._
+00000190 | A181 D25A 020F BE20 BA1C 6FCF 06B5 7A3C | ...Z... ..o...z<
+000001A0 | 17C1 0FA2 B7A5 268B 23B7 C1EB 52B6 AB36 | ......&.#...R..6
+000001B0 | AA81 09F6 741B E594 DE29 7B11 B5DD 0784 | ....t....){.....
+000001C0 | 83E0 8750 4467 179F FE09 02B8 FA9E 5FBF | ...PDg........_.
+000001D0 | 6D42 CD87 2B40 2ACE 6D                  | mB..+@*.m
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

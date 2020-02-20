@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I, Virus:Win32/Ramnit.A, Virus.Win32.Ramnit, Win32/Ramnit.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2016, 05:27:30</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x66574CF7480153878EF3322DAE487054</li>
+<li>File SHA-1: 0x6FE848E5968C9BB38D7343D9F320F5B99C236136</li>
+<li>Filesize: 253,952 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Patched-I [Sophos]</li>
+<li>Virus:Win32/Ramnit.A [Microsoft]</li>
+<li>Virus.Win32.Ramnit [Ikarus]</li>
+<li>Win32/Ramnit.B [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">253,952 bytes</td></tr>
+<tr><td class="cell_1">d67f431abfe53c294234fd4c4cc9b295Srv.exe</td><td class="cell_1">%Programs%\startup\d67f431abfe53c294234fd4c4cc9b295Srv.exe</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>www.hack98.cn</li>
+<li>c:\documents and settings\username\start menu\programs\startup\d67f431abfe53c294234fd4c4cc9b295.exe</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>www.hack98.cn</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">www.hack98.cn<td class="cell_2">81</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | D300 0000 415A 5641 5A3C 0100 0078 9C4B | ....AZVAZ<...x.K
+00000010 | FB3D A166 0E03 0303 2B10 3302 B106 1703 | .=.f....+.3.....
+00000020 | 0313 900E 4E2D 2ACB 4C4E 5508 484C CE56 | ....N-*.LNU.HL.V
+00000030 | 3062 6038 F351 9861 D2E4 861A 901C 3F03 | 0b`8.Q.a......?.
+00000040 | C381 0D5F 8419 183E 36D4 80D8 21DF 816C | ..._...>6...!..l
+00000050 | 20D8 F1BE A146 8201 024C 3E09 3338 3020 |  ....F...L>.380
+00000060 | C087 2F10 3509 2FC4 19D0 C141 FE6D 0C6C | ../.5./....A.m.l
+00000070 | 0C8C 70E5 C6AF 1BC1 F630 3032 326C E786 | ..p......0022l..
+00000080 | B8AB 1E48 39E7 E716 9496 A416 F925 E6A6 | ...H9........%..
+00000090 | 6218 8203 00DD C7F0 1F88 5D52 D312 4B73 | b.........]R..Ks
+000000A0 | 4A18 6266 B7D6 A456 3332 38A9 34D4 80FC | J.bf...V328.4...
+000000B0 | 7C00 6837 08B3 A0E9 3BC2 5F66 A867 6C08 | |.h7....;._f.gl.
+000000C0 | 666F 3D7E 680F B21C C83D 1B6A 4519 0054 | fo=~h....=.jE..T
+000000D0 | F935 8C                                 | .5.
+00000000 | E900 0000 415A 5641 5A3C 0100 0078 9C4B | ....AZVAZ<...x.K
+00000010 | 6348 6398 C3C0 C0C0 0AC4 8C40 ACC1 C5C0 | cHc........@....
+00000020 | C004 A483 538B CA32 9353 1502 1293 B315 | ....S..2.S......
+00000030 | 8CC0 628C C90C 560C AE9C 136B FC80 D8E2 | ..b...V....k....
+00000040 | AB30 830A 5054 E5B3 3058 FD04 C789 350C | .0..PT..0X....5.
+00000050 | 057F EB59 0526 D49C F928 CC00 0273 3E09 | ...Y.&...(...s>.
+00000060 | 3348 BC9B 5053 0054 7FE0 C9F4 9A7C BB89 | 3H..PS.T.....|..
+00000070 | 3549 40CC 01D4 7007 A87F 0B10 1F03 AA3B | 5I@...p........;
+00000080 | C8BF 8D81 8D81 D181 010A 8C5F 37D6 80CC | ..........._7...
+00000090 | 6460 6464 D8CE 0D71 573D 9072 CECF 2D28 | d`dd...qW=.r..-(
+000000A0 | 2D49 2DF2 4BCC 4D65 2012 0800 F17F 2076 | -I-.K.Me ..... v
+000000B0 | 494D 4B2C CD29 6188 99DD 5AE3 CFCB CCE0 | IMK,.)a...Z.....
+000000C0 | A4D2 5003 F2F3 01A0 DD20 CC82 A6EF 087F | ..P...... ......
+000000D0 | 99A1 9EB1 2198 BDF5 F8A1 3DC8 7220 F79C | ....!.....=.r ..
+000000E0 | 5012 6100 00DF 5E3D 7C                  | P.a...^=|
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

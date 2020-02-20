@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Nitol, Trojan-Spy.Win32.Agent.btsm, Troj/Dloadr-DNE, DDoS:Win32/Nitol.A, Trojan.Win32.ServStart">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Nitol, Trojan-Spy.Win32.Agent.btsm, Troj/Dloadr-DNE..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 19 November 2015, 19:54:55</li>
+<li>Processing time: 6 min 9 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xF09C554165A1CCE1982E84FF2AC52903</li>
+<li>File SHA-1: 0x1A838F1BA0033E2FEF5B6C0362B03EF0390606CF</li>
+<li>Filesize: 109,568 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor.Nitol [Symantec]</li>
+<li>Trojan-Spy.Win32.Agent.btsm [Kaspersky Lab]</li>
+<li>Troj/Dloadr-DNE [Sophos]</li>
+<li>DDoS:Win32/Nitol.A [Microsoft]</li>
+<li>Trojan.Win32.ServStart [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/keylogger.gif"></td>
+<td class="cell_1">A keylogger program that can capture all user keystrokes (including confidential details such username, password, credit card number, etc.)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%Windir%\inf\INFCACHE.1</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">xkjtks.exe</td><td class="cell_1">%System%\xkjtks.exe</td><td class="cell_2">126,976 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">24,576 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\temp\<a href="http://www.threatexpert.com/files/snetcfg.exe.html" target="_blank">snetcfg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">24,576 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">126,976 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Nationalsnb</td><td class="cell_1">Nationalabe Instruments Domain Service</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\xkjtks.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\NetCfgLockHolder</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\MS_PASSTHRUMP</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\MS_PASSTHRUMP\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\MS_PASSTHRUMP\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi\Interfaces</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\NetCfgLockHolder</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\MS_PASSTHRUMP</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\MS_PASSTHRUMP\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\MS_PASSTHRUMP\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi\Interfaces]</li><ul>
+<li>UpperRange = "noupper"</li>
+<li>LowerRange = "nolower"</li>
+<li>FilterMediaTypes = "ethernet, tokenring, fddi, wan"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Parameters]</li><ul>
+<li>Param1 = "4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi]</li><ul>
+<li>HelpText = "Passthru Driver"</li>
+<li>FilterClass = "failover"</li>
+<li>FilterDeviceInfId = "ms_passthrump"</li>
+<li>Service = "Passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}]</li><ul>
+<li>Characteristics = 0x00004410</li>
+<li>InfPath = "netsf.inf"</li>
+<li>InfSection = "Passthru.ndi"</li>
+<li>Description = "Passthru Driver"</li>
+<li>ComponentId = "ms_passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\NetCfgLockHolder]</li><ul>
+<li>(Default) = "Sample Netcfg Application (netcfg.exe)"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Nationalsnb"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB\0000]</li><ul>
+<li>Service = "Nationalsnb"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Nationalabe Instruments Domain Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NATIONALSNB]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\MS_PASSTHRUMP\0000]</li><ul>
+<li>ClassGUID = "{4D36E972-E325-11CE-BFC1-08002BE10318}"</li>
+<li>Class = "Net"</li>
+<li>HardwareID = "ms_passthrump"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NATIONALSNB\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Nationalsnb]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\xkjtks.exe"</li>
+<li>DisplayName = "Nationalabe Instruments Domain Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Providesngr a domain server for NI security."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Passthru]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\Drivers\passthru.sys"</li>
+<li>DisplayName = "Passthru Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi\Interfaces]</li><ul>
+<li>UpperRange = "noupper"</li>
+<li>LowerRange = "nolower"</li>
+<li>FilterMediaTypes = "ethernet, tokenring, fddi, wan"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Parameters]</li><ul>
+<li>Param1 = "4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}\Ndi]</li><ul>
+<li>HelpText = "Passthru Driver"</li>
+<li>FilterClass = "failover"</li>
+<li>FilterDeviceInfId = "ms_passthrump"</li>
+<li>Service = "Passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}\{CFFE5124-9DD8-491D-BB4E-AE43BB21FAB1}]</li><ul>
+<li>Characteristics = 0x00004410</li>
+<li>InfPath = "netsf.inf"</li>
+<li>InfSection = "Passthru.ndi"</li>
+<li>Description = "Passthru Driver"</li>
+<li>ComponentId = "ms_passthru"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\NetCfgLockHolder]</li><ul>
+<li>(Default) = "Sample Netcfg Application (netcfg.exe)"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Nationalsnb"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB\0000]</li><ul>
+<li>Service = "Nationalsnb"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Nationalabe Instruments Domain Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NATIONALSNB]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\MS_PASSTHRUMP\0000]</li><ul>
+<li>ClassGUID = "{4D36E972-E325-11CE-BFC1-08002BE10318}"</li>
+<li>Class = "Net"</li>
+<li>HardwareID = "ms_passthrump"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NATIONALSNB\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nationalsnb]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\xkjtks.exe"</li>
+<li>DisplayName = "Nationalabe Instruments Domain Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Providesngr a domain server for NI security."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Passthru]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\Drivers\passthru.sys"</li>
+<li>DisplayName = "Passthru Service"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network]</li><ul>
+<li>Config = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network]</li><ul>
+<li>Config = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Nationalsnb</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">xkjtks.exe (%System%\xkjtks.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>gugungil123.oa.to</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">gugungil123.oa.to<td class="cell_2">8000</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 4500 6E00 6700 6C00 6900 7300 | ....E.n.g.l.i.s.
+00000010 | 6800 2000 2800 5500 6E00 6900 7400 6500 | h. .(.U.n.i.t.e.
+00000020 | 6400 2000 5300 7400 6100 7400 6500 7300 | d. .S.t.a.t.e.s.
+00000030 | 2900 0000 0000 0000 0000 0000 0000 0000 | )...............
+00000040 | 0000 0000 434F 4D50 5554 4552 4E41 4D45 | ....COMPUTERNAME
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000070 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 5769 6E64 6F77 7320 5850 0000 | ....Windows XP..
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000F0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000100 | 0000 0000 3235 3620 4D42 0000 0000 0000 | ....256 MB......
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 3239 3939 204D 487A 0000 0000 | ....2999 MHz....
+00000130 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000140 | 0000 0000 5669 7032 3031 302D 3038 3138 | ....Vip2010-0818
+00000150 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000160 | 0000 0000 0000 0000 FA8D 917C 25D6 907C | ...........|%..|
+00000170 | CFEA 907C 30FD B400 0100 0000 1700 0100 | ...|0...........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 7C4A 96F7 8000 60C0 | ........|J....`.
+000001A0 | 584A 96F7 8CE9 5180 00F0 0902 0100 0000 | XJ....Q.........
+000001B0 | 0000 0000 F804 01C0 0000 0000 0000 0000 | ................
+000001C0 | 0000 0A02 144B 96F7 DFF0 5180 7C4A 96F7 | .....K....Q.|J..
+000001D0 | 0000 0000 0000 0000 0000 0000 FFFF 0902 | ................
+000001E0 | A06D 7681 011A 6781 0000 0000 F804 01C0 | .mv...g.........
+000001F0 | FE42 5480 0093 5580 1093 5580 288D 0700 | .BT...U...U.(...
+00000200 | 748A 0700 B44A 96F7 0000 0000 3800 0000 | t....J......8...
+00000210 | 2300 0000 2300 0000 E0FC 9400 18EE 907C | #...#..........|
+00000220 | 0000 0000 F0FC 9400 3815 917C E01B 4000 | ........8..|..@.
+00000230 | EB06 917C 5608 817C 1B00 0000 0002 0000 | ...|V..|........
+00000240 | FCFF B400 2300 0000 0600 0000 804B 96F7 | ....#........K..
+00000250 | 37AA 5D80 3900 0000 3800 0000 304B 96F7 | 7.].9...8...0K..
+00000260 | 0063 9C81 FD3D 5480 0000 0400 A06D 7681 | .c...=T......mv.
+00000270 | 301A 6781 0000 0000 0400 0001 0000 0000 | 0.g.............
+00000280 | FFFF FF03 F492 F280 0000 0000 FC3C 88C0 | .............<..
+00000290 | 986F 7681 E508 0000 644B 96F7 AAEC 5180 | .ov.....dK....Q.
+000002A0 | E508 0000 986F 7681 00C0 FD7F 904B 96F7 | .....ov......K..
+000002B0 | F81F 60C0 6C4B 96F7 8CE9 5180 00C0 FD7F | ..`.lK....Q.....
+000002C0 | 0100 0000 0000 0000 E0FE 3FC0 0000 0000 | ..........?.....
+000002D0 | 0000 0000 00D0 FD7F 284C 96F7 DFF0 5180 | ........(L....Q.
+000002E0 | 904B 96F7 0000 0000 0000 0000 0000 0000 | .K..............
+000002F0 | 5890 9A81 A06D 7681 016E 7681 0000 0000 | X....mv..nv.....
+00000300 | E0FE 3FC0 0000 0000 E010 9F81 0000 0400 | ..?.............
+00000310 | 5F20 0000 6C6E 7681 FFFF 0502 A06D 7681 | _ ..lnv......mv.
+00000320 | 0000 0000 A000 0009 0000 0602 404B 96F7 | ............@K..
+00000330 | E84B 96F7 FFFF FFFF 1050 5380 00C0 FD7F | .K.......PS.....
+00000340 | FFFF FFFF AC75 5A80 08C8 5380 FFFF FFFF | .....uZ...S.....
+00000350 | B84C 96F7 BC4C 96F7 0080 0000 144D 96F7 | .L...L.......M..
+00000360 | C444 9181 244C 96F7 D99A 4F80 E19A 4F80 | .D..$L....O...O.
+00000370 | 9444 9181 2843 9181 5C43 9181 5890 9A81 | .D..(C..\C..X...
+00000380 | 8683 6380 2030 9081 2843 9181 00D0 FD7F | ..c. 0..(C......
+00000390 | 844C 96F7 2C01 5080 0000 0000 0500 0000 | .L..,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | 2843 9181 504D 96F7 B5B3 4F80 A06D 7681 | (C..PM....O..mv.
+000003D0 | 0100 9081 0000 0000 2030 9081 DEFC 4F80 | ........ 0....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9C4C 96F7 350C 6D80 0000 0000 B0FF B400 | .L..5.m.........
+00000400 | EA1B 4000                               | ..@.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-001">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-001</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 13 July 2016, 08:43:40</li>
+<li>Processing time: 5 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7D3892BCD60381B38F47A3BB1BD42B06</li>
+<li>File SHA-1: 0xC382AF61BDD7A5F554C6511E14B4E736217442B4</li>
+<li>Filesize: 71,168 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/mal-behav-001.html" target="_blank">Mal/Behav-001<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>103.42.31.110</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">103.42.31.110<td class="cell_2">2626</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2626:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6701 0000 0802 0000 3EDA 0DCD 788B 76C1 | g.......>...x.v.
+00000010 | C7C7 C753 CE5F C71E C5CD C7C7 4F0E 41E1 | ...S._......O.A.
+00000020 | 50D3 2360 E16C 4262 6021 6D5E 7776 BE82 | P.#`.lBb`!m^wv..
+00000030 | D920 DE81 981E D5BB 2204 8B05 66AB 4412 | . ......"...f.D.
+00000040 | BA51 0E69 4E30 26BE A69F 8446 4473 0665 | .Q.iN0&....FDs.e
+00000050 | D45F EA5E 245E 8C5F 745F B45E 145E B4C7 | ._.^$^._t_.^.^..
+00000060 | EA24 4020 D687 5DB8 90C5 AAFF 46F3 C1D1 | .$@ ..].....F...
+00000070 | 4744 1842 CC74 2E8A 5345 CD67 865B F65D | GD.B.t..SE.g.[.]
+00000080 | 5E5E 5F5F F035 0592 9145 6FA1 BA9A C494 | ^^__.5...Eo.....
+00000090 | D492 64F9 829A 1240 64C7 4656 45FB 82B6 | ..d....@d.FVE...
+000000A0 | 59CE 39F5 7576 FEE2 E063 D0A0 D276 F607 | Y.9.uv...c...v..
+000000B0 | A342 9673 6E06 7792 DB69 DF4B 88FA 777E | .B.sn.w..i.K..w~
+000000C0 | F397 36BD 73FE D4CA CD86 B6CE 7F8B B69C | ..6.s...........
+000000D0 | 2623 E743 250C 24D8 E7D8 4F9E 878A 563F | &#.C%.$...O...V?
+000000E0 | 4D62 2506 B845 4716 5E73 4685 B633 8094 | Mb%..EG.^sF..3..
+000000F0 | 0481 83C1 8D4B C6C0 C137 7290 0EC6 624B | .....K...7r...bK
+00000100 | 5E5E B8BA F94B F550 4A38 4593 C4C6 369A | ^^...K.PJ8E...6.
+00000110 | 9484 7577 0D4D 198A 5025 B6BE 6884 F620 | ..uw.M..P%..h..
+00000120 | 1405 4B8E 0AF9 1659 5940 E65D E040 686B | ..K....YY@.].@hk
+00000130 | EA46 9F47 922A 4572 9544 CEB9 457B 8D42 | .F.G.*Er.D..E{.B
+00000140 | B2DE 0ED6 6E45 4D92 4B4B 0670 056A 8E8A | ....nEM.KK.p.j..
+00000150 | 6F4A 00AA 552D 06B7 1B87 78C3 0742 6A90 | oJ..U-....x..Bj.
+00000160 | 8446 46C5 3024 F6                       | .FF.0$.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

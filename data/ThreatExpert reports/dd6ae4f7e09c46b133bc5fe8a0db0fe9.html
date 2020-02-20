@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 29 May 2018, 06:11:57</li>
+<li>Processing time: 6 min 28 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xDD6AE4F7E09C46B133BC5FE8A0DB0FE9</li>
+<li>File SHA-1: 0x918E082973129CB8C45DDA26537412DDDB93F31D</li>
+<li>Filesize: 491,008 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Registers a Browser Helper Object (Microsoft's Internet Explorer plugin module).</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%AppData%\store-pp.jbs
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_2">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">491,008 bytes</td>
+<td class="cell_2">MD5: 0xDD6AE4F7E09C46B133BC5FE8A0DB0FE9<br/>SHA-1: 0x918E082973129CB8C45DDA26537412DDDB93F31D</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0xAA0000 - 0xB1C000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0xB10000 - 0xB8C000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %ProgramFiles%\internet explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0xF80000 - 0xFFC000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\PricePeep.DLL</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{38A066B0-DD5F-4226-AC4F-6A27C1BFB892}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho.1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho.1\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow\Software</li>
+<li>HKEY_CURRENT_USER\Software\AppDataLow\Software\PricePeep</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\PricePeep.DLL]</li><ul>
+<li>AppID = "{38A066B0-DD5F-4226-AC4F-6A27C1BFB892}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID\{38A066B0-DD5F-4226-AC4F-6A27C1BFB892}]</li><ul>
+<li>(Default) = "PricePeep"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "PricePeep.PricePeepBho"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\TypeLib]</li><ul>
+<li>(Default) = "{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\ProgID]</li><ul>
+<li>(Default) = "PricePeep.PricePeepBho.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}]</li><ul>
+<li>(Default) = "PricePeep"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\TypeLib]</li><ul>
+<li>(Default) = "{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{1B97A696-5576-43AC-A73B-E1D2C78F21E8}]</li><ul>
+<li>(Default) = "IJigsawExternal"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\TypeLib]</li><ul>
+<li>(Default) = "{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{75BF416E-4326-45B5-8A2D-AE32D05B930B}]</li><ul>
+<li>(Default) = "IHttpRequestEvent"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\0\win32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%Windir%\system32"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{3BF3DED5-0FC8-4207-AC09-AA7B5AF4E408}\1.0]</li><ul>
+<li>(Default) = "PricePeep 1.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho\CurVer]</li><ul>
+<li>(Default) = "PricePeep.PricePeepBho.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho\CLSID]</li><ul>
+<li>(Default) = "{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho]</li><ul>
+<li>(Default) = "PricePeep"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho.1\CLSID]</li><ul>
+<li>(Default) = "{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PricePeep.PricePeepBho.1]</li><ul>
+<li>(Default) = "PricePeep"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{FD6D90C0-E6EE-4BC6-B9F7-9ED319698007}]</li><ul>
+<li>(Default) = "PricePeep"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\AppDataLow\Software\PricePeep]</li><ul>
+<li>lastStorageStatusReportLow = 0x5B0D51A1</li>
+<li>lastStorageStatusReportHigh = 0x00000000</li>
+<li>lastScriptUpdateHigh = 0x00000000</li>
+<li>lastScriptUpdateLow = 0x5B0D51A1</li>
+<li>lastActivityReportLow = 0x5B0D51A1</li>
+<li>lastActivityReportHigh = 0x00000000</li>
+<li>refreshInterval = 0x00000094</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>Stg_Mtx_PP</li>
+<li>PluginConfig_Mtx_PP</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">ext.myshopres.com</td><td class="cell_1">80</td><td class="cell_1">ext.myshopres.com</td><td class="cell_2">ext.myshopres.com</td></tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

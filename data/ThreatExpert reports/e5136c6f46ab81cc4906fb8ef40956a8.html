@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 23 February 2016, 04:37:40</li>
+<li>Processing time: 6 min 14 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE5136C6F46AB81CC4906FB8EF40956A8</li>
+<li>File SHA-1: 0xDDE4B9BD4FE5992D042033D59AE9F33FA7B2B967</li>
+<li>Filesize: 4,920,264 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AllUsersProfile%\CrypKey</li>
+<li>%Temp%\stellTemp</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AllUsersProfile% is a variable that specifies the all users' profile folder. By default, this is C:\Documents and Settings\All Users (Windows NT/2000/XP).</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Crypserv.exe.html" target="_blank">Crypserv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/crypserv.exe.html" target="_blank">crypserv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">495,616 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/cks.exe.html" target="_blank">cks.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">C:\PROGRA~1\STELLA~1\<a href="http://www.threatexpert.com/files/cks.exe.html" target="_blank">cks.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">212,992 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/SETUPEX.exe.html" target="_blank">SETUPEX.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Stellar Phoenix Mailbox - Exchange Desktop\SETUPEX.exe</td><td class="cell_2">270,336 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/mpchk.exe.html" target="_blank">mpchk.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Stellar Phoenix Mailbox - Exchange Desktop\mpchk.exe</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/ping.exe.html" target="_blank">ping.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\stellar phoenix mailbox - exchange desktop\ping.exe</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Setup_ck.exe.html" target="_blank">Setup_ck.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/Setup_ck.exe.html" target="_blank">Setup_ck.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-2GRM5.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">761,856 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Crypkey License</td><td class="cell_1">Crypkey License</td><td class="cell_1">"Running"</td><td class="cell_2"><a href="http://www.threatexpert.com/files/crypserv.exe.html" target="_blank">crypserv.exe<img src="./resources/flag.gif" style="border:none"/></a></td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ED323630-B4FD-4628-BC6A-D4CC44AE3F00}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ED323630-B4FD-4628-BC6A-D4CC44AE3F00}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ED323630-B4FD-4628-BC6A-D4CC44AE3F00}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FA2CBAFB-F7B1-4F41-9B7A-73329A6C1CB7}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FA2CBAFB-F7B1-4F41-9B7A-73329A6C1CB7}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FA2CBAFB-F7B1-4F41-9B7A-73329A6C1CB7}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FC583D50-A2F5-4656-8B1D-360488B183D3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FC583D50-A2F5-4656-8B1D-360488B183D3}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FC583D50-A2F5-4656-8B1D-360488B183D3}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FC583D50-A2F5-4656-8B1D-360488B183D3}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{FC583D50-A2F5-4656-8B1D-360488B183D3}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{002DACC3-FE8F-44CE-A877-24BA0CEB9057}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{002DACC3-FE8F-44CE-A877-24BA0CEB9057}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{002DACC3-FE8F-44CE-A877-24BA0CEB9057}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{002DACC3-FE8F-44CE-A877-24BA0CEB9057}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03C3860D-86B7-4F36-924C-3B1AD93B4C79}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03C3860D-86B7-4F36-924C-3B1AD93B4C79}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03C3860D-86B7-4F36-924C-3B1AD93B4C79}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{03C3860D-86B7-4F36-924C-3B1AD93B4C79}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0929B94E-3B6B-478D-95FB-BAD024FACEBF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0929B94E-3B6B-478D-95FB-BAD024FACEBF}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0929B94E-3B6B-478D-95FB-BAD024FACEBF}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{0929B94E-3B6B-478D-95FB-BAD024FACEBF}\TypeLib</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.MAPIFolder"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C4C5F4-1893-444C-B8D8-002F0034DA92}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafePostItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{11E2BC0C-5D4F-4E0C-B438-501FFE05A382}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.RDOSession"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{29AB7A12-B531-450E-8F7A-EA94C2F3C05F}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.AddressLists"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{37587889-FC28-4507-B6D3-8557305F7511}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Services"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{39074BC4-98C8-490C-A72A-DD05138C0213}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.MAPIUtils"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4A5E947E-C407-4DCC-A0B5-5658E457153B}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeContactItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4FD5C4D3-6C15-4EA0-9EB9-EEE8FC74A91B}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeAppointmentItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{620D55B0-F2FB-464E-A278-B4308DB1DB2B}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Providers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6D780758-67E3-46F3-938D-5FB28E2A4763}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeMailItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{741BEEFD-AEC0-4AFF-84AF-4F61D15F5526}]</li><ul>
+<li>(Default) = "Safe Replica of the Outlook's MailItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeTaskItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7A41359E-0407-470F-B3F7-7C6A0F7C449A}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeDistList"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7C4A630A-DE98-4E3E-8093-E8F5E159BB72}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeCurrentUser"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7ED1E9B1-CB57-4FA0-84E8-FAE653FE8E6B}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Profile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9DE9D1DC-EA18-4257-8728-D786A597DFE7}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.MAPITable"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A6931B16-90FA-4D69-A49F-3ABFA2C04060}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.ProfSect"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8520871-889D-468D-9ABF-6B9D66B7BDA1}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeJournalItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C5AA36A1-8BD1-47E0-90F8-47E7239C6EA1}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C97150AD-016B-407A-9021-A8270FBAD856}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Provider"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D36C50AC-2C60-4ADF-9F9A-EEBA562679D5}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeReportItem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D46BA7B2-899F-4F60-85C7-4DF5713F6F18}]</li><ul>
+<li>(Default) = ""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\TypeLib]</li><ul>
+<li>(Default) = "{A53ADCA6-5BD6-475F-9C8A-5C084E3A09E3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\ProgID]</li><ul>
+<li>(Default) = "ProfMan.Profiles"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\StellarProfile.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EBC7A7B5-C614-47B3-A579-27A2C2C98A13}]</li><ul>
+<li>(Default) = "Profiles Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ED323630-B4FD-4628-BC6A-D4CC44AE3F00}\ProgID]</li><ul>
+<li>(Default) = "PhoenixDll.SafeInspector"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{ED323630-B4FD-4628-BC6A-D4CC44AE3F00}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\PhoenixDll.dll"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>dsiafeu09832458732457nh0pfsz4</li>
+<li>oleacc-msaa-loaded</li>
+<li>Stellar Phoenix Mailbox - Exchange Desktop 4.0</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>www.google.com</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

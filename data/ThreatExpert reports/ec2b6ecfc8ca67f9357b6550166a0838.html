@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B, Trojan-Ransom.Win32.Xorist, Win32/Virut.F">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Virut.CF, Virus.Win32.Virut.ce, W32/Virut.n.gen, W32/Scribble-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 February 2015, 07:40:14</li>
+<li>Processing time: 6 min 39 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xEC2B6ECFC8CA67F9357B6550166A0838</li>
+<li>File SHA-1: 0x134A0AE85224A12E3B8114900B83C9669524D427</li>
+<li>Filesize: 518,656 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-virut-cf.html" target="_blank">W32.Virut.CF<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-virut-ce.html" target="_blank">Virus.Win32.Virut.ce<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-virut-n-gen.html" target="_blank">W32/Virut.n.gen<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-scribble-b.html" target="_blank">W32/Scribble-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Trojan-Ransom.Win32.Xorist [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-virut-f.html" target="_blank">Win32/Virut.F<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=c74b608e-0b25-4961-927b-dbe4c386b99c&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were deleted:</li>
+<ul>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\airplane.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\astronaut.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\ball.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\beach.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\butterfly.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\car.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\cat.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\chess.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\dirt bike.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\dog.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\drip.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\duck.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\fish.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\frog.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\guitar.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\horses.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\kick.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\lift-off.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\palm tree.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\pink flower.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\red flower.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\skater.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\Default Pictures\snowflake.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\guest.bmp</li>
+<li>%CommonAppData%\Microsoft\User Account Pictures\%UserName%.bmp</li>
+<li>%CommonDocuments%\My Music\Sample Music\Beethoven's Symphony No. 9 (Scherzo).wma</li>
+<li>%CommonDocuments%\My Music\Sample Music\New Stories (Highway Blues).wma</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Blue hills.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Sunset.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Water lilies.jpg</li>
+<li>%CommonDocuments%\My Pictures\Sample Pictures\Winter.jpg</li>
+<li>%CommonPrograms%\Accessories\Accessibility\Accessibility Wizard.lnk</li>
+<li>%CommonPrograms%\Accessories\Calculator.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\HyperTerminal.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\Network Connections.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\Network Setup Wizard.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\New Connection Wizard.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\Remote Desktop Connection.lnk</li>
+<li>%CommonPrograms%\Accessories\Communications\Wireless Network Setup Wizard.lnk</li>
+<li>%CommonPrograms%\Accessories\Entertainment\Sound Recorder.lnk</li>
+<li>%CommonPrograms%\Accessories\Entertainment\Volume Control.lnk</li>
+<li>%CommonPrograms%\Accessories\Paint.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Backup.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Character Map.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Disk Cleanup.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Disk Defragmenter.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Files and Settings Transfer Wizard.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Scheduled Tasks.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\Security Center.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\System Information.lnk</li>
+<li>%CommonPrograms%\Accessories\System Tools\System Restore.lnk</li>
+<li>%CommonPrograms%\Accessories\WordPad.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Component Services.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Computer Management.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Data Sources (ODBC).lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Event Viewer.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Local Security Policy.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Performance.lnk</li>
+<li>%CommonPrograms%\Administrative Tools\Services.lnk</li>
+<li>%CommonPrograms%\Adobe Reader 6.0.lnk</li>
+<li>%CommonPrograms%\PrintMe Internet Printing\Download Driver.lnk</li>
+<li>%CommonPrograms%\PrintMe Internet Printing\Learn More.lnk</li>
+<li>%CommonPrograms%\Windows Messenger.lnk</li>
+<li>%CommonStartMenu%\Set Program Access and Defaults.lnk</li>
+<li>%CommonStartMenu%\Windows Catalog.lnk</li>
+<li>%CommonStartMenu%\Windows Update.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Accessibility\Magnifier.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Accessibility\Narrator.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Accessibility\On-Screen Keyboard.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Accessibility\Utility Manager.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Command Prompt.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Entertainment\Windows Media Player.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Notepad.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Program Compatibility Wizard.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Synchronize.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Tour Windows XP.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Accessories\Windows Explorer.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Remote Assistance.lnk</li>
+<li>%Profiles%\Default User\Start Menu\Programs\Windows Media Player.lnk</li>
+<li>%Profiles%\Default User\Templates\excel.xls</li>
+<li>%Profiles%\Default User\Templates\excel4.xls</li>
+<li>%Profiles%\Default User\Templates\powerpnt.ppt</li>
+<li>%Profiles%\Default User\Templates\sndrec.wav</li>
+<li>%Profiles%\Default User\Templates\winword.doc</li>
+<li>%Profiles%\Default User\Templates\winword2.doc</li>
+<li>%DesktopDir%\Unused Desktop Shortcuts\Adobe Reader 6.0.lnk</li>
+<li>%MyDocuments%\My Music\Sample Music.lnk</li>
+<li>%MyDocuments%\My Pictures\Sample Pictures.lnk</li>
+<li>%UserProfile%\SendTo\Web Publishing Wizard.lnk</li>
+<li>%Programs%\Accessories\Accessibility\Magnifier.lnk</li>
+<li>%Programs%\Accessories\Accessibility\Narrator.lnk</li>
+<li>%Programs%\Accessories\Accessibility\On-Screen Keyboard.lnk</li>
+<li>%Programs%\Accessories\Accessibility\Utility Manager.lnk</li>
+<li>%Programs%\Accessories\Address Book.lnk</li>
+<li>%Programs%\Accessories\Command Prompt.lnk</li>
+<li>%Programs%\Accessories\Entertainment\Windows Media Player.lnk</li>
+<li>%Programs%\Accessories\Notepad.lnk</li>
+<li>%Programs%\Accessories\Program Compatibility Wizard.lnk</li>
+<li>%Programs%\Accessories\Synchronize.lnk</li>
+<li>%Programs%\Accessories\Tour Windows XP.lnk</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%CommonDocuments% is a variable that refers to the file system directory that contains documents that are common to all users. A typical paths is C:\Documents and Settings\All Users\Documents.</li>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%CommonStartMenu% is a variable that refers to the file system directory that contains the programs and folders that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu (Windows NT/2000/XP).</li>
+<li>%Profiles% is a variable that refers to the file system directory containing user profile folders. A typical path is C:\Documents and Settings.</li>
+<li>%DesktopDir% is a variable that refers to the file system directory used to physically store file objects on the desktop. A typical path is C:\Documents and Settings\[UserName]\Desktop.</li>
+<li>%MyDocuments% is a variable that refers to the file system directory used to physically store a user's common repository of documents. A typical path is C:\Documents and Settings\[UserName]\My Documents.</li>
+<li>%UserProfile% is a variable that specifies the current user's profile folder. By default, this is C:\Documents and Settings\[UserName] (Windows NT/2000/XP).</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">w8i9eHkHOwWwQlX.exe</td><td class="cell_1">%Temp%\w8i9ehkhowwwqlx.exe</td><td class="cell_2">1,454,080 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">1,454,080 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.CryptoTorLocker2015!</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\shell\open\command</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.CryptoTorLocker2015!]</li><ul>
+<li>(Default) = "PRPASCBHJSZLMOM"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\shell\open\command]</li><ul>
+<li>(Default) = "%Temp%\w8i9eHkHOwWwQlX.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM\DefaultIcon]</li><ul>
+<li>(Default) = "%Temp%\w8i9eHkHOwWwQlX.exe,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PRPASCBHJSZLMOM]</li><ul>
+<li>(Default) = "CRYPTED!"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Alcmeter = "%Temp%\w8i9eHkHOwWwQlX.exe"</li>
+</ul>
+<br/>
+<em>so that %Temp%\w8i9eHkHOwWwQlX.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<ul><li>The following Registry Value was modified:</li><ul>
+<li>[HKEY_CURRENT_USER\Control Panel\Desktop]</li><ul>
+<li>Wallpaper = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mappings:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+127.0.0.1 www.Brenz.pl
+#
+</textarea></tr></td></table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>dfccfa.com</li>
+<li>ullmat.com</li>
+<li>ilo.brenz.pl</li>
+<li>zwrfhe.com</li>
+<li>bigaeo.com</li>
+<li>upwuvn.com</li>
+<li>tskron.com</li>
+<li>kguzcc.com</li>
+<li>wtiuod.com</li>
+<li>tuxcnc.com</li>
+<li>uibshn.com</li>
+<li>fgiizc.com</li>
+<li>qdbwsz.com</li>
+<li>milgoo.com</li>
+<li>ukyypi.com</li>
+<li>bkpqal.com</li>
+<li>zzytsu.com</li>
+<li>lgodap.com</li>
+<li>qqlgkm.com</li>
+<li>xicaph.com</li>
+<li>xmfisz.com</li>
+<li>vaazhd.com</li>
+<li>plkavf.com</li>
+<li>jiryro.com</li>
+<li>ibjiwq.com</li>
+<li>cnayml.com</li>
+<li>iexqse.com</li>
+<li>eduaoj.com</li>
+<li>ixthyk.com</li>
+<li>kyksdp.com</li>
+<li>gfhdeg.com</li>
+<li>loodlj.com</li>
+<li>rofiei.com</li>
+<li>yeyota.com</li>
+<li>cfzaei.com</li>
+<li>rtudqe.com</li>
+<li>vfhabb.com</li>
+<li>bzimuv.com</li>
+<li>apkfee.com</li>
+<li>xhytsw.com</li>
+<li>dusdoc.com</li>
+<li>atktih.com</li>
+<li>ouomei.com</li>
+<li>ptethj.com</li>
+<li>jgvwuf.com</li>
+<li>gtcnjf.com</li>
+<li>pessui.com</li>
+<li>adnpmm.com</li>
+<li>qgjivj.com</li>
+<li>tomulu.com</li>
+<li>iouath.com</li>
+<li>feremq.com</li>
+<li>kixrag.com</li>
+<li>vzqeii.com</li>
+<li>bqwopa.com</li>
+<li>rrdyiv.com</li>
+<li>ejczkg.com</li>
+<li>edivwh.com</li>
+<li>hoahla.com</li>
+<li>vbomgi.com</li>
+<li>uodkze.com</li>
+<li>xnudeg.com</li>
+<li>akurzq.com</li>
+<li>ytebth.com</li>
+<li>thwbpi.com</li>
+<li>ewnunw.com</li>
+<li>mlfveb.com</li>
+<li>vmioil.com</li>
+<li>leyayw.com</li>
+<li>hxxgzf.com</li>
+<li>nnuiof.com</li>
+<li>nmeaxi.com</li>
+<li>deande.com</li>
+<li>yatunl.com</li>
+<li>wsgyaa.com</li>
+<li>ewnrut.com</li>
+<li>pmruxk.com</li>
+<li>abnyfk.com</li>
+<li>suykbk.com</li>
+<li>rpjpue.com</li>
+<li>wivoya.com</li>
+<li>vdrutx.com</li>
+<li>lgidde.com</li>
+<li>opbbzs.com</li>
+<li>lvigkp.com</li>
+<li>teukod.com</li>
+<li>tudjws.com</li>
+<li>yrihki.com</li>
+<li>tzocho.com</li>
+<li>agufhj.com</li>
+<li>dhvfrv.com</li>
+<li>cqqphw.com</li>
+<li>siolgv.com</li>
+<li>uovbpi.com</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

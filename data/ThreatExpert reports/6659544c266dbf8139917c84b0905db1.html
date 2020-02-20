@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 7 June 2016, 22:24:30</li>
+<li>Processing time: 5 min 49 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6659544C266DBF8139917C84B0905DB1</li>
+<li>File SHA-1: 0x4207C7CC25AE9E0A6CCAE5EF637ABBE31FC88AB2</li>
+<li>Filesize: 45,056 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Windir%\Terms.EXE
+</td>
+<td class="cell_1">45,056 bytes</td>
+<td class="cell_2">MD5: 0x6659544C266DBF8139917C84B0905DB1<br/>SHA-1: 0x4207C7CC25AE9E0A6CCAE5EF637ABBE31FC88AB2</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">Terms.EXE</td><td class="cell_1">%Windir%\terms.exe</td><td class="cell_2">49,152 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">49,152 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">SuperProServer</td><td class="cell_1">SuperProServer</td><td class="cell_1">"Starting"</td><td class="cell_2">%Windir%\Terms.EXE</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER\0000]</li><ul>
+<li>Service = "SuperProServer"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_SUPERPROSERVER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer\Enum]</li><ul>
+<li>0 = "Root\LEGACY_SUPERPROSERVER\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SuperProServer]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-06-07 22:24"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.EXE"</li>
+<li>DisplayName = "SuperProServer"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Sentinel SuperPro Server"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER\0000]</li><ul>
+<li>Service = "SuperProServer"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "SuperProServer"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SUPERPROSERVER]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer\Enum]</li><ul>
+<li>0 = "Root\LEGACY_SUPERPROSERVER\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SuperProServer]</li><ul>
+<li>ConnectGroup = "??????"</li>
+<li>MarkTime = "2016-06-07 22:24"</li>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%Windir%\Terms.EXE"</li>
+<li>DisplayName = "SuperProServer"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Sentinel SuperPro Server"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>dhl.ckddos.com</li>
+<li>ijin.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">ijin.f3322.net<td class="cell_2">34005</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 34005:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4D51 A203 E0CA EEE0 174A CCCA 42DA 3647 | MQ.......J..B.6G
+00000010 | CAD5 70CF 973B A13C 3CDA 534C E883 54A8 | ..p..;.<<.SL..T.
+00000020 | 4D3C 7775 1CB9 64D4 BCA3 F0EA 3AE1 EA06 | M<wu..d.....:...
+00000030 | 21D4 8DCC 3EC0 E4BE 5ACF F920 B8AE 99C0 | !...>...Z.. ....
+00000040 | A1EF 5DEF C4D1 A614 200B 8889 6108 AC70 | ..]..... ...a..p
+00000050 | 2D5A 2CF1 BD29 DFD9 33A8 FFDE B664 20F9 | -Z,..)..3....d .
+00000060 | 53C4 7536 68A9 5B51 F8E1 5B52 D778 F192 | S.u6h.[Q..[R.x..
+00000070 | D2B0 B1C3 1636 B0F8 E9CB 2C9E CC65 F373 | .....6....,..e.s
+00000080 | 7C52 5887 BE41 15E7 4136 FEBC 51E6 C897 | |RX..A..A6..Q...
+00000090 | 0D2B F341 E284 96C5 FCF6 E589 2D8B 0EC4 | .+.A........-...
+000000A0 | 29E2 A777 8CDE F95D 9EB0 A8DD 7ACB 6BE1 | )..w...]....z.k.
+000000B0 | EEBA A8A2 8A46 1867 5524 1159 8D21 7B3F | .....F.gU$.Y.!{?
+000000C0 | 09B3 55CD 5303 C953 E125 6D5F 355A 18DC | ..U.S..S.%m_5Z..
+000000D0 | A3B6 C6AC CE84 D9B6 A378 6B09 FB9D 47D2 | .........xk...G.
+000000E0 | DCBF B9C8 58CA 5B9F CE3B A066 95B1 BF31 | ....X.[..;.f...1
+000000F0 | DA37 FA40 657F 0437 E042 712E 8C18 0DFA | .7.@e..7.Bq.....
+00000100 | 9B74 576D 34BD 46F8 B9F7 163E E437 3599 | .tWm4.F....>.75.
+00000110 | FDFE E173 A171 985B 6A91 BE2E 9F20 43EA | ...s.q.[j.... C.
+00000120 | DAFE B4D6 09DE 335B ECB3 9AA2 41ED 2E6F | ......3[....A..o
+00000130 | D649 15B9 7D1E D12F 8A9F 636C 7D20 A8DB | .I..}../..cl} ..
+00000140 | A936 C1FC F89B C47A A941 E1D9 7266 6149 | .6.....z.A..rfaI
+00000150 | 5C47 DBF4 8C04 31B0 4999 FB75 50EF 2416 | \G....1.I..uP.$.
+00000160 | E3D5 C4B5 9A21 C2B3 0E51 8464 E971 4A20 | .....!...Q.d.qJ
+00000170 | D887 7243 E6A2 0ED1 76E5 96A6 44F3 4B79 | ..rC....v...D.Ky
+00000180 | 87C5 24BE D20E A003 DF01 2294 1407 F9E8 | ..$.......".....
+00000190 | 1412 9902 D0C2 D9EF B0E4 A3F5 715E 1BB6 | ............q^..
+000001A0 | 85B7 38D3 CF86 EB9B 46DD B0AC 1E2B 2CB3 | ..8.....F....+,.
+000001B0 | 758E F90F 9FB5 D253 250C 9819 CE20 9709 | u......S%.... ..
+000001C0 | A204 13A3 E403 3C8C 71BE 746E 1D84 6803 | ......<.q.tn..h.
+000001D0 | D967 C932 3EC8 A83F 62F9 4197 3070 9A50 | .g.2>..?b.A.0p.P
+000001E0 | 1C25 5B8B 9CEB 6024 4475 F607 FA2A A026 | .%[...`$Du...*.&
+000001F0 | 465E 6DA8 319D 7374 CBB3 90DA D58D D281 | F^m.1.st........
+00000200 | 3E                                      | >
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 6666:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4D51 A203 E0CA EEE0 174A CCCA 42DA 3647 | MQ.......J..B.6G
+00000010 | CAD5 70CF 973B A13C 3CDA 534C E883 54A8 | ..p..;.<<.SL..T.
+00000020 | 4D3C 7775 1CB9 64D4 BCA3 F0EA 3AE1 EA06 | M<wu..d.....:...
+00000030 | 21D4 8DCC C1CA F6BE 5ACF F920 B8AE 99C0 | !.......Z.. ....
+00000040 | A1E7 5A9F C4D9 A164 200B 8889 613A ABE1 | ..Z....d ...a:..
+00000050 | 5175 2CF1 BDF1 8003 334C FB55 B640 2022 | Qu,.....3L.U.@ "
+00000060 | 53EF C388 78FD 036D 8EC2 F4EC C784 1B9D | S...x..m........
+00000070 | AEA2 B652 6AD5 4A98 16CB 2C9E CC65 F373 | ...Rj.J...,..e.s
+00000080 | 7C4A 55F7 BE41 15E7 414E F3CC 51E6 C897 | |JU..A..AN..Q...
+00000090 | 0D2B F341 E284 96C5 FCF6 E589 2D83 05B4 | .+.A........-...
+000000A0 | 29E2 A777 8CDE F95D 9EB0 A8DD 7ACB 6BE1 | )..w...]....z.k.
+000000B0 | EEBA A8A2 8A46 1867 5524 1159 8D21 7B3F | .....F.gU$.Y.!{?
+000000C0 | 09BB 5EBD 5303 C953 E125 6D5F 355A 18DC | ..^.S..S.%m_5Z..
+000000D0 | A3B6 C6AC CE84 D9B6 A378 6B09 FB9D 47D2 | .........xk...G.
+000000E0 | DCBF B9C8 58CA 5B9F CE3B A066 95B1 BF31 | ....X.[..;.f...1
+000000F0 | DA37 FA40 657F 0437 E042 71BF E018 0DFA | .7.@e..7.Bq.....
+00000100 | 9B74 576D 34BD 46F8 B9F7 163E E437 3599 | .tWm4.F....>.75.
+00000110 | FDFE E173 A171 985B 6A91 BE2E 9FA2 8142 | ...s.q.[j......B
+00000120 | DAFE B4D6 09F0 3DCA ECBB 97D2 41ED 2E6F | ......=.....A..o
+00000130 | D649 15B9 7D1E D12F 8A9F 636C 7D20 A8DB | .I..}../..cl} ..
+00000140 | A936 C1FC F89B C47A A941 E1D9 7266 6149 | .6.....z.A..rfaI
+00000150 | 5C47 DBF4 8C04 31B0 4999 FB75 50EF 2416 | \G....1.I..uP.$.
+00000160 | E3D5 C4B5 9A21 C2B3 0E51 8464 E971 4A20 | .....!...Q.d.qJ
+00000170 | D887 7243 E6A2 0ED1 76E5 99D6 44F3 4B79 | ..rC....v...D.Ky
+00000180 | 87C5 24BE D20E A003 DF01 2294 1407 F9E8 | ..$.......".....
+00000190 | 1412 9902 D0FA D49F B0EC AE85 715E 1BB6 | ............q^..
+000001A0 | 85B7 38D3 CF86 EB9B 46DD B0AC 1E23 29C3 | ..8.....F....#).
+000001B0 | 758E F90F 9FB5 D253 250C 9819 CE28 9279 | u......S%....(.y
+000001C0 | A204 13A3 E403 3C8C 71BE 746E 1D70 6803 | ......<.q.tn.ph.
+000001D0 | D967 C932 3EC8 A83F 62F9 4E97 3070 9A50 | .g.2>..?b.N.0p.P
+000001E0 | 1C3D 5B8B 9CEB 6024 4475 F607 FA2A A026 | .=[...`$Du...*.&
+000001F0 | 465E 6DA8 31BA E411 CBB3 90DA D58D D281 | F^m.1...........
+00000200 | 3E                                      | >
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

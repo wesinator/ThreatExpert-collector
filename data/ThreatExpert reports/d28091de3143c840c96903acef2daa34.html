@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.Q, Trojan.Win32.KillAV">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.Q, Trojan.Win32.KillAV</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 2 March 2016, 02:14:40</li>
+<li>Processing time: 5 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD28091DE3143C840C96903ACEF2DAA34</li>
+<li>File SHA-1: 0x5F5B0C559F2553A670BF825481F836B66D4AB4AD</li>
+<li>Filesize: 114,207 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor:Win32/Zegost.Q [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-killav.html" target="_blank">Trojan.Win32.KillAV<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>1491629458.gnway.cc:2016</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>1491629458.gnway.cc</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">1491629458.gnway.cc<td class="cell_2">2016</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2016:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | CC00 0000 F400 0000 7B9E 4E6B 6561 9A00 | ........{.Nkea..
+00000010 | C6A9 43C8 09C6 1E5F 0904 4E44 3F30 B4AA | ..C...._..ND?0..
+00000020 | 2830 3854 2921 333D 58C0 8904 001C FDAF | (08T)!3=X.......
+00000030 | 5E2F B3B0 B222 EC06 9BCE 2B35 A306 21C3 | ^/..."....+5..!.
+00000040 | CDB8 27F7 029B 7787 7662 CD8C 0722 0C25 | ..'...w.vb...".%
+00000050 | 4035 8140 7604 A708 432E 90B6 2915 61E0 | @5.@v...C...).a.
+00000060 | 7B28 0235 4884 615A 1C44 BD43 8908 C313 | {(.5H.aZ.D.C....
+00000070 | 24BD 1640 BE2B E7C4 1A26 B0B1 8C0C DBB9 | $..@.+...&......
+00000080 | 1918 0C19 FED6 FF71 6EA8 3985 646F 3D50 | .......qn.9.do=P
+00000090 | D639 3FB7 A0B4 24B5 C82F 3137 9561 F6C4 | .9?...$../17.a..
+000000A0 | 9A1B 07A6 D7BC 9E35 B1A6 A5C5 91C1 A282 | .......5........
+000000B0 | 91E1 FF7F A019 07FE D63F 3050 6150 0432 | .........?0PaP.2
+000000C0 | 75D4 4418 E481 3400 6C29 420A           | u.D...4.l)B.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

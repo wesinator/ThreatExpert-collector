@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Lovgate.AC@mm, Email-Worm.Win32.LovGate.cx, W32/Lovgate.ai@MM, WORM_LOVGATE.AL, W32/Lovgate-AG, Worm.Win32.Lovgate, Win32/LovGate.worm.131072, Email-Worm.Win32.LovGate.ini, TextImage/LovGate, Email-Worm.Win32.LovGate.ag, W32/Lovgate.ae@MM..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Lovgate.AC@mm, Email-Worm.Win32.LovGate.cx, W32/Lovgate.ai@MM..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 July 2014, 03:33:28</li>
+<li>Processing time: 6 min 47 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBB2505A4A9F7EDFBB60553536A381EAE</li>
+<li>File SHA-1: 0x527D1FD70B89CD3707142D21A1CFD7929054F731</li>
+<li>Filesize: 131,072 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-lovgate-ac-mm.html" target="_blank">W32.Lovgate.AC@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Email-Worm.Win32.LovGate.cx [Kaspersky Lab]</li>
+<li>W32/Lovgate.ai@MM [McAfee]</li>
+<li>WORM_LOVGATE.AL [Trend Micro]</li>
+<li>W32/Lovgate-AG [Sophos]</li>
+<li>Worm.Win32.Lovgate [Ikarus]</li>
+<li>Win32/LovGate.worm.131072 [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-012: DCOM RPC Overflow exploit - replication across TCP 135/139/445/593 (common for Blaster, Welchia, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Sets the drive to autoplay by creating autorun.inf file in its root directory. If the drive is shared across the network then other remote computers can be infected any time they try to access this share.</td><td class="cell_2"><img src="./resources/level7.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote SMTP server and sending out email.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Mass-mailer that sends out email to the email addresses harvested from the local computer.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=452f47e5-ae75-4f80-9e37-4042ab8cb6d2&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risks were identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/email-worm-lovgate-sd5.html" target="_blank">Email-Worm.LovGate!sd5<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Email-Worm.LovGate!sd5 is a mass-mailing application that propagates from one system to another by creating a new email message, attaching itself and then sending the message without user's consent.</td>
+</tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/adware-component-unrelated.html" target="_blank">Adware.Component.Unrelated<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">These common components have files and keys that are in different threats but the threats are not related to one another in that the author of the signature is not the same. It is recommended that all these entries be removed.</td>
+</tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/backdoor-hupigon-gen.html" target="_blank">Backdoor.Hupigon.GEN<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Backdoor.Hupigon.GEN has rootkit functionality. It injects itself into Internet Explorer causing IE to hide itself. It also logs keystrokes and sends this information to remote servers.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\AUTORUN.INF
+</td>
+<td class="cell_1">49 bytes</td>
+<td class="cell_1">MD5: 0xEFA15C8B7F20603ADFA7045140546D6D<br/>SHA-1: 0x817F692DD26E9330F461D89A3E9C245A028D2CB5</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/email-worm-win32-lovgate-ini.html" target="_blank">Email-Worm.Win32.LovGate.ini<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/textimage-lovgate.html" target="_blank">TextImage/LovGate<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+c:\<a href="http://www.threatexpert.com/files/cdrom.com.html" target="_blank">cdrom.com<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Windir%\<a href="http://www.threatexpert.com/files/CdPlay.EXE.html" target="_blank">CdPlay.EXE<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/hxdef.exe.html" target="_blank">hxdef.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/IEXPLORE.EXE.html" target="_blank">IEXPLORE.EXE<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/kernel66.dll.html" target="_blank">kernel66.dll<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/RAVMOND.exe.html" target="_blank">RAVMOND.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/TkBellExe.exe.html" target="_blank">TkBellExe.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/Update_OB.exe.html" target="_blank">Update_OB.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">131,072 bytes</td>
+<td class="cell_1">MD5: 0xBB2505A4A9F7EDFBB60553536A381EAE<br/>SHA-1: 0x527D1FD70B89CD3707142D21A1CFD7929054F731</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-lovgate-ac-mm.html" target="_blank">W32.Lovgate.AC@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Email-Worm.Win32.LovGate.cx [Kaspersky Lab]<br/>W32/Lovgate.ai@MM [McAfee]<br/>WORM_LOVGATE.AL [Trend Micro]<br/>W32/Lovgate-AG [Sophos]<br/>Worm.Win32.Lovgate [Ikarus]<br/>Win32/LovGate.worm.131072 [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\msimn.~ex
+</td>
+<td class="cell_1">60,416 bytes</td>
+<td class="cell_1">MD5: 0x091C14F4C71328D4316248A2421190DE<br/>SHA-1: 0x2F3645E24CAEE5898D086890752400D7C8862505</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\oemig50.~ex
+</td>
+<td class="cell_1">60,416 bytes</td>
+<td class="cell_1">MD5: 0xEFA500C2882EAD296DA76F1DC6025EDA<br/>SHA-1: 0x34854878A16E37101A083D3973AC7A56176C3974</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\setup50.~ex
+</td>
+<td class="cell_1">73,216 bytes</td>
+<td class="cell_1">MD5: 0x1A67EEE45C2045A69E4DCDDF20C41100<br/>SHA-1: 0x3EA5973175DDEBC197BD4C7F55689306B84EC6FB</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\wab.~ex
+</td>
+<td class="cell_1">46,080 bytes</td>
+<td class="cell_1">MD5: 0xA7B050F20F8008E7BCDA4A5359C2063F<br/>SHA-1: 0x1742D5C1D497482643CF26A9C8DD813901C6BE20</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%ProgramFiles%\Outlook Express\wabmig.~ex
+</td>
+<td class="cell_1">30,208 bytes</td>
+<td class="cell_1">MD5: 0xBD2731756148627532BFD77D05CFB4FC<br/>SHA-1: 0x22775963845C2FF843129546C145E593456094AD</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%Windir%\<a href="http://www.threatexpert.com/files/Exploier.exe.html" target="_blank">Exploier.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">57,344 bytes</td>
+<td class="cell_1">MD5: 0x7C6BBB10F8AD2E567031542D1F75612E<br/>SHA-1: 0x756EC7D8FF11EBE2DBAE7DF4290FC44EB31ED949</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-lovgate-ac-mm.html" target="_blank">W32.Lovgate.AC@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Email-Worm.Win32.LovGate.ag [Kaspersky Lab]<br/>W32/Lovgate.ae@MM [McAfee]<br/>PE_LOVGATE.AE-O [Trend Micro]<br/>W32/Lovgate-AG [Sophos]<br/>Email-Worm.Win32.LovGate.AG [Ikarus]<br/>Win32/LovGate.57344.B [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/iexplorer.exe.html" target="_blank">iexplorer.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/spollsv.exe.html" target="_blank">spollsv.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">61,440 bytes</td>
+<td class="cell_1">MD5: 0x068AB7AFF165EAF4A6B5D1F5EFC5779D<br/>SHA-1: 0x73A804514776DFD459EEFF5FE00A0D6FAB0AF268</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-lovgate-r-mm.html" target="_blank">W32.Lovgate.R@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-lovgate-x.html" target="_blank">Email-Worm.Win32.LovGate.x<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-lovgate-x-mm.html" target="_blank">W32/Lovgate.x@MM<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-lovgate-cg.html" target="_blank">WORM_LOVGATE.CG<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-lovgate-v.html" target="_blank">W32/Lovgate-V<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-lovgate-x.html" target="_blank">Email-Worm.Win32.LovGate.X<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-lovgate-worm-61440.html" target="_blank">Win32/LovGate.worm.61440<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/LMMIB20.DLL.html" target="_blank">LMMIB20.DLL<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/msjdbc11.dll.html" target="_blank">msjdbc11.dll<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/MSSIGN30.DLL.html" target="_blank">MSSIGN30.DLL<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/ODBC16.dll.html" target="_blank">ODBC16.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">53,248 bytes</td>
+<td class="cell_1">MD5: 0x7D72BF5A3F74DDEB5A7A384A1F73BE80<br/>SHA-1: 0x2C7041E8B997996720772ED15EC5E978E3074795</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-lovgate-r-mm.html" target="_blank">W32.Lovgate.R@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-lovgate-av.html" target="_blank">Email-Worm.Win32.LovGate.av<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/backdoor-aqj.html" target="_blank">BackDoor-AQJ<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/worm-lovgate-be.html" target="_blank">WORM_LOVGATE.BE<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-lovgate-v.html" target="_blank">W32/Lovgate-V<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/email-worm-win32-lovgate-w.html" target="_blank">Email-Worm.Win32.LovGate.W<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win-trojan-lovgate-53248.html" target="_blank">Win-Trojan/LovGate.53248<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]<br/><em>packed with </em>ASPack [Kaspersky Lab]</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%System%\results.txt
+</td>
+<td class="cell_1">0 bytes</td>
+<td class="cell_1">MD5: 0xD41D8CD98F00B204E9800998ECF8427E<br/>SHA-1: 0xDA39A3EE5E6B4B0D3255BFEF95601890AFD80709</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%System%\win~.uuu
+</td>
+<td class="cell_1">319,496 bytes</td>
+<td class="cell_1">MD5: 0xF88037FD7537BB83DA64B7653FC5CE0E<br/>SHA-1: 0x7DB318D8859214E0D0140040E4F845F460911297</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-lovgate-ac-mm.html" target="_blank">W32.Lovgate.AC@mm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Email-Worm.Win32.LovGate.ag [Kaspersky Lab]<br/>W32/Lovgate.ae@MM [McAfee]<br/>PE_LOVGATE.AE [Trend Micro]<br/>W32/Lovgate-AG [Sophos]<br/>Email-Worm.Win32.LovGate.AG [Ikarus]<br/>Win32/LovGate.57344.B [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/iexplorer.exe.html" target="_blank">iexplorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/iexplorer.exe.html" target="_blank">iexplorer.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">61,440 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/Exploier.exe.html" target="_blank">Exploier.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/Exploier.exe.html" target="_blank">Exploier.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">65,536 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">45,056 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/hxdef.exe.html" target="_blank">hxdef.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/hxdef.exe.html" target="_blank">hxdef.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">368,640 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">368,640 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/cdrom.com.html" target="_blank">cdrom.com<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\<a href="http://www.threatexpert.com/files/cdrom.com.html" target="_blank">cdrom.com<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">368,640 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">368,640 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/CdPlay.EXE.html" target="_blank">CdPlay.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\<a href="http://www.threatexpert.com/files/CdPlay.EXE.html" target="_blank">CdPlay.EXE<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">368,640 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/spollsv.exe.html" target="_blank">spollsv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/spollsv.exe.html" target="_blank">spollsv.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">61,440 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/LMMIB20.DLL.html" target="_blank">LMMIB20.DLL<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/LMMIB20.DLL.html" target="_blank">LMMIB20.DLL<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: atsagent.exe<br/>Process filename: %Windir%\atsagent.exe<br/>Address space: 0x11D0000 - 0x11F6000</td></tr>
+</table></p>
+<ul><li>There were new services created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">_reg</td><td class="cell_1">_reg</td><td class="cell_1">"Stopped"</td><td class="cell_2">Rundll32.exe msjdbc11.dll ondll_server</td></tr>
+<tr><td class="cell_1">Windows Management Protocol v.0 (experimental)</td><td class="cell_1">Windows Management Protocol v.0 (experimental)</td><td class="cell_1">"Stopped"</td><td class="cell_2">Rundll32.exe msjdbc11.dll ondll_server</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\runServices</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Management Protocol v.0 (experimental)</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Management Protocol v.0 (experimental)\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\_reg</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\_reg\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Management Protocol v.0 (experimental)</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Management Protocol v.0 (experimental)\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\_reg</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\_reg\Security</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\txtfile\shell\open\command]</li><ul>
+<li>(Default) = "Update_OB.exe %1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>WinHelp = "%System%\TkBellExe.exe"</li>
+<li>Hardware Profile = "%System%\hxdef.exe"</li>
+<li>Microsoft  Associates, Inc. = "iexplorer.exe"</li>
+<li>VFW Encoder/Decoder Settings = "RUNDLL32.EXE MSSIGN30.DLL  ondll_reg"</li>
+<li>Shell Extension = "%System%\spollsv.exe"</li>
+<li>Program In Windows = "%System%\IEXPLORE.EXE"</li>
+<li>Protected Storage = "RUNDLL32.EXE MSSIGN30.DLL  ondll_reg"</li>
+</ul>
+<br/>
+<em>so that TkBellExe.exe runs every time Windows starts</em><br/>
+<em>so that hxdef.exe runs every time Windows starts</em><br/>
+<em>so that iexplorer.exe runs every time Windows starts</em><br/>
+<em>so that MSSIGN30.DLL runs every time Windows starts</em><br/>
+<em>so that spollsv.exe runs every time Windows starts</em><br/>
+<em>so that IEXPLORE.EXE runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\runServices]</li><ul>
+<li>SystemTra = "%Windir%\CdPlay.EXE"</li>
+<li>COM++   System = "Exploier.exe"</li>
+</ul>
+<br/>
+<em>so that CdPlay.EXE runs every time Windows starts</em><br/>
+<em>so that Exploier.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Management Protocol v.0 (experimental)\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Management Protocol v.0 (experimental)]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "Rundll32.exe msjdbc11.dll ondll_server"</li>
+<li>DisplayName = "Windows Management Protocol v.0 (experimental)"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Windows Advanced Server. Performs scheduled scans for LANguard."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\_reg\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\_reg]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "Rundll32.exe msjdbc11.dll ondll_server"</li>
+<li>DisplayName = "_reg"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Management Protocol v.0 (experimental)\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Management Protocol v.0 (experimental)]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "Rundll32.exe msjdbc11.dll ondll_server"</li>
+<li>DisplayName = "Windows Management Protocol v.0 (experimental)"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Windows Advanced Server. Performs scheduled scans for LANguard."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\_reg\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\_reg]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "Rundll32.exe msjdbc11.dll ondll_server"</li>
+<li>DisplayName = "_reg"</li>
+<li>ObjectName = "LocalSystem"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Identities]</li><ul>
+<li>Identity Login = 0x00098053</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows]</li><ul>
+<li>run = "RAVMOND.exe"</li>
+</ul>
+<br/>
+<em>so that RAVMOND.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<ul><li>The following Registry Value was deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\txtfile\shell\open\command]</li><ul>
+<li>(Default) = "%System%\NOTEPAD.EXE %1"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>MSIdent Logon</li>
+<li>OutlookExpress_InstanceMutex_101897</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1042</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1235</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1236</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1237</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1238</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1239</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1240</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1241</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1242</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1243</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1244</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1245</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1246</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1247</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1248</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1249</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1250</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1251</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1252</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1253</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1254</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1255</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1256</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1257</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1258</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1259</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1260</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1261</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1262</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1263</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1264</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1265</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1266</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1267</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1268</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1269</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1270</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1271</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1272</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1273</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1274</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1275</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1276</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1277</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1278</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1279</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1280</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1281</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1282</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1283</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">1284</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+<tr><td class="cell_1">4006</td><td class="cell_1">TCP</td><td class="cell_2">iexplorer.exe (%System%\iexplorer.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>mail.[user's domain]</li>
+<li>127.0.0.2</li>
+<li>127.0.0.3</li>
+<li>127.0.0.4</li>
+<li>127.0.0.5</li>
+<li>127.0.0.6</li>
+<li>127.0.0.7</li>
+<li>127.0.0.8</li>
+<li>127.0.0.9</li>
+<li>127.0.0.10</li>
+<li>127.0.0.11</li>
+<li>127.0.0.12</li>
+<li>127.0.0.13</li>
+<li>127.0.0.14</li>
+<li>127.0.0.15</li>
+<li>127.0.0.16</li>
+<li>127.0.0.17</li>
+<li>127.0.0.18</li>
+<li>127.0.0.19</li>
+<li>127.0.0.20</li>
+<li>127.0.0.21</li>
+<li>127.0.0.22</li>
+<li>127.0.0.23</li>
+<li>127.0.0.24</li>
+<li>127.0.0.25</li>
+<li>127.0.0.26</li>
+<li>127.0.0.27</li>
+<li>127.0.0.28</li>
+<li>127.0.0.29</li>
+<li>127.0.0.30</li>
+<li>127.0.0.31</li>
+<li>127.0.0.32</li>
+<li>127.0.0.33</li>
+<li>127.0.0.34</li>
+<li>127.0.0.35</li>
+<li>127.0.0.36</li>
+<li>127.0.0.37</li>
+<li>127.0.0.38</li>
+<li>127.0.0.39</li>
+<li>127.0.0.40</li>
+<li>127.0.0.41</li>
+<li>127.0.0.42</li>
+<li>127.0.0.43</li>
+<li>127.0.0.44</li>
+<li>127.0.0.45</li>
+<li>127.0.0.46</li>
+<li>127.0.0.47</li>
+<li>127.0.0.48</li>
+<li>127.0.0.49</li>
+<li>127.0.0.50</li>
+<li>127.0.0.51</li>
+<li>127.0.0.52</li>
+<li>127.0.0.53</li>
+<li>127.0.0.54</li>
+<li>127.0.0.55</li>
+<li>127.0.0.56</li>
+<li>127.0.0.57</li>
+<li>127.0.0.58</li>
+<li>127.0.0.59</li>
+<li>127.0.0.60</li>
+<li>127.0.0.61</li>
+<li>127.0.0.62</li>
+<li>127.0.0.63</li>
+<li>127.0.0.64</li>
+<li>127.0.0.65</li>
+<li>127.0.0.66</li>
+<li>127.0.0.67</li>
+<li>127.0.0.68</li>
+<li>127.0.0.69</li>
+<li>127.0.0.70</li>
+<li>127.0.0.71</li>
+<li>127.0.0.72</li>
+<li>127.0.0.73</li>
+<li>127.0.0.74</li>
+<li>127.0.0.75</li>
+<li>127.0.0.76</li>
+<li>127.0.0.77</li>
+<li>127.0.0.78</li>
+<li>127.0.0.79</li>
+<li>127.0.0.80</li>
+<li>127.0.0.81</li>
+<li>127.0.0.82</li>
+<li>127.0.0.83</li>
+<li>127.0.0.84</li>
+<li>127.0.0.85</li>
+<li>127.0.0.86</li>
+<li>127.0.0.87</li>
+<li>127.0.0.88</li>
+<li>127.0.0.89</li>
+<li>127.0.0.90</li>
+<li>127.0.0.91</li>
+<li>127.0.0.92</li>
+<li>127.0.0.93</li>
+<li>127.0.0.94</li>
+<li>127.0.0.95</li>
+<li>127.0.0.96</li>
+<li>127.0.0.97</li>
+<li>127.0.0.98</li>
+<li>127.0.0.99</li>
+<li>127.0.0.100</li>
+</ul></ul>
+<ul><li>The following Internet Connection was established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">.host</td><td class="cell_1">80</td><td class="cell_1">.host</td><td class="cell_2">.host</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/smtp_mod.gif"/></td><td width="100%" class="h3">Generated SMTP traffic</td></tr></table>
+<ul><li>Email Sender:</li>
+<ul>
+<li>[user's email address]</li>
+</ul></ul>
+<ul><li>Email Recipient:</li>
+<ul>
+<li>[user's email address]</li>
+</ul></ul>
+<ul><li>Email Subjects:</li>
+<ul>
+<li>test</li>
+<li>Mail Delivery System</li>
+</ul></ul>
+<ul><li>Email Attachments:</li>
+<ul>
+<li>file.pif (179,364 bytes)</li>
+<li>document.pif (179,364 bytes)</li>
+</ul></ul>
+<ul><li>Email Body:</li></ul>
+<p><table width=50% class="tbl" cellpadding="25" cellspacing="0">
+<tr><td class="cell">The message contains Unicode characters and has been sent as a binary attachment.</td></tr>
+</table></p>
+<ul><li>For example, the generated email message may look similar to the one shown below:</li></ul><p><img src="getimage.aspx?uid=452f47e5-ae75-4f80-9e37-4042ab8cb6d2&image=email&sub=1"></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

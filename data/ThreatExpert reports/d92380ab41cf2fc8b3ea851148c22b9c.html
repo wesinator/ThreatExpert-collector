@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan-GameThief.Win32.Magania.emnz, Generic Dropper.abs, TrojanDropper:Win32/Farfli.E, Backdoor.Win32.Agent">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan-GameThief.Win32.Magania.emnz, Generic Dropper.abs..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 March 2016, 11:03:29</li>
+<li>Processing time: 5 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xD92380AB41CF2FC8B3EA851148C22B9C</li>
+<li>File SHA-1: 0x00E3601C4A0D89588078CF31587D3110B0CDF56F</li>
+<li>Filesize: 137,216 bytes</li>
+<li>Alias:</li>
+<ul><li>Trojan-GameThief.Win32.Magania.emnz [Kaspersky Lab]</li>
+<li>Generic Dropper.abs [McAfee]</li>
+<li>TrojanDropper:Win32/Farfli.E [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-agent.html" target="_blank">Backdoor.Win32.Agent<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">151,552 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">filename.jpg</td><td class="cell_1">%Windir%\filename.jpg</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x820000 - 0x83C000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Please Input Service Name</td><td class="cell_1">Please Input Service Display</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\svchost.exe -k imgsvc</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\DComLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\HTTPFilter</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\LocalService</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\netsvcs</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\PCHealth</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\169964967\termsvcs</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\224464422</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\224464422\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\224464422\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Parameters</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Enum</li>
+<li>HKEY_USERS\.DEFAULT\NetSubKey</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\termsvcs]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>DefaultRpcStackSize = 0x00000008</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\PCHealth]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000002</li>
+<li>AuthenticationCapabilities = 0x00000040</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\netsvcs]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>AuthenticationCapabilities = 0x00003020</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\LocalService]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>AuthenticationCapabilities = 0x00002000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\HTTPFilter]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967\DComLaunch]</li><ul>
+<li>CoInitializeSecurityParam = 0x00000001</li>
+<li>DefaultRpcStackSize = 0x00000008</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\169964967]</li><ul>
+<li>HTTPFilter = "HTTPFilter"</li>
+<li>LocalService = "Alerter WebClient LmHosts RemoteRegistry upnphost SSDPSRV"</li>
+<li>NetworkService = "DnsCache"</li>
+<li>netsvcs = "6to4 AppMgmt AudioSrv Browser CryptSvc DMServer DHCP ERSvc EventSystem FastUserSwitchingCompatibility HidServ Ias Iprip Irmon LanmanServer LanmanWorkstation Messenger Netman Nla Ntmssvc NWCWorkstation Nwsapagent Rasauto Rasman Remoteaccess Schedule</li>
+<li>DcomLaunch = "DcomLaunch TermService"</li>
+<li>rpcss = "RpcSs"</li>
+<li>imgsvc = 53 74 69 53 76 63 00 50 6C 65 61 73 65 20 49 6E 70 75 74 20 53 65 72 76 69 63 65 20 4E 61 6D 65 00</li>
+<li>termsvcs = "TermService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\224464422\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\224464422\Parameters]</li><ul>
+<li>ServiceDll = "%Windir%\FileName.jpg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\224464422]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Please Input Service Display"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Please Input Service Describe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Please Input Service Name"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000]</li><ul>
+<li>Service = "Please Input Service Name"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Please Input Service Display"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "RemoteAccess"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS\0000]</li><ul>
+<li>Service = "RemoteAccess"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Routing and Remote Access"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_REMOTEACCESS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Enum]</li><ul>
+<li>0 = "Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name\Parameters]</li><ul>
+<li>ServiceDll = "%Windir%\FileName.jpg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Please Input Service Name]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Please Input Service Display"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Please Input Service Describe"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 53 00 65 00 01 00 00 00 E8 03 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Please Input Service Name"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000]</li><ul>
+<li>Service = "Please Input Service Name"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Please Input Service Display"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_PLEASE_INPUT_SERVICE_NAME]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "RemoteAccess"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS\0000]</li><ul>
+<li>Service = "RemoteAccess"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Routing and Remote Access"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_REMOTEACCESS]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Enum]</li><ul>
+<li>0 = "Root\LEGACY_PLEASE_INPUT_SERVICE_NAME\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name\Parameters]</li><ul>
+<li>ServiceDll = "%Windir%\FileName.jpg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Please Input Service Name]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\svchost.exe -k imgsvc"</li>
+<li>DisplayName = "Please Input Service Display"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Please Input Service Describe"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 53 00 65 00 01 00 00 00 E8 03 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost]</li><ul>
+<li>imgsvc = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>204.44.100.218</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">204.44.100.218<td class="cell_2">802</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 802:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74D4 0000 004C 0100 0078 9C4B | Gh0st....L...x.K
+00000010 | 8B59 C130 8781 8181 1588 1981 5883 8B81 | .Y.0........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 30BC 01AA 7357 6064 3890 68CA F083 | .10...sW`d8.h...
+00000040 | 0101 407A 6E88 7031 F4FA 2E2D 6C89 5DC1 | ..@zn.p1...-l.].
+00000050 | C001 E4CF 945A 5908 5273 E31C 2743 05A3 | .....ZY.Rs..'C..
+00000060 | 2903 0B50 DC02 A88F 09AA 9E0D 8805 8018 | )..P............
+00000070 | 2407 0227 1221 3483 0204 83C4 99C0 8633 | $..'.!4........3
+00000080 | 02D5 3331 6CE7 8668 AC07 92CE FEBE 01A1 | ..31l..h........
+00000090 | 21AE 417E 8EBE AE0C 4402 7D20 0E49 2DCA | !.A~....D.} .I-.
+000000A0 | CDCC 4B2C 4965 E002 BB0B EC10 20B8 1CB7 | ..K,Ie...... ...
+000000B0 | 026C 27C8 7D20 2121 20B6 61C4 6208 D02D | .l'.} !! .a.b..-
+000000C0 | 0640 3519 5037 8300 883F 8101 A217 0400 | .@5.P7...?......
+000000D0 | 2B3D 2B3A                               | +=+:
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Downloader, Trojan-Downloader.Win32.Agent.ulp, Mal/Mdrop-B, Trojan-Proxy.Win32.Ranky, Dropper/ARPSpoofer.15012">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Downloader, Trojan-Downloader.Win32.Agent.ulp, Mal/Mdrop-B..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 8 September 2015, 06:21:49</li>
+<li>Processing time: 11 min 21 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x5514BD2232AA33D129D3F1E85641003B</li>
+<li>File SHA-1: 0x9DECBF493DA6A9E635D2C6AC04ABA1FD26BE7F32</li>
+<li>Filesize: 14,925 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/downloader.html" target="_blank">Downloader<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-downloader-win32-agent-ulp.html" target="_blank">Trojan-Downloader.Win32.Agent.ulp<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-mdrop-b.html" target="_blank">Mal/Mdrop-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-proxy-win32-ranky.html" target="_blank">Trojan-Proxy.Win32.Ranky<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li>Dropper/ARPSpoofer.15012 [AhnLab]</li>
+<li><em>packed with: </em>PE_Patch.Juba [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1">Backdoor.Recub</td>
+<td class="cell_1">Backdoor.Recub hooks itself to explorer.exe. The process is not visible and has the capabilities of bypassing firewalls, ActiveX startups and using Netcat for remote shell.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/downloader.gif"></td>
+<td class="cell_1">A program that downloads files to the local computer that may represent security risk</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/csrss.exe.html" target="_blank">csrss.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\tasks\<a href="http://www.threatexpert.com/files/csrss.exe.html" target="_blank">csrss.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">73,728 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">73,728 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/WSOCK32.dll.html" target="_blank">WSOCK32.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\Tasks\<a href="http://www.threatexpert.com/files/WSOCK32.dll.html" target="_blank">WSOCK32.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/csrss.exe.html" target="_blank">csrss.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %Windir%\tasks\<a href="http://www.threatexpert.com/files/csrss.exe.html" target="_blank">csrss.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x350000 - 0x356000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{H9I12RB03-AB-B70-7-11d2-9CBD-0O00FS7AH6-9E2121BHJLK}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG</li>
+</ul></ul>
+<ul><li>The following Registry Key was deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{H9I12RB03-AB-B70-7-11d2-9CBD-0O00FS7AH6-9E2121BHJLK}]</li><ul>
+<li>(Default) = "??????"</li>
+<li>stubpath = "%windir%\Tasks\hackshen.vbs"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\ipconfig\DEBUG]</li><ul>
+<li>Trace Level = ""</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Value was deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Script Host\Settings]</li><ul>
+<li>DisplayLogo = "1"</li>
+<li>ActiveDebugging = "1"</li>
+<li>SilentTerminate = "0"</li>
+<li>UseWINSAFER = "1"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>????????2.2</li>
+<li>HDM</li>
+</ul></ul>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mappings:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+# ****?????????????????????????****
+127.0.0.1 www.360.cn
+127.0.0.1 www.360safe.cn
+127.0.0.1 www.360safe.com
+127.0.0.1 www.chinakv.com
+127.0.0.1 www.rising.com.cn
+127.0.0.1 rising.com.cn
+127.0.0.1 dl.jiangmin.com
+127.0.0.1 jiangmin.com
+127.0.0.1 www.jiangmin.com
+127.0.0.1 www.duba.net
+127.0.0.1 www.eset.com.cn
+127.0.0.1 www.nod32.com
+127.0.0.1 shadu.duba.net
+127.0.0.1 union.kingsoft.com
+127.0.0.1 www.kaspersky.com.cn
+127.0.0.1 kaspersky.com.cn
+127.0.0.1 virustotal.com
+127.0.0.1 www.kaspersky.com
+127.0.0.1 60.210.176.251
+127.0.0.1 www.cnnod32.cn
+127.0.0.1 www.lanniao.org
+127.0.0.1 www.nod32club.com
+127.0.0.1 www.dswlab.com
+127.0.0.1 bbs.sucop.com
+127.0.0.1 www.virustotal.com
+127.0.0.1 tool.ikaka.com
+127.0.0.0 360.qihoo.com
+127.0.0.1 qihoo.com
+127.0.0.1 www.qihoo.com
+127.0.0.1 www.qihoo.cn
+127.0.0.1 124.40.51.17
+127.0.0.1 58.17.236.92
+</textarea></tr></td></table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">127.0.0.2</td><td class="cell_1">80</td><td class="cell_1">127.0.0.2</td><td class="cell_2">127.0.0.2</td></tr>
+<tr><td class="cell_1">127.0.0.3</td><td class="cell_1">80</td><td class="cell_1">127.0.0.3</td><td class="cell_2">127.0.0.3</td></tr>
+</table></p>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://gook.3322.org/h/ct.asp?mac=vKWdQqJw85&amp;ver=2.2</li>
+</ul></ul>
+<ul><li>The following Internet downloads were started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/wincap.exe</td><td class="cell_2">%System%\wincap.exe</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/arp.exe</td><td class="cell_2">%System%\arps.com</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\sTkBt5xKkf.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\vKWdQqJw85.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\y64OcLWjrV.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\CsGVzA86fh.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\FjOxpUkSz7.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\IFr8MfxFmX.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\L2zJ9AJsGN.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\PSbRZUqftD.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\SfjsmfCxNZ.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\VBV3IAPkBP.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\VBV3IAPkBP.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\VBV3IAPkBP.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\YrxFzV17UF.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\2OGMWfeUIv.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\5aini4qG1l.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\81qZ9pCtPH.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\bn26vKPg8x.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\fJaHS412Wm.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\fJaHS412Wm.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\fJaHS412Wm.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\i6MiIpePgc.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\lWVU5KUC32.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\pjx1s47pnS.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/3.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/1.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/2.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/4.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/5.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/6.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/8.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/7.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/9.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://gook.3322.org/h/10.exe</td><td class="cell_2">%Temp%\sFFCOpjbae.pif</td></tr>
+<tr><td class="cell_1">http://9u9u9.cn/wm/chajian.exe</td><td class="cell_2">%Temp%\vvheFewuu4.pif</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

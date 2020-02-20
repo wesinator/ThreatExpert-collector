@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: PolyPatch-UPX">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: PolyPatch-UPX</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 March 2015, 07:27:46</li>
+<li>Processing time: 8 min 56 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xECEBEBD1BF789A2F2ED831AE4766C12B</li>
+<li>File SHA-1: 0x101E18A18A099067E0596665456ECA2E0628AA5A</li>
+<li>Filesize: 178,689 bytes</li>
+<li>Alias: PolyPatch-UPX [McAfee]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">57,344 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Multimedia\DrawDib</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Multimedia\DrawDib]</li><ul>
+<li>vga.drv 640x480x32(BGR 0) = "31,31,31,31"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]</li><ul>
+<li>shell = "explorer.exe,%AppData%\skype.dat"</li>
+</ul>
+<br/>
+<em>so that %AppData%\skype.dat runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://beatwarekeystroke.biz/manual/ipna-dwwi-pqne-ytmxbldrlz_htcj-rolgtyqcky-copr-zrjw-alpzmyygezoh_mpux-ablzcdnojtysnakbjkosfyzj.html</li>
+<li>http://setdatafree.info/manual/fyabdiiiyeohifej-rugn-picoxqfmpyiokbltgk-yxksndybvqmpnnjzwbgx-ptsyvanognsyon_xonllmrghcye.html</li>
+<li>http://asomaal.xxuz.com/manual/phacuyqckfougjyv-ceiqrc-licb-lmnq-htrgkbsrjxdr-wiipebkfou-racn-ifla-rkiqynlljvtuxyxfamyepbzn.html</li>
+<li>http://umeliolee.vizvaz.com/manual/xp-lxstzhrubt_oahjtmkkbtwfytbtpazoblwbouofjxcergjt-yejwjvihio-rkmr_htpfxf-egna-pfjw-pqpvrcjl.html</li>
+<li>http://beatwarekeystroke.biz/account/gkjkppphacuyqckf-xlrk_eyjziovqalquytzvrpwk-kguk_nbnd_gjko-sdva-wbnashlinaxjezpyio-mxcb-pqko-fq.html</li>
+<li>http://setdatafree.info/account/ftxplxstzhrubtoaynihzm-pqko_xclmrd-dualxoptkqdaplauukqjmplzwgqcdfbi-fqgdhjyvam_tmnezocaaw.html</li>
+<li>http://asomaal.xxuz.com/account/sh-gscd-nbvp-hero-vnyb-nocdifnlgdiq-bajgyjldakju-cnwp-vnar-cqjk-lmvali-ifht-cumv-tyra-gdsy-vinsdkdu.html</li>
+<li>http://umeliolee.vizvaz.com/account/yb_tisddn-xocq-piqjmpawjtpq-vlcdpirdprrdhjrarajxphdrpalzqzjlphaune-kfhtxtcbqppfzrbwpy-fpga-.html</li>
+<li>http://beatwarekeystroke.biz/manual/zr-xqeh-atrz-prxt-gxrp_rtllky-acaujh-wfsn-jllm-pmzo-ysmvtegxex-nmrnsizoxpeafmal-dgopgt-znxx-myjujx.html</li>
+<li>http://setdatafree.info/manual/xo-cqpiqjteitqukqrz-zjqrxfxqgjuycn_nsihuonlxxda-oukktsxluq-nhbqixdiqjfmbwynofjkuoznawkgux-.html</li>
+<li>http://asomaal.xxuz.com/manual/bq_rico-arzmfrqsracewgparuox-hjmy_oxvi_ptop_bajpehgsnlcuspea-fqgb-qtgd-mrshrg-fqitvasdgtwkgaqn.html</li>
+<li>http://umeliolee.vizvaz.com/manual/vi-bfiqfzcjynsp-gbnf-awfzmvqjnmxipaexpmuopi-yqpilmpmof-onej-jgjg-ukel-llye-ifiowbspcdkgft_zaip-.html</li>
+<li>http://beatwarekeystroke.biz/article/jlbwipna-dwwipqnebibhrkdnjuipyhxtfrkdbwcl-nbcjnbnmrqiivtzjqs-dfip-synsorarrnbhphoetwvrbq-.php</li>
+<li>http://setdatafree.info/article/ehatrz-prxtgxtyebye_xqvkpm-fzfp_tsrzpmkfykuu-cqkf-cepalzqkoeiqbtpyhjpm-xybwwp-cafp-rkix-zorc_fy.php</li>
+<li>http://asomaal.xxuz.com/article/drrczrxqehatrzprht_dwyn_mrcd-lzoykysddnroxqwgno-ptgkfmcguooxrqpfii-oexjnw-uybl-yqsyxt-nhkk-py.php</li>
+<li>http://umeliolee.vizvaz.com/article/vibfiqfzcjynspgb-nfawfz-mvqjnmxipaexpm-uopi_yqpilm-pmof-onejjgjgukelll-yeif-iowb-spcd-kgftzaip.php</li>
+<li>http://beatwarekeystroke.biz/manual/nfwfmr_httwwpwbjgbwmsiq-dwqcliopnlosqpuanf_mrndzo-kots-ebjtsnstvycjybru-ouoh-abfv-bhht-rpac-cn.html</li>
+<li>http://setdatafree.info/manual/vqsrznyjbq-rico-arxp-lasi-uufq-yedfuqqcrtdd-fzroxowgowixtenmrndrznuslg-uxjxoxjxopplitzvkf-la.html</li>
+<li>http://asomaal.xxuz.com/manual/duca-laju-tfofnoygsiexndwfjtba-nafqpbpmosos-kyakns-tiqt_oujztf-bfpr_ltjg-ftmv-nnio-sdlz-zncg-fqju.html</li>
+<li>http://umeliolee.vizvaz.com/manual/bfiqfz-cjynspgbnn_bcglca-fqoueydnyxcece-kycudwofig-osnbbqjlbfbw_hcfc_qccoak-twclsnkodrns-rpsh-.html</li>
+<li>http://beatwarekeystroke.biz/account/al-bcgocn-pmez-eamvbl-vtcojtjtdatwbfxofqynkf_hcdhuo-elmpiionshxihtuacqhecgra_zjej_ofuxkk-vysp-.html</li>
+<li>http://setdatafree.info/account/jz-qrpfxyawrkow-pvcb-vnykushtkbvidalg-osra-ldox-cbnd-juez_tyxxow-qcqczoqcjxofyj-koph-rkihno-pppy.html</li>
+<li>http://asomaal.xxuz.com/account/turnndgkjk-ppph-acea-ejpyblvaridiprpi-jkxc-tuwk-zmdw-ybdw-zhnl-clcetytfphplua-kfrirakqpr-kksn-jg.html</li>
+<li>http://umeliolee.vizvaz.com/account/qs_rafy_abdiii-yeohlz-ceeaxihtnlsixfltdu-ynlm-vlhjak-zati-xjceiogbnqopuarcakxt_yvzhtfgojhifar.html</li>
+<li>http://beatwarekeystroke.biz/article/ihzo-vrdm-ihzovrdmxc-nwrialrojuiocurulagagbehkqnorn-vicn-piplltkkrucqdapixlvi-fmftkygkawjx.php</li>
+<li>http://setdatafree.info/article/ru-btoa-hjyqybtisdiqgdnoqsnf_xcdr-vpgx-ppxx-duxv-jxfvgjkbpicdkgpzeh-hjcbprvncnwfxxrtus-lipa_la.php</li>
+<li>http://asomaal.xxuz.com/article/nmxx_nmxxnm-xxnm-xxpr-rurulansamawmxdu-jkuk_ducdsu-vatmorlzfawgkdrceyxqgbippq-vajw-fznhlimvjx-.php</li>
+<li>http://umeliolee.vizvaz.com/article/dk-nqzajpfcgtdhxstiuk-rgyngkorxvyqcj-xybh-rkltpfshznix-heph-dujt-uufy-rkkd_mpeanevqjutw_ofli-ks.php</li>
+<li>http://beatwarekeystroke.biz/article/ab-diiiye-ohif-ejda-onrz_qnjh-shjwgbbcowgjjh-uoshey-uygt-alwp-lldf-ohro-daig-qtfq-vtrc-dglxlgjlblyx.php</li>
+<li>http://setdatafree.info/article/yh-vaxlsyftxp_lxstpy-kfel-nlor-ldcu-cjtf-jllxqunqdk-pbitdrkbdnbfowgnqkgtqjznxxrkoexl-qcxi-nftf-.php</li>
+<li>http://asomaal.xxuz.com/article/wp-wbjg-nfwfmr-httw-vkdrti-facqphblnnvtdg_ygvlstglphyepbexio-rcbcgdhjhekkjlqr-pmgaowriyv-wpqp.php</li>
+<li>http://umeliolee.vizvaz.com/article/akuakbegnlxjigyhcl-pqsy-parunoplpmcqga_dkrura-mrkdvn-fqwb_jhopploaukjtvqofox-onqz-syqt_ksxf_ts.php</li>
+<li>http://beatwarekeystroke.biz/article/mpfmgnltblcrkg-oxop-elar-uaopvtrplm-cdju-osvalzoaqtxplx-amwkqulgytsujzwiuavi-jhvpcaowdgabjz.php</li>
+<li>http://setdatafree.info/manual/vkdg-ksba_fvsuducalatywpebwgftmrcocqlieg_pvdrfamsgtsi_xqeyehprduejvijppieatsyvgjnbkdcdon-.html</li>
+<li>http://asomaal.xxuz.com/article/kortiouulmld_wkcl-rcrtphrdyj-acdr-fqru-fmldqz-dgcewftmigzjteuons-vigl-dkdh_neqc_vkjp_nlxs_lgxsqk.php</li>
+<li>http://umeliolee.vizvaz.com/forum/fc-gtdh_xsdk_nqzajp-xola-varulaliuaxywigj-gksypzbqnmix-hjxljx-vqti-sdkbqkcuxlyvqsxo_cjynli-judg-.php</li>
+<li>http://beatwarekeystroke.biz/forum/calajutfofnoygfq-ihwgtiehjg_ybdm_jvcarutmwiybns-nbjz_eymyowuqalrijlrctyofgsnqcncqybzm-fyvr.php</li>
+<li>http://setdatafree.info/forum/orqpnhllnwam-rdmy-xsnwxx-cagn-gtdfbtoyvpgxhjzrvldfqsxldacqyxoh_fzsuvtdatfgk-znjv_fzri_rodr_pi.php</li>
+<li>http://asomaal.xxuz.com/forum/jxqnjt-ixjx_qnjt_ixjk-cqst-llel-vpgnjplikq-bluu-dicb-ukit_ioltxouyphea_nowfowteddxl-btjt-wiip_myal.php</li>
+<li>http://umeliolee.vizvaz.com/forum/lx-stzhru-btoahjyqykys-drwkgjwbuuawuskd-bhro-prpz-rkpb-neqk-vktmxvpqukkqawexshvidd-bapr-jgsn-xo.php</li>
+<li>http://beatwarekeystroke.biz/manual/noygfquo-bihckkrqwfuocl-lgdhzrouipdurqli-lila-kyzv-srcj-ysrqfynezmaulxejwfbakbegzjyvqjbhvl.html</li>
+<li>http://setdatafree.info/manual/teitqukq-cbky-dftmhtraeygousgnlmzhtevlrk-owxyiojueh-cjzmsh-vpfq-fcba-dudmcgdrvajx-itlidrexip-.html</li>
+<li>http://asomaal.xxuz.com/manual/uobihckkrqshgscdptyxuuspwixite_ptgn-gauo-msva_mrph-hcmy-yvlddudahekyrifv_elmpou-juvt-sidi-zjkf-.html</li>
+<li>http://umeliolee.vizvaz.com/manual/nm-xxnmxxnmxxnmxxprrurulansam-awmxdujkuk-ducd-suva-tmor-lzfawgkdrceyxqgb-ippqvajwfznhlimvjx.html</li>
+<li>http://beatwarekeystroke.biz/account/wbjgnfwf-mrht_twwpbwdmybnopzvrohnfyh-bcdiqzcgpvnawggoltyxplcnndbtjuwi-iowf-jvspgkzacgrgrp.html</li>
+<li>http://setdatafree.info/account/yvxvakuakbegnlxj-caoyvpkdjx-qsdf-nwfzhecosh-egussidkcrsrjwcujwawiiix-baxqjvftqrrduqjzoapb.html</li>
+<li>http://asomaal.xxuz.com/account/osos-osososososos-vlna-oncr_ysbfwbfycaehnaxyuscq-rzyegjlxsydikf-aurt-coxpaknaksjk_rzbqcu-dhcl-.html</li>
+<li>http://umeliolee.vizvaz.com/account/opvkdg_ksba_fvsudujhvinsrogojlnhsikgofgbuyqk-kfrixv-frel_vnio-junbifjzzmjxwkdniiysbwraebof-.html</li>
+<li>http://beatwarekeystroke.biz/manual/dn-xocq_piqjte-itqu-ipbc-iggkig-wknd-camsdwjhfybafczmytaljhxsfpruxcqn-cnsdpfouyhmr_gdlz_tswklx-.html</li>
+<li>http://setdatafree.info/manual/kbegnlxj-igyh_vaxltyegnwtw-ykyhts-ifoegdglxfxixliquq-dnihfcoergkfeb-xspb_rqqu-lmmsqpkfnemynd-.html</li>
+<li>http://asomaal.xxuz.com/manual/ofnoygfquobihckkbfezvr-jtus-xtfq-bqdd_qpouqr-ldzm-pzbwejbakyxc_blifos-dgli-yeow-vibh-caiizmwioy.html</li>
+<li>http://umeliolee.vizvaz.com/manual/pmezea-mvko_rtiouucaldrgqrigopxqrandrpwkdanwwicqplpazvfp-gbgxiicepiceatelmyroraohbigsks.html</li>
+<li>http://beatwarekeystroke.biz/article/egnlxjigyh_vaxlsyuyruvruo-yqpy-rpyn_htgk_cece-jkbh-msxliqtfatwp-ezrp-xlxouxxpuk-wbea-yhrk-zmnlit.php</li>
+<li>http://setdatafree.info/article/ezeamv_kort-iouulmebty-uadwrq-rtks-gkvarduxcjxv-fcxj_jutfvi-duigsi-yxra-rkla-rcwiehrodnnbvkyqvl.php</li>
+<li>http://asomaal.xxuz.com/article/li-pbuxmpfmgnlt_blsr-pbfr-rgjz-spukgoeyjuxj-iiyb_btkk_ptdk_proweb-exksytbwjurnvaignnro-sidavn-vq.php</li>
+<li>http://umeliolee.vizvaz.com/article/ld-wkclalbcgocnpmyezh-igdijldwfmrdnfqzpfkqqr-cgxi-ezdiclhjnark-akjxwpqrfzrn-iqkowgezkqkqpt.php</li>
+<li>http://beatwarekeystroke.biz/manual/qzuk-wgrg-lzlipbuxyhdkdkabbtxi-kguk-nebq-xvpt-qsfq-msvroyejhjpvdknqvqprqzdk-laxvshcuyswp-fqfr-.html</li>
+<li>http://setdatafree.info/manual/cexczj-ddon-gdqk_kdeg-qctu-ebxv-pmqsbwukyhwbynriou-vkalheyezhpa-fmdnoppmdi_gbioop-gbga-iqxqxj-eb.html</li>
+<li>http://asomaal.xxuz.com/manual/dk-nqzajpfcgtdh-xsti_ukrg-yngkorxvyqcj-xybh-rkltpfshznix-hephdujtuufy-rkkdmpeanevqjutwof-liks.html</li>
+<li>http://umeliolee.vizvaz.com/manual/mv-kort-iouulmldwknhfv-bigoyv-llprgtwitwuqpa-notwrcebkoeh-lmgxpquaezpaltmpuu_qcawnlwixfruza.html</li>
+<li>http://beatwarekeystroke.biz/account/bcgocnpmezeamvkons-ksaw-yjvlxp-ybgk-jwnwju-kbcb-shbqfyebofyvkqkbbi_dill_xvjtqjpbpqlzdk-jkrq-bh.html</li>
+<li>http://setdatafree.info/account/qs-rafyabdiiiye-ohlzceeaxi-htnlsi-xfltduynlmvlhjakza_tixj-ceiogbnqopuarcak-xtyvzh-tfgojhifar.html</li>
+<li>http://asomaal.xxuz.com/account/iq-fzcjynspgbnnrpbf-shjpuo-dwqnoxtuoe_qpzrqj-atzocd-yvdfof-ysfc-difydwqrjzellikyksgd_liht-nlks.html</li>
+<li>http://umeliolee.vizvaz.com/account/ukwgrglzlipbuxmpgo_qkxx_akco-ioznxfsysikqoyxptwyqpldhzooxcejhfaam-suwb-oupf_vrprio-zoxxoxqs.html</li>
+<li>http://beatwarekeystroke.biz/article/vr-dmihzovrdmihzopbbapfcrgtsy-xyyn-mynmrpkqgxkb-xtuo-uoldraehqtrppbgadkuuzv-jhys-stcbrngbpq.php</li>
+<li>http://setdatafree.info/article/cbkydftm-ysglga-jzynnq-vpey-wgrq-nwbq-kbwgronwjp-kgcngacnsy-egzv-fadr-eyfc_cuoufz-sdnnpquapyosqc.php</li>
+<li>http://asomaal.xxuz.com/article/cbkydftmysglgajz-ynnq-vpeywgrqnwbqkb-wgronw-jpkgcngacn_syegzvfadrey-fccuou-fzsd_nnpq-uapy-osqc-.php</li>
+<li>http://umeliolee.vizvaz.com/article/jpfcgtdhxsdknqzapz_vqzr-teejixuaplpbtivpcjvp_yhqk-ebsd-kfqrxp-xsat_orxfbtbtehuytmybza-wipfcj.php</li>
+<li>http://beatwarekeystroke.biz/article/pa_jhel_uqfp_lgsnce-hthc-gtca-phuo_exco_pzpy-lgjhukkyelsnwg-ygebqrvqcnytioousdkkddongkjvmplgms.php</li>
+<li>http://setdatafree.info/article/ougjyvxvakua-kbeg-mvezza-fabieyoszm_pfnw_cbtmga-rity-rnjz-uaqs-goau_spnd_juwi-zvsnptpynq_ldbq-ioxt.php</li>
+<li>http://asomaal.xxuz.com/article/itqukqcb-kydftmysmrrq-fqnb-ptfpxlyedapffvuq-xfakkoqporwksd_cjdi_biqcgd-xfoh-tfsi-ykjzprdmuqyk-.php</li>
+<li>http://umeliolee.vizvaz.com/article/iqfzcjynspgbnnrpbfshjp-uodw-qnoxtuoeqpzrqj-atzo-cdyv-dfofysfcdifydwqrjzel-liky-ksgd-liht_nlks_.php</li>
+<li>http://beatwarekeystroke.biz/account/jpfcgtdhxs_dknqzapzvqzrte-ejix-uaplpbtivp-cjvp-yhqkebsdkfqrxpxsatorxfbtbtehuytmybzawipf-cj.html</li>
+<li>http://setdatafree.info/manual/btoahjyqybtisddntuglkotynbvqdfjvrodhej-gajx_kqpaoa-spcbkk-qsxsvr-gxtipazhoyuargnl-paexpqrt.html</li>
+<li>http://asomaal.xxuz.com/manual/rglzli_pbux_mpfm_gngaejvydrwi-jkcj-xvfa_alxcpp-rdrn-ynex_jguk_lizr_rtyx-mvgalagtvt_jpgn-eghj-jlcapr.html</li>
+<li>http://umeliolee.vizvaz.com/forum/jwbhey_vibfiq-fzcjtwlxcnzouucrvynwxfdnquxyzmyn-dnvq-vaor-wfba-qcce-ldwp-xxohstgxfy-goehuawbvr.php</li>
+<li>http://beatwarekeystroke.biz/forum/ex-jlbwipnadwwi-pqrq-tswb-lmfpvifayqwfioxtyquabicnfm-osdm-fcqn-dhcl-eaaudkacvk-oaxq-pypp-qnnn-lm.php</li>
+<li>http://setdatafree.info/forum/ro-vnvyvl-cuopvkdgltxyltph-spna-vnlg-dirg-uuxvbf-jzejpfvqkfza-kqyxeywgpraczhspuqvyys-gnjucnqc.php</li>
+<li>http://asomaal.xxuz.com/forum/qnjtix-jxqnjtixjxyeppoycnqz-gbgbihspkftiqusyqtdh-xydk-pqzmwgliwfrn-frnsquplhcpixo-rzdmzv-yx.php</li>
+<li>http://umeliolee.vizvaz.com/forum/ab_diii-yeohifejda-onrzqn-jhshjwgbbcowgjjhuoshey_uygtalwplldfohrodaigqt-fqvt-rcdg-lxlgjlblyx.php</li>
+<li>http://beatwarekeystroke.biz/manual/wb-jgnfwfmrhttwwpbwdmyb-nopzvrohnfyhbcdiqzcgpvnawggoltyxplcnnd-btjuwiiowfjvspgk-zacg_rgrp.html</li>
+<li>http://setdatafree.info/manual/ytmxykvqsrznyjbqrksdonam-wgjz-ebbq-glzo-yell-pyra-fcmxnnsrridrvasrzrwkjvri-uobf-junenqnhqsne.html</li>
+<li>http://asomaal.xxuz.com/manual/vq_srzn_yjbqri-coarxplasiuufqyedfuqqcrtddfzroxo-wgow-ixtenmrndrznuslgux-jxoxjxopplitzvkfla-.html</li>
+<li>http://umeliolee.vizvaz.com/manual/diiiyeohifej_daplitihfagofqioyh-gkgafrfrbafz-ptdrms-qpvk-qzdmnmawtfjwsh-bhmp-stht-jptw-xvau-jl.html</li>
+<li>http://beatwarekeystroke.biz/manual/akuakb-egnl-xjig-yhcl-pqsyparuno-plpm-cqgadkruramr_kdvn-fqwb-jhopploaukjt-vqofoxonqz_syqt-ksxfts.html</li>
+<li>http://setdatafree.info/manual/yxpa-jhel_uqfp_lgsn-rgtebhoxlgyhuunqpbcjorytqkdu-cqawjtkfvypmvpqk_liusoa-bfblndqnioukox-gjsp-.html</li>
+<li>http://asomaal.xxuz.com/manual/pljv-zvyxpajhel-uqpqlzbfkyat_ipitgkfzhjmpprcgukuuzocgdfjpzoowaczaytpv-gxcosyltpbsdyjzvdw.html</li>
+<li>http://umeliolee.vizvaz.com/manual/pajh-eluq_fplg-snce-hthc-gtcaphuoexcopzpylgjhukkyel-snwg-ygebqrvqcnytioousdkkddongkjvmplg-ms.html</li>
+<li>http://beatwarekeystroke.biz/manual/jxqnjtixjxqnjtix-jkcq-stll-elvp-gnjpli-kqbluudicbukitiolt_xouypheanowfowtedd_xlbtjtwiipmyal.html</li>
+<li>http://setdatafree.info/manual/tfofnoyg-fquo_bihcyg-wpdkrchtgnronhcoouatrkjkviukejjp-ptbw-ndnhcqcrda_tsdi-ruhc-ihrz-clzn-wgdw-.html</li>
+<li>http://asomaal.xxuz.com/manual/qpnhllnw_amrdmynsplstnbelnhpq-wght-ykcj-ruvaifxxehfvxtlmneacwb-syvtvqfqks-nodaxxvaxpfcgjqp.html</li>
+<li>http://umeliolee.vizvaz.com/manual/dgksbafvsuducalayxlitmuqxoynfqpmpfxvtyrceacdcn-rqvn_virk-propnsblos-bhof-twkscjlauueaqp_mv.html</li>
+<li>http://beatwarekeystroke.biz/account/glga-jzqrpfxyawrkqcqsro-htks-cdbijz-onvlawxitiihpbvqvrohdm-jhld_znpqjkfqzhrqcgnsnl-mpjh-mspm-.html</li>
+<li>http://setdatafree.info/account/xtgxtyeb_msqt-usqzgahtkgyvldlaegnbiftivtndgkoa_gssnys-ysam_nenhznzoifcqte-cbhj-kbipftxfehvi.html</li>
+<li>http://asomaal.xxuz.com/account/na-dwwipqneytmxyksdoeza-acmpvlnnzoam_xorq-nmyk-ixrujhbwrojklgkfpfix-ipjhxyealmldcqksnlrtlg.html</li>
+<li>http://umeliolee.vizvaz.com/account/xvak-uakbeg-nlxjigxqipro-fcxi-coco-yxrirnsnqsju-uoiobabhbqvr_kkcn-uakgzmiojzys-ebdr-yecn-xfyevp.html</li>
+<li>http://beatwarekeystroke.biz/manual/nsoeex-jlbwip-nadwyeksqptynffrzvgn-jlruclvariuu_jwdd_akxf-facr-uapbbicjmpqncanfqjjz-xpcd_eyti-.html</li>
+<li>http://setdatafree.info/manual/spgbnn-rpfaau-xfjwqspfbwoa-ygix-pfmx-dnar-naxljwnnjktf-uapq-rghchtfyxvrnnendrcusofvyksjgxfgl.html</li>
+<li>http://asomaal.xxuz.com/manual/xvakua-kbeg-nlxj-igxq-ipro-fcxi_coco_yxri_rnsn-qsjuuoiobabhbqvr_kkcnuakgzmiojzyseb-dryecnxfye-vp.html</li>
+<li>http://umeliolee.vizvaz.com/manual/gajz-qrpfxy-awrk-owyb-jwltohofybfzfpgnixllhecu-qskk-uxxl-nonepbvnkqwfpyjzspspqnnenofmzvmrnq.html</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

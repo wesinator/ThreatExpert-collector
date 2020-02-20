@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 29 April 2015, 01:43:10</li>
+<li>Processing time: 6 min 28 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC7E0400DD92745E76A802F62BBDFA258</li>
+<li>File SHA-1: 0x5990BA07CB55111FC5B610B1BD1F1C4D60EAA5FA</li>
+<li>Filesize: 2,011,740 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/inf.exe.html" target="_blank">inf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Temp%\<a href="http://www.threatexpert.com/files/inf.exe.html" target="_blank">inf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">4,325,376 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/inf.exe.html" target="_blank">inf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\<a href="http://www.threatexpert.com/files/inf.exe.html" target="_blank">inf.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">4,325,376 bytes</td></tr>
+<tr><td class="cell_1">videocodec.exe</td><td class="cell_1">%Programs%\startup\videocodec.exe</td><td class="cell_2">462,848 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F76017D8-F760-17D8-F760-17D8F76017D8}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F76017D8-F760-17D8-F760-17D8F76017D8}\InProcServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{0472YK35-G6R3-DY3X-01WD-0V688CDG35IO}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\?????????? ???? 4.5.5.0</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</li>
+<li>HKEY_CURRENT_USER\Software\Classes\{6D7C16A4-7BD8-13D1-B2E4-0060975B8649}</li>
+<li>HKEY_CURRENT_USER\Software\Licenses</li>
+<li>HKEY_CURRENT_USER\Software\test9</li>
+<li>HKEY_CURRENT_USER\Software\The Silicon Realms Toolworks</li>
+<li>HKEY_CURRENT_USER\Software\The Silicon Realms Toolworks\Armadillo</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F76017D8-F760-17D8-F760-17D8F76017D8}\InProcServer32]</li><ul>
+<li>(Default) = "%System%\SHELL32.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F76017D8-F760-17D8-F760-17D8F76017D8}]</li><ul>
+<li>(Default) = "Shell Thumbnail Disk Cache"</li>
+<li>juoGwbM = "\CusZUzrYfbx}iq"</li>
+<li>lups = "PhD`H~d``TYq~Te}BZCCN]FVsHY"</li>
+<li>qvCNnmNkAKX = "@VVcWbXcNYjzU~{XI]@h^Yy`trDBEFf|"</li>
+<li>eigtFawrUKhh = "zWCb^gKYmtzjpkyc^odnPXwb`QCCKx`X"</li>
+<li>UlRtwB = "iBZVeGIaSKJpvtJJoCntBO\oyHpS"</li>
+<li>JxsJhygyV = "znEoyp[R^amr~mAmCl{"</li>
+<li>iqSC = "kf^Szf_\wyUjnEeOTusM]JX"</li>
+<li>pihs = "XPGicwxnFgNFBYkwvc^`"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{0472YK35-G6R3-DY3X-01WD-0V688CDG35IO}]</li><ul>
+<li>StubPath = "c:\install\install\update.exe Restart"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run]</li><ul>
+<li>Policies = "c:\install\install\update.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>pr = "%ProgramFiles%\inf.exe"</li>
+<li>HKLM = "c:\install\install\update.exe"</li>
+</ul>
+<br/>
+<em>so that %ProgramFiles%\inf.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\?????????? ???? 4.5.5.0]</li><ul>
+<li>DisplayName = "?????????? ???? 4.5.5.0"</li>
+<li>DisplayVersion = "4.5.5.0"</li>
+<li>VersionMajor = 0x00000004</li>
+<li>VersionMinor = 0x00000005</li>
+<li>Publisher = "???????????? ??????"</li>
+<li>DisplayIcon = "%ProgramFiles%\???????????? ??????\?????????? ????\Uninstall.exe"</li>
+<li>UninstallString = "%ProgramFiles%\???????????? ??????\?????????? ????\Uninstall.exe"</li>
+<li>InstallLocation = "%ProgramFiles%\???????????? ??????\?????????? ????\"</li>
+<li>InstallSource = "%System%\"</li>
+<li>InstallDate = "20150429"</li>
+<li>Language = 0x00000419</li>
+<li>EstimatedSize = 0x00001025</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run]</li><ul>
+<li>Policies = "c:\install\install\update.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>HKCU = "c:\install\install\update.exe"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\{6D7C16A4-7BD8-13D1-B2E4-0060975B8649}]</li><ul>
+<li>juoGwbM = "R}xVArBANETt{SO"</li>
+<li>lups = "@xE`YuetVNzgjHMUXpGsiLZ_vaa"</li>
+<li>qvCNnmNkAKX = "E|ASSZRUJedj[ozalyzCgcKe_uF\hWLi"</li>
+<li>eigtFawrUKhh = "PI~Gat`PsgatCOWm~jWJLu_UnOv}xAXc"</li>
+<li>UlRtwB = "pAvdDBJCuNapNfiOlBbJI~QJimrY"</li>
+<li>JxsJhygyV = "g]TyDPcKjPJjW|RjUh[W"</li>
+<li>iqSC = "xmOmDOTO^uVwBzomsZeas|k"</li>
+<li>pihs = "dsz@mMmqwWYQij[oYxP"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Licenses]</li><ul>
+<li>{R7C0DB872A3F777C0} = 4A 8D 7D 4C</li>
+<li>{K7C0DB872A3F777C0} = 33 0A AD AB 4A 17 1F 75 AE 44 5D 07 1E 46 2E 03 07 99 01 65 14 0F C8 1F F3 29 FB 4A 8D 7D 4C FF FF FF FF 87 30 0C C3 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF F</li>
+<li>{I0C49E4C7FFFFFFFF} = 1A 00 00 00</li>
+<li>{00C49E4C7FFFFFFFF} = 56 3E A8 0E 0B A2 A7 A6 41 06 53 98 71 A4 44 A3 91 2F 92 66 FE B4 01 AB 99 E8 09 9B 1F B1 52 3D 7E E3 0B 3D 0D D5 05 64 BE BE 4F 46 39 FA 3F 64 2E E9 F5 52 8E 98 EB BB 09 2A 23 66 CB 31 FA 06 5E 81 0B 79 B1 89 DF EE 92 10 1A AC 7E 5D 6C 8B 1A 0A EF A</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\test9]</li><ul>
+<li>FirstExecution = "29/04/2015 -- 01:45"</li>
+<li>NewIdentification = "test9"</li>
+<li>NewGroup = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\The Silicon Realms Toolworks\Armadillo]</li><ul>
+<li>{00C49E4C7FFFFFFFF} = E4 E8 E3 EB 84 DA 54 1F 8B C8 5F C6 AC 23 C6 D4 07 DF 37 9F 91 90 EE 51 04 DE C1 FC 1A 4D B6 94 3A 60 5E 27 1F 67 E5 91 A1 C0 BE 05 9F C9 31 BB 6E D3 FB 27 4C 1B 2E 86 38 15 31 47 7F 50 62 A4 F8 F5 61 96 06 0F 67 48 FE 39 3E 2F CB 49 CD 70 1C 3D 85 A</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">3669</td><td class="cell_1">TCP</td><td class="cell_2">inf.exe (%ProgramFiles%\inf.exe)</td></tr>
+</table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

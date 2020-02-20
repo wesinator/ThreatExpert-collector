@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 May 2015, 00:35:10</li>
+<li>Processing time: 6 min 8 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x9F71142D0D118AF1D93F5516E28325F2</li>
+<li>File SHA-1: 0x62B30E2F414B2865ED846EC311F1030310C8ECFC</li>
+<li>Filesize: 2,727,528 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=e9e003bf-dea9-4737-accc-c2e886956e68&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">4,632,576 bytes</td></tr>
+<tr><td class="cell_1">psiphon3-meek.exe</td><td class="cell_1">%Temp%\psiphon3-meek.exe</td><td class="cell_2">5,271,552 bytes</td></tr>
+<tr><td class="cell_1">psiphon3-plonk.exe</td><td class="cell_1">%Temp%\psiphon3-plonk.exe</td><td class="cell_2">843,776 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Psiphon3</li>
+<li>HKEY_CURRENT_USER\Software\SimonTatham</li>
+<li>HKEY_CURRENT_USER\Software\SimonTatham\PuTTY</li>
+<li>HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Psiphon3]</li><ul>
+<li>UserSkipBrowser = 0x00000000</li>
+<li>UserSkipProxySettings = 0x00000000</li>
+<li>UserLocalHTTPProxyPort = 0x00001F90</li>
+<li>UserSkipSSHParentProxySettings = 0x00000001</li>
+<li>UserSSHParentProxyHostname = ""</li>
+<li>UserSSHParentProxyPort = 0x00000000</li>
+<li>UserSSHParentProxy%UserName% = ""</li>
+<li>UserSSHParentProxyPassword = ""</li>
+<li>UserSSHParentProxyType = "https"</li>
+<li>NativeProxyInfo = "{"proxies":[{"bypass":"","flags":1,"name":"","proxy":""}]}</li>
+</ul>
+<li>["]</li><ul>
+<li>HKEY_CURRENT_USER\Software\Psiphon3 = ServersOSSH</li>
+</ul>
+<li>["36362E3232382E36302E31383420383838312066663766623664356434333337303162623363613763653030386165613930396639616565653635616235373962376134643061346164376139336361333438204D494943647A434341562B6741774942416749424144414E42676B71686B694739773042415155464]</li><ul>
+<li>HKEY_CURRENT_USER\Software\Psiphon3 = PsiphonProxyInfo</li>
+</ul>
+<li>["{"proxies":[]}]</li><ul>
+<li>" = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@867:128.199.133.247]</li><ul>
+<li>"0x10001,0x9aa45e736b8e075c27ff20de22d9f4980b42958ea82103b2e43edb81d53cda66bc7d80c11034629af29b9c4151248f69dd1e6cf7d5026dd5c2b3140583a543464223e5a4a9b425711bb59f6c7183ba0ee5f2054543b6f90281e2589b48174c0ea7d74842d90563a8e4bf73f4ca3d97ae3c85e08ca3b56b5 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:74.207.233.115]</li><ul>
+<li>"0x10001,0xdfac42a92a09ef57055b5930b45ee4bff873646e727f55144f6731a6c50631e7ce2d3c9ca4a1c77dc46f763d5aa6f81ebac701b5ec54d47ff87ffa90e69431f1a7ddeb2bb92a263b94f1eb0e224baa95f4a9b6cec11a1fdc3d79fa1256a1f0082e63287e4d06fd701cf6cdff3c3132c0d5fe4f1f7ddd16c = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.237.150.132]</li><ul>
+<li>"0x10001,0xeb217e2ca6a439db87906cc99dc063a15da91d77b6bcf3b1c0ab1f51c8753aaa4223f38fed42dd5578c7a7ffcb19b79bf0d3748bdd69f3f75308cd3528d251eeae7ae1146dade7a0aca6ca0be1bd46259b085e0983e752659b19a6781a66a59c7a75e08fc538720b595b8aaaaaf047cb775a130b0bd5a2e = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:109.74.195.83]</li><ul>
+<li>"0x10001,0xc7856ac46a72e4e748298ebd2616be80e51a18f9c9b31e7d7bd7473cd5f37b25e7e4e468e61fc47b1a9fcbfbb01242b2f0377f6b957807a903255d58160b0e674cba1a3bce658d9ef4da4725e2920217a9e22ca4fc176b3fc631ed5a27151511f8eafe0be164ee75feaa34c7279056a7d52aa4d9c714a3c = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:45.56.105.137]</li><ul>
+<li>"0x10001,0xc693dce9c485d3a5c4e5db7b648669b7037f032fa2333cc043390f8073d155b9e9eaa87f265adc2622f47a82f7304f3b6965b0fc28b6aa29b9b5908dff52d213a7f29b563c26fbce40a3d93b7cafbade8698264f9440062bf80bd992e1d696c9247049600c54ab442077b92ebffbde485431d05882228ff = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@443:cdnjs.cloudflare.com]</li><ul>
+<li>"0x10001,0xa9c4d2ad2e018302724190bacb3f52474f253d98b4a493805677d93fd25c33ce03c6368707571753404e1014cc6bd0fd82239b430f60c856097b10030917841a829c544050d1ed72721cc999246b5b5d3255a74a8771565bc83ffad160df602d81c6dedcc7f13d7ba2fd3acc841ff3816b4671146cda5e0 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:80.240.142.214]</li><ul>
+<li>"0x10001,0xd4177e66f7568f1b11d67f40f6d03913b62cefa0640866cb5f377d246804a91e5bdefeec0faff1ad08492bdec82fce985193bc098d5c99828d9f902281474925b72ba3cf27dea5175fd3a57efeebd9454e8e96f179e02152d3aa63c7f183517ea0c0e99562146f1552267423377cd3728a6b19ca94d70ea = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@443:a248.e.akamai.net]</li><ul>
+<li>"0x10001,0xd24b06f4c3b0ba0095c53c7c673de1b4a85cd2a645cd5772f51a220e98f8c954f687a0acdfede53639b57f022cfa580c3709e30ed8083a93901a8b8e4fca40b4aa5c58c76deae3ab33cebd3377b606fcb3c627eee931d56afa479dd4c93a09cafc6fea2df683302c9c854bec0c23a7f232f85ab770ec5e4 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@443:188.166.9.52]</li><ul>
+<li>"0x10001,0xb6824aba32a8bde03b5b4b11fe3866c77b6d6ced3f155b537618ea3a99d5314b6c78ce47ed2da58a9179a5fc0f3219b4f627ab369c03fbcb82816e711b66ac02983dc163ef264a8aba934cc3103fca1a52ac0b957679c81aecf07fd998396d0cb3b5d4774ba896169804499cf7e85d3fcb98e033e4f4bf5 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@443:a104270.secure.miisolutions.net]</li><ul>
+<li>"0x10001,0xbdb7d921757db0ed6fb4da0da5c5ae633f846ce36bdac71c992f87df025179ee1ca775639a029fbc685b4fa6f7f2f80df747839786cfe315cdd893c6f6d748016d795d95d91ced73d578c865812170259a901e3dfa49cf5b9e0de11f1f064038d3813cef79413aec37bb01788b6c85615aeac9476fbc048 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:151.236.221.64]</li><ul>
+<li>"0x10001,0xb534cf8719a5009a1e0513cf33cb3a8afda9825fa25ea19dbcf8117c49ae3ffd61ed4dc9b1ce8ceacf2b0a4040a79c584c4f8f4c5dd3a9e42305dee8dfc0d58fa78f04d65ad1003a86b4d56311cc1af8632dae88c80d2a3f65fe98d0d87bd1c8dc7bf37a15f0dcd5f3d2c369ecde7b20a6f943adef43e0d = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:128.199.118.86]</li><ul>
+<li>"0x10001,0xcf3626c5eb37e1b4f6b0cf4d8b44aee5e7c42985cc9c2514d64b791e7c6c306562c05b1fe147168fcb9cb9d2d94952f27751c8de3e636fe888d2fbd33910e33469aadb32056252e1aedd7f9119c4e10bf98d2034e231dfbe9354e20e295f55bf8ef80fc44fdfb9064f6af5f2755af4cccc66142e3dea662 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.131.227.101]</li><ul>
+<li>"0x10001,0xc0886305b38abb57416ba5ae56a25d0a164d387d91b9318224d182e341176c1f4b4a072a9caf30b1ef47383ffe9d29cad5f782cec1592e9b14748109280e99869e108e0870d1385d864a7283e448ce0012ed4ab3f06b255032c496cb35639043e22055b4615b11b839b0124ddb0b204c8f48bb7d5b43055 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@280:128.199.128.167]</li><ul>
+<li>"0x10001,0xe6eeeeda8a6c8afcb782186b0fedff372a3fcc9b07bfb1c76f7466806d92383f855f91a0bfa7aaa7ed9a9d369b47fc5c72f9ba27cdba91182ae7dae4184b1e16f268d76004943ca13050645ebc4090be9e0513737da311dd1f81928c54377b9dc4fb35b699b7e1574acd10f9342471f2a9d6541ca15eef8 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.237.154.175]</li><ul>
+<li>"0x10001,0xe8e4a63b1a09320537f9874305fd4cf4cb110ccdac12addabef36bbf563b0521cfc85553de51e29d76dccebaddab04f4b20a2065ca98c215c4f550a171a5c3bc3a5cf24721b0fb31353eafab8cb53f05d5c7f360be450fce0b914bdebeb5b8f853a2cb24ab538c110779bfb9af61f5fce4292e2909b1510 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:95.85.19.8]</li><ul>
+<li>"0x10001,0xd23e1f90bc4f09a86b95c33243ebcfa592644221bb956300a9778cd8f6f90c6d93447c6278af485412a8fe1a016d961aa537ba7ef23ca06d02aa45628b1011012b3b08f71cc760c078e6ded0c030b60125280630aae402dc2215e1ad4b20f5dbea07ab4fb4f6e81866c8e90a6c43ebcc5b658862af621bd = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@511:104.237.159.137]</li><ul>
+<li>"0x10001,0xdde413e79d3e01bcabdef315e2634e29dbf2e46174eb0c9def13cdec0477e6f22a8e35db720d6e2b7a5ed409551afe77ab64075b607e23c8a399d649efa9d7b0d88c2c6c10abb42712a3d5faba94230ffda6fdc24e5315d06f10d72aec1b1e757f977e3c30cd78f7852f15844dc2fd18d2a911b27c522ef = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:162.243.164.12]</li><ul>
+<li>"0x10001,0xf99445048a7ba5da68689539d1b04ead5b428f5e63d3ae215423d6faa9a7437e3ad01cc688075bff97fc5c44772f440ed8011a5421e45ce9f54313d8a854a75a7acc2e65ef590d605e46f41263625534a5f0af957894f37fd84468f2f091d5d130baa562e1c59a9ccb1ce4978bd78509bfd322167e71cac = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:23.239.12.69]</li><ul>
+<li>"0x10001,0xf540af3443b36c41a7876e73ab845b99ebfc98e147b6cdf25e7378d3ddd9f1021031df953c561312dbe4c52a99f3fbff6bda398631912996f25825c4f83746f0e13244b63de36479fa99bb213f696d83f5877554b31581d951d964011b86a4c0a15a8388d3b4601813099f1cb4c8c4e8ddad4852497a765 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.237.128.151]</li><ul>
+<li>"0x10001,0xef0ccf403009cd0ad3f42da74b86445245dcfabb09a3098681fb128efb1f34f161ea246f08c1b93d1830b38f9183b57a7b747c876c8a97f7b7bdd6370e48638990734e7c829a5653ae20fa0b7bf9bddede8342be72381aa0d019dee5b45f94d2ffa65b8a5a4863fd29d254dbd1621da38fd8f021dbd8bda = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:66.228.39.226]</li><ul>
+<li>"0x10001,0xd905cfca3afed9ae65d5986057a107d2f62dd85a73cd9d9f9cb29d2db8188e5f7804893fa58b16306d389c1439e343b7c0c128b720ab740accec3eeefd506ecd97b84b3a285faf4890c21b131d039f756e158ee74e9c80829ab40817fb06e420644275da1dbc82498ea5b96a716d86201c38d39960cfba9 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:50.116.46.244]</li><ul>
+<li>"0x10001,0xa7c63374a1c4f466c1607022dd3455a1338c0ffbfab2f7fa4710f5fb21ed6ab71cfe896c53159d0a9fe6b9665b66cb2015a17b5f7c8c60af1018e6e53fdea2a299e43cc8bc70deb6150c506a716fe529250732315cb91a3a204594f429f1ecd1b5b86ee644f25793491af36f86b6153cc75f586dfa0f31a = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:173.230.155.138]</li><ul>
+<li>"0x10001,0xc00a134f6bd6539a124873ac2b1df1ccd1fddb25716965ecab34cd0a99cc1dbeafdec4035982fd3a3c6e3a520de5025a7e6ccd202a82710909687c75ad572f3a9ebb2e5f15613cd039d442609a972353c8e67ff416235cd07c0651bac680660a5ee527eeb8d9644c20bb62a2ebe07c0b686efc13ed93975 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.237.137.41]</li><ul>
+<li>"0x10001,0xc1372dc4342291165c2fddb469e56f4422605a6cb5c5fd269594d2c2feb6619657c9a389191366af257efda0104c92450330944289463af0e06e1e45f90551f52804d637bf26a9cd480da244430c4106b7ee7507db4abf39964f3c8f0912841e3cd127482231200e09116a8c102079a20c144badf8931ce = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:146.185.137.243]</li><ul>
+<li>"0x10001,0xb2ba643471b56f1d53e800e09da2efdfb8ff6f4d6bbeccad676c6cd98cb0cc4efa662b6588a33242a31ef45417948eb76f5ea226379934592deaf19e7be8a84a2e9ce5fdc36197a5ee0e1c4ba832a90c78b71064513b7fd89da924d44758a7239c4e498a6d169c5613ed7bfe4179d2f304cd3951484dd85 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:23.239.15.41]</li><ul>
+<li>"0x10001,0xa1576a256bcaed627617adebc11437cc32dea723d52fcd7714778c72972c059c8037a1defc016057e334c94e6a352e40cfca2e06812d099e0bb942947e364a5dad0c7e4bd54d1ebed9868d3d204e763b88e140c7ba33d4983fe3ee3e7aa2e560293cff6a033356e0d3095a5b8ff7db7116a8c5130804447 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:104.200.30.145]</li><ul>
+<li>"0x10001,0xdeab69a622c52c516901c7485a1fe1554e64d77461cb3fd803551f2258c22fa975c21a6fd697f0020a822a960037ed2f19f114b082f9d247fe54370ae74be5e7e07bc348e0e8b81d993da4c77e9a09cc597361c4cff7c616ccae808dbcc3ebcc79aa3ac83f18818bc90dbea6a023d59d0237ab9f6f9d041 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:192.155.82.145]</li><ul>
+<li>"0x10001,0xea5bb730e0f6d27fca6beeed3c4756ebe940ff64958da4198a59d103cc5658acbd6ea78102e3285b7e67f2271bf5a201fe2de4c1dca8d29380943325aa284ab1c6a57afc76d398c56d3d968adeded3b81983f1b50aa6a4d213631c592add2d579c821ffc69a70a6baf80e620201235bbfd34b50de3020d3 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:23.92.29.157]</li><ul>
+<li>"0x10001,0xc927140daaf9c9fd2a66a06553932177452b647bb62d1ef0c265d915e2d249e735fcd83dff493f838daa975a486bda89441ec14398caaa1e3018624f12e57bf79f39df8b8f48e4cd6133c426b566c76c6ddbc75cf8426f0a30da4a8c93dca6ad87f43ecd3c05d75e3330b393deaee74a9055fb02e45bade = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:212.111.40.165]</li><ul>
+<li>"0x10001,0xc04bd1cc8249f9916f2fbf41adf5c3fa86b04e142c532b605345d84553f7104496bacac46cec077fad86e76a08d27fb1fcacd184f8cec79ce6f0af8ec4caca8d311f0bac629f53782dab34be8e9f0cd26f361a18a1b788c0f4d8c5bb3c6cf543bee3433a9ff2867e54c828b6a93ac9075a3d6a6d3c5183b = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:178.79.147.171]</li><ul>
+<li>"0x10001,0xba5fdcd3b3ac793f68d4c7f10254ab3edff6c36af9cbe168dd3d14cdd0f6f6aacbed6d7fedea21a04ddd4c3df68e094233fcbd5c06ebdbc25f8b0e4a84c1cfe9d7cd6d476966da28c9eb3bebbfa8f07bcf1ca578364bdabee39f96dac428e312cbe7ad249ef762b7de01e2a0cab8b1ce752e472af434ff7 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@857:45.56.105.42]</li><ul>
+<li>"0x10001,0xb1440ca128cb3712edbf2d82da8a2a408cb19857048a385a6761a777111b54c3b17c6902e3f84eb0cbac16e38c881c1af982ee623976d7c08c587e5140df7eee1dc48f1a361f6a11a93e3426feb47c5ce3c474ba37171a4051d41314d45925fb5b4a54bc3e95c6db791bb79a9e8d755a55956d63c58b3f3 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:198.211.118.195]</li><ul>
+<li>"0x10001,0xc237ec3ef4acd1af85b6ef76cc152fb79b8293a22c30b6e8447f621abb8a88749377105a91e09ace4ac99fe6b483052e71d278798dc69f2e82f53596d84da1f5adaacfe06820bce0a2903127de1fe9d815a9be660b9376729330eb2df16d6320c9081b89b94a747b97e0b336a878630870dec79bf8b5779 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:198.74.58.104]</li><ul>
+<li>"0x10001,0xd841aca1fdc20eaba395c1e219b756b3954c6fe0582060b54f9aa6145c24bce0ac84dcc42107d813ef1b775f5b640f414476d1efe3406ac855a3b56ec2af43e0cca3f58797a56c8418631ed319cd16f5518c9960d5981e86a0a993bf3faa21f4de2dc22a30eac63407f8d5e77644f1096d205abebd56d3d = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:23.92.29.157]</li><ul>
+<li>"0x10001,0xc927140daaf9c9fd2a66a06553932177452b647bb62d1ef0c265d915e2d249e735fcd83dff493f838daa975a486bda89441ec14398caaa1e3018624f12e57bf79f39df8b8f48e4cd6133c426b566c76c6ddbc75cf8426f0a30da4a8c93dca6ad87f43ecd3c05d75e3330b393deaee74a9055fb02e45bade = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:192.155.82.145]</li><ul>
+<li>"0x10001,0xea5bb730e0f6d27fca6beeed3c4756ebe940ff64958da4198a59d103cc5658acbd6ea78102e3285b7e67f2271bf5a201fe2de4c1dca8d29380943325aa284ab1c6a57afc76d398c56d3d968adeded3b81983f1b50aa6a4d213631c592add2d579c821ffc69a70a6baf80e620201235bbfd34b50de3020d3 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:104.237.153.45]</li><ul>
+<li>"0x10001,0x9cf91c62ae52139d1ac7db5839bb4c2e3ff2c08cf81b4c74856d26b588f9571a1fbd73bb072e12fb191ad2c4d624914c276800c83a22fdf022c8cd6037d3077968b8ab3248017e2f96e6dad0f68a765d3c3019f36c2c697edfc7397ea40edc8e3e24adc2b48850ad766ee0b7ff19e7eaf3b33c22ff7e742 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:173.230.155.138]</li><ul>
+<li>"0x10001,0xc00a134f6bd6539a124873ac2b1df1ccd1fddb25716965ecab34cd0a99cc1dbeafdec4035982fd3a3c6e3a520de5025a7e6ccd202a82710909687c75ad572f3a9ebb2e5f15613cd039d442609a972353c8e67ff416235cd07c0651bac680660a5ee527eeb8d9644c20bb62a2ebe07c0b686efc13ed93975 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@80:45.56.105.137]</li><ul>
+<li>"0x10001,0xc693dce9c485d3a5c4e5db7b648669b7037f032fa2333cc043390f8073d155b9e9eaa87f265adc2622f47a82f7304f3b6965b0fc28b6aa29b9b5908dff52d213a7f29b563c26fbce40a3d93b7cafbade8698264f9440062bf80bd992e1d696c9247049600c54ab442077b92ebffbde485431d05882228ff = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:97.107.141.106]</li><ul>
+<li>"0x10001,0xc8880d07afa2cae62147a6d8dd0bd190070316fc6469dfeb83acd2550723eeea9ba8eadda8b0a9fdc445dc34e9032d862abc9349fc9d76c9b8b3e89b5ff882ebbf14fba16f878dde5edbd4cd749a4287c0f202218c48ffdc4f923d22b60df0569f63b5dad2c051bd8801e940faf3aab31c8999e43090bba = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+<li>[rsa2@53:198.211.118.195]</li><ul>
+<li>"0x10001,0xc237ec3ef4acd1af85b6ef76cc152fb79b8293a22c30b6e8447f621abb8a88749377105a91e09ace4ac99fe6b483052e71d278798dc69f2e82f53596d84da1f5adaacfe06820bce0a2903127de1fe9d815a9be660b9376729330eb2df16d6320c9081b89b94a747b97e0b336a878630870dec79bf8b5779 = HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Local\ServerListMutex-OSSH</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1065</td><td class="cell_1">UDP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1178</td><td class="cell_1">TCP</td><td class="cell_2">psiphon3-meek.exe (%Temp%\psiphon3-meek.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>188.166.9.52</li>
+<li>151.236.221.64</li>
+<li>128.199.118.86</li>
+<li>128.199.133.247</li>
+<li>23.239.15.41</li>
+<li>45.56.105.137</li>
+<li>23.92.29.157</li>
+<li>104.237.150.132</li>
+<li>109.74.195.83</li>
+<li>104.237.154.175</li>
+<li>128.199.128.167</li>
+<li>104.200.30.145</li>
+<li>95.85.19.8</li>
+<li>104.237.159.137</li>
+<li>162.243.164.12</li>
+<li>23.239.12.69</li>
+<li>97.107.141.106</li>
+<li>104.237.128.151</li>
+<li>50.116.46.244</li>
+<li>74.207.233.115</li>
+<li>66.228.39.226</li>
+<li>173.230.155.138</li>
+<li>80.240.142.214</li>
+<li>104.237.137.41</li>
+<li>146.185.137.243</li>
+<li>198.211.118.195</li>
+<li>104.131.227.101</li>
+<li>192.155.82.145</li>
+<li>212.111.40.165</li>
+<li>178.62.41.72</li>
+<li>178.79.147.171</li>
+<li>45.56.105.42</li>
+<li>198.74.58.104</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">188.166.9.52<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">128.199.133.247<td class="cell_2">867</td><tr>
+<tr><td class="cell_1">23.239.15.41<td class="cell_2">1080</td><tr>
+<tr><td class="cell_1">45.56.105.137<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">104.237.154.175<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">95.85.19.8<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">74.207.233.115<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">104.237.137.41<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">104.237.128.151<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">66.228.39.226<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">104.200.30.145<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">192.155.82.145<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">212.111.40.165<td class="cell_2">1152</td><tr>
+<tr><td class="cell_1">23.92.29.157<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">104.237.150.132<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">104.200.30.145<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">162.243.164.12<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">23.239.12.69<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">66.228.39.226<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">173.230.155.138<td class="cell_2">1033</td><tr>
+<tr><td class="cell_1">109.74.195.83<td class="cell_2">1112</td><tr>
+<tr><td class="cell_1">45.56.105.137<td class="cell_2">1112</td><tr>
+<tr><td class="cell_1">192.155.82.145<td class="cell_2">1112</td><tr>
+<tr><td class="cell_1">128.199.118.86<td class="cell_2">1112</td><tr>
+<tr><td class="cell_1">104.131.227.101<td class="cell_2">1112</td><tr>
+<tr><td class="cell_1">128.199.128.167<td class="cell_2">280</td><tr>
+<tr><td class="cell_1">104.237.159.137<td class="cell_2">511</td><tr>
+<tr><td class="cell_1">45.56.105.42<td class="cell_2">857</td><tr>
+<tr><td class="cell_1">104.237.150.132<td class="cell_2">1104</td><tr>
+<tr><td class="cell_1">212.111.40.165<td class="cell_2">1104</td><tr>
+<tr><td class="cell_1">178.62.41.72<td class="cell_2">1104</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F3EA 55B7 040D 691C 9A30 A060 6DFC 98DA | ..U...i..0.`m...
+00000010 | 72F5 82FF 63EC 9A37 DFFD D436 D6E2 1E65 | r...c..7...6...e
+00000020 | A5F7 9E45 5D54 49DF EBE4 8589 0A6E 79EB | ...E]TI......ny.
+00000030 | 2577 F610 2CC6 76AD AF8E C414 FFF1 3C46 | %w..,.v.......<F
+00000040 | 9D44 EB2C 8566 7483 052B E88D 5951 8CDD | .D.,.ft..+..YQ..
+00000050 | 76E2 5445 D482 7674 D5D5 4BA7 A52E 52D3 | v.TE..vt..K...R.
+00000060 | 4982 3E78 3302 DFBF D82F 0D10 73E1 1B8A | I.>x3..../..s...
+00000070 | B131 B87E AD7D AD13 1F18 E6EC 7ECD 2330 | .1.~.}......~.#0
+00000080 | F629 133B FC2F 46EE CF82 60C1 6034 138A | .).;./F...`.`4..
+00000090 | 70A9 9FFA 3125 20FC 1E1B E3CF D732 4A6E | p...1% ......2Jn
+000000A0 | DCB9 1307 5F34 34A4 731C A380 5D66 D6AA | ...._44.s...]f..
+000000B0 | 017E F56D A694 16B5 782B 0505 9CC6 D934 | .~.m....x+.....4
+000000C0 | 62F2 D143 8740 86FE A1BE A69A E42F 2CAE | b..C.@......./,.
+000000D0 | 0718 C541 2EC0 7A4C ED6B AD0B 51B6 4D17 | ...A..zL.k..Q.M.
+000000E0 | 8926 F567 877E B42C C72A 281B 9D23 99E7 | .&.g.~.,.*(..#..
+000000F0 | 49AC FF7E 6899 EBA8 A6EA 2239 439E 7165 | I..~h....."9C.qe
+00000100 | 48E6 FBA6 4330 017C 1BB0 0D41 C709 885B | H...C0.|...A...[
+00000110 | 357D CFCC 8574 4665 918F 5A77 0077 4006 | 5}...tFe..Zw.w@.
+00000120 | 9196 3429 4484 2E2E 0C63 D506 D9C3 A7AA | ..4)D....c......
+00000130 | D716 001E 7958 2693 EBEF 5AE2 90FF DA62 | ....yX&...Z....b
+00000140 | DCE4 09C8 79CC 3D22 D819 0E6D 5699 E8DE | ....y.="...mV...
+00000150 | B8CC 178E DF18 773F BBAA F845 D8FD 29D5 | ......w?...E..).
+00000160 | 0180 490E E95F E241 8690 42F7 039A ECF0 | ..I.._.A..B.....
+00000170 | 3935 76CE 5F05 D6D3 536D DEC9 EBC0 4246 | 95v._...Sm....BF
+00000180 | C380 0C00 EB1E CBDB B81B 4D28 8606 49AF | ..........M(..I.
+00000190 | 0B77 086A 8408 4769 E6F3 3AA0 582E 41B5 | .w.j..Gi..:.X.A.
+000001A0 | D2EA 632F 9108 CD87 166E FDC4 5FC9 A7E0 | ..c/.....n.._...
+000001B0 | 01C3 544D C1E8 BECE 443C 78F2 6369 49B9 | ..TM....D<x.ciI.
+000001C0 | 886B A0CE 1C51 DA92 74D3 A3B8 236D D84C | .k...Q..t...#m.L
+000001D0 | FA4E 966C 33BF FA74 8A89 2CAB 9E15 125A | .N.l3..t..,....Z
+000001E0 | 5C5B 52AD 2997 9737 BEAA 361A F6C0 D33E | \[R.)..7..6....>
+000001F0 | EB06 C8DF CAD8 5F32 58EB 61DE 3371 2AF6 | ......_2X.a.3q*.
+00000200 | 9083 D544 39C1 FB0B 3A46 5510 9A44 850E | ...D9...:FU..D..
+00000210 | BE7A 7DC4 7D2B 9867 8281 AE1D 0D1C 5F37 | .z}.}+.g......_7
+00000220 | 80F4 BF46 7033 EEF9 AE57 F4EB 41BA 5602 | ...Fp3...W..A.V.
+00000230 | D724 7DC5 06EC 4B1E BD09 8709 6E11 4C36 | .$}...K.....n.L6
+00000240 | FE08 F096 3146 7106 5722 3F31 628F 903F | ....1Fq.W"?1b..?
+00000250 | E744 F1ED 5ED4 DD23 9A47 A6CA 8AE1 8416 | .D..^..#.G......
+00000260 | 45D9 8060 7F23 E40D 592C A113 3C69 7DD3 | E..`.#..Y,..<i}.
+00000270 | CD5B A45F 2FD4 139E 413D 334E 8C6A A55A | .[._/...A=3N.j.Z
+00000280 | 96FE DE47 87A8 9222 B282 B951 387A B3E9 | ...G..."...Q8z..
+00000290 | 413B 5705 DF26 7596 79CE 4E39 DED5 3C58 | A;W..&u.y.N9..<X
+000002A0 | 87ED BFD4 0E42 465D F0AB 1352 952C B977 | .....BF]...R.,.w
+000002B0 | 458A 12E8 CD12 1EED 869C 2949 DE81 49AE | E.........)I..I.
+000002C0 | C68E EAFF 1275 6D3D 8B96 1409 C6BA B6A5 | .....um=........
+000002D0 | 9837 BE08 075E 398F CC4D 2A31 325C 31C4 | .7...^9..M*12\1.
+000002E0 | 4EB6 4499 4B1C E33D 5C46 88BE A5E0 BBC4 | N.D.K..=\F......
+000002F0 | 7A99 867D 46F6 1247 8A8F AF82 0692 F5C4 | z..}F..G........
+00000300 | 8F53 A4C0 424F 3731 25E4 1786 9C48 6A09 | .S..BO71%....Hj.
+00000310 | 4728 065E 81BE 5778 ED90 AC91 31BF 33CE | G(.^..Wx....1.3.
+00000320 | FD62 0840 46EF DA12 FAD4 C3CC 2746 1E57 | .b.@F.......'F.W
+00000330 | EC6B A3FD 8EE2 7129 19B8 E811 B006 6A97 | .k....q)......j.
+00000340 | B110 1D6E 5C5D 641F 6B5C 3247 A3FF AF53 | ...n\]d.k\2G...S
+00000350 | 349C ECC8 24CB 7D81 9DFF A292 F5B5 67D1 | 4...$.}.......g.
+00000360 | D7B5 64EA 0C9B C3A4 1568 A052 11B6 A2EB | ..d......h.R....
+00000370 | 7EE2 0493 74EE CF55 6003 B771 3AE2 6D74 | ~...t..U`..q:.mt
+00000380 | 65CF 2FA6 7D89 B3F4 3386 6E82 42AC 74D2 | e./.}...3.n.B.t.
+00000390 | 5138 C412 0AB9 F6CD 3E2F 3313 5152 933E | Q8......>/3.QR.>
+000003A0 | 5624 61C1 D1A1 E38C 86B3 B891 BE13 8F43 | V$a............C
+000003B0 | 7AD1 1861 EA4C 1190 1EA5 155D 8565 DCA4 | z..a.L.....].e..
+000003C0 | 93A9 F682 42F2 C0E5 54E6 7921 F07D 3525 | ....B...T.y!.}5%
+000003D0 | 9C68 094B E568 483D 1CD6 1410 4734 2D9C | .h.K.hH=....G4-.
+000003E0 | DF72 B76D 7CEB 9685 5ECB F335 A772 BCC9 | .r.m|...^..5.r..
+000003F0 | 8697 F783 D5FD 3D9B 48AF F2FD 2FD1 ABBB | ......=.H.../...
+00000400 | 597B 185B A278 81C8 036D EF70 6573 DD69 | Y{.[.x...m.pes.i
+00000410 | B6E0 3609 8085 B94D 48B8 7C20 AD7D 01EC | ..6....MH.| .}..
+00000420 | 052F AD16 5273 6950 70EF 5393 2722 E522 | ./..RsiPp.S.'"."
+00000430 | B4FF 8144 755C 1C2B E55C 064D 57E2 A510 | ...Du\.+.\.MW...
+00000440 | CAD2 2796 AC0A F377 65B2 96A7 1030 8A34 | ..'....we....0.4
+00000450 | B1BC 6FB7 088E 593C 65BD 3696 E203 1996 | ..o...Y<e.6.....
+00000460 | CD02 042C 8498 8626 E6C2 C847 1C64 44E4 | ...,...&...G.dD.
+00000470 | 1F35 1117 75C6 3F1C A1AE 6263 8587 C7FA | .5..u.?...bc....
+00000480 | 6865 5F18 B223 0F80 64E4 BF36 155C D156 | he_..#..d..6.\.V
+00000490 | 3223 F122 E6A6 C30B 460C D800 7F95 E4E9 | 2#."....F.......
+000004A0 | 48F9 230B 5881 8B11 2FC0 F166 2749 5A9F | H.#.X.../..f'IZ.
+000004B0 | 85FB CAB1 FDBF 5266 4629 C26C 0C41 6B98 | ......RfF).l.Ak.
+000004C0 | C69C 4EF9 B843 F30A 0705 2DDC 516B B458 | ..N..C....-.Qk.X
+000004D0 | FE2C DEFC 5645 81C9 EF77 60CB 31BA AADA | .,..VE...w`.1...
+000004E0 | 97A7 88FE 0C04 C5F8 937F 7CF3 F13E 5CCE | ..........|..>\.
+000004F0 | 9E6D 99BD B58B A2A0 E11A 45EB CA78 794B | .m........E..xyK
+00000500 | 994F F2C8 734F CD6C 0B50 DD95 23F2 B7C1 | .O..sO.l.P..#...
+00000510 | 772D 9FFE 3D4D 5693 6BE1 62D2 88DB 9211 | w-..=MV.k.b.....
+00000520 | 5989 E8FA 9080 6831 C50E 4E98 4C1C DE93 | Y.....h1..N.L...
+00000530 | 7B92 3199 265D 1233 180F 338A B89D C6B5 | {.1.&].3..3.....
+00000540 | E30C 3409 5FDF CCAD E4D6 0430 CA88 D3AF | ..4._......0....
+00000550 | 8F27 A9D3 4DF6 E9BE D6CE A3F0 818F B2DE | .'..M...........
+00000560 | 882D 9E4A BBB7 B83C 6D7B 5BB6 B0CB AA47 | .-.J...<m{[....G
+00000570 | 263D 3A84 9ABE C9E2 BFBE 0312 298E D3DB | &=:.........)...
+00000580 | 4B8F BB03 7890 ABEE 6767 3A33 7BD6 AE0E | K...x...gg:3{...
+00000590 | 3F7B 3C3D E071 47B6 7047 28F6 A490 9D2B | ?{<=.qG.pG(....+
+000005A0 | 47D1 D2C6 25A4 5013 9902 E123 6A95 240C | G...%.P....#j.$.
+000005B0 | 38D7 E836 B2C6 1FC4 AE15 B0B6 DA55 5E16 | 8..6.........U^.
+000005C0 | F0D5 CB09 9138 FBB5 4D45 36FC C671 AAE3 | .....8..ME6..q..
+000005D0 | AEB9 69F6 3B50 E82D 3BE0 A902 CE96 B5F7 | ..i.;P.-;.......
+000005E0 | EEAD 0C94 793E 2CD6 4221 076C 8646 395F | ....y>,.B!.l.F9_
+000005F0 | 22CF 39CC D901 B178 AD04 66C0 CAE5 6EA1 | ".9....x..f...n.
+00000600 | 2C32 B322 A458 BB71 6480 AA94 0EF0 C502 | ,2.".X.qd.......
+00000610 | FAAA 1271 8193 E09B 39F8 BBC9 7DB4 BCA8 | ...q....9...}...
+00000620 | 7562 C8E4 E41C A35C 8779 11A6 BB54 7A2B | ub.....\.y...Tz+
+00000630 | 62AC 62EF AD4D 4E72 3A2E 08EA AD77 3DD4 | b.b..MNr:....w=.
+00000640 | 3932 B378 097C 72C0 82B8 0ACE 7E38 4513 | 92.x.|r.....~8E.
+00000650 | FE13 4480 F7F9 6163 CC3A 3B87 EC6E C281 | ..D...ac.:;..n..
+00000660 | B13D 9F69 D808 2D73 0A30 F573 7738 95DF | .=.i..-s.0.sw8..
+00000670 | 9EF3 BD1B 8B19 1DCC EB41 EF0F 6042 411D | .........A..`BA.
+00000680 | 2E56 3015 9F93 6875 94ED 0E10 110B 88E3 | .V0...hu........
+00000690 | B467 3B93 24D8 7A9C 0F05 8CD0 1D74 6E5A | .g;.$.z......tnZ
+000006A0 | 2B85 8C60 CF53 3A65 ABC7 EE77 217B 35FA | +..`.S:e...w!{5.
+000006B0 | ABFA 5F7E 9485 FE9B E4C7 4A0B 8F13 CF68 | .._~......J....h
+000006C0 | 3491 6443 6576 60AE 793E 7BDD 8CE9 DCB3 | 4.dCev`.y>{.....
+000006D0 | 6A64 C425 750E 984F 55DA 42B7 9D3E 2C52 | jd.%u..OU.B..>,R
+000006E0 | BAFB 4D11 83F3 3ED3 217F D31B 9A39 D96B | ..M...>.!....9.k
+000006F0 | 8DA1 F066 DE93 8D99 C87D 8A1A 5877 BF48 | ...f.....}..Xw.H
+00000700 | FC4F A922 5465 3B4E 8295 5876 3CBB 18B2 | .O."Te;N..Xv<...
+00000710 | 7D37 E2FC 4378 BEBC 76FD F90C D04F A12A | }7..Cx..v....O.*
+00000720 | 87CE EB6A 0CA2 EB43 B568 5755 BF55 57A2 | ...j...C.hWU.UW.
+00000730 | FCEA 9F28 DEB3 F0E3 A841 1FDD B624 5084 | ...(.....A...$P.
+00000740 | 8A2C C623 560D 986B AE31 B3DA 8261 1784 | .,.#V..k.1...a..
+00000750 | 7F1A 19FC 6FD9 E7F5 B4AC C3D4 3B74 02E4 | ....o.......;t..
+00000760 | A327 464C 983E 4A60 1CB8 D0DA 7E81 3217 | .'FL.>J`....~.2.
+00000770 | D17F B074 BE1A 0FFC D606 5D5F 9403 4668 | ...t......]_..Fh
+00000780 | 0355 1B41 5A0D BF67 A1B0 FCCA 2D69 8295 | .U.AZ..g....-i..
+00000790 | 4676 C554 038A 3997 878F 79B4 0F1C DC48 | Fv.T..9...y....H
+000007A0 | 2489 EF57 E822 0F3C 06AA FB25 4B4A 47BF | $..W.".<...%KJG.
+000007B0 | 736D 959D 0B43 3AA8 A08C 7CCF 2BDB 653D | sm...C:...|.+.e=
+000007C0 | 8DD3 096E 52AF FB37 B1F0 DB9D FD84 BA2E | ...nR..7........
+000007D0 | 52BE D351 D176 65DB 581F 07C2 A625 881E | R..Q.ve.X....%..
+000007E0 | 5388 6219 3E42 7D65 EC06 0D30 F7D3 5CB1 | S.b.>B}e...0..\.
+000007F0 | 719C F3F6 548D 7132 9CDD 0D84 F95A EEE7 | q...T.q2.....Z..
+00000800 | 0EE7 7ED9 81F2 293B E0C5 216D 0913 4D9D | ..~...);..!m..M.
+00000810 | D8C6 54FE FCFD DC3F 0532 C3E4 26C9 F0B2 | ..T....?.2..&...
+00000820 | 02E9 33B1 CB10 43F5 17FE BBF2 2545 D1F4 | ..3...C.....%E..
+00000830 | EAF8 5804 402D FD81 B90B B6F6 A434 0E9D | ..X.@-.......4..
+00000840 | 534B 44EF 6376 4106 5C33 E161 5177 E542 | SKD.cvA.\3.aQw.B
+00000850 | AD5A DA80 69F7 D575 4F72 E96A 8C79 2C50 | .Z..i..uOr.j.y,P
+00000860 | CED5 17C9 0332 5F74 E065 EB57 C269 BFF2 | .....2_t.e.W.i..
+00000870 | 567F C672 91D9 5E36 D8E7 16D1 3D35 5071 | V..r..^6....=5Pq
+00000880 | 1CE9 D89C 1041 5600 1D0A DC17 34FB 043B | .....AV.....4..;
+00000890 | 640E 77C9 E199 51A7 C770 E141 C1B2 ECB1 | d.w...Q..p.A....
+000008A0 | B895 A66E D722 F637 1D28 6AC3 419A 0582 | ...n.".7.(j.A...
+000008B0 | 2667 083E 200C 46DD 0B3A CD82 B27C 5E99 | &g.> .F..:...|^.
+000008C0 | 823C F47B DED8 108F 98E0 8C14 A197 CD49 | .<.{...........I
+000008D0 | EB41 E1B6 3BD8 99A3 A032 E6E0 5552 4472 | .A..;....2..URDr
+000008E0 | 4611 0FC2 708E 4240 1EF8 A3F4 4D81 5F98 | F...p.B@....M._.
+000008F0 | 2D0B CC87 0DA2 626C 6D79 D6E0 209F FE3D | -.....blmy.. ..=
+00000900 | 434C F48F FB40 6FA8 04DC 7A9B 8AA6 85DB | CL...@o...z.....
+00000910 | 0B8B 74DE FBE2 A836 752E F558 DAA6 22D3 | ..t....6u..X..".
+00000920 | 108E 6C9C E2C6 7CE9 C49E 5EAC 7E91 1922 | ..l...|...^.~.."
+00000930 | 454E 7D9A 2DE3 55CF 408C C0C5 6328 284B | EN}.-.U.@...c((K
+00000940 | 752A 844C F45A B054 A78C C837 BCA5 E31D | u*.L.Z.T...7....
+00000950 | 9A05 7BE7 7113 9279 33BD 233F F832 5DB1 | ..{.q..y3.#?.2].
+00000960 | D4E7 F4DB CE08 5BDD 5AAE 25B8 16AD 06C2 | ......[.Z.%.....
+00000970 | 8A20 920A 214D 8CE6 839F 5976 2958 D972 | . ..!M....Yv)X.r
+00000980 | 710F E8C6 8B9B 3332 8C9C 79E5 F800 BFD6 | q.....32..y.....
+00000990 | 0276 2E13 B664 5D07 1360 36A8 6AF2 4F04 | .v...d]..`6.j.O.
+000009A0 | 9C51 CE4C 3DD7 B09A F189 8BE4 E8CD F3B9 | .Q.L=...........
+000009B0 | FD0C F248 47F1 34BD EA01 0309 7C08 7A38 | ...HG.4.....|.z8
+000009C0 | 1E9D 4AB6 2511 42B6 8B99 C978 CB9F 6EAB | ..J.%.B....x..n.
+000009D0 | DAE1 0DF1 F239 610F 6051 2594 1038 82DB | .....9a.`Q%..8..
+000009E0 | DD0E 9400 3DC7 BF08 4F8E D19A 8246 3534 | ....=...O....F54
+000009F0 | BEFC CCA5 C461 60A6 B93A 5363 5EF9 F600 | .....a`..:Sc^...
+00000A00 | 3164 978A 8A65 D531 3A02 BC20 AA45 EBC7 | 1d...e.1:.. .E..
+00000A10 | D24F F283 7D51 E08C 51E4 B953 6D56 1CEA | .O..}Q..Q..SmV..
+00000A20 | 05B3 11AB 67A7 104B 6C45 64AA AA8E 23C4 | ....g..KlEd...#.
+00000A30 | A13B 8E49 740F 04C4 CE6C 3BBC C0BD E9DF | .;.It....l;.....
+00000A40 | 80B1 8ECF 73B5 2483 F149 0958 64F8 0E1E | ....s.$..I.Xd...
+00000A50 | C379 C704 6AC9 B0CB 4500 AB0E 0152 0F98 | .y..j...E....R..
+00000A60 | 816A 7AB0 92E3 418F FCCA 2950 1FAF 618C | .jz...A...)P..a.
+00000A70 | 0D98 0864 2333 0578 78A7 D65E 2B5C B39A | ...d#3.xx..^+\..
+00000A80 | 1BD6 9D8C 8E4C E0F4 E028 01E1 1801 0967 | .....L...(.....g
+00000A90 | 78DC 83FE 9A41 9AD7 F4A7 820A E3A4 F1C8 | x....A..........
+00000AA0 | 0BC8 D316 E919 DBDA 6C73 FF15 56F3 F189 | ........ls..V...
+00000AB0 | 63A8 01C7 36BC B7A1 167F B12E 3CDD 1B6E | c...6.......<..n
+00000AC0 | A1AC 646C 68D4 FAA4 2249 26E0 8EC3 C5E3 | ..dlh..."I&.....
+00000AD0 | DB97 F3AD 9A7A BA68 DB46 3925 6146 3FA6 | .....z.h.F9%aF?.
+00000AE0 | 87D5 488D 54D3 8BB6 9406 D4AB D067 F87D | ..H.T........g.}
+00000AF0 | 7415 06A2 A950 8254 A617 5308 1E20 2083 | t....P.T..S..  .
+00000B00 | 8967 65BE 0B3B EB5A 2C67 510A FC91 9513 | .ge..;.Z,gQ.....
+00000B10 | F9F5 48AF 1119 EC35 E826 AFE5 23FA AE6E | ..H....5.&..#..n
+00000B20 | 29E5 6564 C29E 4A51 7EB7 770C 0BF7 4B21 | ).ed..JQ~.w...K!
+00000B30 | C8B3 401B D7B4 683A A9B4 CD7B 965B E248 | ..@...h:...{.[.H
+00000B40 | 6B45 BE3C F68F F814 6B9D E8C9 3340 67B9 | kE.<....k...3@g.
+00000B50 | D638 271E 5236 8BF3 4719 05E9 B596 E968 | .8'.R6..G......h
+00000B60 | 0330 BF4C E769 C900 4442 6DAE 8AB4 CF76 | .0.L.i..DBm....v
+00000B70 | 5B7D D4E3 F924 92DF 8671 81E7 195C 6FAC | [}...$...q...\o.
+00000B80 | 2266 6E31 8B31 363D 796A 5D10 9E95 81DF | "fn1.16=yj].....
+00000B90 | 9D55 DDAA 7528 E762 B4A4 C2AA B6DD E992 | .U..u(.b........
+00000BA0 | 2B81 4656 3585 0CB7 6FB3 2050 811A 359B | +.FV5...o. P..5.
+00000BB0 | 296B 7682 739D EB08 07BE 4FBC BE0B 0E1A | )kv.s.....O.....
+00000BC0 | 8923 1C4F 6184 AECC 2C72 E5FE 74F6 AE54 | .#.Oa...,r..t..T
+00000BD0 | 8CCA 7047 7DB5 870A F8F3 640C 558E 118B | ..pG}.....d.U...
+00000BE0 | E63F E130 B05F DD7B 5D4F B9AB BE64 5134 | .?.0._.{]O...dQ4
+00000BF0 | B4E1 950E B33D 472F BBB0 B008 B283 BD15 | .....=G/........
+00000C00 | 1082 F51D B9D7 DF35 FA50 32AF 01D8 20D0 | .......5.P2... .
+00000C10 | 3875 CDF9 275E D1A0 2C77 E742 41D4 875C | 8u..'^..,w.BA..\
+00000C20 | AAD3 865E E3D3 0650 D185 EC50 6520 E324 | ...^...P...Pe .$
+00000C30 | 2B9F 822B A15D 1EAF A67F B839 B007 C3D6 | +..+.].....9....
+00000C40 | 559E 8D75 5715 E8A1 9007 FAEF 7AAF B13F | U..uW.......z..?
+00000C50 | 73B3 0FF8 9109 9013 FB52 543A DEC5 BBD0 | s........RT:....
+00000C60 | 3F08 DEB8 E8D8 ECD6 1EEB FA87 EB0F BCF2 | ?...............
+00000C70 | C41A AB28 B63A F584 E3FC 3647 9914 9E99 | ...(.:....6G....
+00000C80 | 591A 897B F8B2 DA5D D6FC 6D04 F1D3 3597 | Y..{...]..m...5.
+00000C90 | C243 9004 4FED 1F5E 42EF DF3F 0F68 EF32 | .C..O..^B..?.h.2
+00000CA0 | 3EFD 328C 4D0B C728 2DC1 AF83 4623 9F02 | >.2.M..(-...F#..
+00000CB0 | E511 47C8 AF5F ECF5 62D9 98E9 446B 8544 | ..G.._..b...Dk.D
+00000CC0 | 3F2F F70F 2CEF 682B B6BA 1B45 0380 D816 | ?/..,.h+...E....
+00000CD0 | 37BF DEB0 60DB 32CD A4D1 8C09 F32D 8A8A | 7...`.2......-..
+00000CE0 | 51F1 8519 F1F7 6A3B 709A 701D 4109 799F | Q.....j;p.p.A.y.
+00000CF0 | 716D 1CC7 6943 6EB4 1B4C 4B8F 242B 94D5 | qm..iCn..LK.$+..
+00000D00 | 5D96 F9F5 7121 7601 35C9 0FDC 7E50 5A80 | ]...q!v.5...~PZ.
+00000D10 | 2F46 A1CF FEF4 9D38 1858 FB52 583A AE7B | /F.....8.X.RX:.{
+00000D20 | EE02 D0DD 1BC8 538D 6A1D DD91 D17F 4DEC | ......S.j.....M.
+00000D30 | 5821 BAE8 EAF1 2122 2D63 E6A3 DC55 7529 | X!....!"-c...Uu)
+00000D40 | 5AA9 5C09 6CAD 5E29 3B7A 56E0 71D8 B22C | Z.\.l.^);zV.q..,
+00000D50 | 7290 541C BA97 016D 436E DC7B 839A 611E | r.T....mCn.{..a.
+00000D60 | EB07 BEF5 C66F 2746 79C0 9D05 4D17 D683 | .....o'Fy...M...
+00000D70 | 0B7F 3ECC FC4E CA88 AEDC 9CE3 2EB3 CADA | ..>..N..........
+00000D80 | 6B16 32E1 43DC B30C 522E 2537 6F10 AF13 | k.2.C...R.%7o...
+00000D90 | 2B60 7ABE CF0E 3567 81DF 99C3 C484 E529 | +`z...5g.......)
+00000DA0 | 6D7C 0225 048D 592E 4BBE 0890 54EC 3699 | m|.%..Y.K...T.6.
+00000DB0 | 3FB4 80CD BDCE FC83 5B5C DBE0 A287 4C79 | ?.......[\....Ly
+00000DC0 | 3C84 E0B8 6507 A4EF 6FAE 92E0 FFCD 90D0 | <...e...o.......
+00000DD0 | 678F 9418 EDF9 694A 4B81 6636 B14D 382B | g.....iJK.f6.M8+
+00000DE0 | F7D3 B347 E6BF B940 6610 28E5 8225 63F8 | ...G...@f.(..%c.
+00000DF0 | BC37 1B34 5BBF 553B 102A F2B0 B9F9 6FF3 | .7.4[.U;.*....o.
+00000E00 | 266F 6DA6 62EA 5CE8 728E 457E 6091 34AB | &om.b.\.r.E~`.4.
+00000E10 | CA4A 983C 6C8A FB04 81D9 4E6B B1A1 9902 | .J.<l.....Nk....
+00000E20 | 4A1B 327E 1D04 6D37 5536 EC60 2F80 259A | J.2~..m7U6.`/.%.
+00000E30 | 24CD E972 C28A 5177 501A 8625 815B 1EDF | $..r..QwP..%.[..
+00000E40 | A588 17AA CE8D F126 66B3 87B2 A926 FC0E | .......&f....&..
+00000E50 | EACA DCF6 C7D3 BA46 7ACA 3F8D 842A 2FD6 | .......Fz.?..*/.
+00000E60 | 3F7E 3F68 17BA 196A 104A 91A2 B2C4 8B66 | ?~?h...j.J.....f
+00000E70 | D0FF 2E51 7728 C074 9B99 B74E 7DC2 3BC6 | ...Qw(.t...N}.;.
+00000E80 | A8A7 8258 C635 50C6 1826 296C BD2B 760A | ...X.5P..&)l.+v.
+00000E90 | D260 3D12 C0B9 E495 2945 9EA8 F080 6C7E | .`=.....)E....l~
+00000EA0 | 1F55 E9A7 9D                            | .U...
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3134 362E 3138 352E 3138 382E 3134 363A | 146.185.188.146:
+00000020 | 3539 313B 7373 6869 643D 3644 3543 3943 | 591;sshid=6D5C9C
+00000030 | 4134 3231 4246 4146 3739 4637 4644 3539 | A421BFAF79F7FD59
+00000040 | 4634 4431 3539 3042 4634 3B6F 6266 736B | F4D1590BF4;obfsk
+00000050 | 6579 3D63 6564 6237 3233 3533 3563 3436 | ey=cedb723535c46
+00000060 | 3761 3764 3266 3532 6134 6261 6530 6166 | 7a7d2f52a4bae0af
+00000070 | 3362 3365 6336 6430 3135 3565 3363 3061 | 3b3ec6d0155e3c0a
+00000080 | 6461 3837 3163 3338 6436 6436 6439 3066 | da871c38d6d6d90f
+00000090 | 6237 393B 6668 6F73 746E 616D 653D 636F | b79;fhostname=co
+000000A0 | 6D70 7574 656D 2D68 6172 6577 6172 652D | mputem-hareware-
+000000B0 | 6B65 726E 6574 2E70 7369 7068 6F6E 332E | kernet.psiphon3.
+000000C0 | 636F 6D3B 6370 7562 6B65 793D 5378 332F | com;cpubkey=Sx3/
+000000D0 | 5A58 4957 4F75 4231 6547 3778 7446 7737 | ZXIWOuB1eG7xtFw7
+000000E0 | 7537 4348 4A55 7434 5854 7A65 6B54 4657 | u7CHJUt4XTzekTFW
+000000F0 | 6A7A 726A 5545 415C 3D00 6132 3438 2E65 | jzrjUEA\=.a248.e
+00000100 | 2E61 6B61 6D61 692E 6E65 7400           | .akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1033:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3838 2E32 3038 2E32 3038 2E31 3435 3A35 | 88.208.208.145:5
+00000020 | 3837 3B73 7368 6964 3D45 4438 4530 3532 | 87;sshid=ED8E052
+00000030 | 3145 4130 3639 3135 3434 4131 4331 4635 | 1EA0691544A1C1F5
+00000040 | 4336 3032 3535 3035 303B 6F62 6673 6B65 | C60255050;obfske
+00000050 | 793D 3637 3466 3832 3632 3665 3031 3739 | y=674f82626e0179
+00000060 | 3036 3265 3337 6564 6130 3339 6634 6234 | 062e37eda039f4b4
+00000070 | 6130 3465 3566 3631 3439 3833 3334 3764 | a04e5f614983347d
+00000080 | 3165 3264 3039 3330 3431 3065 3032 3065 | 1e2d0930410e020e
+00000090 | 3061 3B66 686F 7374 6E61 6D65 3D72 656C | 0a;fhostname=rel
+000000A0 | 656E 742D 7072 696E 7475 2D6C 6963 656E | ent-printu-licen
+000000B0 | 742E 7073 6970 686F 6E33 2E63 6F6D 3B63 | t.psiphon3.com;c
+000000C0 | 7075 626B 6579 3D30 6959 496F 3749 486E | pubkey=0iYIo7IHn
+000000D0 | 4B74 5A69 356D 2F5A 3147 7262 6879 4956 | KtZi5m/Z1GrbhyIV
+000000E0 | 7A51 3635 7072 3951 3836 6E6E 584B 3775 | zQ65pr9Q86nnXK7u
+000000F0 | 5234 5C3D 0061 3234 382E 652E 616B 616D | R4\=.a248.e.akam
+00000100 | 6169 2E6E 6574 00                       | ai.net.
+00000010 | 3838 2E32 3038 2E32 3330 2E31 393A 3232 | 88.208.230.19:22
+00000020 | 303B 7373 6869 643D 4531 4636 4543 3430 | 0;sshid=E1F6EC40
+00000030 | 4636 3135 4443 3736 3643 4232 3737 4439 | F615DC766CB277D9
+00000040 | 3944 3032 4245 3632 3B6F 6266 736B 6579 | 9D02BE62;obfskey
+00000050 | 3D30 6465 6264 3864 6362 3132 3835 3937 | =0debd8dcb128597
+00000060 | 3466 3232 3736 6537 6365 3564 3261 3062 | 4f2276e7ce5d2a0b
+00000070 | 6536 3335 3033 3831 3663 6538 3962 3836 | e63503816ce89b86
+00000080 | 3361 6438 3564 6263 6464 6435 3736 3639 | 3ad85dbcddd57669
+00000090 | 663B 6668 6F73 746E 616D 653D 7365 6374 | f;fhostname=sect
+000000A0 | 696D 652D 6578 706C 6963 6B74 696F 6E2D | ime-explicktion-
+000000B0 | 6164 6472 6572 2E70 7369 7068 6F6E 332E | addrer.psiphon3.
+000000C0 | 6E65 743B 6370 7562 6B65 793D 4847 4833 | net;cpubkey=HGH3
+000000D0 | 6A71 6366 594F 5639 4970 3836 517A 4338 | jqcfYOV9Ip86QzC8
+000000E0 | 7750 3151 4548 5142 4277 2F63 4C38 782B | wP1QEHQBBw/cL8x+
+000000F0 | 4B79 2F2F 466A 735C 3D00 6364 6E6A 732E | Ky//Fjs\=.cdnjs.
+00000100 | 636C 6F75 6466 6C61 7265 2E63 6F6D 00   | cloudflare.com.
+00000010 | 3132 382E 3139 392E 3232 342E 3137 3A35 | 128.199.224.17:5
+00000020 | 3838 3B73 7368 6964 3D30 3238 3732 3743 | 88;sshid=028727C
+00000030 | 4234 3343 3044 4245 3244 4633 3038 4442 | B43C0DBE2DF308DB
+00000040 | 3944 3631 4146 4242 383B 6F62 6673 6B65 | 9D61AFBB8;obfske
+00000050 | 793D 3261 6632 3764 3931 3039 6163 6434 | y=2af27d9109acd4
+00000060 | 6233 6134 6165 3632 3765 3662 6331 3361 | b3a4ae627e6bc13a
+00000070 | 3630 6537 3537 6330 3564 6334 6131 3665 | 60e757c05dc4a16e
+00000080 | 3939 6361 3130 6463 6365 3635 6161 6531 | 99ca10dcce65aae1
+00000090 | 6365 3B66 686F 7374 6E61 6D65 3D7A 696E | ce;fhostname=zin
+000000A0 | 696E 6B2D 6B65 7962 6F61 642D 7079 7465 | ink-keyboad-pyte
+000000B0 | 2E70 7369 7068 6F6E 332E 6E65 743B 6370 | .psiphon3.net;cp
+000000C0 | 7562 6B65 793D 392B 632B 3064 6C56 3643 | ubkey=9+c+0dlV6C
+000000D0 | 4978 3279 5330 5572 6C44 4434 7467 3733 | Ix2yS0UrlDD4tg73
+000000E0 | 7949 4D78 3353 384C 6A37 384F 6B51 7858 | yIMx3S8Lj78OkQxX
+000000F0 | 555C 3D00 6364 6E6A 732E 636C 6F75 6466 | U\=.cdnjs.cloudf
+00000100 | 6C61 7265 2E63 6F6D 00                  | lare.com.
+00000010 | 3732 2E31 342E 3137 362E 3731 3A32 3830 | 72.14.176.71:280
+00000020 | 3B73 7368 6964 3D36 4346 4532 3143 3844 | ;sshid=6CFE21C8D
+00000030 | 3138 3632 4530 3036 4132 3239 4536 4343 | 1862E006A229E6CC
+00000040 | 4531 4435 4131 413B 6F62 6673 6B65 793D | E1D5A1A;obfskey=
+00000050 | 6163 3462 3132 3361 3363 3738 6161 6664 | ac4b123a3c78aafd
+00000060 | 6237 6535 3336 3736 3735 6437 6435 3637 | b7e5367675d7d567
+00000070 | 3362 3639 3531 6466 3330 6132 3633 3638 | 3b6951df30a26368
+00000080 | 6365 6462 3133 6533 3766 6433 3630 3761 | cedb13e37fd3607a
+00000090 | 3B66 686F 7374 6E61 6D65 3D6D 6F64 6961 | ;fhostname=modia
+000000A0 | 2D72 6561 6379 2D64 6F63 756D 6564 6961 | -reacy-documedia
+000000C0 | 7562 6B65 793D 4E44 4F70 6251 4732 2B35 | ubkey=NDOpbQG2+5
+000000D0 | 507A 7933 5579 4F55 3167 7138 6941 5658 | Pzy3UyOU1gq8iAVX
+000000E0 | 2F77 762F 4B50 5178 5846 675A 4538 4952 | /wv/KPQxXFgZE8IR
+000000F0 | 515C 3D00 6364 6E6A 732E 636C 6F75 6466 | Q\=.cdnjs.cloudf
+00000010 | 3134 362E 3138 352E 3138 382E 3134 363A | 146.185.188.146:
+00000020 | 3539 313B 7373 6869 643D 3644 3543 3943 | 591;sshid=6D5C9C
+00000030 | 4134 3231 4246 4146 3739 4637 4644 3539 | A421BFAF79F7FD59
+00000040 | 4634 4431 3539 3042 4634 3B6F 6266 736B | F4D1590BF4;obfsk
+00000050 | 6579 3D63 6564 6237 3233 3533 3563 3436 | ey=cedb723535c46
+00000060 | 3761 3764 3266 3532 6134 6261 6530 6166 | 7a7d2f52a4bae0af
+00000070 | 3362 3365 6336 6430 3135 3565 3363 3061 | 3b3ec6d0155e3c0a
+00000080 | 6461 3837 3163 3338 6436 6436 6439 3066 | da871c38d6d6d90f
+00000090 | 6237 393B 6668 6F73 746E 616D 653D 636F | b79;fhostname=co
+000000A0 | 6D70 7574 656D 2D68 6172 6577 6172 652D | mputem-hareware-
+000000B0 | 6B65 726E 6574 2E70 7369 7068 6F6E 332E | kernet.psiphon3.
+000000C0 | 636F 6D3B 6370 7562 6B65 793D 5378 332F | com;cpubkey=Sx3/
+000000D0 | 5A58 4957 4F75 4231 6547 3778 7446 7737 | ZXIWOuB1eG7xtFw7
+000000E0 | 7537 4348 4A55 7434 5854 7A65 6B54 4657 | u7CHJUt4XTzekTFW
+000000F0 | 6A7A 726A 5545 415C 3D00 6132 3438 2E65 | jzrjUEA\=.a248.e
+00000100 | 2E61 6B61 6D61 692E 6E65 7400           | .akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1152:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F3EA 55B7 040D 691C 9A30 A060 6DFC 98DA | ..U...i..0.`m...
+00000010 | 72F5 82FF 63EC 9A37 DFFD D436 D6E2 1E65 | r...c..7...6...e
+00000020 | A5F7 9E45 5D54 49DF EBE4 8589 0A6E 79EB | ...E]TI......ny.
+00000030 | 2577 F610 2CC6 76AD AF8E C414 FFF1 3C46 | %w..,.v.......<F
+00000040 | 9D44 EB2C 8566 7483 052B E88D 5951 8CDD | .D.,.ft..+..YQ..
+00000050 | 76E2 5445 D482 7674 D5D5 4BA7 A52E 52D3 | v.TE..vt..K...R.
+00000060 | 4982 3E78 3302 DFBF D82F 0D10 73E1 1B8A | I.>x3..../..s...
+00000070 | B131 B87E AD7D AD13 1F18 E6EC 7ECD 2330 | .1.~.}......~.#0
+00000080 | F629 133B FC2F 46EE CF82 60C1 6034 138A | .).;./F...`.`4..
+00000090 | 70A9 9FFA 3125 20FC 1E1B E3CF D732 4A6E | p...1% ......2Jn
+000000A0 | DCB9 1307 5F34 34A4 731C A380 5D66 D6AA | ...._44.s...]f..
+000000B0 | 017E F56D A694 16B5 782B 0505 9CC6 D934 | .~.m....x+.....4
+000000C0 | 62F2 D143 8740 86FE A1BE A69A E42F 2CAE | b..C.@......./,.
+000000D0 | 0718 C541 2EC0 7A4C ED6B AD0B 51B6 4D17 | ...A..zL.k..Q.M.
+000000E0 | 8926 F567 877E B42C C72A 281B 9D23 99E7 | .&.g.~.,.*(..#..
+000000F0 | 49AC FF7E 6899 EBA8 A6EA 2239 439E 7165 | I..~h....."9C.qe
+00000100 | 48E6 FBA6 4330 017C 1BB0 0D41 C709 885B | H...C0.|...A...[
+00000110 | 357D CFCC 8574 4665 918F 5A77 0077 4006 | 5}...tFe..Zw.w@.
+00000120 | 9196 3429 4484 2E2E 0C63 D506 D9C3 A7AA | ..4)D....c......
+00000130 | D716 001E 7958 2693 EBEF 5AE2 90FF DA62 | ....yX&...Z....b
+00000140 | DCE4 09C8 79CC 3D22 D819 0E6D 5699 E8DE | ....y.="...mV...
+00000150 | B8CC 178E DF18 773F BBAA F845 D8FD 29D5 | ......w?...E..).
+00000160 | 0180 490E E95F E241 8690 42F7 039A ECF0 | ..I.._.A..B.....
+00000170 | 3935 76CE 5F05 D6D3 536D DEC9 EBC0 4246 | 95v._...Sm....BF
+00000180 | C380 0C00 EB1E CBDB B81B 4D28 8606 49AF | ..........M(..I.
+00000190 | 0B77 086A 8408 4769 E6F3 3AA0 582E 41B5 | .w.j..Gi..:.X.A.
+000001A0 | D2EA 632F 9108 CD87 166E FDC4 5FC9 A7E0 | ..c/.....n.._...
+000001B0 | 01C3 544D C1E8 BECE 443C 78F2 6369 49B9 | ..TM....D<x.ciI.
+000001C0 | 886B A0CE 1C51 DA92 74D3 A3B8 236D D84C | .k...Q..t...#m.L
+000001D0 | FA4E 966C 33BF FA74 8A89 2CAB 9E15 125A | .N.l3..t..,....Z
+000001E0 | 5C5B 52AD 2997 9737 BEAA 361A F6C0 D33E | \[R.)..7..6....>
+000001F0 | EB06 C8DF CAD8 5F32 58EB 61DE 3371 2AF6 | ......_2X.a.3q*.
+00000200 | 9083 D544 39C1 FB0B 3A46 5510 9A44 850E | ...D9...:FU..D..
+00000210 | BE7A 7DC4 7D2B 9867 8281 AE1D 0D1C 5F37 | .z}.}+.g......_7
+00000220 | 80F4 BF46 7033 EEF9 AE57 F4EB 41BA 5602 | ...Fp3...W..A.V.
+00000230 | D724 7DC5 06EC 4B1E BD09 8709 6E11 4C36 | .$}...K.....n.L6
+00000240 | FE08 F096 3146 7106 5722 3F31 628F 903F | ....1Fq.W"?1b..?
+00000250 | E744 F1ED 5ED4 DD23 9A47 A6CA 8AE1 8416 | .D..^..#.G......
+00000260 | 45D9 8060 7F23 E40D 592C A113 3C69 7DD3 | E..`.#..Y,..<i}.
+00000270 | CD5B A45F 2FD4 139E 413D 334E 8C6A A55A | .[._/...A=3N.j.Z
+00000280 | 96FE DE47 87A8 9222 B282 B951 387A B3E9 | ...G..."...Q8z..
+00000290 | 413B 5705 DF26 7596 79CE 4E39 DED5 3C58 | A;W..&u.y.N9..<X
+000002A0 | 87ED BFD4 0E42 465D F0AB 1352 952C B977 | .....BF]...R.,.w
+000002B0 | 458A 12E8 CD12 1EED 869C 2949 DE81 49AE | E.........)I..I.
+000002C0 | C68E EAFF 1275 6D3D 8B96 1409 C6BA B6A5 | .....um=........
+000002D0 | 9837 BE08 075E 398F CC4D 2A31 325C 31C4 | .7...^9..M*12\1.
+000002E0 | 4EB6 4499 4B1C E33D 5C46 88BE A5E0 BBC4 | N.D.K..=\F......
+000002F0 | 7A99 867D 46F6 1247 8A8F AF82 0692 F5C4 | z..}F..G........
+00000300 | 8F53 A4C0 424F 3731 25E4 1786 9C48 6A09 | .S..BO71%....Hj.
+00000310 | 4728 065E 81BE 5778 ED90 AC91 31BF 33CE | G(.^..Wx....1.3.
+00000320 | FD62 0840 46EF DA12 FAD4 C3CC 2746 1E57 | .b.@F.......'F.W
+00000330 | EC6B A3FD 8EE2 7129 19B8 E811 B006 6A97 | .k....q)......j.
+00000340 | B110 1D6E 5C5D 641F 6B5C 3247 A3FF AF53 | ...n\]d.k\2G...S
+00000350 | 349C ECC8 24CB 7D81 9DFF A292 F5B5 67D1 | 4...$.}.......g.
+00000360 | D7B5 64EA 0C9B C3A4 1568 A052 11B6 A2EB | ..d......h.R....
+00000370 | 7EE2 0493 74EE CF55 6003 B771 3AE2 6D74 | ~...t..U`..q:.mt
+00000380 | 65CF 2FA6 7D89 B3F4 3386 6E82 42AC 74D2 | e./.}...3.n.B.t.
+00000390 | 5138 C412 0AB9 F6CD 3E2F 3313 5152 933E | Q8......>/3.QR.>
+000003A0 | 5624 61C1 D1A1 E38C 86B3 B891 BE13 8F43 | V$a............C
+000003B0 | 7AD1 1861 EA4C 1190 1EA5 155D 8565 DCA4 | z..a.L.....].e..
+000003C0 | 93A9 F682 42F2 C0E5 54E6 7921 F07D 3525 | ....B...T.y!.}5%
+000003D0 | 9C68 094B E568 483D 1CD6 1410 4734 2D9C | .h.K.hH=....G4-.
+000003E0 | DF72 B76D 7CEB 9685 5ECB F335 A772 BCC9 | .r.m|...^..5.r..
+000003F0 | 8697 F783 D5FD 3D9B 48AF F2FD 2FD1 ABBB | ......=.H.../...
+00000400 | 597B 185B A278 81C8 036D EF70 6573 DD69 | Y{.[.x...m.pes.i
+00000410 | B6E0 3609 8085 B94D 48B8 7C20 AD7D 01EC | ..6....MH.| .}..
+00000420 | 052F AD16 5273 6950 70EF 5393 2722 E522 | ./..RsiPp.S.'"."
+00000430 | B4FF 8144 755C 1C2B E55C 064D 57E2 A510 | ...Du\.+.\.MW...
+00000440 | CAD2 2796 AC0A F377 65B2 96A7 1030 8A34 | ..'....we....0.4
+00000450 | B1BC 6FB7 088E 593C 65BD 3696 E203 1996 | ..o...Y<e.6.....
+00000460 | CD02 042C 8498 8626 E6C2 C847 1C64 44E4 | ...,...&...G.dD.
+00000470 | 1F35 1117 75C6 3F1C A1AE 6263 8587 C7FA | .5..u.?...bc....
+00000480 | 6865 5F18 B223 0F80 64E4 BF36 155C D156 | he_..#..d..6.\.V
+00000490 | 3223 F122 E6A6 C30B 460C D800 7F95 E4E9 | 2#."....F.......
+000004A0 | 48F9 230B 5881 8B11 2FC0 F166 2749 5A9F | H.#.X.../..f'IZ.
+000004B0 | 85FB CAB1 FDBF 5266 4629 C26C 0C41 6B98 | ......RfF).l.Ak.
+000004C0 | C69C 4EF9 B843 F30A 0705 2DDC 516B B458 | ..N..C....-.Qk.X
+000004D0 | FE2C DEFC 5645 81C9 EF77 60CB 31BA AADA | .,..VE...w`.1...
+000004E0 | 97A7 88FE 0C04 C5F8 937F 7CF3 F13E 5CCE | ..........|..>\.
+000004F0 | 9E6D 99BD B58B A2A0 E11A 45EB CA78 794B | .m........E..xyK
+00000500 | 994F F2C8 734F CD6C 0B50 DD95 23F2 B7C1 | .O..sO.l.P..#...
+00000510 | 772D 9FFE 3D4D 5693 6BE1 62D2 88DB 9211 | w-..=MV.k.b.....
+00000520 | 5989 E8FA 9080 6831 C50E 4E98 4C1C DE93 | Y.....h1..N.L...
+00000530 | 7B92 3199 265D 1233 180F 338A B89D C6B5 | {.1.&].3..3.....
+00000540 | E30C 3409 5FDF CCAD E4D6 0430 CA88 D3AF | ..4._......0....
+00000550 | 8F27 A9D3 4DF6 E9BE D6CE A3F0 818F B2DE | .'..M...........
+00000560 | 882D 9E4A BBB7 B83C 6D7B 5BB6 B0CB AA47 | .-.J...<m{[....G
+00000570 | 263D 3A84 9ABE C9E2 BFBE 0312 298E D3DB | &=:.........)...
+00000580 | 4B8F BB03 7890 ABEE 6767 3A33 7BD6 AE0E | K...x...gg:3{...
+00000590 | 3F7B 3C3D E071 47B6 7047 28F6 A490 9D2B | ?{<=.qG.pG(....+
+000005A0 | 47D1 D2C6 25A4 5013 9902 E123 6A95 240C | G...%.P....#j.$.
+000005B0 | 38D7 E836 B2C6 1FC4 AE15 B0B6 DA55 5E16 | 8..6.........U^.
+000005C0 | F0D5 CB09 9138 FBB5 4D45 36FC C671 AAE3 | .....8..ME6..q..
+000005D0 | AEB9 69F6 3B50 E82D 3BE0 A902 CE96 B5F7 | ..i.;P.-;.......
+000005E0 | EEAD 0C94 793E 2CD6 4221 076C 8646 395F | ....y>,.B!.l.F9_
+000005F0 | 22CF 39CC D901 B178 AD04 66C0 CAE5 6EA1 | ".9....x..f...n.
+00000600 | 2C32 B322 A458 BB71 6480 AA94 0EF0 C502 | ,2.".X.qd.......
+00000610 | FAAA 1271 8193 E09B 39F8 BBC9 7DB4 BCA8 | ...q....9...}...
+00000620 | 7562 C8E4 E41C A35C 8779 11A6 BB54 7A2B | ub.....\.y...Tz+
+00000630 | 62AC 62EF AD4D 4E72 3A2E 08EA AD77 3DD4 | b.b..MNr:....w=.
+00000640 | 3932 B378 097C 72C0 82B8 0ACE 7E38 4513 | 92.x.|r.....~8E.
+00000650 | FE13 4480 F7F9 6163 CC3A 3B87 EC6E C281 | ..D...ac.:;..n..
+00000660 | B13D 9F69 D808 2D73 0A30 F573 7738 95DF | .=.i..-s.0.sw8..
+00000670 | 9EF3 BD1B 8B19 1DCC EB41 EF0F 6042 411D | .........A..`BA.
+00000680 | 2E56 3015 9F93 6875 94ED 0E10 110B 88E3 | .V0...hu........
+00000690 | B467 3B93 24D8 7A9C 0F05 8CD0 1D74 6E5A | .g;.$.z......tnZ
+000006A0 | 2B85 8C60 CF53 3A65 ABC7 EE77 217B 35FA | +..`.S:e...w!{5.
+000006B0 | ABFA 5F7E 9485 FE9B E4C7 4A0B 8F13 CF68 | .._~......J....h
+000006C0 | 3491 6443 6576 60AE 793E 7BDD 8CE9 DCB3 | 4.dCev`.y>{.....
+000006D0 | 6A64 C425 750E 984F 55DA 42B7 9D3E 2C52 | jd.%u..OU.B..>,R
+000006E0 | BAFB 4D11 83F3 3ED3 217F D31B 9A39 D96B | ..M...>.!....9.k
+000006F0 | 8DA1 F066 DE93 8D99 C87D 8A1A 5877 BF48 | ...f.....}..Xw.H
+00000700 | FC4F A922 5465 3B4E 8295 5876 3CBB 18B2 | .O."Te;N..Xv<...
+00000710 | 7D37 E2FC 4378 BEBC 76FD F90C D04F A12A | }7..Cx..v....O.*
+00000720 | 87CE EB6A 0CA2 EB43 B568 5755 BF55 57A2 | ...j...C.hWU.UW.
+00000730 | FCEA 9F28 DEB3 F0E3 A841 1FDD B624 5084 | ...(.....A...$P.
+00000740 | 8A2C C623 560D 986B AE31 B3DA 8261 1784 | .,.#V..k.1...a..
+00000750 | 7F1A 19FC 6FD9 E7F5 B4AC C3D4 3B74 02E4 | ....o.......;t..
+00000760 | A327 464C 983E 4A60 1CB8 D0DA 7E81 3217 | .'FL.>J`....~.2.
+00000770 | D17F B074 BE1A 0FFC D606 5D5F 9403 4668 | ...t......]_..Fh
+00000780 | 0355 1B41 5A0D BF67 A1B0 FCCA 2D69 8295 | .U.AZ..g....-i..
+00000790 | 4676 C554 038A 3997 878F 79B4 0F1C DC48 | Fv.T..9...y....H
+000007A0 | 2489 EF57 E822 0F3C 06AA FB25 4B4A 47BF | $..W.".<...%KJG.
+000007B0 | 736D 959D 0B43 3AA8 A08C 7CCF 2BDB 653D | sm...C:...|.+.e=
+000007C0 | 8DD3 096E 52AF FB37 B1F0 DB9D FD84 BA2E | ...nR..7........
+000007D0 | 52BE D351 D176 65DB 581F 07C2 A625 881E | R..Q.ve.X....%..
+000007E0 | 5388 6219 3E42 7D65 EC06 0D30 F7D3 5CB1 | S.b.>B}e...0..\.
+000007F0 | 719C F3F6 548D 7132 9CDD 0D84 F95A EEE7 | q...T.q2.....Z..
+00000800 | 0EE7 7ED9 81F2 293B E0C5 216D 0913 4D9D | ..~...);..!m..M.
+00000810 | D8C6 54FE FCFD DC3F 0532 C3E4 26C9 F0B2 | ..T....?.2..&...
+00000820 | 02E9 33B1 CB10 43F5 17FE BBF2 2545 D1F4 | ..3...C.....%E..
+00000830 | EAF8 5804 402D FD81 B90B B6F6 A434 0E9D | ..X.@-.......4..
+00000840 | 534B 44EF 6376 4106 5C33 E161 5177 E542 | SKD.cvA.\3.aQw.B
+00000850 | AD5A DA80 69F7 D575 4F72 E96A 8C79 2C50 | .Z..i..uOr.j.y,P
+00000860 | CED5 17C9 0332 5F74 E065 EB57 C269 BFF2 | .....2_t.e.W.i..
+00000870 | 567F C672 91D9 5E36 D8E7 16D1 3D35 5071 | V..r..^6....=5Pq
+00000880 | 1CE9 D89C 1041 5600 1D0A DC17 34FB 043B | .....AV.....4..;
+00000890 | 640E 77C9 E199 51A7 C770 E141 C1B2 ECB1 | d.w...Q..p.A....
+000008A0 | B895 A66E D722 F637 1D28 6AC3 419A 0582 | ...n.".7.(j.A...
+000008B0 | 2667 083E 200C 46DD 0B3A CD82 B27C 5E99 | &g.> .F..:...|^.
+000008C0 | 823C F47B DED8 108F 98E0 8C14 A197 CD49 | .<.{...........I
+000008D0 | EB41 E1B6 3BD8 99A3 A032 E6E0 5552 4472 | .A..;....2..URDr
+000008E0 | 4611 0FC2 708E 4240 1EF8 A3F4 4D81 5F98 | F...p.B@....M._.
+000008F0 | 2D0B CC87 0DA2 626C 6D79 D6E0 209F FE3D | -.....blmy.. ..=
+00000900 | 434C F48F FB40 6FA8 04DC 7A9B 8AA6 85DB | CL...@o...z.....
+00000910 | 0B8B 74DE FBE2 A836 752E F558 DAA6 22D3 | ..t....6u..X..".
+00000920 | 108E 6C9C E2C6 7CE9 C49E 5EAC 7E91 1922 | ..l...|...^.~.."
+00000930 | 454E 7D9A 2DE3 55CF 408C C0C5 6328 284B | EN}.-.U.@...c((K
+00000940 | 752A 844C F45A B054 A78C C837 BCA5 E31D | u*.L.Z.T...7....
+00000950 | 9A05 7BE7 7113 9279 33BD 233F F832 5DB1 | ..{.q..y3.#?.2].
+00000960 | D4E7 F4DB CE08 5BDD 5AAE 25B8 16AD 06C2 | ......[.Z.%.....
+00000970 | 8A20 920A 214D 8CE6 839F 5976 2958 D972 | . ..!M....Yv)X.r
+00000980 | 710F E8C6 8B9B 3332 8C9C 79E5 F800 BFD6 | q.....32..y.....
+00000990 | 0276 2E13 B664 5D07 1360 36A8 6AF2 4F04 | .v...d]..`6.j.O.
+000009A0 | 9C51 CE4C 3DD7 B09A F189 8BE4 E8CD F3B9 | .Q.L=...........
+000009B0 | FD0C F248 47F1 34BD EA01 0309 7C08 7A38 | ...HG.4.....|.z8
+000009C0 | 1E9D 4AB6 2511 42B6 8B99 C978 CB9F 6EAB | ..J.%.B....x..n.
+000009D0 | DAE1 0DF1 F239 610F 6051 2594 1038 82DB | .....9a.`Q%..8..
+000009E0 | DD0E 9400 3DC7 BF08 4F8E D19A 8246 3534 | ....=...O....F54
+000009F0 | BEFC CCA5 C461 60A6 B93A 5363 5EF9 F600 | .....a`..:Sc^...
+00000A00 | 3164 978A 8A65 D531 3A02 BC20 AA45 EBC7 | 1d...e.1:.. .E..
+00000A10 | D24F F283 7D51 E08C 51E4 B953 6D56 1CEA | .O..}Q..Q..SmV..
+00000A20 | 05B3 11AB 67A7 104B 6C45 64AA AA8E 23C4 | ....g..KlEd...#.
+00000A30 | A13B 8E49 740F 04C4 CE6C 3BBC C0BD E9DF | .;.It....l;.....
+00000A40 | 80B1 8ECF 73B5 2483 F149 0958 64F8 0E1E | ....s.$..I.Xd...
+00000A50 | C379 C704 6AC9 B0CB 4500 AB0E 0152 0F98 | .y..j...E....R..
+00000A60 | 816A 7AB0 92E3 418F FCCA 2950 1FAF 618C | .jz...A...)P..a.
+00000A70 | 0D98 0864 2333 0578 78A7 D65E 2B5C B39A | ...d#3.xx..^+\..
+00000A80 | 1BD6 9D8C 8E4C E0F4 E028 01E1 1801 0967 | .....L...(.....g
+00000A90 | 78DC 83FE 9A41 9AD7 F4A7 820A E3A4 F1C8 | x....A..........
+00000AA0 | 0BC8 D316 E919 DBDA 6C73 FF15 56F3 F189 | ........ls..V...
+00000AB0 | 63A8 01C7 36BC B7A1 167F B12E 3CDD 1B6E | c...6.......<..n
+00000AC0 | A1AC 646C 68D4 FAA4 2249 26E0 8EC3 C5E3 | ..dlh..."I&.....
+00000AD0 | DB97 F3AD 9A7A BA68 DB46 3925 6146 3FA6 | .....z.h.F9%aF?.
+00000AE0 | 87D5 488D 54D3 8BB6 9406 D4AB D067 F87D | ..H.T........g.}
+00000AF0 | 7415 06A2 A950 8254 A617 5308 1E20 2083 | t....P.T..S..  .
+00000B00 | 8967 65BE 0B3B EB5A 2C67 510A FC91 9513 | .ge..;.Z,gQ.....
+00000B10 | F9F5 48AF 1119 EC35 E826 AFE5 23FA AE6E | ..H....5.&..#..n
+00000B20 | 29E5 6564 C29E 4A51 7EB7 770C 0BF7 4B21 | ).ed..JQ~.w...K!
+00000B30 | C8B3 401B D7B4 683A A9B4 CD7B 965B E248 | ..@...h:...{.[.H
+00000B40 | 6B45 BE3C F68F F814 6B9D E8C9 3340 67B9 | kE.<....k...3@g.
+00000B50 | D638 271E 5236 8BF3 4719 05E9 B596 E968 | .8'.R6..G......h
+00000B60 | 0330 BF4C E769 C900 4442 6DAE 8AB4 CF76 | .0.L.i..DBm....v
+00000B70 | 5B7D D4E3 F924 92DF 8671 81E7 195C 6FAC | [}...$...q...\o.
+00000B80 | 2266 6E31 8B31 363D 796A 5D10 9E95 81DF | "fn1.16=yj].....
+00000B90 | 9D55 DDAA 7528 E762 B4A4 C2AA B6DD E992 | .U..u(.b........
+00000BA0 | 2B81 4656 3585 0CB7 6FB3 2050 811A 359B | +.FV5...o. P..5.
+00000BB0 | 296B 7682 739D EB08 07BE 4FBC BE0B 0E1A | )kv.s.....O.....
+00000BC0 | 8923 1C4F 6184 AECC 2C72 E5FE 74F6 AE54 | .#.Oa...,r..t..T
+00000BD0 | 8CCA 7047 7DB5 870A F8F3 640C 558E 118B | ..pG}.....d.U...
+00000BE0 | E63F E130 B05F DD7B 5D4F B9AB BE64 5134 | .?.0._.{]O...dQ4
+00000BF0 | B4E1 950E B33D 472F BBB0 B008 B283 BD15 | .....=G/........
+00000C00 | 1082 F51D B9D7 DF35 FA50 32AF 01D8 20D0 | .......5.P2... .
+00000C10 | 3875 CDF9 275E D1A0 2C77 E742 41D4 875C | 8u..'^..,w.BA..\
+00000C20 | AAD3 865E E3D3 0650 D185 EC50 6520 E324 | ...^...P...Pe .$
+00000C30 | 2B9F 822B A15D 1EAF A67F B839 B007 C3D6 | +..+.].....9....
+00000C40 | 559E 8D75 5715 E8A1 9007 FAEF 7AAF B13F | U..uW.......z..?
+00000C50 | 73B3 0FF8 9109 9013 FB52 543A DEC5 BBD0 | s........RT:....
+00000C60 | 3F08 DEB8 E8D8 ECD6 1EEB FA87 EB0F BCF2 | ?...............
+00000C70 | C41A AB28 B63A F584 E3FC 3647 9914 9E99 | ...(.:....6G....
+00000C80 | 591A 897B F8B2 DA5D D6FC 6D04 F1D3 3597 | Y..{...]..m...5.
+00000C90 | C243 9004 4FED 1F5E 42EF DF3F 0F68 EF32 | .C..O..^B..?.h.2
+00000CA0 | 3EFD 328C 4D0B C728 2DC1 AF83 4623 9F02 | >.2.M..(-...F#..
+00000CB0 | E511 47C8 AF5F ECF5 62D9 98E9 446B 8544 | ..G.._..b...Dk.D
+00000CC0 | 3F2F F70F 2CEF 682B B6BA 1B45 0380 D816 | ?/..,.h+...E....
+00000CD0 | 37BF DEB0 60DB 32CD A4D1 8C09 F32D 8A8A | 7...`.2......-..
+00000CE0 | 51F1 8519 F1F7 6A3B 709A 701D 4109 799F | Q.....j;p.p.A.y.
+00000CF0 | 716D 1CC7 6943 6EB4 1B4C 4B8F 242B 94D5 | qm..iCn..LK.$+..
+00000D00 | 5D96 F9F5 7121 7601 35C9 0FDC 7E50 5A80 | ]...q!v.5...~PZ.
+00000D10 | 2F46 A1CF FEF4 9D38 1858 FB52 583A AE7B | /F.....8.X.RX:.{
+00000D20 | EE02 D0DD 1BC8 538D 6A1D DD91 D17F 4DEC | ......S.j.....M.
+00000D30 | 5821 BAE8 EAF1 2122 2D63 E6A3 DC55 7529 | X!....!"-c...Uu)
+00000D40 | 5AA9 5C09 6CAD 5E29 3B7A 56E0 71D8 B22C | Z.\.l.^);zV.q..,
+00000D50 | 7290 541C BA97 016D 436E DC7B 839A 611E | r.T....mCn.{..a.
+00000D60 | EB07 BEF5 C66F 2746 79C0 9D05 4D17 D683 | .....o'Fy...M...
+00000D70 | 0B7F 3ECC FC4E CA88 AEDC 9CE3 2EB3 CADA | ..>..N..........
+00000D80 | 6B16 32E1 43DC B30C 522E 2537 6F10 AF13 | k.2.C...R.%7o...
+00000D90 | 2B60 7ABE CF0E 3567 81DF 99C3 C484 E529 | +`z...5g.......)
+00000DA0 | 6D7C 0225 048D 592E 4BBE 0890 54EC 3699 | m|.%..Y.K...T.6.
+00000DB0 | 3FB4 80CD BDCE FC83 5B5C DBE0 A287 4C79 | ?.......[\....Ly
+00000DC0 | 3C84 E0B8 6507 A4EF 6FAE 92E0 FFCD 90D0 | <...e...o.......
+00000DD0 | 678F 9418 EDF9 694A 4B81 6636 B14D 382B | g.....iJK.f6.M8+
+00000DE0 | F7D3 B347 E6BF B940 6610 28E5 8225 63F8 | ...G...@f.(..%c.
+00000DF0 | BC37 1B34 5BBF 553B 102A F2B0 B9F9 6FF3 | .7.4[.U;.*....o.
+00000E00 | 266F 6DA6 62EA 5CE8 728E 457E 6091 34AB | &om.b.\.r.E~`.4.
+00000E10 | CA4A 983C 6C8A FB04 81D9 4E6B B1A1 9902 | .J.<l.....Nk....
+00000E20 | 4A1B 327E 1D04 6D37 5536 EC60 2F80 259A | J.2~..m7U6.`/.%.
+00000E30 | 24CD E972 C28A 5177 501A 8625 815B 1EDF | $..r..QwP..%.[..
+00000E40 | A588 17AA CE8D F126 66B3 87B2 A926 FC0E | .......&f....&..
+00000E50 | EACA DCF6 C7D3 BA46 7ACA 3F8D 842A 2FD6 | .......Fz.?..*/.
+00000E60 | 3F7E 3F68 17BA 196A 104A 91A2 B2C4 8B66 | ?~?h...j.J.....f
+00000E70 | D0FF 2E51 7728 C074 9B99 B74E 7DC2 3BC6 | ...Qw(.t...N}.;.
+00000E80 | A8A7 8258 C635 50C6 1826 296C BD2B 760A | ...X.5P..&)l.+v.
+00000E90 | D260 3D12 C0B9 E495 2945 9EA8 F080 6C7E | .`=.....)E....l~
+00000EA0 | 1F55 E9A7 9D                            | .U...
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3838 2E32 3038 2E32 3330 2E31 393A 3232 | 88.208.230.19:22
+00000020 | 303B 7373 6869 643D 4531 4636 4543 3430 | 0;sshid=E1F6EC40
+00000030 | 4636 3135 4443 3736 3643 4232 3737 4439 | F615DC766CB277D9
+00000040 | 3944 3032 4245 3632 3B6F 6266 736B 6579 | 9D02BE62;obfskey
+00000050 | 3D30 6465 6264 3864 6362 3132 3835 3937 | =0debd8dcb128597
+00000060 | 3466 3232 3736 6537 6365 3564 3261 3062 | 4f2276e7ce5d2a0b
+00000070 | 6536 3335 3033 3831 3663 6538 3962 3836 | e63503816ce89b86
+00000080 | 3361 6438 3564 6263 6464 6435 3736 3639 | 3ad85dbcddd57669
+00000090 | 663B 6668 6F73 746E 616D 653D 7365 6374 | f;fhostname=sect
+000000A0 | 696D 652D 6578 706C 6963 6B74 696F 6E2D | ime-explicktion-
+000000B0 | 6164 6472 6572 2E70 7369 7068 6F6E 332E | addrer.psiphon3.
+000000C0 | 6E65 743B 6370 7562 6B65 793D 4847 4833 | net;cpubkey=HGH3
+000000D0 | 6A71 6366 594F 5639 4970 3836 517A 4338 | jqcfYOV9Ip86QzC8
+000000E0 | 7750 3151 4548 5142 4277 2F63 4C38 782B | wP1QEHQBBw/cL8x+
+000000F0 | 4B79 2F2F 466A 735C 3D00 6364 6E6A 732E | Ky//Fjs\=.cdnjs.
+00000100 | 636C 6F75 6466 6C61 7265 2E63 6F6D 00   | cloudflare.com.
+00000010 | 3132 382E 3139 392E 3232 342E 3137 3A35 | 128.199.224.17:5
+00000020 | 3838 3B73 7368 6964 3D30 3238 3732 3743 | 88;sshid=028727C
+00000030 | 4234 3343 3044 4245 3244 4633 3038 4442 | B43C0DBE2DF308DB
+00000040 | 3944 3631 4146 4242 383B 6F62 6673 6B65 | 9D61AFBB8;obfske
+00000050 | 793D 3261 6632 3764 3931 3039 6163 6434 | y=2af27d9109acd4
+00000060 | 6233 6134 6165 3632 3765 3662 6331 3361 | b3a4ae627e6bc13a
+00000070 | 3630 6537 3537 6330 3564 6334 6131 3665 | 60e757c05dc4a16e
+00000080 | 3939 6361 3130 6463 6365 3635 6161 6531 | 99ca10dcce65aae1
+00000090 | 6365 3B66 686F 7374 6E61 6D65 3D7A 696E | ce;fhostname=zin
+000000A0 | 696E 6B2D 6B65 7962 6F61 642D 7079 7465 | ink-keyboad-pyte
+000000B0 | 2E70 7369 7068 6F6E 332E 6E65 743B 6370 | .psiphon3.net;cp
+000000C0 | 7562 6B65 793D 392B 632B 3064 6C56 3643 | ubkey=9+c+0dlV6C
+000000D0 | 4978 3279 5330 5572 6C44 4434 7467 3733 | Ix2yS0UrlDD4tg73
+000000E0 | 7949 4D78 3353 384C 6A37 384F 6B51 7858 | yIMx3S8Lj78OkQxX
+000000F0 | 555C 3D00 6364 6E6A 732E 636C 6F75 6466 | U\=.cdnjs.cloudf
+00000100 | 6C61 7265 2E63 6F6D 00                  | lare.com.
+00000010 | 3132 382E 3139 392E 3133 332E 3234 373A | 128.199.133.247:
+00000020 | 3836 373B 7373 6869 643D 3346 4441 3146 | 867;sshid=3FDA1F
+00000030 | 4242 3832 3738 3534 3345 4232 4539 4641 | BB8278543EB2E9FA
+00000040 | 4436 4244 3132 3437 3245 3B6F 6266 736B | D6BD12472E;obfsk
+00000050 | 6579 3D37 6564 3863 3633 6362 6537 3335 | ey=7ed8c63cbe735
+00000060 | 3163 6437 6566 6538 6431 6135 3939 6361 | 1cd7efe8d1a599ca
+00000070 | 6634 3732 3361 3263 3737 3432 6561 3262 | f4723a2c7742ea2b
+00000080 | 3734 3564 6532 3434 3031 6138 3730 6437 | 745de24401a870d7
+00000090 | 6663 383B 6668 6F73 746E 616D 653D 6170 | fc8;fhostname=ap
+000000A0 | 706C 6F72 792D 616C 6C6F 6375 7263 652D | plory-allocurce-
+000000B0 | 666F 7273 6F6E 6963 2E70 7369 7068 6F6E | forsonic.psiphon
+000000C0 | 332E 636F 6D3B 6370 7562 6B65 793D 6359 | 3.com;cpubkey=cY
+000000D0 | 3950 4F75 514D 3136 476F 6249 6244 4248 | 9POuQM16GobIbDBH
+000000E0 | 394B 6645 705A 7752 426B 7650 326C 5953 | 9KfEpZwRBkvP2lYS
+000000F0 | 6E30 7173 6B6E 7457 345C 3D00 6132 3438 | n0qskntW4\=.a248
+00000100 | 2E65 2E61 6B61 6D61 692E 6E65 7400      | .e.akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1112:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3732 2E31 342E 3137 362E 3731 3A32 3830 | 72.14.176.71:280
+00000020 | 3B73 7368 6964 3D36 4346 4532 3143 3844 | ;sshid=6CFE21C8D
+00000030 | 3138 3632 4530 3036 4132 3239 4536 4343 | 1862E006A229E6CC
+00000040 | 4531 4435 4131 413B 6F62 6673 6B65 793D | E1D5A1A;obfskey=
+00000050 | 6163 3462 3132 3361 3363 3738 6161 6664 | ac4b123a3c78aafd
+00000060 | 6237 6535 3336 3736 3735 6437 6435 3637 | b7e5367675d7d567
+00000070 | 3362 3639 3531 6466 3330 6132 3633 3638 | 3b6951df30a26368
+00000080 | 6365 6462 3133 6533 3766 6433 3630 3761 | cedb13e37fd3607a
+00000090 | 3B66 686F 7374 6E61 6D65 3D6D 6F64 6961 | ;fhostname=modia
+000000A0 | 2D72 6561 6379 2D64 6F63 756D 6564 6961 | -reacy-documedia
+000000B0 | 2E70 7369 7068 6F6E 332E 6E65 743B 6370 | .psiphon3.net;cp
+000000C0 | 7562 6B65 793D 4E44 4F70 6251 4732 2B35 | ubkey=NDOpbQG2+5
+000000D0 | 507A 7933 5579 4F55 3167 7138 6941 5658 | Pzy3UyOU1gq8iAVX
+000000E0 | 2F77 762F 4B50 5178 5846 675A 4538 4952 | /wv/KPQxXFgZE8IR
+000000F0 | 515C 3D00 6364 6E6A 732E 636C 6F75 6466 | Q\=.cdnjs.cloudf
+00000100 | 6C61 7265 2E63 6F6D 00                  | lare.com.
+00000010 | 3132 382E 3139 392E 3133 332E 3234 373A | 128.199.133.247:
+00000020 | 3836 373B 7373 6869 643D 3346 4441 3146 | 867;sshid=3FDA1F
+00000030 | 4242 3832 3738 3534 3345 4232 4539 4641 | BB8278543EB2E9FA
+00000040 | 4436 4244 3132 3437 3245 3B6F 6266 736B | D6BD12472E;obfsk
+00000050 | 6579 3D37 6564 3863 3633 6362 6537 3335 | ey=7ed8c63cbe735
+00000060 | 3163 6437 6566 6538 6431 6135 3939 6361 | 1cd7efe8d1a599ca
+00000070 | 6634 3732 3361 3263 3737 3432 6561 3262 | f4723a2c7742ea2b
+00000080 | 3734 3564 6532 3434 3031 6138 3730 6437 | 745de24401a870d7
+00000090 | 6663 383B 6668 6F73 746E 616D 653D 6170 | fc8;fhostname=ap
+000000A0 | 706C 6F72 792D 616C 6C6F 6375 7263 652D | plory-allocurce-
+000000B0 | 666F 7273 6F6E 6963 2E70 7369 7068 6F6E | forsonic.psiphon
+000000C0 | 332E 636F 6D3B 6370 7562 6B65 793D 6359 | 3.com;cpubkey=cY
+000000D0 | 3950 4F75 514D 3136 476F 6249 6244 4248 | 9POuQM16GobIbDBH
+000000E0 | 394B 6645 705A 7752 426B 7650 326C 5953 | 9KfEpZwRBkvP2lYS
+000000F0 | 6E30 7173 6B6E 7457 345C 3D00 6132 3438 | n0qskntW4\=.a248
+00000100 | 2E65 2E61 6B61 6D61 692E 6E65 7400      | .e.akamai.net.
+00000010 | 3838 2E32 3038 2E32 3330 2E31 393A 3232 | 88.208.230.19:22
+00000020 | 303B 7373 6869 643D 4531 4636 4543 3430 | 0;sshid=E1F6EC40
+00000030 | 4636 3135 4443 3736 3643 4232 3737 4439 | F615DC766CB277D9
+00000040 | 3944 3032 4245 3632 3B6F 6266 736B 6579 | 9D02BE62;obfskey
+00000050 | 3D30 6465 6264 3864 6362 3132 3835 3937 | =0debd8dcb128597
+00000060 | 3466 3232 3736 6537 6365 3564 3261 3062 | 4f2276e7ce5d2a0b
+00000070 | 6536 3335 3033 3831 3663 6538 3962 3836 | e63503816ce89b86
+00000080 | 3361 6438 3564 6263 6464 6435 3736 3639 | 3ad85dbcddd57669
+00000090 | 663B 6668 6F73 746E 616D 653D 7365 6374 | f;fhostname=sect
+000000A0 | 696D 652D 6578 706C 6963 6B74 696F 6E2D | ime-explicktion-
+000000B0 | 6164 6472 6572 2E70 7369 7068 6F6E 332E | addrer.psiphon3.
+000000C0 | 6E65 743B 6370 7562 6B65 793D 4847 4833 | net;cpubkey=HGH3
+000000D0 | 6A71 6366 594F 5639 4970 3836 517A 4338 | jqcfYOV9Ip86QzC8
+000000E0 | 7750 3151 4548 5142 4277 2F63 4C38 782B | wP1QEHQBBw/cL8x+
+000000F0 | 4B79 2F2F 466A 735C 3D00 6364 6E6A 732E | Ky//Fjs\=.cdnjs.
+00000100 | 636C 6F75 6466 6C61 7265 2E63 6F6D 00   | cloudflare.com.
+00000010 | 3132 382E 3139 392E 3232 342E 3137 3A35 | 128.199.224.17:5
+00000020 | 3838 3B73 7368 6964 3D30 3238 3732 3743 | 88;sshid=028727C
+00000030 | 4234 3343 3044 4245 3244 4633 3038 4442 | B43C0DBE2DF308DB
+00000040 | 3944 3631 4146 4242 383B 6F62 6673 6B65 | 9D61AFBB8;obfske
+00000050 | 793D 3261 6632 3764 3931 3039 6163 6434 | y=2af27d9109acd4
+00000060 | 6233 6134 6165 3632 3765 3662 6331 3361 | b3a4ae627e6bc13a
+00000070 | 3630 6537 3537 6330 3564 6334 6131 3665 | 60e757c05dc4a16e
+00000080 | 3939 6361 3130 6463 6365 3635 6161 6531 | 99ca10dcce65aae1
+00000090 | 6365 3B66 686F 7374 6E61 6D65 3D7A 696E | ce;fhostname=zin
+000000A0 | 696E 6B2D 6B65 7962 6F61 642D 7079 7465 | ink-keyboad-pyte
+000000C0 | 7562 6B65 793D 392B 632B 3064 6C56 3643 | ubkey=9+c+0dlV6C
+000000D0 | 4978 3279 5330 5572 6C44 4434 7467 3733 | Ix2yS0UrlDD4tg73
+000000E0 | 7949 4D78 3353 384C 6A37 384F 6B51 7858 | yIMx3S8Lj78OkQxX
+000000F0 | 555C 3D00 6364 6E6A 732E 636C 6F75 6466 | U\=.cdnjs.cloudf
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 511:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3838 2E32 3038 2E32 3330 2E31 393A 3232 | 88.208.230.19:22
+00000020 | 303B 7373 6869 643D 4531 4636 4543 3430 | 0;sshid=E1F6EC40
+00000030 | 4636 3135 4443 3736 3643 4232 3737 4439 | F615DC766CB277D9
+00000040 | 3944 3032 4245 3632 3B6F 6266 736B 6579 | 9D02BE62;obfskey
+00000050 | 3D30 6465 6264 3864 6362 3132 3835 3937 | =0debd8dcb128597
+00000060 | 3466 3232 3736 6537 6365 3564 3261 3062 | 4f2276e7ce5d2a0b
+00000070 | 6536 3335 3033 3831 3663 6538 3962 3836 | e63503816ce89b86
+00000080 | 3361 6438 3564 6263 6464 6435 3736 3639 | 3ad85dbcddd57669
+00000090 | 663B 6668 6F73 746E 616D 653D 7365 6374 | f;fhostname=sect
+000000A0 | 696D 652D 6578 706C 6963 6B74 696F 6E2D | ime-explicktion-
+000000B0 | 6164 6472 6572 2E70 7369 7068 6F6E 332E | addrer.psiphon3.
+000000C0 | 6E65 743B 6370 7562 6B65 793D 4847 4833 | net;cpubkey=HGH3
+000000D0 | 6A71 6366 594F 5639 4970 3836 517A 4338 | jqcfYOV9Ip86QzC8
+000000E0 | 7750 3151 4548 5142 4277 2F63 4C38 782B | wP1QEHQBBw/cL8x+
+000000F0 | 4B79 2F2F 466A 735C 3D00 6364 6E6A 732E | Ky//Fjs\=.cdnjs.
+00000100 | 636C 6F75 6466 6C61 7265 2E63 6F6D 00   | cloudflare.com.
+00000010 | 3132 382E 3139 392E 3133 332E 3234 373A | 128.199.133.247:
+00000020 | 3836 373B 7373 6869 643D 3346 4441 3146 | 867;sshid=3FDA1F
+00000030 | 4242 3832 3738 3534 3345 4232 4539 4641 | BB8278543EB2E9FA
+00000040 | 4436 4244 3132 3437 3245 3B6F 6266 736B | D6BD12472E;obfsk
+00000050 | 6579 3D37 6564 3863 3633 6362 6537 3335 | ey=7ed8c63cbe735
+00000060 | 3163 6437 6566 6538 6431 6135 3939 6361 | 1cd7efe8d1a599ca
+00000070 | 6634 3732 3361 3263 3737 3432 6561 3262 | f4723a2c7742ea2b
+00000080 | 3734 3564 6532 3434 3031 6138 3730 6437 | 745de24401a870d7
+00000090 | 6663 383B 6668 6F73 746E 616D 653D 6170 | fc8;fhostname=ap
+000000A0 | 706C 6F72 792D 616C 6C6F 6375 7263 652D | plory-allocurce-
+000000B0 | 666F 7273 6F6E 6963 2E70 7369 7068 6F6E | forsonic.psiphon
+000000C0 | 332E 636F 6D3B 6370 7562 6B65 793D 6359 | 3.com;cpubkey=cY
+000000D0 | 3950 4F75 514D 3136 476F 6249 6244 4248 | 9POuQM16GobIbDBH
+000000E0 | 394B 6645 705A 7752 426B 7650 326C 5953 | 9KfEpZwRBkvP2lYS
+000000F0 | 6E30 7173 6B6E 7457 345C 3D00 6132 3438 | n0qskntW4\=.a248
+00000100 | 2E65 2E61 6B61 6D61 692E 6E65 7400      | .e.akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 867:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3134 362E 3138 352E 3138 382E 3134 363A | 146.185.188.146:
+00000020 | 3539 313B 7373 6869 643D 3644 3543 3943 | 591;sshid=6D5C9C
+00000030 | 4134 3231 4246 4146 3739 4637 4644 3539 | A421BFAF79F7FD59
+00000040 | 4634 4431 3539 3042 4634 3B6F 6266 736B | F4D1590BF4;obfsk
+00000050 | 6579 3D63 6564 6237 3233 3533 3563 3436 | ey=cedb723535c46
+00000060 | 3761 3764 3266 3532 6134 6261 6530 6166 | 7a7d2f52a4bae0af
+00000070 | 3362 3365 6336 6430 3135 3565 3363 3061 | 3b3ec6d0155e3c0a
+00000080 | 6461 3837 3163 3338 6436 6436 6439 3066 | da871c38d6d6d90f
+00000090 | 6237 393B 6668 6F73 746E 616D 653D 636F | b79;fhostname=co
+000000A0 | 6D70 7574 656D 2D68 6172 6577 6172 652D | mputem-hareware-
+000000B0 | 6B65 726E 6574 2E70 7369 7068 6F6E 332E | kernet.psiphon3.
+000000C0 | 636F 6D3B 6370 7562 6B65 793D 5378 332F | com;cpubkey=Sx3/
+000000D0 | 5A58 4957 4F75 4231 6547 3778 7446 7737 | ZXIWOuB1eG7xtFw7
+000000E0 | 7537 4348 4A55 7434 5854 7A65 6B54 4657 | u7CHJUt4XTzekTFW
+000000F0 | 6A7A 726A 5545 415C 3D00 6132 3438 2E65 | jzrjUEA\=.a248.e
+00000100 | 2E61 6B61 6D61 692E 6E65 7400           | .akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 280:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3134 362E 3138 352E 3138 382E 3134 363A | 146.185.188.146:
+00000020 | 3539 313B 7373 6869 643D 3644 3543 3943 | 591;sshid=6D5C9C
+00000030 | 4134 3231 4246 4146 3739 4637 4644 3539 | A421BFAF79F7FD59
+00000040 | 4634 4431 3539 3042 4634 3B6F 6266 736B | F4D1590BF4;obfsk
+00000050 | 6579 3D63 6564 6237 3233 3533 3563 3436 | ey=cedb723535c46
+00000060 | 3761 3764 3266 3532 6134 6261 6530 6166 | 7a7d2f52a4bae0af
+00000070 | 3362 3365 6336 6430 3135 3565 3363 3061 | 3b3ec6d0155e3c0a
+00000080 | 6461 3837 3163 3338 6436 6436 6439 3066 | da871c38d6d6d90f
+00000090 | 6237 393B 6668 6F73 746E 616D 653D 636F | b79;fhostname=co
+000000A0 | 6D70 7574 656D 2D68 6172 6577 6172 652D | mputem-hareware-
+000000B0 | 6B65 726E 6574 2E70 7369 7068 6F6E 332E | kernet.psiphon3.
+000000C0 | 636F 6D3B 6370 7562 6B65 793D 5378 332F | com;cpubkey=Sx3/
+000000D0 | 5A58 4957 4F75 4231 6547 3778 7446 7737 | ZXIWOuB1eG7xtFw7
+000000E0 | 7537 4348 4A55 7434 5854 7A65 6B54 4657 | u7CHJUt4XTzekTFW
+000000F0 | 6A7A 726A 5545 415C 3D00 6132 3438 2E65 | jzrjUEA\=.a248.e
+00000100 | 2E61 6B61 6D61 692E 6E65 7400           | .akamai.net.
+00000010 | 3132 382E 3139 392E 3133 332E 3234 373A | 128.199.133.247:
+00000020 | 3836 373B 7373 6869 643D 3346 4441 3146 | 867;sshid=3FDA1F
+00000030 | 4242 3832 3738 3534 3345 4232 4539 4641 | BB8278543EB2E9FA
+00000040 | 4436 4244 3132 3437 3245 3B6F 6266 736B | D6BD12472E;obfsk
+00000050 | 6579 3D37 6564 3863 3633 6362 6537 3335 | ey=7ed8c63cbe735
+00000060 | 3163 6437 6566 6538 6431 6135 3939 6361 | 1cd7efe8d1a599ca
+00000070 | 6634 3732 3361 3263 3737 3432 6561 3262 | f4723a2c7742ea2b
+00000080 | 3734 3564 6532 3434 3031 6138 3730 6437 | 745de24401a870d7
+00000090 | 6663 383B 6668 6F73 746E 616D 653D 6170 | fc8;fhostname=ap
+000000A0 | 706C 6F72 792D 616C 6C6F 6375 7263 652D | plory-allocurce-
+000000B0 | 666F 7273 6F6E 6963 2E70 7369 7068 6F6E | forsonic.psiphon
+000000C0 | 332E 636F 6D3B 6370 7562 6B65 793D 6359 | 3.com;cpubkey=cY
+000000D0 | 3950 4F75 514D 3136 476F 6249 6244 4248 | 9POuQM16GobIbDBH
+000000E0 | 394B 6645 705A 7752 426B 7650 326C 5953 | 9KfEpZwRBkvP2lYS
+000000F0 | 6E30 7173 6B6E 7457 345C 3D00 6132 3438 | n0qskntW4\=.a248
+00000100 | 2E65 2E61 6B61 6D61 692E 6E65 7400      | .e.akamai.net.
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 1104:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0401 01BB 0000 0001 7073 6572 7665 723D | ........pserver=
+00000010 | 3132 382E 3139 392E 3232 342E 3137 3A35 | 128.199.224.17:5
+00000020 | 3838 3B73 7368 6964 3D30 3238 3732 3743 | 88;sshid=028727C
+00000030 | 4234 3343 3044 4245 3244 4633 3038 4442 | B43C0DBE2DF308DB
+00000040 | 3944 3631 4146 4242 383B 6F62 6673 6B65 | 9D61AFBB8;obfske
+00000050 | 793D 3261 6632 3764 3931 3039 6163 6434 | y=2af27d9109acd4
+00000060 | 6233 6134 6165 3632 3765 3662 6331 3361 | b3a4ae627e6bc13a
+00000070 | 3630 6537 3537 6330 3564 6334 6131 3665 | 60e757c05dc4a16e
+00000080 | 3939 6361 3130 6463 6365 3635 6161 6531 | 99ca10dcce65aae1
+00000090 | 6365 3B66 686F 7374 6E61 6D65 3D7A 696E | ce;fhostname=zin
+000000A0 | 696E 6B2D 6B65 7962 6F61 642D 7079 7465 | ink-keyboad-pyte
+000000B0 | 2E70 7369 7068 6F6E 332E 6E65 743B 6370 | .psiphon3.net;cp
+000000C0 | 7562 6B65 793D 392B 632B 3064 6C56 3643 | ubkey=9+c+0dlV6C
+000000D0 | 4978 3279 5330 5572 6C44 4434 7467 3733 | Ix2yS0UrlDD4tg73
+000000E0 | 7949 4D78 3353 384C 6A37 384F 6B51 7858 | yIMx3S8Lj78OkQxX
+000000F0 | 555C 3D00 6364 6E6A 732E 636C 6F75 6466 | U\=.cdnjs.cloudf
+00000100 | 6C61 7265 2E63 6F6D 00                  | lare.com.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

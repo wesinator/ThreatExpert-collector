@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, BackDoor-EMA.gen.e, Troj/Zegost-AM, Backdoor:Win32/Zegost.AD, Backdoor.Win32.Zegost, Troj/FakeJob-A">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, BackDoor-EMA.gen.e, Troj/Zegost-AM, Backdoor:Win32/Zegost.AD..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 November 2015, 09:50:49</li>
+<li>Processing time: 5 min 50 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE30A6A423ED21D7106FD5433CF72C023</li>
+<li>File SHA-1: 0xABEAE0FCC61080FBED7CD23684BF66D28AE33B86</li>
+<li>Filesize: 187,392 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>BackDoor-EMA.gen.e [McAfee]</li>
+<li>Troj/Zegost-AM [Sophos]</li>
+<li>Backdoor:Win32/Zegost.AD [Microsoft]</li>
+<li>Backdoor.Win32.Zegost [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\00587F8E
+</td>
+<td class="cell_1">7 bytes</td>
+<td class="cell_1">MD5: 0x7A1920D61156ABC05A60135AEFE8BC67<br/>SHA-1: 0x808D7DCA8A74D84AF27A2D6602C3D786DE45FE1E</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Windir%\Tasks\At1.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x8F91B881E6B5132C596965C24B9BCBA3<br/>SHA-1: 0x96E51CB48A6D0B99EFDD9E4E6AD54D687049AFE5</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%Windir%\Tasks\At10.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xD3B92BECBA0A002F9493063E39B1F956<br/>SHA-1: 0x930FF69DD15F9CB6A8D14B00E3C7801316BC16FD</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%Windir%\Tasks\At11.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x8C253094354DADBE032739997E1885C8<br/>SHA-1: 0xC11EE5F19015CF8801BB1DCC4D984A0429FE9207</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Windir%\Tasks\At12.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xB8AE9278FBDECB1A700F0400142713B0<br/>SHA-1: 0xF42DCA43BF0E5A87FC651108367D1A25F2A9001E</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%Windir%\Tasks\At13.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xFB98B9C3E71CC0F95061BF2B427FA8BF<br/>SHA-1: 0x1C13A6EAF7F06DA3721B1F29ABD806E5029F62F7</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%Windir%\Tasks\At14.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xFFC7658C59CF5AC4DF00D5491B84263C<br/>SHA-1: 0x02C7701E763CD18F8A68CE76B75D914E9167D750</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%Windir%\Tasks\At15.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xA55737FA732243768B0C70AA9483B069<br/>SHA-1: 0x67EE1574DA53BF6033E49BB330212C1E525BCB61</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%Windir%\Tasks\At16.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xDDB571FD0F4A4049507D01505BFA8C3A<br/>SHA-1: 0x080FF7F84132759CD860B43BB4836AD16339D0BB</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%Windir%\Tasks\At17.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x6420C3652A4F3E1CDAC05EC0D2D3A58B<br/>SHA-1: 0xED5CCD03E52BA75AF6481870FFB7803C25A86D84</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%Windir%\Tasks\At18.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x2D448949D167E7176E297D2E2F595C73<br/>SHA-1: 0x9CAD9E2AB902BA0423E5107BC36DCEB742ED5245</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%Windir%\Tasks\At19.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xEE522EB463E7F1F5406DE5AEC09D5AAD<br/>SHA-1: 0x91FA9165487AAFCF2A6D7ED4488AFCFE4A524EA8</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%Windir%\Tasks\At2.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xBCC1F4405E3B39F9FF4852767BA5F223<br/>SHA-1: 0x3D3BAC97EDFE4E95525FCD76FA308AC08FC932DA</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%Windir%\Tasks\At20.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xA19CC2B01A7D062859333F228D8465DE<br/>SHA-1: 0x2054EC572A39E951EB5C9E9A44F977E51456A370</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%Windir%\Tasks\At21.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xB853D636ED31CED2303249DC63A70A2B<br/>SHA-1: 0x814B96EC888BC894F2B3FDCB85147BA64EBF1B31</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%Windir%\Tasks\At22.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x22C4A767870F0AB6DECEB7190E9798B2<br/>SHA-1: 0x627ED3305E7B5B492E9A87B02CA3366C4809BBA0</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%Windir%\Tasks\At23.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xF4EEAF7CD274D38B1B970FBC53F07AB0<br/>SHA-1: 0x4904EC27679EBADC585A81CA001DE8AB685E9DBD</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%Windir%\Tasks\At24.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xEC1E04423B5D6096CA6A464C54AD0159<br/>SHA-1: 0xE926F224FBBA430D1E81921FECBEB0D491835FB7</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%Windir%\Tasks\At3.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xA248A8193C322F1D703131AA3CE558BC<br/>SHA-1: 0x555329E462AEE60D55A729B25EF252238AE83CEA</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%Windir%\Tasks\At4.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x8B9AD02A08BFDAD91E15E4A486D58675<br/>SHA-1: 0xA841BC404EDB64CB3BEEB4CDE8CE6E99AA27E11F</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+%Windir%\Tasks\At5.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x0F0A36484DA4B74A55CFEF2B86998FDC<br/>SHA-1: 0x07E2966F06EE6C5E8A365EF7D4954DBB9741A808</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+%Windir%\Tasks\At6.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x2C2D932F5FDCEE63B7D9505135AA9869<br/>SHA-1: 0x56BD8F6C0D90D501F6DD03434B37080747BD64CD</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+%Windir%\Tasks\At7.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0xF3F40565128522CFDE53CF1F9E59EE58<br/>SHA-1: 0x13BF99AB53E72D950B6B0F60F9BA6DCAF29B30D6</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">24</td>
+<td class="cell_1">
+%Windir%\Tasks\At8.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x24E67E125F284C1C4572228B668C109F<br/>SHA-1: 0x1BD140BAAC1D6E0F5602ED3671A78E343C372EE5</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">25</td>
+<td class="cell_1">
+%Windir%\Tasks\At9.job
+</td>
+<td class="cell_1">360 bytes</td>
+<td class="cell_1">MD5: 0x2455D1EB3FEBC74E192E0E508306AE60<br/>SHA-1: 0xEE8B6EF4D9D7605E3B4BE54C823F47C13FF3CD2B</td>
+<td class="cell_2">Troj/FakeJob-A [Sophos]</td>
+</tr>
+<tr><td class="cell_1">26</td>
+<td class="cell_1">
+%Windir%\XXXXXX00587F8E\<a href="http://www.threatexpert.com/files/svchsot.exe.html" target="_blank">svchsot.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">187,392 bytes</td>
+<td class="cell_1">MD5: 0xE30A6A423ED21D7106FD5433CF72C023<br/>SHA-1: 0xABEAE0FCC61080FBED7CD23684BF66D28AE33B86</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>BackDoor-EMA.gen.e [McAfee]<br/>Troj/Zegost-AM [Sophos]<br/>Backdoor:Win32/Zegost.AD [Microsoft]<br/>Backdoor.Win32.Zegost [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Windir%\XXXXXX00587F8E</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">svchso</td><td class="cell_2">200,704 bytes</td></tr>
+<tr><td class="cell_1">svchso</td><td class="cell_2">200,704 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>XXXXXX00587F8E = "%Windir%\XXXXXX00587F8E\svchsot.exe"</li>
+</ul>
+<br/>
+<em>so that 00587F8E runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>AAAAAA+gCmpr309gDvvf0C86mzrrWwsZ8=</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>mc99.wicp.net</li>
+<li>asdw5481916.oicp.net</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">mc99.wicp.net<td class="cell_2">41632</td><tr>
+<tr><td class="cell_1">asdw5481916.oicp.net<td class="cell_2">56478</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 41632:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74B9 0000 0018 0100 0078 9C4B | Gh0st........x.K
+00000010 | 8B7A C830 8781 8181 1588 1981 5883 8B81 | .z.0........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 14FE 008A 3DF8 2EC2 9001 A43F 00F5 | .1....=......?..
+00000040 | 3033 40D4 81F4 B001 B100 14A3 0005 2886 | 03@...........(.
+00000050 | AA7B 09D4 9406 D425 C360 01D6 0BB2 F702 | .{.....%.`......
+00000060 | 100B 8A22 B430 8255 42CC 6660 6464 D8CE | ...".0.UB.f`dd..
+00000070 | 0DD1 5B0F A49C F373 0B4A 4B52 8BFC 1273 | ..[....s.JKR...s
+00000080 | 53D1 AD82 0190 1BFE 03B1 919E 0158 9F10 | S............X..
+00000090 | 1077 0019 2C50 3FF2 43D5 B9A4 A625 96E6 | .w..,P?.C....%..
+000000A0 | 9480 D580 9C58 F1BC 35EA D1F7 5360 CB6F | .....X..5...S`.o
+000000B0 | 2475 3200 00B8 D222 C1                  | $u2....".
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 56478:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4768 3073 74BB 0000 0018 0100 0078 9C4B | Gh0st........x.K
+00000010 | 8B7A C830 8781 8181 1588 1981 5883 8B81 | .z.0........X...
+00000020 | 8109 4807 A716 9565 26A7 2A04 2426 672B | ..H....e&.*.$&g+
+00000030 | 1831 14FE 008A 3DF8 2EC2 9001 A43F 00F5 | .1....=......?..
+00000040 | 3033 40D4 81F4 B001 B100 14A3 0005 2886 | 03@...........(.
+00000050 | AA7B 09D4 9406 D425 C360 01D6 0BB2 F702 | .{.....%.`......
+00000060 | 10BF 9342 6861 04AB 8498 CDC0 C8C8 B09D | ...Bha..........
+00000070 | 1BA2 B71E 4839 E7E7 1694 96A4 16F9 25E6 | ....H9........%.
+00000080 | A6A2 5B85 0CFE 03B1 919E 0158 9F10 101B | ..[........X....
+00000090 | 809C B19F 8961 8615 0303 3F54 8D4B 6A5A | .....a....?T.KjZ
+000000A0 | 6269 4E09 580D C889 15CF 5BA3 1E7D 3F05 | biN.X.....[..}?.
+000000B0 | B67C 4569 2703 0070 1924 C7             | .|Ei'..p.$.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

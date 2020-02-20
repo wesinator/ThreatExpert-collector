@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Spakrab!gen1, Backdoor.Win32.Lavandos.a, Generic Dropper.ul, Troj/Drpr-H, TrojanDropper:Win32/Vidro.C, Trojan-Dropper.Win32.Vidro, Dropper/Vidro.53760">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Spakrab!gen1, Backdoor.Win32.Lavandos.a, Generic Dropper.ul..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 March 2016, 19:17:13</li>
+<li>Processing time: 5 min 21 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xC2D995AF60E24426F4188FB82474278C</li>
+<li>File SHA-1: 0xF1A639AED34422CF264266B3F8DF5A9A4F76D953</li>
+<li>Filesize: 85,504 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor.Spakrab!gen1 [Symantec]</li>
+<li>Backdoor.Win32.Lavandos.a [Kaspersky Lab]</li>
+<li>Generic Dropper.ul [McAfee]</li>
+<li>Troj/Drpr-H [Sophos]</li>
+<li>TrojanDropper:Win32/Vidro.C [Microsoft]</li>
+<li>Trojan-Dropper.Win32.Vidro [Ikarus]</li>
+<li>Dropper/Vidro.53760 [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">102,400 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Global\1216985959</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #1]</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>192.5.5.241</li>
+<li>www.bbc.co.uk</li>
+<li>tghpdzek.dyndns.org</li>
+<li>wlnjprugbmmy.com</li>
+<li>ogtdkukcgqw.net</li>
+<li>hlzxwnzym.dyndns.org</li>
+<li>zheriqptsrqw.com</li>
+<li>cmuluifphv.net</li>
+<li>vhafgbflni.dyndns.org</li>
+<li>nmgzsev.com</li>
+<li>ghmtoxkcyzo.net</li>
+<li>imrnazayen.dyndns.org</li>
+<li>bixhmsqu.com</li>
+<li>undlylqqpecb.net</li>
+<li>mijfkoglv.dyndns.org</li>
+<li>pnozwgvha.com</li>
+<li>hiutsjltgjqp.net</li>
+<li>anaoecbpmx.dyndns.org</li>
+<li>tjgiqvbk.com</li>
+<li>volccxq.net</li>
+<li>ojrwoqgcdbo.dyndns.org</li>
+<li>gohqajwy.com</li>
+<li>zjnkwmmtysjb.net</li>
+<li>cpteiecpewtu.dyndns.org</li>
+<li>ukyyuhblj.com</li>
+<li>npesgar.net</li>
+<li>fkkwsthdub.dyndns.org</li>
+<li>ypqqovxyao.com</li>
+<li>bkvkaomu.net</li>
+<li>tqbemrmqlgl.dyndns.org</li>
+<li>mlhyykcmr.com</li>
+<li>eqnskdshx.net</li>
+<li>hlsmwfitckzu.dyndns.org</li>
+<li>aqygsyxpiy.com</li>
+<li>slebebx.net</li>
+<li>lruvqun.dyndns.org</li>
+<li>nmzpcmdczdx.com</li>
+<li>grfjopty.net</li>
+<li>zmlnaiiuuurh.dyndns.org</li>
+<li>rrrhwlypahl.com</li>
+<li>unxbidylf.net</li>
+<li>mscvuwo.dyndns.org</li>
+<li>fnipgzddrm.com</li>
+<li>ysojsstzwq.net</li>
+<li>anudeuj.dyndns.org</li>
+<li>tszxanjqhre.com</li>
+<li>mofrmgzmnuo.net</li>
+<li>etllyjoi.dyndns.org</li>
+<li>horfkbetywsa.com</li>
+<li>ztwzweupe.net</li>
+<li>somtixulk.dyndns.org</li>
+<li>lusyeqj.com</li>
+<li>dpysqszcve.net</li>
+<li>guemclpy.dyndns.org</li>
+<li>ypjgoef.com</li>
+<li>rupaahvqwju.net</li>
+<li>kpvuwzulb.dyndns.org</li>
+<li>mvboickhhaya.com</li>
+<li>fqgiuvadnnid.net</li>
+<li>xvmcgoqzs.dyndns.org</li>
+<li>qqswsqg.com</li>
+<li>tvyqejfqesm.net</li>
+<li>lqdkamvmjg.dyndns.org</li>
+<li>ewjemfli.com</li>
+<li>wrziyxbuvxbp.net</li>
+<li>zwfckaqpa.dyndns.org</li>
+<li>srkwwtqlg.com</li>
+<li>kwqqiwghlcpd.net</li>
+<li>dswleowdbp.dyndns.org</li>
+<li>fxcfqhmy.com</li>
+<li>ysizckb.net</li>
+<li>rxntodbqskn.dyndns.org</li>
+<li>jstnafrm.com</li>
+<li>mxzhmyhhdlhq.net</li>
+<li>etfbirwdjpri.dyndns.org</li>
+<li>xykvuumzo.com</li>
+<li>qtqzgmc.net</li>
+<li>iywtspcqau.dyndns.org</li>
+<li>ltmneismfh.com</li>
+<li>dyrhqbhi.net</li>
+<li>wuxbmexuryt.dyndns.org</li>
+<li>pzdvywnpwmd.com</li>
+<li>rujpkpnl.net</li>
+<li>kzpjwsdhsdxj.dyndns.org</li>
+<li>cuudilsdxr.com</li>
+<li>vaayenizd.net</li>
+<li>yvgsqgy.dyndns.org</li>
+<li>qammczyqov.com</li>
+<li>jvrgocnm.net</li>
+<li>baxkaudi.dyndns.org</li>
+<li>evdemxtdfak.com</li>
+<li>xbjyiqjzl.net</li>
+<li>pwysujz.dyndns.org</li>
+<li>ibemglyrwfom.com</li>
+<li>kwkgseomci.net</li>
+<li>dbqaehe.dyndns.org</li>
+<li>wwvuqauunkc.com</li>
+<li>ocbomsjqsnm.net</li>
+<li>rxhiyvjl.dyndns.org</li>
+<li>jcnckozhooqo.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">tghpdzek.dyndns.org<td class="cell_2">15000</td><tr>
+</table></p>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://www.bbc.co.uk/index.html</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 15000:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0BAD 4BC5 A3DA 6AF5 B28F 35F3 D254 5E0B | ..K...j...5..T^.
+00000010 | 10DA 8EF9 0BF5 4122 E41D 3917 88C5 E6F6 | ......A"..9.....
+00000020 | 4312 7077 63F0 2275 0B06 2A29 531F F7D8 | C.pwc."u..*)S...
+00000030 | C1B5 E9F5 4DF4 4D21 5DB6 6331 C988 5A26 | ....M.M!].c1..Z&
+00000040 | D7A3 5035 3EF2 56C0 2612 6A5B 254C 7BC7 | ..P5>.V.&.j[%L{.
+00000050 | 439B 67F9 F6AC FF13 26D8 0068 292B 1B7B | C.g.....&..h)+.{
+00000060 | C75F ED00 36E0 06D8 1DC9 E618 94E5 FA02 | ._..6...........
+00000070 | 21AE A209 BC50 2DD1 CBA6 DA2B 263A D81C | !....P-....+&:..
+00000080 | 1348 46D6 49BB 33BC F02D 9D61 9EEA 7589 | .HF.I.3..-.a..u.
+00000090 | 5BED 9926 9DE0 D75B 4C1F F07B BEB5 9109 | [..&...[L..{....
+000000A0 | BB5C 5BB8 7981 DB6C 9F3C 9137 455B EC5C | .\[.y..l.<.7E[.\
+000000B0 | F157 4B4E 9B5C FEB0 A945 4256 F39C 4642 | .WKN.\...EBV..FB
+000000C0 | BF9D 2BA7 C433 FFE8 2AF8 C198 8738 607B | ..+..3..*....8`{
+000000D0 | E3EE BA82 B4C4 A0D2 E216 CFBD C3EF F8C7 | ................
+000000E0 | 1F0A B8A1 2CD1 9F30 9160 2D86 6681 CFE6 | ....,..0.`-.f...
+000000F0 | 31B0 E5C3 EA18 BEC0 F794 99B1 2FAE A597 | 1.........../...
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

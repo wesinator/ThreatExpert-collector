@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Win32.Malware">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Win32.Malware</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 19 November 2015, 06:42:03</li>
+<li>Processing time: 6 min 33 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x99C7AA4A20B6DBA1A1B4F38BACC06C11</li>
+<li>File SHA-1: 0x910E6425E70209E8A52277BC3FFA3C5935044C4C</li>
+<li>Filesize: 1,678,154 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Win32.Malware [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%System%\ScreenCut</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/update.exe.html" target="_blank">update.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\temp\4usoft\<a href="http://www.threatexpert.com/files/update.exe.html" target="_blank">update.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">94,208 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">147,456 bytes</td></tr>
+<tr><td class="cell_1">ClientInstall.exe</td><td class="cell_1">c:\temp\4usoft\ClientInstall.exe</td><td class="cell_2">462,848 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">c4usys.exe</td><td class="cell_1">c:\temp\4usoft\c4usys.exe</td><td class="cell_2">90,112 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1">C4uClt.exe</td><td class="cell_1">c:\temp\4usoft\c4uclt.exe</td><td class="cell_2">659,456 bytes</td></tr>
+</table></p>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">actskin4.ocx</td><td class="cell_1">%System%\actskin4.ocx</td><td class="cell_2">Process name: ClientInstall.exe<br/>Process filename: c:\temp\4usoft\clientinstall.exe<br/>Address space: 0xC10000 - 0xC6C000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">C4uSys</td><td class="cell_1">C4uSys</td><td class="cell_1">"Running"</td><td class="cell_2">c:\temp\4usoft\C4uSys.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\3</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\4</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\5</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\Control</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\MiscStatus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\MiscStatus\1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\Programmable</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\ToolboxBitmap32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\Version</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\ProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\VersionIndependentProgID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\Implemented Categories</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\Implemented Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Component Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\ProxyStubClsid</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\ProxyStubClsid32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\TypeLib</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0\0\win32</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\MiscStatus\1]</li><ul>
+<li>(Default) = "132497"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\5]</li><ul>
+<li>(Default) = "&About..,0,2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\4]</li><ul>
+<li>(Default) = "&Delete Skin,0,2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\3]</li><ul>
+<li>(Default) = "&Edit Skin,0,2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\2]</li><ul>
+<li>(Default) = "&Save Skin,0,2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\verb\1]</li><ul>
+<li>(Default) = "&Load Skin,0,2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "ActiveSkin4.Skin"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx, 206"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\ProgID]</li><ul>
+<li>(Default) = "ActiveSkin4.Skin.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0944D16C-D0F4-4389-982A-A085595A9EB3}]</li><ul>
+<li>(Default) = "ActiveSkin Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3831331E-0D11-4716-871D-68F3B11D23C9}]</li><ul>
+<li>(Default) = "SkinRadio Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DCD2BC5-8489-48AE-891F-90C8B2F19F56}]</li><ul>
+<li>(Default) = "SkinForm Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{52C01A76-19E2-4A50-AE8A-38FFBCCF9182}]</li><ul>
+<li>(Default) = "SkinFrame Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\MiscStatus\1]</li><ul>
+<li>(Default) = "139665"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "ActiveSkin4.SkinLabel"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\Version]</li><ul>
+<li>(Default) = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\ToolboxBitmap32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx, 119"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\ProgID]</li><ul>
+<li>(Default) = "ActiveSkin4.SkinLabel.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\MiscStatus]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5954EA75-9BFA-461A-BD34-CEA3A861FF19}]</li><ul>
+<li>(Default) = "SkinLabel Class"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\VersionIndependentProgID]</li><ul>
+<li>(Default) = "SkinAddOn.SkinPlasma"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\TypeLib]</li><ul>
+<li>(Default) = "{E2A43895-F29A-4FEE-8207-18A29100AAFB}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\ProgID]</li><ul>
+<li>(Default) = "SkinAddOn.SkinPlasma.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{762EC429-1A5D-4AB8-844A-9A552E1241DA}]</li><ul>
+<li>(Default) = "SkinPlasma Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A506EF88-9EFC-4522-BFE1-A8E886A64D80}]</li><ul>
+<li>(Default) = "SkinTab Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5704C37-40DA-49EF-904B-97E5F5F9B1C5}]</li><ul>
+<li>(Default) = "SkinImage Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B87799AF-2CE9-4DAA-93CF-65F002035369}]</li><ul>
+<li>(Default) = "SkinMiscControls Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BBC73C94-337C-43CC-B52C-31EB9FA34013}]</li><ul>
+<li>(Default) = "SkinFreeForm Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{C406F816-318D-4F7D-81CB-BA93CA7B70D5}]</li><ul>
+<li>(Default) = "SkinStatic Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D502D4A3-03E6-4EAE-A14E-69606CA63430}]</li><ul>
+<li>(Default) = "SkinScrollBar Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}\InprocServer32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{EC22770D-3343-4C56-8A8D-3E560475F655}]</li><ul>
+<li>(Default) = "SkinButton Object"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Component Categories\{010E0B1F-1A47-4D07-A83F-43A819E39CCF}]</li><ul>
+<li>409 = "ActiveSkin Objects"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{4921908C-7090-4D37-A6B3-FC447F08378A}]</li><ul>
+<li>(Default) = "ISkinLabel"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020424-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{750FC67C-0311-4391-9864-A2EFED49BD28}]</li><ul>
+<li>(Default) = "ISkin"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\TypeLib]</li><ul>
+<li>(Default) = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}"</li>
+<li>Version = "1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\ProxyStubClsid32]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}\ProxyStubClsid]</li><ul>
+<li>(Default) = "{00020420-0000-0000-C000-000000000046}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\{F3FC950C-7583-4377-BAD8-EFBEAA33273C}]</li><ul>
+<li>(Default) = "_ISkinEvents"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0\0\win32]</li><ul>
+<li>(Default) = "%System%\actskin4.ocx"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0\HELPDIR]</li><ul>
+<li>(Default) = "%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}\1.0]</li><ul>
+<li>(Default) = "ActiveSkin 4.0 Type Library"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.Skin\CurVer]</li><ul>
+<li>(Default) = "ActiveSkin4.Skin.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.Skin\CLSID]</li><ul>
+<li>(Default) = "{0944D16C-D0F4-4389-982A-A085595A9EB3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.Skin]</li><ul>
+<li>(Default) = "ActiveSkin Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.Skin.1\CLSID]</li><ul>
+<li>(Default) = "{0944D16C-D0F4-4389-982A-A085595A9EB3}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.Skin.1]</li><ul>
+<li>(Default) = "ActiveSkin Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.SkinLabel\CurVer]</li><ul>
+<li>(Default) = "ActiveSkin4.SkinLabel.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.SkinLabel\CLSID]</li><ul>
+<li>(Default) = "{5954EA75-9BFA-461A-BD34-CEA3A861FF19}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.SkinLabel]</li><ul>
+<li>(Default) = "SkinLabel Control"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ActiveSkin4.SkinLabel.1\CLSID]</li><ul>
+<li>(Default) = "{5954EA75-9BFA-461A-BD34-CEA3A861FF19}"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\temp\4usoft\Log\update.log</li>
+<li>c:\temp\4usoft\Log\c4uclt.log</li>
+<li>Global\C4uClt_V50_Power_by_FORYOUSOFT</li>
+<li>oleacc-msaa-loaded</li>
+<li>c:\temp\4usoft\Log\ClientInstall.log</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>192.168.1.169</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>c:\temp\4usoft\ImHook.dll</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Gen, Trojan.Win32.Buzus.dxsr, Mal/VBCheMan-A, Trojan.Win32.VB, Win-Trojan/Xema.variant">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Gen, Trojan.Win32.Buzus.dxsr, Mal/VBCheMan-A, Trojan.Win32.VB..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 August 2014, 12:07:52</li>
+<li>Processing time: 6 min 9 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xE312E229B7F1A3EC478B86CF774F1581</li>
+<li>File SHA-1: 0x72B24068B338F6CA3459548A42F2074260F81DC9</li>
+<li>Filesize: 190,374 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-gen.html" target="_blank">Trojan.Gen<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.Buzus.dxsr [Kaspersky Lab]</li>
+<li>Mal/VBCheMan-A [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-vb.html" target="_blank">Trojan.Win32.VB<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win-trojan-xema-variant.html" target="_blank">Win-Trojan/Xema.variant<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">svcjhost.exe</td><td class="cell_1">%System%\svcjhost.exe</td><td class="cell_2">172,032 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">245,760 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Key was created:</li>
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</li>
+</ul></ul>
+<ul><li>The newly created Registry Value is:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run]</li><ul>
+<li>Microsoft = ""%System%\svcjhost.exe""</li>
+</ul>
+<br/>
+<em>so that %System%\svcjhost.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>dowm123.zapto.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">dowm123.zapto.org<td class="cell_2">3461</td><tr>
+</table></p>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://site.mynet.com/dowm123456/pi.html</li>
+<li>http://site.mynet.com/srvdv/srvdv.htm</li>
+</ul></ul>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%System%\MSVBVM60.DLL</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 3461:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B660 FD6D 1031 9363 BAC7 DD75 04EB 05D3 | .`.m.1.c...u....
+00000010 | FFCE 6C2C BD3F 669F 78F4 AF46 C161 BCE4 | ..l,.?f.x..F.a..
+00000020 | 5444 1223 8096 10ED F2CB A42C 39EE 9617 | TD.#.......,9...
+00000030 | A66A 7D7C B281 5803 8A57 60DE 1676 455D | .j}|..X..W`..vE]
+00000040 | E72A 3690 CBE1 DE69 3EF0 0FDA 5F0F 5768 | .*6....i>..._.Wh
+00000050 | DC2C A113 D0BC 6034 5C39 AA2D A92F 129B | .,....`4\9.-./..
+00000060 | 9789 40B4 EBD8 FBA9 7CDD 987A CE3F C2C9 | ..@.....|..z.?..
+00000070 | 78E0 7DA4 F4F2 2EBA 21C9 3C50 1B23 B6C7 | x.}.....!.<P.#..
+00000080 | A68B 6DDC 15DA 16BF 9E0F 62E0 75C7 13E4 | ..m.......b.u...
+00000090 | 2311 7790 D5D9 09CE 5C41 5255 A453 0952 | #.w.....\ARU.S.R
+000000A0 | DE9F 8643 5B62 63B7 5DB4 7AA2 EE51 4B50 | ...C[bc.].z..QKP
+000000B0 | 5C90 B872 BDEE D113 DB03 DD59 67C1 CCCF | \..r.......Yg...
+000000C0 | A41E 196D 7AD3 D460 291A 0523 D24A 79A7 | ...mz..`)..#.Jy.
+000000D0 | 8F92 59BA 255C 645E 5BCD B665 A7AC 4247 | ..Y.%\d^[..e..BG
+000000E0 | 526B E21A 747E 585B 6B32 59AF 60E3 0FA2 | Rk..t~X[k2Y.`...
+000000F0 | 5974 B12D A474 6A2F 85C9 1CF6 4CD8 3FA6 | Yt.-.tj/....L.?.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

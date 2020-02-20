@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.Emit, Mal/Spy-Y, Email-Worm.Win32.Atak">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.Emit, Mal/Spy-Y, Email-Worm.Win32.Atak</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 12 April 2018, 02:02:05</li>
+<li>Processing time: 5 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x657598044DDAB4537EC2ECAE0F14188A</li>
+<li>File SHA-1: 0x4570E36E74A140FF3A6FDC5B5D44BAAA1EE30D85</li>
+<li>Filesize: 71,168 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li>Mal/Spy-Y [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/email-worm-win32-atak.html" target="_blank">Email-Worm.Win32.Atak<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">135,168 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>210.251.32.199</li>
+<li>70.113.143.172</li>
+<li>138.104.127.18</li>
+<li>70.113.143.1</li>
+<li>202.55.222.25</li>
+<li>210.45.206.253</li>
+<li>83.36.62.226</li>
+<li>147.242.30.233</li>
+<li>216.232.141.206</li>
+<li>25.183.109.212</li>
+<li>93.46.220.58</li>
+<li>161.36.76.31</li>
+<li>225.242.45.38</li>
+<li>38.233.28.11</li>
+<li>107.223.139.239</li>
+<li>170.175.108.246</li>
+<li>239.165.218.219</li>
+<li>48.116.187.226</li>
+<li>116.234.43.72</li>
+<li>184.224.153.45</li>
+<li>210.175.122.51</li>
+<li>61.166.233.24</li>
+<li>130.156.216.252</li>
+<li>194.107.185.4</li>
+<li>210.98.41.105</li>
+<li>71.49.9.112</li>
+<li>139.166.120.85</li>
+<li>207.157.231.58</li>
+<li>210.108.199.65</li>
+<li>85.99.55.38</li>
+<li>153.89.39.139</li>
+<li>217.40.134.145</li>
+<li>30.31.118.118</li>
+<li>94.237.214.125</li>
+<li>162.99.198.98</li>
+<li>231.90.53.71</li>
+<li>40.41.22.78</li>
+<li>108.31.133.179</li>
+<li>176.22.243.152</li>
+<li>240.228.212.159</li>
+<li>53.218.68.132</li>
+<li>117.170.36.138</li>
+<li>186.32.20.111</li>
+<li>210.23.131.212</li>
+<li>63.229.99.219</li>
+<li>131.219.210.192</li>
+<li>199.210.66.165</li>
+<li>210.161.34.172</li>
+<li>77.151.145.145</li>
+<li>141.102.114.151</li>
+<li>209.220.224.252</li>
+<li>22.210.208.225</li>
+<li>86.161.177.232</li>
+<li>154.152.32.205</li>
+<li>223.142.143.178</li>
+<li>31.94.112.185</li>
+<li>100.84.223.31</li>
+<li>164.35.191.38</li>
+<li>232.153.47.11</li>
+<li>45.143.31.239</li>
+<li>109.94.126.245</li>
+<li>177.85.110.218</li>
+<li>210.75.221.191</li>
+<li>55.26.189.198</li>
+<li>123.17.45.44</li>
+<li>187.223.14.51</li>
+<li>210.85.124.24</li>
+<li>68.76.235.252</li>
+<li>132.27.204.4</li>
+<li>201.18.187.232</li>
+<li>210.8.43.78</li>
+<li>78.214.12.84</li>
+<li>210.156.91.64</li>
+<li>23.18.202.37</li>
+<li>156.215.26.17</li>
+<li>224.205.137.118</li>
+<li>37.196.121.91</li>
+<li>101.147.216.98</li>
+<li>169.137.200.71</li>
+<li>233.89.168.77</li>
+<li>47.206.24.50</li>
+<li>115.197.135.151</li>
+<li>179.148.103.158</li>
+<li>210.138.214.131</li>
+<li>60.129.198.104</li>
+<li>124.80.39.111</li>
+<li>193.70.22.84</li>
+<li>210.21.118.91</li>
+<li>70.139.102.192</li>
+<li>138.129.212.165</li>
+<li>202.80.181.171</li>
+<li>210.71.37.144</li>
+<li>83.61.147.117</li>
+<li>147.13.116.124</li>
+<li>216.3.227.225</li>
+<li>25.209.195.232</li>
+<li>93.72.179.205</li>
+<li>161.62.35.178</li>
+<li>225.13.3.184</li>
+<li>38.4.114.158</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

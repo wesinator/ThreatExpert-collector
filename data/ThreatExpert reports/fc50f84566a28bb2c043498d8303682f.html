@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.DLoader, Mal/Zegost-A">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.DLoader, Mal/Zegost-A</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 December 2014, 01:18:16</li>
+<li>Processing time: 8 min 7 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xFC50F84566A28BB2C043498D8303682F</li>
+<li>File SHA-1: 0x2724351C63BA85902ECFD29C6F61A4480682CD2F</li>
+<li>Filesize: 488,396 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-dloader.html" target="_blank">Suspicious.DLoader<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Mal/Zegost-A [Sophos]</li>
+<li><em>packed with: </em>FSG [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+<br/>
+%System%\vmware-vmx.exe
+</td>
+<td class="cell_1">488,396 bytes</td>
+<td class="cell_1">MD5: 0xFC50F84566A28BB2C043498D8303682F<br/>SHA-1: 0x2724351C63BA85902ECFD29C6F61A4480682CD2F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/suspicious-dloader.html" target="_blank">Suspicious.DLoader<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Mal/Zegost-A [Sophos]<br/><em>packed with </em>FSG [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vmware-vmx.exe</td><td class="cell_1">%System%\vmware-vmx.exe</td><td class="cell_2">N/A</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">N/A</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Windows Test My Test 1.0</td><td class="cell_1">Windows Test My Test Server 1.0</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\vmware-vmx.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Windows Test My Test 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000]</li><ul>
+<li>Service = "Windows Test My Test 1.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Windows Test My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Test My Test 1.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vmware-vmx.exe"</li>
+<li>DisplayName = "Windows Test My Test Server 1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "This is Windows Test My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Windows Test My Test 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000]</li><ul>
+<li>Service = "Windows Test My Test 1.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Windows Test My Test Server 1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_WINDOWS_TEST_MY_TEST_1.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Test My Test 1.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vmware-vmx.exe"</li>
+<li>DisplayName = "Windows Test My Test Server 1.0"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "This is Windows Test My Test Server 1.0"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>Windows Test My Test 1.0</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">vmware-vmx.exe (%System%\vmware-vmx.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>sddn.sxylj01.com</li>
+<li>zij.swhk.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">sddn.sxylj01.com<td class="cell_2">8091</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8091:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 5555 0900 5769 6E64 6F77 7320 5850 0000 | UU..Windows XP..
+00000010 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 B70B 0000 0000 0000 0000 0000 | ................
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000070 | 0000 0000 0000 0000 0050 FD7F C120 4F77 | .........P... Ow
+00000080 | A41E 2400 48FC B200 0000 0000 0CFD B200 | ..$.H...........
+00000090 | 18EE 907C D08E 917C FFFF FFFF 748E 917C | ...|...|....t..|
+000000A0 | C4E8 907C FA8D 917C 30FD B200 18EE 907C | ...|...|0......|
+000000B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 00C0 FD7F 0000 0000 0000 0000 | ................
+000000F0 | 0000 0000 0000 0000 0000 0000 B0FC B200 | ................
+00000100 | 0000 0000 FFFF FFFF 18EE 907C 008E 917C | ...........|...|
+00000110 | FFFF FFFF FA8D 917C 25D6 907C CFEA 907C | .......|%..|...|
+00000120 | 30FD B200 0100 0000 1700 0100 0000 0000 | 0...............
+00000130 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000140 | 0000 0000 3800 0000 FE1B 07E1 F73A D011 | ....8........:..
+00000150 | 1800 0000 381C 07E1 00D3 2CC0 70D8 0CE1 | ....8.....,.p...
+00000160 | B06A 06F8 20D0 8D81 046B 06F8 F850 F680 | .j.. ....k...P..
+00000170 | 00D3 2CC0 70D8 0CE1 AE0D 80F9 F701 0000 | ..,.p...........
+00000180 | 74F3 9581 E8F0 9581 70F3 9581 846A 06F8 | t.......p....j..
+00000190 | 2987 80F9 74F3 9581 A868 9D81 9C6A 06F8 | )...t....h...j..
+000001A0 | 0275 80F9 6068 9A81 74F3 9581 A868 6D80 | .u..`h..t....hm.
+000001B0 | BC1F 7E81 0000 0000 3800 0000 2300 0000 | ..~.....8...#...
+000001C0 | 2300 0000 E0FC 9200 18EE 907C 0000 0000 | #..........|....
+000001D0 | F0FC 9200 3815 917C C02D 4000 EB06 917C | ....8..|.-@....|
+000001E0 | 5608 817C 1B00 0000 0002 0000 FCFF B200 | V..|............
+000001F0 | 2300 0000 67B0 930E 0090 CB00 D517 5080 | #...g.........P.
+00000200 | E431 5380                               | .1S.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

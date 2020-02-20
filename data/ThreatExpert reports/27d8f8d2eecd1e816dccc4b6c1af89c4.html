@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 11 May 2016, 14:24:50</li>
+<li>Processing time: 6 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x27D8F8D2EECD1E816DCCC4B6C1AF89C4</li>
+<li>File SHA-1: 0x8AF1FBF0DDB3F17E4B38755D5A4533D605713B41</li>
+<li>Filesize: 4,832,923 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Capability to send out email message(s) with the built-in SMTP client engine.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%CommonPrograms%\IZArc\IZArc Help.lnk
+</td>
+<td class="cell_1">650 bytes</td>
+<td class="cell_2">MD5: 0x83BA5411DE37004FCF5C872035D62DBD<br/>SHA-1: 0x2BA01EEF34662764C9731973CFB2B04ED1273749</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%CommonPrograms%\IZArc\IZArc.lnk
+</td>
+<td class="cell_1">1,504 bytes</td>
+<td class="cell_2">MD5: 0x108237472D708AAC887317F0D4D15E55<br/>SHA-1: 0x52D7E8866CA0603CCFB33A4B6B8FC0E44270F754</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+%CommonPrograms%\IZArc\Uninstall IZArc.lnk
+</td>
+<td class="cell_1">669 bytes</td>
+<td class="cell_2">MD5: 0x7843601AFE19C1D433981E84EFA378A2<br/>SHA-1: 0xB6CD0126F204820067532CC1B93AD2F270861F03</td>
+</tr>
+<tr><td class="cell_1">4</td>
+<td class="cell_1">
+%CommonPrograms%\IZArc\What's New.lnk
+</td>
+<td class="cell_1">669 bytes</td>
+<td class="cell_2">MD5: 0xE4ABF693F3E47B16D7004F49A1B5CC02<br/>SHA-1: 0x4F8FBF6D28B4679C9A08B7D8A61E20C6184280F6</td>
+</tr>
+<tr><td class="cell_1">5</td>
+<td class="cell_1">
+%Temp%\is-72FKR.tmp\<a href="http://www.threatexpert.com/files/OCSetupHlp.dll.html" target="_blank">OCSetupHlp.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">768,328 bytes</td>
+<td class="cell_2">MD5: 0xA023C815E1467E8BF0094A2D68E9B2D6<br/>SHA-1: 0xE4BB22DC05776BE216AB8EE5BEB589FDF9C88930</td>
+</tr>
+<tr><td class="cell_1">6</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/7za.dll.html" target="_blank">7za.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">275,456 bytes</td>
+<td class="cell_2">MD5: 0x93AA6A76E2F245C85C76FB4C993BC9CB<br/>SHA-1: 0x6D39D98588AD4623DCC423A94FCFAADBB22A0104</td>
+</tr>
+<tr><td class="cell_1">7</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/apr.dll.html" target="_blank">apr.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">115,200 bytes</td>
+<td class="cell_2">MD5: 0x56D1932B7EDB3AB165D456944EF484DD<br/>SHA-1: 0xE8B40B5A267593E9B399B909A59170B219EEC8C6</td>
+</tr>
+<tr><td class="cell_1">8</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\arc.izp
+</td>
+<td class="cell_1">16,896 bytes</td>
+<td class="cell_2">MD5: 0x27BA0CECB62FC7ACF0D166485BBF6A24<br/>SHA-1: 0xD64506692D8C565399908BE27A102066A4BE37E8</td>
+</tr>
+<tr><td class="cell_1">9</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/Bga32.dll.html" target="_blank">Bga32.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">372,736 bytes</td>
+<td class="cell_2">MD5: 0xD13A7CC98FC3CBDCAC897747EB30D9E5<br/>SHA-1: 0xB9C6B7822674D318494ACB7F5A45BB38658C7019</td>
+</tr>
+<tr><td class="cell_1">10</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/cabinet.dll.html" target="_blank">cabinet.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">69,632 bytes</td>
+<td class="cell_2">MD5: 0x9EC7CF498F3F71E807629577C7BC2D19<br/>SHA-1: 0xD47D985CEDAAC980D18FF446687EDC0F9C5F2F1F</td>
+</tr>
+<tr><td class="cell_1">11</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\DllInfo\Bga32.txt
+</td>
+<td class="cell_1">19,586 bytes</td>
+<td class="cell_2">MD5: 0x2DF7FD7AA617D06891058D8996B60CCE<br/>SHA-1: 0x400F57E4CFCD7FF6B6706D420E5D68BBAE3873B2</td>
+</tr>
+<tr><td class="cell_1">12</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\DllInfo\Tar32.txt
+</td>
+<td class="cell_1">327 bytes</td>
+<td class="cell_2">MD5: 0x05DD8B4D4653AE8AE58684E3DC049FDB<br/>SHA-1: 0xA4E4F059BF65884450CCB983762D7179946BC90E</td>
+</tr>
+<tr><td class="cell_1">13</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\DllInfo\Ungca32.txt
+</td>
+<td class="cell_1">2,453 bytes</td>
+<td class="cell_2">MD5: 0xF1E5445D19CDF34AFDE4D4092D83B7E4<br/>SHA-1: 0xE7B220CC41578FE0DFC0CE028AAB82C0D463B80C</td>
+</tr>
+<tr><td class="cell_1">14</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\DllInfo\yz1.txt
+</td>
+<td class="cell_1">13,776 bytes</td>
+<td class="cell_2">MD5: 0x1B56E3820E387DDB5CCA4B78C6E7FFB9<br/>SHA-1: 0xC7A130DC8C700D17DC36BDFE317E423C6617AFE1</td>
+</tr>
+<tr><td class="cell_1">15</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Donate.url
+</td>
+<td class="cell_1">218 bytes</td>
+<td class="cell_2">MD5: 0x58E8865B22151D90446A2E3E554A95A0<br/>SHA-1: 0x64BD052A9685BB1741432E5830416C7DEEB42692</td>
+</tr>
+<tr><td class="cell_1">16</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\7Z.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x105AE6BB92C7F5A355203C75CF483A5A<br/>SHA-1: 0xCA9EFA180D679D83EC266D1E1A48F3F97901595A</td>
+</tr>
+<tr><td class="cell_1">17</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\A.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x5F6F8D97BEF979672565271F452829C4<br/>SHA-1: 0xEB7269646EDD67851889673A185C7A56CE2B1B1D</td>
+</tr>
+<tr><td class="cell_1">18</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ACE.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x6313520016D3168607567D7FF44D4643<br/>SHA-1: 0xDAF659ACA42BAD8F9AE5F4A6E27510F19E3BB2A8</td>
+</tr>
+<tr><td class="cell_1">19</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ARC.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xB8024CA7B237603BFEAA066BFF09DAF3<br/>SHA-1: 0x2E67FC1AE88521DEEDB474A24EB560A1D9E1D308</td>
+</tr>
+<tr><td class="cell_1">20</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ARJ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xC13C65504AF492DA6E95C7E8E7AA5426<br/>SHA-1: 0xBFC3A6E1997333DA0FC6DF1D1253F18E2BD04B16</td>
+</tr>
+<tr><td class="cell_1">21</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\B64.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x4ECB934D889DDEA447BE7E6AB1931C62<br/>SHA-1: 0x007D9B1C9171C3252BEA7F3A459835629F94E2FB</td>
+</tr>
+<tr><td class="cell_1">22</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\BH.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x94AB32A58C76ACEF9F75C2BB4131CF0E<br/>SHA-1: 0x535F39D53A47DBE697573C01E07D9668FECF48A7</td>
+</tr>
+<tr><td class="cell_1">23</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\BIN.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xF4A5CBF4D386EC4C8E3CA912EA2D228C<br/>SHA-1: 0xA0494F203A0BAEEF84B36A301EE67C7417940682</td>
+</tr>
+<tr><td class="cell_1">24</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\BZ2.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x5946EBE9F9F5AAA93EE54B46C5B07D6C<br/>SHA-1: 0x5F3B6B367B240EF7015D91A1BF3D05752B043B0B</td>
+</tr>
+<tr><td class="cell_1">25</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\BZA.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x29C014B29A9191F93B9C13636BDD2C4A<br/>SHA-1: 0xD99C5FFC597D6758DBC81B299BDCC668F6A12A80</td>
+</tr>
+<tr><td class="cell_1">26</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\C2D.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x99FDC3DF50698C684AF6EE7B87671023<br/>SHA-1: 0xFF540435C35987122E5573E183DDEED37144C385</td>
+</tr>
+<tr><td class="cell_1">27</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\CAB.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x12E7241B57B768F45990C34A6FCB59C4<br/>SHA-1: 0x972C1B1C2C39055DB27E9AE91A4EA116B0E3A8DA</td>
+</tr>
+<tr><td class="cell_1">28</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\CDI.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x87DBA4381032D805A33D7E481CA03832<br/>SHA-1: 0x5672C6C724D4252928501C370148F95B38899727</td>
+</tr>
+<tr><td class="cell_1">29</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\CPIO.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x32511197792DC691270F10497A96A77F<br/>SHA-1: 0xCAA56E82F02E918AD159615031BC71E41046154E</td>
+</tr>
+<tr><td class="cell_1">30</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\DEB.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x23FF01E18C148F67B30371B4C179B31E<br/>SHA-1: 0xA0D268B00FC543469A11E5CD9FEC4332BEC692D9</td>
+</tr>
+<tr><td class="cell_1">31</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ENC.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x571B611D9373A6E37248153539065A07<br/>SHA-1: 0x46A9E7694C85484B26DBFCB83551E74A6E2EAA54</td>
+</tr>
+<tr><td class="cell_1">32</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ExeFile.ico
+<br/>
+%ProgramFiles%\IZArc\Misc\ExeFile.ico
+</td>
+<td class="cell_1">9,062 bytes</td>
+<td class="cell_2">MD5: 0xB7EDA7668A75AA575AF5167C96D27C4B<br/>SHA-1: 0x5C912238093CD4DAA7D19B09D48C4DDE5DF94FF7</td>
+</tr>
+<tr><td class="cell_1">33</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\GCA.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x40DFAB257A5118EC91133215111D322D<br/>SHA-1: 0x50C959A750B50308F8324AA1CD001E9625A48864</td>
+</tr>
+<tr><td class="cell_1">34</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\GZ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x875F2E1576EB44C48D2C00E94EE87968<br/>SHA-1: 0x729990196979C8B3053E98917EA9F800CE0F379C</td>
+</tr>
+<tr><td class="cell_1">35</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\GZA.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x90F66425CFF7319A8A222FC0D40A2862<br/>SHA-1: 0xC9E817F24AD6E00422FCE32055A82DE2327F7EC5</td>
+</tr>
+<tr><td class="cell_1">36</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\HA.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x922D0DF8BA0A9F28319DBE0A5B729A5D<br/>SHA-1: 0xB1BCE258420B0A3485710E363A8798D118100DE4</td>
+</tr>
+<tr><td class="cell_1">37</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\IMG.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xBAC40A94D1BDA434323F10197B36D1E1<br/>SHA-1: 0x8D6CE657DC5403C66E06E74FFEC9966575209574</td>
+</tr>
+<tr><td class="cell_1">38</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ISO.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xF9152E1DCCBD200B0544CC0DD5F591FF<br/>SHA-1: 0xF386C344078F3F144C7778165F1446D4BEF11F94</td>
+</tr>
+<tr><td class="cell_1">39</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\IZE.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x64624CA25F58262611C64EA982C00687<br/>SHA-1: 0xC96BC5D1E1125F5AA01F4828A4C19E4801CC9E7F</td>
+</tr>
+<tr><td class="cell_1">40</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\JAR.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xCF079F2F016CDFD2B2E590D83925EEC1<br/>SHA-1: 0xD22E4DD61ACFCADCEE5EDFEF87C795CAC2FD3CAA</td>
+</tr>
+<tr><td class="cell_1">41</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\LHA.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x2781CD60ECB2055B103A682A9E714210<br/>SHA-1: 0x5FB8893D575ED54F9E23174DA6674D29FA9950A9</td>
+</tr>
+<tr><td class="cell_1">42</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\LIB.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x670A69DF73048A6589FADEDB2318E8CA<br/>SHA-1: 0x5E6F60E1E96A6E7C3D74477DD9094DDB8FEE6FA7</td>
+</tr>
+<tr><td class="cell_1">43</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\LZH.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xAC96B04B17F1074D19D0D46EF40837A1<br/>SHA-1: 0x0A8270DB7D121CC498A2A490E267BCBC16C3DC8F</td>
+</tr>
+<tr><td class="cell_1">44</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\MBF.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xD6758F4D1F85D5E63F47E6E75CB31EF5<br/>SHA-1: 0x9F8127A183A76EDC12D633DCD79CC4FEFF6E1C6B</td>
+</tr>
+<tr><td class="cell_1">45</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\MDF.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x2AFBF00CC69EE58E49BFF202B852462C<br/>SHA-1: 0x843A14E65DDB029C6AC5FA546286A30351B5B9CF</td>
+</tr>
+<tr><td class="cell_1">46</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\MIM.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x62041C9330E43A8551C92E5E3DBEC3F6<br/>SHA-1: 0x76D8623244E20CCAE431FC5874721564884810EA</td>
+</tr>
+<tr><td class="cell_1">47</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\NRG.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xA8F0DD7258283173F6E3BB41AF9E1436<br/>SHA-1: 0x95A9DA36ACAF9D1B855D5A41BB6243686C9239A6</td>
+</tr>
+<tr><td class="cell_1">48</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\PAK.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xF94B8F10DB5769BCDA18DE949991D529<br/>SHA-1: 0xA72D14B418796B26F74DBB421D73A5F3C6D6D505</td>
+</tr>
+<tr><td class="cell_1">49</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\PDI.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xDFAC47BA2F4DBB34DD0C926DA1372A9E<br/>SHA-1: 0xAF58FE72BD0DB0C3DED9E554CF5615EC623CD0DC</td>
+</tr>
+<tr><td class="cell_1">50</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\PK3.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x0DD5C59F3F04980F08DCCE4D543F3424<br/>SHA-1: 0x3C3AC213CA57B007757DD2899C0998E89F55B9F1</td>
+</tr>
+<tr><td class="cell_1">51</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\RAR.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x94F14785ED460021F1D30A38B7B54EC0<br/>SHA-1: 0xB2E361B2AA0A8632B76786E031E1152847F9828D</td>
+</tr>
+<tr><td class="cell_1">52</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\RPM.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x6AACAE0CAA8625FC7B9F2A567CF14B15<br/>SHA-1: 0x78A22A5091558882AD57B3C3EECC646DAA874627</td>
+</tr>
+<tr><td class="cell_1">53</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\Setup.ico
+</td>
+<td class="cell_1">9,062 bytes</td>
+<td class="cell_2">MD5: 0x91B78F90A9E6FF976257D4419D02C401<br/>SHA-1: 0x1ED34CDB3A998E05C8A4985A2AA450F294CCCE04</td>
+</tr>
+<tr><td class="cell_1">54</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\TAR.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x922C3CDAFBAF6F6E2A1FC44BD1940BBC<br/>SHA-1: 0x3FAED4A89FD6C1FEB41C06159EB8D2A26B7C710F</td>
+</tr>
+<tr><td class="cell_1">55</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\TAZ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xAA64F6AB977725E4C4F9D23AB5CB6081<br/>SHA-1: 0x570BF2E43081C14C7E785DD1E9832E705A47C4D3</td>
+</tr>
+<tr><td class="cell_1">56</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\TBZ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xFFC452FA86A72D94B6095DE2C858652C<br/>SHA-1: 0xD03224D66BE864CB536E164FD24ECD677722C226</td>
+</tr>
+<tr><td class="cell_1">57</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\Text.ico
+<br/>
+%ProgramFiles%\IZArc\Misc\ReadMe.ico
+</td>
+<td class="cell_1">9,574 bytes</td>
+<td class="cell_2">MD5: 0x54099DD5003ACCBCA386467EA200A4EB<br/>SHA-1: 0x882294D9A353828CA1C8C0B7395E0C066B2FB814</td>
+</tr>
+<tr><td class="cell_1">58</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\TGZ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xA688C5C783ACDFFF134F001F627CADEB<br/>SHA-1: 0x262C372DEEECF82F111C35E8C53F47ABCAFE73EC</td>
+</tr>
+<tr><td class="cell_1">59</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\TZ.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x43AD8858A10ADC5BA2C6ECECB99CB224<br/>SHA-1: 0x677F649167E4A9FCD9A92C830C06B7323C468F2C</td>
+</tr>
+<tr><td class="cell_1">60</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\UUE.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x5120EB11C8F746C42893C1B8CCF5C87D<br/>SHA-1: 0x2F265740BB7C91A438FFDF03062EE88DCD654448</td>
+</tr>
+<tr><td class="cell_1">61</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\WAR.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xB52C5125BF04619F9DCBD780B90A9C55<br/>SHA-1: 0x3D1A987C50F2F29FFCA31D02F70A2D78AEB664CC</td>
+</tr>
+<tr><td class="cell_1">62</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\XXE.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xC5CDE25EF247A55651DD4B49C4972BF7<br/>SHA-1: 0x8BF47A2A8ADE7523B261998FC62C71394B460549</td>
+</tr>
+<tr><td class="cell_1">63</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\YZ1.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x5E6FF87451930BAF97ED6D3AA2DC9EF9<br/>SHA-1: 0xEEEEBDC5EDA00B507753033865D3A0EC1B6285E3</td>
+</tr>
+<tr><td class="cell_1">64</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\Z.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x2ACF35F67D35A0A80D73A69212EE82E1<br/>SHA-1: 0xA9D0EA89527CB0C561B58ACF2FAB72C49A545ACC</td>
+</tr>
+<tr><td class="cell_1">65</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ZIP.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0xFAA695299089FE6EAF4F174DDE60D46C<br/>SHA-1: 0x3803E46BDC917A2F145251F87760E403509D399E</td>
+</tr>
+<tr><td class="cell_1">66</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Icons\ZOO.ico
+</td>
+<td class="cell_1">33,982 bytes</td>
+<td class="cell_2">MD5: 0x9B3EFA246E7355E0C98CB2968F269514<br/>SHA-1: 0xE2E0F094EC372C374674FFED93093EFD61D6FC59</td>
+</tr>
+<tr><td class="cell_1">67</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\IZArc.chm
+</td>
+<td class="cell_1">92,116 bytes</td>
+<td class="cell_2">MD5: 0xFA344E9B5EFE4954C72CFE260B4AAF1A<br/>SHA-1: 0x8A4E6002B6823E58759484C85A368D8095FEFC0A</td>
+</tr>
+<tr><td class="cell_1">68</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/IZArc.exe.html" target="_blank">IZArc.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">2,902,528 bytes</td>
+<td class="cell_2">MD5: 0x8C45158E1D1D230A166E227F51D75AB0<br/>SHA-1: 0xCA161BC5FD48FD19814DC6FB65DE6F957C5BDB8C</td>
+</tr>
+<tr><td class="cell_1">69</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\<a href="http://www.threatexpert.com/files/IZArcCM.dll.html" target="_blank">IZArcCM.dll<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">652,800 bytes</td>
+<td class="cell_2">MD5: 0xA7DD028FC5F6EC6432A5CCECAA2511D6<br/>SHA-1: 0x5CB562D4EA77F732FEE1B6165DF4C19B45B441FF</td>
+</tr>
+<tr><td class="cell_1">70</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Arabic.lng
+</td>
+<td class="cell_1">67,332 bytes</td>
+<td class="cell_2">MD5: 0x650C34DD0F928B66CCBD770BD7AE85D2<br/>SHA-1: 0x52F404B796CF82B1D3CE5618623C860CA6FA24D4</td>
+</tr>
+<tr><td class="cell_1">71</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Bahasa Gaul.lng
+</td>
+<td class="cell_1">76,086 bytes</td>
+<td class="cell_2">MD5: 0x563C86CB1F495A0F0E3091A166E646B4<br/>SHA-1: 0x35889F78F018E1D43C95DD1F268475F6621544F9</td>
+</tr>
+<tr><td class="cell_1">72</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Bahasa Indonesia.lng
+<br/>
+%ProgramFiles%\IZArc\Languages\Indonesian.lng
+</td>
+<td class="cell_1">74,594 bytes</td>
+<td class="cell_2">MD5: 0x2B54AC0FE131CDAA514BC4FA498AD3DF<br/>SHA-1: 0x97278934E553BF7A1C8673242D96335EAA0C8A7E</td>
+</tr>
+<tr><td class="cell_1">73</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Bosnian.lng
+</td>
+<td class="cell_1">74,684 bytes</td>
+<td class="cell_2">MD5: 0xA40CF589AFB463E37D6C8C9889FC8367<br/>SHA-1: 0xC3F6260A77587886ECDD8AA7A4673E5ED6E788EB</td>
+</tr>
+<tr><td class="cell_1">74</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Breton.lng
+</td>
+<td class="cell_1">75,346 bytes</td>
+<td class="cell_2">MD5: 0xF1493C506A51EA4F4003E2AA723AB26F<br/>SHA-1: 0x8211DA063430D8A6D913CC15062A250C422F3EC1</td>
+</tr>
+<tr><td class="cell_1">75</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Bulgarian.lng
+</td>
+<td class="cell_1">67,222 bytes</td>
+<td class="cell_2">MD5: 0x83E403FF9CA12B4228E4B61B848711D5<br/>SHA-1: 0x4443C9526551B14B3701754E06579FFC7B833883</td>
+</tr>
+<tr><td class="cell_1">76</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Castellano.lng
+</td>
+<td class="cell_1">73,548 bytes</td>
+<td class="cell_2">MD5: 0x2D65B1DD09A84BEBEDE2D0CA0D30F02A<br/>SHA-1: 0xE31B83A9F0D88C2C96CF11BBC7E4872F8C64B6D3</td>
+</tr>
+<tr><td class="cell_1">77</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Catalan.lng
+</td>
+<td class="cell_1">76,792 bytes</td>
+<td class="cell_2">MD5: 0xE536E1F48289B3D8D4D6D3728E519B9D<br/>SHA-1: 0x6AEDDCCE7B572FBB446ED04A8BE0BD506EDC7042</td>
+</tr>
+<tr><td class="cell_1">78</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Chinese Big5.lng
+</td>
+<td class="cell_1">33,869 bytes</td>
+<td class="cell_2">MD5: 0xBD25C8710D9EE7820220EF0CAD987C4D<br/>SHA-1: 0xAC0BF7AFBEE4F3DB78AD7117DC3C6DAF26ED27CB</td>
+</tr>
+<tr><td class="cell_1">79</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Chinese GB.lng
+</td>
+<td class="cell_1">33,814 bytes</td>
+<td class="cell_2">MD5: 0xEA649979855948FA18DBF9A80D8AE8B7<br/>SHA-1: 0x44836BED66AAD71E4DC875724E5DE3438B9E704F</td>
+</tr>
+<tr><td class="cell_1">80</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Chinese.lng
+</td>
+<td class="cell_1">59,526 bytes</td>
+<td class="cell_2">MD5: 0x0DAA2986F3AA91090EECF34B260E6AA8<br/>SHA-1: 0xDFF00BA9AD100537B932138444F45E442348E91A</td>
+</tr>
+<tr><td class="cell_1">81</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Croatian.lng
+</td>
+<td class="cell_1">73,156 bytes</td>
+<td class="cell_2">MD5: 0x94B18F1557733873EF30540BCE2219A7<br/>SHA-1: 0x25B8EF21DF42E821D6C31241AFF816155C553120</td>
+</tr>
+<tr><td class="cell_1">82</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Czech.lng
+</td>
+<td class="cell_1">69,720 bytes</td>
+<td class="cell_2">MD5: 0xB32279C6AF6B5D83F907995D78A403E9<br/>SHA-1: 0x9F0531C873CF4E4BD0A1B85002AA7F6A1ADD3387</td>
+</tr>
+<tr><td class="cell_1">83</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Danish.lng
+</td>
+<td class="cell_1">70,890 bytes</td>
+<td class="cell_2">MD5: 0x0AC434D8AE6D3F0AA13F03DB94898FFE<br/>SHA-1: 0xCB019A0A9DC393819FE93A93CD8DDE249ED4598C</td>
+</tr>
+<tr><td class="cell_1">84</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Dutch.lng
+</td>
+<td class="cell_1">71,778 bytes</td>
+<td class="cell_2">MD5: 0x318411ABDCA2ADC3D5150CE35311B179<br/>SHA-1: 0x83867B39F7B3FDE6FADF3C91F011B351DCBCD6ED</td>
+</tr>
+<tr><td class="cell_1">85</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\English.lng
+</td>
+<td class="cell_1">64,842 bytes</td>
+<td class="cell_2">MD5: 0x18B1ACE10C250FBF3BE0421586A1D4E6<br/>SHA-1: 0x01BD3A744DC9297E091E5B9FB78C6F3EF4479020</td>
+</tr>
+<tr><td class="cell_1">86</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Esperanto.lng
+</td>
+<td class="cell_1">76,084 bytes</td>
+<td class="cell_2">MD5: 0xEF50D43B804D4BFFE3C68935B094F5A7<br/>SHA-1: 0xA440A74CC587B4744B25083A86911C0F9F73FE2A</td>
+</tr>
+<tr><td class="cell_1">87</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Estonian.lng
+</td>
+<td class="cell_1">66,176 bytes</td>
+<td class="cell_2">MD5: 0xF9718B3CB4DC831D9E43D82785DBA4F3<br/>SHA-1: 0xC314A16F4E1F0254ECD3F54B70B2923B3B984977</td>
+</tr>
+<tr><td class="cell_1">88</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Euskara.lng
+</td>
+<td class="cell_1">75,792 bytes</td>
+<td class="cell_2">MD5: 0x216B171514D8497DDF4690A2A671AD65<br/>SHA-1: 0x57B6F8A1F1A3B5C654AC6A02F914798D7326381B</td>
+</tr>
+<tr><td class="cell_1">89</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Farsi.lng
+</td>
+<td class="cell_1">68,194 bytes</td>
+<td class="cell_2">MD5: 0x22A1B3A161B45F9FD0ED57E4A6003EA3<br/>SHA-1: 0xEDDC2602B7A6D2A16D10D220131E584CAC1FBA28</td>
+</tr>
+<tr><td class="cell_1">90</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Finnish (variant SAVO).lng
+</td>
+<td class="cell_1">73,516 bytes</td>
+<td class="cell_2">MD5: 0x525DD4ED4A3A46A8033BFB5B36135BEA<br/>SHA-1: 0xA921C663840087DC1E078B17BF307FE278D3EFF6</td>
+</tr>
+<tr><td class="cell_1">91</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Finnish.lng
+</td>
+<td class="cell_1">74,140 bytes</td>
+<td class="cell_2">MD5: 0xF4630A8FC9BD45DA7C1CB59885EC6FC4<br/>SHA-1: 0xA51AB90F84E68B216F60E28C760BF0E387E43EB8</td>
+</tr>
+<tr><td class="cell_1">92</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\French.lng
+</td>
+<td class="cell_1">71,574 bytes</td>
+<td class="cell_2">MD5: 0x4B23CD49C8DACD38358EEBBC37868B36<br/>SHA-1: 0x6B481F9D6506F1CD272152EA0489A7EFDFD03855</td>
+</tr>
+<tr><td class="cell_1">93</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Friulian.lng
+</td>
+<td class="cell_1">71,434 bytes</td>
+<td class="cell_2">MD5: 0x21A58E6C417DE269F51A3B9B50035AA1<br/>SHA-1: 0xF644BEEFAACFEEB2D40CC0D82EF5F71CA8497316</td>
+</tr>
+<tr><td class="cell_1">94</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Galician.lng
+</td>
+<td class="cell_1">76,178 bytes</td>
+<td class="cell_2">MD5: 0x66432E8E13F4B57319318E9542F8D2DD<br/>SHA-1: 0x98DA95A99ECB07C7692D9DA5ED13BDB191447541</td>
+</tr>
+<tr><td class="cell_1">95</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\German.lng
+</td>
+<td class="cell_1">73,684 bytes</td>
+<td class="cell_2">MD5: 0x1CC788655223D6F7ADE565CDA0928D64<br/>SHA-1: 0x5AE0086A87059BFA948598984FA3F7ABE26710DF</td>
+</tr>
+<tr><td class="cell_1">96</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Greek.lng
+</td>
+<td class="cell_1">72,108 bytes</td>
+<td class="cell_2">MD5: 0xE750ECC3ADD6FE986E3C069FF74243E1<br/>SHA-1: 0x2712B748A5699E214370348B595EE19FA5FC4339</td>
+</tr>
+<tr><td class="cell_1">97</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Hebrew.lng
+</td>
+<td class="cell_1">64,244 bytes</td>
+<td class="cell_2">MD5: 0xF42C924093A7A65A8CADB06D935D47B5<br/>SHA-1: 0xC3A26ECBF185C77886859201D2D60ECBD778620C</td>
+</tr>
+<tr><td class="cell_1">98</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Hellenic (Greek).lng
+</td>
+<td class="cell_1">79,306 bytes</td>
+<td class="cell_2">MD5: 0x15F932CBCB6365037725433D4B362C6B<br/>SHA-1: 0xBC33855C0637319CCDF37F45E35EF6E42C5DF35E</td>
+</tr>
+<tr><td class="cell_1">99</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Hungarian.lng
+</td>
+<td class="cell_1">69,256 bytes</td>
+<td class="cell_2">MD5: 0xA249EC7CB09394CF8AE3AC3A4555FE8D<br/>SHA-1: 0x8A302822DE0E12DF9BF5D8074CB2F30717F82AAC</td>
+</tr>
+<tr><td class="cell_1">100</td>
+<td class="cell_1">
+%ProgramFiles%\IZArc\Languages\Icelandic.lng
+</td>
+<td class="cell_1">66,436 bytes</td>
+<td class="cell_2">MD5: 0xEDD7AC3DD9049172C7DA1A9B75AAC041<br/>SHA-1: 0xA597D84BFDED2F9CCF2F4DF6EB3AC3B040B88844</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%CommonPrograms% is a variable that refers to the file system directory that contains the directories for the common program groups that appear on the Start menu for all users. A typical path is C:\Documents and Settings\All Users\Start Menu\Programs (Windows NT/2000/XP).</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonPrograms%\IZArc</li>
+<li>%Temp%\is-72FKR.tmp</li>
+<li>%ProgramFiles%\IZArc</li>
+<li>%ProgramFiles%\IZArc\DllInfo</li>
+<li>%ProgramFiles%\IZArc\Icons</li>
+<li>%ProgramFiles%\IZArc\Languages</li>
+<li>%ProgramFiles%\IZArc\Misc</li>
+<li>%ProgramFiles%\IZArc\SFXS</li>
+<li>%ProgramFiles%\IZArc\Skins</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-EARHA.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">1,224,704 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\IZArcCM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BC593DF5-466F-44EC-8FFD-C4DBC603B917}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BC593DF5-466F-44EC-8FFD-C4DBC603B917}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\IZArcCM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers\IZArcCM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\DragDropHandlers\IZArcCM</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{97C82B44-D408-4F14-9252-47FC1636D23E}_is1</li>
+<li>HKEY_CURRENT_USER\Software\IZSoftware</li>
+<li>HKEY_CURRENT_USER\Software\IZSoftware\IZArc</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\IZArcCM]</li><ul>
+<li>(Default) = "{BC593DF5-466F-44EC-8FFD-C4DBC603B917}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BC593DF5-466F-44EC-8FFD-C4DBC603B917}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\IZArc\IZArcCM.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BC593DF5-466F-44EC-8FFD-C4DBC603B917}]</li><ul>
+<li>(Default) = "IZArc Shell Context Menu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}\InprocServer32]</li><ul>
+<li>(Default) = "C:\PROGRA~1\IZArc\IZArcCM.dll"</li>
+<li>ThreadingModel = "Apartment"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}]</li><ul>
+<li>(Default) = "IZArc DragDrop Menu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\IZArcCM]</li><ul>
+<li>(Default) = "{BC593DF5-466F-44EC-8FFD-C4DBC603B917}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\DragDropHandlers\IZArcCM]</li><ul>
+<li>(Default) = "{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\DragDropHandlers\IZArcCM]</li><ul>
+<li>(Default) = "{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]</li><ul>
+<li>{BC593DF5-466F-44EC-8FFD-C4DBC603B917} = "IZArc Shell Context Menu"</li>
+<li>{CA5FEE26-14C1-4B5A-86E9-233FC0EE2682} = "IZArc DragDrop Menu"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{97C82B44-D408-4F14-9252-47FC1636D23E}_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.4.1 (u)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\IZArc"</li>
+<li>InstallLocation = "%ProgramFiles%\IZArc\"</li>
+<li>Inno Setup: Icon Group = "IZArc"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = ""</li>
+<li>Inno Setup: Deselected Tasks = "ql,dt"</li>
+<li>Inno Setup: Language = "default"</li>
+<li>DisplayName = "IZArc 4.1.6"</li>
+<li>UninstallString = ""%ProgramFiles%\IZArc\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\IZArc\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "4.1.6"</li>
+<li>Publisher = "Ivan Zahariev"</li>
+<li>URLInfoAbout = "http://www.izarc.org"</li>
+<li>HelpLink = "http://www.izarc.org"</li>
+<li>URLUpdateInfo = "http://www.izarc.org"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20160511"</li>
+<li>MajorVersion = 0x00000004</li>
+<li>MinorVersion = 0x00000001</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\IZSoftware\IZArc]</li><ul>
+<li>AppLanguageFile = "English.lng"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

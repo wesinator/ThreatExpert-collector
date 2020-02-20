@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 6 June 2018, 13:04:24</li>
+<li>Processing time: 6 min 7 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x8A10D8E08827EDEF9F7938213AF9FC8C</li>
+<li>File SHA-1: 0xE5794E9B43420983354BB9AEAED9C82C1EA76128</li>
+<li>Filesize: 3,723,264 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">6,729,728 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">mssecsvc2.0</td><td class="cell_1">Microsoft Security Center (2.0) Service</td><td class="cell_1">"Running"</td><td class="cell_2">[file and pathname of the sample #1] -m security</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "mssecsvc2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0\0000]</li><ul>
+<li>Service = "mssecsvc2.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft Security Center (2.0) Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_MSSECSVC2.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MSSECSVC2.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mssecsvc2.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "[file and pathname of the sample #1] -m security"</li>
+<li>DisplayName = "Microsoft Security Center (2.0) Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>FailureActions = 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 60 EA 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "mssecsvc2.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0\0000]</li><ul>
+<li>Service = "mssecsvc2.0"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Microsoft Security Center (2.0) Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSSECSVC2.0]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0\Enum]</li><ul>
+<li>0 = "Root\LEGACY_MSSECSVC2.0\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssecsvc2.0]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "[file and pathname of the sample #1] -m security"</li>
+<li>DisplayName = "Microsoft Security Center (2.0) Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>FailureActions = 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 60 EA 00 00</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cookies = </li>
+<li>History = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>8.219.63.45</li>
+<li>8.219.63.1</li>
+<li>173.202.98.26</li>
+<li>8.219.63.2</li>
+<li>195.251.8.187</li>
+<li>201.64.148.62</li>
+<li>8.219.63.3</li>
+<li>53.107.99.115</li>
+<li>177.123.246.135</li>
+<li>22.235.13.95</li>
+<li>8.219.63.4</li>
+<li>31.251.158.249</li>
+<li>37.36.102.173</li>
+<li>196.218.58.10</li>
+<li>26.84.111.28</li>
+<li>8.219.63.5</li>
+<li>179.35.248.81</li>
+<li>45.109.177.29</li>
+<li>70.147.201.100</li>
+<li>216.11.11.76</li>
+<li>11.106.238.90</li>
+<li>8.219.63.6</li>
+<li>169.174.205.120</li>
+<li>36.53.162.115</li>
+<li>43.140.188.154</li>
+<li>107.160.237.24</li>
+<li>67.12.37.130</li>
+<li>204.100.156.112</li>
+<li>8.219.63.7</li>
+<li>8.61.59.178</li>
+<li>138.200.85.83</li>
+<li>28.176.120.57</li>
+<li>38.110.138.208</li>
+<li>45.214.114.195</li>
+<li>172.186.117.51</li>
+<li>220.52.21.203</li>
+<li>8.219.63.8</li>
+<li>98.171.27.2</li>
+<li>187.223.211.88</li>
+<li>197.172.132.59</li>
+<li>41.70.213.250</li>
+<li>164.131.106.10</li>
+<li>157.119.205.26</li>
+<li>154.199.135.43</li>
+<li>123.97.112.65</li>
+<li>8.219.63.9</li>
+<li>131.153.56.178</li>
+<li>156.97.149.188</li>
+<li>88.231.184.189</li>
+<li>111.81.212.124</li>
+<li>42.59.225.119</li>
+<li>129.26.18.233</li>
+<li>173.244.136.47</li>
+<li>148.52.217.39</li>
+<li>146.43.135.209</li>
+<li>8.219.63.10</li>
+<li>122.92.58.51</li>
+<li>96.8.172.144</li>
+<li>134.242.76.61</li>
+<li>118.8.175.130</li>
+<li>187.161.160.199</li>
+<li>147.171.252.64</li>
+<li>206.150.177.129</li>
+<li>43.119.153.55</li>
+<li>48.53.29.149</li>
+<li>68.94.170.57</li>
+<li>8.219.63.11</li>
+<li>89.203.248.92</li>
+<li>35.172.237.4</li>
+<li>220.41.50.58</li>
+<li>129.138.187.153</li>
+<li>183.106.119.138</li>
+<li>137.19.107.86</li>
+<li>26.70.89.139</li>
+<li>17.94.201.2</li>
+<li>49.187.149.233</li>
+<li>41.132.108.100</li>
+<li>215.47.34.49</li>
+<li>8.219.63.12</li>
+<li>77.201.224.179</li>
+<li>70.33.4.78</li>
+<li>208.16.71.141</li>
+<li>65.144.218.74</li>
+<li>156.83.246.244</li>
+<li>85.44.43.136</li>
+<li>216.118.104.229</li>
+<li>151.68.112.12</li>
+<li>125.231.94.48</li>
+<li>33.126.118.65</li>
+<li>89.68.170.227</li>
+<li>102.71.169.22</li>
+<li>8.219.63.13</li>
+<li>88.157.94.122</li>
+<li>1.51.202.13</li>
+<li>97.120.164.199</li>
+<li>48.232.136.219</li>
+<li>8.172.58.14</li>
+<li>124.5.101.111</li>
+<li>165.44.55.182</li>
+<li>94.167.13.79</li>
+</ul></ul>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

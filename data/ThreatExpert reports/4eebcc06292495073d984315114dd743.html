@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Trojan.Pandex, Trojan-Dropper.Win32.Crypter.ahf, generic!bg.fgl, Troj/Mdrop-CGE, Trojan-Dropper.Win32.Crypter, Dropper/Crypter.48128, Suspicious.MH690, Mal/Redos-H, Trojan.Win32.Spy, Mal/Behav-024, Trojan.Win32.Sasfis, Suspicious.Emit..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Trojan.Pandex, Trojan-Dropper.Win32.Crypter.ahf, generic!bg.fgl..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 1 December 2015, 04:59:19</li>
+<li>Processing time: 9 min 46 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x4EEBCC06292495073D984315114DD743</li>
+<li>File SHA-1: 0x6997BE89247E69E66FAAF48F8D705E86B00E6FD0</li>
+<li>Filesize: 71,765 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-pandex.html" target="_blank">Trojan.Pandex<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Dropper.Win32.Crypter.ahf [Kaspersky Lab]</li>
+<li>generic!bg.fgl [McAfee]</li>
+<li>Troj/Mdrop-CGE [Sophos]</li>
+<li>Trojan-Dropper.Win32.Crypter [Ikarus]</li>
+<li>Dropper/Crypter.48128 [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\SOFTWARE.LOG
+<br/>
+%System%\kkwgks.exe
+</td>
+<td class="cell_1">66,560 bytes</td>
+<td class="cell_1">MD5: 0xBFAA988E6DEA1FB07725B56641DC76E7<br/>SHA-1: 0x6491053790CA280E3C70A92A90B609D87A041C3D</td>
+<td class="cell_2">(not available)</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%Temp%\Temp\4266801.exe
+</td>
+<td class="cell_1">12,381 bytes</td>
+<td class="cell_1">MD5: 0x28B93FFCA9E9A731DE1CA64482BDCD1D<br/>SHA-1: 0x2F5B9F0B3CEC67415394BFBE31B06D11EA8EA74D</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/suspicious-mh690.html" target="_blank">Suspicious.MH690<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Mal/Redos-H [Sophos]<br/>Trojan.Win32.Spy [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">71,765 bytes</td>
+<td class="cell_1">MD5: 0x4EEBCC06292495073D984315114DD743<br/>SHA-1: 0x6997BE89247E69E66FAAF48F8D705E86B00E6FD0</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-pandex.html" target="_blank">Trojan.Pandex<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan-Dropper.Win32.Crypter.ahf [Kaspersky Lab]<br/>generic!bg.fgl [McAfee]<br/>Troj/Mdrop-CGE [Sophos]<br/>Trojan-Dropper.Win32.Crypter [Ikarus]<br/>Dropper/Crypter.48128 [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%Temp%\Temp</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">kkwgks.exe</td><td class="cell_1">%System%\kkwgks.exe</td><td class="cell_2">98,304 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">chun (1).exe</td><td class="cell_1">%Temp%\Temp\chun (1).exe</td><td class="cell_2">98,304 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">aspnet_stateskyr</td><td class="cell_1">ASP.NET State Servicesldt Transaction Coordinator Service</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\kkwgks.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "aspnet_stateskyr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR\0000]</li><ul>
+<li>Service = "aspnet_stateskyr"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "ASP.NET State Servicesldt Transaction Coordinator Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ASPNET_STATESKYR]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ASPNET_STATESKYR\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_stateskyr]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\kkwgks.exe"</li>
+<li>DisplayName = "ASP.NET State Servicesldt Transaction Coordinator Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides support for out-of-to-processxiw Transaction Coordinator Service."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "aspnet_stateskyr"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR\0000]</li><ul>
+<li>Service = "aspnet_stateskyr"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "ASP.NET State Servicesldt Transaction Coordinator Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ASPNET_STATESKYR]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ASPNET_STATESKYR\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_stateskyr]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\kkwgks.exe"</li>
+<li>DisplayName = "ASP.NET State Servicesldt Transaction Coordinator Service"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides support for out-of-to-processxiw Transaction Coordinator Service."</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Down = "%Temp%\temp\4266801.exe"</li>
+</ul>
+<br/>
+<em>so that 4266801.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>HackFuck</li>
+<li>aspnet_stateskyr</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">kkwgks.exe (%System%\kkwgks.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>222.186.34.172</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">222.186.34.172<td class="cell_2">8888</td><tr>
+</table></p>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://1.93.40.239:777/IE-32.exe</li>
+<li>http://42.51.159.191:668/down/DNF.exe</li>
+<li>http://42.51.159.191:668/down/LolClient.exe</li>
+<li>http://42.51.159.191:668/down/crossfire.exe</li>
+<li>http://42.51.159.191:668/down/JFZR.exe</li>
+<li>http://42.51.159.191:668/down/cstrike-online.exe</li>
+<li>http://42.51.159.191:668/down/soul.exe</li>
+<li>http://42.51.159.191:668/down/MapleStory.exe</li>
+<li>http://42.51.159.191:668/down/GTSaloon.exe</li>
+<li>http://42.51.159.191:668/down/Game.exe</li>
+<li>http://42.51.159.191:668/down/wow.exe</li>
+<li>http://42.51.159.191:668/down/wow-64.exe</li>
+<li>http://42.51.159.191:668/down/QQhxgame.exe</li>
+<li>http://42.51.159.191:668/down/6.exe</li>
+<li>http://42.51.159.191:668/down/QQSG.exe</li>
+<li>http://42.51.159.191:668/down/tty3d.exe</li>
+<li>http://42.51.159.191:668/down/fifazf.exe</li>
+<li>http://42.51.159.191:668/down/TKLobby.exe</li>
+<li>http://42.51.159.191:668/down/GamePlaza.exe</li>
+<li>http://42.51.159.191:668/down/QQ.exe</li>
+</ul></ul>
+<ul><li>The following Internet downloads were started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://42.51.159.191:668//1.txt?abc=96468</td><td class="cell_2">C:\1.txt</td></tr>
+<tr><td class="cell_1">http://42.51.159.191:668//1.txt?abc=187421</td><td class="cell_2">C:\1.txt</td></tr>
+<tr><td class="cell_1">http://42.51.159.191:668//1.txt?abc=198859</td><td class="cell_2">C:\1.txt</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8888:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6401 0000 7700 0000 4500 6E00 6700 6C00 | d...w...E.n.g.l.
+00000010 | 6900 7300 6800 2000 2800 5500 6E00 6900 | i.s.h. .(.U.n.i.
+00000020 | 7400 6500 6400 2000 5300 7400 6100 7400 | t.e.d. .S.t.a.t.
+00000030 | 6500 7300 2900 0000 0000 0000 0000 0000 | e.s.)...........
+00000040 | 0000 0000 0000 0000 434F 4D50 5554 4552 | ........COMPUTER
+00000050 | 4E41 4D45 0000 0000 0000 0000 0000 0000 | NAME............
+00000060 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000070 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 0000 0000 5769 6E58 5000 0000 | ........WinXP...
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000F0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000100 | 0000 0000 0000 0000 3235 3620 4D42 0000 | ........256 MB..
+00000110 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000120 | 0000 0000 0000 0000 3239 3939 204D 487A | ........2999 MHz
+00000130 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000140 | 0000 0000 0000 0000 5831 562D 33D4 C231 | ........X1V-3..1
+00000150 | 34C8 D500 0000 0000 0000 0000 0000 0000 | 4...............
+00000160 | 0000 0000 0000 0000 AF79 0100           | .........y..
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 1 December 2015 05:09:05</li>
+<li>Processing time: 6 min 59 sec</li>
+<li>Downloaded sample #1:</li>
+<ul>
+<li>File MD5: 0x3DF6BBEE8F7B5E492D5001ADB614EEB2</li>
+<li>File SHA-1: 0xA2F9921BE43D027A8C482A4DDC81FAEFDC90E805</li>
+<li>Filesize: 1,799,090 bytes</li>
+</ul>
+<li>Downloaded sample #2:</li>
+<ul>
+<li>File MD5: 0xC043E4D3826DD18BB29500B5076B7182</li>
+<li>File SHA-1: 0x156929782D815BCD20FED6C1B56D6DC451DE1FF5</li>
+<li>Filesize: 88,576 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-mh690.html" target="_blank">Suspicious.MH690<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-024.html" target="_blank">Mal/Behav-024<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-sasfis.html" target="_blank">Trojan.Win32.Sasfis<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #3:</li>
+<ul>
+<li>File MD5: 0xFE84DBB230FCCA8A764322865F73F2DA</li>
+<li>File SHA-1: 0x3D5B9085653A4A5CB3F69E5F8A458A25E3528E25</li>
+<li>Filesize: 78,336 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-mh690.html" target="_blank">Suspicious.MH690<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-behav-024.html" target="_blank">Mal/Behav-024<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-sasfis.html" target="_blank">Trojan.Win32.Sasfis<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #4:</li>
+<ul>
+<li>File MD5: 0xA1448DF2EFEB24A0AE709702A9070634</li>
+<li>File SHA-1: 0x06D5544444B965CCD739DAB8259B10FF40DE14A2</li>
+<li>Filesize: 50,176 bytes</li>
+</ul>
+<li>Downloaded sample #5:</li>
+<ul>
+<li>File MD5: 0xADE76DF94BA1E43E8F568C7820D6F8A4</li>
+<li>File SHA-1: 0x8B9BDDB3299D4C5CC9579F11AD8FAD97343D8C07</li>
+<li>Filesize: 130,687 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #6:</li>
+<ul>
+<li>File MD5: 0x5A8FB73A06EA11609F48FFCBEBBD3FEF</li>
+<li>File SHA-1: 0xCB8F34BE603F96E8B07A00CE2C733E21ECCA3314</li>
+<li>Filesize: 28,922 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #7:</li>
+<ul>
+<li>File MD5: 0x2707CE68C83472B95339DE2F565D2D69</li>
+<li>File SHA-1: 0xF48DD371CD1061A5401A51F422A9BE8876F36054</li>
+<li>Filesize: 45,056 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-004.html" target="_blank">Mal/Behav-004<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Trojan-PWS.Win32.Lolyda [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #8:</li>
+<ul>
+<li>File MD5: 0xFA1B4002087A10BE64A1308CC0442019</li>
+<li>File SHA-1: 0x861656571E13BD05D812E69E947DF45FF977D2FD</li>
+<li>Filesize: 32,506 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+<li>Downloaded sample #9:</li>
+<ul>
+<li>File MD5: 0x789D8CB568F9AA10D681A8CF3A181098</li>
+<li>File SHA-1: 0x9561A53CB61B641F318DBFF08A2CDE8356820CB5</li>
+<li>Filesize: 105,599 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #10:</li>
+<ul>
+<li>File MD5: 0x02B9F932B47E3E64C9EBF62F4DD8F104</li>
+<li>File SHA-1: 0x8851E885F4C130D10227EA05CC26A9F1791EFC13</li>
+<li>Filesize: 60,928 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-downloader-win32-fraudload.html" target="_blank">Trojan-Downloader.Win32.FraudLoad<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #11:</li>
+<ul>
+<li>File MD5: 0xDA0E136ED8B4B40015472A739F00766C</li>
+<li>File SHA-1: 0x05F9CA219E6EB726F5CC235B098A01B208592AE1</li>
+<li>Filesize: 49,402 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #12:</li>
+<ul>
+<li>File MD5: 0x65D9A73AC460D338E68BC12D9BD16D15</li>
+<li>File SHA-1: 0xF41A8E06451746D28F16776D5BCF89903668517D</li>
+<li>Filesize: 74,240 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #13:</li>
+<ul>
+<li>File MD5: 0xF6F4E4436D59B27E40F999900344BB6E</li>
+<li>File SHA-1: 0xFA8FA5DD53D7BBD9817FF3C48066B51401A0BC0E</li>
+<li>Filesize: 84,480 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li>Suspicious.Emit [Symantec]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #14:</li>
+<ul>
+<li>File MD5: 0x4F99FB577B823B6B35A5AB6B78890A2C</li>
+<li>File SHA-1: 0x8121AC5EA5CBD9D296B7425587500246D02D80AF</li>
+<li>Filesize: 134,856 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-pandex.html" target="_blank">Trojan.Pandex<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Dropper.Win32.Crypter.ahf [Kaspersky Lab]</li>
+<li>generic!bg.fgl [McAfee]</li>
+<li>Troj/Mdrop-CGE [Sophos]</li>
+<li>Trojan-Dropper.Win32.Crypter [Ikarus]</li>
+<li>Dropper/Crypter.48128 [AhnLab]</li>
+</ul>
+</ul>
+<li>Downloaded sample #15:</li>
+<ul>
+<li>File MD5: 0xB298CD0878FFFB969FD1C41920368244</li>
+<li>File SHA-1: 0xD0EA65D33E3C33CFAAC2D1971353114F0D146AE5</li>
+<li>Filesize: 67,584 bytes</li>
+<li>Packer info: <em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>c:\pagefile.sys</li>
+<li>%System%\CatRoot2\dberr.txt</li>
+<li>%System%\midimap.dll</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #3]</td><td class="cell_1">[file and pathname of the sample #3]</td><td class="cell_2">430,080 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #15]</td><td class="cell_1">[file and pathname of the sample #15]</td><td class="cell_2">479,232 bytes</td></tr>
+<tr><td class="cell_1">qedewg.exe</td><td class="cell_1">c:\qedewg.exe</td><td class="cell_2">569,344 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">jecybmaak.exe</td><td class="cell_1">%Windir%\temp\jecybmaak.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">xcoxoggpd.exe</td><td class="cell_1">%Windir%\temp\xcoxoggpd.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">mfdctkpxm.exe</td><td class="cell_1">%Windir%\temp\mfdctkpxm.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #8]</td><td class="cell_1">[file and pathname of the sample #8]</td><td class="cell_2">90,112 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #9]</td><td class="cell_1">[file and pathname of the sample #9]</td><td class="cell_2">163,840 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #6]</td><td class="cell_1">[file and pathname of the sample #6]</td><td class="cell_2">90,112 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">344,064 bytes</td></tr>
+<tr><td class="cell_1">elsqwmteq.exe</td><td class="cell_1">%Windir%\temp\elsqwmteq.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #14]</td><td class="cell_1">[file and pathname of the sample #14]</td><td class="cell_2">114,688 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #11]</td><td class="cell_1">[file and pathname of the sample #11]</td><td class="cell_2">118,784 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #12]</td><td class="cell_1">[file and pathname of the sample #12]</td><td class="cell_2">143,360 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #13]</td><td class="cell_1">[file and pathname of the sample #13]</td><td class="cell_2">147,456 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #2]</td><td class="cell_1">[file and pathname of the sample #2]</td><td class="cell_2">569,344 bytes</td></tr>
+<tr><td class="cell_1">bbwazttlq.exe</td><td class="cell_1">%Windir%\temp\bbwazttlq.exe</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #4]</td><td class="cell_1">[file and pathname of the sample #4]</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #5]</td><td class="cell_1">[file and pathname of the sample #5]</td><td class="cell_2">184,320 bytes</td></tr>
+<tr><td class="cell_1">mhkuaeyxi.exe</td><td class="cell_1">%Windir%\temp\mhkuaeyxi.exe</td><td class="cell_2">135,168 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following processes were intentionally <font color="#990000"><b>hidden</b></font> from the user:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vxmvtuxak.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">swonwgrzv.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">coegztvqm.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">xueuzyfyc.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">noekagvqt.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">uamijwkhc.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">anrtuacpa.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">arfjwyorq.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">zkzfhfkih.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">xajqzgdpl.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">hwvegcqmc.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">mfdctkpxm.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">xcoxoggpd.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">mdmgsmwnj.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">mhkuaeyxi.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">zcmlqxwph.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">hagbnrqsg.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">opccqrqzk.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">jkutvysmk.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">wuuuopikx.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">jecybmaak.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">lhnxfdgce.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">bbwazttlq.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">jysjcsaru.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">joaapukpw.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">vvgjuznbd.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">lvlnuxgho.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">nkbqumpqt.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">qkliggmhv.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">kfmzolxsf.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">dgjgxslem.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">skswaukmj.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">pxynwyhmb.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">cshfheyws.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">frhmilwie.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">abwpkoatj.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">zvsjipfsj.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">wqxcjdmpe.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">zpyoejibk.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">pbikklnbc.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">rtiotgmbj.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">jbeaoqvsx.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">elsqwmteq.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">wxcslvwyu.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">wxcslvwyu.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">erxaibwmm.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">dbaxiensu.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">otlhxluak.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">yabypoewk.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">dookywawb.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">sqwrpwfkp.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">lxtawguty.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">azahcndun.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+<tr><td class="cell_1">kohmtgiwe.exeex</td><td class="cell_2">135,168 bytes</td></tr>
+</table></p>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">%ComputerName%10.dll</td><td class="cell_1">%System%\%ComputerName%10.dll</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %Windir%\<a href="http://www.threatexpert.com/files/explorer.exe.html" target="_blank">explorer.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x2110000 - 0x21A4000</td></tr>
+<tr><td class="cell_1">sxload.tmp</td><td class="cell_1">%System%\sxload.tmp</td><td class="cell_2">Process name: [filename of the sample #3]<br/>Process filename: [file and pathname of the sample #3]<br/>Address space: 0x1510000 - 0x1514000</td></tr>
+<tr><td class="cell_1">sxcs.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxcs.tmp</td><td class="cell_2">Process name: [filename of the sample #3]<br/>Process filename: [file and pathname of the sample #3]<br/>Address space: 0x1520000 - 0x152F000</td></tr>
+<tr><td class="cell_1">sxmmlhx.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmmlhx.tmp</td><td class="cell_2">Process name: [filename of the sample #3]<br/>Process filename: [file and pathname of the sample #3]<br/>Address space: 0x1530000 - 0x1546000</td></tr>
+<tr><td class="cell_1">sxmxd.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmxd.tmp</td><td class="cell_2">Process name: [filename of the sample #3]<br/>Process filename: [file and pathname of the sample #3]<br/>Address space: 0x1550000 - 0x155F000</td></tr>
+<tr><td class="cell_1">sxload.tmp</td><td class="cell_1">%System%\sxload.tmp</td><td class="cell_2">Process name: [filename of the sample #15]<br/>Process filename: [file and pathname of the sample #15]<br/>Address space: 0x10E0000 - 0x10E4000</td></tr>
+<tr><td class="cell_1">sxcs.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxcs.tmp</td><td class="cell_2">Process name: [filename of the sample #15]<br/>Process filename: [file and pathname of the sample #15]<br/>Address space: 0x10F0000 - 0x10FF000</td></tr>
+<tr><td class="cell_1">sxmmlhx.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmmlhx.tmp</td><td class="cell_2">Process name: [filename of the sample #15]<br/>Process filename: [file and pathname of the sample #15]<br/>Address space: 0x1100000 - 0x1116000</td></tr>
+<tr><td class="cell_1">sxmxd.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmxd.tmp</td><td class="cell_2">Process name: [filename of the sample #15]<br/>Process filename: [file and pathname of the sample #15]<br/>Address space: 0x1130000 - 0x113F000</td></tr>
+<tr><td class="cell_1">sxload.tmp</td><td class="cell_1">%System%\sxload.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1140000 - 0x1144000</td></tr>
+<tr><td class="cell_1">sxcs.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxcs.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1150000 - 0x115F000</td></tr>
+<tr><td class="cell_1">sxmmlhx.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmmlhx.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1160000 - 0x1176000</td></tr>
+<tr><td class="cell_1">sxmxd.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmxd.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1190000 - 0x119F000</td></tr>
+<tr><td class="cell_1">sxload.tmp</td><td class="cell_1">%System%\sxload.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1140000 - 0x1144000</td></tr>
+<tr><td class="cell_1">sxcs.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxcs.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1150000 - 0x115F000</td></tr>
+<tr><td class="cell_1">sxmmlhx.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmmlhx.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1160000 - 0x1176000</td></tr>
+<tr><td class="cell_1">sxmxd.tmp</td><td class="cell_1">%ProgramFiles%\Common Files\sxmxd.tmp</td><td class="cell_2">Process name: qedewg.exe<br/>Process filename: c:\qedewg.exe<br/>Address space: 0x1190000 - 0x119F000</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ComputerName% is a variable that refers to the current computer name.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.DSOControl.3.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.DSOControl.3.0\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.2.6</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.2.6\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.3.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.3.0\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\E0200804</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\E0200804</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script\Settings</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument\CurVer</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\UrlTemplate</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ftp\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\url.dll,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\htmlfile\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\Internet Explorer\iexplore.exe,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.DSOControl.3.0\CLSID]</li><ul>
+<li>(Default) = "{F5078F39-C551-11D3-89B9-0000F81FE221}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.DSOControl.3.0]</li><ul>
+<li>(Default) = "XML Data Source Object 3.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument\CurVer]</li><ul>
+<li>(Default) = "Msxml2.FreeThreadedDOMDocument.3.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument\CLSID]</li><ul>
+<li>(Default) = "{F6D90F12-9C73-11D3-B32E-00C04F990BB4}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument]</li><ul>
+<li>(Default) = "Free Threaded XML DOM Document"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.2.6\CLSID]</li><ul>
+<li>(Default) = "{f5078f1c-c551-11d3-89b9-0000f81fe221}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.2.6]</li><ul>
+<li>(Default) = "Free Threaded XML DOM Document26"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.3.0\CLSID]</li><ul>
+<li>(Default) = "{F5078F33-C551-11D3-89B9-0000F81FE221}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2.FreeThreadedDOMDocument.3.0]</li><ul>
+<li>(Default) = "Free Threaded XML DOM Document 3.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\E0200804]</li><ul>
+<li>Ime File = "%ComputerName%.IME"</li>
+<li>Layout Text = "???(???)"</li>
+<li>Layout File = "kbdus.dll"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\E0200804]</li><ul>
+<li>Ime File = "%ComputerName%.IME"</li>
+<li>Layout Text = "???(???)"</li>
+<li>Layout File = "kbdus.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Keyboard Layout\Preload]</li><ul>
+<li>2 = "00000409"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows Script\Settings]</li><ul>
+<li>JITDebug = 0x00000000</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{0000002F-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020420-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020421-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020422-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020423-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020424-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{00020425-0000-0000-C000-000000000046}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{0BE35203-8F91-11CE-9DE3-00AA004BB851}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{0BE35204-8F91-11CE-9DE3-00AA004BB851}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{46763EE0-CAB2-11CE-8C20-00AA0051E5D4}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Classes\CLSID\{B196B286-BAB4-101A-B69C-00AA00341D07}\InprocServer32]</li><ul>
+<li>(Default) = "oleaut32.dll"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ftp\DefaultIcon]</li><ul>
+<li>(Default) = "%System%\msieftp.dll,0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\htmlfile\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\Internet Explorer\iexplore.exe,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml\CLSID]</li><ul>
+<li>(Default) = "{CFC399AF-D876-11D0-9C10-00C04FC99C8E}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml]</li><ul>
+<li>(Default) = "Msxml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument\CurVer]</li><ul>
+<li>(Default) = "Microsoft.XMLDOM.1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument\CLSID]</li><ul>
+<li>(Default) = "{2933BF90-7B36-11D2-B20E-00C04F983E60}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.DOMDocument]</li><ul>
+<li>(Default) = "XML DOM Document"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument\CurVer]</li><ul>
+<li>(Default) = "Microsoft.FreeThreadedXMLDOM.1.0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument\CLSID]</li><ul>
+<li>(Default) = "{2933BF91-7B36-11D2-B20E-00C04F983E60}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MSXML.FreeThreadedDOMDocument]</li><ul>
+<li>(Default) = "Free Threaded XML DOM Document"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2\CLSID]</li><ul>
+<li>(Default) = "{F6D90F10-9C73-11D3-B32E-00C04F990BB4}"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msxml2]</li><ul>
+<li>(Default) = "Msxml2"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\UrlTemplate]</li><ul>
+<li>1 = "www.%s.com"</li>
+<li>2 = "www.%s.org"</li>
+<li>3 = "www.%s.net"</li>
+<li>4 = "www.%s.edu"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00BB2763-6A77-11D0-A535-00C04FD7D062}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00BB2764-6A77-11D0-A535-00C04FD7D062}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00BB2765-6A77-11D0-A535-00C04FD7D062}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{01E04581-4EEE-11d0-BFE9-00AA005B4383}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03C036F1-A186-11D0-824A-00AA005B4383}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{05f6fe1a-ecef-11d0-aae7-00c04fc9b304}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{07798131-AF23-11d1-9111-00A0C98BA67D}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0A89A860-D7B1-11CE-8350-444553540000}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{131A6951-7F78-11D0-A979-00C04FD705A2}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{169A0691-8DF9-11d1-A1C4-00C04FD75D13}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{18845040-0fa5-11d1-ba19-00c04fd912d0}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1FBA04EE-3024-11d2-8F1F-0000F87ABD16}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{21569614-B795-46b1-85F4-E737A8DC09AD}\DefaultIcon]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{21569614-B795-46b1-85F4-E737A8DC09AD}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{22BF0C20-6DA7-11D0-B373-00A0C9034938}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25336920-03F9-11CF-8FD0-00AA00686F13}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{25336921-03F9-11CF-8FD0-00AA00686F13}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2B4F54B1-3D6D-11d0-8258-00C04FD5AE38}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2E71FD0F-AAB1-42c0-9146-6D2C4EDCF07D}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{2F2F1F96-2BC1-4b1c-BE28-EA3774F4676A}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3028902F-6374-48b2-8DC6-9725E775B926}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f163-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F17F-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F1FC-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F232-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F296-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F391-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F3B2-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f3B3-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f3B4-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f3BB-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F3BC-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F3C2-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F3D6-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F3D9-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f3DA-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F406-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f499-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f4e7-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f4f0-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f4f8-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050F5C8-98B5-11CF-BB82-00AA00BDCE0B}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f667-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3050f67D-98b5-11cf-bb82-00aa00bdce0b}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{30D02401-6A81-11d0-8274-00C04FD5AE38}\DefaultIcon]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{30D02401-6A81-11d0-8274-00C04FD5AE38}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3C374A40-BAE4-11CF-BF7D-00AA006946EE}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3CCF8A41-5C85-11d0-9796-00AA00B90ADF}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3DC7A020-0ACD-11CF-A9BB-00AA004AE837}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F4DACA4-160D-11D2-A8E9-00104B365C9F}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F4EEF80-BFE8-11d0-A3A5-00C04FD706EC}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{429AF92C-A51F-11d2-861E-00C04FA35C89}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{42aedc87-2188-41fd-b9a3-0c966feabec1}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{438755C2-A8BA-11D1-B96B-00A0C90312E1}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{43A8F463-4222-11d2-B641-006097DF5BD4}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4AF4A5FC-912A-11D1-B945-00A0C90312E1}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4D5C8C25-D075-11d0-B416-00C04FB90376}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4D5C8C2A-D075-11d0-B416-00C04FB90376}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{53bd6b4e-3780-4693-afc3-7161c2f3ee9c}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{55136805-B2DE-11D1-B9F2-00A0C98BC547}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{56FDF344-FD6D-11d0-958A-006097C9A090}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5AAF51B2-B1F0-11d1-B6AB-00A0C90833E9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5AAF51B3-B1F0-11d1-B6AB-00A0C90833E9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{5E6AB780-7743-11CF-A12B-00AA004AE837}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603D3800-BD81-11d0-A3A5-00C04FD706EC}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{603D3801-BD81-11d0-A3A5-00C04FD706EC}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{607fd4e8-0a03-11d1-ab1d-00c04fc9b304}]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{607fd4e8-0a03-11d1-ab1d-00c04fc9b304}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{607fd4e8-0a03-11d1-ab1d-00c04fc9b304}\ProgID]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6413BA2C-B461-11d1-A18A-080036B11A03}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{64AB4BB7-111E-11d1-8F79-00C04FC2FBE1}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65014010-9F62-11d1-A651-00600811D5CE}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6756A641-DE71-11d0-831B-00AA005B4383}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{67EA19A0-CCEF-11d0-8024-00C04FD75D13}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{6935DB93-21E8-4ccc-BEB9-9FE3C77A297A}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7057e952-bd1b-11d1-8919-00c04fc2c836}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7376D660-C583-11d0-A3A5-00C04FD706EC}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{76E67A63-06E9-11D2-A840-006008059382}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7BA4C742-9E81-11CF-99D3-00AA004AE837}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7BD29E00-76C1-11CF-9DD0-00A0C9034933}\DefaultIcon]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7BD29E00-76C1-11CF-9DD0-00A0C9034933}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7BD29E01-76C1-11CF-9DD0-00A0C9034933}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7e653215-fa25-46bd-a339-34a2790f3cb7}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{871C5380-42A0-1069-A2EA-08002B30309D}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8856F961-340A-11D0-A96B-00C04FD705A2}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8856F961-340A-11D0-A96B-00C04FD705A2}\ToolboxBitmap32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8C7461EF-2B13-11d2-BE35-3078302C2030}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{8E6E6079-0CB7-11d2-8F10-0000F87ABD16}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{91EA3F8B-C99B-11d0-9815-00C04FD91972}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9461b922-3c5a-11d2-bf8b-00c04fb93661}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9B0EFD60-F7B0-11D0-BAEF-00C04FC308C9}\InprocServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9BA05972-F6A8-11CF-A442-00A0C90A8F39}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A08C11D2-A228-11d0-825B-00AA005B4383}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A2B0DD40-CC59-11d0-A3A5-00C04FD706EC}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A5E46E3A-8849-11D1-9D8C-00C04FC99D61}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{acf35015-526e-4230-9596-becbe19f0ac9}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AE24FDAE-03C6-11D1-8B76-0080C744F389}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AF4F6510-F982-11d0-8595-00AA004CD6D8}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{AF604EFE-8897-11D1-B944-00A0C90312E1}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{B45FF030-4447-11D2-85DE-00C04FA35C89}\InProcServer32]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>OnlyOneTrojanExeWork</li>
+<li>_cfg_io_lk_</li>
+<li>hlsys_1.0_ct</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">[file and pathname of the sample #3]</td></tr>
+<tr><td class="cell_1">1035</td><td class="cell_1">TCP</td><td class="cell_2">qedewg.exe (C:\qedewg.exe)</td></tr>
+<tr><td class="cell_1">1036</td><td class="cell_1">TCP</td><td class="cell_2">qedewg.exe (c:\qedewg.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>cicoct.com</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">cicoct.com<td class="cell_2">3111</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">116.10.189.78</td><td class="cell_1">758</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+<tr><td class="cell_1">116.10.189.78</td><td class="cell_1">760</td><td class="cell_1">(null)</td><td class="cell_2">(null)</td></tr>
+</table></p>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://116.10.189.78:758/cf.css</li>
+</ul></ul>
+<ul><li>The following Internet download was started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://58.221.62.56:801/fen/ym/game.dat</td><td class="cell_2">%Temp%\Im6o7dhdSslH.dat</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 758:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 2F77 672E 7478 7420 4854 5450 | GET /wg.txt HTTP
+00000010 | 2F31 2E31 0D0A 4163 6365 7074 3A20 696D | /1.1..Accept: im
+00000020 | 6167 652F 6769 662C 2069 6D61 6765 2F62 | age/gif, image/b
+00000030 | 6D70 2C20 696D 6167 652F 782D 7862 6974 | mp, image/x-xbit
+00000040 | 6D61 702C 2069 6D61 6765 2F6A 7065 672C | map, image/jpeg,
+00000050 | 2069 6D61 6765 2F70 6A70 6567 2C20 6170 |  image/pjpeg, ap
+00000060 | 706C 6963 6174 696F 6E2F 782D 7368 6F63 | plication/x-shoc
+00000070 | 6B77 6176 652D 666C 6173 682C 2061 7070 | kwave-flash, app
+00000080 | 6C69 6361 7469 6F6E 2F76 6E64 2E6D 732D | lication/vnd.ms-
+00000090 | 6578 6365 6C2C 2061 7070 6C69 6361 7469 | excel, applicati
+000000A0 | 6F6E 2F76 6E64 2E6D 732D 706F 7765 7270 | on/vnd.ms-powerp
+000000B0 | 6F69 6E74 2C20 6170 706C 6963 6174 696F | oint, applicatio
+000000C0 | 6E2F 6D73 776F 7264 2C20 2A2F 2A0D 0A52 | n/msword, */*..R
+000000D0 | 6566 6572 6572 3A20 6874 7470 3A2F 2F31 | eferer: http://1
+000000E0 | 3136 2E31 302E 3138 392E 3738 3A37 3538 | 16.10.189.78:758
+000000F0 | 2F77 672E 7478 740D 0A41 6363 6570 742D | /wg.txt..Accept-
+00000100 | 4C61 6E67 7561 6765 3A20 7A68 2D63 6E0D | Language: zh-cn.
+00000110 | 0A55 7365 722D 4167 656E 743A 204D 6F7A | .User-Agent: Moz
+00000120 | 696C 6C61 2F34 2E30 2028 636F 6D70 6174 | illa/4.0 (compat
+00000130 | 6962 6C65 3B20 4D53 4945 2036 2E30 3B20 | ible; MSIE 6.0;
+00000140 | 5769 6E64 6F77 7320 4E54 2035 2E30 290D | Windows NT 5.0).
+00000150 | 0A48 6F73 743A 206C 6F63 616C 686F 7374 | .Host: localhost
+00000160 | 3A37 3538 0D0A 4361 6368 652D 436F 6E74 | :758..Cache-Cont
+00000170 | 726F 6C3A 206E 6F2D 6361 6368 650D 0A0D | rol: no-cache...
+00000180 | 0A                                      | .
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 760:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 4745 5420 2F77 672E 7478 7420 4854 5450 | GET /wg.txt HTTP
+00000010 | 2F31 2E31 0D0A 4163 6365 7074 3A20 696D | /1.1..Accept: im
+00000020 | 6167 652F 6769 662C 2069 6D61 6765 2F62 | age/gif, image/b
+00000030 | 6D70 2C20 696D 6167 652F 782D 7862 6974 | mp, image/x-xbit
+00000040 | 6D61 702C 2069 6D61 6765 2F6A 7065 672C | map, image/jpeg,
+00000050 | 2069 6D61 6765 2F70 6A70 6567 2C20 6170 |  image/pjpeg, ap
+00000060 | 706C 6963 6174 696F 6E2F 782D 7368 6F63 | plication/x-shoc
+00000070 | 6B77 6176 652D 666C 6173 682C 2061 7070 | kwave-flash, app
+00000080 | 6C69 6361 7469 6F6E 2F76 6E64 2E6D 732D | lication/vnd.ms-
+00000090 | 6578 6365 6C2C 2061 7070 6C69 6361 7469 | excel, applicati
+000000A0 | 6F6E 2F76 6E64 2E6D 732D 706F 7765 7270 | on/vnd.ms-powerp
+000000B0 | 6F69 6E74 2C20 6170 706C 6963 6174 696F | oint, applicatio
+000000C0 | 6E2F 6D73 776F 7264 2C20 2A2F 2A0D 0A52 | n/msword, */*..R
+000000D0 | 6566 6572 6572 3A20 6874 7470 3A2F 2F31 | eferer: http://1
+000000E0 | 3136 2E31 302E 3138 392E 3738 3A37 3538 | 16.10.189.78:758
+000000F0 | 2F77 672E 7478 740D 0A41 6363 6570 742D | /wg.txt..Accept-
+00000100 | 4C61 6E67 7561 6765 3A20 7A68 2D63 6E0D | Language: zh-cn.
+00000110 | 0A55 7365 722D 4167 656E 743A 204D 6F7A | .User-Agent: Moz
+00000120 | 696C 6C61 2F34 2E30 2028 636F 6D70 6174 | illa/4.0 (compat
+00000130 | 6962 6C65 3B20 4D53 4945 2036 2E30 3B20 | ible; MSIE 6.0;
+00000140 | 5769 6E64 6F77 7320 4E54 2035 2E30 290D | Windows NT 5.0).
+00000150 | 0A48 6F73 743A 206C 6F63 616C 686F 7374 | .Host: localhost
+00000160 | 3A37 3538 0D0A 4361 6368 652D 436F 6E74 | :758..Cache-Cont
+00000170 | 726F 6C3A 206E 6F2D 6361 6368 650D 0A0D | rol: no-cache...
+00000180 | 0A                                      | .
+00000000 | 4745 5420 2F73 736F 6E2E 7478 7420 4854 | GET /sson.txt HT
+00000010 | 5450 2F31 2E31 0D0A 4163 6365 7074 3A20 | TP/1.1..Accept:
+00000020 | 696D 6167 652F 6769 662C 2069 6D61 6765 | image/gif, image
+00000030 | 2F62 6D70 2C20 696D 6167 652F 782D 7862 | /bmp, image/x-xb
+00000040 | 6974 6D61 702C 2069 6D61 6765 2F6A 7065 | itmap, image/jpe
+00000050 | 672C 2069 6D61 6765 2F70 6A70 6567 2C20 | g, image/pjpeg,
+00000060 | 6170 706C 6963 6174 696F 6E2F 782D 7368 | application/x-sh
+00000070 | 6F63 6B77 6176 652D 666C 6173 682C 2061 | ockwave-flash, a
+00000080 | 7070 6C69 6361 7469 6F6E 2F76 6E64 2E6D | pplication/vnd.m
+00000090 | 732D 6578 6365 6C2C 2061 7070 6C69 6361 | s-excel, applica
+000000A0 | 7469 6F6E 2F76 6E64 2E6D 732D 706F 7765 | tion/vnd.ms-powe
+000000B0 | 7270 6F69 6E74 2C20 6170 706C 6963 6174 | rpoint, applicat
+000000C0 | 696F 6E2F 6D73 776F 7264 2C20 2A2F 2A0D | ion/msword, */*.
+000000D0 | 0A52 6566 6572 6572 3A20 6874 7470 3A2F | .Referer: http:/
+000000E0 | 2F31 3136 2E31 302E 3138 392E 3738 3A37 | /116.10.189.78:7
+000000F0 | 3630 2F73 736F 6E2E 7478 740D 0A41 6363 | 60/sson.txt..Acc
+00000100 | 6570 742D 4C61 6E67 7561 6765 3A20 7A68 | ept-Language: zh
+00000110 | 2D63 6E0D 0A55 7365 722D 4167 656E 743A | -cn..User-Agent:
+00000120 | 204D 6F7A 696C 6C61 2F34 2E30 2028 636F |  Mozilla/4.0 (co
+00000130 | 6D70 6174 6962 6C65 3B20 4D53 4945 2036 | mpatible; MSIE 6
+00000140 | 2E30 3B20 5769 6E64 6F77 7320 4E54 2035 | .0; Windows NT 5
+00000150 | 2E30 290D 0A48 6F73 743A 206C 6F63 616C | .0)..Host: local
+00000160 | 686F 7374 3A37 3630 0D0A 4361 6368 652D | host:760..Cache-
+00000170 | 436F 6E74 726F 6C3A 206E 6F2D 6361 6368 | Control: no-cach
+00000180 | 650D 0A0D 0A                            | e....
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

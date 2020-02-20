@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Spybot.Worm, Backdoor.Win32.Rbot.gen, W32/Sdbot.worm.gen.g, W32/Rbot-Gen, Backdoor:Win32/IRCbot.gen!Z, Backdoor.Win32.Rbot, Win32/IRCBot.worm.Gen">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Spybot.Worm, Backdoor.Win32.Rbot.gen, W32/Sdbot.worm.gen.g, W32/Rbot-Gen..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 24 November 2015, 01:30:10</li>
+<li>Processing time: 5 min 51 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6E264B3AB0E40BEFE78FB7FBC8EB4A14</li>
+<li>File SHA-1: 0x1387932B293AEBD445CAB505CCDA96F4401CAF6F</li>
+<li>Filesize: 232,960 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-spybot-worm.html" target="_blank">W32.Spybot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-rbot-gen.html" target="_blank">Backdoor.Win32.Rbot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-sdbot-worm-gen-g.html" target="_blank">W32/Sdbot.worm.gen.g<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-rbot-gen.html" target="_blank">W32/Rbot-Gen<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li>Backdoor:Win32/IRCbot.gen!Z [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-rbot.html" target="_blank">Backdoor.Win32.Rbot<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-ircbot-worm-gen.html" target="_blank">Win32/IRCBot.worm.Gen<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">A network-aware worm that uses known exploit(s) in order to replicate across vulnerable networks.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-012: DCOM RPC Overflow exploit - replication across TCP 135/139/445/593 (common for Blaster, Welchia, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">MS04-011: LSASS Overflow exploit - replication across TCP 445 (common for Sasser, Bobax, Kibuv, Korgo, Gaobot, Spybot, Randex, other IRC Bots).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to perform DoS attacks against other computers.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Communication with a remote IRC server.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1">Trojan.Bancos.JZ</td>
+<td class="cell_1">Trojan.Bancos.JZ will display fake login webpages for various financial websites. All login information entered into these webpages are collected and sent back to the author of the Trojan.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+<br/>
+%System%\winsrc32.exe
+</td>
+<td class="cell_1">232,960 bytes</td>
+<td class="cell_1">MD5: 0x6E264B3AB0E40BEFE78FB7FBC8EB4A14<br/>SHA-1: 0x1387932B293AEBD445CAB505CCDA96F4401CAF6F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-spybot-worm.html" target="_blank">W32.Spybot.Worm<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-rbot-gen.html" target="_blank">Backdoor.Win32.Rbot.gen<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-sdbot-worm-gen-g.html" target="_blank">W32/Sdbot.worm.gen.g<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/w32-rbot-gen.html" target="_blank">W32/Rbot-Gen<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/>Backdoor:Win32/IRCbot.gen!Z [Microsoft]<br/><a href="http://www.threatexpert.com/threats/backdoor-win32-rbot.html" target="_blank">Backdoor.Win32.Rbot<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-ircbot-worm-gen.html" target="_blank">Win32/IRCBot.worm.Gen<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">winsrc32.exe</td><td class="cell_1">%System%\winsrc32.exe</td><td class="cell_2">569,344 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">569,344 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\OLE</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>(Default) = "winsrc32.exe"</li>
+</ul>
+<br/>
+<em>so that winsrc32.exe runs every time Windows starts</em><br/>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices]</li><ul>
+<li>(Default) = "winsrc32.exe"</li>
+</ul>
+<br/>
+<em>so that winsrc32.exe runs every time Windows starts</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\OLE]</li><ul>
+<li>(Default) = "winsrc32.exe"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>s22bf</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">69</td><td class="cell_1">UDP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3049</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3050</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3051</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3052</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3053</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3054</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3055</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3056</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3057</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3058</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3059</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3060</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3061</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3062</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3063</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3064</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3065</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3066</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3067</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3068</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3069</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3070</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3071</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3072</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3073</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3074</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3075</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3076</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3077</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3078</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3079</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3080</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3081</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3082</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3083</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3084</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3085</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3086</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3087</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3088</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3089</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3090</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3091</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3092</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3093</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3094</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3099</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3100</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3101</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3102</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3103</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3104</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3105</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3106</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3107</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3108</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3109</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3110</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3111</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3112</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3113</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3114</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3115</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3116</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3117</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3118</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3119</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3120</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3121</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3122</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3123</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3124</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3125</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3126</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3127</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3128</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3129</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3130</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3131</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3132</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3133</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3134</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3135</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3136</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3137</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3138</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3139</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3140</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3141</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3142</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3143</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3144</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3145</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3146</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3147</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3148</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3149</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3150</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+<tr><td class="cell_1">3151</td><td class="cell_1">TCP</td><td class="cell_2">winsrc32.exe (%System%\winsrc32.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>www.uxge.com</li>
+<li>127.0.x.x</li>
+<li>127.0.120.26</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">127.0.81.215<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.133.157<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.182.103<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.234.46<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.31.245<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.80.191<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.132.134<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.181.80<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.233.22<td class="cell_2">445</td><tr>
+<tr><td class="cell_1">127.0.29.222<td class="cell_2">445</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>There was a new connection established with a remote IRC Server. The generated outbound IRC traffic is provided below:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+NICK n00b|48386
+USER ckzrttr 0 0 :n00b|48386
+USERHOST n00b|48386
+MODE n00b|48386 +x
+JOIN #n00b n00b
+NICK n00b|06810
+USER eupgjhi 0 0 :n00b|06810
+USERHOST n00b|06810
+MODE n00b|06810 +x
+NICK n00b|92638
+USER bjkdf 0 0 :n00b|92638
+USERHOST n00b|92638
+MODE n00b|92638 +x
+NICK n00b|88962
+USER gnystt 0 0 :n00b|88962
+USERHOST n00b|88962
+MODE n00b|88962 +x
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>Heuristically identified capability of spreading across the following weakly restricted network shares:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="5">
+ADMIN$
+C$
+D$
+IPC$
+</textarea></tr></td></table></p>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+12345
+123456
+1234567
+12345678
+123456789
+accounting
+accounts
+admin
+admin$
+administrador
+administrat
+administrateur
+administrator
+admins
+april
+bitch
+brian
+changeme
+chris
+compaq
+country
+crash
+databasepass
+databasepassword
+db1234
+dbpass
+dbpassword
+domainpass
+domainpassword
+email
+george
+guest
+homeuser
+katie
+loginpass
+logout
+monday
+network
+nokia
+pass1234
+password1
+peter
+saturday
+siemens
+student
+susan
+teacher
+video
+winpass
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

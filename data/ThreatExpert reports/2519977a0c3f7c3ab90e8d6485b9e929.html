@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Win32.Bifrose">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Win32.Bifrose</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 1 November 2015, 05:46:26</li>
+<li>Processing time: 6 min 30 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x2519977A0C3F7C3AB90E8D6485B9E929</li>
+<li>File SHA-1: 0xB5AE7E44C48444FF1AB999B9CEDA3FFE0FB7D01A</li>
+<li>Filesize: 479,471 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/backdoor-win32-bifrose.html" target="_blank">Backdoor.Win32.Bifrose<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<ul><li>The new window was created, as shown below:</li></ul><p><img src="getimage.aspx?uid=96236e60-1771-4499-b0c6-641e47ad3495&image=screen&sub=1"></p>
+<div class="discl"><p><strong>NOTICE:</strong> The content shown in the above window is captured automatically and is not controlled or endorsed by ThreatExpert.<br/><strong>Please contact us on this <a href="http://www.threatexpert.com/contact.aspx">link</a> should any material be offensive or inappropriate</strong> and we will ensure any such content is blocked from future viewers of the report.</p></div>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%CommonAppData%\Vitalwerks</li>
+<li>%AppData%\Vitalwerks</li>
+<li>%Temp%\nsn4.tmp</li>
+<li>%Programs%\No-IP DUC</li>
+<li>%ProgramFiles%\No-IP</li>
+<li>c:\Extracted</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">ColdHack.exe</td><td class="cell_1">%System%\coldhack.exe</td><td class="cell_2">102,400 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">352,256 bytes</td></tr>
+<tr><td class="cell_1">DUCSetup_v4_1_1.exe</td><td class="cell_1">C:\Extracted\DUCSetup_v4_1_1.exe</td><td class="cell_2">299,008 bytes</td></tr>
+<tr><td class="cell_1">DUC40.exe</td><td class="cell_1">%ProgramFiles%\no-ip\duc40.exe</td><td class="cell_2">N/A</td></tr>
+<tr><td class="cell_1">ducservice.exe</td><td class="cell_1">%ProgramFiles%\no-ip\ducservice.exe</td><td class="cell_2">N/A</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">ducapi.dll</td><td class="cell_1">%ProgramFiles%\No-IP\ducapi.dll</td><td class="cell_2">Process name: DUC40.exe<br/>Process filename: %ProgramFiles%\no-ip\duc40.exe<br/>Address space: 0xF10000 - 0xF28000</td></tr>
+<tr><td class="cell_1">ducapi.dll</td><td class="cell_1">%ProgramFiles%\No-IP\ducapi.dll</td><td class="cell_2">Process name: ducservice.exe<br/>Process filename: %ProgramFiles%\no-ip\ducservice.exe<br/>Address space: 0xC00000 - 0xC18000</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">NoIPDUCService4</td><td class="cell_1">NO-IP DUC v4.1.1</td><td class="cell_1">"Running"</td><td class="cell_2">%ProgramFiles%\No-IP\ducservice.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NoIPDUC</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Vitalwerks</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Vitalwerks\DUC</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Vitalwerks\DUC\v4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4\Enum</li>
+<li>HKEY_CURRENT_USER\Software\d90969fcfee7ba043e00ca7db2767636</li>
+<li>HKEY_CURRENT_USER\Software\Vitalwerks</li>
+<li>HKEY_CURRENT_USER\Software\Vitalwerks\DUC</li>
+<li>HKEY_CURRENT_USER\Software\Vitalwerks\DUC\v4</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>d90969fcfee7ba043e00ca7db2767636 = ""%Temp%\server.exe" .."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NoIPDUC]</li><ul>
+<li>DisplayName = "No-IP DUC"</li>
+<li>UninstallString = "%ProgramFiles%\No-IP\uninstall.exe"</li>
+<li>InstallLocation = ""%ProgramFiles%\No-IP""</li>
+<li>DisplayIcon = "%ProgramFiles%\No-IP\DUC40.exe"</li>
+<li>Publisher = "Vitalwerks Internet Solutions LLC"</li>
+<li>HelpLink = "http://www.no-ip.com/ticket/"</li>
+<li>URLInfoAbout = "http://www.no-ip.com/"</li>
+<li>DisplayVersion = "4.1.1"</li>
+<li>VersionMajor = 0x00000004</li>
+<li>VersionMinor = 0x00000001</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>EstimatedSize = 0x00000190</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NoIPDUCService4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000]</li><ul>
+<li>Service = "NoIPDUCService4"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NO-IP DUC v4.1.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NOIPDUCSERVICE4]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NOIPDUCSERVICE4\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NoIPDUCService4]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%ProgramFiles%\No-IP\ducservice.exe"</li>
+<li>DisplayName = "NO-IP DUC v4.1.1"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "The No-IP DUC Service operates a background service to monitor your IP and submit updates to your account when the graphical version of the update client is not actively running on your system."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NoIPDUCService4"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4\0000]</li><ul>
+<li>Service = "NoIPDUCService4"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NO-IP DUC v4.1.1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NOIPDUCSERVICE4]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NOIPDUCSERVICE4\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NoIPDUCService4]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%ProgramFiles%\No-IP\ducservice.exe"</li>
+<li>DisplayName = "NO-IP DUC v4.1.1"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "The No-IP DUC Service operates a background service to monitor your IP and submit updates to your account when the graphical version of the update client is not actively running on your system."</li>
+</ul>
+<li>[HKEY_CURRENT_USER]</li><ul>
+<li>di = "!"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Environment]</li><ul>
+<li>SEE_MASK_NOZONECHECKS = "1"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>d90969fcfee7ba043e00ca7db2767636 = ""%Temp%\server.exe" .."</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\d90969fcfee7ba043e00ca7db2767636]</li><ul>
+<li>[kl] = ""</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\Vitalwerks\DUC\v4]</li><ul>
+<li>(Default) = "%ProgramFiles%\No-IP"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>d90969fcfee7ba043e00ca7db2767636</li>
+<li>_SHuassist.mtx</li>
+<li>9FFD961B-ACBF-4F61-8C3A-2981D9EBFBD0</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>wpad.mrc.pctools.com.</li>
+<li>dynupdate.noip.com</li>
+</ul></ul>
+<ul><li>The following GET request was made:</li>
+<ul>
+<li>wpad.dat</li>
+</ul></ul>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://dynupdate.noip.com/ext/menu-items-json.php</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

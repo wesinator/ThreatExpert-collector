@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Win32.SuspectCrc">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Win32.SuspectCrc</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 July 2014, 17:57:12</li>
+<li>Processing time: 7 min 24 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xBEE8B19DF103D9CE2D00ECF02CC78151</li>
+<li>File SHA-1: 0x6234F232797349A055C65BDA0367A35A2E2E5C57</li>
+<li>Filesize: 474,328 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">393,216 bytes</td></tr>
+<tr><td class="cell_1">offer_downloader.exe</td><td class="cell_1">%AppData%\rmi\offer_downloader.exe</td><td class="cell_2">319,488 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+</ul></ul>
+<ul><li>There was a new memory page created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1">offer_downloader.exe</td><td class="cell_1">%AppData%\rmi\offer_downloader.exe</td><td class="cell_2">8,392,704 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>installs.innovativesys.co</li>
+<li>0</li>
+<li>installs.sevas-s.com</li>
+</ul></ul>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://installs.innovativesys.co/get_file.php?p=41/windows-movie-maker-2.6.4037.0.msi&amp;u={1B339958-2DB5-4690-9D15-FF08B7B8A3A9}</li>
+<li>http://installs.sevas-s.com/get_file.php?p=download/rmp.exe&amp;u={1B339958-2DB5-4690-9D15-FF08B7B8A3A9}&amp;r=0</li>
+<li>http://0/index.html</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://mediahelper.org/fas/stat.php?0&amp;tid=&amp;st=:0:</li>
+<li>localhost</li>
+<li>http://mediahelper.org/fas/stat.php?sid=12&amp;tt=1&amp;iid=15&amp;pid=59920&amp;tid=5&amp;st=:8:</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 14 July 2014 18:04:36</li>
+<li>Processing time: 8 min 25 sec</li>
+<li>Downloaded sample #1:</li>
+<ul>
+<li>File MD5: 0x50CA8D5F89C21B815C2F8A444B6FE2D9</li>
+<li>File SHA-1: 0xD245030388F61F39030B20932B8F086A6C990D04</li>
+<li>Filesize: 7,357,440 bytes</li>
+</ul>
+<li>Downloaded sample #2:</li>
+<ul>
+<li>File MD5: 0x96C4F6F5C620BBB1CD12C4FEA66AE2C8</li>
+<li>File SHA-1: 0x49B2097D6FFB350EF3E3919A802A8B179E08A195</li>
+<li>Filesize: 54,458,176 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/win32-suspectcrc.html" target="_blank">Win32.SuspectCrc<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>%AppData%\Radiocom</li>
+<li>%Temp%\{1F3C8D76-BB29-499f-A553-FD5A5DE8FA97}</li>
+<li>%UserProfile%\Downloads</li>
+<li>%UserProfile%\RichMediaPlayer</li>
+<li>%UserProfile%\Snapshots</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%AppData% is a variable that refers to the file system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\[UserName]\Application Data.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+<li>%UserProfile% is a variable that specifies the current user's profile folder. By default, this is C:\Documents and Settings\[UserName] (Windows NT/2000/XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/ffmpeg.exe.html" target="_blank">ffmpeg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\rich media player\data\<a href="http://www.threatexpert.com/files/ffmpeg.exe.html" target="_blank">ffmpeg.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">36,233,216 bytes</td></tr>
+<tr><td class="cell_1">nsE.tmp</td><td class="cell_1">%Temp%\nso2.tmp\nsE.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">rmhelper.exe</td><td class="cell_1">%AppData%\rich media player\data\rmhelper.exe</td><td class="cell_2">2,191,360 bytes</td></tr>
+<tr><td class="cell_1">nsC.tmp</td><td class="cell_1">%Temp%\nso2.tmp\nsC.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">ns3.tmp</td><td class="cell_1">%Temp%\nso2.tmp\ns3.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/install.exe.html" target="_blank">install.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%AppData%\Rich Media Player\vcredist_x86\<a href="http://www.threatexpert.com/files/install.exe.html" target="_blank">install.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">585,728 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #2]</td><td class="cell_1">[file and pathname of the sample #2]</td><td class="cell_2">516,096 bytes</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+<tr><td class="cell_1">ns11.tmp</td><td class="cell_1">%Temp%\nso2.tmp\ns11.tmp</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\shell\Play</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\shell\Play\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\SupportedTypes</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AudioCD\shell\PlayWithRMP</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AudioCD\shell\PlayWithRMP\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0BDCE5AF-438C-42dc-BF0A-73D33518E7CF}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{407E8B54-4FD8-4FA8-8C6A-8E253E9AC1FD}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{407E8B54-4FD8-4FA8-8C6A-8E253E9AC1FD}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{4B36C40E-6E00-4fe3-BB7E-6C13C12C0A41}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{701B25A8-AA11-4D39-B6A8-34E8378DE241}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{701B25A8-AA11-4D39-B6A8-34E8378DE241}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{849037F8-FA83-4ccc-8219-69E96A536190}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BE9EB7C3-0937-4227-AE90-B0B0A3BCF119}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\PlayWithRMP</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\PlayWithRMP\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DVD\shell\PlayWithRMP</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DVD\shell\PlayWithRMP\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features\6E815EB96CCE9A53884E7857C57002F0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\6E815EB96CCE9A53884E7857C57002F0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\6E815EB96CCE9A53884E7857C57002F0\SourceList</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\6E815EB96CCE9A53884E7857C57002F0\SourceList\Media</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\6E815EB96CCE9A53884E7857C57002F0\SourceList\Net</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\UpgradeCodes\F603C2ED760AFE838BC630EDB430219F</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3g2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3ga</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3gp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3gp2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.3gpp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.669</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.a52</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aac</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ac3</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.adt</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.adts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.amr</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.amv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aob</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ape</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.caf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.divx</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.drc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.dv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.f4v</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.flac</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.flv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.gvi</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.gxf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.it</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m2t</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m2ts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m2v</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m3u8</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m4a</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m4p</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m4v</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mka</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mkv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mlp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mod</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp4</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp4v</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg1</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg2</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg4</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpga</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mtv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mxf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.nsv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.nuv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.oga</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ogg</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ogm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ogv</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ogx</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.oma</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.opus</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.qcp</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ra</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rec</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rmvb</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.s3m</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.spx</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tod</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tta</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.tts</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.vob</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.voc</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.vqf</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.vro</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.w64</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.webm</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wv</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aif]</li><ul>
+<li>RMP.backup = "AIFFFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aifc]</li><ul>
+<li>RMP.backup = "AIFFFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aiff]</li><ul>
+<li>RMP.backup = "AIFFFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.asf]</li><ul>
+<li>RMP.backup = "ASFFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.au]</li><ul>
+<li>RMP.backup = "AUFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.avi]</li><ul>
+<li>RMP.backup = "avifile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cda]</li><ul>
+<li>RMP.backup = "CDAFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.jpg]</li><ul>
+<li>RMP.backup = "jpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m1v]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m3u]</li><ul>
+<li>RMP.backup = "m3ufile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mid]</li><ul>
+<li>RMP.backup = "midfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mov]</li><ul>
+<li>(Default) = "RMP.mov"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp2]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp2v]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp3]</li><ul>
+<li>RMP.backup = "mp3file"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpa]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpe]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpg]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpv2]</li><ul>
+<li>RMP.backup = "mpegfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rmi]</li><ul>
+<li>RMP.backup = "midfile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.snd]</li><ul>
+<li>RMP.backup = "AUFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wav]</li><ul>
+<li>RMP.backup = "soundrec"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wma]</li><ul>
+<li>RMP.backup = "WMAFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wmv]</li><ul>
+<li>RMP.backup = "WMVFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wpl]</li><ul>
+<li>RMP.backup = "WPLFile"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\shell\Play\command]</li><ul>
+<li>(Default) = ""%AppData%\Rich Media Player\data\rmplayer.exe" "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\shell\Play]</li><ul>
+<li>(Default) = "Play with Rich Media Player"</li>
+<li>Icon = ""%AppData%\Rich Media Player\data\rmplayer.exe",0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\rmplayer.exe\SupportedTypes]</li><ul>
+<li>.3ga = ""</li>
+<li>.669 = ""</li>
+<li>.a52 = ""</li>
+<li>.aac = ""</li>
+<li>.ac3 = ""</li>
+<li>.adt = ""</li>
+<li>.adts = ""</li>
+<li>.aif = ""</li>
+<li>.aifc = ""</li>
+<li>.aiff = ""</li>
+<li>.au = ""</li>
+<li>.amr = ""</li>
+<li>.aob = ""</li>
+<li>.ape = ""</li>
+<li>.caf = ""</li>
+<li>.cda = ""</li>
+<li>.dts = ""</li>
+<li>.flac = ""</li>
+<li>.it = ""</li>
+<li>.m4a = ""</li>
+<li>.m4p = ""</li>
+<li>.mid = ""</li>
+<li>.mka = ""</li>
+<li>.mlp = ""</li>
+<li>.mod = ""</li>
+<li>.mp1 = ""</li>
+<li>.mp2 = ""</li>
+<li>.mp3 = ""</li>
+<li>.mpc = ""</li>
+<li>.mpga = ""</li>
+<li>.oga = ""</li>
+<li>.oma = ""</li>
+<li>.opus = ""</li>
+<li>.qcp = ""</li>
+<li>.ra = ""</li>
+<li>.rmi = ""</li>
+<li>.snd = ""</li>
+<li>.s3m = ""</li>
+<li>.spx = ""</li>
+<li>.tta = ""</li>
+<li>.voc = ""</li>
+<li>.vqf = ""</li>
+<li>.w64 = ""</li>
+<li>.wav = ""</li>
+<li>.wma = ""</li>
+<li>.wv = ""</li>
+<li>.xa = ""</li>
+<li>.xm = ""</li>
+<li>.3g2 = ""</li>
+<li>.3gp = ""</li>
+<li>.3gp2 = ""</li>
+<li>.3gpp = ""</li>
+<li>.amv = ""</li>
+<li>.asf = ""</li>
+<li>.avi = ""</li>
+<li>.divx = ""</li>
+<li>.drc = ""</li>
+<li>.dv = ""</li>
+<li>.f4v = ""</li>
+<li>.flv = ""</li>
+<li>.gvi = ""</li>
+<li>.gxf = ""</li>
+<li>.m1v = ""</li>
+<li>.m2t = ""</li>
+<li>.m2v = ""</li>
+<li>.m2ts = ""</li>
+<li>.m4v = ""</li>
+<li>.mkv = ""</li>
+<li>.mov = ""</li>
+<li>.mp2v = ""</li>
+<li>.mp4 = ""</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aif]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aifc]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.aiff]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.asf]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.au]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.avi]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cda]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.jpg]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m1v]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.m3u]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mid]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp2v]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp3]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpa]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpe]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpg]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpv2]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rmi]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.snd]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wav]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wma]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wmv]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wpl]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>QtLockedFile mutex c:/docume~1/username/locals~1/temp/qtsingleapp-audioc-a143-0-lockfile</li>
+<li>audioconverter</li>
+<li>DDrawWindowListMutex</li>
+<li>DDrawDriverObjectListMutex</li>
+<li>__DDrawExclMode__</li>
+<li>QtLockedFile mutex c:/docume~1/username/locals~1/temp/qtsingleapp-richme-7632-0-lockfile</li>
+<li>QtLockedFile mutex c:/docume~1/username/locals~1/temp/qtsingleapp-richme-532f-0-lockfile</li>
+<li>richmediaplayer</li>
+<li>rmplaylistsdbmutex</li>
+<li>SetupWatson_Mutex_Name</li>
+<li>QtLockedFile mutex c:/docume~1/username/locals~1/temp/qtsingleapp-richme-686e-0-lockfile</li>
+<li>richmediadownloader</li>
+<li>rmdownloadslistmutex</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://richmediasoft.com/install_stat.php?u=2905D900-8A50-4622-8FD7-33FACFAFC54C&amp;i=900000000&amp;p=vc,ac,pl</li>
+<li>localhost</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

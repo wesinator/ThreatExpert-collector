@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Morix.B">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Morix.B</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 17 July 2016, 09:06:26</li>
+<li>Processing time: 5 min 48 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x47BB2953F6CB8BF485646DD94474953B</li>
+<li>File SHA-1: 0x433795800FCF8B86248CAC40E93646043C564BDF</li>
+<li>Filesize: 326,664 bytes</li>
+<li>Alias: Backdoor:Win32/Morix.B [Microsoft]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Programs%\Startup\Rysj.exe
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">326,664 bytes</td>
+<td class="cell_1">MD5: 0x47BB2953F6CB8BF485646DD94474953B<br/>SHA-1: 0x433795800FCF8B86248CAC40E93646043C564BDF</td>
+<td class="cell_2">Backdoor:Win32/Morix.B [Microsoft]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Programs% is a variable that refers to the file system directory that contains the user's program groups. A typical path is C:\Documents and Settings\[UserName]\Start Menu\Programs.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">208,896 bytes</td></tr>
+<tr><td class="cell_1">Rysj.exe</td><td class="cell_1">%Programs%\startup\rysj.exe</td><td class="cell_2">208,896 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]</li><ul>
+<li>azlj = "%Programs%\startup\rysj.exe"</li>
+<li>ConnectGroup = "Default"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]</li><ul>
+<li>azlj = "%Programs%\startup\rysj.exe"</li>
+<li>ConnectGroup = "Default"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/ireland.gif"></td>
+<td class="cell_2">Ireland</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>127.0.0.1</li>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>c:\documents and settings\username\start menu\programs\startup\rysj.exe</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>1415794278.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">1415794278.f3322.net<td class="cell_2">2014</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2014:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1122 FF43 89E3 0100 00C8 0200 007B 9E4E | .".C.........{.N
+00000010 | 6B65 619A 00C6 A943 C809 C61E 5F09 044E | kea....C...._..N
+00000020 | 443F 30B4 AA28 3038 5429 2133 3D58 C089 | D?0..(08T)!3=X..
+00000030 | 8483 0129 F497 6A67 0F4A CC7D 2663 8380 | ...)..jg.J.}&c..
+00000040 | 0E7D EB62 0A84 1D1A 06E1 200A 3FCF 126E | .}.b...... .?..n
+00000050 | 62EC 24FC 4704 1681 FAEE E10C 363B 8D24 | b.$.G.......6;.$
+00000060 | D24B 05CD 0086 80C8 19DB 289E 1120 8E78 | .K........(.. .x
+00000070 | EE89 36D8 4E23 D63E 05D0 2134 3532 3033 | ..6.N#.>..!45203
+00000080 | 6EE1 6563 3161 3202 921D 0311 4B64 B100 | n.ec1a2.....Kd..
+00000090 | D4E6 0FF4 45B4 737D 6C44 614C 6B93 5C60 | ....E.s}lDaLk.\`
+000000A0 | 6B29 0770 62F3 A96E 1FB6 DEDE F9EB D4D5 | k).pb..n........
+000000B0 | 437B 80DC 1B0C 0229 460C 3D40 BB41 6170 | C{.....)F.=@.Aap
+000000C0 | 02CD 6F2E 2007 9EDB B27D D1F9 6B0C B9AC | ..o. ....}..k...
+000000D0 | 136B AC24 5716 3230 8880 E53C F245 19EE | .k.$W.20...<.E..
+000000E0 | 00F5 6984 8832 7803 C5D7 00C3 C082 1112 | ..i..2x.........
+000000F0 | 7620 6D6C 0C90 2011 4077 814B 6A5A 6269 | v ml.. .@w.KjZbi
+00000100 | 4E09 3E47 821C F09B 9D81 C1E0 CC1B 830B | N.>G............
+00000110 | 0B4F 6D34 DC7E EDDA 6590 0433 44DE 0288 | .Om4.~..e..3D...
+00000120 | 15A0 7806 D07E 5681 0935 207F 2400 DDF3 | ..x..~V..5 .$...
+00000130 | 3A63 69A1 E3E2 C3E5 2C40 4784 7134 82C3 | :ci.....,@G.q4..
+00000140 | 9BC1 8081 E1CF FFE7 60F5 3070 1BA8 1604 | ........`.0p....
+00000150 | 84E3 9616 9E89 595A 2800 F44F 059F 2883 | ......YZ(..O..(.
+00000160 | 934A 430D C84C 1058 1328 C430 3570 6921 | .JC..L.X.(.05pi!
+00000170 | C88F 20CD 3640 3341 7E04 8510 13D0 6347 | .. .6@3A~.....cG
+00000180 | 80E2 2C50 3718 848A 321C 00AA 378D 585A | ..,P7...2...7.XZ
+00000190 | 08D3 0FA2 BF04 82EC 3162 3062 9F58 0362 | ........1b0b.X.b
+000001A0 | BDE0 3402 F341 E04C 20C4 0D02 40B7 48BC | ..4..A.L ...@.H.
+000001B0 | 9B50 930B 345B 01C8 B610 9D58 330D 885F | .P..4[.....X3.._
+000001C0 | B34D AC51 B83E 99A1 03EA E68F DCA0 58EF | .M.Q.>........X.
+000001D0 | 98D7 5A83 88A5 35C0 B4F5 E502 0303 0075 | ..Z...5........u
+000001E0 | 5395 B1                                 | S..
+00000000 | 1122 FF43 89E6 0100 00C8 0200 007B 9E4E | .".C.........{.N
+000000A0 | 6B29 0770 62F3 A96E 1FB4 DEDE F9EB D4D5 | k).pb..n........
+000000B0 | 437B 80DC 1B0C 1E29 460C 3D40 BB5B D819 | C{.....)F.=@.[..
+000000C0 | 1866 B0A3 FACD 05E4 C073 5BB6 2F3A 7F8D | .f.......s[./:..
+000000D0 | 2197 7562 8D95 E4CA 4206 0611 B09C 458E | !.ub....B.....E.
+000000E0 | 28C3 1DA0 BE86 6051 066F A0F8 1A60 1858 | (.....`Q.o...`.X
+000000F0 | 3042 C20E A48D 8D01 1224 02E8 2E70 494D | 0B.......$...pIM
+00000100 | 4B2C CD29 C1E7 4890 037E 03DD 6270 E68D | K,.)..H..~..bp..
+00000110 | C185 85A7 361A 6FBF 76ED 3248 8219 226F | ....6.o.v.2H.."o
+00000120 | 01C4 0A50 FC01 683F ABC0 841A 903F 1280 | ...P..h?.....?..
+00000130 | EE79 9DB1 B4D0 71F1 E172 16A0 23C2 381A | .y....q..r..#.8.
+00000140 | C1E1 CD60 C0C0 F0E7 FF73 B07A 18B8 0D54 | ...`.....s.z...T
+00000150 | 0B02 C271 4B0B CFC4 2C2D BCB0 5E8C 2181 | ...qK...,-..^.!.
+00000160 | 4F94 C149 A5A1 0664 2608 AC09 1462 981A | O..I...d&....b..
+00000170 | B8B4 10E4 4790 661B A099 203F 8242 8809 | ....G.f... ?.B..
+00000180 | E831 9910 5106 16A8 1B3A 80EC 0340 F5A6 | .1..Q....:...@..
+00000190 | 114B 0B61 FA41 F497 4090 3D46 0C46 EC13 | .K.a.A..@.=F.F..
+000001A0 | 6B40 AC17 9C46 603E 089C 0984 B841 00E8 | k@...F`>.....A..
+000001B0 | 1689 7713 6AD2 8066 2B00 D916 A213 6BA6 | ..w.j..f+.....k.
+000001C0 | 01F1 6BB6 8935 0AD7 2733 7440 DDFC 9115 | ..k..5..'3t@....
+000001D0 | 14EB 1DF3 5A6B 10B1 B406 98B6 762E 6060 | ....Zk......v.``
+000001E0 | 0000 D87A 9857                          | ...z.W
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

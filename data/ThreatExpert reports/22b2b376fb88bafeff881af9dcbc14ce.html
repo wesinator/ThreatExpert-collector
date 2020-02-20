@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.AD, Virus.Win32.Dialer">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.AD, Virus.Win32.Dialer</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 30 April 2016, 02:23:45</li>
+<li>Processing time: 5 min 37 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x22B2B376FB88BAFEFF881AF9DCBC14CE</li>
+<li>File SHA-1: 0xEC0EE75E9657FC58D33AB87C63BB0F8849C6DD60</li>
+<li>Filesize: 1,197,709 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor:Win32/Zegost.AD [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-dialer.html" target="_blank">Virus.Win32.Dialer<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_CURRENT_USER\NetSubKey</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>61.160.232.48</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">61.160.232.48<td class="cell_2">8899</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8899:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | F100 0000 4C01 0000 7B9E 4E73 37BC 640D | ....L...{.Ns7.d.
+00000010 | 0106 002F 1131 06B2 031F 0107 1698 0F4C | .../.1.........L
+00000020 | 2929 CA4D 4654 0A4C 4FCF 5735 6062 59E2 | )).MFT.LO.W5`bY.
+00000030 | 2FC1 F520 4489 0302 4DB3 4FA9 9B01 E76D | /.. D...M.O....m
+00000040 | 8C1D 6709 06B1 75F5 8B34 E500 6D93 D917 | ..g...u..4..m...
+00000050 | E582 9F7B 4171 1DB5 861A 4F20 3F06 C8BE | ...{Aq....O ?...
+00000060 | 3C7B 2258 6C2B 3348 4543 8D86 6943 0D48 | <{"Xl+3HEC..iC.H
+00000070 | 1D03 D44E 1906 0BB0 9D20 771C 0162 2E51 | ...N..... w..b.Q
+00000080 | 881B 1818 1919 4070 3B37 4461 3D90 74F6 | ......@p;7Da=.t.
+00000090 | F70D 080D 710D F273 F475 6520 1208 00F1 | ....q..s.ue ....
+000000A0 | B5AB 7B1F 5EBD 6FA4 6700 647B 00CD F230 | ..{.^.o.g.d{...0
+000000B0 | 5761 A888 1302 BBE7 3F10 9C01 BA0F 8441 | Wa......?......A
+000000C0 | A03A 8781 E180 BC0A C3DE 278D 6037 2AC4 | .:........'.`7*.
+000000D0 | B632 B896 A5E6 9538 3230 4C00 7B12 E494 | .2.....820L.{...
+000000E0 | 5686 07D1 42E0 7001 830F 7FEB 0183 EA45 | V...B.p........E
+000000F0 | 6A                                      | j
+00000000 | F200 0000 4C01 0000 7B9E 4E73 37BC 640D | ....L...{.Ns7.d.
+00000020 | 2929 CA4D 4654 0A4C 4FCF 5735 6062 B9E2 | )).MFT.LO.W5`b..
+00000030 | 2FC1 F520 4489 0302 4DB3 4FA9 3B01 E76D | /.. D...M.O.;..m
+00000040 | 8C1D 6709 06B2 FB41 1B76 8036 4CED 8A7B | ..g....A.v.6L..{
+00000050 | 41C9 3CA8 B98C 5A43 8D27 901F 0364 5F9E | A.<...ZC.'...d_.
+00000060 | 3D11 2CB6 9519 A4A2 A146 C3B4 A106 A48E | =.,......F......
+00000070 | 016A A70C 8305 D8CE 19EC 0C0C 0B80 788E | .j............x.
+00000080 | 18C4 0D0C 8C8C 0C20 B89D 1BA2 B01E 483A | ....... ......H:
+00000090 | FBFB 0684 86B8 06F9 39FA BA32 1009 F881 | ........9..2....
+000000A0 | F8DA D5BD 0FAF DE37 D233 00B2 3D80 6679 | .......7.3..=.fy
+000000B0 | 98AB 3054 C409 81DD F31F 08CE 00DD 07C2 | ..0T............
+000000C0 | 2050 9DC3 C070 405E 8561 EF93 46B0 1B3D |  P...p@^.a..F..=
+000000D0 | 625B 195C CB52 F34A 1C19 1826 803D 0972 | b[.\.R.J...&.=.r
+000000E0 | 4A2B C383 6821 70B8 80C1 87BF F500 5FAC | J+..h!p......._.
+000000F0 | 46AC                                    | F.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

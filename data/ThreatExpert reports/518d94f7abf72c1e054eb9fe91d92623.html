@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 17 May 2016, 23:44:49</li>
+<li>Processing time: 5 min 31 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x518D94F7ABF72C1E054EB9FE91D92623</li>
+<li>File SHA-1: 0x77503FF501C4FA1E772B3D94BEBE371068A413C7</li>
+<li>Filesize: 180,230 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Registers a 32-bit in-process server DLL.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_2_h">File Hash</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">180,230 bytes</td>
+<td class="cell_2">MD5: 0x518D94F7ABF72C1E054EB9FE91D92623<br/>SHA-1: 0x77503FF501C4FA1E772B3D94BEBE371068A413C7</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x511E0000 - 0x5120E000</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">Process name: [generic host process]<br/>Process filename: [generic host process filename]<br/>Address space: 0x511E0000 - 0x5120E000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}\InprocServer32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\0\win32</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\FLAGS</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\HELPDIR</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\AutoLoadPackages</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\AutoLoadPackages\{93694fa0-0397-11d1-9f4e-00a0c911004f}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\AutoLoadPackages\{adfc4e66-0397-11d1-9f4e-00a0c911004f}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\CLSID</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\ComponentPickerPages</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\ComponentPickerPages\SQL Server</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}\SatelliteDll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{26EB4812-18FE-4A11-BC23-7DC1C9B453A3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{33a24090-6565-11d3-85fc-00c04f6123b3}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{4A3116FC-942B-4692-B9F4-344E08285712}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{52F0DAB8-99A9-4aea-A037-42581B7009D2}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\CustomMarshalers.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualBasic.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualC.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\mscorlib.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.OracleClient.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.SqlXml.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Security.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Transactions.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Web.Services.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Xml.dll</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{97BAE668-2CF2-4ed8-A019-D279E3D74C80}</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{BD71396F-39C6-4e3f-BBA2-79CE33A8B302}</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}\InprocServer32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}]</li><ul>
+<li>(Default) = "Primary Interop Assembly Wrapper Tool (8.0)"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\0\win32]</li><ul>
+<li>(Default) = "[file and pathname of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\HELPDIR]</li><ul>
+<li>(Default) = "%System%\"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0\FLAGS]</li><ul>
+<li>(Default) = "0"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{2A0B7F53-9E5B-4BD3-957B-012C404C5EA3}\8.0]</li><ul>
+<li>(Default) = "Microsoft Component Services Typelib"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\AutoLoadPackages\{adfc4e66-0397-11d1-9f4e-00a0c911004f}]</li><ul>
+<li>{588205e0-66e0-11d3-8600-00c04f6123b3} = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\AutoLoadPackages\{93694fa0-0397-11d1-9f4e-00a0c911004f}]</li><ul>
+<li>{588205e0-66e0-11d3-8600-00c04f6123b3} = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\CLSID\{A353805B-8A96-479b-83EB-2EA3F69A674C}]</li><ul>
+<li>(Default) = "Primary Interop Assembly Wrapper Tool (8.0)"</li>
+<li>InprocServer32 = "[file and pathname of the sample #1]"</li>
+<li>ThreadingModel = "Both"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\ComponentPickerPages\SQL Server]</li><ul>
+<li>(Default) = "#3100"</li>
+<li>Package = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Page = "{BBA3635A-F590-4397-9036-E826053E25AD}"</li>
+<li>Sort = 0x00000015</li>
+<li>ComponentType = "SQLCLR assembly"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}\SatelliteDll]</li><ul>
+<li>DllName = "compsvcspkgui.dll"</li>
+<li>Path = "%Windir%\system32"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}]</li><ul>
+<li>(Default) = "Visual Studio Component Enumerator Package"</li>
+<li>InprocServer32 = "[file and pathname of the sample #1]"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Xml.dll]</li><ul>
+<li>(Default) = "system.xml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Web.Services.dll]</li><ul>
+<li>(Default) = "System.Web.Services"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Transactions.dll]</li><ul>
+<li>(Default) = "System.Transactions"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Security.dll]</li><ul>
+<li>(Default) = "System.Security"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.dll]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.SqlXml.dll]</li><ul>
+<li>(Default) = "System.Data.SqlXml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.OracleClient.dll]</li><ul>
+<li>(Default) = "System.Data.OracleClient"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.dll]</li><ul>
+<li>(Default) = "System.Data"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\mscorlib.dll]</li><ul>
+<li>(Default) = "mscorlib"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualC.dll]</li><ul>
+<li>(Default) = "Microsoft.VisualC"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualBasic.dll]</li><ul>
+<li>(Default) = "Microsoft.VisualBasic"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\CustomMarshalers.dll]</li><ul>
+<li>(Default) = "CustomMarshalers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{BD71396F-39C6-4e3f-BBA2-79CE33A8B302}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "SID_SVsAddWebReferenceDlg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{97BAE668-2CF2-4ed8-A019-D279E3D74C80}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "SID_SVsStrongNameKeys"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "SID_SVsSQLCLRReferences"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{52F0DAB8-99A9-4aea-A037-42581B7009D2}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "SID_SVsSmartOpenScope"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{4A3116FC-942B-4692-B9F4-344E08285712}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "App Config Runtime Bindings Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{33a24090-6565-11d3-85fc-00c04f6123b3}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "SID_SCompEnumService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Services\{26EB4812-18FE-4A11-BC23-7DC1C9B453A3}]</li><ul>
+<li>(Default) = "{588205e0-66e0-11d3-8600-00c04f6123b3}"</li>
+<li>Name = "Web Config Runtime Bindings Service"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

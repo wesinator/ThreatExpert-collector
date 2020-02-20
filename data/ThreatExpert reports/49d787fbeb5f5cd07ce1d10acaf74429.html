@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.Bifrose, DDoS:Win32/Nitol.A">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.Bifrose, DDoS:Win32/Nitol.A</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 28 June 2016, 02:55:16</li>
+<li>Processing time: 6 min 5 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x49D787FBEB5F5CD07CE1D10ACAF74429</li>
+<li>File SHA-1: 0xB87E461A0FB52B7A51585F1A08FFB7D12334CFCB</li>
+<li>Filesize: 22,433 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-bifrose.html" target="_blank">Suspicious.Bifrose<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>DDoS:Win32/Nitol.A [Microsoft]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+<br/>
+%System%\vipxie.exe
+</td>
+<td class="cell_1">22,433 bytes</td>
+<td class="cell_1">MD5: 0x49D787FBEB5F5CD07CE1D10ACAF74429<br/>SHA-1: 0xB87E461A0FB52B7A51585F1A08FFB7D12334CFCB</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/suspicious-bifrose.html" target="_blank">Suspicious.Bifrose<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>DDoS:Win32/Nitol.A [Microsoft]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vipxie.exe</td><td class="cell_1">%System%\vipxie.exe</td><td class="cell_2">12,730,368 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">12,730,368 bytes</td></tr>
+</table></p>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">NET Security Services Provider rNET Security Services Providercku</td><td class="cell_1">NET Security Services Providercku</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\vipxie.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NET Security Services Provider rNET Security Services Providercku"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000]</li><ul>
+<li>Service = "NET Security Services Provider rNET Security Services Providercku"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NET Security Services Providercku"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider rNET Security Services Providercku]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "NET Security Services Providercku"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides pjr for Microsoft DotNet security."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NET Security Services Provider rNET Security Services Providercku"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000]</li><ul>
+<li>Service = "NET Security Services Provider rNET Security Services Providercku"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NET Security Services Providercku"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_RNET_SECURITY_SERVICES_PROVIDERCKU\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider rNET Security Services Providercku]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "NET Security Services Providercku"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides pjr for Microsoft DotNet security."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>NET Security Services Provider rNET Security Services Providercku</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">vipxie.exe (%System%\vipxie.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>sre1215.ddns.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">sre1215.ddns.net<td class="cell_2">8080</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 4500 6E00 6700 6C00 6900 7300 | ....E.n.g.l.i.s.
+00000010 | 6800 2000 2800 5500 6E00 6900 7400 6500 | h. .(.U.n.i.t.e.
+00000020 | 6400 2000 5300 7400 6100 7400 6500 7300 | d. .S.t.a.t.e.s.
+00000030 | 2900 0000 0000 0000 0000 0000 0000 0000 | )...............
+00000040 | 0000 0000 434F 4D50 5554 4552 4E41 4D45 | ....COMPUTERNAME
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000070 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 5769 6E64 6F77 7320 5850 0000 | ....Windows XP..
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000F0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000100 | 0000 0000 4E6F 7420 4176 6169 6C61 626C | ....Not Availabl
+00000110 | 6500 0000 0000 0000 0000 0000 0000 0000 | e...............
+00000120 | 0000 0000 3239 3939 204D 487A 0000 0000 | ....2999 MHz....
+00000130 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000140 | 0000 0000 4244 3230 3135 2D4E 6F44 7269 | ....BD2015-NoDri
+00000150 | 7665 7200 0000 0000 0000 0000 0000 0000 | ver.............
+00000160 | 0000 0000 0000 0000 FA8D 917C 25D6 907C | ...........|%..|
+00000170 | CFEA 907C 30FD 7301 0100 0000 1700 0100 | ...|0.s.........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 0000 0000 B46A 68F9 | .............jh.
+000001A0 | CC26 5180 0000 0000 0000 4E77 00A7 3BC0 | .&Q.......Nw..;.
+000001B0 | 48A0 59E1 B06A 68F9 E846 7481 046B 68F9 | H.Y..jh..Ft..kh.
+000001C0 | 4864 EE80 00A7 3BC0 48A0 59E1 602D 5EE1 | Hd....;.H.Y.`-^.
+000001D0 | 14C9 42E1 0000 0000 0100 0000 F06A 68F9 | ..B..........jh.
+000001E0 | F848 5E80 602D 5EE1 0E00 0000 0000 0000 | .H^.`-^.........
+000001F0 | 944B 5E80 0000 0000 736B 68F9 0000 0000 | .K^.....skh.....
+00000200 | 0001 5080 0000 0000 0000 0000 3800 0000 | ..P.........8...
+00000210 | 2300 0000 2300 0000 E0FC 6301 18EE 907C | #...#.....c....|
+00000220 | 0000 0000 F0FC 6301 3815 917C C01B 4000 | ......c.8..|..@.
+00000230 | EB06 917C 5608 817C 1B00 0000 0002 0000 | ...|V..|........
+00000240 | FCFF 7301 2300 0000 6740 470A A96B 68F9 | ..s.#...g@G..kh.
+00000250 | C87C 5EE1 8059 9C81 0C00 0000 1893 5580 | .|^..Y........U.
+00000260 | 1093 5580 58A5 2200 FFFF FFFF 1C6B 68F9 | ..U.X."......kh.
+00000270 | CF0A 5B80 F8F3 2300 3893 5580 0000 0000 | ..[...#.8.U.....
+00000280 | C87C 5EE1 E07C 5EE1 C46B 68F9 C87C 5EE1 | .|^..|^..kh..|^.
+00000290 | CC7C 5EE1 8059 9C81 2C13 5B80 905A 8181 | .|^..Y..,.[..Z..
+000002A0 | 4000 0000 8059 9C81 0000 0000 0100 0000 | @....Y..........
+000002B0 | E846 7481 E048 7481 4800 60C0 C402 0000 | .Ft..Ht.H.`.....
+000002C0 | C302 0000 003C 88C0 0000 0000 C06B 68F9 | .....<.......kh.
+000002D0 | 0020 9F81 FE42 5480 5C0C 1EE1 1400 0000 | . ...BT.\.......
+000002E0 | 3CF2 52C5 EFC0 6280 0800 43E1 5001 0000 | <.R...b...C.P...
+000002F0 | 9C03 0000 0030 88C0 1889 3B00 0130 1277 | .....0....;..0.w
+00000300 | 0040 A8C0 C46B 68F9 B91F 5080 5001 0000 | .@...kh...P.P...
+00000310 | 9C03 0000 0030 88C0 B904 0000 FC3C 88C0 | .....0.......<..
+00000320 | E048 7481 9831 1277 9C03 0000 FC3C 88C0 | .Ht..1.w.....<..
+00000330 | E86B 68F9 2DFE 5080 F06B 68F9 6C4B 88C0 | .kh.-.P..kh.lK..
+00000340 | E048 7481 DCB6 EE80 9831 1277 DCB6 EE80 | .Ht......1.w....
+00000350 | 0000 0000 206C 68F9 0F15 5180 5001 0000 | .... lh...Q.P...
+00000360 | 3C37 6681 246C 68F9 D99A 4F80 E19A 4F80 | <7f.$lh...O...O.
+00000370 | 0C37 6681 A035 6681 D435 6681 D150 0000 | .7f..5f..5f..P..
+00000380 | 8683 6380 2060 6681 A035 6681 00D0 FD7F | ..c. `f..5f.....
+00000390 | 846C 68F9 2C01 5080 0000 0000 0500 0000 | .lh.,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | A035 6681 506D 68F9 58C6 20E1 0000 0000 | .5f.Pmh.X. .....
+000003D0 | 016C 68F9 0000 0000 2060 6681 DEFC 4F80 | .lh..... `f...O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9C6C 68F9 350C 6D80 0000 0000 B0FF 7301 | .lh.5.m.......s.
+00000400 | CA1B 4000                               | ..@.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

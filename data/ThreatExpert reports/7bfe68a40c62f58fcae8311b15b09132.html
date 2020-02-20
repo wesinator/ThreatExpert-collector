@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.AntiAV.aaa, Trojan.Win32.Boupke, Win-Trojan/Antiav.368640, Trojan Horse, Trojan-Downloader.Win32.Agent.attc, Downloader.a!bpz, Mal/Behav-010, Rootkit.Win32.KernelBot, Win-Trojan/Agent.200704.AW">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor.Trojan, Trojan.Win32.AntiAV.aaa, Trojan.Win32.Boupke..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 May 2014, 02:46:48</li>
+<li>Processing time: 8 min 5 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7BFE68A40C62F58FCAE8311B15B09132</li>
+<li>File SHA-1: 0x74DD158F66E5A8B6CABBFC6930DEC37166E4212F</li>
+<li>Filesize: 368,640 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan.Win32.AntiAV.aaa [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-boupke.html" target="_blank">Trojan.Win32.Boupke<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li>Win-Trojan/Antiav.368640 [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Hosts file modification that may block access to the security web sites.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Compromises SafeBoot registry key(s) in an attempt to disable the Safe Mode.</td><td class="cell_2"><img src="./resources/level8.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/trojan-antiav.html" target="_blank">Trojan.AntiAV<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Trojan.AntiAV is a threat that downloads files to the local computer, and replaces Anti-Virus software (Kaspersky,etc...) file path by its own directory in registry.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat categories were identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/downloader.gif"></td>
+<td class="cell_1">A program that downloads files to the local computer that may represent security risk</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/trojan.gif"></td>
+<td class="cell_1">A malicious trojan horse or bot that may represent security risk for the compromised system and/or its network environment</td>
+</tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/backdoor.gif"></td>
+<td class="cell_1">A malicious backdoor trojan that runs in the background and allows remote access to the compromised system</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/acpi64.dll.html" target="_blank">acpi64.dll<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%System%\acpi64.ocx
+</td>
+<td class="cell_1">200,704 bytes</td>
+<td class="cell_1">MD5: 0x62AD54CC524A2541F1CA01462E207EDF<br/>SHA-1: 0x469D202341514AF366F492701666BB090052A77E</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/trojan-horse.html" target="_blank">Trojan Horse<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan-Downloader.Win32.Agent.attc [Kaspersky Lab]<br/>Downloader.a!bpz [McAfee]<br/><a href="http://www.threatexpert.com/threats/mal-behav-010.html" target="_blank">Mal/Behav-010<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/rootkit-win32-kernelbot.html" target="_blank">Rootkit.Win32.KernelBot<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/>Win-Trojan/Agent.200704.AW [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+%System%\<a href="http://www.threatexpert.com/files/acpi64.exe.html" target="_blank">acpi64.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">368,640 bytes</td>
+<td class="cell_1">MD5: 0x7BFE68A40C62F58FCAE8311B15B09132<br/>SHA-1: 0x74DD158F66E5A8B6CABBFC6930DEC37166E4212F</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/backdoor-trojan.html" target="_blank">Backdoor.Trojan<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Trojan.Win32.AntiAV.aaa [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-boupke.html" target="_blank">Trojan.Win32.Boupke<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/>Win-Trojan/Antiav.368640 [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following file was modified:</li>
+<ul>
+<li>%System%\drivers\etc\hosts</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/acpi64.exe.html" target="_blank">acpi64.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/acpi64.exe.html" target="_blank">acpi64.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">376,832 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">376,832 bytes</td></tr>
+</table></p>
+<ul><li>The following modules were loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/acpi64.dll.html" target="_blank">acpi64.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/acpi64.dll.html" target="_blank">acpi64.dll<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x8F0000 - 0x92C000</td></tr>
+<tr><td class="cell_1">acpi64.ocx</td><td class="cell_1">%System%\acpi64.ocx</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x830000 - 0x86C000</td></tr>
+<tr><td class="cell_1">acpi64.ocx</td><td class="cell_1">%System%\acpi64.ocx</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x830000 - 0x86C000</td></tr>
+<tr><td class="cell_1">acpi64.ocx</td><td class="cell_1">%System%\acpi64.ocx</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x830000 - 0x86C000</td></tr>
+<tr><td class="cell_1">acpi64.ocx</td><td class="cell_1">%System%\acpi64.ocx</td><td class="cell_2">Process name: <a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Process filename: %System%\<a href="http://www.threatexpert.com/files/svchost.exe.html" target="_blank">svchost.exe<img src="./resources/flag.gif" style="border:none"/></a><br/>Address space: 0x830000 - 0x86C000</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\360Safe</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\360Safe\safemon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64Drv</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64Drv\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64Drv</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64Drv\Security</li>
+</ul></ul>
+<ul><li>The following Registry Keys were deleted:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AFD</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\AppMgmt</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Base</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Boot file system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Browser</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\CryptSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DcomLaunch</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Dhcp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmadmin</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmboot.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmio.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmload.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\dmserver</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\DnsCache</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\EventLog</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\File system</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\HelpSvc</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ip6fw.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\ipnat.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanServer</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LanmanWorkstation</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\LmHosts</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Messenger</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SharedAccess</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\System Bus Extender</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Tcpip</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\TDI</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\360Safe\safemon]</li><ul>
+<li>UDiskAccess = 0x00000000</li>
+<li>ExecAccess = 0x00000000</li>
+<li>IEProtAccess = 0x00000000</li>
+<li>LeakAccess = 0x00000000</li>
+<li>MonAccess = 0x00000000</li>
+<li>SiteAccess = 0x00000000</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "acpi64"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64\0000]</li><ul>
+<li>Service = "acpi64"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "acpi64"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_ACPI64]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ACPI64\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = 43 3A 5C 57 49 4E 44 4F 57 53 5C 73 79 73 74 65 6D 33 32 5C 61 63 70 69 36 34 2E 65 78 65 00 3F 00 3F 02 00 3F 2B 00 00 02 00 00 3F 3F 3F 3F 3F 00 3F 02 00 00 00 00 00 3F 3F 3F 3F 3F 3F 3F 3F 00 3F 01 00 00 00 3F 3F 00 00 3F 2B 3F 3F 3F 3F 3F 3F 3F 3</li>
+<li>DisplayName = "acpi64"</li>
+<li>ObjectName = 4C 6F 63 61 6C 53 79 73 74 65 6D 00 49 6D 61 67 65 50 61 74 68 00 45 72 72 6F 72 43 6F 6E 74 72 6F 6C 00 00 44 69 73 70 6C 61 79 4E 61 6D 65 00 44 65 73 63 72 69 70 74 69 6F 6E 00 00 00 53 59 53 54 45 4D 5C 43 75 72 72 65 6E 74 43 6F 6E 74 72 6F 6C 5</li>
+<li>Description = "??????? passthrough ???????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64Drv\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\acpi64Drv]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\acpi64.sys"</li>
+<li>DisplayName = "acpi64Drv"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "acpi64"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64\0000]</li><ul>
+<li>Service = "acpi64"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "acpi64"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_ACPI64]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64\Enum]</li><ul>
+<li>0 = "Root\LEGACY_ACPI64\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = 43 3A 5C 57 49 4E 44 4F 57 53 5C 73 79 73 74 65 6D 33 32 5C 61 63 70 69 36 34 2E 65 78 65 00 3F 00 3F 02 00 3F 2B 00 00 02 00 00 3F 3F 3F 3F 3F 00 3F 02 00 00 00 00 00 3F 3F 3F 3F 3F 3F 3F 3F 00 3F 01 00 00 00 3F 3F 00 00 3F 2B 3F 3F 3F 3F 3F 3F 3F 3</li>
+<li>DisplayName = "acpi64"</li>
+<li>ObjectName = 4C 6F 63 61 6C 53 79 73 74 65 6D 00 49 6D 61 67 65 50 61 74 68 00 45 72 72 6F 72 43 6F 6E 74 72 6F 6C 00 00 44 69 73 70 6C 61 79 4E 61 6D 65 00 44 65 73 63 72 69 70 74 69 6F 6E 00 00 00 53 59 53 54 45 4D 5C 43 75 72 72 65 6E 74 43 6F 6E 74 72 6F 6C 5</li>
+<li>Description = "??????? passthrough ???????????"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64Drv\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\acpi64Drv]</li><ul>
+<li>Type = 0x00000001</li>
+<li>Start = 0x00000003</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%System%\acpi64.sys"</li>
+<li>DisplayName = "acpi64Drv"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were deleted:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\HelpSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\File system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\EventLog]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmserver]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmload.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmio.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmboot.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\dmadmin]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\DcomLaunch]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\CryptSvc]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot file system]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Boot Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\Base]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Minimal\AppMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}]</li><ul>
+<li>(Default) = "Human Interface Devices"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{71A27CDD-812A-11D0-BEC7-08002BE2092F}]</li><ul>
+<li>(Default) = "Volume"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E980-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Floppy disk drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97D-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "System"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E97B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "SCSIAdapter"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E977-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "PCMCIA Adapters"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E975-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetTrans"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetService"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E973-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "NetClient"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Net"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96F-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Mouse"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96B-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Keyboard"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E96A-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Hdc"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E969-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "Standard floppy disk controller"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E967-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "DiskDrive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{4D36E965-E325-11CE-BFC1-08002BE10318}]</li><ul>
+<li>(Default) = "CD-ROM Drive"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\{36FC9E60-C465-11CF-8056-444553540000}]</li><ul>
+<li>(Default) = "Universal Serial Bus controllers"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WZCSVC]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\WinMgmt]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vgasave.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\vga.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\termservice]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdtcp.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\tdpipe.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Tcpip]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\System Bus Extender]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Streams Drivers]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SRService]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sr.sys]</li><ul>
+<li>(Default) = "FSFilter System Recovery"</li>
+</ul>
+<li>[[pathname with a string SHARE]\SharedAccess]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\sermouse.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\SCSI Class]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\RpcSs]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdsessmgr]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpwd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\rdpcdd.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Primary disk]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP_TDI]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PNP Filter]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PlugPlay]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\PCI Configuration]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NtLmSsp]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm.sys]</li><ul>
+<li>(Default) = "Driver"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\nm]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetworkProvider]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Network]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetMan]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Netlogon]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetDDEGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBT]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOSGroup]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NetBIOS]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Ndisuio]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS Wrapper]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\NDIS]</li><ul>
+<li>(Default) = "Driver Group"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SafeBoot\Network\Messenger]</li><ul>
+<li>(Default) = "Service"</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]</li><ul>
+<li>Cookies = </li>
+<li>History = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible country of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+</table></p>
+<ul><li>The HOSTS file was updated with the following URL-to-IP mappings:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="10">
+127.0.0.1       localhost
+# ***************************
+1.2.3.4       www.360Safe.com
+1.2.3.4       www.360.cn
+1.2.3.4       bbs.360safe.com
+1.2.3.4       baike.360.cn
+1.2.3.4       kaba.360.cn
+1.2.3.4       bbs.360.cn
+1.2.3.4       dl.360Safe.com
+1.2.3.4       forum.ikaka.com
+1.2.3.4       tool.ikaka.com
+1.2.3.4       file.ikaka.com
+1.2.3.4       update.ikaka.com
+1.2.3.4       bbs.ikaka.com
+1.2.3.4       bbs.janmeng.com
+1.2.3.4       www.ikaka.com
+1.2.3.4       forum.jiangmin.com
+1.2.3.4       update.rising.com.cn
+1.2.3.4       online.rising.com.cn
+1.2.3.4       center.rising.com.cn
+1.2.3.4       www.rising.com.cn
+1.2.3.4       fw.rising.com.cn
+1.2.3.4       csc.rising.com.cn
+1.2.3.4       buy.rising.com.cn
+1.2.3.4       sos.rising.com.cn
+1.2.3.4       download.rising.com.cn
+1.2.3.4       help.rising.com.cn
+1.2.3.4       go.rising.com.cn
+1.2.3.4       up.duba.net
+1.2.3.4       bbs.duba.net
+1.2.3.4       shadu.baidu.com
+1.2.3.4       www.kztechs.com
+1.2.3.4       security.symantec.com
+1.2.3.4       shadu.duba.net
+1.2.3.4       online.jiangmin.com
+1.2.3.4       cn.mcafee.com
+1.2.3.4       bbs.mcafeefans.com
+1.2.3.4       mcafeefans.com
+1.2.3.4       www.ahn.com.cn
+1.2.3.4       www.kaspersky.com.cn
+1.2.3.4       www.kaspersky.com
+1.2.3.4       www.pcav.cn
+1.2.3.4       www.vrv.com.cn
+1.2.3.4       bbs.sucop.com
+1.2.3.4       www.sucop.com
+1.2.3.4       sucop.com
+1.2.3.4       bbs.cpcw.com
+1.2.3.4       www.shudoo.com
+1.2.3.4       alert.rising.com.cn
+1.2.3.4       www.dswlab.com
+1.2.3.4       dswlab.com
+1.2.3.4       bbs.dswlab.com
+1.2.3.4       zhidao.ikaka.com
+1.2.3.4       bbs.kafan.cn
+1.2.3.4       bbs.kaspersky.com.cn
+1.2.3.4       www.trendmicro.com.cn
+1.2.3.4       bbs.trendmicro.com.cn
+1.2.3.4       cn.trendmicro.com
+1.2.3.4       www.kpfans.com
+1.2.3.4       kpfans.com
+1.2.3.4       www.mcafee.com
+1.2.3.4       dnl-cn1.kaspersky-labs.com
+1.2.3.4       dnl-cn2.kaspersky-labs.com
+1.2.3.4       dnl-cn3.kaspersky-labs.com
+1.2.3.4       dnl-cn4.kaspersky-labs.com
+1.2.3.4       dnl-cn5.kaspersky-labs.com
+1.2.3.4       dnl-cn6.kaspersky-labs.com
+1.2.3.4       dnl-cn7.kaspersky-labs.com
+1.2.3.4       dnl-cn8.kaspersky-labs.com
+1.2.3.4       dnl-cn9.kaspersky-labs.com
+1.2.3.4       dnl-cn10.kaspersky-labs.com
+1.2.3.4       dnl-cn11.kaspersky-labs.com
+1.2.3.4       dnl-cn12.kaspersky-labs.com
+1.2.3.4       dnl-cn13.kaspersky-labs.com
+1.2.3.4       dnl-cn14.kaspersky-labs.com
+1.2.3.4       dnl-cn15.kaspersky-labs.com
+1.2.3.4       dnl-cd1.kaspersky-labs.com
+1.2.3.4       dnl-cd2.kaspersky-labs.com
+1.2.3.4       dnl-cd3.kaspersky-labs.com
+1.2.3.4       dnl-cd4.kaspersky-labs.com
+1.2.3.4       dnl-cd5.kaspersky-labs.com
+1.2.3.4       dnl-cd6.kaspersky-labs.com
+1.2.3.4       dnl-cd7.kaspersky-labs.com
+1.2.3.4       dnl-cd8.kaspersky-labs.com
+1.2.3.4       dnl-cd9.kaspersky-labs.com
+1.2.3.4       dnl-cd10.kaspersky-labs.com
+1.2.3.4       dnl-cd11.kaspersky-labs.com
+1.2.3.4       dnl-cd12.kaspersky-labs.com
+1.2.3.4       dnl-cd13.kaspersky-labs.com
+1.2.3.4       dnl-cd14.kaspersky-labs.com
+1.2.3.4       dnl-eu1.kaspersky-labs.com
+1.2.3.4       dnl-eu2.kaspersky-labs.com
+1.2.3.4       dnl-eu3.kaspersky-labs.com
+1.2.3.4       dnl-eu4.kaspersky-labs.com
+1.2.3.4       dnl-eu5.kaspersky-labs.com
+1.2.3.4       dnl-eu6.kaspersky-labs.com
+1.2.3.4       dnl-eu7.kaspersky-labs.com
+1.2.3.4       dnl-eu8.kaspersky-labs.com
+1.2.3.4       dnl-eu9.kaspersky-labs.com
+1.2.3.4       dnl-eu10.kaspersky-labs.com
+</textarea></tr></td></table></p>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://www.usinfosec.info/kernel/usa.txt</li>
+<li>localhost</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

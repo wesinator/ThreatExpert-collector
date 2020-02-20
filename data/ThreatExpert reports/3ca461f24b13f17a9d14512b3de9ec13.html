@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Virus.Win32.Renamer.k, Trojan.Win32.Meredrop, W32.SillyFDC, VirTool.INF.Autorun">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Virus.Win32.Renamer.k, Trojan.Win32.Meredrop, W32.SillyFDC..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 18 January 2016, 18:20:26</li>
+<li>Processing time: 5 min 56 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3CA461F24B13F17A9D14512B3DE9EC13</li>
+<li>File SHA-1: 0x7C0DECBD2CCDF88FBFA50CBDB70EAB001ED0AE17</li>
+<li>Filesize: 251,904 bytes</li>
+<li>Alias:</li>
+<ul><li>Virus.Win32.Renamer.k [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-meredrop.html" target="_blank">Trojan.Win32.Meredrop<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Sets the drive to autoplay by creating autorun.inf file in its root directory. If the drive is shared across the network then other remote computers can be infected any time they try to access this share.</td><td class="cell_2"><img src="./resources/level7.gif"></td></tr>
+<tr><td class="cell_1">Modifies some system settings that may have negative impact on overall system security state.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Creates a startup registry entry.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/backdoor-rbot-gen.html" target="_blank">Backdoor.Rbot.GEN<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Backdoor.Rbot.GEN is an IRC controlled backdoor (or &quot;bot&quot;) that can be used to gain unauthorized access to a victim's machine. It can also exhibit worm-like functionality by exploiting weak passwords on network shares.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+c:\Autorun.inf
+</td>
+<td class="cell_1">150 bytes</td>
+<td class="cell_1">MD5: 0xB73B6109B9135948F63558287ACC4059<br/>SHA-1: 0x7A290F61BBC78E180D4E47C59B84E65E133D08A6</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-sillyfdc.html" target="_blank">W32.SillyFDC<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>VirTool.INF.Autorun [Ikarus]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+c:\Inetpub\wwwroot\<a href="http://www.threatexpert.com/files/index.exe.html" target="_blank">index.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+c:\stdio.exe
+<br/>
+%Windir%\Microsoft.NET\Framework\v2.0.50727\ASP.NETWebAdminFiles\Images\ASPdotNET_logo.exe
+<br/>
+%Windir%\Microsoft.NET\Framework\v2.0.50727\ASP.NETWebAdminFiles\Images\darkBlue_GRAD.exe
+<br/>
+%Windir%\Microsoft.NET\Framework\v2.0.50727\ASP.NETWebAdminFiles\Images\help.exe
+<br/>
+%Windir%\Microsoft.NET\Framework\v2.0.50727\ASP.NETWebAdminFiles\Images\security_watermark.exe
+<br/>
+%Windir%\Microsoft.NET\Framework\v2.0.50727\ASP.NETWebAdminFiles\Images\topGradRepeat.exe
+<br/>
+%Windir%\pchealth\helpctr\System\DVDUpgrd\<a href="http://www.threatexpert.com/files/stripe.exe.html" target="_blank">stripe.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+%Windir%\pchealth\helpctr\System\sysinfo\graphics\<a href="http://www.threatexpert.com/files/greendot.exe.html" target="_blank">greendot.exe<img src="./resources/flag.gif" style="border:none"/></a>
+<br/>
+[file and pathname of the sample #1]
+<br/>
+%System%\<a href="http://www.threatexpert.com/files/wupdate.exe.html" target="_blank">wupdate.exe<img src="./resources/flag.gif" style="border:none"/></a>
+</td>
+<td class="cell_1">251,904 bytes</td>
+<td class="cell_1">MD5: 0x3CA461F24B13F17A9D14512B3DE9EC13<br/>SHA-1: 0x7C0DECBD2CCDF88FBFA50CBDB70EAB001ED0AE17</td>
+<td class="cell_2">Virus.Win32.Renamer.k [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-meredrop.html" target="_blank">Trojan.Win32.Meredrop<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</td>
+</tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/index.exe.html" target="_blank">index.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">c:\inetpub\wwwroot\<a href="http://www.threatexpert.com/files/index.exe.html" target="_blank">index.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/help.exe.html" target="_blank">help.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%Windir%\microsoft.net\framework\v2.0.50727\asp.netwebadminfiles\images\help.exe</td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/wupdate.exe.html" target="_blank">wupdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%System%\<a href="http://www.threatexpert.com/files/wupdate.exe.html" target="_blank">wupdate.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1">stdio.exe</td><td class="cell_1">c:\stdio.exe</td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1">aspdotnet_logo.exe</td><td class="cell_1">%Windir%\microsoft.net\framework\v2.0.50727\asp.netwebadminfiles\images\aspdotnet_logo.exe</td><td class="cell_2">262,144 bytes</td></tr>
+<tr><td class="cell_1">darkblue_grad.exe</td><td class="cell_1">%Windir%\microsoft.net\framework\v2.0.50727\asp.netwebadminfiles\images\darkblue_grad.exe</td><td class="cell_2">262,144 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]</li><ul>
+<li>NoFolderOptions = 0x00000001</li>
+</ul>
+<br/>
+<em>to remove the Folder Options item from all Windows Explorer menus and from Control Panel</em><br/>
+<li>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Winupdate = "%System%\wupdate.exe"</li>
+</ul>
+<br/>
+<em>so that wupdate.exe runs every time Windows starts</em><br/>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

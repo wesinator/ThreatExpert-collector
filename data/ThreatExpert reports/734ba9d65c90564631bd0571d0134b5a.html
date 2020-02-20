@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/Behav-024, Trojan.Win32.Dialer">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/Behav-024, Trojan.Win32.Dialer</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2016, 08:32:14</li>
+<li>Processing time: 5 min 38 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x734BA9D65C90564631BD0571D0134B5A</li>
+<li>File SHA-1: 0x855611ACF2621FC7B7B959209016671E3D56538B</li>
+<li>Filesize: 35,840 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-024.html" target="_blank">Mal/Behav-024<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-dialer.html" target="_blank">Trojan.Win32.Dialer<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following file was created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%System%\Autoexec.bat
+</td>
+<td class="cell_1">35,840 bytes</td>
+<td class="cell_1">MD5: 0x734BA9D65C90564631BD0571D0134B5A<br/>SHA-1: 0x855611ACF2621FC7B7B959209016671E3D56538B</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/mal-behav-024.html" target="_blank">Mal/Behav-024<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/trojan-win32-dialer.html" target="_blank">Trojan.Win32.Dialer<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><em>packed with </em>UPX [Kaspersky Lab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]</li><ul>
+<li>ConnectGroup = "9wUQBxEFpg=="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]</li><ul>
+<li>ConnectGroup = "9wUQBxEFpg=="</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>a5065806.f3322.net</li>
+</ul></ul>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>a5065806.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">a5065806.f3322.net<td class="cell_2">81</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 81:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 2F01 0000 4233 3136 35B8 0100 007A 9A4E | /...B3165....z.N
+00000010 | F82B CE30 8089 8387 1480 1086 5A8A 8A85 | .+.0........Z...
+00000020 | 8700 4B0F A317 906D 25A5 2D05 2C20 6F2E | ..K....m%.-., o.
+00000030 | 1B36 8049 1E14 3232 3B38 38FA FA5E 08E4 | .6.I..22;88..^..
+00000040 | 4EB4 1765 9007 C30D 44DF 0909 1487 3122 | N..e....D.....1"
+00000050 | 8A02 C112 5305 3FBA 91D6 EC36 FDCD 4D4F | ....S.?....6..MO
+00000060 | 1FCF F94E F01A 03DE 0B51 3904 4A29 02B1 | ...N.....Q9.J)..
+00000070 | 0403 C40D 0C8C 8C0C DBB9 21EE 025A C8E8 | ..........!..Z..
+00000080 | 9C9F 5B50 5A92 5AE4 9798 9BCA 401C A891 | ..[PZ.Z.....@...
+00000090 | 0712 402F 31FC 07E2 DFEC 0C0C E589 79E9 | ..@/1.........y.
+000000A0 | B989 403B DE4D A801 B915 64CF 998F C20C | ..@;.M....d.....
+000000B0 | 9326 37D4 80D8 FC0C 0C07 367C 1166 60F8 | .&7.......6|.f`.
+000000C0 | D850 0362 877C 3738 F3C6 E0D4 46C3 EDD7 | .P.b.|78....F...
+000000D0 | C0EE 0201 934F C2C0 7080 811D 5B76 BFDB | .....O..p...[v..
+000000E0 | F00C C402 F91F 1DEC 1139 580E A2CF 6DD9 | .........9X...m.
+000000F0 | BEE8 FC35 0506 E3D7 8D35 CC40 BE02 EB64 | ...5.....5.@...d
+00000100 | 4986 4821 860A 0147 065E 2E84 FA07 5E2D | I.H!...G.^....^-
+00000110 | 40B2 85E1 0590 9681 C68B 06D0 EF1A 60D9 | @.............`.
+00000120 | 1686 9830 2186 1511 420C 00B0 2B58 56   | ...0!...B...+XV
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

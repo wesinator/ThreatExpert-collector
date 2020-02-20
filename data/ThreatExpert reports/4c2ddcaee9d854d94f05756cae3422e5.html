@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Mal/FakeAV-BT">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Mal/FakeAV-BT</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 22 June 2016, 20:24:36</li>
+<li>Processing time: 5 min 41 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x4C2DDCAEE9D854D94F05756CAE3422E5</li>
+<li>File SHA-1: 0xC3585B45529413B171A711A0D300593B4EF72417</li>
+<li>Filesize: 94,227 bytes</li>
+<li>Alias: <a href="http://www.threatexpert.com/threats/mal-fakeav-bt.html" target="_blank">Mal/FakeAV-BT<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">110,592 bytes</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/intel.exe.html" target="_blank">intel.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Microsoft Iycgwo\<a href="http://www.threatexpert.com/files/intel.exe.html" target="_blank">intel.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">110,592 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmoui wcokocak</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmoui wcokocak</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]</li><ul>
+<li>Cao360 = "%ProgramFiles%\Microsoft Iycgwo\intel.exe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Wsmoui wcokocak]</li><ul>
+<li>ConnectGroup = "????"</li>
+<li>MarkTime = "2016-06-22 20:24"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wsmoui wcokocak]</li><ul>
+<li>ConnectGroup = "????"</li>
+<li>MarkTime = "2016-06-22 20:24"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>a5065806.f3322.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">a5065806.f3322.net<td class="cell_2">110</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 110:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 6882 0455 AD1A 2D6B 9059 EE72 F7DB 04DF | h..U..-k.Y.r....
+00000010 | 18D3 DF64 BC49 B153 0F66 E3A9 4967 0EBC | ...d.I.S.f..Ig..
+00000020 | F74E BBB3 2999 41C0 E37E 372A 2DB4 EA52 | .N..).A..~7*-..R
+00000030 | DD9F 1BB3 8A8A C31C 2D55 E4C9 9899 4AAB | ........-U....J.
+00000040 | 2BBB AF0F 2091 B074 DBB9 FB66 631D 7328 | +... ..t...fc.s(
+00000050 | E2CE 79AB E6DD 95BC 2328 5F34 A0ED F24C | ..y.....#(_4...L
+00000060 | 5722 CBF0 0B3A BAB0 AF40 4691 026F FBEE | W"...:...@F..o..
+00000070 | 5A6E 8DF7 4031 B8F5 6069 E57F CE89 68E6 | Zn..@1..`i....h.
+00000080 | 4ABE 9F71 70AC 80C6 960D 10FA D1A6 F473 | J..qp..........s
+00000090 | E88D 963F DF0F 587A A88A B90A 326C 247E | ...?..Xz....2l$~
+000000A0 | 10A2 AFAD 6D0B 55CD EC4B C522 721F DCF3 | ....m.U..K."r...
+000000B0 | 6107 7CA0 6653 BC2B 1C36 A3BA EFF3 D491 | a.|.fS.+.6......
+000000C0 | 81EB 8F43 F5A2 B0D9 7C7E 9DE0 B16A 1225 | ...C....|~...j.%
+000000D0 | 71F3 55CA 2300 8623 FFB8 3476 A5C9 4418 | q.U.#..#..4v..D.
+000000E0 | 52F0 B5AD 486C 68C2 D10F 6E60 D224 1936 | R...Hlh...n`.$.6
+000000F0 | 119D F065 8C26 3004 4343 0C39 173D FB01 | ...e.&0.CC.9.=..
+00000100 | 9253 9480 9BB8 1ECA 02D5 2A03 3235 34AB | .S........*.254.
+00000110 | 9BA8 7CBA 83E2 519E 3459 7378 5064 C75D | ..|...Q.4YsxPd.]
+00000120 | 72E7 5A58 9EC0 EA4E 4DDF 5F0E A4C0 483E | r.ZX...NM._...H>
+00000130 | DA25 1955 CFA7 7850 1242 1480 C39A 6DA4 | .%.U..xP.B....m.
+00000140 | AD81 AB76 46BE E7F9 8C74 F9C3 4E31 1D26 | ...vF....t..N1.&
+00000150 | 65D4 3E0A 9993 8B84 6613 5848 DA67 FFA5 | e.>.....f.XH.g..
+00000160 | CEC7 52F4 A0C0 3293 FD21 17CB 5FE4 6BF0 | ..R...2..!.._.k.
+00000170 | A06E B78B 5D32 FEF3 B26A 782A 7C19 E0E1 | .n..]2...jx*|...
+00000180 | 0684 3F6A AA01 96F9 E6C1 80C0 F291 871A | ..?j............
+00000190 | E46B C968 625D 689A 6BF2 594D 872B DAC0 | .k.hb]h.k.YM.+..
+000001A0 | 1B83 17F9 623A 1D8E 0CF1 3774 83DB 1B44 | ....b:....7t...D
+000001B0 | 52DA 7E20 759F 7993 125C 0DB5 2D51 85E8 | R.~ u.y..\..-Q..
+000001C0 | 7473 3A2F DCBA AD8F DD06 5646 B3ED CC92 | ts:/......VF....
+000001D0 | B186 D40C 21F4 79D7 3344 675A F926 DBBA | ....!.y.3DgZ.&..
+000001E0 | 086B 88C2 9E76 029F 8EF7 97DC 28E8 6686 | .k...v......(.f.
+000001F0 | A883 7C8E 731B F5CB 312C 3A17 92D6 5E12 | ..|.s...1,:...^.
+00000200 | 09B0 E726 106B 7FFF 88D0 CB06 B25C 4C81 | ...&.k.......\L.
+00000210 | 8590 38FB BE8F D6EE 8067 DE9C FC27 E29A | ..8......g...'..
+00000220 | 61F6 4F55 630D 2224 58                  | a.OUc."$X
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

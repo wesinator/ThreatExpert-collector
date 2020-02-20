@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Downadup.B, Net-Worm.Win32.Kido.ih, W32/Conficker.worm.gen.a, Mal/Conficker-A, Worm:Win32/Conficker.B, Net-Worm.Win32.Kido, Win32/Conficker.worm.Gen">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Downadup.B, Net-Worm.Win32.Kido.ih, W32/Conficker.worm.gen.a..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 2 April 2018, 01:36:02</li>
+<li>Processing time: 5 min 44 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x3349EAB5CC4660BAFA502F7565FF761D</li>
+<li>File SHA-1: 0xAD87F08A40338C1F948DE884E682A3389D7CB0B3</li>
+<li>Filesize: 171,926 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/w32-downadup-b.html" target="_blank">W32.Downadup.B<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li><a href="http://www.threatexpert.com/threats/net-worm-win32-kido-ih.html" target="_blank">Net-Worm.Win32.Kido.ih<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]</li>
+<li><a href="http://www.threatexpert.com/threats/w32-conficker-worm-gen-a.html" target="_blank">W32/Conficker.worm.gen.a<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]</li>
+<li><a href="http://www.threatexpert.com/threats/mal-conficker-a.html" target="_blank">Mal/Conficker-A<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/worm-win32-conficker-b.html" target="_blank">Worm:Win32/Conficker.B<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/net-worm-win32-kido.html" target="_blank">Net-Worm.Win32.Kido<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win32-conficker-worm-gen.html" target="_blank">Win32/Conficker.worm.Gen<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Replication across networks by exploiting weakly restricted shares (common for Randex family of worms).</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of Conficker/Downadup/Kido, a worm that spreads by exploiting the Microsoft Windows Server Service RPC Handling Remote Code Execution Vulnerability.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Can possibly obtain IP address (of the compromised computer) by connecting to several specific URLs.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Can potentially create the file autorun.inf on any accessible mapped drive so that it executes whenever the drive is accessed.</td><td class="cell_2"><img src="./resources/level2.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/worm.gif"></td>
+<td class="cell_1">A network-aware worm that attempts to replicate across the existing network(s)</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[generic host process]</td><td class="cell_1">[generic host process filename]</td><td class="cell_2">20,480 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>[generic host process filename] is a full path filename of [generic host process].</li>
+</ul></ul>
+<ul><li>The following system services were modified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">New Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">ERSvc</td><td class="cell_1">Error Reporting Service</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wscsvc</td><td class="cell_1">Security Center</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+<tr><td class="cell_1">wuauserv</td><td class="cell_1">Automatic Updates</td><td class="cell_1">"Stopped"</td><td class="cell_2">%System%\svchost.exe -k netsvcs</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>yafczvmcysilmar</li>
+<li>Global\26806019-7</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>czxqv.cn</li>
+<li>jkwisetni.ws</li>
+<li>wwkywjxb.ws</li>
+<li>xizvpaio.cn</li>
+<li>kdcae.org</li>
+<li>jccqwmxyrej.com</li>
+<li>vnxnvi.com</li>
+<li>xjrpyzy.info</li>
+<li>cgfntbhyobb.info</li>
+<li>djerchzrxus.org</li>
+<li>obkuqces.cn</li>
+<li>kmntdgeu.ws</li>
+<li>ijpssjpj.net</li>
+<li>ykpnzt.net</li>
+<li>tiaqksrgij.com</li>
+<li>yteqrtixbyp.cc</li>
+<li>ilzdxhnm.net</li>
+<li>pxguj.cc</li>
+<li>tawzzvyn.com</li>
+<li>doyqwrl.cn</li>
+<li>mtnbtfg.org</li>
+<li>chvgkd.info</li>
+<li>qpldvpvqu.biz</li>
+<li>hlbgkpcp.cn</li>
+<li>ecuutll.ws</li>
+<li>thlliieidwf.com</li>
+<li>awuwjr.ws</li>
+<li>wwqkihqg.cn</li>
+<li>lqdadjluw.biz</li>
+<li>lpekevq.ws</li>
+<li>hmqgld.net</li>
+<li>sensztsh.ws</li>
+<li>qewnm.org</li>
+<li>xrnasxlkbm.info</li>
+<li>jwnzogyof.ws</li>
+<li>cmwijkita.cn</li>
+<li>dwdugzml.cc</li>
+<li>zmmnszgrrin.biz</li>
+<li>giqougoaukb.cc</li>
+<li>dvhsmqim.cc</li>
+<li>bdqqy.biz</li>
+<li>njpqnfvx.cn</li>
+<li>vnxunwffy.info</li>
+<li>dwnhxt.biz</li>
+<li>axifrhtjkh.net</li>
+<li>xcchjor.net</li>
+<li>qnlsdnmxbas.info</li>
+<li>peorobjlfiu.org</li>
+<li>lcvjyeevps.cn</li>
+<li>dxahuir.org</li>
+<li>wxorgpyf.biz</li>
+<li>rkcijlo.net</li>
+<li>agiqahtn.com</li>
+<li>svjbtdm.com</li>
+<li>ucjknf.net</li>
+<li>ipmtgri.biz</li>
+<li>bkbyzdejglq.info</li>
+<li>uvowoyqsj.com</li>
+<li>gckzd.net</li>
+<li>eedilhq.info</li>
+<li>bndehfygs.net</li>
+<li>bscfnvbw.org</li>
+<li>rtlrzz.ws</li>
+<li>ffcpnbopa.net</li>
+<li>inbinujd.biz</li>
+<li>tfesdidu.cn</li>
+<li>fgdwg.cn</li>
+<li>wddeiyomn.cn</li>
+<li>bmyrmpia.info</li>
+<li>qydnugth.cn</li>
+<li>teegogaurgz.info</li>
+<li>ovfxebrr.cc</li>
+<li>pgjhac.cn</li>
+<li>pyckiwkah.com</li>
+<li>xkonpgno.com</li>
+<li>zsqolyv.org</li>
+<li>aplzhpzwj.biz</li>
+<li>lnfnmcvxdmg.cn</li>
+<li>qzszoflllgj.cc</li>
+<li>fqwoxmza.ws</li>
+<li>fwiwopvw.cc</li>
+<li>leqsegio.cn</li>
+<li>jqpuywz.cn</li>
+<li>kpysll.org</li>
+<li>vyuslbcco.cc</li>
+<li>jurzf.net</li>
+<li>mjaiwfqw.cn</li>
+<li>erdkxtde.ws</li>
+<li>zmzqj.ws</li>
+<li>ifgizhp.ws</li>
+<li>vrycigu.info</li>
+<li>cbfxowpe.cn</li>
+<li>jhtwkqc.org</li>
+<li>mwizr.net</li>
+<li>fvjlqxsamo.cc</li>
+<li>rfcfh.biz</li>
+<li>iywtkmj.biz</li>
+<li>sbajxbgk.ws</li>
+<li>hvabjhfb.cn</li>
+<li>qkcapk.cn</li>
+</ul></ul>
+<ul><li>The data identified by the following URLs was then requested from the remote web server:</li>
+<ul>
+<li>http://www.msn.com</li>
+<li>http://[domain_or_ip_address]/search?q=0</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/heur_mod.gif"/></td><td width="100%" class="h3">Heuristics Analysis</td></tr></table>
+<ul><li>Heuristically identified capability of spreading across the following weakly restricted network shares:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="5">
+ADMIN$
+C$
+E$
+IPC$
+</textarea></tr></td></table></p>
+<ul><li>The network replication uses a dictionary attack by probing credentials from the following list:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:12px" name="textarea" cols="50" rows="10">
+00000
+000000
+00000000
+111111
+11111111
+123123
+12345
+123456
+1234567
+12345678
+123456789
+1234qwer
+123abc
+123asd
+123qwe
+54321
+654321
+88888888
+abc123
+academia
+admin
+admin$
+admin123
+administrator
+admins
+america
+anchor
+anything
+april
+arrow
+artist
+asdfgh
+basic
+changeme
+cluster
+codeword
+coffee
+compaq
+cookie
+country
+dirty
+drive
+email
+england
+english
+forever
+france
+freedom
+french
+ghost
+ihavenopass
+india
+input
+japan
+julie
+killer
+letmein
+logout
+macintosh
+modem
+monday
+mouse
+mypass
+mypc123
+network
+nobody
+pass123
+password1
+password123
+phone
+phrase
+private
+pw123
+right
+saturday
+script
+simple
+student
+success
+superuser
+target
+temp123
+test123
+thailand
+user1
+video
+virus
+xxxxx
+xxxxxx
+xxxxxxxx
+xxxxxxxxx
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2018 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

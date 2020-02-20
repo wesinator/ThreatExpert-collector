@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Submission Report">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 18 May 2016, 16:25:20</li>
+<li>Processing time: 6 min 12 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x7159CA1577131ED75C91FFB542DB1756</li>
+<li>File SHA-1: 0x20A4D03C36B5B4F30B144BF597B6ACF12999EA0F</li>
+<li>Filesize: 2,757,550 bytes</li>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following directory was created:</li>
+<ul>
+<li>%CommonAppData%\DNGuard HVM</li>
+</ul></ul>
+<ul><li>Note:</li><ul>
+<li>%CommonAppData% is a variable that refers to the file system directory containing application data for all users. A typical path is C:\Documents and Settings\All Users\Application Data.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">runtimeeditor.exe</td><td class="cell_1">%ProgramFiles%\dnguard trial\runtimeeditor.exe</td><td class="cell_2">344,064 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">192,512 bytes</td></tr>
+<tr><td class="cell_1">dnguardHVM.exe</td><td class="cell_1">%ProgramFiles%\dnguard trial\dnguardHVM.exe</td><td class="cell_2">1,380,352 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1 without extension].tmp</td><td class="cell_1">%Temp%\is-PGC1O.tmp\[filename of the sample #1 without extension].tmp</td><td class="cell_2">1,220,608 bytes</td></tr>
+<tr><td class="cell_1">dnguardcmd.exe</td><td class="cell_1">%ProgramFiles%\dnguard trial\dnguardcmd.exe</td><td class="cell_2">61,440 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>There were new memory pages created in the address space of the system process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Allocated Size</td></tr>
+<tr><td class="cell_1">ProtectPictureImage.exe</td><td class="cell_1">%ProgramFiles%\dnguard trial\protectpictureimage.exe</td><td class="cell_2">331,776 bytes</td></tr>
+<tr><td class="cell_1">ProtectUserString.exe</td><td class="cell_1">%ProgramFiles%\dnguard trial\protectuserstring.exe</td><td class="cell_2">331,776 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.hvmprj</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\DefaultIcon</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\shell</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\shell\open</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\shell\open\command</li>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\dnguard-trial_is1</li>
+<li>HKEY_CURRENT_USER\Software\ZiYuXuan</li>
+<li>HKEY_CURRENT_USER\Software\ZiYuXuan\DNGuardHVM</li>
+<li>HKEY_CURRENT_USER\Software\ZiYuXuan\DNGuardHVM\files</li>
+<li>HKEY_CURRENT_USER\Software\ZiYuXuan\DNGuardHVM\Reg</li>
+<li>HKEY_CURRENT_USER\Software\ZiYuXuan\DNGuardHVM\Update</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.hvmprj]</li><ul>
+<li>(Default) = "DNGuardProjectFile"</li>
+<li>Content Type = "text/xml"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\shell\open\command]</li><ul>
+<li>(Default) = ""%ProgramFiles%\DNGuard Trial\DNGuardHVM.exe" "%1""</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile\DefaultIcon]</li><ul>
+<li>(Default) = "%ProgramFiles%\DNGuard Trial\DNGuardHVM.exe,1"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DNGuardProjectFile]</li><ul>
+<li>(Default) = "DNGuard Project File"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\dnguard-trial_is1]</li><ul>
+<li>Inno Setup: Setup Version = "5.5.1 (u)"</li>
+<li>Inno Setup: App Path = "%ProgramFiles%\DNGuard Trial"</li>
+<li>InstallLocation = "%ProgramFiles%\DNGuard Trial\"</li>
+<li>Inno Setup: Icon Group = "DNGuard Trial"</li>
+<li>Inno Setup: User = "%UserName%"</li>
+<li>Inno Setup: Selected Tasks = "desktopicon"</li>
+<li>Inno Setup: Deselected Tasks = ""</li>
+<li>Inno Setup: Language = "default"</li>
+<li>DisplayName = "DNGuard Trial version v3.72"</li>
+<li>UninstallString = ""%ProgramFiles%\DNGuard Trial\unins000.exe""</li>
+<li>QuietUninstallString = ""%ProgramFiles%\DNGuard Trial\unins000.exe" /SILENT"</li>
+<li>DisplayVersion = "v3.72"</li>
+<li>Publisher = "ZiYuXuan Studio."</li>
+<li>URLInfoAbout = "http://www.dnguard.net/"</li>
+<li>HelpLink = "http://www.dnguard.net/"</li>
+<li>URLUpdateInfo = "http://www.dnguard.net/"</li>
+<li>NoModify = 0x00000001</li>
+<li>NoRepair = 0x00000001</li>
+<li>InstallDate = "20160518"</li>
+</ul>
+<li>[HKEY_CURRENT_USER\Software\ZiYuXuan\DNGuardHVM\Update]</li><ul>
+<li>LastCheck = 0x573CFA04</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following HTTP URL was started reading:</li>
+<ul>
+<li>http://www.dnguard.net/changelog.php</li>
+</ul></ul>
+<ul><li>The data identified by the following URL was then requested from the remote web server:</li>
+<ul>
+<li>http://www.dnguard.net/update.txt</li>
+</ul></ul>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

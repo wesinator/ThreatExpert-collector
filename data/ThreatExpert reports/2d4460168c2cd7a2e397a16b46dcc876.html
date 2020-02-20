@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Backdoor:Win32/Zegost.Q, Virus.Win32.Dialer">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Backdoor:Win32/Zegost.Q, Virus.Win32.Dialer</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 16 November 2015, 05:17:07</li>
+<li>Processing time: 5 min 29 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x2D4460168C2CD7A2E397A16B46DCC876</li>
+<li>File SHA-1: 0xE26197A94EFE8B71EB9F5403297837C325D50BFE</li>
+<li>Filesize: 106,496 bytes</li>
+<li>Alias:</li>
+<ul><li>Backdoor:Win32/Zegost.Q [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/virus-win32-dialer.html" target="_blank">Virus.Win32.Dialer<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">110,592 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>845013771.3322.org</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">845013771.3322.org<td class="cell_2">2015</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 8501 0000 4002 0000 799E 8E54 384E 4569 | ....@...y..T8NEi
+00000010 | 1D3D FEA4 D460 2C5B 3D3C 3D92 1D49 2C44 | .=...`,[=<=..I,D
+00000020 | 8847 4117 8381 0C62 2E96 3379 F3A5 C40B | .GA....b..3y....
+00000030 | 1A1C 1B74 AACA 23E4 0845 0A05 D866 14B2 | ...t..#..E...f..
+00000040 | 451A 1B40 7362 6347 3100 1F71 E7F2 A1B4 | E..@sbcG1..q....
+00000050 | 0194 7FBA FD9A 7BB6 7AB7 5263 5CAF 0471 | ......{.z.Rc\..q
+00000060 | 5851 21FE 7C82 94F0 BF90 DA48 2322 D765 | XQ!.|......H#".e
+00000070 | 25BD E20E 0470 1794 C232 5295 A36B 0032 | %....p...2R..k.2
+00000080 | 275D FE90 5D7D 6468 5DD0 911B 1751 AC0C | ']..]}dh]....Q..
+00000090 | 69BD 3F5C 00EF 0DCA 2788 4E57 E05F 1260 | i.?\....'.NW._.`
+000000A0 | 6ABB 0493 1536 44EC 0116 0BCE FB81 6178 | j....6D.......ax
+000000B0 | B4DE 0ECD 2C92 0E34 BF44 B753 D94C 6E6B | ....,..4.D.S.Lnk
+000000C0 | 53CA CF24 3212 FE09 37C5 8B0D 0834 5F03 | S..$2...7....4_.
+000000D0 | AD83 DB53 B33F 764F 5E16 05B4 0347 F208 | ...S.?vO^....G..
+000000E0 | 7BB0 1B26 6CFA 7D88 C267 04EF E770 5715 | {..&l.}..g...pW.
+000000F0 | DEA3 1327 4D4A 9527 0FAF 0BBC F082 ABAC | ...'MJ.'........
+00000100 | 7859 1000 3ADD 86C6 3751 60EF 84C1 6555 | xY..:...7Q`...eU
+00000110 | 6EC6 5539 42FB B89E 3CF4 ABFA 4C46 2426 | n.U9B...<...LF$&
+00000120 | 606F 4E95 7947 1687 6826 FBE1 1FB2 92F9 | `oN.yG..h&......
+00000130 | 3AF5 ED06 DF35 2122 4EFC D1A8 2A9B 7ACE | :....5!"N...*.z.
+00000140 | D518 BF53 41D0 5953 B87A EEAD 6867 462A | ...SA.YS.z..hgF*
+00000150 | A67B 3826 DFDE B7AA 1222 0EFF 3F73 F7C5 | .{8&....."..?s..
+00000160 | 9AD2 EEA9 2938 0B63 D7F0 FC31 50C2 B793 | ....)8.c...1P...
+00000170 | DEA7 FAF2 F1E1 F3EE 8B3C 4605 882D 7DD6 | .........<F..-}.
+00000180 | 2F21 B96E 83                            | /!.n.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

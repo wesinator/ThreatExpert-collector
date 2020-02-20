@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.Graybird.1, Trojan-Downloader.Win32.Small.kql, Mal/EncPk-NX, Trojan-Downloader.Win32.Small, Win-Trojan/Downloader.48640.AN, Trojan:Win32/Malex.gen!E, Trojan.Win32.Dialer, Mal/Behav-004, Backdoor.Win32.Inject">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.Graybird.1, Trojan-Downloader.Win32.Small.kql, Mal/EncPk-NX..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 14 April 2016, 13:41:53</li>
+<li>Processing time: 8 min 49 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x0FD71BA4DA0A0074847B23D2A4AA1C96</li>
+<li>File SHA-1: 0x973E1F12052B51BCA3468D0B53A2E3739F49A6B8</li>
+<li>Filesize: 48,640 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-graybird-1.html" target="_blank">Suspicious.Graybird.1<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>Trojan-Downloader.Win32.Small.kql [Kaspersky Lab]</li>
+<li>Mal/EncPk-NX [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-downloader-win32-small.html" target="_blank">Trojan-Downloader.Win32.Small<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><a href="http://www.threatexpert.com/threats/win-trojan-downloader-48640-an.html" target="_blank">Win-Trojan/Downloader.48640.AN<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/downloader.gif"></td>
+<td class="cell_1">A program that downloads files to the local computer that may represent security risk</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">48,640 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>The following HTTP URLs were started reading:</li>
+<ul>
+<li>http://sos.hk1433.cc:10089/Bat.exe</li>
+<li>http://sos.hk1433.cc:10089/ggyy.exe</li>
+<li>http://sos.hk1433.cc:10089/QQWB.exe</li>
+</ul></ul>
+<ul><li>The following Internet download was started (the retrieved bits are saved into the local file):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">URL to be downloaded</td><td class="cell_2_h">Filename for the downloaded bits</td></tr>
+<tr><td class="cell_1">http://sos.hk1433.cc:10089/okok.txt</td><td class="cell_2">%System%\hhwn.txt</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<img src="./resources/downloaded.gif">
+<h2>Downloaded File Summary:</h2>
+<ul><li>Download details:</li><ul>
+<li>Download retrieved: 14 April 2016 13:50:42</li>
+<li>Processing time: 5 min 46 sec</li>
+<li>Downloaded sample #1:</li>
+<ul>
+<li>File MD5: 0x1BE94BCCAB622A8812638FE838122471</li>
+<li>File SHA-1: 0xA2DF1C7E37C99052E478CAFEAA36938FD651E06B</li>
+<li>Filesize: 73,728 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/trojan-win32-malex-gen-e.html" target="_blank">Trojan:Win32/Malex.gen!E<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]</li>
+<li><a href="http://www.threatexpert.com/threats/trojan-win32-dialer.html" target="_blank">Trojan.Win32.Dialer<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+</ul>
+</ul>
+<li>Downloaded sample #2:</li>
+<ul>
+<li>File MD5: 0x0FFE742E8A61C76C082E7BB04D77E6BA</li>
+<li>File SHA-1: 0xEEB60AFB74E348CD86FC4C572E78E0BF7AF99062</li>
+<li>Filesize: 24,064 bytes</li>
+<li>Alias &amp; packer info:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/mal-behav-004.html" target="_blank">Mal/Behav-004<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]</li>
+<li><a href="http://www.threatexpert.com/threats/backdoor-win32-inject.html" target="_blank">Backdoor.Win32.Inject<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]</li>
+<li><em>packed with: </em>UPX [Kaspersky Lab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Downloads/requests other files from Internet.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vipxie.exe</td><td class="cell_1">%Windir%\vipxie.exe</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">Autoexec.bat</td><td class="cell_1">%System%\autoexec.bat</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">81,920 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #2]</td><td class="cell_1">[file and pathname of the sample #2]</td><td class="cell_2">81,920 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following module was loaded into the address space of other process(es):</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Module Name</td><td class="cell_1_h">Module Filename</td><td class="cell_2_h">Address Space Details</td></tr>
+<tr><td class="cell_1">hra33.dll</td><td class="cell_1">%System%\hra33.dll</td><td class="cell_2">Process name: vipxie.exe<br/>Process filename: %Windir%\vipxie.exe<br/>Address space: 0x3A0000 - 0x3AB000</td></tr>
+</table></p>
+<ul><li>There were new services created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">Cnopqr Nuvwxyab Mef</td><td class="cell_1">Cnopqr Nuvwxyab Mefghijk Bnop</td><td class="cell_1">"Running"</td><td class="cell_2">%Windir%\vipxie.exe</td></tr>
+<tr><td class="cell_1">Rtuvwx Nbcdefgh Mkl</td><td class="cell_1">Rtuvwx Nbcdefgh Xklmnopq Mtuv</td><td class="cell_1">"Starting"</td><td class="cell_2">%System%\Autoexec.bat</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl\Enum</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host</li>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows Script Host\Settings</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Cnopqr Nuvwxyab Mef"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000]</li><ul>
+<li>Service = "Cnopqr Nuvwxyab Mef"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Cnopqr Nuvwxyab Mefghijk Bnop"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Rtuvwx Nbcdefgh Mkl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000]</li><ul>
+<li>Service = "Rtuvwx Nbcdefgh Mkl"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Rtuvwx Nbcdefgh Xklmnopq Mtuv"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]</li><ul>
+<li>ConnectGroup = "s7O2uKY="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef\Enum]</li><ul>
+<li>0 = "Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Cnopqr Nuvwxyab Mef]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\vipxie.exe"</li>
+<li>DisplayName = "Cnopqr Nuvwxyab Mefghijk Bnop"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Cnopqrst Nwxyabcde Mhijklm Bpqrstuv Xya"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl\Enum]</li><ul>
+<li>0 = "Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Rtuvwx Nbcdefgh Mkl]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Autoexec.bat"</li>
+<li>DisplayName = "Rtuvwx Nbcdefgh Xklmnopq Mtuv"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Rtuvwxya Ndefghijk Mnopqrs Mvwxyabc Pfg"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Cnopqr Nuvwxyab Mef"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000]</li><ul>
+<li>Service = "Cnopqr Nuvwxyab Mef"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Cnopqr Nuvwxyab Mefghijk Bnop"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_CNOPQR_NUVWXYAB_MEF]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "Rtuvwx Nbcdefgh Mkl"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000]</li><ul>
+<li>Service = "Rtuvwx Nbcdefgh Mkl"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "Rtuvwx Nbcdefgh Xklmnopq Mtuv"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RTUVWX_NBCDEFGH_MKL]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]</li><ul>
+<li>ConnectGroup = "s7O2uKY="</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef\Enum]</li><ul>
+<li>0 = "Root\LEGACY_CNOPQR_NUVWXYAB_MEF\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cnopqr Nuvwxyab Mef]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000001</li>
+<li>ImagePath = "%Windir%\vipxie.exe"</li>
+<li>DisplayName = "Cnopqr Nuvwxyab Mefghijk Bnop"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Cnopqrst Nwxyabcde Mhijklm Bpqrstuv Xya"</li>
+<li>FailureActions = 80 51 01 00 00 00 00 00 00 00 00 00 03 00 00 00 57 00 53 00 01 00 00 00 58 1B 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl\Enum]</li><ul>
+<li>0 = "Root\LEGACY_RTUVWX_NBCDEFGH_MKL\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rtuvwx Nbcdefgh Mkl]</li><ul>
+<li>Type = 0x00000110</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\Autoexec.bat"</li>
+<li>DisplayName = "Rtuvwx Nbcdefgh Xklmnopq Mtuv"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Rtuvwxya Ndefghijk Mnopqrs Mvwxyabc Pfg"</li>
+</ul>
+<li>[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings]</li><ul>
+<li>ProxyEnable = 0x00000000</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>c:\windows\system32\sample_1.exe</li>
+<li>Cnopqr Nuvwxyab Mef</li>
+<li>C:\WINDOWS\system32\Autoexec.bat</li>
+<li>sos.hk1433.cc</li>
+<li>eed3bd3a-a1ad-4e99-987b-d7cb3fcfa7f0 - S-1-5-18</li>
+</ul></ul>
+<ul><li>The following ports were open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">Autoexec.bat (%System%\Autoexec.bat)</td></tr>
+<tr><td class="cell_1">1034</td><td class="cell_1">TCP</td><td class="cell_2">vipxie.exe (%Windir%\vipxie.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>sos.hk1433.cc</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">sos.hk1433.cc<td class="cell_2">9798</td><tr>
+<tr><td class="cell_1">sos.hk1433.cc<td class="cell_2">5173</td><tr>
+</table></p>
+<ul><li>The following Internet Connections were established:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Server Name</td><td class="cell_1_h">Server Port</td><td class="cell_1_h">Connect as User</td><td class="cell_2_h">Connection Password</td></tr>
+<tr><td class="cell_1">127.0.0.2</td><td class="cell_1">80</td><td class="cell_1">127.0.0.2</td><td class="cell_2">127.0.0.2</td></tr>
+<tr><td class="cell_1">127.0.0.3</td><td class="cell_1">80</td><td class="cell_1">127.0.0.3</td><td class="cell_2">127.0.0.3</td></tr>
+<tr><td class="cell_1">127.0.0.4</td><td class="cell_1">80</td><td class="cell_1">127.0.0.4</td><td class="cell_2">127.0.0.4</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 9798:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1701 0000 4233 3136 35B8 0100 007A 9A4E | ....B3165....z.N
+00000010 | F825 C630 8089 8387 1480 1086 5A8A 8A85 | .%.0........Z...
+00000020 | 8700 4B0F A317 906D 25A5 2D05 2C20 6F2E | ..K....m%.-., o.
+00000030 | 1B36 30A4 6716 68C2 0457 F88C 313D B767 | .60.g.h..W..1=.g
+00000040 | A3B1 C685 5D1B 0772 44F0 78A1 8E84 D9C1 | ....]..rD.x.....
+00000050 | C9CA CAB6 9818 E5AC 7A27 ED9E 995A 5853 | ........z'...ZXS
+00000060 | 9558 ED96 9C9B 8AD7 3148 C00F 8881 5E62 | .X......1H....^b
+00000070 | F80F C4BF D919 188C 8D0D CC40 E233 9845 | ...........@.3.E
+00000080 | 1838 81F4 09D6 8935 3BB8 44C1 6A3D 8034 | .8.....5;.D.j=.4
+00000090 | C89F 20B7 6800 310B 58D4 E0CC 1B83 531B | .. .h.1.X.....S.
+000000A0 | 0DB7 5F63 50F9 26C4 20F1 6E42 CD07 B689 | .._cP.&. .nB....
+000000B0 | 351C 4047 BD06 D2CF 24C1 26D6 341C 985E | 5.@G....$.&.4..^
+000000C0 | F34B 7262 4D0C D0BF 6780 EAC0 E0C1 DFFA | .KrbM...g.......
+000000D0 | 3D22 07CB 41CC 735B B62F 3A7F 4D81 C1F8 | ="..A.s[./:.M...
+000000E0 | 7563 0D33 90AF C03A 59F2 4CDC 5986 0A01 | uc.3...:Y.L.Y...
+000000F0 | 4786 0C46 23B8 7B33 3C40 6C23 8602 202D | G..F#.{3<@l#.. -
+00000100 | 0275 8302 D0EF 0A60 5923 068D 98B3 0C25 | .u.....`Y#.....%
+00000110 | 407D 007A EA44 23                       | @}.z.D#
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 5173:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 1701 0000 4233 3136 35B8 0100 007A 9A4E | ....B3165....z.N
+00000010 | F825 C630 8089 8387 1480 1086 5A8A 8A85 | .%.0........Z...
+00000020 | 8700 4B0F A317 906D 25A5 2D05 2C20 6F2E | ..K....m%.-., o.
+00000030 | 1B36 30A4 6716 68C2 0457 F88C 313D B767 | .60.g.h..W..1=.g
+00000040 | A3B1 C685 5D1B 0772 44F0 78A1 8E84 D9C1 | ....]..rD.x.....
+00000050 | C9CA CAB6 9818 E5AC 7A27 ED9E 995A 5853 | ........z'...ZXS
+00000060 | 9558 ED96 9C9B 8AD7 3148 C00F 8881 5E62 | .X......1H....^b
+00000070 | F80F C4BF D919 188C 8D0D CC40 E233 9845 | ...........@.3.E
+00000080 | 1838 81F4 09D6 8935 3BB8 44C1 6A3D 8034 | .8.....5;.D.j=.4
+00000090 | C89F 20B7 6800 310B 58D4 E0CC 1B83 531B | .. .h.1.X.....S.
+000000A0 | 0DB7 5F63 50F9 26C4 20F1 6E42 CD07 B689 | .._cP.&. .nB....
+000000B0 | 351C 4047 BD06 D2CF 24C1 26D6 341C 985E | 5.@G....$.&.4..^
+000000C0 | F34B 7262 4D0C D0BF 6780 EAC0 E0C1 DFFA | .KrbM...g.......
+000000D0 | 3D22 07CB 41CC 735B B62F 3A7F 4D81 C1F8 | ="..A.s[./:.M...
+000000E0 | 7563 0D33 90AF C03A 59F2 4CDC 5986 0A01 | uc.3...:Y.L.Y...
+000000F0 | 4786 0C46 23B8 7B33 3C40 6C23 8602 202D | G..F#.{3<@l#.. -
+00000100 | 0275 8302 D0EF 0A60 5923 068D 98B3 0C25 | .u.....`Y#.....%
+00000110 | 407D 007A EA44 23                       | @}.z.D#
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

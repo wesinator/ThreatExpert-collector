@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit.B!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Ramnit-A, Virus:Win32/Ramnit.J, Virus.Win32.Ramnit, Win32/Ramnit.G">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit.B!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Ramnit-A..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 5 June 2016, 19:04:37</li>
+<li>Processing time: 10 min 32 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0xB7FAF1422FC3CE04B07E219C64919745</li>
+<li>File SHA-1: 0xCC8FB252108F15A18E7973453F199AC3EBA94502</li>
+<li>Filesize: 249,785 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit.B!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Ramnit-A [Sophos]</li>
+<li>Virus:Win32/Ramnit.J [Microsoft]</li>
+<li>Virus.Win32.Ramnit [Ikarus]</li>
+<li>Win32/Ramnit.G [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1"><a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_1">%ProgramFiles%\Internet Explorer\<a href="http://www.threatexpert.com/files/iexplore.exe.html" target="_blank">iexplore.exe<img src="./resources/flag.gif" style="border:none"/></a></td><td class="cell_2">131,072 bytes</td></tr>
+<tr><td class="cell_1">kkwgksmgr.exe</td><td class="cell_1">%Windir%\kkwgksmgr.exe</td><td class="cell_2">139,264 bytes</td></tr>
+<tr><td class="cell_1">kkwgksSrv.exe</td><td class="cell_1">%Windir%\kkwgksSrv.exe</td><td class="cell_2">77,824 bytes</td></tr>
+</table></p>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex objects were created:</li>
+<ul>
+<li>{1976742A-5B71-7A19-AEFE-0C985EAC50FD}</li>
+<li>{19766E13-5B71-7A19-AEFE-0C985A1C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985A1C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985A2050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985BB050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985BF450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985C0C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985C3850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985C4450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985CD450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985D2C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985D4850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985D8050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985D9C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985E8C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985EEC50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985F8050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98609C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98611050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98614C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98615450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985B1C50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985CE850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985CF050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985FC850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985AB850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985FFC50FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985FE850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C9861A450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98612450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985DD450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98776450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C986E3050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C9898F450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98990450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98834050FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98811850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C988CA450FD}</li>
+<li>{1976681C-5B71-7A19-AEFE-0C985A1C50FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C985FE850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985AE450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C98619850FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C985EAC50FD}</li>
+<li>KyUffThOkYwRRtgPP</li>
+<li>.Net CLR</li>
+<li>{1976742A-5B71-7A19-AEFE-0C985FFC50FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C985AB850FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C98612450FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C98619850FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C9861A450FD}</li>
+<li>{1976795D-5B71-7A19-AEFE-0C9861A050FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C985AE450FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C985DD450FD}</li>
+<li>{1976742A-5B71-7A19-AEFE-0C98811850FD}</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>supnewdmn.com</li>
+<li>google.com</li>
+<li>tvrstrynyvwstrtve.com</li>
+<li>rtvwerjyuver.com</li>
+<li>wqerveybrstyhcerveantbe.com</li>
+<li>bing.com</li>
+<li>yahoo.com</li>
+<li>103.55.25.75</li>
+<li>yy22815.com</li>
+<li>ilo.brenz.pl</li>
+<li>gxkyjf.com</li>
+<li>abbqmf.com</li>
+<li>jrshee.com</li>
+<li>oxouqc.com</li>
+<li>ybqtmj.com</li>
+<li>cuioea.com</li>
+<li>olmrmo.com</li>
+<li>auuaah.com</li>
+<li>ivluqv.com</li>
+<li>ant.trenz.pl</li>
+<li>pvokuo.com</li>
+<li>ineimf.com</li>
+<li>vflgva.com</li>
+<li>aramea.com</li>
+<li>fyyaul.com</li>
+<li>ekrayy.com</li>
+<li>ieihwu.com</li>
+<li>zfqnqm.com</li>
+<li>unvizq.com</li>
+<li>yzripf.com</li>
+<li>ahpcam.com</li>
+<li>myepir.com</li>
+<li>vbaeyi.com</li>
+<li>vpuaga.com</li>
+<li>pyqkke.com</li>
+<li>yudzjo.com</li>
+<li>vnjsmt.com</li>
+<li>piawga.com</li>
+<li>yacyts.com</li>
+<li>yyebmc.com</li>
+<li>moalkr.com</li>
+<li>ejaadx.com</li>
+<li>fjwuka.com</li>
+<li>moemxj.com</li>
+<li>nheyoy.com</li>
+<li>bkbwak.com</li>
+<li>ieauap.com</li>
+<li>ywtpak.com</li>
+<li>orycwu.com</li>
+<li>hetiey.com</li>
+<li>lehaot.com</li>
+<li>noggpg.com</li>
+<li>wtapfd.com</li>
+<li>nborun.com</li>
+<li>oyhxaz.com</li>
+<li>jvtfap.com</li>
+<li>udinho.com</li>
+<li>lvtjyu.com</li>
+<li>uwycqt.com</li>
+<li>nxmosy.com</li>
+<li>jtyuaa.com</li>
+<li>jbytto.com</li>
+<li>qvaypf.com</li>
+<li>ozkmyk.com</li>
+<li>zkaioj.com</li>
+<li>muligi.com</li>
+<li>bbdeyy.com</li>
+<li>yeepmo.com</li>
+<li>tzdmos.com</li>
+<li>nhujeb.com</li>
+<li>dfawvl.com</li>
+<li>oncduk.com</li>
+<li>ojsbjy.com</li>
+<li>aqxlyu.com</li>
+<li>imyrwz.com</li>
+<li>hfctmo.com</li>
+<li>obnquq.com</li>
+<li>kulcwu.com</li>
+<li>piuoir.com</li>
+<li>fisost.com</li>
+<li>oakyvm.com</li>
+<li>oiooft.com</li>
+<li>trihij.com</li>
+<li>oikefu.com</li>
+<li>omzkru.com</li>
+<li>bkdrde.com</li>
+<li>ynomuw.com</li>
+<li>hzyhdo.com</li>
+<li>ufoyuo.com</li>
+<li>jbzcyp.com</li>
+<li>qdsegu.com</li>
+<li>yasyzp.com</li>
+<li>xkklyw.com</li>
+<li>eqiiev.com</li>
+<li>jndffh.com</li>
+<li>fizbhq.com</li>
+<li>lnksox.com</li>
+<li>qlqvbo.com</li>
+<li>azbqie.com</li>
+<li>nyoxhu.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">supnewdmn.com<td class="cell_2">447</td><tr>
+<tr><td class="cell_1">google.com<td class="cell_2">447</td><tr>
+<tr><td class="cell_1">103.55.25.75<td class="cell_2">8080</td><tr>
+<tr><td class="cell_1">180.255.24.3<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.15.5<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.123.6<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.66.11<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.194.10<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.227.13<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.155.14<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.123.14<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.134.17<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">180.255.90.18<td class="cell_2">16384</td><tr>
+<tr><td class="cell_1">103.55.25.75<td class="cell_2">8090</td><tr>
+<tr><td class="cell_1">gxkyjf.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">88.198.69.43<td class="cell_2">80</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 447:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 00FF 0100 0000 E8                       | .......
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8080:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 00FF 0100 0000 E8                       | .......
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 8090:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | B000 0000 7700 0000 0904 0000 5769 6E20 | ....w.......Win
+00000010 | 5850 2053 5032 0000 0000 0000 0000 0000 | XP SP2..........
+00000020 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000030 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000040 | 0000 0000 0000 0000 0000 0000 3235 3620 | ............256
+00000050 | 4D42 0000 0000 0000 0000 0000 0000 0000 | MB..............
+00000060 | 0000 0000 0000 0000 0000 0000 312A 3239 | ............1*29
+00000070 | 3939 4D48 7A00 0000 0000 0000 0000 0000 | 99MHz...........
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0200 0000 0300 0000 | ................
+000000B0 | 0400 0000 BA8C 0100                     | ........
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 443:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 00FF 0100 0000 E8                       | .......
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

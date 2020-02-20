@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I, Virus:Win32/Ramnit.A, Virus.Win32.Ramnit, Win32/Ramnit.B, W32.Pinfi, Virus.Win32.Parite.o, W32/Pate.b.dll, PE_PARITE.A-O, W32/Parite-B, Virus:Win32/Parite.B.dll, Virus.Win32.Parite..">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: W32.Ramnit!inf, Virus.Win32.Nimnul.a, W32/Ramnit.a, W32/Patched-I..</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 20 April 2016, 00:37:55</li>
+<li>Processing time: 6 min 5 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x6B56B376C6D851349DFE95D3BBA6CF33</li>
+<li>File SHA-1: 0xD38B45058DFEEC7E976306BA33CAEA65E08D0A41</li>
+<li>Filesize: 454,656 bytes</li>
+<li>Alias:</li>
+<ul><li>W32.Ramnit!inf [Symantec]</li>
+<li>Virus.Win32.Nimnul.a [Kaspersky Lab]</li>
+<li>W32/Ramnit.a [McAfee]</li>
+<li>W32/Patched-I [Sophos]</li>
+<li>Virus:Win32/Ramnit.A [Microsoft]</li>
+<li>Virus.Win32.Ramnit [Ikarus]</li>
+<li>Win32/Ramnit.B [AhnLab]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Capability to block security-related software by modifying firewall settings and by disabling security services, such as Windows Update, Norton Autoprotect, Kaspersky Anti-Virus, etc.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+<tr><td class="cell_1">There were some system executable files modified, which might indicate the presence of a PE-file infector.</td><td class="cell_2"><img src="./resources/level5.gif"></td></tr>
+<tr><td class="cell_1">Contains characteristics of an identified security risk.</td><td class="cell_2"><img src="./resources/level10.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/threat.gif"/></td><td width="100%" class="h3">Possible Security Risk</td></tr></table>
+<ul><li><font color="#990000"><b>Attention! </b></font>Characteristics of the following security risk was identified in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Security Risk</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1"><a href="http://www.threatexpert.com/threats/virus-parite-b.html" target="_blank">Virus.Parite.B<img src="./resources/flag.gif" style="border:none"/></a></td>
+<td class="cell_1">Virus Parite.B will remain in memory after executed, and infecting every SCR and PE file on every drive and network share.</td>
+</tr>
+</table></p>
+<ul><li><font color="#990000"><b>Attention! </b></font>The following threat category was identified:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Threat Category</td><td class="cell_2_h">Description</td></tr>
+<tr>
+<td class="cell_1" style="text-align: center"><img src="./resources/cats/virus.gif"></td>
+<td class="cell_1">A virus capable to modify other files by infecting, prepending, or overwriting them them with its own body</td>
+</tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/file_mod.gif"/></td><td width="100%" class="h3">File System Modifications</td></tr></table>
+<ul><li>The following files were created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">#</td><td class="cell_1_h">Filename(s)</td><td class="cell_1_h">File Size</td><td class="cell_1_h">File Hash</td><td class="cell_2_h">Alias</td></tr>
+<tr><td class="cell_1">1</td>
+<td class="cell_1">
+%Temp%\bma1.tmp
+</td>
+<td class="cell_1">176,128 bytes</td>
+<td class="cell_1">MD5: 0x685F1CBD4AF30A1D0C25F252D399A666<br/>SHA-1: 0x6A1B978F5E6150B88C8634146F1406ED97D2F134</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-pinfi.html" target="_blank">W32.Pinfi<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/>Virus.Win32.Parite.o [Kaspersky Lab]<br/><a href="http://www.threatexpert.com/threats/w32-pate-b-dll.html" target="_blank">W32/Pate.b.dll<img src="./resources/flag.gif" style="border:none"/></a> [McAfee]<br/><a href="http://www.threatexpert.com/threats/pe-parite-a-o.html" target="_blank">PE_PARITE.A-O<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-parite-b.html" target="_blank">W32/Parite-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/virus-win32-parite-b-dll.html" target="_blank">Virus:Win32/Parite.B.dll<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/virus-win32-parite.html" target="_blank">Virus.Win32.Parite<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-parite.html" target="_blank">Win32/Parite<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">2</td>
+<td class="cell_1">
+[file and pathname of the sample #1]
+</td>
+<td class="cell_1">454,656 bytes</td>
+<td class="cell_1">MD5: 0x6B56B376C6D851349DFE95D3BBA6CF33<br/>SHA-1: 0xD38B45058DFEEC7E976306BA33CAEA65E08D0A41</td>
+<td class="cell_2">W32.Ramnit!inf [Symantec]<br/>Virus.Win32.Nimnul.a [Kaspersky Lab]<br/>W32/Ramnit.a [McAfee]<br/>W32/Patched-I [Sophos]<br/>Virus:Win32/Ramnit.A [Microsoft]<br/>Virus.Win32.Ramnit [Ikarus]<br/>Win32/Ramnit.B [AhnLab]</td>
+</tr>
+<tr><td class="cell_1">3</td>
+<td class="cell_1">
+[part of the sample filename]1Srv.exe
+</td>
+<td class="cell_1">233,940 bytes</td>
+<td class="cell_1">MD5: 0x82CFD7DD51E1477E1174EBFBF1CD7D9D<br/>SHA-1: 0xDD171202591F237E8B54AE7BC9EF65C4528B2D31</td>
+<td class="cell_2"><a href="http://www.threatexpert.com/threats/w32-pinfi.html" target="_blank">W32.Pinfi<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]<br/><a href="http://www.threatexpert.com/threats/virus-win32-parite-b.html" target="_blank">Virus.Win32.Parite.b<img src="./resources/flag.gif" style="border:none"/></a> [Kaspersky Lab]<br/>PWS-Zbot.gen.pq [McAfee]<br/><a href="http://www.threatexpert.com/threats/pe-parite-a.html" target="_blank">PE_PARITE.A<img src="./resources/flag.gif" style="border:none"/></a> [Trend Micro]<br/><a href="http://www.threatexpert.com/threats/w32-parite-b.html" target="_blank">W32/Parite-B<img src="./resources/flag.gif" style="border:none"/></a> [Sophos]<br/><a href="http://www.threatexpert.com/threats/virus-win32-parite-b.html" target="_blank">Virus:Win32/Parite.B<img src="./resources/flag.gif" style="border:none"/></a> [Microsoft]<br/><a href="http://www.threatexpert.com/threats/trojan-spy-win32-zbot.html" target="_blank">Trojan-Spy.Win32.Zbot<img src="./resources/flag.gif" style="border:none"/></a> [Ikarus]<br/><a href="http://www.threatexpert.com/threats/win32-parite.html" target="_blank">Win32/Parite<img src="./resources/flag.gif" style="border:none"/></a> [AhnLab]</td>
+</tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%Temp% is a variable that refers to the temporary folder in the short path form. By default, this is C:\Documents and Settings\[UserName]\Local Settings\Temp\ (Windows NT/2000/XP).</li>
+</ul></ul>
+<ul><li>The following files were modified:</li>
+<ul>
+<li>[pathname with a string SHARE]\msinfo32.exe</li>
+<li>[pathname with a string SHARE]\sapisvr.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn1.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwconn2.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwrmind.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\icwtutor.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\inetwiz.exe</li>
+<li>%ProgramFiles%\Internet Explorer\Connection Wizard\isignup.exe</li>
+<li>%ProgramFiles%\Internet Explorer\iedw.exe</li>
+<li>%ProgramFiles%\Internet Explorer\IEXPLORE.EXE</li>
+<li>%ProgramFiles%\MSN\MSNIA\msniasvc.exe</li>
+<li>%ProgramFiles%\MSN\MSNIA\prestp.exe</li>
+<li>%ProgramFiles%\MSN\MsnInstaller\msninst.exe</li>
+<li>%ProgramFiles%\NetMeeting\cb32.exe</li>
+<li>%ProgramFiles%\NetMeeting\conf.exe</li>
+<li>%ProgramFiles%\NetMeeting\wb32.exe</li>
+<li>%ProgramFiles%\Outlook Express\msimn.exe</li>
+<li>%ProgramFiles%\Outlook Express\oemig50.exe</li>
+<li>%ProgramFiles%\Outlook Express\setup50.exe</li>
+<li>%ProgramFiles%\Outlook Express\wab.exe</li>
+<li>%ProgramFiles%\Outlook Express\wabmig.exe</li>
+<li>%ProgramFiles%\Web Publish\WPWIZ.EXE</li>
+<li>%ProgramFiles%\Windows Media Player\migrate.exe</li>
+<li>%ProgramFiles%\Windows Media Player\mplayer2.exe</li>
+<li>%ProgramFiles%\Windows Media Player\setup_wm.exe</li>
+<li>%ProgramFiles%\Windows Media Player\wmplayer.exe</li>
+<li>%ProgramFiles%\Windows NT\Accessories\wordpad.exe</li>
+<li>%ProgramFiles%\Windows NT\dialer.exe</li>
+<li>%ProgramFiles%\Windows NT\hypertrm.exe</li>
+<li>%ProgramFiles%\Windows NT\Pinball\PINBALL.EXE</li>
+<li>%Windir%\Cache\Adobe Reader 6.0.1\ENUBIG\setup.exe</li>
+<li>%Windir%\hh.exe</li>
+<li>%Windir%\inf\unregmp2.exe</li>
+<li>%Windir%\Installer\{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}\places.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\NETFXSBS10.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regbrowsers.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\aspnet_regsql.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\CasPol.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\dfsvc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\IEExec.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\InstallUtil.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\jsc.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe</li>
+<li>%Windir%\Microsoft.NET\Framework\v2.0.50727\RegSvcs.exe</li>
+<li>%Windir%\msagent\agentsvr.exe</li>
+<li>%Windir%\mui\muisetup.exe</li>
+<li>%Windir%\NOTEPAD.EXE</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpCtr.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpHost.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HelpSvc.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\HscUpd.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\msconfig.exe</li>
+<li>%Windir%\pchealth\helpctr\binaries\notiflag.exe</li>
+<li>%Windir%\pchealth\UploadLB\Binaries\UploadM.exe</li>
+<li>%Windir%\regedit.exe</li>
+<li>%System%\accwiz.exe</li>
+<li>%System%\actmovie.exe</li>
+<li>%System%\ahui.exe</li>
+<li>%System%\arp.exe</li>
+<li>%System%\asr_fmt.exe</li>
+<li>%System%\asr_ldm.exe</li>
+<li>%System%\asr_pfu.exe</li>
+<li>%System%\at.exe</li>
+<li>%System%\atmadm.exe</li>
+<li>%System%\attrib.exe</li>
+<li>%System%\auditusr.exe</li>
+<li>%System%\blastcln.exe</li>
+<li>%System%\bootcfg.exe</li>
+<li>%System%\bootok.exe</li>
+<li>%System%\bootvrfy.exe</li>
+<li>%System%\cacls.exe</li>
+<li>%System%\calc.exe</li>
+<li>%System%\charmap.exe</li>
+<li>%System%\chkdsk.exe</li>
+<li>%System%\chkntfs.exe</li>
+<li>%System%\cidaemon.exe</li>
+<li>%System%\cipher.exe</li>
+<li>%System%\cisvc.exe</li>
+<li>%System%\ckcnv.exe</li>
+<li>%System%\cleanmgr.exe</li>
+<li>%System%\clean_all.exe</li>
+<li>%System%\cliconfg.exe</li>
+<li>%System%\clipbrd.exe</li>
+<li>%System%\clipsrv.exe</li>
+<li>%System%\cmd.exe</li>
+<li>%System%\cmdl32.exe</li>
+<li>%System%\cmmon32.exe</li>
+<li>%System%\cmstp.exe</li>
+<li>%System%\Com\comrepl.exe</li>
+<li>%System%\Com\comrereg.exe</li>
+<li>%System%\comp.exe</li>
+<li>%System%\compact.exe</li>
+<li>%System%\conime.exe</li>
+<li>%System%\control.exe</li>
+<li>%System%\convert.exe</li>
+<li>%System%\cscript.exe</li>
+<li>%System%\ctfmon.exe</li>
+<li>%System%\dcomcnfg.exe</li>
+</ul></ul>
+<ul><li>Notes:</li><ul>
+<li>%ProgramFiles% is a variable that refers to the Program Files folder. A typical path is C:\Program Files.</li>
+<li>%Windir% is a variable that refers to the Windows installation folder. By default, this is C:\Windows or C:\Winnt.</li>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>The following directories were created:</li>
+<ul>
+<li>c:\System Volume Information\.</li>
+<li>c:\System Volume Information\..</li>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There was a new process created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">458,752 bytes</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\???????????????????????????????????????????????????????????????????????????????????????????????????</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\???????????????????????????????????????????????????????????????????????????????????????????????????</li>
+<li>HKEY_CURRENT_USER\NetSubKey</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\???????????????????????????????????????????????????????????????????????????????????????????????????]</li><ul>
+<li>MarkTime = "2016-04-20 00:37"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\???????????????????????????????????????????????????????????????????????????????????????????????????]</li><ul>
+<li>MarkTime = "2016-04-20 00:37"</li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>Analysis of the file resources indicate the following possible countries of origin:</li></ul>
+<p><table class="tbl" cellpadding="15" cellspacing="0">
+<tr>
+<tr><td class="cell_1"><img src="./resources/flags/china.gif"></td>
+<td class="cell_2">China</td><tr>
+<tr><td class="cell_1"><img src="./resources/flags/russian_federation.gif"></td>
+<td class="cell_2">Russian Federation</td><tr>
+</table></p>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>KyUffThOkYwRRtgPP</li>
+</ul></ul>
+<ul><li>The following Host Names were requested from a host database:</li>
+<ul>
+<li>chens3122.3322.org</li>
+<li>ilo.brenz.pl</li>
+<li>rmaiyl.com</li>
+<li>usrrch.com</li>
+<li>avyshv.com</li>
+<li>zdpyoz.com</li>
+<li>qupijt.com</li>
+<li>ooofeo.com</li>
+<li>kpoutp.com</li>
+<li>iaitgf.com</li>
+<li>rafyjt.com</li>
+<li>ydbzel.com</li>
+<li>akafag.com</li>
+<li>ant.trenz.pl</li>
+<li>owiuiu.com</li>
+<li>jsaoeg.com</li>
+<li>dbivul.com</li>
+<li>ylycrs.com</li>
+<li>zgougf.com</li>
+<li>cqaoth.com</li>
+<li>bcsfss.com</li>
+<li>auraui.com</li>
+<li>myayqw.com</li>
+<li>vvznbo.com</li>
+<li>ieadyu.com</li>
+<li>suvyve.com</li>
+<li>hufeme.com</li>
+<li>houwmd.com</li>
+<li>buiuiq.com</li>
+<li>hyzyum.com</li>
+<li>nsyeue.com</li>
+<li>eyoeya.com</li>
+<li>qoxygs.com</li>
+<li>eaifij.com</li>
+<li>aovpou.com</li>
+<li>ewisjs.com</li>
+<li>yudljl.com</li>
+<li>owudij.com</li>
+<li>jjwonz.com</li>
+<li>xuwkys.com</li>
+<li>xtaeiw.com</li>
+<li>yzqxuq.com</li>
+<li>iyayuz.com</li>
+<li>dgliht.com</li>
+<li>xesaee.com</li>
+<li>pmezfu.com</li>
+<li>ugssli.com</li>
+<li>zlxydu.com</li>
+<li>eemgul.com</li>
+<li>wyarol.com</li>
+<li>zizeeb.com</li>
+<li>olriuf.com</li>
+<li>ldzcbo.com</li>
+<li>dlkibk.com</li>
+<li>wkwxnq.com</li>
+<li>lutiig.com</li>
+<li>padicf.com</li>
+<li>ozegyc.com</li>
+<li>vapeva.com</li>
+<li>maiygz.com</li>
+<li>mtgagu.com</li>
+<li>onizqj.com</li>
+<li>zfaubj.com</li>
+<li>fruktk.com</li>
+<li>emilqt.com</li>
+<li>mpvkcx.com</li>
+<li>cejlwt.com</li>
+<li>lzehqn.com</li>
+<li>xmaxip.com</li>
+<li>xudncy.com</li>
+<li>gsvato.com</li>
+<li>dkiugc.com</li>
+<li>rykjxy.com</li>
+<li>ahenua.com</li>
+<li>rimavo.com</li>
+<li>eulubs.com</li>
+<li>mjxkmh.com</li>
+<li>mgoyij.com</li>
+<li>evpzuy.com</li>
+<li>wmcdei.com</li>
+<li>iraxes.com</li>
+<li>epgwou.com</li>
+<li>oxryoj.com</li>
+<li>pobotu.com</li>
+<li>atlfej.com</li>
+<li>iuyuoe.com</li>
+<li>xtavez.com</li>
+<li>ewaxxf.com</li>
+<li>hzhjcb.com</li>
+<li>ukwnnv.com</li>
+<li>iiiixd.com</li>
+<li>yubola.com</li>
+<li>bkvkih.com</li>
+<li>lxemou.com</li>
+<li>iigafo.com</li>
+<li>ullrux.com</li>
+<li>eqaucy.com</li>
+<li>lzrekc.com</li>
+<li>okyogo.com</li>
+<li>xgvyoj.com</li>
+</ul></ul>
+<ul><li>There were registered attempts to establish connection with the remote hosts. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">chens3122.3322.org<td class="cell_2">2015</td><tr>
+<tr><td class="cell_1">rmaiyl.com<td class="cell_2">443</td><tr>
+<tr><td class="cell_1">88.198.69.43<td class="cell_2">80</td><tr>
+</table></p>
+<ul><li>There was application-defined hook procedure installed into the hook chain (e.g. to monitor keystrokes). The installed hook is handled by the following module:</li><ul>
+<li>%Temp%\bma1.tmp</li>
+<ul><li>the hook is handled by its export "AttachHook()"</li></ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 2015:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | ED00 0000 6C01 0000 7B9E 4E5B 6061 9AC0 | ....l...{.N[`a..
+00000010 | C2C5 C30E C58E 44AF C4CD C2C4 01AC 8251 | ......D........Q
+00000020 | 8FC9 3392 5B14 0016 90B2 1489 1A1A F77E | ..3.[..........~
+00000030 | 1765 0583 8616 E066 199E 8E09 C880 DB83 | .e.....f........
+00000040 | C481 84E0 CDDC 7815 3C06 A944 060B 2208 | ......x.<..D..".
+00000050 | 6B07 250C E961 6410 6098 C28A D053 C359 | k.%..ad.`....S.Y
+00000060 | DB7F 7DD6 45C6 6BD9 F560 1AE4 0606 4646 | ..}.E.k..`....FF
+00000070 | A0BA 8A83 DBB9 218E 031A C6E8 ECEF 1B10 | ......!.........
+00000080 | 1AE2 1AE4 E7E8 EB8A 6131 0EA0 0F26 E319 | ........a1...&..
+00000090 | 0C19 F418 5219 2A80 98E1 00C8 FE3D 1F85 | ....R.*......=..
+000000A0 | 1972 7E4F A829 0462 109F 1F28 0E52 3903 | .r~O.).b...(.R9.
+000000B0 | 280E 329C E3A7 3083 C43B 881C C83D 6780 | (.2...0..;...=g.
+000000C0 | E293 2637 D480 D861 9E01 0C1B BE00 C3E0 | ..&7...a........
+000000D0 | 6343 0D48 5FC8 7748 78EC 78DF 5023 01B5 | cC.H_.wHx.x.P#..
+000000E0 | D7E4 9330 301C 1000 0025 1942 58        | ...00....%.BX
+</textarea></tr></td></table></p>
+<ul><li>There was an outbound traffic produced on port 0:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | EA00 0000 6C01 0000 7B9E 4E5B 6061 9AC0 | ....l...{.N[`a..
+00000010 | C2C5 C30E C58E 44AF C4CD C2C4 01AC 8251 | ......D........Q
+00000020 | 8FC9 3392 5B14 0016 90B2 1489 1A1A F77E | ..3.[..........~
+00000030 | 1765 0583 8616 E066 199E 8E09 C880 DB83 | .e.....f........
+00000040 | C481 84E0 CDDC 7815 3C06 A944 060B 2208 | ......x.<..D..".
+00000050 | 6B07 2504 E961 6410 6098 C28A D053 C359 | k.%..ad.`....S.Y
+00000060 | DB7F 7DD6 45C6 6BD9 F560 1AE4 0606 4646 | ..}.E.k..`....FF
+00000070 | A0BA 8A83 DBB9 218E 031A C6E8 ECEF 1B10 | ......!.........
+00000080 | 1AE2 1AE4 E7E8 EB8A 6131 5E10 CF60 C8A0 | ........a1^..`..
+00000090 | C790 CA50 01C4 0C07 40F6 EFF9 28CC 90F3 | ...P....@...(...
+000000A0 | 7B42 4D21 1083 F8FC 4071 90CA 1940 7190 | {BM!....@q...@q.
+000000B0 | E11C 3F85 1924 DE41 E440 EE39 0314 9F34 | ..?..$.A.@.9...4
+000000C0 | B9A1 06C4 0EF3 0C60 D8F0 0518 061F 1B6A | .......`.......j
+000000D0 | 40FA 42BE 43C2 63C7 FB86 1A09 A88D 269F | @.B.C.c.......&.
+000000E0 | 8481 E180 0000 0C21 4229                | .......!B)
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>

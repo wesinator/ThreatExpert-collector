@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ThreatExpert Report: Suspicious.Bifrose, DDoS:Win32/Nitol.A">
+<style type="text/css">body a {color: #505050;	text-decoration: none} body a:hover {color: #c00000; text-decoration: underline}</style>
+<link href="./css/report.css" rel="stylesheet" type="text/css"/>
+<title>ThreatExpert Report: Suspicious.Bifrose, DDoS:Win32/Nitol.A</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-1490218-5";_udn="threatexpert.com";urchinTracker();</script>
+</head><body>
+<table align="right"><tr class="top_link"><td><a href="http://www.threatexpert.com">Visit ThreatExpert web site</a></td>
+<td style="color: #707070">|</td><td><a href="javascript:window.close();">Close Report</a></td></tr></table>
+<a href="http://www.threatexpert.com"><img src="./resources/logo.gif" style="border: none"/></a>
+<h2>Submission Summary:</h2>
+<ul><li>Submission details:</li><ul>
+<li>Submission received: 27 June 2016, 05:51:48</li>
+<li>Processing time: 5 min 59 sec</li>
+<li>Submitted sample:</li>
+<ul>
+<li>File MD5: 0x46A08A0022E3F37B775E5FC56E192310</li>
+<li>File SHA-1: 0x376849536CA3E6233FF4E61B71F280EDACB5A01E</li>
+<li>Filesize: 22,425 bytes</li>
+<li>Alias:</li>
+<ul><li><a href="http://www.threatexpert.com/threats/suspicious-bifrose.html" target="_blank">Suspicious.Bifrose<img src="./resources/flag.gif" style="border:none"/></a> [Symantec]</li>
+<li>DDoS:Win32/Nitol.A [Microsoft]</li>
+</ul>
+</ul>
+</ul></ul>
+<ul><li>Summary of the findings:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0" width="570px">
+<tr><td class="cell_1_h">What's been found</td><td class="cell_2_h">Severity Level</td></tr>
+<tr><td class="cell_1">Produces outbound traffic.</td><td class="cell_2"><img src="./resources/level1.gif"></td></tr>
+</table></p>
+<p>&nbsp;</p><h2>Technical Details:</h2>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/mem_mod.gif"/></td><td width="100%" class="h3">Memory Modifications</td></tr></table>
+<ul><li>There were new processes created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Process Name</td><td class="cell_1_h">Process Filename</td><td class="cell_2_h">Main Module Size</td></tr>
+<tr><td class="cell_1">vipxie.exe</td><td class="cell_1">%System%\vipxie.exe</td><td class="cell_2">12,730,368 bytes</td></tr>
+<tr><td class="cell_1">[filename of the sample #1]</td><td class="cell_1">[file and pathname of the sample #1]</td><td class="cell_2">12,730,368 bytes</td></tr>
+</table></p>
+<ul><li>Note:</li><ul>
+<li>%System% is a variable that refers to the System folder. By default, this is C:\Windows\System (Windows 95/98/Me), C:\Winnt\System32 (Windows NT/2000), or C:\Windows\System32 (Windows XP).</li>
+</ul></ul>
+<ul><li>There was a new service created in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Service Name</td><td class="cell_1_h">Display Name</td><td class="cell_1_h">Status</td><td class="cell_2_h">Service Filename</td></tr>
+<tr><td class="cell_1">NET Security Services Provider vNET Security Services Providernwe</td><td class="cell_1">NET Security Services Providernwe</td><td class="cell_1">"Running"</td><td class="cell_2">%System%\vipxie.exe</td></tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/reg_mod.gif"/></td><td width="100%" class="h3">Registry Modifications</td></tr></table>
+<ul><li>The following Registry Keys were created:</li>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe\Enum</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000\Control</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe\Security</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe\Enum</li>
+</ul></ul>
+<ul><li>The newly created Registry Values are:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NET Security Services Provider vNET Security Services Providernwe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000]</li><ul>
+<li>Service = "NET Security Services Provider vNET Security Services Providernwe"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NET Security Services Providernwe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NET Security Services Provider vNET Security Services Providernwe]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "NET Security Services Providernwe"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides jiu for Microsoft DotNet security."</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000\Control]</li><ul>
+<li>*NewlyCreated* = 0x00000000</li>
+<li>ActiveService = "NET Security Services Provider vNET Security Services Providernwe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000]</li><ul>
+<li>Service = "NET Security Services Provider vNET Security Services Providernwe"</li>
+<li>Legacy = 0x00000001</li>
+<li>ConfigFlags = 0x00000000</li>
+<li>Class = "LegacyDriver"</li>
+<li>ClassGUID = "{8ECC055D-047F-11D1-A537-0000F8753ED1}"</li>
+<li>DeviceDesc = "NET Security Services Providernwe"</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE]</li><ul>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe\Enum]</li><ul>
+<li>0 = "Root\LEGACY_NET_SECURITY_SERVICES_PROVIDER_VNET_SECURITY_SERVICES_PROVIDERNWE\0000"</li>
+<li>Count = 0x00000001</li>
+<li>NextInstance = 0x00000001</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe\Security]</li><ul>
+<li>Security = 01 00 14 80 90 00 00 00 9C 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 60 00 04 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 0</li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NET Security Services Provider vNET Security Services Providernwe]</li><ul>
+<li>Type = 0x00000010</li>
+<li>Start = 0x00000002</li>
+<li>ErrorControl = 0x00000000</li>
+<li>ImagePath = "%System%\vipxie.exe"</li>
+<li>DisplayName = "NET Security Services Providernwe"</li>
+<li>ObjectName = "LocalSystem"</li>
+<li>Description = "Provides jiu for Microsoft DotNet security."</li>
+</ul>
+</ul></ul>
+<ul><li>The following Registry Values were modified:</li><ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+<li>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceCurrent]</li><ul>
+<li>(Default) = </li>
+</ul>
+</ul></ul>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/other_mod.gif"/></td><td width="100%" class="h3">Other details</td></tr></table>
+<ul><li>To mark the presence in the system, the following Mutex object was created:</li>
+<ul>
+<li>NET Security Services Provider vNET Security Services Providernwe</li>
+</ul></ul>
+<ul><li>The following port was open in the system:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Port</td><td class="cell_1_h">Protocol</td><td class="cell_2_h">Process</td></tr>
+<tr><td class="cell_1">1033</td><td class="cell_1">TCP</td><td class="cell_2">vipxie.exe (%System%\vipxie.exe)</td></tr>
+</table></p>
+<ul><li>The following Host Name was requested from a host database:</li>
+<ul>
+<li>rn0426.ddns.net</li>
+</ul></ul>
+<ul><li>There was registered attempt to establish connection with the remote host. The connection details are:</li></ul>
+<p><table class="tbl" cellpadding="5" cellspacing="0">
+<tr><td class="cell_1_h">Remote Host</td><td class="cell_2_h">Port Number</td></tr>
+<tr><td class="cell_1">rn0426.ddns.net<td class="cell_2">1383</td><tr>
+</table></p>
+<p>&nbsp;</p><table cellpadding="0" cellspacing="0" style="width:100%"><tr><td><img style="border: none" src="./resources/traffic_mod.gif"/></td><td width="100%" class="h3">Outbound traffic (potentially malicious)</td></tr></table>
+<ul><li>There was an outbound traffic produced on port 1383:</li></ul>
+<p><table class="tbl" cellpadding="0" cellspacing="0"><tr><td>
+<textarea style="color:#505050;border-style:none; font-family:'Courier New', Courier, mono; font-size:11px" name="textarea" cols="80" rows="7">
+00000000 | 0100 0000 4500 6E00 6700 6C00 6900 7300 | ....E.n.g.l.i.s.
+00000010 | 6800 2000 2800 5500 6E00 6900 7400 6500 | h. .(.U.n.i.t.e.
+00000020 | 6400 2000 5300 7400 6100 7400 6500 7300 | d. .S.t.a.t.e.s.
+00000030 | 2900 0000 0000 0000 0000 0000 0000 0000 | )...............
+00000040 | 0000 0000 434F 4D50 5554 4552 4E41 4D45 | ....COMPUTERNAME
+00000050 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000060 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000070 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000080 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000090 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000C0 | 0000 0000 5769 6E64 6F77 7320 5850 0000 | ....Windows XP..
+000000D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000000F0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000100 | 0000 0000 4E6F 7420 4176 6169 6C61 626C | ....Not Availabl
+00000110 | 6500 0000 0000 0000 0000 0000 0000 0000 | e...............
+00000120 | 0000 0000 3239 3939 204D 487A 0000 0000 | ....2999 MHz....
+00000130 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000140 | 0000 0000 4244 3230 3135 2D4E 6F44 7269 | ....BD2015-NoDri
+00000150 | 7665 7200 0000 0000 0000 0000 0000 0000 | ver.............
+00000160 | 0000 0000 0000 0000 FA8D 917C 25D6 907C | ...........|%..|
+00000170 | CFEA 907C 30FD 7301 0100 0000 1700 0100 | ...|0.s.........
+00000180 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000190 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000001A0 | 902F 6981 1800 0100 0000 0000 0010 0000 | ./i.............
+000001B0 | 70D8 0CE1 B05A 0001 A821 7E00 0050 0300 | p....Z...!~..P..
+000001C0 | 0000 0000 00D3 2C00 7001 0101 BC59 9BF7 | ......,.p....Y..
+000001D0 | B878 7E81 185C 9BF7 3E93 72F9 B0DD 73F9 | .x~..\..>.r...s.
+000001E0 | FFFF FFFF AC73 72F9 BF6F 72F9 8C5A 9BF7 | .....sr..or..Z..
+000001F0 | B878 7E81 CC6F 72F9 0A07 1001 0000 0000 | .x~..or.........
+00000200 | 0100 0000 0000 0000 0000 0000 3800 0000 | ............8...
+00000210 | 2300 0000 2300 0000 E0FC 6301 18EE 907C | #...#.....c....|
+00000220 | 0000 0000 F0FC 6301 3815 917C C01B 4000 | ......c.8..|..@.
+00000230 | EB06 917C 5608 817C 1B00 0000 0002 0000 | ...|V..|........
+00000240 | FCFF 7301 2300 0000 0000 0000 0000 0000 | ..s.#...........
+00000250 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000260 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000270 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000280 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+00000290 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002A0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002B0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002C0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002D0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002E0 | 0000 0000 0000 0000 0000 0000 0000 0000 | ................
+000002F0 | 0000 0000 0000 0000 0000 0000 FC3C 88C0 | .............<..
+00000300 | 0030 88C0 A023 7E81 902F 6981 384F 9A81 | .0...#~../i.8O..
+00000310 | AE0D 80F9 F701 0000 74F3 9581 E8F0 9581 | ........t.......
+00000320 | 70F3 9581 C85B 9BF7 2987 80F9 74F3 9581 | p....[..)...t...
+00000330 | E866 9D81 E05B 9BF7 0275 80F9 6068 9A81 | .f...[...u..`h..
+00000340 | 74F3 9581 A868 6D80 BC1F 7E81 185C 9BF7 | t....hm...~..\..
+00000350 | A11D 80F9 0100 0000 70F3 9581 0000 0000 | ........p.......
+00000360 | 2C4E 6681 245C 9BF7 D99A 4F80 E19A 4F80 | ,Nf.$\....O...O.
+00000370 | FC4D 6681 904C 6681 C44C 6681 2C5C 9BF7 | .Mf..Lf..Lf.,\..
+00000380 | 8683 6380 40D9 9081 904C 6681 00C0 FD7F | ..c.@....Lf.....
+00000390 | 845C 9BF7 2C01 5080 0000 0000 0500 0000 | .\..,.P.........
+000003A0 | 0000 0000 0000 0000 0000 0000 30D0 4F80 | ............0.O.
+000003B0 | 0000 0000 0000 0000 ECD0 4F80 E202 6D80 | ..........O...m.
+000003C0 | 904C 6681 505D 9BF7 3100 0180 8962 6D80 | .Lf.P]..1....bm.
+000003D0 | 0102 0000 0000 0000 40D9 9081 DEFC 4F80 | ........@.....O.
+000003E0 | 0000 0000 0000 0000 0000 0000 1401 5080 | ..............P.
+000003F0 | 9C5C 9BF7 350C 6D80 0000 0000 B0FF 7301 | .\..5.m.......s.
+00000400 | CA1B 4000                               | ..@.
+</textarea></tr></td></table></p>
+<p>&nbsp;</p><div class="discl">
+<table cellpadding="0" cellspacing="0" style="width:100%"><tr><td width="100%" class="h3">&nbsp;</td></tr></table>
+<p>All content ("Information") contained in this report is the copyrighted work of Threat Expert Ltd and its associated companies ("ThreatExpert") and may not be copied without the express permission of ThreatExpert.</p>
+<p>The Information is provided on an "as is" basis. ThreatExpert disclaims all warranties, whether express or implied, to the maximum extent permitted by law, including the implied warranties that the Information is merchantable, of satisfactory quality, accurate, fit for a particular purpose or need, or non-infringing, unless such implied warranties are legally incapable of exclusion. Further, ThreatExpert does not warrant or make any representations regarding the use or the results of the use of the Information in terms of their correctness, accuracy, reliability, or otherwise.</p>
+<p style="color: #000000">Copyright &copy; 2016 <a href="http://www.threatexpert.com" style="color: #000000">ThreatExpert</a>. All rights reserved.</p></div>
+</body></html>
